@@ -1,5 +1,11 @@
 # SKILLS All-in-one
 
+[![Live Demo](https://img.shields.io/badge/demo-huangchiyu.com-blue?style=flat-square)](https://huangchiyu.com)
+[![License: MIT](https://img.shields.io/badge/license-MIT-green?style=flat-square)](LICENSE)
+[![GitHub Stars](https://img.shields.io/github/stars/eric861129/SKILLS_All-in-one?style=flat-square)](https://github.com/eric861129/SKILLS_All-in-one/stargazers)
+[![Issues](https://img.shields.io/github/issues/eric861129/SKILLS_All-in-one?style=flat-square)](https://github.com/eric861129/SKILLS_All-in-one/issues)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen?style=flat-square)](CONTRIBUTING.md)
+
 **SKILLS All-in-one** 是一個專為 AI Agent 與開發者打造的高品質技能 (AI Skills) 展示、檢索與下載整合平台。我們致力於建立一個美觀、高效且易於擴展的技能庫，幫助開發者一鍵強化其 AI Agent 的能力。
 
 ---

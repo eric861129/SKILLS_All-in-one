@@ -35,6 +35,7 @@ const translations: Translations = {
   loadingFile: { en: 'Loading file...', zh: '載入中...' },
   selectFile: { en: 'Select a file to preview', zh: '選擇檔案以預覽' },
   noFilesFound: { en: 'No files found for this skill.', zh: '找不到此技能的檔案。' },
+  submitSkill: { en: 'Submit a Skill', zh: '提交新技能' },
 };
 
 interface LanguageContextType {

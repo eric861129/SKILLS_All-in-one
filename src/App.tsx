@@ -1,14 +1,53 @@
-import { useState } from 'react';
-import { Terminal, Search, Loader2, Filter, X, Flame, Clock, ArrowUpDown, Languages, SlidersHorizontal } from 'lucide-react';
+import { useState, useEffect, useRef, useCallback } from 'react';
+import { Routes, Route, useSearchParams } from 'react-router-dom';
+import { Terminal, Search, Filter, X, Flame, Clock, ArrowUpDown, Languages, SlidersHorizontal, Plus } from 'lucide-react';
 import { useSkills } from './hooks/useSkills';
 import { SkillCard } from './components/SkillCard';
 import { SkillDetailModal } from './components/SkillDetailModal';
 import { FilterSidebar } from './components/FilterSidebar';
+import { SkeletonCard } from './components/SkeletonCard';
+import { ScrollToTop } from './components/ScrollToTop';
+import { useToast } from './components/Toast';
 import { downloadAndZipSkill } from './utils/downloadSkill';
 import { useLanguage } from './hooks/useLanguage';
-import type { Skill } from './types/skill';
+import { SkillPage } from './pages/SkillPage';
+import type { Skill, SkillCategory } from './types/skill';
+import type { SortOption } from './hooks/useSkills';
 
-function App() {
+// ─── JSON-LD 結構化資料 ─────────────────────────
+const JsonLd = () => (
+  <script
+    type="application/ld+json"
+    dangerouslySetInnerHTML={{
+      __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "SKILLS All-in-one",
+        "url": "https://huangchiyu.com",
+        "description": "A curated collection of 100+ professional AI Agent skills for Claude, ChatGPT, and other AI assistants.",
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "Web",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "Eric Huang",
+          "url": "https://huangchiyu.com"
+        }
+      })
+    }}
+  />
+);
+
+// ─── 首頁元件 ────────────────────────────────────
+const HomePage = () => {
+  const [searchParams, setSearchParams] = useSearchParams();
+  const { showToast } = useToast();
+  const searchInputRef = useRef<HTMLInputElement>(null);
+
   const {
     skills,
     loading,
@@ -36,19 +75,91 @@ function App() {
   // 行動端側欄狀態
   const [showMobileSidebar, setShowMobileSidebar] = useState(false);
 
+  // ─── URL 同步：讀取 URL 參數 ──────────────────────
+  useEffect(() => {
+    const q = searchParams.get('q');
+    const cat = searchParams.get('cat');
+    const sort = searchParams.get('sort');
+
+    if (q !== null && q !== searchQuery) setSearchQuery(q);
+    if (cat !== null && cat !== selectedCategory) {
+      if (cat === 'All' || categories.includes(cat as SkillCategory)) {
+        setSelectedCategory(cat as SkillCategory | 'All');
+      }
+    }
+    if (sort !== null && (sort === 'Popular' || sort === 'Latest') && sort !== sortBy) {
+      setSortBy(sort as SortOption);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []); // Only on mount
+
+  // ─── URL 同步：寫入 URL 參數 ──────────────────────
+  useEffect(() => {
+    const params = new URLSearchParams();
+    if (searchQuery) params.set('q', searchQuery);
+    if (selectedCategory !== 'All') params.set('cat', selectedCategory);
+    if (sortBy !== 'Popular') params.set('sort', sortBy);
+
+    const newSearch = params.toString();
+    const currentSearch = searchParams.toString();
+    if (newSearch !== currentSearch) {
+      setSearchParams(params, { replace: true });
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [searchQuery, selectedCategory, sortBy]);
+
+  // ─── 鍵盤快捷鍵 ────────────────────────────────
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      // 如果正在 Modal 或正在輸入中，忽略
+      if (selectedSkill) return;
+      const target = e.target as HTMLElement;
+      const isInput = target.tagName === 'INPUT' || target.tagName === 'TEXTAREA' || target.isContentEditable;
+
+      // `/` 聚焦搜尋
+      if (e.key === '/' && !isInput) {
+        e.preventDefault();
+        searchInputRef.current?.focus();
+      }
+      // `Escape` 清除搜尋或失焦
+      if (e.key === 'Escape' && isInput) {
+        (target as HTMLInputElement).blur();
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [selectedSkill]);
+
   const handleDownload = async (skill: Skill) => {
     incrementDownload(skill.id);
     try {
       await downloadAndZipSkill(skill);
+      showToast(
+        language === 'zh'
+          ? `${skill.nameZh || skill.name} 下載成功`
+          : `${skill.name} downloaded successfully`,
+        'success'
+      );
     } catch (err) {
       console.error('下載失敗:', err);
+      showToast(
+        language === 'zh' ? '下載失敗，請稍後再試' : 'Download failed, please try again',
+        'error'
+      );
     }
   };
+
+  const handlePreview = useCallback((skill: Skill) => {
+    setSelectedSkill(skill);
+  }, []);
 
   const activeFilterCount = selectedAuthors.length + selectedTags.length;
 
   return (
     <div className="min-h-screen bg-slate-950 text-white font-sans selection:bg-blue-500/30">
+      <JsonLd />
+
       {/* Language Switcher Float */}
       <div className="fixed top-6 right-6 z-50">
         <button
@@ -79,20 +190,27 @@ function App() {
           <div className="absolute inset-0 bg-blue-500/20 blur-3xl group-focus-within:bg-blue-500/30 transition-all -z-10 rounded-full opacity-50"></div>
           <Search className="absolute left-5 top-1/2 -translate-y-1/2 w-5 h-5 md:w-6 md:h-6 text-slate-500 group-focus-within:text-blue-400 transition-colors" />
           <input
+            ref={searchInputRef}
             type="text"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             placeholder={t('searchPlaceholder')}
             className="w-full bg-slate-900/80 backdrop-blur-xl border border-slate-800 rounded-2xl py-4 md:py-5 pl-12 md:pl-14 pr-12 md:pr-14 focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-blue-500/50 transition-all text-slate-100 text-base md:text-lg placeholder:text-slate-600 shadow-2xl"
           />
-          {searchQuery && (
-            <button
-              onClick={() => setSearchQuery('')}
-              className="absolute right-5 top-1/2 -translate-y-1/2 p-1 hover:bg-slate-800 rounded-lg transition-colors text-slate-500 hover:text-slate-300"
-            >
-              <X className="w-5 h-5" />
-            </button>
-          )}
+          <div className="absolute right-5 top-1/2 -translate-y-1/2 flex items-center gap-2">
+            {searchQuery ? (
+              <button
+                onClick={() => setSearchQuery('')}
+                className="p-1 hover:bg-slate-800 rounded-lg transition-colors text-slate-500 hover:text-slate-300"
+              >
+                <X className="w-5 h-5" />
+              </button>
+            ) : (
+              <kbd className="hidden md:inline-flex items-center px-2 py-0.5 text-[10px] font-mono text-slate-600 bg-slate-800/50 border border-slate-700/50 rounded-md">
+                /
+              </kbd>
+            )}
+          </div>
         </div>
       </header>
 
@@ -127,8 +245,8 @@ function App() {
                   <button
                     onClick={() => setSelectedCategory('All')}
                     className={`whitespace-nowrap px-4 py-2 rounded-xl text-xs font-bold transition-all border shrink-0 ${selectedCategory === 'All'
-                        ? 'bg-blue-600 border-blue-500 text-white shadow-lg shadow-blue-600/20'
-                        : 'bg-slate-900 border-slate-800 text-slate-400 hover:border-slate-700 hover:text-slate-200'
+                      ? 'bg-blue-600 border-blue-500 text-white shadow-lg shadow-blue-600/20'
+                      : 'bg-slate-900 border-slate-800 text-slate-400 hover:border-slate-700 hover:text-slate-200'
                       }`}
                   >
                     {t('allCategories')}
@@ -138,8 +256,8 @@ function App() {
                       key={cat}
                       onClick={() => setSelectedCategory(cat)}
                       className={`whitespace-nowrap px-4 py-2 rounded-xl text-xs font-bold transition-all border shrink-0 ${selectedCategory === cat
-                          ? 'bg-blue-600 border-blue-500 text-white shadow-lg shadow-blue-600/20'
-                          : 'bg-slate-900 border-slate-800 text-slate-400 hover:border-slate-700 hover:text-slate-200'
+                        ? 'bg-blue-600 border-blue-500 text-white shadow-lg shadow-blue-600/20'
+                        : 'bg-slate-900 border-slate-800 text-slate-400 hover:border-slate-700 hover:text-slate-200'
                         }`}
                     >
                       {cat}
@@ -155,8 +273,8 @@ function App() {
                   <button
                     onClick={() => setShowMobileSidebar(true)}
                     className={`flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold border transition-all ${activeFilterCount > 0
-                        ? 'bg-blue-600 border-blue-500 text-white shadow-lg shadow-blue-600/20'
-                        : 'bg-slate-900 border-slate-800 text-slate-400 hover:border-slate-700 hover:text-slate-200'
+                      ? 'bg-blue-600 border-blue-500 text-white shadow-lg shadow-blue-600/20'
+                      : 'bg-slate-900 border-slate-800 text-slate-400 hover:border-slate-700 hover:text-slate-200'
                       }`}
                   >
                     <SlidersHorizontal className="w-4 h-4" />
@@ -176,8 +294,8 @@ function App() {
                     <button
                       onClick={() => setSortBy('Popular')}
                       className={`flex items-center gap-2 px-4 py-1.5 rounded-lg text-xs font-bold transition-all ${sortBy === 'Popular'
-                          ? 'bg-slate-800 text-blue-400 shadow-sm'
-                          : 'text-slate-500 hover:text-slate-300'
+                        ? 'bg-slate-800 text-blue-400 shadow-sm'
+                        : 'text-slate-500 hover:text-slate-300'
                         }`}
                     >
                       <Flame className={`w-3.5 h-3.5 ${sortBy === 'Popular' ? 'text-orange-500' : ''}`} />
@@ -186,8 +304,8 @@ function App() {
                     <button
                       onClick={() => setSortBy('Latest')}
                       className={`flex items-center gap-2 px-4 py-1.5 rounded-lg text-xs font-bold transition-all ${sortBy === 'Latest'
-                          ? 'bg-slate-800 text-blue-400 shadow-sm'
-                          : 'text-slate-500 hover:text-slate-300'
+                        ? 'bg-slate-800 text-blue-400 shadow-sm'
+                        : 'text-slate-500 hover:text-slate-300'
                         }`}
                     >
                       <Clock className="w-3.5 h-3.5" />
@@ -208,17 +326,15 @@ function App() {
               </h2>
             </div>
             <div className="text-[10px] font-bold uppercase tracking-widest text-slate-500 bg-slate-900/50 px-3 py-1.5 rounded-lg border border-slate-800/50">
-              {skills.length} ITEMS
+              {loading ? '...' : skills.length} ITEMS
             </div>
           </div>
 
           {loading ? (
-            <div className="flex flex-col items-center justify-center py-32 text-slate-500 gap-6">
-              <div className="relative">
-                <div className="absolute inset-0 bg-blue-500 blur-2xl opacity-20 animate-pulse"></div>
-                <Loader2 className="w-12 h-12 animate-spin text-blue-500 relative z-10" />
-              </div>
-              <p className="text-lg font-medium tracking-wide animate-pulse font-sans">{t('loading')}</p>
+            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+              {Array.from({ length: 9 }).map((_, i) => (
+                <SkeletonCard key={i} />
+              ))}
             </div>
           ) : skills.length > 0 ? (
             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 animate-in fade-in slide-in-from-bottom-4 duration-700">
@@ -227,7 +343,7 @@ function App() {
                   key={skill.id}
                   skill={skill}
                   onDownload={() => handleDownload(skill)}
-                  onPreview={() => setSelectedSkill(skill)}
+                  onPreview={() => handlePreview(skill)}
                 />
               ))}
             </div>
@@ -263,10 +379,21 @@ function App() {
         <p className="text-slate-600 text-xs md:text-sm font-medium tracking-wide">
           © 2026 SKILLS All-in-one · {language === 'zh' ? '高品質 AI Agent 技能庫' : 'Premium AI Agent Skills Library'}
         </p>
-        <div className="mt-6 flex justify-center gap-6 text-slate-700 text-[10px] font-bold uppercase tracking-widest">
-          <a href="#" className="hover:text-slate-400 transition-colors">Documentation</a>
-          <a href="#" className="hover:text-slate-400 transition-colors">GitHub</a>
-          <a href="#" className="hover:text-slate-400 transition-colors">Support</a>
+        <div className="mt-6 flex flex-col items-center gap-6">
+          <a
+            href="https://github.com/eric861129/SKILLS_All-in-one/issues/new?template=submit_skill.md"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-500 text-white px-5 py-2.5 rounded-xl text-xs font-bold uppercase tracking-widest transition-all shadow-lg shadow-blue-600/20 hover:shadow-blue-500/30 active:scale-95"
+          >
+            <Plus className="w-4 h-4" />
+            {t('submitSkill')}
+          </a>
+          <div className="flex justify-center gap-6 text-slate-700 text-[10px] font-bold uppercase tracking-widest">
+            <a href="https://github.com/eric861129/SKILLS_All-in-one#readme" target="_blank" rel="noopener noreferrer" className="hover:text-slate-400 transition-colors">Documentation</a>
+            <a href="https://github.com/eric861129/SKILLS_All-in-one" target="_blank" rel="noopener noreferrer" className="hover:text-slate-400 transition-colors">GitHub</a>
+            <a href="https://github.com/eric861129/SKILLS_All-in-one/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener noreferrer" className="hover:text-slate-400 transition-colors">{language === 'zh' ? '如何貢獻' : 'Contributing'}</a>
+          </div>
         </div>
       </footer>
 
@@ -278,7 +405,20 @@ function App() {
           onDownload={() => handleDownload(selectedSkill)}
         />
       )}
+
+      {/* Scroll to Top */}
+      <ScrollToTop />
     </div>
+  )
+}
+
+// ─── 主 App (路由) ────────────────────────────────
+function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/skill/:id" element={<SkillPage />} />
+    </Routes>
   )
 }
 
