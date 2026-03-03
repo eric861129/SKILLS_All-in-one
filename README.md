@@ -1,73 +1,103 @@
-# React + TypeScript + Vite
+# SKILLS All-in-one
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**SKILLS All-in-one** 是一個專為 AI Agent 與開發者打造的高品質技能 (AI Skills) 展示、檢索與下載整合平台。我們致力於建立一個美觀、高效且易於擴展的技能庫，幫助開發者一鍵強化其 AI Agent 的能力。
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌟 核心特色
 
-## React Compiler
+- **海量資源**：收錄超過 100 個涵蓋開發、文件處理、數據分析、創意設計等領域的 AI 技能。
+- **精準搜索**：整合 `Fuse.js` 模糊搜尋技術，支援對技能名稱、說明與標籤進行加權檢索。
+- **靈活過濾**：提供多維度的分類標籤與排序系統（最熱門 / 最新進），快速定位所需工具。
+- **一鍵打包**：實作 `JSZip` 技術，支援將多個技能檔案自動打包成 `.zip` 格式，實現無縫下載。
+- **極致體驗**：遵循 **OilOil UI/UX Guide**，採用現代極簡美學，拒絕「AI Slop」，提供沉浸式的瀏覽環境。
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ 技術棧 (Tech Stack)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### 前端 (Frontend)
+- **Framework**: React 18 (Vite)
+- **Styling**: Tailwind CSS (遵循反 Slop 設計規範)
+- **Icons**: Lucide Icons (嚴禁 Emoji 作為 UI 圖標)
+- **Search**: Fuse.js (前端模糊檢索)
+- **Utilities**: JSZip (多檔案打包)
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### 後端與資料 (Backend & Data)
+- **Backend Bridge**: Cloudflare Workers (處理 CORS、API 路由與資料轉發)
+- **Database**: Turso (SQLite) - 儲存技能元資料與下載計數。
+- **Hosting**: GitHub Pages + Custom Domain ([huangchiyu.com](https://huangchiyu.com))
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 📜 開發規範與哲學
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+本專案不僅是一個工具庫，更是一套工程實踐的體現：
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### 1. 內部能力規範 (Elite 10 Policy)
+為了保持開發環境純淨並優化 AI 上下文的使用，`.gemini/skills/` 僅保留 **10+1** 個核心精選技能，確保開發者在與 Agent 協作時能獲得最高效的響應。
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### 2. UI/UX 設計原則 (OilOil Guide)
+- **極簡主義**：優先使用空白、精緻的邊框與清晰的字體層級（Typography）建立視覺導向。
+- **專業感**：嚴禁使用 Emoji 作為功能圖標；避免過度飽和的漸層與通用的預設字體。
+- **響應式設計**：針對行動端深度優化，包含可捲動的分類列與緊湊的佈局邏輯。
+
+---
+
+## 📂 目錄結構映射
+
+技能檔案的存放必須與程式碼中的元資料嚴格對應：
+- **公共技能路徑**：`public/SKILLS/{Category}/{FolderName}/`
+- **對應元資料**：`src/data/skills.ts`
+
+---
+
+## 🚀 快速開始
+
+### 環境要求
+- Node.js 18+
+- npm 或 pnpm
+
+### 安裝步驟
+1. **複製專案**
+   ```bash
+   git clone https://github.com/eric861129/SKILLS_All-in-one.git
+   cd SKILLS_All-in-one
+   ```
+
+2. **安裝依賴**
+   ```bash
+   npm install
+   ```
+
+3. **啟動開發伺服器**
+   ```bash
+   npm run dev
+   ```
+
+---
+
+## 🌐 API 參考
+
+我們使用 Cloudflare Workers 作為後端橋接器：
+- **GET** `/skills`：獲取所有技能列表。
+- **POST** `/increment-download?id={id}`：更新特定技能的下載計數。
+
+---
+
+## 📈 專案進度 (Roadmap)
+
+- [x] **Phase 1**：基礎建設與內部技能環境搭建。
+- [x] **Phase 2**：核心組件實作與 100+ 技能元資料建檔。
+- [x] **Phase 3**：Fuse.js 全域搜尋與分類過濾邏輯。
+- [x] **Phase 4**：排序系統切換與行動端體驗優化。
+- [ ] **Phase 5**：整合下載計數 API 回饋與 GitHub Actions 自動化部署。
+
+---
+
+## 👤 作者
+**Eric Huang (黃祈豫)**  
+- Website: [huangchiyu.com](https://huangchiyu.com)
+- GitHub: [@eric861129](https://github.com/eric861129)
+
+© 2026 SKILLS All-in-one · Built with passion for the AI community.
