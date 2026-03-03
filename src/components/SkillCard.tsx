@@ -3,6 +3,7 @@ import type { Skill, SkillCategory } from '../types/skill';
 import { useLanguage } from '../hooks/useLanguage';
 
 const GITHUB_REPO_ROOT = 'https://github.com/eric861129/SKILLS_All-in-one/tree/main/public/SKILLS';
+const MAX_VISIBLE_TAGS = 3;
 
 interface SkillCardProps {
   skill: Skill;
@@ -15,7 +16,6 @@ export const SkillCard = ({ skill, onDownload, onPreview }: SkillCardProps) => {
 
   const handleViewGithub = (e: React.MouseEvent) => {
     e.stopPropagation();
-    // 優先使用原作者連結，若無則跳轉至本 Repo 位置
     const url = skill.githubUrl || `${GITHUB_REPO_ROOT}/${encodeURIComponent(skill.category)}/${encodeURIComponent(skill.source)}`;
     window.open(url, '_blank');
   };
@@ -41,15 +41,17 @@ export const SkillCard = ({ skill, onDownload, onPreview }: SkillCardProps) => {
     }
   };
 
-  // 根據語系選擇顯示內容，中文模式下保留原名對照
   const displayName = language === 'zh' && skill.nameZh
     ? (skill.nameZh.includes(skill.name) ? skill.nameZh : `${skill.nameZh} (${skill.name})`)
     : skill.name;
   const displayDescription = language === 'zh' && skill.descriptionZh ? skill.descriptionZh : skill.description;
 
+  const visibleTags = skill.tags?.slice(0, MAX_VISIBLE_TAGS) || [];
+  const hiddenTagCount = (skill.tags?.length || 0) - MAX_VISIBLE_TAGS;
+
   return (
     <div
-      className="bg-slate-900 border border-slate-800 rounded-2xl p-6 hover:border-blue-500/50 transition-all group flex flex-col h-full shadow-lg hover:shadow-blue-500/10 cursor-pointer"
+      className="bg-slate-900 border border-slate-800 rounded-2xl p-6 hover:border-slate-700 transition-all duration-[var(--duration-normal)] group flex flex-col h-full hover:-translate-y-0.5 hover:shadow-xl hover:shadow-slate-900/50 cursor-pointer active:scale-[0.98]"
       onClick={() => onPreview?.()}
     >
       <div className="flex justify-between items-start mb-4">
@@ -62,7 +64,7 @@ export const SkillCard = ({ skill, onDownload, onPreview }: SkillCardProps) => {
         </span>
       </div>
 
-      <h3 className="text-xl font-bold text-slate-100 mb-2 group-hover:text-blue-400 transition-colors">
+      <h3 className="text-xl font-bold text-slate-100 mb-2 group-hover:text-blue-400 transition-colors duration-[var(--duration-normal)]">
         {displayName}
       </h3>
 
@@ -71,12 +73,17 @@ export const SkillCard = ({ skill, onDownload, onPreview }: SkillCardProps) => {
       </p>
 
       <div className="flex flex-wrap gap-2 mb-6">
-        {skill.tags?.map((tag) => (
+        {visibleTags.map((tag) => (
           <span key={tag} className="flex items-center gap-1 text-[10px] uppercase tracking-widest text-slate-500 bg-slate-800/50 px-2 py-0.5 rounded border border-slate-700/50">
             <Tag className="w-2.5 h-2.5" />
             {tag}
           </span>
         ))}
+        {hiddenTagCount > 0 && (
+          <span className="text-[10px] text-slate-600 bg-slate-800/30 px-2 py-0.5 rounded border border-slate-700/30 font-mono">
+            +{hiddenTagCount}
+          </span>
+        )}
       </div>
 
       <div className="flex items-center justify-between mt-auto pt-4 border-t border-slate-800/50">
@@ -87,14 +94,14 @@ export const SkillCard = ({ skill, onDownload, onPreview }: SkillCardProps) => {
           </span>
           <span className="text-xs text-slate-500 font-medium flex items-center gap-1.5">
             <Download className="w-3.5 h-3.5 text-blue-500/70" />
-            {(skill.downloadCount || 0).toLocaleString()}
+            <span className="font-mono">{(skill.downloadCount || 0).toLocaleString()}</span>
           </span>
         </div>
 
         <div className="flex gap-2">
           <button
             onClick={handleViewGithub}
-            className="bg-slate-800 hover:bg-slate-700 text-slate-300 p-2.5 rounded-xl transition-all active:scale-95 border border-slate-700 hover:border-slate-500 flex items-center gap-2 px-3"
+            className="bg-slate-800 hover:bg-slate-700 text-slate-300 p-2.5 rounded-xl transition-all duration-[var(--duration-fast)] active:scale-95 border border-slate-700 hover:border-slate-600 flex items-center gap-2 px-3"
             title={skill.githubUrl ? t('originalSource') : t('viewInRepo')}
           >
             <Github className="w-5 h-5" />
@@ -106,7 +113,7 @@ export const SkillCard = ({ skill, onDownload, onPreview }: SkillCardProps) => {
               e.stopPropagation();
               onDownload?.();
             }}
-            className="bg-blue-600 hover:bg-blue-500 text-white p-2.5 rounded-xl transition-all active:scale-95 shadow-lg shadow-blue-600/20 flex items-center gap-2 px-4"
+            className="bg-blue-600 hover:bg-blue-500 text-white p-2.5 rounded-xl transition-all duration-[var(--duration-fast)] active:scale-95 shadow-lg shadow-blue-600/20 hover:shadow-blue-500/30 flex items-center gap-2 px-4"
             title={t('download')}
           >
             <Download className="w-5 h-5" />
