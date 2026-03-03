@@ -206,7 +206,7 @@ const HomePage = () => {
                 <X className="w-5 h-5" />
               </button>
             ) : (
-              <kbd className="hidden md:inline-flex items-center px-2 py-0.5 text-[10px] font-mono text-slate-600 bg-slate-800/50 border border-slate-700/50 rounded-md">
+              <kbd className="max-md:hidden inline-flex items-center px-2 py-0.5 text-[10px] font-mono text-slate-600 bg-slate-800/50 border border-slate-700/50 rounded-md">
                 /
               </kbd>
             )}

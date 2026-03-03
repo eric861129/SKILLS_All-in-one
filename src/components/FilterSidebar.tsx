@@ -98,13 +98,13 @@ export const FilterSidebar = ({
                                 key={author}
                                 onClick={() => onToggleAuthor(author)}
                                 className={`w-full flex items-center gap-2 px-2 py-1.5 rounded-lg text-left transition-colors ${selectedAuthors.includes(author)
-                                        ? 'bg-blue-500/10 text-blue-400'
-                                        : 'text-slate-400 hover:bg-slate-800/50 hover:text-slate-200'
+                                    ? 'bg-blue-500/10 text-blue-400'
+                                    : 'text-slate-400 hover:bg-slate-800/50 hover:text-slate-200'
                                     }`}
                             >
                                 <div className={`w-3.5 h-3.5 rounded border flex items-center justify-center shrink-0 ${selectedAuthors.includes(author)
-                                        ? 'bg-blue-500 border-blue-500'
-                                        : 'border-slate-600'
+                                    ? 'bg-blue-500 border-blue-500'
+                                    : 'border-slate-600'
                                     }`}>
                                     {selectedAuthors.includes(author) && (
                                         <svg className="w-2.5 h-2.5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
@@ -157,13 +157,13 @@ export const FilterSidebar = ({
                                 key={tag}
                                 onClick={() => onToggleTag(tag)}
                                 className={`w-full flex items-center gap-2 px-2 py-1.5 rounded-lg text-left transition-colors ${selectedTags.includes(tag)
-                                        ? 'bg-emerald-500/10 text-emerald-400'
-                                        : 'text-slate-400 hover:bg-slate-800/50 hover:text-slate-200'
+                                    ? 'bg-emerald-500/10 text-emerald-400'
+                                    : 'text-slate-400 hover:bg-slate-800/50 hover:text-slate-200'
                                     }`}
                             >
                                 <div className={`w-3.5 h-3.5 rounded border flex items-center justify-center shrink-0 ${selectedTags.includes(tag)
-                                        ? 'bg-emerald-500 border-emerald-500'
-                                        : 'border-slate-600'
+                                    ? 'bg-emerald-500 border-emerald-500'
+                                    : 'border-slate-600'
                                     }`}>
                                     {selectedTags.includes(tag) && (
                                         <svg className="w-2.5 h-2.5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
@@ -210,7 +210,7 @@ export const FilterSidebar = ({
     return (
         <>
             {/* 桌面端：固定側欄 */}
-            <aside className="hidden md:flex w-[260px] shrink-0 border-r border-slate-800 bg-slate-900/50 flex-col h-full">
+            <aside className="flex max-md:hidden w-[260px] shrink-0 border-r border-slate-800 bg-slate-900/50 flex-col h-full">
                 {sidebarContent}
             </aside>
 
