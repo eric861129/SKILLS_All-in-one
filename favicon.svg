@@ -1,0 +1,5 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="32" height="32" rx="8" fill="#0F172A"/>
+  <text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle" fill="#60A5FA" font-family="sans-serif" font-weight="900" font-size="8">SKILLS</text>
+  <path d="M4 24L28 24" stroke="#60A5FA" stroke-width="1" stroke-linecap="round" opacity="0.3"/>
+</svg>
