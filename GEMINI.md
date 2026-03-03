@@ -8,18 +8,19 @@
 建立一個美觀、高效且易於擴展的 AI 技能庫，支援開發者一鍵下載打包好的 Agent 技能，並提供完整的前端檢索與排序功能。
 
 ## 🛠️ 技術棧 (Tech Stack)
-- **Frontend**: React 18 (Vite) + Tailwind CSS + Lucide Icons.
+- **Frontend**: React 19 (Vite) + Tailwind CSS 4 + Lucide Icons + React Router DOM.
 - **Backend Bridge**: Cloudflare Workers (CORS 處理與資料轉發).
 - **Database**: Turso (SQLite) - 儲存技能元資料與下載計數。
 - **Hosting**: GitHub Pages + Custom Domain (huangchiyu.com).
 - **Logic**: Fuse.js (模糊搜尋) + JSZip (檔案打包).
+- **SEO**: JSON-LD 結構化資料 + Open Graph / Twitter Card + sitemap.xml.
 
 ---
 
 ## 📜 核心規範 (Mandates)
 
-### 1. 內部能力規範 (Elite 10+1 Policy)
-為了優化開發效率與上下文使用，`.gemini/skills/` 嚴格保留 **11** 個核心開發技能：
+### 1. 內部能力規範 (Elite 14 Policy)
+為了優化開發效率與上下文使用，`.agent/skills/` 保留 **14** 個核心開發技能：
 1. `using-superpowers`
 2. `oiloil-ui-ux-guide`
 3. `frontend-design`
@@ -30,7 +31,10 @@
 8. `verification-before-completion`
 9. `writing-plans`
 10. `web-artifacts-builder`
-11. `writing-skills` (核心加碼：輔助技能維護)
+11. `writing-skills` (輔助技能維護)
+12. `design-taste-frontend` (UI/UX 工程師級架構)
+13. `full-output-enforcement` (完整輸出強制)
+14. `redesign-existing-projects` (既有專案重設計)
 
 ### 2. UI/UX 設計規範 (OilOil Guide)
 - **嚴禁 Emoji**: UI 裝飾與圖標僅限使用 `Lucide` 等向量圖標。
@@ -64,9 +68,27 @@
 - [x] 配置自定義域名支持 (`CNAME`) 與 Vite 基準路徑 (`base`)。
 - [x] 優化 API 錯誤處理與載入狀態。
 
+### `Phase 6`: SEO + 開源基建 (DONE)
+- [x] 完善 `index.html` Meta 標籤 (OG / Twitter Card / description / canonical)。
+- [x] 新增 `robots.txt`、`sitemap.xml`、JSON-LD 結構化資料。
+- [x] 新增 `LICENSE` (MIT)、`CONTRIBUTING.md`、GitHub Issue/PR 模板。
+- [x] 修復 Footer 連結，新增「提交新技能」按鈕。
+- [x] README 加入 badges (Demo / License / Stars / Issues / PRs Welcome)。
+
+### `Phase 7`: 路由 + URL 同步 (DONE)
+- [x] 整合 `react-router-dom`，建立 `/` 首頁與 `/skill/:id` 獨立技能頁。
+- [x] URL Query 參數同步 (`?q=react&cat=Development&sort=Latest`)。
+- [x] 新增 `404.html` SPA 重導向 (GitHub Pages 相容)。
+- [x] 獨立技能頁含元數據卡片 + 同分類技能推薦。
+
+### `Phase 8`: UX 增強 (DONE)
+- [x] 骨架屏 Loading (SkeletonCard) 取代旋轉 spinner。
+- [x] Toast 通知系統 (下載成功/失敗回饋)。
+- [x] 回到頂部浮動按鈕 (ScrollToTop)。
+- [x] 鍵盤快捷鍵 (`/` 聚焦搜尋 + 視覺提示)。
+
 ---
 
 ## 📝 當前任務
-- 執行最後檢查：確保 `public/SKILLS/` 目錄結構與 `src/data/skills.ts` 完美契合。
-- 準備正式上線：推送程式碼觸發 GitHub Actions 部署。
-
+- 推送程式碼觸發 GitHub Actions 部署至正式環境。
+- 準備 Product Hunt / 社群推廣素材。
