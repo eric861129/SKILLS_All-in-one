@@ -7,9 +7,10 @@ const GITHUB_REPO_ROOT = 'https://github.com/eric861129/SKILLS_All-in-one/tree/m
 interface SkillCardProps {
   skill: Skill;
   onDownload?: () => void;
+  onPreview?: () => void;
 }
 
-export const SkillCard = ({ skill, onDownload }: SkillCardProps) => {
+export const SkillCard = ({ skill, onDownload, onPreview }: SkillCardProps) => {
   const { language, t } = useLanguage();
 
   const handleViewGithub = (e: React.MouseEvent) => {
@@ -41,13 +42,16 @@ export const SkillCard = ({ skill, onDownload }: SkillCardProps) => {
   };
 
   // 根據語系選擇顯示內容，中文模式下保留原名對照
-  const displayName = language === 'zh' && skill.nameZh 
+  const displayName = language === 'zh' && skill.nameZh
     ? (skill.nameZh.includes(skill.name) ? skill.nameZh : `${skill.nameZh} (${skill.name})`)
     : skill.name;
   const displayDescription = language === 'zh' && skill.descriptionZh ? skill.descriptionZh : skill.description;
 
   return (
-    <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 hover:border-blue-500/50 transition-all group flex flex-col h-full shadow-lg hover:shadow-blue-500/10">
+    <div
+      className="bg-slate-900 border border-slate-800 rounded-2xl p-6 hover:border-blue-500/50 transition-all group flex flex-col h-full shadow-lg hover:shadow-blue-500/10 cursor-pointer"
+      onClick={() => onPreview?.()}
+    >
       <div className="flex justify-between items-start mb-4">
         <span className={`px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider border ${getCategoryStyles(skill.category)}`}>
           {skill.category}
@@ -61,7 +65,7 @@ export const SkillCard = ({ skill, onDownload }: SkillCardProps) => {
       <h3 className="text-xl font-bold text-slate-100 mb-2 group-hover:text-blue-400 transition-colors">
         {displayName}
       </h3>
-      
+
       <p className="text-slate-400 text-sm mb-6 line-clamp-2 flex-grow leading-relaxed">
         {displayDescription}
       </p>
@@ -86,18 +90,18 @@ export const SkillCard = ({ skill, onDownload }: SkillCardProps) => {
             {(skill.downloadCount || 0).toLocaleString()}
           </span>
         </div>
-        
+
         <div className="flex gap-2">
-          <button 
+          <button
             onClick={handleViewGithub}
             className="bg-slate-800 hover:bg-slate-700 text-slate-300 p-2.5 rounded-xl transition-all active:scale-95 border border-slate-700 hover:border-slate-500 flex items-center gap-2 px-3"
-            title={t('viewOnGithub')}
+            title={skill.githubUrl ? t('originalSource') : t('viewInRepo')}
           >
             <Github className="w-5 h-5" />
-            <span className="text-xs font-bold">{t('viewOnGithub')}</span>
+            <span className="text-xs font-bold">{skill.githubUrl ? t('originalSource') : t('viewInRepo')}</span>
           </button>
 
-          <button 
+          <button
             onClick={(e) => {
               e.stopPropagation();
               onDownload?.();

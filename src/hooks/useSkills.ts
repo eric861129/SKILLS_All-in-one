@@ -1,4 +1,4 @@
-import { useState, useEffect, useMemo } from 'react';
+import { useState, useEffect, useMemo, useCallback } from 'react';
 import Fuse from 'fuse.js';
 import type { Skill, SkillCategory } from '../types/skill';
 import { MOCK_SKILLS } from '../data/skills';
@@ -11,11 +11,15 @@ export const useSkills = () => {
   const [allSkills, setAllSkills] = useState<Skill[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-  
+
   // 篩選與排序狀態
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState<SkillCategory | 'All'>('All');
   const [sortBy, setSortBy] = useState<SortOption>('Popular');
+
+  // 側邊欄篩選狀態
+  const [selectedAuthors, setSelectedAuthors] = useState<string[]>([]);
+  const [selectedTags, setSelectedTags] = useState<string[]>([]);
 
   const fetchSkills = async () => {
     try {
@@ -23,7 +27,7 @@ export const useSkills = () => {
       const response = await fetch(`${API_BASE_URL}/skills`);
       if (!response.ok) throw new Error('無法取得技能列表');
       const data = await response.json();
-      
+
       // 確保資料是陣列且格式正確
       if (Array.isArray(data)) {
         const sanitizedData = data.map(s => ({
@@ -74,6 +78,44 @@ export const useSkills = () => {
     return Array.from(cats).sort();
   }, [allSkills]);
 
+  // 作者帶數量 (降序) — 體現貢獻者尊重
+  const authorCounts = useMemo((): [string, number][] => {
+    const map = new Map<string, number>();
+    allSkills.forEach(s => {
+      if (s.author) map.set(s.author, (map.get(s.author) || 0) + 1);
+    });
+    return [...map.entries()].sort((a, b) => b[1] - a[1]);
+  }, [allSkills]);
+
+  // 標籤帶數量 (降序)
+  const tagCounts = useMemo((): [string, number][] => {
+    const map = new Map<string, number>();
+    allSkills.forEach(s => {
+      s.tags?.forEach(t => map.set(t, (map.get(t) || 0) + 1));
+    });
+    return [...map.entries()].sort((a, b) => b[1] - a[1]);
+  }, [allSkills]);
+
+  // 切換選取作者
+  const toggleAuthor = useCallback((author: string) => {
+    setSelectedAuthors(prev =>
+      prev.includes(author) ? prev.filter(a => a !== author) : [...prev, author]
+    );
+  }, []);
+
+  // 切換選取標籤
+  const toggleTag = useCallback((tag: string) => {
+    setSelectedTags(prev =>
+      prev.includes(tag) ? prev.filter(t => t !== tag) : [...prev, tag]
+    );
+  }, []);
+
+  // 清除所有側邊欄篩選
+  const clearSidebarFilters = useCallback(() => {
+    setSelectedAuthors([]);
+    setSelectedTags([]);
+  }, []);
+
   // Fuse.js 配置 - 新增中文搜尋支援
   const fuse = useMemo(() => {
     return new Fuse(allSkills, {
@@ -103,7 +145,7 @@ export const useSkills = () => {
     if (searchQuery.trim() && allSkills.length > 0) {
       const searchResults = fuse.search(searchQuery);
       const searchItems = searchResults.map(r => r.item);
-      
+
       if (selectedCategory !== 'All') {
         result = searchItems.filter(s => s.category === selectedCategory);
       } else {
@@ -111,7 +153,17 @@ export const useSkills = () => {
       }
     }
 
-    // 3. 排序邏輯
+    // 3. 作者篩選
+    if (selectedAuthors.length > 0) {
+      result = result.filter(s => selectedAuthors.includes(s.author));
+    }
+
+    // 4. 標籤篩選 (OR 邏輯：取聯集)
+    if (selectedTags.length > 0) {
+      result = result.filter(s => s.tags?.some(t => selectedTags.includes(t)));
+    }
+
+    // 5. 排序邏輯
     if (sortBy === 'Popular') {
       result.sort((a, b) => (b.downloadCount || 0) - (a.downloadCount || 0));
     } else if (sortBy === 'Latest') {
@@ -123,12 +175,12 @@ export const useSkills = () => {
     }
 
     return result;
-  }, [allSkills, searchQuery, selectedCategory, sortBy, fuse]);
+  }, [allSkills, searchQuery, selectedCategory, selectedAuthors, selectedTags, sortBy, fuse]);
 
-  return { 
-    skills: filteredSkills, 
-    loading, 
-    error, 
+  return {
+    skills: filteredSkills,
+    loading,
+    error,
     categories,
     searchQuery,
     setSearchQuery,
@@ -136,7 +188,15 @@ export const useSkills = () => {
     setSelectedCategory,
     sortBy,
     setSortBy,
-    incrementDownload, 
-    refresh: fetchSkills 
+    // 側邊欄篩選
+    authorCounts,
+    tagCounts,
+    selectedAuthors,
+    selectedTags,
+    toggleAuthor,
+    toggleTag,
+    clearSidebarFilters,
+    incrementDownload,
+    refresh: fetchSkills
   };
 };
