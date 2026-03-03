@@ -22,7 +22,7 @@
 
 ## 資料庫設計擴充 (TODO)
 - [ ] 執行 SQL 增加 `category` 與 `tags` 欄位。
-- [ ] 初始化基礎資料集。
+- [x] 初始化基礎資料集。
 
 ## 實作進度 (TODO)
 - [x] `Phase 1`: 初始化 Vite 專案並設定 Tailwind CSS。
