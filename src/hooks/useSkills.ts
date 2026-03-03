@@ -1,6 +1,6 @@
 import { useState, useEffect, useMemo } from 'react';
 import Fuse from 'fuse.js';
-import { Skill, SkillCategory } from '../types/skill';
+import type { Skill, SkillCategory } from '../types/skill';
 import { MOCK_SKILLS } from '../data/skills';
 
 const API_BASE_URL = 'https://skill-proxy-api.iamhandsomeboy1129.workers.dev';

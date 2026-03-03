@@ -1,4 +1,4 @@
-import { Skill } from '../types/skill';
+import type { Skill } from '../types/skill';
 
 export const MOCK_SKILLS: Skill[] = [
   // Document Skills

@@ -1,5 +1,5 @@
 import { Download, Tag, User, Calendar } from 'lucide-react';
-import { Skill, SkillCategory } from '../types/skill';
+import type { Skill, SkillCategory } from '../types/skill';
 
 interface SkillCardProps {
   skill: Skill;

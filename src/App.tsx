@@ -1,8 +1,8 @@
 import { Terminal, Search, Loader2, Filter, X, Flame, Clock, ArrowUpDown } from 'lucide-react';
-import { useSkills, SortOption } from './hooks/useSkills';
+import { useSkills } from './hooks/useSkills';
 import { SkillCard } from './components/SkillCard';
 import { downloadAndZipSkill } from './utils/downloadSkill';
-import { Skill } from './types/skill';
+import type { Skill } from './types/skill';
 
 function App() {
   const { 

@@ -1,5 +1,5 @@
 import JSZip from 'jszip';
-import { Skill } from '../types/skill';
+import type { Skill } from '../types/skill';
 
 /**
  * 下載並打包 Skill 檔案
