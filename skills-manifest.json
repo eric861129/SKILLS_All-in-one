@@ -1232,12 +1232,6 @@
       "scripts/utils.py"
     ]
   },
-  "skill-master": {
-    "category": "Utility & Automation",
-    "files": [
-      "SKILL.md"
-    ]
-  },
   "subagent-driven-development": {
     "category": "Utility & Automation",
     "files": [
