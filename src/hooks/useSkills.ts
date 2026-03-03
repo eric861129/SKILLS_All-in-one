@@ -23,8 +23,21 @@ export const useSkills = () => {
       const response = await fetch(`${API_BASE_URL}/skills`);
       if (!response.ok) throw new Error('無法取得技能列表');
       const data = await response.json();
-      setAllSkills(data);
+      
+      // 確保資料是陣列且格式正確
+      if (Array.isArray(data)) {
+        const sanitizedData = data.map(s => ({
+          ...s,
+          source: s.source || s.folderName, // 映射 folderName 到 source
+          tags: Array.isArray(s.tags) ? s.tags : (typeof s.tags === 'string' ? JSON.parse(s.tags) : []),
+          downloadCount: Number(s.downloadCount) || 0
+        }));
+        setAllSkills(sanitizedData);
+      } else {
+        setAllSkills(MOCK_SKILLS);
+      }
     } catch (err: any) {
+      console.error('Fetch error:', err);
       setError(err.message);
       // 降級使用本地資料 (預設排序)
       const sortedMock = [...MOCK_SKILLS].sort((a, b) => b.downloadCount - a.downloadCount);
@@ -36,7 +49,7 @@ export const useSkills = () => {
 
   const incrementDownload = async (id: number) => {
     // 樂觀更新
-    setAllSkills(prev => prev.map(s => s.id === id ? { ...s, downloadCount: s.downloadCount + 1 } : s));
+    setAllSkills(prev => prev.map(s => s.id === id ? { ...s, downloadCount: (s.downloadCount || 0) + 1 } : s));
 
     try {
       await fetch(`${API_BASE_URL}/increment-download?id=${id}`, { method: 'POST' });
@@ -51,15 +64,23 @@ export const useSkills = () => {
 
   // 計算所有可用的分類
   const categories = useMemo(() => {
+    if (!allSkills.length) return [];
     const cats = new Set<SkillCategory>();
-    allSkills.forEach(s => cats.add(s.category));
+    allSkills.forEach(s => {
+      if (s.category) cats.add(s.category);
+    });
     return Array.from(cats).sort();
   }, [allSkills]);
 
-  // Fuse.js 配置
+  // Fuse.js 配置 - 新增作者搜尋並優化權重
   const fuse = useMemo(() => {
     return new Fuse(allSkills, {
-      keys: ['name', 'description', 'tags'],
+      keys: [
+        { name: 'name', weight: 1.0 },
+        { name: 'tags', weight: 0.8 },
+        { name: 'author', weight: 0.6 },
+        { name: 'description', weight: 0.4 }
+      ],
       threshold: 0.3,
       distance: 100,
     });
@@ -75,7 +96,7 @@ export const useSkills = () => {
     }
 
     // 2. 關鍵字搜尋
-    if (searchQuery.trim()) {
+    if (searchQuery.trim() && allSkills.length > 0) {
       const searchResults = fuse.search(searchQuery);
       const searchItems = searchResults.map(r => r.item);
       
@@ -88,9 +109,13 @@ export const useSkills = () => {
 
     // 3. 排序邏輯
     if (sortBy === 'Popular') {
-      result.sort((a, b) => b.downloadCount - a.downloadCount);
+      result.sort((a, b) => (b.downloadCount || 0) - (a.downloadCount || 0));
     } else if (sortBy === 'Latest') {
-      result.sort((a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime());
+      result.sort((a, b) => {
+        const dateA = a.createdAt ? new Date(a.createdAt).getTime() : 0;
+        const dateB = b.createdAt ? new Date(b.createdAt).getTime() : 0;
+        return dateB - dateA;
+      });
     }
 
     return result;

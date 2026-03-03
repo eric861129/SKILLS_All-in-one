@@ -15,12 +15,12 @@ export type SkillCategory =
 export interface Skill {
   id: number;
   name: string;
-  description: string;
   author: string;
-  category: SkillCategory;
-  tags: string[];
+  description: string;
+  source: string; // 對應資料庫中的 source 欄位 (原 folderName)
   downloadCount: number;
   createdAt: string;
-  version: string;
-  folderName: string;
+  category: SkillCategory;
+  tags: string[];
+  version?: string;
 }

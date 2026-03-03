@@ -1,0 +1,40 @@
+name: Update Skills Manifest
+
+on:
+  push:
+    paths:
+      - 'public/SKILLS/**'
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-manifest:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Generate Manifest
+        run: node scripts/generate-manifest.js
+
+      - name: Commit and Push changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: update skills-manifest.json [skip ci]"
+          file_pattern: 'public/skills-manifest.json'
+          branch: main

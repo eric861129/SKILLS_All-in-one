@@ -49,7 +49,7 @@ export const SkillCard = ({ skill, onDownload }: SkillCardProps) => {
       </p>
 
       <div className="flex flex-wrap gap-2 mb-6">
-        {skill.tags.map((tag) => (
+        {skill.tags?.map((tag) => (
           <span key={tag} className="flex items-center gap-1 text-[10px] uppercase tracking-widest text-slate-500 bg-slate-800/50 px-2 py-0.5 rounded border border-slate-700/50">
             <Tag className="w-2.5 h-2.5" />
             {tag}
@@ -65,7 +65,7 @@ export const SkillCard = ({ skill, onDownload }: SkillCardProps) => {
           </span>
           <span className="text-xs text-slate-400 font-medium flex items-center gap-1.5">
             <Download className="w-3.5 h-3.5 text-blue-500" />
-            {skill.downloadCount.toLocaleString()}
+            {(skill.downloadCount || 0).toLocaleString()}
           </span>
         </div>
         

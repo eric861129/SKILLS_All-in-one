@@ -1,18 +1,16 @@
 import type { Skill } from '../types/skill';
 
 export const MOCK_SKILLS: Skill[] = [
-  // Document Skills
   {
     id: 1,
     name: 'docx',
-    description: 'Create, edit, analyze Word docs with tracked changes, comments, formatting.',
+    description: 'Read, extract, and manipulate Word documents.',
     author: 'Anthropic',
     category: 'Document Skills',
-    tags: ['Document', 'Word', 'Editing'],
-    downloadCount: 120,
+    tags: ['Document', 'Word', 'Extraction'],
+    downloadCount: 450,
     createdAt: '2025-01-01',
-    version: '1.0.0',
-    folderName: 'docx'
+    source: 'docx'
   },
   {
     id: 2,
@@ -23,8 +21,7 @@ export const MOCK_SKILLS: Skill[] = [
     tags: ['Document', 'PDF', 'Extraction'],
     downloadCount: 340,
     createdAt: '2025-01-05',
-    version: '1.0.0',
-    folderName: 'pdf'
+    source: 'pdf'
   },
   {
     id: 3,
@@ -35,8 +32,7 @@ export const MOCK_SKILLS: Skill[] = [
     tags: ['Document', 'PowerPoint', 'Slides'],
     downloadCount: 210,
     createdAt: '2025-01-10',
-    version: '1.0.0',
-    folderName: 'pptx'
+    source: 'pptx'
   },
   {
     id: 4,
@@ -47,8 +43,7 @@ export const MOCK_SKILLS: Skill[] = [
     tags: ['Document', 'Excel', 'Data'],
     downloadCount: 450,
     createdAt: '2025-01-15',
-    version: '1.0.0',
-    folderName: 'xlsx'
+    source: 'xlsx'
   },
   {
     id: 5,
@@ -59,8 +54,7 @@ export const MOCK_SKILLS: Skill[] = [
     tags: ['Presentation', 'Reveal.js', 'HTML'],
     downloadCount: 180,
     createdAt: '2025-02-01',
-    version: '1.0.0',
-    folderName: 'revealjs-skill'
+    source: 'revealjs-skill'
   },
   // Development & Code Tools
   {
@@ -72,8 +66,7 @@ export const MOCK_SKILLS: Skill[] = [
     tags: ['React', 'Tailwind', 'Artifacts'],
     downloadCount: 890,
     createdAt: '2025-01-20',
-    version: '1.1.0',
-    folderName: 'web-artifacts-builder'
+    source: 'web-artifacts-builder'
   },
   {
     id: 7,
@@ -84,8 +77,7 @@ export const MOCK_SKILLS: Skill[] = [
     tags: ['TDD', 'Testing', 'Quality'],
     downloadCount: 560,
     createdAt: '2025-01-25',
-    version: '1.0.0',
-    folderName: 'test-driven-development'
+    source: 'test-driven-development'
   },
   {
     id: 8,
@@ -96,8 +88,7 @@ export const MOCK_SKILLS: Skill[] = [
     tags: ['Starter', 'Configuration', 'Template'],
     downloadCount: 1200,
     createdAt: '2025-02-10',
-    version: '1.5.0',
-    folderName: 'claude-starter'
+    source: 'claude-starter'
   },
   {
     id: 14,
@@ -108,8 +99,7 @@ export const MOCK_SKILLS: Skill[] = [
     tags: ['Angular', 'Signals', 'Architecture'],
     downloadCount: 420,
     createdAt: '2025-02-25',
-    version: '1.0.0',
-    folderName: 'angular-architect'
+    source: 'angular-architect'
   },
   {
     id: 15,
@@ -120,8 +110,7 @@ export const MOCK_SKILLS: Skill[] = [
     tags: ['API', 'OpenAPI', 'Design'],
     downloadCount: 680,
     createdAt: '2025-02-26',
-    version: '1.0.0',
-    folderName: 'api-designer'
+    source: 'api-designer'
   },
   {
     id: 16,
@@ -132,8 +121,7 @@ export const MOCK_SKILLS: Skill[] = [
     tags: ['System Design', 'ADR', 'Scalability'],
     downloadCount: 530,
     createdAt: '2025-02-27',
-    version: '1.0.0',
-    folderName: 'architecture-designer'
+    source: 'architecture-designer'
   },
   {
     id: 17,
@@ -144,8 +132,7 @@ export const MOCK_SKILLS: Skill[] = [
     tags: ['CLI', 'Terminal', 'DX'],
     downloadCount: 310,
     createdAt: '2025-03-01',
-    version: '1.0.0',
-    folderName: 'cli-developer'
+    source: 'cli-developer'
   },
   {
     id: 36,
@@ -156,8 +143,7 @@ export const MOCK_SKILLS: Skill[] = [
     tags: ['Embedded', 'Firmware', 'RTOS'],
     downloadCount: 280,
     createdAt: '2025-03-03',
-    version: '1.0.0',
-    folderName: 'embedded-systems'
+    source: 'embedded-systems'
   },
   {
     id: 38,
@@ -168,8 +154,7 @@ export const MOCK_SKILLS: Skill[] = [
     tags: ['Python', 'FastAPI', 'Async'],
     downloadCount: 450,
     createdAt: '2025-03-03',
-    version: '1.0.0',
-    folderName: 'fastapi-expert'
+    source: 'fastapi-expert'
   },
   {
     id: 42,
@@ -180,8 +165,7 @@ export const MOCK_SKILLS: Skill[] = [
     tags: ['Flutter', 'Dart', 'Mobile'],
     downloadCount: 310,
     createdAt: '2025-03-03',
-    version: '1.0.0',
-    folderName: 'flutter-expert'
+    source: 'flutter-expert'
   },
   {
     id: 43,
@@ -192,8 +176,7 @@ export const MOCK_SKILLS: Skill[] = [
     tags: ['Frontend', 'UI', 'Aesthetics'],
     downloadCount: 720,
     createdAt: '2025-03-03',
-    version: '1.0.0',
-    folderName: 'frontend-design'
+    source: 'frontend-design'
   },
   {
     id: 44,
@@ -204,8 +187,7 @@ export const MOCK_SKILLS: Skill[] = [
     tags: ['Fullstack', 'Security', 'API'],
     downloadCount: 580,
     createdAt: '2025-03-03',
-    version: '1.0.0',
-    folderName: 'fullstack-guardian'
+    source: 'fullstack-guardian'
   },
   {
     id: 46,
@@ -216,8 +198,7 @@ export const MOCK_SKILLS: Skill[] = [
     tags: ['Go', 'Concurrency', 'Microservices'],
     downloadCount: 390,
     createdAt: '2025-03-03',
-    version: '1.0.0',
-    folderName: 'golang-pro'
+    source: 'golang-pro'
   },
   {
     id: 47,
@@ -228,8 +209,7 @@ export const MOCK_SKILLS: Skill[] = [
     tags: ['GraphQL', 'Apollo', 'Federation'],
     downloadCount: 410,
     createdAt: '2025-03-03',
-    version: '1.0.0',
-    folderName: 'graphql-architect'
+    source: 'graphql-architect'
   },
   {
     id: 49,
@@ -240,8 +220,7 @@ export const MOCK_SKILLS: Skill[] = [
     tags: ['Java', 'Spring Boot', 'Enterprise'],
     downloadCount: 340,
     createdAt: '2025-03-03',
-    version: '1.0.0',
-    folderName: 'java-architect'
+    source: 'java-architect'
   },
   {
     id: 50,
@@ -252,8 +231,7 @@ export const MOCK_SKILLS: Skill[] = [
     tags: ['PHP', 'Laravel', 'Symfony'],
     downloadCount: 260,
     createdAt: '2025-03-03',
-    version: '1.0.0',
-    folderName: 'php-pro'
+    source: 'php-pro'
   },
   {
     id: 51,
@@ -264,8 +242,7 @@ export const MOCK_SKILLS: Skill[] = [
     tags: ['Python', 'Async', 'Type Safety'],
     downloadCount: 480,
     createdAt: '2025-03-03',
-    version: '1.0.0',
-    folderName: 'python-pro'
+    source: 'python-pro'
   },
   {
     id: 52,
@@ -276,8 +253,7 @@ export const MOCK_SKILLS: Skill[] = [
     tags: ['Rails', 'Ruby', 'Hotwire'],
     downloadCount: 310,
     createdAt: '2025-03-03',
-    version: '1.0.0',
-    folderName: 'rails-expert'
+    source: 'rails-expert'
   },
   {
     id: 53,
@@ -288,8 +264,7 @@ export const MOCK_SKILLS: Skill[] = [
     tags: ['React', 'Hooks', 'TypeScript'],
     downloadCount: 920,
     createdAt: '2025-03-03',
-    version: '1.0.0',
-    folderName: 'react-expert'
+    source: 'react-expert'
   },
   {
     id: 54,
@@ -300,8 +275,7 @@ export const MOCK_SKILLS: Skill[] = [
     tags: ['React Native', 'Expo', 'Mobile'],
     downloadCount: 380,
     createdAt: '2025-03-03',
-    version: '1.0.0',
-    folderName: 'react-native-expert'
+    source: 'react-native-expert'
   },
   {
     id: 55,
@@ -312,8 +286,7 @@ export const MOCK_SKILLS: Skill[] = [
     tags: ['Code Review', 'Workflow', 'Quality'],
     downloadCount: 210,
     createdAt: '2025-03-03',
-    version: '1.0.0',
-    folderName: 'receiving-code-review'
+    source: 'receiving-code-review'
   },
   {
     id: 56,
@@ -324,8 +297,7 @@ export const MOCK_SKILLS: Skill[] = [
     tags: ['Code Review', 'Verification', 'Workflow'],
     downloadCount: 240,
     createdAt: '2025-03-03',
-    version: '1.0.0',
-    folderName: 'requesting-code-review'
+    source: 'requesting-code-review'
   },
   {
     id: 70,
@@ -336,8 +308,7 @@ export const MOCK_SKILLS: Skill[] = [
     tags: ['Rust', 'Systems', 'Performance'],
     downloadCount: 310,
     createdAt: '2025-03-03',
-    version: '1.0.0',
-    folderName: 'rust-engineer'
+    source: 'rust-engineer'
   },
   {
     id: 71,
@@ -348,8 +319,7 @@ export const MOCK_SKILLS: Skill[] = [
     tags: ['Salesforce', 'Apex', 'CRM'],
     downloadCount: 280,
     createdAt: '2025-03-03',
-    version: '1.0.0',
-    folderName: 'salesforce-developer'
+    source: 'salesforce-developer'
   },
   {
     id: 72,
@@ -360,8 +330,7 @@ export const MOCK_SKILLS: Skill[] = [
     tags: ['Shopify', 'Liquid', 'E-commerce'],
     downloadCount: 340,
     createdAt: '2025-03-03',
-    version: '1.0.0',
-    folderName: 'shopify-expert'
+    source: 'shopify-expert'
   },
   {
     id: 73,
@@ -372,8 +341,7 @@ export const MOCK_SKILLS: Skill[] = [
     tags: ['Reverse Engineering', 'Documentation', 'Legacy'],
     downloadCount: 290,
     createdAt: '2025-03-03',
-    version: '1.0.0',
-    folderName: 'spec-miner'
+    source: 'spec-miner'
   },
   {
     id: 74,
@@ -384,8 +352,7 @@ export const MOCK_SKILLS: Skill[] = [
     tags: ['Spring Boot', 'Java', 'Backend'],
     downloadCount: 410,
     createdAt: '2025-03-03',
-    version: '1.0.0',
-    folderName: 'spring-boot-engineer'
+    source: 'spring-boot-engineer'
   },
   // Data & Analysis
   {
@@ -397,8 +364,7 @@ export const MOCK_SKILLS: Skill[] = [
     tags: ['CSV', 'Data', 'Summary'],
     downloadCount: 720,
     createdAt: '2025-01-30',
-    version: '1.0.2',
-    folderName: 'csv-data-summarizer'
+    source: 'csv-data-summarizer'
   },
   {
     id: 10,
@@ -409,8 +375,7 @@ export const MOCK_SKILLS: Skill[] = [
     tags: ['SQL', 'PostgreSQL', 'Database'],
     downloadCount: 610,
     createdAt: '2025-02-05',
-    version: '1.0.0',
-    folderName: 'postgres'
+    source: 'postgres'
   },
   {
     id: 29,
@@ -421,8 +386,7 @@ export const MOCK_SKILLS: Skill[] = [
     tags: ['Database', 'SQL', 'Optimization'],
     downloadCount: 370,
     createdAt: '2025-03-03',
-    version: '1.0.0',
-    folderName: 'database-optimizer'
+    source: 'database-optimizer'
   },
   {
     id: 40,
@@ -433,8 +397,7 @@ export const MOCK_SKILLS: Skill[] = [
     tags: ['LLM', 'AI', 'ML'],
     downloadCount: 520,
     createdAt: '2025-03-03',
-    version: '1.0.0',
-    folderName: 'fine-tuning-expert'
+    source: 'fine-tuning-expert'
   },
   {
     id: 57,
@@ -445,8 +408,7 @@ export const MOCK_SKILLS: Skill[] = [
     tags: ['PostgreSQL', 'SQL', 'Optimization'],
     downloadCount: 310,
     createdAt: '2025-03-03',
-    version: '1.0.0',
-    folderName: 'postgres-pro'
+    source: 'postgres-pro'
   },
   {
     id: 58,
@@ -457,8 +419,7 @@ export const MOCK_SKILLS: Skill[] = [
     tags: ['RAG', 'Vector DB', 'AI'],
     downloadCount: 450,
     createdAt: '2025-03-03',
-    version: '1.0.0',
-    folderName: 'rag-architect'
+    source: 'rag-architect'
   },
   {
     id: 77,
@@ -469,8 +430,7 @@ export const MOCK_SKILLS: Skill[] = [
     tags: ['Spark', 'Big Data', 'ETL'],
     downloadCount: 370,
     createdAt: '2025-03-03',
-    version: '1.0.0',
-    folderName: 'spark-engineer'
+    source: 'spark-engineer'
   },
   // Media & Content
   {
@@ -482,8 +442,7 @@ export const MOCK_SKILLS: Skill[] = [
     tags: ['Generative Art', 'p5.js', 'Creative'],
     downloadCount: 1100,
     createdAt: '2025-02-15',
-    version: '1.0.0',
-    folderName: 'algorithmic-art'
+    source: 'algorithmic-art'
   },
   {
     id: 19,
@@ -494,8 +453,7 @@ export const MOCK_SKILLS: Skill[] = [
     tags: ['Design', 'Art', 'Visual'],
     downloadCount: 920,
     createdAt: '2025-02-18',
-    version: '1.0.0',
-    folderName: 'canvas-design'
+    source: 'canvas-design'
   },
   {
     id: 20,
@@ -506,8 +464,7 @@ export const MOCK_SKILLS: Skill[] = [
     tags: ['Branding', 'Styling', 'Guidelines'],
     downloadCount: 1500,
     createdAt: '2025-01-10',
-    version: '1.0.0',
-    folderName: 'brand-guidelines'
+    source: 'brand-guidelines'
   },
   {
     id: 45,
@@ -518,8 +475,7 @@ export const MOCK_SKILLS: Skill[] = [
     tags: ['Unity', 'Unreal', 'GameDev'],
     downloadCount: 480,
     createdAt: '2025-03-03',
-    version: '1.0.0',
-    folderName: 'game-developer'
+    source: 'game-developer'
   },
   {
     id: 78,
@@ -530,8 +486,7 @@ export const MOCK_SKILLS: Skill[] = [
     tags: ['Slack', 'GIF', 'Design'],
     downloadCount: 420,
     createdAt: '2025-03-03',
-    version: '1.0.0',
-    folderName: 'slack-gif-creator'
+    source: 'slack-gif-creator'
   },
   // Writing & Research
   {
@@ -543,8 +498,7 @@ export const MOCK_SKILLS: Skill[] = [
     tags: ['Scraping', 'Metadata', 'Web'],
     downloadCount: 430,
     createdAt: '2025-02-15',
-    version: '1.0.0',
-    folderName: 'article-extractor'
+    source: 'article-extractor'
   },
   {
     id: 21,
@@ -555,8 +509,7 @@ export const MOCK_SKILLS: Skill[] = [
     tags: ['Ideas', 'Requirements', 'Design'],
     downloadCount: 2100,
     createdAt: '2025-01-05',
-    version: '1.0.0',
-    folderName: 'brainstorming'
+    source: 'brainstorming'
   },
   {
     id: 34,
@@ -567,8 +520,7 @@ export const MOCK_SKILLS: Skill[] = [
     tags: ['Documentation', 'Co-authoring', 'Writing'],
     downloadCount: 250,
     createdAt: '2025-03-03',
-    version: '1.0.0',
-    folderName: 'doc-coauthoring'
+    source: 'doc-coauthoring'
   },
   {
     id: 48,
@@ -579,8 +531,7 @@ export const MOCK_SKILLS: Skill[] = [
     tags: ['Comms', 'Internal', 'Writing'],
     downloadCount: 190,
     createdAt: '2025-03-03',
-    version: '1.0.0',
-    folderName: 'internal-comms'
+    source: 'internal-comms'
   },
   // Collaboration & Project Management
   {
@@ -592,8 +543,7 @@ export const MOCK_SKILLS: Skill[] = [
     tags: ['Jira', 'Confluence', 'MCP'],
     downloadCount: 840,
     createdAt: '2025-02-28',
-    version: '1.0.0',
-    folderName: 'atlassian-mcp'
+    source: 'atlassian-mcp'
   },
   {
     id: 39,
@@ -604,8 +554,7 @@ export const MOCK_SKILLS: Skill[] = [
     tags: ['Requirements', 'Product', 'Planning'],
     downloadCount: 320,
     createdAt: '2025-03-03',
-    version: '1.0.0',
-    folderName: 'feature-forge'
+    source: 'feature-forge'
   },
   // Security & Web Testing
   {
@@ -617,8 +566,7 @@ export const MOCK_SKILLS: Skill[] = [
     tags: ['Chaos Engineering', 'Resilience', 'Testing'],
     downloadCount: 390,
     createdAt: '2025-03-02',
-    version: '1.0.0',
-    folderName: 'chaos-engineer'
+    source: 'chaos-engineer'
   },
   {
     id: 75,
@@ -629,8 +577,7 @@ export const MOCK_SKILLS: Skill[] = [
     tags: ['Security', 'Auth', 'OWASP'],
     downloadCount: 450,
     createdAt: '2025-03-03',
-    version: '1.0.0',
-    folderName: 'secure-code-guardian'
+    source: 'secure-code-guardian'
   },
   {
     id: 76,
@@ -641,8 +588,7 @@ export const MOCK_SKILLS: Skill[] = [
     tags: ['Audit', 'Vulnerability', 'Pentest'],
     downloadCount: 390,
     createdAt: '2025-03-03',
-    version: '1.0.0',
-    folderName: 'security-reviewer'
+    source: 'security-reviewer'
   },
   {
     id: 24,
@@ -653,8 +599,7 @@ export const MOCK_SKILLS: Skill[] = [
     tags: ['Cloud', 'Architecture', 'Infra'],
     downloadCount: 480,
     createdAt: '2025-03-03',
-    version: '1.0.0',
-    folderName: 'cloud-architect'
+    source: 'cloud-architect'
   },
   {
     id: 25,
@@ -665,8 +610,7 @@ export const MOCK_SKILLS: Skill[] = [
     tags: ['Documentation', 'JSDoc', 'OpenAPI'],
     downloadCount: 350,
     createdAt: '2025-03-03',
-    version: '1.0.0',
-    folderName: 'code-documenter'
+    source: 'code-documenter'
   },
   {
     id: 26,
@@ -677,8 +621,7 @@ export const MOCK_SKILLS: Skill[] = [
     tags: ['Code Review', 'Quality', 'Security'],
     downloadCount: 520,
     createdAt: '2025-03-03',
-    version: '1.0.0',
-    folderName: 'code-reviewer'
+    source: 'code-reviewer'
   },
   {
     id: 27,
@@ -689,8 +632,7 @@ export const MOCK_SKILLS: Skill[] = [
     tags: ['C++', 'Performance', 'Systems'],
     downloadCount: 290,
     createdAt: '2025-03-03',
-    version: '1.0.0',
-    folderName: 'cpp-pro'
+    source: 'cpp-pro'
   },
   {
     id: 28,
@@ -701,8 +643,7 @@ export const MOCK_SKILLS: Skill[] = [
     tags: ['C#', '.NET', 'Blazor'],
     downloadCount: 410,
     createdAt: '2025-03-03',
-    version: '1.0.0',
-    folderName: 'csharp-developer'
+    source: 'csharp-developer'
   },
   {
     id: 30,
@@ -713,8 +654,7 @@ export const MOCK_SKILLS: Skill[] = [
     tags: ['Debugging', 'Troubleshooting', 'RC'],
     downloadCount: 600,
     createdAt: '2025-03-03',
-    version: '1.0.0',
-    folderName: 'debugging-wizard'
+    source: 'debugging-wizard'
   },
   {
     id: 31,
@@ -725,8 +665,7 @@ export const MOCK_SKILLS: Skill[] = [
     tags: ['DevOps', 'CI/CD', 'Containers'],
     downloadCount: 440,
     createdAt: '2025-03-03',
-    version: '1.0.0',
-    folderName: 'devops-engineer'
+    source: 'devops-engineer'
   },
   {
     id: 32,
@@ -737,8 +676,7 @@ export const MOCK_SKILLS: Skill[] = [
     tags: ['Agent', 'Parallel', 'Multi-task'],
     downloadCount: 880,
     createdAt: '2025-03-03',
-    version: '1.0.0',
-    folderName: 'dispatching-parallel-agents'
+    source: 'dispatching-parallel-agents'
   },
   {
     id: 33,
@@ -749,8 +687,7 @@ export const MOCK_SKILLS: Skill[] = [
     tags: ['Python', 'Django', 'DRF'],
     downloadCount: 320,
     createdAt: '2025-03-03',
-    version: '1.0.0',
-    folderName: 'django-expert'
+    source: 'django-expert'
   },
   {
     id: 35,
@@ -761,8 +698,7 @@ export const MOCK_SKILLS: Skill[] = [
     tags: ['.NET Core', 'C#', 'Microservices'],
     downloadCount: 390,
     createdAt: '2025-03-03',
-    version: '1.0.0',
-    folderName: 'dotnet-core-expert'
+    source: 'dotnet-core-expert'
   },
   // Utility & Automation
   {
@@ -774,8 +710,7 @@ export const MOCK_SKILLS: Skill[] = [
     tags: ['Workflow', 'Execution', 'Planning'],
     downloadCount: 640,
     createdAt: '2025-03-03',
-    version: '1.0.0',
-    folderName: 'executing-plans'
+    source: 'executing-plans'
   },
   {
     id: 41,
@@ -786,8 +721,7 @@ export const MOCK_SKILLS: Skill[] = [
     tags: ['Git', 'Workflow', 'PR'],
     downloadCount: 510,
     createdAt: '2025-03-03',
-    version: '1.0.0',
-    folderName: 'finishing-a-development-branch'
+    source: 'finishing-a-development-branch'
   },
   {
     id: 79,
@@ -798,8 +732,7 @@ export const MOCK_SKILLS: Skill[] = [
     tags: ['Agent', 'Skills', 'Development'],
     downloadCount: 850,
     createdAt: '2025-03-03',
-    version: '1.0.0',
-    folderName: 'skill-creator'
+    source: 'skill-creator'
   },
   // Specialized Flagship Skills
   {
@@ -811,8 +744,7 @@ export const MOCK_SKILLS: Skill[] = [
     tags: ['UI/UX', 'Design', 'Review'],
     downloadCount: 950,
     createdAt: '2025-02-20',
-    version: '1.0.0',
-    folderName: 'oiloil-ui-ux-guide'
+    source: 'oiloil-ui-ux-guide'
   },
   {
     id: 13,
@@ -823,8 +755,7 @@ export const MOCK_SKILLS: Skill[] = [
     tags: ['Agent', 'Architecture', 'Writing'],
     downloadCount: 5000,
     createdAt: '2026-03-03',
-    version: '1.0.0',
-    folderName: 'skill-master'
+    source: 'skill-master'
   },
   {
     id: 80,
@@ -835,8 +766,7 @@ export const MOCK_SKILLS: Skill[] = [
     tags: ['SQL', 'Database', 'Optimization'],
     downloadCount: 310,
     createdAt: '2025-03-03',
-    version: '1.0.0',
-    folderName: 'sql-pro'
+    source: 'sql-pro'
   },
   {
     id: 81,
@@ -847,8 +777,7 @@ export const MOCK_SKILLS: Skill[] = [
     tags: ['SRE', 'Reliability', 'Monitoring'],
     downloadCount: 340,
     createdAt: '2025-03-03',
-    version: '1.0.0',
-    folderName: 'sre-engineer'
+    source: 'sre-engineer'
   },
   {
     id: 82,
@@ -859,8 +788,7 @@ export const MOCK_SKILLS: Skill[] = [
     tags: ['Workflow', 'Agent', 'Implementation'],
     downloadCount: 420,
     createdAt: '2025-03-03',
-    version: '1.0.0',
-    folderName: 'subagent-driven-development'
+    source: 'subagent-driven-development'
   },
   {
     id: 83,
@@ -871,8 +799,7 @@ export const MOCK_SKILLS: Skill[] = [
     tags: ['Swift', 'iOS', 'SwiftUI'],
     downloadCount: 280,
     createdAt: '2025-03-03',
-    version: '1.0.0',
-    folderName: 'swift-expert'
+    source: 'swift-expert'
   },
   {
     id: 84,
@@ -883,8 +810,7 @@ export const MOCK_SKILLS: Skill[] = [
     tags: ['Debugging', 'RC', 'Methodology'],
     downloadCount: 510,
     createdAt: '2025-03-03',
-    version: '1.0.0',
-    folderName: 'systematic-debugging'
+    source: 'systematic-debugging'
   },
   {
     id: 85,
@@ -895,8 +821,7 @@ export const MOCK_SKILLS: Skill[] = [
     tags: ['Terraform', 'IaC', 'Infra'],
     downloadCount: 390,
     createdAt: '2025-03-03',
-    version: '1.0.0',
-    folderName: 'terraform-engineer'
+    source: 'terraform-engineer'
   },
   {
     id: 86,
@@ -907,8 +832,7 @@ export const MOCK_SKILLS: Skill[] = [
     tags: ['Testing', 'QA', 'Automation'],
     downloadCount: 450,
     createdAt: '2025-03-03',
-    version: '1.0.0',
-    folderName: 'test-master'
+    source: 'test-master'
   },
   {
     id: 87,
@@ -919,8 +843,7 @@ export const MOCK_SKILLS: Skill[] = [
     tags: ['Critical Thinking', 'Red Team', 'Reasoning'],
     downloadCount: 290,
     createdAt: '2025-03-03',
-    version: '1.0.0',
-    folderName: 'the-fool'
+    source: 'the-fool'
   },
   {
     id: 88,
@@ -931,8 +854,7 @@ export const MOCK_SKILLS: Skill[] = [
     tags: ['Design', 'Themes', 'Styling'],
     downloadCount: 370,
     createdAt: '2025-03-03',
-    version: '1.0.0',
-    folderName: 'theme-factory'
+    source: 'theme-factory'
   },
   {
     id: 89,
@@ -943,8 +865,7 @@ export const MOCK_SKILLS: Skill[] = [
     tags: ['TypeScript', 'Generics', 'Typing'],
     downloadCount: 680,
     createdAt: '2025-03-03',
-    version: '1.0.0',
-    folderName: 'typescript-pro'
+    source: 'typescript-pro'
   },
   {
     id: 90,
@@ -955,8 +876,7 @@ export const MOCK_SKILLS: Skill[] = [
     tags: ['Git', 'Worktree', 'Workflow'],
     downloadCount: 310,
     createdAt: '2025-03-03',
-    version: '1.0.0',
-    folderName: 'using-git-worktrees'
+    source: 'using-git-worktrees'
   },
   {
     id: 91,
@@ -967,8 +887,7 @@ export const MOCK_SKILLS: Skill[] = [
     tags: ['Agent', 'Skill', 'Workflow'],
     downloadCount: 1200,
     createdAt: '2025-03-03',
-    version: '1.0.0',
-    folderName: 'using-superpowers'
+    source: 'using-superpowers'
   },
   {
     id: 92,
@@ -979,8 +898,7 @@ export const MOCK_SKILLS: Skill[] = [
     tags: ['Validation', 'Testing', 'Verification'],
     downloadCount: 850,
     createdAt: '2025-03-03',
-    version: '1.0.0',
-    folderName: 'verification-before-completion'
+    source: 'verification-before-completion'
   },
   {
     id: 93,
@@ -991,8 +909,7 @@ export const MOCK_SKILLS: Skill[] = [
     tags: ['Vue', 'Composition API', 'Nuxt'],
     downloadCount: 420,
     createdAt: '2025-03-03',
-    version: '1.0.0',
-    folderName: 'vue-expert'
+    source: 'vue-expert'
   },
   {
     id: 94,
@@ -1003,8 +920,7 @@ export const MOCK_SKILLS: Skill[] = [
     tags: ['Vue', 'JavaScript', 'JSDoc'],
     downloadCount: 310,
     createdAt: '2025-03-03',
-    version: '1.0.0',
-    folderName: 'vue-expert-js'
+    source: 'vue-expert-js'
   },
   {
     id: 95,
@@ -1015,8 +931,7 @@ export const MOCK_SKILLS: Skill[] = [
     tags: ['Testing', 'Playwright', 'Web'],
     downloadCount: 380,
     createdAt: '2025-03-03',
-    version: '1.0.0',
-    folderName: 'webapp-testing'
+    source: 'webapp-testing'
   },
   {
     id: 96,
@@ -1027,8 +942,7 @@ export const MOCK_SKILLS: Skill[] = [
     tags: ['WebSocket', 'Socket.IO', 'Real-time'],
     downloadCount: 250,
     createdAt: '2025-03-03',
-    version: '1.0.0',
-    folderName: 'websocket-engineer'
+    source: 'websocket-engineer'
   },
   {
     id: 97,
@@ -1039,8 +953,7 @@ export const MOCK_SKILLS: Skill[] = [
     tags: ['WordPress', 'WooCommerce', 'Gutenberg'],
     downloadCount: 180,
     createdAt: '2025-03-03',
-    version: '1.0.0',
-    folderName: 'wordpress-pro'
+    source: 'wordpress-pro'
   },
   {
     id: 98,
@@ -1051,8 +964,7 @@ export const MOCK_SKILLS: Skill[] = [
     tags: ['Planning', 'Implementation', 'Workflow'],
     downloadCount: 420,
     createdAt: '2025-03-03',
-    version: '1.0.0',
-    folderName: 'writing-plans'
+    source: 'writing-plans'
   },
   {
     id: 99,
@@ -1063,8 +975,7 @@ export const MOCK_SKILLS: Skill[] = [
     tags: ['Skills', 'Documentation', 'TDD', 'Automation'],
     downloadCount: 350,
     createdAt: '2025-03-03',
-    version: '1.0.0',
-    folderName: 'writing-skills'
+    source: 'writing-skills'
   },
   {
     id: 100,
@@ -1075,7 +986,7 @@ export const MOCK_SKILLS: Skill[] = [
     tags: ['Excel', 'CSV', 'Spreadsheet', 'Data'],
     downloadCount: 520,
     createdAt: '2025-03-03',
-    version: '1.0.0',
-    folderName: 'xlsx'
+    source: 'xlsx'
   }
 ];
+
