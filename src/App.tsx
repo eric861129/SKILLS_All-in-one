@@ -23,7 +23,7 @@ const JsonLd = () => (
         "@context": "https://schema.org",
         "@type": "WebApplication",
         "name": "SKILLS All-in-one",
-        "url": "https://huangchiyu.com",
+        "url": "https://huangchiyu.com/SKILLS_All-in-one",
         "description": "A curated collection of 100+ professional AI Agent skills for Claude, ChatGPT, and other AI assistants.",
         "applicationCategory": "DeveloperApplication",
         "operatingSystem": "Web",

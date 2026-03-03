@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://huangchiyu.com/sitemap.xml
+Sitemap: https://huangchiyu.com/SKILLS_All-in-one/sitemap.xml
