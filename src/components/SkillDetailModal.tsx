@@ -112,8 +112,8 @@ const FileTreeItem = ({ node, depth, selectedPath, onSelect }: FileTreeItemProps
         <button
             onClick={() => onSelect(node.path)}
             className={`w-full flex items-center gap-1.5 px-3 py-1.5 text-left text-sm transition-colors rounded-lg ${isSelected
-                    ? 'bg-blue-500/10 text-blue-400 border-l-2 border-blue-500'
-                    : 'text-slate-400 hover:bg-slate-800/50 hover:text-slate-200'
+                ? 'bg-blue-500/10 text-blue-400 border-l-2 border-blue-500'
+                : 'text-slate-400 hover:bg-slate-800/50 hover:text-slate-200'
                 }`}
             style={{ paddingLeft: `${depth * 16 + 12 + 18}px` }}
         >
@@ -167,7 +167,7 @@ export const SkillDetailModal = ({ skill, onClose, onDownload }: SkillDetailModa
     useEffect(() => {
         const loadManifest = async () => {
             try {
-                const res = await fetch('/skills-manifest.json');
+                const res = await fetch(`${import.meta.env.BASE_URL}skills-manifest.json`);
                 if (!res.ok) throw new Error('Failed to load manifest');
                 const manifest = await res.json();
                 const skillData = manifest[skill.source];
@@ -192,7 +192,7 @@ export const SkillDetailModal = ({ skill, onClose, onDownload }: SkillDetailModa
         const loadFile = async () => {
             setLoadingContent(true);
             try {
-                const res = await fetch(`/SKILLS/${encodeURIComponent(skill.category)}/${encodeURIComponent(skill.source)}/${selectedFile}`);
+                const res = await fetch(`${import.meta.env.BASE_URL}SKILLS/${encodeURIComponent(skill.category)}/${encodeURIComponent(skill.source)}/${selectedFile}`);
                 if (res.ok) {
                     const text = await res.text();
                     setFileContent(text);

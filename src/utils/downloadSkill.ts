@@ -20,9 +20,9 @@ export const downloadAndZipSkill = async (skill: Skill) => {
 
   try {
     // 1. 取得檔案清單 (Manifest)
-    const manifestResponse = await fetch('/skills-manifest.json');
+    const manifestResponse = await fetch(`${import.meta.env.BASE_URL}skills-manifest.json`);
     if (!manifestResponse.ok) throw new Error('無法取得檔案清單');
-    
+
     const manifest: SkillManifest = await manifestResponse.json();
     const skillData = manifest[skill.source];
 
@@ -33,7 +33,7 @@ export const downloadAndZipSkill = async (skill: Skill) => {
       // 2. 根據清單下載所有檔案
       const fetchPromises = skillData.files.map(async (filePath) => {
         try {
-          const response = await fetch(`/SKILLS/${skillData.category}/${skill.source}/${filePath}`);
+          const response = await fetch(`${import.meta.env.BASE_URL}SKILLS/${skillData.category}/${skill.source}/${filePath}`);
           if (response.ok) {
             const blob = await response.blob();
             // 建立子目錄結構並放入檔案
@@ -52,7 +52,7 @@ export const downloadAndZipSkill = async (skill: Skill) => {
     // 3. 產生 zip 並下載
     const content = await zip.generateAsync({ type: 'blob' });
     const url = URL.createObjectURL(content);
-    
+
     const link = document.createElement('a');
     link.href = url;
     link.download = `${skill.source}.zip`;
@@ -73,7 +73,7 @@ export const downloadAndZipSkill = async (skill: Skill) => {
 const fallbackDownload = async (skill: Skill, folder: JSZip) => {
   const commonFiles = ['SKILL.md', 'README.md', 'LICENSE.txt'];
   const fetchPromises = commonFiles.map(async (fileName) => {
-    const response = await fetch(`/SKILLS/${skill.category}/${skill.source}/${fileName}`);
+    const response = await fetch(`${import.meta.env.BASE_URL}SKILLS/${skill.category}/${skill.source}/${fileName}`);
     if (response.ok) {
       const blob = await response.blob();
       folder.file(fileName, blob);
