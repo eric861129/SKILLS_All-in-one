@@ -1,54 +1,69 @@
 import type { Skill } from '../types/skill';
 
 export const MOCK_SKILLS: Skill[] = [
+  // Document Skills
   {
     id: 1,
     name: 'docx',
+    nameZh: 'Word 文件助手 (docx)',
     description: 'Read, extract, and manipulate Word documents.',
+    descriptionZh: '讀取、擷取並操作 Microsoft Word (.docx) 文件內容。',
     author: 'Anthropic',
     category: 'Document Skills',
     tags: ['Document', 'Word', 'Extraction'],
     downloadCount: 450,
     createdAt: '2025-01-01',
-    source: 'docx'
+    source: 'docx',
+    githubUrl: 'https://github.com/anthropics/skills/tree/main/skills/docx'
   },
   {
     id: 2,
     name: 'pdf',
+    nameZh: 'PDF 全能助手',
     description: 'Extract text, tables, metadata, merge & annotate PDFs.',
+    descriptionZh: '擷取文字、表格、元資料，並支援合併與標註 PDF 文件。',
     author: 'Anthropic',
     category: 'Document Skills',
     tags: ['Document', 'PDF', 'Extraction'],
     downloadCount: 340,
     createdAt: '2025-01-05',
-    source: 'pdf'
+    source: 'pdf',
+    githubUrl: 'https://github.com/anthropics/skills/tree/main/skills/pdf'
   },
   {
     id: 3,
     name: 'pptx',
+    nameZh: 'PowerPoint 簡報大師',
     description: 'Read, generate, and adjust slides, layouts, templates.',
+    descriptionZh: '讀取、生成並調整投影片內容、佈局與範本。',
     author: 'Anthropic',
     category: 'Document Skills',
     tags: ['Document', 'PowerPoint', 'Slides'],
     downloadCount: 210,
     createdAt: '2025-01-10',
-    source: 'pptx'
+    source: 'pptx',
+    githubUrl: 'https://github.com/anthropics/skills/tree/main/skills/pptx'
   },
   {
     id: 4,
     name: 'xlsx',
+    nameZh: 'Excel 數據專家',
     description: 'Spreadsheet manipulation: formulas, charts, data transformations.',
+    descriptionZh: '試算表操作：包含公式應用、圖表生成與數據轉換。',
     author: 'Anthropic',
     category: 'Document Skills',
     tags: ['Document', 'Excel', 'Data'],
     downloadCount: 450,
     createdAt: '2025-01-15',
-    source: 'xlsx'
+    source: 'xlsx',
+    githubUrl: 'https://github.com/anthropics/skills/tree/main/skills/xlsx'
   },
   {
     id: 5,
     name: 'revealjs-skill',
+    nameZh: 'Reveal.js 網頁簡報製作',
     description: 'Generate polished, professional presentations using the Reveal.js HTML presentation framework.',
+    descriptionZh: '使用 Reveal.js HTML 簡報框架生成專業且精美的網頁式簡報。',
     author: 'ryanbbrown',
     category: 'Document Skills',
     tags: ['Presentation', 'Reveal.js', 'HTML'],
@@ -60,7 +75,9 @@ export const MOCK_SKILLS: Skill[] = [
   {
     id: 6,
     name: 'web-artifacts-builder',
+    nameZh: 'Web 藝術品開發工具箱',
     description: 'Suite of tools for creating elaborate, multi-component HTML artifacts using React, Tailwind, and shadcn/ui.',
+    descriptionZh: '一套用於使用 React、Tailwind 與 shadcn/ui 構建複雜多組件 HTML 作品的工具集。',
     author: 'Anthropic',
     category: 'Development & Code Tools',
     tags: ['React', 'Tailwind', 'Artifacts'],
@@ -71,7 +88,9 @@ export const MOCK_SKILLS: Skill[] = [
   {
     id: 7,
     name: 'test-driven-development',
+    nameZh: 'TDD 測試驅動開發',
     description: 'Use when implementing any feature or bugfix, before writing implementation code.',
+    descriptionZh: '在撰寫實際邏輯程式碼前，用於實作功能或修復錯誤的測試導向開發流程。',
     author: 'obra',
     category: 'Development & Code Tools',
     tags: ['TDD', 'Testing', 'Quality'],
@@ -82,7 +101,9 @@ export const MOCK_SKILLS: Skill[] = [
   {
     id: 8,
     name: 'claude-starter',
+    nameZh: 'Claude Code 啟動範本',
     description: 'Production-ready Claude Code configuration template with 40 auto-activating skills.',
+    descriptionZh: '生產級的 Claude Code 配置範本，內建 40 個自動啟用的技能。',
     author: 'raintree-technology',
     category: 'Development & Code Tools',
     tags: ['Starter', 'Configuration', 'Template'],
@@ -93,272 +114,346 @@ export const MOCK_SKILLS: Skill[] = [
   {
     id: 14,
     name: 'angular-architect',
+    nameZh: 'Angular 架構師',
     description: 'Build enterprise Angular apps with signals and standalone components.',
+    descriptionZh: '使用 Signals 與獨立組件 (Standalone) 構建企業級 Angular 應用。',
     author: 'Jeffallan',
     category: 'Development & Code Tools',
     tags: ['Angular', 'Signals', 'Architecture'],
     downloadCount: 420,
     createdAt: '2025-02-25',
-    source: 'angular-architect'
+    source: 'angular-architect',
+    githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/angular-architect'
   },
   {
     id: 15,
     name: 'api-designer',
+    nameZh: 'API 設計專家',
     description: 'Design REST/GraphQL APIs with OpenAPI 3.1 standards.',
+    descriptionZh: '遵循 OpenAPI 3.1 標準設計 REST 或 GraphQL API 接口。',
     author: 'Jeffallan',
     category: 'Development & Code Tools',
     tags: ['API', 'OpenAPI', 'Design'],
     downloadCount: 680,
     createdAt: '2025-02-26',
-    source: 'api-designer'
+    source: 'api-designer',
+    githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/api-designer'
   },
   {
     id: 16,
     name: 'architecture-designer',
+    nameZh: '系統架構設計師',
     description: 'Architect scalable distributed systems and document ADRs.',
+    descriptionZh: '設計可擴展的分佈式系統架構，並撰寫架構決策紀錄 (ADR)。',
     author: 'Jeffallan',
     category: 'Development & Code Tools',
     tags: ['System Design', 'ADR', 'Scalability'],
     downloadCount: 530,
     createdAt: '2025-02-27',
-    source: 'architecture-designer'
+    source: 'architecture-designer',
+    githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/architecture-designer'
   },
   {
     id: 17,
     name: 'cli-developer',
+    nameZh: 'CLI 工具開發專家',
     description: 'Build fast, intuitive cross-platform CLI tools.',
+    descriptionZh: '構建快速、直觀且支援跨平台的命令行介面 (CLI) 工具。',
     author: 'Jeffallan',
     category: 'Development & Code Tools',
     tags: ['CLI', 'Terminal', 'DX'],
     downloadCount: 310,
     createdAt: '2025-03-01',
-    source: 'cli-developer'
+    source: 'cli-developer',
+    githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/cli-developer'
   },
   {
     id: 36,
     name: 'embedded-systems',
+    nameZh: '嵌入式系統專家',
     description: 'Developing firmware for microcontrollers, implementing RTOS applications, or optimizing power consumption.',
+    descriptionZh: '開發微控制器韌體、實作實時作業系統 (RTOS) 應用，或優化功耗。',
     author: 'Jeffallan',
     category: 'Development & Code Tools',
     tags: ['Embedded', 'Firmware', 'RTOS'],
     downloadCount: 280,
     createdAt: '2025-03-03',
-    source: 'embedded-systems'
+    source: 'embedded-systems',
+    githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/embedded-systems'
   },
   {
     id: 38,
     name: 'fastapi-expert',
+    nameZh: 'FastAPI 專家',
     description: 'Build high-performance async Python APIs with FastAPI and Pydantic V2.',
+    descriptionZh: '使用 FastAPI 與 Pydantic V2 構建高性能非同步 Python API。',
     author: 'Jeffallan',
     category: 'Development & Code Tools',
     tags: ['Python', 'FastAPI', 'Async'],
     downloadCount: 450,
     createdAt: '2025-03-03',
-    source: 'fastapi-expert'
+    source: 'fastapi-expert',
+    githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/fastapi-expert'
   },
   {
     id: 42,
     name: 'flutter-expert',
+    nameZh: 'Flutter 跨平台專家',
     description: 'Building cross-platform applications with Flutter 3+ and Dart.',
+    descriptionZh: '使用 Flutter 3+ 與 Dart 語言構建跨平台應用程式。',
     author: 'Jeffallan',
     category: 'Development & Code Tools',
     tags: ['Flutter', 'Dart', 'Mobile'],
     downloadCount: 310,
     createdAt: '2025-03-03',
-    source: 'flutter-expert'
+    source: 'flutter-expert',
+    githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/flutter-expert'
   },
   {
     id: 43,
     name: 'frontend-design',
+    nameZh: '前端設計大師',
     description: 'Create distinctive, production-grade frontend interfaces with high design quality.',
+    descriptionZh: '創造具備高品質設計感、獨特且生產級的前端使用者介面。',
     author: 'Jeffallan',
     category: 'Development & Code Tools',
     tags: ['Frontend', 'UI', 'Aesthetics'],
     downloadCount: 720,
     createdAt: '2025-03-03',
-    source: 'frontend-design'
+    source: 'frontend-design',
+    githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/frontend-design'
   },
   {
     id: 44,
     name: 'fullstack-guardian',
+    nameZh: '全端安全守護者',
     description: 'Implementing features across frontend and backend with security built-in from the start.',
+    descriptionZh: '從頭開始將安全機制內建於前端與後端的功能實作中。',
     author: 'Jeffallan',
     category: 'Development & Code Tools',
     tags: ['Fullstack', 'Security', 'API'],
     downloadCount: 580,
     createdAt: '2025-03-03',
-    source: 'fullstack-guardian'
+    source: 'fullstack-guardian',
+    githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/fullstack-guardian'
   },
   {
     id: 46,
     name: 'golang-pro',
+    nameZh: 'Go 語言專家',
     description: 'Building Go applications requiring concurrent programming, microservices, or high-performance systems.',
+    descriptionZh: '構建需要高併發程式設計、微服務或高性能系統的 Go 應用程式。',
     author: 'Jeffallan',
     category: 'Development & Code Tools',
     tags: ['Go', 'Concurrency', 'Microservices'],
     downloadCount: 390,
     createdAt: '2025-03-03',
-    source: 'golang-pro'
+    source: 'golang-pro',
+    githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/golang-pro'
   },
   {
     id: 47,
     name: 'graphql-architect',
+    nameZh: 'GraphQL 架構師',
     description: 'Designing GraphQL schemas, implementing Apollo Federation, or building real-time subscriptions.',
+    descriptionZh: '設計 GraphQL Schema、實作 Apollo Federation 或構建實時訂閱功能。',
     author: 'Jeffallan',
     category: 'Development & Code Tools',
     tags: ['GraphQL', 'Apollo', 'Federation'],
     downloadCount: 410,
     createdAt: '2025-03-03',
-    source: 'graphql-architect'
+    source: 'graphql-architect',
+    githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/graphql-architect'
   },
   {
     id: 49,
     name: 'java-architect',
+    nameZh: 'Java 企業級架構師',
     description: 'Building enterprise Java applications with Spring Boot 3.x, microservices, or reactive programming.',
+    descriptionZh: '使用 Spring Boot 3.x、微服務或響應式程式設計構建企業級 Java 應用。',
     author: 'Jeffallan',
     category: 'Development & Code Tools',
     tags: ['Java', 'Spring Boot', 'Enterprise'],
     downloadCount: 340,
     createdAt: '2025-03-03',
-    source: 'java-architect'
+    source: 'java-architect',
+    githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/java-architect'
   },
   {
     id: 50,
     name: 'php-pro',
+    nameZh: 'PHP 專家',
     description: 'Use when building PHP applications with modern PHP 8.3+ features, Laravel, or Symfony frameworks.',
+    descriptionZh: '使用現代 PHP 8.3+ 特性、Laravel 或 Symfony 框架開發 PHP 應用。',
     author: 'Jeffallan',
     category: 'Development & Code Tools',
     tags: ['PHP', 'Laravel', 'Symfony'],
     downloadCount: 260,
     createdAt: '2025-03-03',
-    source: 'php-pro'
+    source: 'php-pro',
+    githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/php-pro'
   },
   {
     id: 51,
     name: 'python-pro',
+    nameZh: 'Python 專家',
     description: 'Use when building Python 3.11+ applications requiring type safety, async programming, or production-grade patterns.',
+    descriptionZh: '開發 Python 3.11+ 應用，涵蓋型別安全、非同步設計與生產級模式。',
     author: 'Jeffallan',
     category: 'Development & Code Tools',
     tags: ['Python', 'Async', 'Type Safety'],
     downloadCount: 480,
     createdAt: '2025-03-03',
-    source: 'python-pro'
+    source: 'python-pro',
+    githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/python-pro'
   },
   {
     id: 52,
     name: 'rails-expert',
+    nameZh: 'Ruby on Rails 專家',
     description: 'Use when building Rails 7+ web applications with Hotwire, real-time features, or background job processing.',
+    descriptionZh: '使用 Hotwire、實時功能或背景任務處理構建 Rails 7+ 網頁應用。',
     author: 'Jeffallan',
     category: 'Development & Code Tools',
     tags: ['Rails', 'Ruby', 'Hotwire'],
     downloadCount: 310,
     createdAt: '2025-03-03',
-    source: 'rails-expert'
+    source: 'rails-expert',
+    githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/rails-expert'
   },
   {
     id: 53,
     name: 'react-expert',
+    nameZh: 'React 18+ 專家',
     description: 'Use when building React 18+ applications requiring component architecture, hooks patterns, or state management.',
+    descriptionZh: '用於建構 React 18+ 應用程式，涵蓋元件架構、Hooks 模式與狀態管理。',
     author: 'Jeffallan',
     category: 'Development & Code Tools',
     tags: ['React', 'Hooks', 'TypeScript'],
     downloadCount: 920,
     createdAt: '2025-03-03',
-    source: 'react-expert'
+    source: 'react-expert',
+    githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/react-expert'
   },
   {
     id: 54,
     name: 'react-native-expert',
+    nameZh: 'React Native 移動端專家',
     description: 'Use when building cross-platform mobile applications with React Native or Expo.',
+    descriptionZh: '使用 React Native 或 Expo 構建跨平台移動應用程式。',
     author: 'Jeffallan',
     category: 'Development & Code Tools',
     tags: ['React Native', 'Expo', 'Mobile'],
     downloadCount: 380,
     createdAt: '2025-03-03',
-    source: 'react-native-expert'
+    source: 'react-native-expert',
+    githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/react-native-expert'
   },
   {
     id: 55,
     name: 'receiving-code-review',
+    nameZh: '接收程式碼審閱 (Code Review)',
     description: 'Use when receiving code review feedback, before implementing suggestions, especially if feedback seems unclear or technically questionable.',
+    descriptionZh: '在接收審閱回饋時使用，協助在實作建議前釐清不明確或具技術爭議的部分。',
     author: 'Jeffallan',
     category: 'Development & Code Tools',
     tags: ['Code Review', 'Workflow', 'Quality'],
     downloadCount: 210,
     createdAt: '2025-03-03',
-    source: 'receiving-code-review'
+    source: 'receiving-code-review',
+    githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/receiving-code-review'
   },
   {
     id: 56,
     name: 'requesting-code-review',
+    nameZh: '發起程式碼審閱 (Code Review)',
     description: 'Use when completing tasks, implementing major features, or before merging to verify work meets requirements.',
+    descriptionZh: '在完成任務、實作重大功能或合併前，確保工作內容符合需求規範。',
     author: 'Jeffallan',
     category: 'Development & Code Tools',
     tags: ['Code Review', 'Verification', 'Workflow'],
     downloadCount: 240,
     createdAt: '2025-03-03',
-    source: 'requesting-code-review'
+    source: 'requesting-code-review',
+    githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/requesting-code-review'
   },
   {
     id: 70,
     name: 'rust-engineer',
+    nameZh: 'Rust 工程師',
     description: 'Use when building Rust applications requiring memory safety, systems programming, or zero-cost abstractions.',
+    descriptionZh: '開發 Rust 應用，專注於記憶體安全、系統程式設計與零成本抽象。',
     author: 'Jeffallan',
     category: 'Development & Code Tools',
     tags: ['Rust', 'Systems', 'Performance'],
     downloadCount: 310,
     createdAt: '2025-03-03',
-    source: 'rust-engineer'
+    source: 'rust-engineer',
+    githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/rust-engineer'
   },
   {
     id: 71,
     name: 'salesforce-developer',
+    nameZh: 'Salesforce 開發專家',
     description: 'Developing Salesforce applications, Apex code, Lightning Web Components, SOQL queries, or integrations.',
+    descriptionZh: '開發 Salesforce 應用、Apex 程式碼、LWC、SOQL 查詢或系統整合。',
     author: 'Jeffallan',
     category: 'Development & Code Tools',
     tags: ['Salesforce', 'Apex', 'CRM'],
     downloadCount: 280,
     createdAt: '2025-03-03',
-    source: 'salesforce-developer'
+    source: 'salesforce-developer',
+    githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/salesforce-developer'
   },
   {
     id: 72,
     name: 'shopify-expert',
+    nameZh: 'Shopify 電商專家',
     description: 'Building Shopify themes, apps, custom storefronts, or e-commerce solutions.',
+    descriptionZh: '開發 Shopify 主題、App、自定義店面或電商解決方案。',
     author: 'Jeffallan',
     category: 'Development & Code Tools',
     tags: ['Shopify', 'Liquid', 'E-commerce'],
     downloadCount: 340,
     createdAt: '2025-03-03',
-    source: 'shopify-expert'
+    source: 'shopify-expert',
+    githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/shopify-expert'
   },
   {
     id: 73,
     name: 'spec-miner',
+    nameZh: '規範挖掘專家 (Spec Miner)',
     description: 'Understanding legacy or undocumented systems, creating documentation, or extracting specifications from implementations.',
+    descriptionZh: '理解遺留或缺乏文件的系統，建立文件並從現有實作中提取技術規範。',
     author: 'Jeffallan',
     category: 'Development & Code Tools',
     tags: ['Reverse Engineering', 'Documentation', 'Legacy'],
     downloadCount: 290,
     createdAt: '2025-03-03',
-    source: 'spec-miner'
+    source: 'spec-miner',
+    githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/spec-miner'
   },
   {
     id: 74,
     name: 'spring-boot-engineer',
+    nameZh: 'Spring Boot 專家',
     description: 'Building Spring Boot 3.x applications, microservices, or reactive Java applications.',
+    descriptionZh: '構建 Spring Boot 3.x 應用程式、微服務或響應式 Java 應用。',
     author: 'Jeffallan',
     category: 'Development & Code Tools',
     tags: ['Spring Boot', 'Java', 'Backend'],
     downloadCount: 410,
     createdAt: '2025-03-03',
-    source: 'spring-boot-engineer'
+    source: 'spring-boot-engineer',
+    githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/spring-boot-engineer'
   },
   // Data & Analysis
   {
     id: 9,
     name: 'csv-data-summarizer',
+    nameZh: 'CSV 數據總結員',
     description: 'Automatically analyzes CSVs: columns, distributions, missing data, correlations.',
+    descriptionZh: '自動分析 CSV 文件：包含欄位定義、數據分佈、缺失值檢測與相關性分析。',
     author: 'coffeefuelbump',
     category: 'Data & Analysis',
     tags: ['CSV', 'Data', 'Summary'],
@@ -369,7 +464,9 @@ export const MOCK_SKILLS: Skill[] = [
   {
     id: 10,
     name: 'postgres',
+    nameZh: 'PostgreSQL 查詢專家',
     description: 'Execute safe read-only SQL queries against PostgreSQL databases.',
+    descriptionZh: '針對 PostgreSQL 資料庫執行安全的唯讀 SQL 查詢。',
     author: 'sanjay3290',
     category: 'Data & Analysis',
     tags: ['SQL', 'PostgreSQL', 'Database'],
@@ -380,107 +477,136 @@ export const MOCK_SKILLS: Skill[] = [
   {
     id: 29,
     name: 'database-optimizer',
+    nameZh: '資料庫優化大師',
     description: 'investigating slow queries, analyzing execution plans, and index design.',
+    descriptionZh: '調查慢查詢、分析執行計畫並進行索引設計優化。',
     author: 'Jeffallan',
     category: 'Data & Analysis',
     tags: ['Database', 'SQL', 'Optimization'],
     downloadCount: 370,
     createdAt: '2025-03-03',
-    source: 'database-optimizer'
+    source: 'database-optimizer',
+    githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/database-optimizer'
   },
   {
     id: 40,
     name: 'fine-tuning-expert',
+    nameZh: 'LLM 微調專家',
     description: 'Fine-tuning LLMs, training custom models, or optimizing model performance for specific tasks.',
+    descriptionZh: '進行大語言模型 (LLM) 微調、訓練自定義模型或針對特定任務優化模型效能。',
     author: 'Jeffallan',
     category: 'Data & Analysis',
     tags: ['LLM', 'AI', 'ML'],
     downloadCount: 520,
     createdAt: '2025-03-03',
-    source: 'fine-tuning-expert'
+    source: 'fine-tuning-expert',
+    githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/fine-tuning-expert'
   },
   {
     id: 57,
     name: 'postgres-pro',
+    nameZh: 'PostgreSQL 專業顧問',
     description: 'Use when optimizing PostgreSQL queries, configuring replication, or implementing advanced database features.',
+    descriptionZh: '優化 PostgreSQL 查詢、配置資料複製或實作進階資料庫功能。',
     author: 'Jeffallan',
     category: 'Data & Analysis',
     tags: ['PostgreSQL', 'SQL', 'Optimization'],
     downloadCount: 310,
     createdAt: '2025-03-03',
-    source: 'postgres-pro'
+    source: 'postgres-pro',
+    githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/postgres-pro'
   },
   {
     id: 58,
     name: 'rag-architect',
+    nameZh: 'RAG 架構師',
     description: 'Use when building RAG systems, vector databases, or knowledge-grounded AI applications.',
+    descriptionZh: '構建檢索增強生成 (RAG) 系統、向量資料庫或知識庫驅動的 AI 應用。',
     author: 'Jeffallan',
     category: 'Data & Analysis',
     tags: ['RAG', 'Vector DB', 'AI'],
     downloadCount: 450,
     createdAt: '2025-03-03',
-    source: 'rag-architect'
+    source: 'rag-architect',
+    githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/rag-architect'
   },
   {
     id: 77,
     name: 'spark-engineer',
+    nameZh: 'Apache Spark 工程師',
     description: 'Building Apache Spark applications, distributed data processing pipelines, or optimizing big data workloads.',
+    descriptionZh: '開發 Apache Spark 應用、分佈式資料處理流水線或優化大數據工作負載。',
     author: 'Jeffallan',
     category: 'Data & Analysis',
     tags: ['Spark', 'Big Data', 'ETL'],
     downloadCount: 370,
     createdAt: '2025-03-03',
-    source: 'spark-engineer'
+    source: 'spark-engineer',
+    githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/spark-engineer'
   },
   // Media & Content
   {
     id: 18,
     name: 'algorithmic-art',
+    nameZh: '演算法藝術家',
     description: 'Generate living algorithms and generative art using p5.js.',
+    descriptionZh: '使用 p5.js 生成具備生命感的演算法與生成藝術作品。',
     author: 'Anthropic',
     category: 'Media & Content',
     tags: ['Generative Art', 'p5.js', 'Creative'],
     downloadCount: 1100,
     createdAt: '2025-02-15',
-    source: 'algorithmic-art'
+    source: 'algorithmic-art',
+    githubUrl: 'https://github.com/anthropics/skills/tree/main/skills/algorithmic-art'
   },
   {
     id: 19,
     name: 'canvas-design',
+    nameZh: '畫布設計專家',
     description: 'Create museum-quality visual designs and artistic canvases.',
+    descriptionZh: '創造具備博物館品質的視覺設計與藝術畫布作品。',
     author: 'Anthropic',
     category: 'Media & Content',
     tags: ['Design', 'Art', 'Visual'],
     downloadCount: 920,
     createdAt: '2025-02-18',
-    source: 'canvas-design'
+    source: 'canvas-design',
+    githubUrl: 'https://github.com/anthropics/skills/tree/main/skills/canvas-design'
   },
   {
     id: 20,
     name: 'brand-guidelines',
+    nameZh: '品牌規範助手',
     description: 'Apply Anthropic official brand colors and typography to any artifact.',
+    descriptionZh: '將 Anthropic 官方品牌色彩與字體應用於任何作品中。',
     author: 'Anthropic',
     category: 'Media & Content',
     tags: ['Branding', 'Styling', 'Guidelines'],
     downloadCount: 1500,
     createdAt: '2025-01-10',
-    source: 'brand-guidelines'
+    source: 'brand-guidelines',
+    githubUrl: 'https://github.com/anthropics/skills/tree/main/skills/brand-guidelines'
   },
   {
     id: 45,
     name: 'game-developer',
+    nameZh: '遊戲開發專家',
     description: 'Building game systems, implementing Unity/Unreal features, or optimizing game performance.',
+    descriptionZh: '構建遊戲系統、實作 Unity/Unreal 功能或優化遊戲效能。',
     author: 'Jeffallan',
     category: 'Media & Content',
     tags: ['Unity', 'Unreal', 'GameDev'],
     downloadCount: 480,
     createdAt: '2025-03-03',
-    source: 'game-developer'
+    source: 'game-developer',
+    githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/game-developer'
   },
   {
     id: 78,
     name: 'slack-gif-creator',
+    nameZh: 'Slack GIF 創作工具',
     description: 'Create animated GIFs optimized for Slack with dimensions, validation tools, and easing functions.',
+    descriptionZh: '創建專為 Slack 優化的動畫 GIF，內建尺寸校驗與過渡函數工具。',
     author: 'SKILLS All-in-one',
     category: 'Media & Content',
     tags: ['Slack', 'GIF', 'Design'],
@@ -492,7 +618,9 @@ export const MOCK_SKILLS: Skill[] = [
   {
     id: 11,
     name: 'article-extractor',
+    nameZh: '文章擷取工具',
     description: 'Extract full article text and metadata from web pages.',
+    descriptionZh: '從網頁中完整擷取文章正文與元資料。',
     author: 'michalparkola',
     category: 'Writing & Research',
     tags: ['Scraping', 'Metadata', 'Web'],
@@ -503,7 +631,9 @@ export const MOCK_SKILLS: Skill[] = [
   {
     id: 21,
     name: 'brainstorming',
+    nameZh: '腦力激盪顧問',
     description: 'Transform rough ideas into fully-formed designs through structured questioning.',
+    descriptionZh: '透過結構化的提問，將初步構思轉化為完整的設計方案。',
     author: 'obra',
     category: 'Writing & Research',
     tags: ['Ideas', 'Requirements', 'Design'],
@@ -514,7 +644,9 @@ export const MOCK_SKILLS: Skill[] = [
   {
     id: 34,
     name: 'doc-coauthoring',
+    nameZh: '文件協同撰寫 (Co-authoring)',
     description: 'Guide users through a structured workflow for co-authoring documentation.',
+    descriptionZh: '引導使用者透過結構化流程進行文件的協同撰寫。',
     author: 'SKILLS All-in-one',
     category: 'Writing & Research',
     tags: ['Documentation', 'Co-authoring', 'Writing'],
@@ -525,152 +657,193 @@ export const MOCK_SKILLS: Skill[] = [
   {
     id: 48,
     name: 'internal-comms',
+    nameZh: '內部通訊專家',
     description: 'Write internal company communications (status reports, newsletters, FAQs, incident reports).',
+    descriptionZh: '撰寫公司內部通訊內容（進度報告、電子報、FAQ、事故報告）。',
     author: 'Jeffallan',
     category: 'Writing & Research',
     tags: ['Comms', 'Internal', 'Writing'],
     downloadCount: 190,
     createdAt: '2025-03-03',
-    source: 'internal-comms'
+    source: 'internal-comms',
+    githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/internal-comms'
   },
   // Collaboration & Project Management
   {
     id: 22,
     name: 'atlassian-mcp',
+    nameZh: 'Atlassian 工作流專家',
     description: 'Integrate Jira and Confluence workflows via Model Context Protocol.',
+    descriptionZh: '透過 MCP 協定整合 Jira 與 Confluence 的工作流程。',
     author: 'Jeffallan',
     category: 'Collaboration & Project Management',
     tags: ['Jira', 'Confluence', 'MCP'],
     downloadCount: 840,
     createdAt: '2025-02-28',
-    source: 'atlassian-mcp'
+    source: 'atlassian-mcp',
+    githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/atlassian-mcp'
   },
   {
     id: 39,
     name: 'feature-forge',
+    nameZh: '功能鍛造者 (Feature Forge)',
     description: 'Gathering requirements, conducting workshops, and defining comprehensive feature specifications.',
+    descriptionZh: '收集需求、主持工作坊並定義全面的功能規格書。',
     author: 'Jeffallan',
     category: 'Collaboration & Project Management',
     tags: ['Requirements', 'Product', 'Planning'],
     downloadCount: 320,
     createdAt: '2025-03-03',
-    source: 'feature-forge'
+    source: 'feature-forge',
+    githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/feature-forge'
   },
   // Security & Web Testing
   {
     id: 23,
     name: 'chaos-engineer',
+    nameZh: '混沌工程師',
     description: 'Design chaos experiments and build systems that get stronger under stress.',
+    descriptionZh: '設計混沌實驗，構建在壓力下能變得更強韌的系統。',
     author: 'Jeffallan',
     category: 'Security & Web Testing',
     tags: ['Chaos Engineering', 'Resilience', 'Testing'],
     downloadCount: 390,
     createdAt: '2025-03-02',
-    source: 'chaos-engineer'
+    source: 'chaos-engineer',
+    githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/chaos-engineer'
   },
   {
     id: 75,
     name: 'secure-code-guardian',
+    nameZh: '安全程式碼守護者',
     description: 'Implementing authentication/authorization, securing user input, or preventing OWASP Top 10 vulnerabilities.',
+    descriptionZh: '實作身份驗證、保護使用者輸入，並防範 OWASP Top 10 漏洞。',
     author: 'Jeffallan',
     category: 'Security & Web Testing',
     tags: ['Security', 'Auth', 'OWASP'],
     downloadCount: 450,
     createdAt: '2025-03-03',
-    source: 'secure-code-guardian'
+    source: 'secure-code-guardian',
+    githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/secure-code-guardian'
   },
   {
     id: 76,
     name: 'security-reviewer',
+    nameZh: '安全性審閱者',
     description: 'Conducting security audits, reviewing code for vulnerabilities, or analyzing infrastructure security.',
+    descriptionZh: '進行安全審查、檢查程式碼漏洞或分析基礎設施安全性。',
     author: 'Jeffallan',
     category: 'Security & Web Testing',
     tags: ['Audit', 'Vulnerability', 'Pentest'],
     downloadCount: 390,
     createdAt: '2025-03-03',
-    source: 'security-reviewer'
+    source: 'security-reviewer',
+    githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/security-reviewer'
   },
   {
     id: 24,
     name: 'cloud-architect',
+    nameZh: '雲端架構師',
     description: 'Design enterprise cloud solutions across AWS, Azure, and GCP following Well-Architected Framework.',
+    descriptionZh: '遵循 Well-Architected 框架，設計跨 AWS、Azure 與 GCP 的企業雲端方案。',
     author: 'Jeffallan',
     category: 'Development & Code Tools',
     tags: ['Cloud', 'Architecture', 'Infra'],
     downloadCount: 480,
     createdAt: '2025-03-03',
-    source: 'cloud-architect'
+    source: 'cloud-architect',
+    githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/cloud-architect'
   },
   {
     id: 25,
     name: 'code-documenter',
+    nameZh: '程式碼文件化專家',
     description: 'Specialist for inline documentation, API specs, and developer guides.',
+    descriptionZh: '專精於撰寫行內文件、API 規格書與開發者指南。',
     author: 'Jeffallan',
     category: 'Development & Code Tools',
     tags: ['Documentation', 'JSDoc', 'OpenAPI'],
     downloadCount: 350,
     createdAt: '2025-03-03',
-    source: 'code-documenter'
+    source: 'code-documenter',
+    githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/code-documenter'
   },
   {
     id: 26,
     name: 'code-reviewer',
+    nameZh: '資深程式碼審閱者',
     description: 'Senior engineer conducting thorough, constructive code reviews for security and performance.',
+    descriptionZh: '進行徹底且具建設性的審閱，專注於安全性與效能優化。',
     author: 'Jeffallan',
     category: 'Development & Code Tools',
     tags: ['Code Review', 'Quality', 'Security'],
     downloadCount: 520,
     createdAt: '2025-03-03',
-    source: 'code-reviewer'
+    source: 'code-reviewer',
+    githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/code-reviewer'
   },
   {
     id: 27,
     name: 'cpp-pro',
+    nameZh: 'C++ 專業工程師',
     description: 'Master modern C++20/23 features, template metaprogramming, and high-performance systems.',
+    descriptionZh: '精通現代 C++20/23 特性、模板元程式設計與高性能系統開發。',
     author: 'Jeffallan',
     category: 'Development & Code Tools',
     tags: ['C++', 'Performance', 'Systems'],
     downloadCount: 290,
     createdAt: '2025-03-03',
-    source: 'cpp-pro'
+    source: 'cpp-pro',
+    githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/cpp-pro'
   },
   {
     id: 28,
     name: 'csharp-developer',
+    nameZh: 'C# 開發專家',
     description: 'Senior C# developer specializing in high-performance .NET 8 web APIs and Blazor.',
+    descriptionZh: '資深 C# 開發者，專精於高性能 .NET 8 Web API 與 Blazor 開發。',
     author: 'Jeffallan',
     category: 'Development & Code Tools',
     tags: ['C#', '.NET', 'Blazor'],
     downloadCount: 410,
     createdAt: '2025-03-03',
-    source: 'csharp-developer'
+    source: 'csharp-developer',
+    githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/csharp-developer'
   },
   {
     id: 30,
     name: 'debugging-wizard',
+    nameZh: '除錯巫師',
     description: 'Applying systematic methodology to isolate and resolve issues in any codebase.',
+    descriptionZh: '應用系統化方法論，在任何程式庫中隔離並解決棘手問題。',
     author: 'Jeffallan',
     category: 'Development & Code Tools',
     tags: ['Debugging', 'Troubleshooting', 'RC'],
     downloadCount: 600,
     createdAt: '2025-03-03',
-    source: 'debugging-wizard'
+    source: 'debugging-wizard',
+    githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/debugging-wizard'
   },
   {
     id: 31,
     name: 'devops-engineer',
+    nameZh: 'DevOps 工程師',
     description: 'Automating build, test, and packaging with Docker, K8s, and Terraform.',
+    descriptionZh: '使用 Docker、K8s 與 Terraform 自動化構建、測試與打包流程。',
     author: 'Jeffallan',
     category: 'Development & Code Tools',
     tags: ['DevOps', 'CI/CD', 'Containers'],
     downloadCount: 440,
     createdAt: '2025-03-03',
-    source: 'devops-engineer'
+    source: 'devops-engineer',
+    githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/devops-engineer'
   },
   {
     id: 32,
     name: 'dispatching-parallel-agents',
+    nameZh: '並行 Agent 調度員',
     description: 'Dispatch one agent per independent problem domain to work concurrently.',
+    descriptionZh: '針對獨立的問題領域分配不同的 Agent 進行併行作業。',
     author: 'SKILLS All-in-one',
     category: 'Utility & Automation',
     tags: ['Agent', 'Parallel', 'Multi-task'],
@@ -681,52 +854,66 @@ export const MOCK_SKILLS: Skill[] = [
   {
     id: 33,
     name: 'django-expert',
+    nameZh: 'Django 專家',
     description: 'Build Django web applications or REST APIs with Django REST Framework.',
+    descriptionZh: '使用 Django 或 Django REST Framework 構建網頁應用與 API。',
     author: 'Jeffallan',
     category: 'Development & Code Tools',
     tags: ['Python', 'Django', 'DRF'],
     downloadCount: 320,
     createdAt: '2025-03-03',
-    source: 'django-expert'
+    source: 'django-expert',
+    githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/django-expert'
   },
   {
     id: 35,
     name: 'dotnet-core-expert',
+    nameZh: '.NET Core 專家',
     description: 'Building .NET 8 applications with minimal APIs, clean architecture, or microservices.',
+    descriptionZh: '使用 Minimal APIs、整潔架構或微服務構建 .NET 8 應用。',
     author: 'Jeffallan',
     category: 'Development & Code Tools',
     tags: ['.NET Core', 'C#', 'Microservices'],
     downloadCount: 390,
     createdAt: '2025-03-03',
-    source: 'dotnet-core-expert'
+    source: 'dotnet-core-expert',
+    githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/dotnet-core-expert'
   },
   // Utility & Automation
   {
     id: 37,
     name: 'executing-plans',
+    nameZh: '執行計畫專家',
     description: 'Execute a written implementation plan with review checkpoints.',
+    descriptionZh: '執行預定的實作計畫，並包含關鍵審核節點。',
     author: 'Jeffallan',
     category: 'Utility & Automation',
     tags: ['Workflow', 'Execution', 'Planning'],
     downloadCount: 640,
     createdAt: '2025-03-03',
-    source: 'executing-plans'
+    source: 'executing-plans',
+    githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/executing-plans'
   },
   {
     id: 41,
     name: 'finishing-a-development-branch',
+    nameZh: '開發分支結案助手',
     description: 'Guide completion of development work by presenting structured options for merge, PR, or cleanup.',
+    descriptionZh: '引導完成開發工作，提供合併、PR 或清理分支的結構化選項。',
     author: 'Jeffallan',
     category: 'Utility & Automation',
     tags: ['Git', 'Workflow', 'PR'],
     downloadCount: 510,
     createdAt: '2025-03-03',
-    source: 'finishing-a-development-branch'
+    source: 'finishing-a-development-branch',
+    githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/finishing-a-development-branch'
   },
   {
     id: 79,
     name: 'skill-creator',
+    nameZh: '技能創造者 (Skill Creator)',
     description: 'Create new skills, modify and improve existing skills, and measure skill performance with evals.',
+    descriptionZh: '創造新技能、修改現有技能，並透過評估機制衡量技能效能。',
     author: 'SKILLS All-in-one',
     category: 'Utility & Automation',
     tags: ['Agent', 'Skills', 'Development'],
@@ -738,18 +925,23 @@ export const MOCK_SKILLS: Skill[] = [
   {
     id: 12,
     name: 'oiloil-ui-ux-guide',
+    nameZh: 'OilOil UI/UX 設計規範',
     description: 'Modern UI/UX guidance and review skill with guide and review modes.',
+    descriptionZh: '現代化的 UI/UX 指引與審閱技能，包含指引與審查兩種模式。',
     author: 'oil-oil',
     category: 'Development & Code Tools',
     tags: ['UI/UX', 'Design', 'Review'],
     downloadCount: 950,
     createdAt: '2025-02-20',
-    source: 'oiloil-ui-ux-guide'
+    source: 'oiloil-ui-ux-guide',
+    githubUrl: 'https://github.com/oil-oil/oiloil-ui-ux-guide'
   },
   {
     id: 13,
     name: 'skill-master',
+    nameZh: 'AI 技能大師 (Skill Master)',
     description: 'The ultimate AI Agent Skill Master for analyzing, architecting, and authoring skills.',
+    descriptionZh: '專為分析、設計與編寫 AI Agent 技能而生的終極大師工具。',
     author: 'SKILLS All-in-one',
     category: 'Utility & Automation',
     tags: ['Agent', 'Architecture', 'Writing'],
@@ -760,29 +952,37 @@ export const MOCK_SKILLS: Skill[] = [
   {
     id: 80,
     name: 'sql-pro',
+    nameZh: 'SQL 專業專家',
     description: 'Use when optimizing SQL queries, designing database schemas, or tuning database performance.',
+    descriptionZh: '用於優化 SQL 查詢、設計資料庫架構或調校資料庫效能。',
     author: 'Jeffallan',
     category: 'Data & Analysis',
     tags: ['SQL', 'Database', 'Optimization'],
     downloadCount: 310,
     createdAt: '2025-03-03',
-    source: 'sql-pro'
+    source: 'sql-pro',
+    githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/sql-pro'
   },
   {
     id: 81,
     name: 'sre-engineer',
+    nameZh: 'SRE 維運工程師',
     description: 'Use when defining SLIs/SLOs, managing error budgets, or building reliable systems at scale.',
+    descriptionZh: '用於定義 SLIs/SLOs、管理錯誤預算或構建大規模可靠系統。',
     author: 'Jeffallan',
     category: 'Development & Code Tools',
     tags: ['SRE', 'Reliability', 'Monitoring'],
     downloadCount: 340,
     createdAt: '2025-03-03',
-    source: 'sre-engineer'
+    source: 'sre-engineer',
+    githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/sre-engineer'
   },
   {
     id: 82,
     name: 'subagent-driven-development',
+    nameZh: '子 Agent 驅動開發 (SDD)',
     description: 'Use when executing implementation plans with independent tasks in the current session.',
+    descriptionZh: '在執行具有獨立任務的實作計畫時，透過子 Agent 進行開發。',
     author: 'SKILLS All-in-one',
     category: 'Utility & Automation',
     tags: ['Workflow', 'Agent', 'Implementation'],
@@ -793,95 +993,121 @@ export const MOCK_SKILLS: Skill[] = [
   {
     id: 83,
     name: 'swift-expert',
+    nameZh: 'Swift 專家',
     description: 'Use when building iOS/macOS applications with Swift 5.9+, SwiftUI, or async/await concurrency.',
+    descriptionZh: '使用 Swift 5.9+、SwiftUI 或非同步併發構建 iOS/macOS 應用。',
     author: 'Jeffallan',
     category: 'Development & Code Tools',
     tags: ['Swift', 'iOS', 'SwiftUI'],
     downloadCount: 280,
     createdAt: '2025-03-03',
-    source: 'swift-expert'
+    source: 'swift-expert',
+    githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/swift-expert'
   },
   {
     id: 84,
     name: 'systematic-debugging',
+    nameZh: '系統化除錯專家',
     description: 'Use when encountering any bug, test failure, or unexpected behavior, before proposing fixes.',
+    descriptionZh: '在提出修復前，針對任何 Bug 或異常行為進行系統化分析。',
     author: 'Jeffallan',
     category: 'Development & Code Tools',
     tags: ['Debugging', 'RC', 'Methodology'],
     downloadCount: 510,
     createdAt: '2025-03-03',
-    source: 'systematic-debugging'
+    source: 'systematic-debugging',
+    githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/systematic-debugging'
   },
   {
     id: 85,
     name: 'terraform-engineer',
+    nameZh: 'Terraform IaC 工程師',
     description: 'Use when implementing infrastructure as code with Terraform across AWS, Azure, or GCP.',
+    descriptionZh: '使用 Terraform 在不同雲端平台上實作基礎設施即程式碼 (IaC)。',
     author: 'Jeffallan',
     category: 'Development & Code Tools',
     tags: ['Terraform', 'IaC', 'Infra'],
     downloadCount: 390,
     createdAt: '2025-03-03',
-    source: 'terraform-engineer'
+    source: 'terraform-engineer',
+    githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/terraform-engineer'
   },
   {
     id: 86,
     name: 'test-master',
+    nameZh: '測試大師',
     description: 'Use when writing tests, creating test strategies, or building automation frameworks.',
+    descriptionZh: '用於撰寫測試、建立測試策略或構建自動化測試框架。',
     author: 'Jeffallan',
     category: 'Development & Code Tools',
     tags: ['Testing', 'QA', 'Automation'],
     downloadCount: 450,
     createdAt: '2025-03-03',
-    source: 'test-master'
+    source: 'test-master',
+    githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/test-master'
   },
   {
     id: 87,
     name: 'the-fool',
+    nameZh: '愚者 (結構化批判)',
     description: 'Use when challenging ideas, plans, decisions, or proposals using structured critical reasoning.',
+    descriptionZh: '透過結構化批判性推理，挑戰既有的構思、計畫或決策。',
     author: 'Jeffallan',
     category: 'Writing & Research',
     tags: ['Critical Thinking', 'Red Team', 'Reasoning'],
     downloadCount: 290,
     createdAt: '2025-03-03',
-    source: 'the-fool'
+    source: 'the-fool',
+    githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/the-fool'
   },
   {
     id: 88,
     name: 'theme-factory',
+    nameZh: '主題工廠',
     description: 'Toolkit for styling artifacts with professional themes, colors, and fonts.',
+    descriptionZh: '為作品提供 professional 主題、配色與字體配置的工具包。',
     author: 'Jeffallan',
     category: 'Media & Content',
     tags: ['Design', 'Themes', 'Styling'],
     downloadCount: 370,
     createdAt: '2025-03-03',
-    source: 'theme-factory'
+    source: 'theme-factory',
+    githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/theme-factory'
   },
   {
     id: 89,
     name: 'typescript-pro',
+    nameZh: 'TypeScript 專業專家',
     description: 'Use when building TypeScript applications requiring advanced type systems or generics.',
+    descriptionZh: '構建需要進階型別系統或泛型應用的 TypeScript 應用程式。',
     author: 'Jeffallan',
     category: 'Development & Code Tools',
     tags: ['TypeScript', 'Generics', 'Typing'],
     downloadCount: 680,
     createdAt: '2025-03-03',
-    source: 'typescript-pro'
+    source: 'typescript-pro',
+    githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/typescript-pro'
   },
   {
     id: 90,
     name: 'using-git-worktrees',
+    nameZh: 'Git Worktree 實戰專家',
     description: 'Use when starting feature work that needs isolation from current workspace or before executing plans.',
+    descriptionZh: '在需要與目前工作區隔離的情況下開始新功能開發或執行計畫。',
     author: 'Jeffallan',
     category: 'Utility & Automation',
     tags: ['Git', 'Worktree', 'Workflow'],
     downloadCount: 310,
     createdAt: '2025-03-03',
-    source: 'using-git-worktrees'
+    source: 'using-git-worktrees',
+    githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/using-git-worktrees'
   },
   {
     id: 91,
     name: 'using-superpowers',
+    nameZh: '啟動超能力 (技能調用)',
     description: 'Use when starting any conversation - establishes how to find and use skills.',
+    descriptionZh: '在對話開始時使用 — 建立如何尋找並調用技能的標準流程。',
     author: 'SKILLS All-in-one',
     category: 'Utility & Automation',
     tags: ['Agent', 'Skill', 'Workflow'],
@@ -892,7 +1118,9 @@ export const MOCK_SKILLS: Skill[] = [
   {
     id: 92,
     name: 'verification-before-completion',
+    nameZh: '完成前驗證機制',
     description: 'Use when about to claim work is complete, fixed, or passing, before committing.',
+    descriptionZh: '在提交程式碼前，驗證工作是否已真正完成、修復或通過測試。',
     author: 'SKILLS All-in-one',
     category: 'Development & Code Tools',
     tags: ['Validation', 'Testing', 'Verification'],
@@ -903,90 +1131,113 @@ export const MOCK_SKILLS: Skill[] = [
   {
     id: 93,
     name: 'vue-expert',
+    nameZh: 'Vue 3 專家',
     description: 'Use when building Vue 3 applications with Composition API, Nuxt 3, or Quasar.',
+    descriptionZh: '使用 Composition API、Nuxt 3 或 Quasar 構建 Vue 3 應用。',
     author: 'Jeffallan',
     category: 'Development & Code Tools',
     tags: ['Vue', 'Composition API', 'Nuxt'],
     downloadCount: 420,
     createdAt: '2025-03-03',
-    source: 'vue-expert'
+    source: 'vue-expert',
+    githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/vue-expert'
   },
   {
     id: 94,
     name: 'vue-expert-js',
+    nameZh: 'Vue 3 JS 專家 (無 TS)',
     description: 'Use when building Vue 3 applications with JavaScript only (no TypeScript).',
+    descriptionZh: '使用純 JavaScript (無 TypeScript) 構建 Vue 3 應用程式。',
     author: 'Jeffallan',
     category: 'Development & Code Tools',
     tags: ['Vue', 'JavaScript', 'JSDoc'],
     downloadCount: 310,
     createdAt: '2025-03-03',
-    source: 'vue-expert-js'
+    source: 'vue-expert-js',
+    githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/vue-expert-js'
   },
   {
     id: 95,
     name: 'webapp-testing',
+    nameZh: 'Web 應用測試工具',
     description: 'Toolkit for interacting with and testing local web applications using Playwright.',
+    descriptionZh: '使用 Playwright 與本地 Web 應用互動並進行測試的工具包。',
     author: 'Jeffallan',
     category: 'Security & Web Testing',
     tags: ['Testing', 'Playwright', 'Web'],
     downloadCount: 380,
     createdAt: '2025-03-03',
-    source: 'webapp-testing'
+    source: 'webapp-testing',
+    githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/webapp-testing'
   },
   {
     id: 96,
     name: 'websocket-engineer',
+    nameZh: 'WebSocket 工程師',
     description: 'Use when building real-time communication systems with WebSockets or Socket.IO.',
+    descriptionZh: '使用 WebSockets 或 Socket.IO 構建實時通訊系統。',
     author: 'Jeffallan',
     category: 'Development & Code Tools',
     tags: ['WebSocket', 'Socket.IO', 'Real-time'],
     downloadCount: 250,
     createdAt: '2025-03-03',
-    source: 'websocket-engineer'
+    source: 'websocket-engineer',
+    githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/websocket-engineer'
   },
   {
     id: 97,
     name: 'wordpress-pro',
+    nameZh: 'WordPress 專家',
     description: 'Use when developing WordPress themes, plugins, customizing Gutenberg blocks, or optimizing WordPress performance.',
+    descriptionZh: '開發 WordPress 主題、外掛、客製化區塊或優化效能。',
     author: 'Jeffallan',
     category: 'Development & Code Tools',
     tags: ['WordPress', 'WooCommerce', 'Gutenberg'],
     downloadCount: 180,
     createdAt: '2025-03-03',
-    source: 'wordpress-pro'
+    source: 'wordpress-pro',
+    githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/wordpress-pro'
   },
   {
     id: 98,
     name: 'writing-plans',
+    nameZh: '實作計畫撰寫專家',
     description: 'Use when you have a spec or requirements for a multi-step task, before touching code. Write comprehensive implementation plans assuming the engineer has zero context.',
+    descriptionZh: '在撰寫程式碼前，針對多步驟任務編寫全面的實作計畫。',
     author: 'Jeffallan',
     category: 'Development & Code Tools',
     tags: ['Planning', 'Implementation', 'Workflow'],
     downloadCount: 420,
     createdAt: '2025-03-03',
-    source: 'writing-plans'
+    source: 'writing-plans',
+    githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/writing-plans'
   },
   {
     id: 99,
     name: 'writing-skills',
+    nameZh: '技能編寫專家 (Skill Author)',
     description: 'Use when creating new skills, editing existing skills, or verifying skills work before deployment.',
+    descriptionZh: '用於創建新技能、編輯現有技能或在部署前驗證技能功能。',
     author: 'Jeffallan',
     category: 'Utility & Automation',
     tags: ['Skills', 'Documentation', 'TDD', 'Automation'],
     downloadCount: 350,
     createdAt: '2025-03-03',
-    source: 'writing-skills'
+    source: 'writing-skills',
+    githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/writing-skills'
   },
   {
     id: 100,
     name: 'xlsx',
+    nameZh: 'Excel 處理專家 (xlsx)',
     description: 'Use this skill any time a spreadsheet file is the primary input or output (Excel, CSV, TSV).',
+    descriptionZh: '當試算表文件（Excel、CSV、TSV）為主要輸入輸出時使用此技能。',
     author: 'Anthropic',
     category: 'Document Skills',
     tags: ['Excel', 'CSV', 'Spreadsheet', 'Data'],
     downloadCount: 520,
     createdAt: '2025-03-03',
-    source: 'xlsx'
+    source: 'xlsx',
+    githubUrl: 'https://github.com/anthropics/skills/tree/main/skills/xlsx'
   }
 ];
-

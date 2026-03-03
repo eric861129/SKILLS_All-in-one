@@ -28,7 +28,9 @@ export const useSkills = () => {
       if (Array.isArray(data)) {
         const sanitizedData = data.map(s => ({
           ...s,
-          source: s.source || s.folderName, // 映射 folderName 到 source
+          nameZh: s.nameZh || s.name_zh, // 支援多種命名風格
+          descriptionZh: s.descriptionZh || s.description_zh,
+          source: s.source || s.folderName,
           tags: Array.isArray(s.tags) ? s.tags : (typeof s.tags === 'string' ? JSON.parse(s.tags) : []),
           downloadCount: Number(s.downloadCount) || 0
         }));
@@ -72,14 +74,16 @@ export const useSkills = () => {
     return Array.from(cats).sort();
   }, [allSkills]);
 
-  // Fuse.js 配置 - 新增作者搜尋並優化權重
+  // Fuse.js 配置 - 新增中文搜尋支援
   const fuse = useMemo(() => {
     return new Fuse(allSkills, {
       keys: [
         { name: 'name', weight: 1.0 },
+        { name: 'nameZh', weight: 1.0 },
         { name: 'tags', weight: 0.8 },
         { name: 'author', weight: 0.6 },
-        { name: 'description', weight: 0.4 }
+        { name: 'description', weight: 0.4 },
+        { name: 'descriptionZh', weight: 0.4 }
       ],
       threshold: 0.3,
       distance: 100,

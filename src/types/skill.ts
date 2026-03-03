@@ -15,12 +15,15 @@ export type SkillCategory =
 export interface Skill {
   id: number;
   name: string;
+  nameZh?: string; // 中文名稱
   author: string;
   description: string;
+  descriptionZh?: string; // 中文敘述
   source: string; // 對應資料庫中的 source 欄位 (原 folderName)
   downloadCount: number;
   createdAt: string;
   category: SkillCategory;
   tags: string[];
   version?: string;
+  githubUrl?: string; // 原作者 GitHub 連結
 }

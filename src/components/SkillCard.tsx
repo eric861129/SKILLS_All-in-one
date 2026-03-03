@@ -1,5 +1,8 @@
-import { Download, Tag, User, Calendar } from 'lucide-react';
+import { Download, Tag, User, Calendar, Github } from 'lucide-react';
 import type { Skill, SkillCategory } from '../types/skill';
+import { useLanguage } from '../hooks/useLanguage';
+
+const GITHUB_REPO_ROOT = 'https://github.com/eric861129/SKILLS_All-in-one/tree/main/public/SKILLS';
 
 interface SkillCardProps {
   skill: Skill;
@@ -7,6 +10,15 @@ interface SkillCardProps {
 }
 
 export const SkillCard = ({ skill, onDownload }: SkillCardProps) => {
+  const { language, t } = useLanguage();
+
+  const handleViewGithub = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    // 優先使用原作者連結，若無則跳轉至本 Repo 位置
+    const url = skill.githubUrl || `${GITHUB_REPO_ROOT}/${encodeURIComponent(skill.category)}/${encodeURIComponent(skill.source)}`;
+    window.open(url, '_blank');
+  };
+
   const getCategoryStyles = (category: SkillCategory) => {
     switch (category) {
       case 'Development & Code Tools':
@@ -28,6 +40,12 @@ export const SkillCard = ({ skill, onDownload }: SkillCardProps) => {
     }
   };
 
+  // 根據語系選擇顯示內容，中文模式下保留原名對照
+  const displayName = language === 'zh' && skill.nameZh 
+    ? (skill.nameZh.includes(skill.name) ? skill.nameZh : `${skill.nameZh} (${skill.name})`)
+    : skill.name;
+  const displayDescription = language === 'zh' && skill.descriptionZh ? skill.descriptionZh : skill.description;
+
   return (
     <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 hover:border-blue-500/50 transition-all group flex flex-col h-full shadow-lg hover:shadow-blue-500/10">
       <div className="flex justify-between items-start mb-4">
@@ -41,11 +59,11 @@ export const SkillCard = ({ skill, onDownload }: SkillCardProps) => {
       </div>
 
       <h3 className="text-xl font-bold text-slate-100 mb-2 group-hover:text-blue-400 transition-colors">
-        {skill.name}
+        {displayName}
       </h3>
       
       <p className="text-slate-400 text-sm mb-6 line-clamp-2 flex-grow leading-relaxed">
-        {skill.description}
+        {displayDescription}
       </p>
 
       <div className="flex flex-wrap gap-2 mb-6">
@@ -59,26 +77,38 @@ export const SkillCard = ({ skill, onDownload }: SkillCardProps) => {
 
       <div className="flex items-center justify-between mt-auto pt-4 border-t border-slate-800/50">
         <div className="flex flex-col">
-          <span className="text-xs text-slate-500 flex items-center gap-1.5 mb-1">
-            <User className="w-3.5 h-3.5" />
+          <span className="text-sm font-semibold text-slate-300 flex items-center gap-2 mb-1.5">
+            <User className="w-4 h-4 text-blue-400" />
             {skill.author}
           </span>
-          <span className="text-xs text-slate-400 font-medium flex items-center gap-1.5">
-            <Download className="w-3.5 h-3.5 text-blue-500" />
+          <span className="text-xs text-slate-500 font-medium flex items-center gap-1.5">
+            <Download className="w-3.5 h-3.5 text-blue-500/70" />
             {(skill.downloadCount || 0).toLocaleString()}
           </span>
         </div>
         
-        <button 
-          onClick={(e) => {
-            e.stopPropagation();
-            onDownload?.();
-          }}
-          className="bg-blue-600 hover:bg-blue-500 text-white p-2.5 rounded-xl transition-all active:scale-95 shadow-lg shadow-blue-600/20"
-          title="下載 Skill"
-        >
-          <Download className="w-5 h-5" />
-        </button>
+        <div className="flex gap-2">
+          <button 
+            onClick={handleViewGithub}
+            className="bg-slate-800 hover:bg-slate-700 text-slate-300 p-2.5 rounded-xl transition-all active:scale-95 border border-slate-700 hover:border-slate-500 flex items-center gap-2 px-3"
+            title={t('viewOnGithub')}
+          >
+            <Github className="w-5 h-5" />
+            <span className="text-xs font-bold">{t('viewOnGithub')}</span>
+          </button>
+
+          <button 
+            onClick={(e) => {
+              e.stopPropagation();
+              onDownload?.();
+            }}
+            className="bg-blue-600 hover:bg-blue-500 text-white p-2.5 rounded-xl transition-all active:scale-95 shadow-lg shadow-blue-600/20 flex items-center gap-2 px-4"
+            title={t('download')}
+          >
+            <Download className="w-5 h-5" />
+            <span className="text-xs font-bold">{t('download')}</span>
+          </button>
+        </div>
       </div>
     </div>
   );
