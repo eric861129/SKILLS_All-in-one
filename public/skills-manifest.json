@@ -68,10 +68,10 @@
   "postgres": {
     "category": "Data & Analysis",
     "files": [
+      "SKILL.md",
       "connections.example.json",
       "requirements.txt",
-      "scripts/query.py",
-      "SKILL.md"
+      "scripts/query.py"
     ]
   },
   "postgres-pro": {
