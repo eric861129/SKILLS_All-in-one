@@ -1245,5 +1245,75 @@ export const MOCK_SKILLS: Skill[] = [
     createdAt: '2025-03-03',
     source: 'xlsx',
     githubUrl: 'https://github.com/anthropics/skills/tree/main/skills/xlsx'
-  }
+  },
+  {
+    id: 102,
+    name: 'aws-mcp-setup',
+    nameZh: 'AWS MCP 配置助手',
+    description: 'Configure AWS Documentation MCP server to query up-to-date AWS knowledge.',
+    descriptionZh: '配置 AWS 文件 MCP 伺服器，以查詢最新的 AWS 知識、API 與最佳實踐。',
+    author: 'zxkane',
+    category: 'Infrastructure & Cloud',
+    tags: ['AWS', 'MCP', 'Setup', 'Cloud'],
+    downloadCount: 0,
+    createdAt: '2026-03-04',
+    source: 'aws-mcp-setup',
+    githubUrl: 'https://github.com/zxkane/aws-skills/tree/main/plugins/aws-common/skills/aws-mcp-setup'
+  },
+  {
+    id: 103,
+    name: 'aws-cdk-development',
+    nameZh: 'AWS CDK 開發專家',
+    description: 'AWS Cloud Development Kit (CDK) expert for building cloud infrastructure with TypeScript/Python.',
+    descriptionZh: 'AWS 雲端開發套件 (CDK) 專家，使用 TypeScript 或 Python 構建雲端基礎設施。',
+    author: 'zxkane',
+    category: 'Infrastructure & Cloud',
+    tags: ['AWS', 'CDK', 'IaC', 'TypeScript', 'Cloud'],
+    downloadCount: 0,
+    createdAt: '2026-03-04',
+    source: 'aws-cdk-development',
+    githubUrl: 'https://github.com/zxkane/aws-skills/tree/main/plugins/aws-cdk/skills/aws-cdk-development'
+  },
+  {
+    id: 104,
+    name: 'aws-cost-operations',
+    nameZh: 'AWS 成本與維運專家',
+    description: 'AWS cost optimization, monitoring, and operational best practices.',
+    descriptionZh: 'AWS 成本優化、監控與維運最佳實踐，包含帳單分析與資源評估。',
+    author: 'zxkane',
+    category: 'Infrastructure & Cloud',
+    tags: ['AWS', 'Cost', 'Operations', 'Monitoring', 'Cloud'],
+    downloadCount: 0,
+    createdAt: '2026-03-04',
+    source: 'aws-cost-operations',
+    githubUrl: 'https://github.com/zxkane/aws-skills/tree/main/plugins/aws-cost-ops/skills/aws-cost-operations'
+  },
+  {
+    id: 105,
+    name: 'aws-serverless-eda',
+    nameZh: 'AWS Serverless 與事件驅動架構',
+    description: 'AWS serverless and event-driven architecture expert based on Well-Architected Framework.',
+    descriptionZh: 'AWS Serverless 與事件驅動架構專家，專精於 Lambda, API Gateway 與 EventBridge。',
+    author: 'zxkane',
+    category: 'Infrastructure & Cloud',
+    tags: ['AWS', 'Serverless', 'EDA', 'Lambda', 'Cloud'],
+    downloadCount: 0,
+    createdAt: '2026-03-04',
+    source: 'aws-serverless-eda',
+    githubUrl: 'https://github.com/zxkane/aws-skills/tree/main/plugins/serverless-eda/skills/aws-serverless-eda'
+  },
+  {
+    id: 106,
+    name: 'aws-agentic-ai',
+    nameZh: 'AWS Bedrock Agentic AI 專家',
+    description: 'AWS Bedrock AgentCore comprehensive expert for deploying and managing AI agents.',
+    descriptionZh: 'AWS Bedrock AgentCore 全方位專家，用於部署與管理 Bedrock AI 代理。',
+    author: 'zxkane',
+    category: 'Infrastructure & Cloud',
+    tags: ['AWS', 'Bedrock', 'AI', 'Agents', 'Cloud'],
+    downloadCount: 0,
+    createdAt: '2026-03-04',
+    source: 'aws-agentic-ai',
+    githubUrl: 'https://github.com/zxkane/aws-skills/tree/main/plugins/aws-agentic-ai/skills/aws-agentic-ai'
+  },
 ];
