@@ -19,8 +19,8 @@
 
 ## 📜 核心規範 (Mandates)
 
-### 1. 內部能力規範 (Elite 14 Policy)
-為了優化開發效率與上下文使用，`.agent/skills/` 保留 **14** 個核心開發技能：
+### 1. 內部能力規範 (Elite 18 Policy)
+為了優化開發效率與上下文使用，`.agent/skills/` 保留 **18** 個核心開發與管理技能：
 1. `using-superpowers`
 2. `oiloil-ui-ux-guide`
 3. `frontend-design`
@@ -31,10 +31,14 @@
 8. `verification-before-completion`
 9. `writing-plans`
 10. `web-artifacts-builder`
-11. `writing-skills` (輔助技能維護)
-12. `design-taste-frontend` (UI/UX 工程師級架構)
-13. `full-output-enforcement` (完整輸出強制)
-14. `redesign-existing-projects` (既有專案重設計)
+11. `writing-skills`
+12. `design-taste-frontend`
+13. `full-output-enforcement`
+14. `redesign-existing-projects`
+15. `skill-manager` (Master Controller)
+16. `github-skill-importer` (SOP)
+17. `skill-security-auditor` (SOP)
+18. `skill-onboarding-guide` (SOP)
 
 ### 2. UI/UX 設計規範 (OilOil Guide)
 - **嚴禁 Emoji**: UI 裝飾與圖標僅限使用 `Lucide` 等向量圖標。
