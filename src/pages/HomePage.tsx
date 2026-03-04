@@ -1,15 +1,12 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
-import { useSearchParams } from 'react-router-dom';
+import { useSearchParams, useNavigate } from 'react-router-dom';
 import { Terminal, Search, Filter, X, Flame, Clock, ArrowUpDown, Languages, SlidersHorizontal, Plus } from 'lucide-react';
 import { useSkills } from '../hooks/useSkills';
 import { SkillCard } from '../components/SkillCard';
-import { SkillDetailModal } from '../components/SkillDetailModal';
 import { FilterSidebar } from '../components/FilterSidebar';
 import { SkeletonCard } from '../components/SkeletonCard';
 import { ScrollToTop } from '../components/ScrollToTop';
 import { JsonLd } from '../components/JsonLd';
-import { useToast } from '../components/Toast';
-import { downloadAndZipSkill } from '../utils/downloadSkill';
 import { useLanguage } from '../hooks/useLanguage';
 import type { Skill, SkillCategory } from '../types/skill';
 import type { SortOption } from '../hooks/useSkills';
@@ -18,7 +15,7 @@ const ITEMS_PER_PAGE = 24;
 
 export const HomePage = () => {
     const [searchParams, setSearchParams] = useSearchParams();
-    const { showToast } = useToast();
+    const navigate = useNavigate();
     const searchInputRef = useRef<HTMLInputElement>(null);
 
     const {
@@ -37,14 +34,11 @@ export const HomePage = () => {
         selectedTags,
         toggleAuthor,
         toggleTag,
-        clearSidebarFilters,
-        incrementDownload
+        clearSidebarFilters
     } = useSkills();
 
     const { language, setLanguage, t } = useLanguage();
 
-    // Modal 狀態
-    const [selectedSkill, setSelectedSkill] = useState<Skill | null>(null);
     // 行動端側欄狀態
     const [showMobileSidebar, setShowMobileSidebar] = useState(false);
     // 分頁
@@ -94,7 +88,6 @@ export const HomePage = () => {
     // ─── 鍵盤快捷鍵 ────────────────────────────────
     useEffect(() => {
         const handleKeyDown = (e: KeyboardEvent) => {
-            if (selectedSkill) return;
             const target = e.target as HTMLElement;
             const isInput = target.tagName === 'INPUT' || target.tagName === 'TEXTAREA' || target.isContentEditable;
 
@@ -109,30 +102,11 @@ export const HomePage = () => {
 
         window.addEventListener('keydown', handleKeyDown);
         return () => window.removeEventListener('keydown', handleKeyDown);
-    }, [selectedSkill]);
-
-    const handleDownload = async (skill: Skill) => {
-        incrementDownload(skill.id);
-        try {
-            await downloadAndZipSkill(skill);
-            showToast(
-                language === 'zh'
-                    ? `${skill.nameZh || skill.name} 下載成功`
-                    : `${skill.name} downloaded successfully`,
-                'success'
-            );
-        } catch (err) {
-            console.error('下載失敗:', err);
-            showToast(
-                language === 'zh' ? '下載失敗，請稍後再試' : 'Download failed, please try again',
-                'error'
-            );
-        }
-    };
+    }, []);
 
     const handlePreview = useCallback((skill: Skill) => {
-        setSelectedSkill(skill);
-    }, []);
+        navigate(`/skill/${skill.id}`);
+    }, [navigate]);
 
     const activeFilterCount = selectedAuthors.length + selectedTags.length;
 
@@ -359,7 +333,6 @@ export const HomePage = () => {
                                     >
                                         <SkillCard
                                             skill={skill}
-                                            onDownload={() => handleDownload(skill)}
                                             onPreview={() => handlePreview(skill)}
                                         />
                                     </div>
@@ -431,14 +404,7 @@ export const HomePage = () => {
                 </div>
             </footer>
 
-            {/* Skill Detail Modal */}
-            {selectedSkill && (
-                <SkillDetailModal
-                    skill={selectedSkill}
-                    onClose={() => setSelectedSkill(null)}
-                    onDownload={() => handleDownload(selectedSkill)}
-                />
-            )}
+            {/* Scroll to Top */}
 
             {/* Scroll to Top */}
             <ScrollToTop />

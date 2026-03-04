@@ -1,25 +1,20 @@
-import { Download, Tag, User, Calendar, Github } from 'lucide-react';
+import { Download, Tag, User, Calendar } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import type { Skill, SkillCategory } from '../types/skill';
 import { useLanguage } from '../hooks/useLanguage';
 
-const GITHUB_REPO_ROOT = 'https://github.com/eric861129/SKILLS_All-in-one/tree/main/public/SKILLS';
 const MAX_VISIBLE_TAGS = 3;
 
 interface SkillCardProps {
   skill: Skill;
-  onDownload?: () => void;
   onPreview?: () => void;
 }
 
-export const SkillCard = ({ skill, onDownload, onPreview }: SkillCardProps) => {
-  const { language, t } = useLanguage();
+export const SkillCard = ({ skill, onPreview }: SkillCardProps) => {
+  const { language } = useLanguage();
 
-  const handleViewGithub = (e: React.MouseEvent) => {
-    e.stopPropagation();
-    const url = skill.githubUrl || `${GITHUB_REPO_ROOT}/${encodeURIComponent(skill.category)}/${encodeURIComponent(skill.source)}`;
-    window.open(url, '_blank');
-  };
+  // Actions removed to maintain minimal card design as per user request
+  // Detailed actions moved to SkillPage
 
   const getCategoryStyles = (category: SkillCategory) => {
     switch (category) {
@@ -76,7 +71,7 @@ export const SkillCard = ({ skill, onDownload, onPreview }: SkillCardProps) => {
       </p>
 
       <div className="flex flex-wrap gap-2 mb-6">
-        {visibleTags.map((tag) => (
+        {visibleTags.map((tag: string) => (
           <span key={tag} className="flex items-center gap-1 text-[10px] uppercase tracking-widest text-slate-500 bg-slate-800/50 px-2 py-0.5 rounded border border-slate-700/50">
             <Tag className="w-2.5 h-2.5" />
             {tag}
@@ -90,43 +85,22 @@ export const SkillCard = ({ skill, onDownload, onPreview }: SkillCardProps) => {
       </div>
 
       <div className="flex items-center justify-between mt-auto pt-4 border-t border-slate-800/50">
-        <div className="flex flex-col relative z-10 w-full pr-2">
+        <div className="flex flex-col relative z-10 w-full">
           <Link
             to={`/author/${encodeURIComponent(skill.author)}`}
             onClick={(e) => e.stopPropagation()}
-            className="text-sm font-semibold text-slate-300 flex items-center gap-2 mb-1.5 hover:text-blue-400 transition-colors truncate"
+            className="text-sm font-semibold text-slate-300 flex items-center gap-2 mb-1.5 hover:text-blue-400 transition-colors truncate w-fit"
             title={skill.author}
           >
             <User className="w-4 h-4 text-blue-400 shrink-0" />
             <span className="truncate">{skill.author}</span>
           </Link>
-          <span className="text-xs text-slate-500 font-medium flex items-center gap-1.5">
-            <Download className="w-3.5 h-3.5 text-blue-500/70" />
-            <span className="font-mono">{(skill.downloadCount || 0).toLocaleString()}</span>
-          </span>
-        </div>
-
-        <div className="flex gap-2">
-          <button
-            onClick={handleViewGithub}
-            className="bg-slate-800 hover:bg-slate-700 text-slate-300 p-2.5 rounded-xl transition-all duration-[var(--duration-fast)] active:scale-95 border border-slate-700 hover:border-slate-600 flex items-center gap-2 px-3"
-            title={skill.githubUrl ? t('originalSource') : t('viewInRepo')}
-          >
-            <Github className="w-5 h-5" />
-            <span className="text-xs font-bold">{skill.githubUrl ? t('originalSource') : t('viewInRepo')}</span>
-          </button>
-
-          <button
-            onClick={(e) => {
-              e.stopPropagation();
-              onDownload?.();
-            }}
-            className="bg-blue-600 hover:bg-blue-500 text-white p-2.5 rounded-xl transition-all duration-[var(--duration-fast)] active:scale-95 shadow-lg shadow-blue-600/20 hover:shadow-blue-500/30 flex items-center gap-2 px-4"
-            title={t('download')}
-          >
-            <Download className="w-5 h-5" />
-            <span className="text-xs font-bold">{t('download')}</span>
-          </button>
+          <div className="flex items-center gap-3">
+            <span className="text-xs text-slate-500 font-medium flex items-center gap-1.5">
+              <Download className="w-3.5 h-3.5 text-blue-500/70" />
+              <span className="font-mono">{(skill.downloadCount || 0).toLocaleString()}</span>
+            </span>
+          </div>
         </div>
       </div>
     </div>

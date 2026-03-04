@@ -5,17 +5,14 @@ import { useSkills } from '../hooks/useSkills';
 import { SkillCard } from '../components/SkillCard';
 import { SkeletonCard } from '../components/SkeletonCard';
 import { ScrollToTop } from '../components/ScrollToTop';
-import { useToast } from '../components/Toast';
-import { downloadAndZipSkill } from '../utils/downloadSkill';
 import { useLanguage } from '../hooks/useLanguage';
-import type { Skill } from '../types/skill';
+
 
 export const AuthorPage = () => {
     const { name } = useParams<{ name: string }>();
     const navigate = useNavigate();
-    const { skills, loading, incrementDownload } = useSkills();
+    const { skills, loading } = useSkills();
     const { language } = useLanguage();
-    const { showToast } = useToast();
 
     // Filter skills exactly by author
     const authorSkills = useMemo(() => {
@@ -33,25 +30,6 @@ export const AuthorPage = () => {
             document.title = `${name} | SKILLS All-in-one`;
         }
     }, [name]);
-
-    const handleDownload = async (skill: Skill) => {
-        incrementDownload(skill.id);
-        try {
-            await downloadAndZipSkill(skill);
-            showToast(
-                language === 'zh'
-                    ? `${skill.nameZh || skill.name} 下載成功`
-                    : `${skill.name} downloaded successfully`,
-                'success'
-            );
-        } catch (err) {
-            console.error('下載失敗:', err);
-            showToast(
-                language === 'zh' ? '下載失敗，請稍後再試' : 'Download failed, please try again',
-                'error'
-            );
-        }
-    };
 
     return (
         <div className="min-h-screen bg-slate-950 text-white noise-overlay">
@@ -133,7 +111,6 @@ export const AuthorPage = () => {
                                 <SkillCard
                                     skill={skill}
                                     onPreview={() => navigate(`/skill/${skill.id}`)}
-                                    onDownload={() => handleDownload(skill)}
                                 />
                             </div>
                         ))}
