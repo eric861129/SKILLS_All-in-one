@@ -953,6 +953,17 @@
       "SKILL.md"
     ]
   },
+  "plaid": {
+    "category": "Finance & Payments",
+    "files": []
+  },
+  "stripe": {
+    "category": "Finance & Payments",
+    "files": [
+      "skill.json",
+      "SKILL.md"
+    ]
+  },
   "aws-agentic-ai": {
     "category": "Infrastructure & Cloud",
     "files": [
@@ -1161,6 +1172,17 @@
       "themes/tech-innovation.md"
     ]
   },
+  "supabase": {
+    "category": "SaaS & Backend",
+    "files": [
+      "skill.json",
+      "SKILL.md"
+    ]
+  },
+  "whop": {
+    "category": "SaaS & Backend",
+    "files": []
+  },
   "chaos-engineer": {
     "category": "Security & Web Testing",
     "files": [
@@ -1327,6 +1349,22 @@
       "SKILL.md",
       "testing-skills-with-subagents.md"
     ]
+  },
+  "aptos": {
+    "category": "Web3 & Blockchain",
+    "files": [
+      "aptos-cli/SKILL.md",
+      "aptos-core/SKILL.md",
+      "aptos-indexer/SKILL.md",
+      "aptos-standards/SKILL.md",
+      "aptos-ts-sdk/SKILL.md",
+      "move-analyzer/SKILL.md",
+      "move-prover/SKILL.md"
+    ]
+  },
+  "helius": {
+    "category": "Web3 & Blockchain",
+    "files": []
   },
   "brainstorming": {
     "category": "Writing & Research",
