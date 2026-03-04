@@ -2,172 +2,171 @@
   "atlassian-mcp": {
     "category": "Collaboration & Project Management",
     "files": [
-      "SKILL.md",
       "references/authentication-patterns.md",
       "references/common-workflows.md",
       "references/confluence-operations.md",
       "references/jira-queries.md",
-      "references/mcp-server-setup.md"
+      "references/mcp-server-setup.md",
+      "SKILL.md"
     ]
   },
   "feature-forge": {
     "category": "Collaboration & Project Management",
     "files": [
-      "SKILL.md",
       "references/acceptance-criteria.md",
       "references/ears-syntax.md",
       "references/interview-questions.md",
       "references/pre-discovery-subagents.md",
-      "references/specification-template.md"
+      "references/specification-template.md",
+      "SKILL.md"
     ]
   },
   "database-optimizer": {
     "category": "Data & Analysis",
     "files": [
-      "SKILL.md",
       "references/index-strategies.md",
       "references/monitoring-analysis.md",
       "references/mysql-tuning.md",
       "references/postgresql-tuning.md",
-      "references/query-optimization.md"
+      "references/query-optimization.md",
+      "SKILL.md"
     ]
   },
   "fine-tuning-expert": {
     "category": "Data & Analysis",
     "files": [
-      "SKILL.md",
       "references/dataset-preparation.md",
       "references/deployment-optimization.md",
       "references/evaluation-metrics.md",
       "references/hyperparameter-tuning.md",
-      "references/lora-peft.md"
+      "references/lora-peft.md",
+      "SKILL.md"
     ]
   },
   "ml-pipeline": {
     "category": "Data & Analysis",
     "files": [
-      "SKILL.md",
       "references/experiment-tracking.md",
       "references/feature-engineering.md",
       "references/model-validation.md",
       "references/pipeline-orchestration.md",
-      "references/training-pipelines.md"
+      "references/training-pipelines.md",
+      "SKILL.md"
     ]
   },
   "pandas-pro": {
     "category": "Data & Analysis",
     "files": [
-      "SKILL.md",
       "references/aggregation-groupby.md",
       "references/data-cleaning.md",
       "references/dataframe-operations.md",
       "references/merging-joining.md",
-      "references/performance-optimization.md"
+      "references/performance-optimization.md",
+      "SKILL.md"
     ]
   },
   "postgres-pro": {
     "category": "Data & Analysis",
     "files": [
-      "SKILL.md",
       "references/extensions.md",
       "references/jsonb.md",
       "references/maintenance.md",
       "references/performance.md",
-      "references/replication.md"
+      "references/replication.md",
+      "SKILL.md"
     ]
   },
   "rag-architect": {
     "category": "Data & Analysis",
     "files": [
-      "SKILL.md",
       "references/chunking-strategies.md",
       "references/embedding-models.md",
       "references/rag-evaluation.md",
       "references/retrieval-optimization.md",
-      "references/vector-databases.md"
+      "references/vector-databases.md",
+      "SKILL.md"
     ]
   },
   "spark-engineer": {
     "category": "Data & Analysis",
     "files": [
-      "SKILL.md",
       "references/partitioning-caching.md",
       "references/performance-tuning.md",
       "references/rdd-operations.md",
       "references/spark-sql-dataframes.md",
-      "references/streaming-patterns.md"
+      "references/streaming-patterns.md",
+      "SKILL.md"
     ]
   },
   "sql-pro": {
     "category": "Data & Analysis",
     "files": [
-      "SKILL.md",
       "references/database-design.md",
       "references/dialect-differences.md",
       "references/optimization.md",
       "references/query-patterns.md",
-      "references/window-functions.md"
+      "references/window-functions.md",
+      "SKILL.md"
     ]
   },
   "angular-architect": {
     "category": "Development & Code Tools",
     "files": [
-      "SKILL.md",
       "references/components.md",
       "references/ngrx.md",
       "references/routing.md",
       "references/rxjs.md",
-      "references/testing.md"
+      "references/testing.md",
+      "SKILL.md"
     ]
   },
   "api-designer": {
     "category": "Development & Code Tools",
     "files": [
-      "SKILL.md",
       "references/error-handling.md",
       "references/openapi.md",
       "references/pagination.md",
       "references/rest-patterns.md",
-      "references/versioning.md"
+      "references/versioning.md",
+      "SKILL.md"
     ]
   },
   "architecture-designer": {
     "category": "Development & Code Tools",
     "files": [
-      "SKILL.md",
       "references/adr-template.md",
       "references/architecture-patterns.md",
       "references/database-selection.md",
       "references/nfr-checklist.md",
-      "references/system-design.md"
+      "references/system-design.md",
+      "SKILL.md"
     ]
   },
   "cli-developer": {
     "category": "Development & Code Tools",
     "files": [
-      "SKILL.md",
       "references/design-patterns.md",
       "references/go-cli.md",
       "references/node-cli.md",
       "references/python-cli.md",
-      "references/ux-patterns.md"
+      "references/ux-patterns.md",
+      "SKILL.md"
     ]
   },
   "cloud-architect": {
     "category": "Development & Code Tools",
     "files": [
-      "SKILL.md",
       "references/aws.md",
       "references/azure.md",
       "references/cost.md",
       "references/gcp.md",
-      "references/multi-cloud.md"
+      "references/multi-cloud.md",
+      "SKILL.md"
     ]
   },
   "code-documenter": {
     "category": "Development & Code Tools",
     "files": [
-      "SKILL.md",
       "references/api-docs-fastapi-django.md",
       "references/api-docs-nestjs-express.md",
       "references/coverage-reports.md",
@@ -175,58 +174,58 @@
       "references/interactive-api-docs.md",
       "references/python-docstrings.md",
       "references/typescript-jsdoc.md",
-      "references/user-guides-tutorials.md"
+      "references/user-guides-tutorials.md",
+      "SKILL.md"
     ]
   },
   "code-reviewer": {
     "category": "Development & Code Tools",
     "files": [
-      "SKILL.md",
       "references/common-issues.md",
       "references/feedback-examples.md",
       "references/receiving-feedback.md",
       "references/report-template.md",
       "references/review-checklist.md",
-      "references/spec-compliance-review.md"
+      "references/spec-compliance-review.md",
+      "SKILL.md"
     ]
   },
   "cpp-pro": {
     "category": "Development & Code Tools",
     "files": [
-      "SKILL.md",
       "references/build-tooling.md",
       "references/concurrency.md",
       "references/memory-performance.md",
       "references/modern-cpp.md",
-      "references/templates.md"
+      "references/templates.md",
+      "SKILL.md"
     ]
   },
   "csharp-developer": {
     "category": "Development & Code Tools",
     "files": [
-      "SKILL.md",
       "references/aspnet-core.md",
       "references/blazor.md",
       "references/entity-framework.md",
       "references/modern-csharp.md",
-      "references/performance.md"
+      "references/performance.md",
+      "SKILL.md"
     ]
   },
   "debugging-wizard": {
     "category": "Development & Code Tools",
     "files": [
-      "SKILL.md",
       "references/common-patterns.md",
       "references/debugging-tools.md",
       "references/quick-fixes.md",
       "references/strategies.md",
-      "references/systematic-debugging.md"
+      "references/systematic-debugging.md",
+      "SKILL.md"
     ]
   },
   "devops-engineer": {
     "category": "Development & Code Tools",
     "files": [
-      "SKILL.md",
       "references/deployment-strategies.md",
       "references/docker-patterns.md",
       "references/github-actions.md",
@@ -234,64 +233,65 @@
       "references/kubernetes.md",
       "references/platform-engineering.md",
       "references/release-automation.md",
-      "references/terraform-iac.md"
+      "references/terraform-iac.md",
+      "SKILL.md"
     ]
   },
   "django-expert": {
     "category": "Development & Code Tools",
     "files": [
-      "SKILL.md",
       "references/authentication.md",
       "references/drf-serializers.md",
       "references/models-orm.md",
       "references/testing-django.md",
-      "references/viewsets-views.md"
+      "references/viewsets-views.md",
+      "SKILL.md"
     ]
   },
   "dotnet-core-expert": {
     "category": "Development & Code Tools",
     "files": [
-      "SKILL.md",
       "references/authentication.md",
       "references/clean-architecture.md",
       "references/cloud-native.md",
       "references/entity-framework.md",
-      "references/minimal-apis.md"
+      "references/minimal-apis.md",
+      "SKILL.md"
     ]
   },
   "embedded-systems": {
     "category": "Development & Code Tools",
     "files": [
-      "SKILL.md",
       "references/communication-protocols.md",
       "references/memory-optimization.md",
       "references/microcontroller-programming.md",
       "references/power-optimization.md",
-      "references/rtos-patterns.md"
+      "references/rtos-patterns.md",
+      "SKILL.md"
     ]
   },
   "fastapi-expert": {
     "category": "Development & Code Tools",
     "files": [
-      "SKILL.md",
       "references/async-sqlalchemy.md",
       "references/authentication.md",
       "references/endpoints-routing.md",
       "references/migration-from-django.md",
       "references/pydantic-v2.md",
-      "references/testing-async.md"
+      "references/testing-async.md",
+      "SKILL.md"
     ]
   },
   "flutter-expert": {
     "category": "Development & Code Tools",
     "files": [
-      "SKILL.md",
       "references/bloc-state.md",
       "references/gorouter-navigation.md",
       "references/performance.md",
       "references/project-structure.md",
       "references/riverpod-state.md",
-      "references/widget-patterns.md"
+      "references/widget-patterns.md",
+      "SKILL.md"
     ]
   },
   "frontend-design": {
@@ -304,7 +304,6 @@
   "fullstack-guardian": {
     "category": "Development & Code Tools",
     "files": [
-      "SKILL.md",
       "references/api-design-standards.md",
       "references/architecture-decisions.md",
       "references/backend-patterns.md",
@@ -314,69 +313,69 @@
       "references/error-handling.md",
       "references/frontend-patterns.md",
       "references/integration-patterns.md",
-      "references/security-checklist.md"
+      "references/security-checklist.md",
+      "SKILL.md"
     ]
   },
   "golang-pro": {
     "category": "Development & Code Tools",
     "files": [
-      "SKILL.md",
       "references/concurrency.md",
       "references/generics.md",
       "references/interfaces.md",
       "references/project-structure.md",
-      "references/testing.md"
+      "references/testing.md",
+      "SKILL.md"
     ]
   },
   "graphql-architect": {
     "category": "Development & Code Tools",
     "files": [
-      "SKILL.md",
       "references/federation.md",
       "references/migration-from-rest.md",
       "references/resolvers.md",
       "references/schema-design.md",
       "references/security.md",
-      "references/subscriptions.md"
+      "references/subscriptions.md",
+      "SKILL.md"
     ]
   },
   "java-architect": {
     "category": "Development & Code Tools",
     "files": [
-      "SKILL.md",
       "references/jpa-optimization.md",
       "references/reactive-webflux.md",
       "references/spring-boot-setup.md",
       "references/spring-security.md",
-      "references/testing-patterns.md"
+      "references/testing-patterns.md",
+      "SKILL.md"
     ]
   },
   "javascript-pro": {
     "category": "Development & Code Tools",
     "files": [
-      "SKILL.md",
       "references/async-patterns.md",
       "references/browser-apis.md",
       "references/modern-syntax.md",
       "references/modules.md",
-      "references/node-essentials.md"
+      "references/node-essentials.md",
+      "SKILL.md"
     ]
   },
   "kotlin-specialist": {
     "category": "Development & Code Tools",
     "files": [
-      "SKILL.md",
       "references/android-compose.md",
       "references/coroutines-flow.md",
       "references/dsl-idioms.md",
       "references/ktor-server.md",
-      "references/multiplatform-kmp.md"
+      "references/multiplatform-kmp.md",
+      "SKILL.md"
     ]
   },
   "kubernetes-specialist": {
     "category": "Development & Code Tools",
     "files": [
-      "SKILL.md",
       "references/configuration.md",
       "references/cost-optimization.md",
       "references/custom-operators.md",
@@ -387,46 +386,46 @@
       "references/service-mesh.md",
       "references/storage.md",
       "references/troubleshooting.md",
-      "references/workloads.md"
+      "references/workloads.md",
+      "SKILL.md"
     ]
   },
   "laravel-specialist": {
     "category": "Development & Code Tools",
     "files": [
-      "SKILL.md",
       "references/eloquent.md",
       "references/livewire.md",
       "references/queues.md",
       "references/routing.md",
-      "references/testing.md"
+      "references/testing.md",
+      "SKILL.md"
     ]
   },
   "legacy-modernizer": {
     "category": "Development & Code Tools",
     "files": [
-      "SKILL.md",
       "references/legacy-testing.md",
       "references/migration-strategies.md",
       "references/refactoring-patterns.md",
       "references/strangler-fig-pattern.md",
-      "references/system-assessment.md"
+      "references/system-assessment.md",
+      "SKILL.md"
     ]
   },
   "microservices-architect": {
     "category": "Development & Code Tools",
     "files": [
-      "SKILL.md",
       "references/communication.md",
       "references/data.md",
       "references/decomposition.md",
       "references/observability.md",
-      "references/patterns.md"
+      "references/patterns.md",
+      "SKILL.md"
     ]
   },
   "monitoring-expert": {
     "category": "Development & Code Tools",
     "files": [
-      "SKILL.md",
       "references/alerting-rules.md",
       "references/application-profiling.md",
       "references/capacity-planning.md",
@@ -434,99 +433,100 @@
       "references/opentelemetry.md",
       "references/performance-testing.md",
       "references/prometheus-metrics.md",
-      "references/structured-logging.md"
+      "references/structured-logging.md",
+      "SKILL.md"
     ]
   },
   "nestjs-expert": {
     "category": "Development & Code Tools",
     "files": [
-      "SKILL.md",
       "references/authentication.md",
       "references/controllers-routing.md",
       "references/dtos-validation.md",
       "references/migration-from-express.md",
       "references/services-di.md",
-      "references/testing-patterns.md"
+      "references/testing-patterns.md",
+      "SKILL.md"
     ]
   },
   "nextjs-developer": {
     "category": "Development & Code Tools",
     "files": [
-      "SKILL.md",
       "references/app-router.md",
       "references/data-fetching.md",
       "references/deployment.md",
       "references/server-actions.md",
-      "references/server-components.md"
+      "references/server-components.md",
+      "SKILL.md"
     ]
   },
   "oiloil-ui-ux-guide": {
     "category": "Development & Code Tools",
     "files": [
-      "SKILL.md",
       "references/checklists.md",
       "references/design-psych.md",
       "references/icons.md",
       "references/interaction-psychology.md",
       "references/review-template.md",
-      "references/system-principles.md"
+      "references/system-principles.md",
+      "SKILL.md"
     ]
   },
   "php-pro": {
     "category": "Development & Code Tools",
     "files": [
-      "SKILL.md",
       "references/async-patterns.md",
       "references/laravel-patterns.md",
       "references/modern-php-features.md",
       "references/symfony-patterns.md",
-      "references/testing-quality.md"
+      "references/testing-quality.md",
+      "SKILL.md"
     ]
   },
   "python-pro": {
     "category": "Development & Code Tools",
     "files": [
-      "SKILL.md",
       "references/async-patterns.md",
       "references/packaging.md",
       "references/standard-library.md",
       "references/testing.md",
-      "references/type-system.md"
+      "references/type-system.md",
+      "SKILL.md"
     ]
   },
   "rails-expert": {
     "category": "Development & Code Tools",
     "files": [
-      "SKILL.md",
       "references/active-record.md",
       "references/api-development.md",
       "references/background-jobs.md",
       "references/hotwire-turbo.md",
-      "references/rspec-testing.md"
+      "references/rspec-testing.md",
+      "SKILL.md"
     ]
   },
   "react-expert": {
     "category": "Development & Code Tools",
     "files": [
-      "SKILL.md",
       "references/hooks-patterns.md",
       "references/migration-class-to-modern.md",
       "references/performance.md",
       "references/react-19-features.md",
       "references/server-components.md",
       "references/state-management.md",
-      "references/testing-react.md"
+      "references/testing-react.md",
+      "SKILL.md"
     ]
   },
   "react-native-expert": {
     "category": "Development & Code Tools",
     "files": [
-      "SKILL.md",
       "references/expo-router.md",
       "references/list-optimization.md",
       "references/platform-handling.md",
       "references/project-structure.md",
-      "references/storage-hooks.md"
+      "references/storage-hooks.md",
+      "SKILL.md"
     ]
   },
   "receiving-code-review": {
@@ -538,96 +538,96 @@
   "requesting-code-review": {
     "category": "Development & Code Tools",
     "files": [
-      "SKILL.md",
-      "code-reviewer.md"
+      "code-reviewer.md",
+      "SKILL.md"
     ]
   },
   "rust-engineer": {
     "category": "Development & Code Tools",
     "files": [
-      "SKILL.md",
       "references/async.md",
       "references/error-handling.md",
       "references/ownership.md",
       "references/testing.md",
-      "references/traits.md"
+      "references/traits.md",
+      "SKILL.md"
     ]
   },
   "salesforce-developer": {
     "category": "Development & Code Tools",
     "files": [
-      "SKILL.md",
       "references/apex-development.md",
       "references/deployment-devops.md",
       "references/integration-patterns.md",
       "references/lightning-web-components.md",
-      "references/soql-sosl.md"
+      "references/soql-sosl.md",
+      "SKILL.md"
     ]
   },
   "shopify-expert": {
     "category": "Development & Code Tools",
     "files": [
-      "SKILL.md",
       "references/app-development.md",
       "references/checkout-customization.md",
       "references/liquid-templating.md",
       "references/performance-optimization.md",
-      "references/storefront-api.md"
+      "references/storefront-api.md",
+      "SKILL.md"
     ]
   },
   "spec-miner": {
     "category": "Development & Code Tools",
     "files": [
-      "SKILL.md",
       "references/analysis-checklist.md",
       "references/analysis-process.md",
       "references/ears-format.md",
-      "references/specification-template.md"
+      "references/specification-template.md",
+      "SKILL.md"
     ]
   },
   "spring-boot-engineer": {
     "category": "Development & Code Tools",
     "files": [
-      "SKILL.md",
       "references/cloud.md",
       "references/data.md",
       "references/security.md",
       "references/testing.md",
-      "references/web.md"
+      "references/web.md",
+      "SKILL.md"
     ]
   },
   "sre-engineer": {
     "category": "Development & Code Tools",
     "files": [
-      "SKILL.md",
       "references/automation-toil.md",
       "references/error-budget-policy.md",
       "references/incident-chaos.md",
       "references/monitoring-alerting.md",
-      "references/slo-sli-management.md"
+      "references/slo-sli-management.md",
+      "SKILL.md"
     ]
   },
   "swift-expert": {
     "category": "Development & Code Tools",
     "files": [
-      "SKILL.md",
       "references/async-concurrency.md",
       "references/memory-performance.md",
       "references/protocol-oriented.md",
       "references/swiftui-patterns.md",
-      "references/testing-patterns.md"
+      "references/testing-patterns.md",
+      "SKILL.md"
     ]
   },
   "systematic-debugging": {
     "category": "Development & Code Tools",
     "files": [
-      "CREATION-LOG.md",
-      "SKILL.md",
       "condition-based-waiting-example.ts",
       "condition-based-waiting.md",
+      "CREATION-LOG.md",
       "defense-in-depth.md",
       "find-polluter.sh",
       "root-cause-tracing.md",
+      "SKILL.md",
       "test-academic.md",
       "test-pressure-1.md",
       "test-pressure-2.md",
@@ -637,12 +637,12 @@
   "terraform-engineer": {
     "category": "Development & Code Tools",
     "files": [
-      "SKILL.md",
       "references/best-practices.md",
       "references/module-patterns.md",
       "references/providers.md",
       "references/state-management.md",
-      "references/testing.md"
+      "references/testing.md",
+      "SKILL.md"
     ]
   },
   "test-driven-development": {
@@ -655,7 +655,6 @@
   "test-master": {
     "category": "Development & Code Tools",
     "files": [
-      "SKILL.md",
       "references/automation-frameworks.md",
       "references/e2e-testing.md",
       "references/integration-testing.md",
@@ -665,18 +664,19 @@
       "references/tdd-iron-laws.md",
       "references/test-reports.md",
       "references/testing-anti-patterns.md",
-      "references/unit-testing.md"
+      "references/unit-testing.md",
+      "SKILL.md"
     ]
   },
   "typescript-pro": {
     "category": "Development & Code Tools",
     "files": [
-      "SKILL.md",
       "references/advanced-types.md",
       "references/configuration.md",
       "references/patterns.md",
       "references/type-guards.md",
-      "references/utility-types.md"
+      "references/utility-types.md",
+      "SKILL.md"
     ]
   },
   "verification-before-completion": {
@@ -688,57 +688,57 @@
   "vue-expert": {
     "category": "Development & Code Tools",
     "files": [
-      "SKILL.md",
       "references/build-tooling.md",
       "references/components.md",
       "references/composition-api.md",
       "references/mobile-hybrid.md",
       "references/nuxt.md",
       "references/state-management.md",
-      "references/typescript.md"
+      "references/typescript.md",
+      "SKILL.md"
     ]
   },
   "vue-expert-js": {
     "category": "Development & Code Tools",
     "files": [
-      "SKILL.md",
       "references/component-architecture.md",
       "references/composables-patterns.md",
       "references/jsdoc-typing.md",
       "references/state-management.md",
-      "references/testing-patterns.md"
+      "references/testing-patterns.md",
+      "SKILL.md"
     ]
   },
   "web-artifacts-builder": {
     "category": "Development & Code Tools",
     "files": [
       "LICENSE.txt",
-      "SKILL.md",
       "scripts/bundle-artifact.sh",
       "scripts/init-artifact.sh",
-      "scripts/shadcn-components.tar.gz"
+      "scripts/shadcn-components.tar.gz",
+      "SKILL.md"
     ]
   },
   "websocket-engineer": {
     "category": "Development & Code Tools",
     "files": [
-      "SKILL.md",
       "references/alternatives.md",
       "references/patterns.md",
       "references/protocol.md",
       "references/scaling.md",
-      "references/security.md"
+      "references/security.md",
+      "SKILL.md"
     ]
   },
   "wordpress-pro": {
     "category": "Development & Code Tools",
     "files": [
-      "SKILL.md",
       "references/gutenberg-blocks.md",
       "references/hooks-filters.md",
       "references/performance-security.md",
       "references/plugin-architecture.md",
-      "references/theme-development.md"
+      "references/theme-development.md",
+      "SKILL.md"
     ]
   },
   "writing-plans": {
@@ -751,14 +751,16 @@
     "category": "Document Skills",
     "files": [
       "LICENSE.txt",
-      "SKILL.md",
-      "scripts/__init__.py",
       "scripts/accept_changes.py",
       "scripts/comment.py",
-      "scripts/office/helpers/__init__.py",
       "scripts/office/helpers/merge_runs.py",
       "scripts/office/helpers/simplify_redlines.py",
+      "scripts/office/helpers/__init__.py",
       "scripts/office/pack.py",
+      "scripts/office/schemas/ecma/fouth-edition/opc-contentTypes.xsd",
+      "scripts/office/schemas/ecma/fouth-edition/opc-coreProperties.xsd",
+      "scripts/office/schemas/ecma/fouth-edition/opc-digSig.xsd",
+      "scripts/office/schemas/ecma/fouth-edition/opc-relationships.xsd",
       "scripts/office/schemas/ISO-IEC29500-4_2016/dml-chart.xsd",
       "scripts/office/schemas/ISO-IEC29500-4_2016/dml-chartDrawing.xsd",
       "scripts/office/schemas/ISO-IEC29500-4_2016/dml-diagram.xsd",
@@ -786,10 +788,6 @@
       "scripts/office/schemas/ISO-IEC29500-4_2016/vml-wordprocessingDrawing.xsd",
       "scripts/office/schemas/ISO-IEC29500-4_2016/wml.xsd",
       "scripts/office/schemas/ISO-IEC29500-4_2016/xml.xsd",
-      "scripts/office/schemas/ecma/fouth-edition/opc-contentTypes.xsd",
-      "scripts/office/schemas/ecma/fouth-edition/opc-coreProperties.xsd",
-      "scripts/office/schemas/ecma/fouth-edition/opc-digSig.xsd",
-      "scripts/office/schemas/ecma/fouth-edition/opc-relationships.xsd",
       "scripts/office/schemas/mce/mc.xsd",
       "scripts/office/schemas/microsoft/wml-2010.xsd",
       "scripts/office/schemas/microsoft/wml-2012.xsd",
@@ -801,24 +799,25 @@
       "scripts/office/soffice.py",
       "scripts/office/unpack.py",
       "scripts/office/validate.py",
-      "scripts/office/validators/__init__.py",
       "scripts/office/validators/base.py",
       "scripts/office/validators/docx.py",
       "scripts/office/validators/pptx.py",
       "scripts/office/validators/redlining.py",
+      "scripts/office/validators/__init__.py",
       "scripts/templates/comments.xml",
       "scripts/templates/commentsExtended.xml",
       "scripts/templates/commentsExtensible.xml",
       "scripts/templates/commentsIds.xml",
-      "scripts/templates/people.xml"
+      "scripts/templates/people.xml",
+      "scripts/__init__.py",
+      "SKILL.md"
     ]
   },
   "pdf": {
     "category": "Document Skills",
     "files": [
-      "LICENSE.txt",
-      "SKILL.md",
       "forms.md",
+      "LICENSE.txt",
       "reference.md",
       "scripts/check_bounding_boxes.py",
       "scripts/check_fillable_fields.py",
@@ -827,23 +826,26 @@
       "scripts/extract_form_field_info.py",
       "scripts/extract_form_structure.py",
       "scripts/fill_fillable_fields.py",
-      "scripts/fill_pdf_form_with_annotations.py"
+      "scripts/fill_pdf_form_with_annotations.py",
+      "SKILL.md"
     ]
   },
   "pptx": {
     "category": "Document Skills",
     "files": [
-      "LICENSE.txt",
-      "SKILL.md",
       "editing.md",
+      "LICENSE.txt",
       "pptxgenjs.md",
-      "scripts/__init__.py",
       "scripts/add_slide.py",
       "scripts/clean.py",
-      "scripts/office/helpers/__init__.py",
       "scripts/office/helpers/merge_runs.py",
       "scripts/office/helpers/simplify_redlines.py",
+      "scripts/office/helpers/__init__.py",
       "scripts/office/pack.py",
+      "scripts/office/schemas/ecma/fouth-edition/opc-contentTypes.xsd",
+      "scripts/office/schemas/ecma/fouth-edition/opc-coreProperties.xsd",
+      "scripts/office/schemas/ecma/fouth-edition/opc-digSig.xsd",
+      "scripts/office/schemas/ecma/fouth-edition/opc-relationships.xsd",
       "scripts/office/schemas/ISO-IEC29500-4_2016/dml-chart.xsd",
       "scripts/office/schemas/ISO-IEC29500-4_2016/dml-chartDrawing.xsd",
       "scripts/office/schemas/ISO-IEC29500-4_2016/dml-diagram.xsd",
@@ -871,10 +873,6 @@
       "scripts/office/schemas/ISO-IEC29500-4_2016/vml-wordprocessingDrawing.xsd",
       "scripts/office/schemas/ISO-IEC29500-4_2016/wml.xsd",
       "scripts/office/schemas/ISO-IEC29500-4_2016/xml.xsd",
-      "scripts/office/schemas/ecma/fouth-edition/opc-contentTypes.xsd",
-      "scripts/office/schemas/ecma/fouth-edition/opc-coreProperties.xsd",
-      "scripts/office/schemas/ecma/fouth-edition/opc-digSig.xsd",
-      "scripts/office/schemas/ecma/fouth-edition/opc-relationships.xsd",
       "scripts/office/schemas/mce/mc.xsd",
       "scripts/office/schemas/microsoft/wml-2010.xsd",
       "scripts/office/schemas/microsoft/wml-2012.xsd",
@@ -886,23 +884,28 @@
       "scripts/office/soffice.py",
       "scripts/office/unpack.py",
       "scripts/office/validate.py",
-      "scripts/office/validators/__init__.py",
       "scripts/office/validators/base.py",
       "scripts/office/validators/docx.py",
       "scripts/office/validators/pptx.py",
       "scripts/office/validators/redlining.py",
-      "scripts/thumbnail.py"
+      "scripts/office/validators/__init__.py",
+      "scripts/thumbnail.py",
+      "scripts/__init__.py",
+      "SKILL.md"
     ]
   },
   "xlsx": {
     "category": "Document Skills",
     "files": [
       "LICENSE.txt",
-      "SKILL.md",
-      "scripts/office/helpers/__init__.py",
       "scripts/office/helpers/merge_runs.py",
       "scripts/office/helpers/simplify_redlines.py",
+      "scripts/office/helpers/__init__.py",
       "scripts/office/pack.py",
+      "scripts/office/schemas/ecma/fouth-edition/opc-contentTypes.xsd",
+      "scripts/office/schemas/ecma/fouth-edition/opc-coreProperties.xsd",
+      "scripts/office/schemas/ecma/fouth-edition/opc-digSig.xsd",
+      "scripts/office/schemas/ecma/fouth-edition/opc-relationships.xsd",
       "scripts/office/schemas/ISO-IEC29500-4_2016/dml-chart.xsd",
       "scripts/office/schemas/ISO-IEC29500-4_2016/dml-chartDrawing.xsd",
       "scripts/office/schemas/ISO-IEC29500-4_2016/dml-diagram.xsd",
@@ -930,10 +933,6 @@
       "scripts/office/schemas/ISO-IEC29500-4_2016/vml-wordprocessingDrawing.xsd",
       "scripts/office/schemas/ISO-IEC29500-4_2016/wml.xsd",
       "scripts/office/schemas/ISO-IEC29500-4_2016/xml.xsd",
-      "scripts/office/schemas/ecma/fouth-edition/opc-contentTypes.xsd",
-      "scripts/office/schemas/ecma/fouth-edition/opc-coreProperties.xsd",
-      "scripts/office/schemas/ecma/fouth-edition/opc-digSig.xsd",
-      "scripts/office/schemas/ecma/fouth-edition/opc-relationships.xsd",
       "scripts/office/schemas/mce/mc.xsd",
       "scripts/office/schemas/microsoft/wml-2010.xsd",
       "scripts/office/schemas/microsoft/wml-2012.xsd",
@@ -945,51 +944,56 @@
       "scripts/office/soffice.py",
       "scripts/office/unpack.py",
       "scripts/office/validate.py",
-      "scripts/office/validators/__init__.py",
       "scripts/office/validators/base.py",
       "scripts/office/validators/docx.py",
       "scripts/office/validators/pptx.py",
       "scripts/office/validators/redlining.py",
-      "scripts/recalc.py"
+      "scripts/office/validators/__init__.py",
+      "scripts/recalc.py",
+      "SKILL.md"
     ]
+  },
+  "plaid": {
+    "category": "Finance & Payments",
+    "files": []
   },
   "stripe": {
     "category": "Finance & Payments",
     "files": [
-      "SKILL.md",
-      "skill.json"
+      "skill.json",
+      "SKILL.md"
     ]
   },
   "aws-agentic-ai": {
     "category": "Infrastructure & Cloud",
     "files": [
-      "SKILL.md",
       "cross-service/credential-management.md",
       "services/browser/README.md",
       "services/code-interpreter/README.md",
-      "services/gateway/README.md",
       "services/gateway/deployment-strategies.md",
+      "services/gateway/README.md",
       "services/gateway/troubleshooting-guide.md",
       "services/identity/README.md",
       "services/memory/README.md",
       "services/observability/README.md",
-      "services/runtime/README.md"
+      "services/runtime/README.md",
+      "SKILL.md"
     ]
   },
   "aws-cdk-development": {
     "category": "Infrastructure & Cloud",
     "files": [
-      "SKILL.md",
       "references/cdk-patterns.md",
-      "scripts/validate-stack.sh"
+      "scripts/validate-stack.sh",
+      "SKILL.md"
     ]
   },
   "aws-cost-operations": {
     "category": "Infrastructure & Cloud",
     "files": [
-      "SKILL.md",
       "references/cloudwatch-alarms.md",
-      "references/operations-patterns.md"
+      "references/operations-patterns.md",
+      "SKILL.md"
     ]
   },
   "aws-mcp-setup": {
@@ -1001,13 +1005,24 @@
   "aws-serverless-eda": {
     "category": "Infrastructure & Cloud",
     "files": [
-      "SKILL.md",
       "references/deployment-best-practices.md",
       "references/eda-patterns.md",
       "references/observability-best-practices.md",
       "references/performance-optimization.md",
       "references/security-best-practices.md",
-      "references/serverless-patterns.md"
+      "references/serverless-patterns.md",
+      "SKILL.md"
+    ]
+  },
+  "notebooklm": {
+    "category": "Learning & Knowledge",
+    "files": [
+      "scripts/ask_question.py",
+      "scripts/common.py",
+      "scripts/notebook_manager.py",
+      "scripts/remote_manager.py",
+      "skill.json",
+      "SKILL.md"
     ]
   },
   "algorithmic-art": {
@@ -1029,8 +1044,6 @@
   "canvas-design": {
     "category": "Media & Content",
     "files": [
-      "LICENSE.txt",
-      "SKILL.md",
       "canvas-fonts/ArsenalSC-OFL.txt",
       "canvas-fonts/ArsenalSC-Regular.ttf",
       "canvas-fonts/BigShoulders-Bold.ttf",
@@ -1111,43 +1124,45 @@
       "canvas-fonts/WorkSans-OFL.txt",
       "canvas-fonts/WorkSans-Regular.ttf",
       "canvas-fonts/YoungSerif-OFL.txt",
-      "canvas-fonts/YoungSerif-Regular.ttf"
+      "canvas-fonts/YoungSerif-Regular.ttf",
+      "LICENSE.txt",
+      "SKILL.md"
     ]
   },
   "game-developer": {
     "category": "Media & Content",
     "files": [
-      "SKILL.md",
       "references/ecs-patterns.md",
       "references/multiplayer-networking.md",
       "references/performance-optimization.md",
       "references/unity-patterns.md",
-      "references/unreal-cpp.md"
+      "references/unreal-cpp.md",
+      "SKILL.md"
     ]
   },
   "revealjs": {
     "category": "Media & Content",
     "files": [
-      "SKILL.md",
       "references/advanced-features.md",
       "references/base-styles.css",
       "references/charts.md",
       "scripts/check-charts.js",
       "scripts/check-overflow.js",
       "scripts/create-presentation.js",
-      "scripts/edit-html.js"
+      "scripts/edit-html.js",
+      "SKILL.md"
     ]
   },
   "slack-gif-creator": {
     "category": "Media & Content",
     "files": [
-      "LICENSE.txt",
-      "SKILL.md",
       "core/easing.py",
       "core/frame_composer.py",
       "core/gif_builder.py",
       "core/validators.py",
-      "requirements.txt"
+      "LICENSE.txt",
+      "requirements.txt",
+      "SKILL.md"
     ]
   },
   "theme-factory": {
@@ -1171,64 +1186,68 @@
   "supabase": {
     "category": "SaaS & Backend",
     "files": [
-      "SKILL.md",
-      "skill.json"
+      "skill.json",
+      "SKILL.md"
     ]
+  },
+  "whop": {
+    "category": "SaaS & Backend",
+    "files": []
   },
   "chaos-engineer": {
     "category": "Security & Web Testing",
     "files": [
-      "SKILL.md",
       "references/chaos-tools.md",
       "references/experiment-design.md",
       "references/game-days.md",
       "references/infrastructure-chaos.md",
-      "references/kubernetes-chaos.md"
+      "references/kubernetes-chaos.md",
+      "SKILL.md"
     ]
   },
   "playwright-expert": {
     "category": "Security & Web Testing",
     "files": [
-      "SKILL.md",
       "references/api-mocking.md",
       "references/configuration.md",
       "references/debugging-flaky.md",
       "references/page-object-model.md",
-      "references/selectors-locators.md"
+      "references/selectors-locators.md",
+      "SKILL.md"
     ]
   },
   "secure-code-guardian": {
     "category": "Security & Web Testing",
     "files": [
-      "SKILL.md",
       "references/authentication.md",
       "references/input-validation.md",
       "references/owasp-prevention.md",
       "references/security-headers.md",
-      "references/xss-csrf.md"
+      "references/xss-csrf.md",
+      "SKILL.md"
     ]
   },
   "security-reviewer": {
     "category": "Security & Web Testing",
     "files": [
-      "SKILL.md",
       "references/infrastructure-security.md",
       "references/penetration-testing.md",
       "references/report-template.md",
       "references/sast-tools.md",
       "references/secret-scanning.md",
-      "references/vulnerability-patterns.md"
+      "references/vulnerability-patterns.md",
+      "SKILL.md"
     ]
   },
   "webapp-testing": {
     "category": "Security & Web Testing",
     "files": [
-      "LICENSE.txt",
-      "SKILL.md",
       "examples/console_logging.py",
       "examples/element_discovery.py",
       "examples/static_html_automation.py",
-      "scripts/with_server.py"
+      "LICENSE.txt",
+      "scripts/with_server.py",
+      "SKILL.md"
     ]
   },
   "dispatching-parallel-agents": {
@@ -1253,7 +1272,6 @@
     "category": "Utility & Automation",
     "files": [
       "LICENSE.txt",
-      "SKILL.md",
       "reference/evaluation.md",
       "reference/mcp_best_practices.md",
       "reference/node_mcp_server.md",
@@ -1261,44 +1279,43 @@
       "scripts/connections.py",
       "scripts/evaluation.py",
       "scripts/example_evaluation.xml",
-      "scripts/requirements.txt"
+      "scripts/requirements.txt",
+      "SKILL.md"
     ]
   },
   "mcp-developer": {
     "category": "Utility & Automation",
     "files": [
-      "SKILL.md",
       "references/protocol.md",
       "references/python-sdk.md",
       "references/resources.md",
       "references/tools.md",
-      "references/typescript-sdk.md"
+      "references/typescript-sdk.md",
+      "SKILL.md"
     ]
   },
   "prompt-engineer": {
     "category": "Utility & Automation",
     "files": [
-      "SKILL.md",
       "references/evaluation-frameworks.md",
       "references/prompt-optimization.md",
       "references/prompt-patterns.md",
       "references/structured-outputs.md",
-      "references/system-prompts.md"
+      "references/system-prompts.md",
+      "SKILL.md"
     ]
   },
   "skill-creator": {
     "category": "Utility & Automation",
     "files": [
-      "LICENSE.txt",
-      "SKILL.md",
       "agents/analyzer.md",
       "agents/comparator.md",
       "agents/grader.md",
       "assets/eval_review.html",
       "eval-viewer/generate_review.py",
       "eval-viewer/viewer.html",
+      "LICENSE.txt",
       "references/schemas.md",
-      "scripts/__init__.py",
       "scripts/aggregate_benchmark.py",
       "scripts/generate_report.py",
       "scripts/improve_description.py",
@@ -1306,15 +1323,17 @@
       "scripts/quick_validate.py",
       "scripts/run_eval.py",
       "scripts/run_loop.py",
-      "scripts/utils.py"
+      "scripts/utils.py",
+      "scripts/__init__.py",
+      "SKILL.md"
     ]
   },
   "subagent-driven-development": {
     "category": "Utility & Automation",
     "files": [
-      "SKILL.md",
       "code-quality-reviewer-prompt.md",
       "implementer-prompt.md",
+      "SKILL.md",
       "spec-reviewer-prompt.md"
     ]
   },
@@ -1333,12 +1352,12 @@
   "writing-skills": {
     "category": "Utility & Automation",
     "files": [
-      "SKILL.md",
       "anthropic-best-practices.md",
       "examples/CLAUDE_MD_TESTING.md",
       "graphviz-conventions.dot",
       "persuasion-principles.md",
       "render-graphs.js",
+      "SKILL.md",
       "testing-skills-with-subagents.md"
     ]
   },
@@ -1353,6 +1372,10 @@
       "move-analyzer/SKILL.md",
       "move-prover/SKILL.md"
     ]
+  },
+  "helius": {
+    "category": "Web3 & Blockchain",
+    "files": []
   },
   "move-code-quality-skill": {
     "category": "Web3 & Blockchain",
@@ -1375,24 +1398,24 @@
   "internal-comms": {
     "category": "Writing & Research",
     "files": [
-      "LICENSE.txt",
-      "SKILL.md",
       "examples/3p-updates.md",
       "examples/company-newsletter.md",
       "examples/faq-answers.md",
-      "examples/general-comms.md"
+      "examples/general-comms.md",
+      "LICENSE.txt",
+      "SKILL.md"
     ]
   },
   "the-fool": {
     "category": "Writing & Research",
     "files": [
-      "SKILL.md",
       "references/dialectic-synthesis.md",
       "references/evidence-audit.md",
       "references/mode-selection-guide.md",
       "references/pre-mortem-analysis.md",
       "references/red-team-adversarial.md",
-      "references/socratic-questioning.md"
+      "references/socratic-questioning.md",
+      "SKILL.md"
     ]
   }
 }

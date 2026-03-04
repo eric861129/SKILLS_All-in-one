@@ -1413,5 +1413,19 @@ export const MOCK_SKILLS: Skill[] = [
     createdAt: '2026-03-04',
     source: 'move-code-quality-skill',
     githubUrl: 'https://github.com/1NickPappas/move-code-quality-skill'
+  },,
+  {
+    id: 114,
+    name: 'notebooklm',
+    nameZh: 'NotebookLM 專家',
+    description: "Query and manage Google NotebookLM notebooks with persistent profile auth and source sync.",
+    descriptionZh: '透過 Playwright 自動化管理 Google NotebookLM，支援持久化認證、來源同步與批次查詢。',
+    author: 'sanjay3290',
+    category: 'Learning & Knowledge',
+    tags: ['NotebookLM', 'Automation', 'Google', 'Knowledge'],
+    downloadCount: 0,
+    createdAt: '2026-03-04',
+    source: 'notebooklm',
+    githubUrl: 'https://github.com/sanjay3290/ai-skills/tree/main/skills/notebooklm'
   },
 ];
