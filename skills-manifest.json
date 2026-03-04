@@ -65,6 +65,15 @@
       "references/performance-optimization.md"
     ]
   },
+  "postgres": {
+    "category": "Data & Analysis",
+    "files": [
+      "SKILL.md",
+      "connections.example.json",
+      "requirements.txt",
+      "scripts/query.py"
+    ]
+  },
   "postgres-pro": {
     "category": "Data & Analysis",
     "files": [
@@ -1008,6 +1017,17 @@
       "references/performance-optimization.md",
       "references/security-best-practices.md",
       "references/serverless-patterns.md"
+    ]
+  },
+  "notebooklm": {
+    "category": "Learning & Knowledge",
+    "files": [
+      "SKILL.md",
+      "scripts/ask_question.py",
+      "scripts/common.py",
+      "scripts/notebook_manager.py",
+      "scripts/remote_manager.py",
+      "skill.json"
     ]
   },
   "algorithmic-art": {
