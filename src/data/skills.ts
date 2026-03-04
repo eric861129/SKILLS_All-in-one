@@ -11,7 +11,7 @@ export const MOCK_SKILLS: Skill[] = [
     author: 'Anthropic',
     category: 'Document Skills',
     tags: ['Document', 'Word', 'Extraction'],
-    downloadCount: 450,
+    downloadCount: 0,
     createdAt: '2025-01-01',
     source: 'docx',
     githubUrl: 'https://github.com/anthropics/skills/tree/main/skills/docx'
@@ -25,7 +25,7 @@ export const MOCK_SKILLS: Skill[] = [
     author: 'Anthropic',
     category: 'Document Skills',
     tags: ['Document', 'PDF', 'Extraction'],
-    downloadCount: 340,
+    downloadCount: 0,
     createdAt: '2025-01-05',
     source: 'pdf',
     githubUrl: 'https://github.com/anthropics/skills/tree/main/skills/pdf'
@@ -39,7 +39,7 @@ export const MOCK_SKILLS: Skill[] = [
     author: 'Anthropic',
     category: 'Document Skills',
     tags: ['Document', 'PowerPoint', 'Slides'],
-    downloadCount: 210,
+    downloadCount: 0,
     createdAt: '2025-01-10',
     source: 'pptx',
     githubUrl: 'https://github.com/anthropics/skills/tree/main/skills/pptx'
@@ -53,7 +53,7 @@ export const MOCK_SKILLS: Skill[] = [
     author: 'Anthropic',
     category: 'Document Skills',
     tags: ['Document', 'Excel', 'Data'],
-    downloadCount: 450,
+    downloadCount: 0,
     createdAt: '2025-01-15',
     source: 'xlsx',
     githubUrl: 'https://github.com/anthropics/skills/tree/main/skills/xlsx'
@@ -67,7 +67,7 @@ export const MOCK_SKILLS: Skill[] = [
     author: 'ryanbbrown',
     category: 'Document Skills',
     tags: ['Presentation', 'Reveal.js', 'HTML'],
-    downloadCount: 180,
+    downloadCount: 0,
     createdAt: '2025-02-01',
     source: 'revealjs-skill'
   },
@@ -81,7 +81,7 @@ export const MOCK_SKILLS: Skill[] = [
     author: 'Anthropic',
     category: 'Development & Code Tools',
     tags: ['React', 'Tailwind', 'Artifacts'],
-    downloadCount: 890,
+    downloadCount: 0,
     createdAt: '2025-01-20',
     source: 'web-artifacts-builder'
   },
@@ -94,9 +94,10 @@ export const MOCK_SKILLS: Skill[] = [
     author: 'obra',
     category: 'Development & Code Tools',
     tags: ['TDD', 'Testing', 'Quality'],
-    downloadCount: 560,
+    downloadCount: 0,
     createdAt: '2025-01-25',
-    source: 'test-driven-development'
+    source: 'test-driven-development',
+    githubUrl: 'https://github.com/obra/superpowers/tree/main/skills/test-driven-development'
   },
   {
     id: 8,
@@ -107,7 +108,7 @@ export const MOCK_SKILLS: Skill[] = [
     author: 'raintree-technology',
     category: 'Development & Code Tools',
     tags: ['Starter', 'Configuration', 'Template'],
-    downloadCount: 1200,
+    downloadCount: 0,
     createdAt: '2025-02-10',
     source: 'claude-starter'
   },
@@ -120,7 +121,7 @@ export const MOCK_SKILLS: Skill[] = [
     author: 'Jeffallan',
     category: 'Development & Code Tools',
     tags: ['Angular', 'Signals', 'Architecture'],
-    downloadCount: 420,
+    downloadCount: 0,
     createdAt: '2025-02-25',
     source: 'angular-architect',
     githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/angular-architect'
@@ -134,7 +135,7 @@ export const MOCK_SKILLS: Skill[] = [
     author: 'Jeffallan',
     category: 'Development & Code Tools',
     tags: ['API', 'OpenAPI', 'Design'],
-    downloadCount: 680,
+    downloadCount: 0,
     createdAt: '2025-02-26',
     source: 'api-designer',
     githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/api-designer'
@@ -148,7 +149,7 @@ export const MOCK_SKILLS: Skill[] = [
     author: 'Jeffallan',
     category: 'Development & Code Tools',
     tags: ['System Design', 'ADR', 'Scalability'],
-    downloadCount: 530,
+    downloadCount: 0,
     createdAt: '2025-02-27',
     source: 'architecture-designer',
     githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/architecture-designer'
@@ -162,7 +163,7 @@ export const MOCK_SKILLS: Skill[] = [
     author: 'Jeffallan',
     category: 'Development & Code Tools',
     tags: ['CLI', 'Terminal', 'DX'],
-    downloadCount: 310,
+    downloadCount: 0,
     createdAt: '2025-03-01',
     source: 'cli-developer',
     githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/cli-developer'
@@ -176,7 +177,7 @@ export const MOCK_SKILLS: Skill[] = [
     author: 'Jeffallan',
     category: 'Development & Code Tools',
     tags: ['Embedded', 'Firmware', 'RTOS'],
-    downloadCount: 280,
+    downloadCount: 0,
     createdAt: '2025-03-03',
     source: 'embedded-systems',
     githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/embedded-systems'
@@ -190,7 +191,7 @@ export const MOCK_SKILLS: Skill[] = [
     author: 'Jeffallan',
     category: 'Development & Code Tools',
     tags: ['Python', 'FastAPI', 'Async'],
-    downloadCount: 450,
+    downloadCount: 0,
     createdAt: '2025-03-03',
     source: 'fastapi-expert',
     githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/fastapi-expert'
@@ -204,7 +205,7 @@ export const MOCK_SKILLS: Skill[] = [
     author: 'Jeffallan',
     category: 'Development & Code Tools',
     tags: ['Flutter', 'Dart', 'Mobile'],
-    downloadCount: 310,
+    downloadCount: 0,
     createdAt: '2025-03-03',
     source: 'flutter-expert',
     githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/flutter-expert'
@@ -218,7 +219,7 @@ export const MOCK_SKILLS: Skill[] = [
     author: 'Jeffallan',
     category: 'Development & Code Tools',
     tags: ['Frontend', 'UI', 'Aesthetics'],
-    downloadCount: 720,
+    downloadCount: 0,
     createdAt: '2025-03-03',
     source: 'frontend-design',
     githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/frontend-design'
@@ -232,7 +233,7 @@ export const MOCK_SKILLS: Skill[] = [
     author: 'Jeffallan',
     category: 'Development & Code Tools',
     tags: ['Fullstack', 'Security', 'API'],
-    downloadCount: 580,
+    downloadCount: 0,
     createdAt: '2025-03-03',
     source: 'fullstack-guardian',
     githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/fullstack-guardian'
@@ -246,7 +247,7 @@ export const MOCK_SKILLS: Skill[] = [
     author: 'Jeffallan',
     category: 'Development & Code Tools',
     tags: ['Go', 'Concurrency', 'Microservices'],
-    downloadCount: 390,
+    downloadCount: 0,
     createdAt: '2025-03-03',
     source: 'golang-pro',
     githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/golang-pro'
@@ -260,7 +261,7 @@ export const MOCK_SKILLS: Skill[] = [
     author: 'Jeffallan',
     category: 'Development & Code Tools',
     tags: ['GraphQL', 'Apollo', 'Federation'],
-    downloadCount: 410,
+    downloadCount: 0,
     createdAt: '2025-03-03',
     source: 'graphql-architect',
     githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/graphql-architect'
@@ -274,7 +275,7 @@ export const MOCK_SKILLS: Skill[] = [
     author: 'Jeffallan',
     category: 'Development & Code Tools',
     tags: ['Java', 'Spring Boot', 'Enterprise'],
-    downloadCount: 340,
+    downloadCount: 0,
     createdAt: '2025-03-03',
     source: 'java-architect',
     githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/java-architect'
@@ -288,7 +289,7 @@ export const MOCK_SKILLS: Skill[] = [
     author: 'Jeffallan',
     category: 'Development & Code Tools',
     tags: ['PHP', 'Laravel', 'Symfony'],
-    downloadCount: 260,
+    downloadCount: 0,
     createdAt: '2025-03-03',
     source: 'php-pro',
     githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/php-pro'
@@ -302,7 +303,7 @@ export const MOCK_SKILLS: Skill[] = [
     author: 'Jeffallan',
     category: 'Development & Code Tools',
     tags: ['Python', 'Async', 'Type Safety'],
-    downloadCount: 480,
+    downloadCount: 0,
     createdAt: '2025-03-03',
     source: 'python-pro',
     githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/python-pro'
@@ -316,7 +317,7 @@ export const MOCK_SKILLS: Skill[] = [
     author: 'Jeffallan',
     category: 'Development & Code Tools',
     tags: ['Rails', 'Ruby', 'Hotwire'],
-    downloadCount: 310,
+    downloadCount: 0,
     createdAt: '2025-03-03',
     source: 'rails-expert',
     githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/rails-expert'
@@ -330,7 +331,7 @@ export const MOCK_SKILLS: Skill[] = [
     author: 'Jeffallan',
     category: 'Development & Code Tools',
     tags: ['React', 'Hooks', 'TypeScript'],
-    downloadCount: 920,
+    downloadCount: 0,
     createdAt: '2025-03-03',
     source: 'react-expert',
     githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/react-expert'
@@ -344,7 +345,7 @@ export const MOCK_SKILLS: Skill[] = [
     author: 'Jeffallan',
     category: 'Development & Code Tools',
     tags: ['React Native', 'Expo', 'Mobile'],
-    downloadCount: 380,
+    downloadCount: 0,
     createdAt: '2025-03-03',
     source: 'react-native-expert',
     githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/react-native-expert'
@@ -358,10 +359,10 @@ export const MOCK_SKILLS: Skill[] = [
     author: 'Jeffallan',
     category: 'Development & Code Tools',
     tags: ['Code Review', 'Workflow', 'Quality'],
-    downloadCount: 210,
+    downloadCount: 0,
     createdAt: '2025-03-03',
     source: 'receiving-code-review',
-    githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/receiving-code-review'
+    githubUrl: 'https://github.com/obra/superpowers/tree/main/skills/receiving-code-review'
   },
   {
     id: 56,
@@ -372,10 +373,10 @@ export const MOCK_SKILLS: Skill[] = [
     author: 'Jeffallan',
     category: 'Development & Code Tools',
     tags: ['Code Review', 'Verification', 'Workflow'],
-    downloadCount: 240,
+    downloadCount: 0,
     createdAt: '2025-03-03',
     source: 'requesting-code-review',
-    githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/requesting-code-review'
+    githubUrl: 'https://github.com/obra/superpowers/tree/main/skills/requesting-code-review'
   },
   {
     id: 70,
@@ -386,7 +387,7 @@ export const MOCK_SKILLS: Skill[] = [
     author: 'Jeffallan',
     category: 'Development & Code Tools',
     tags: ['Rust', 'Systems', 'Performance'],
-    downloadCount: 310,
+    downloadCount: 0,
     createdAt: '2025-03-03',
     source: 'rust-engineer',
     githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/rust-engineer'
@@ -400,7 +401,7 @@ export const MOCK_SKILLS: Skill[] = [
     author: 'Jeffallan',
     category: 'Development & Code Tools',
     tags: ['Salesforce', 'Apex', 'CRM'],
-    downloadCount: 280,
+    downloadCount: 0,
     createdAt: '2025-03-03',
     source: 'salesforce-developer',
     githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/salesforce-developer'
@@ -414,7 +415,7 @@ export const MOCK_SKILLS: Skill[] = [
     author: 'Jeffallan',
     category: 'Development & Code Tools',
     tags: ['Shopify', 'Liquid', 'E-commerce'],
-    downloadCount: 340,
+    downloadCount: 0,
     createdAt: '2025-03-03',
     source: 'shopify-expert',
     githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/shopify-expert'
@@ -428,7 +429,7 @@ export const MOCK_SKILLS: Skill[] = [
     author: 'Jeffallan',
     category: 'Development & Code Tools',
     tags: ['Reverse Engineering', 'Documentation', 'Legacy'],
-    downloadCount: 290,
+    downloadCount: 0,
     createdAt: '2025-03-03',
     source: 'spec-miner',
     githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/spec-miner'
@@ -442,7 +443,7 @@ export const MOCK_SKILLS: Skill[] = [
     author: 'Jeffallan',
     category: 'Development & Code Tools',
     tags: ['Spring Boot', 'Java', 'Backend'],
-    downloadCount: 410,
+    downloadCount: 0,
     createdAt: '2025-03-03',
     source: 'spring-boot-engineer',
     githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/spring-boot-engineer'
@@ -457,7 +458,7 @@ export const MOCK_SKILLS: Skill[] = [
     author: 'coffeefuelbump',
     category: 'Data & Analysis',
     tags: ['CSV', 'Data', 'Summary'],
-    downloadCount: 720,
+    downloadCount: 0,
     createdAt: '2025-01-30',
     source: 'csv-data-summarizer'
   },
@@ -470,7 +471,7 @@ export const MOCK_SKILLS: Skill[] = [
     author: 'sanjay3290',
     category: 'Data & Analysis',
     tags: ['SQL', 'PostgreSQL', 'Database'],
-    downloadCount: 610,
+    downloadCount: 0,
     createdAt: '2025-02-05',
     source: 'postgres'
   },
@@ -483,7 +484,7 @@ export const MOCK_SKILLS: Skill[] = [
     author: 'Jeffallan',
     category: 'Data & Analysis',
     tags: ['Database', 'SQL', 'Optimization'],
-    downloadCount: 370,
+    downloadCount: 0,
     createdAt: '2025-03-03',
     source: 'database-optimizer',
     githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/database-optimizer'
@@ -497,7 +498,7 @@ export const MOCK_SKILLS: Skill[] = [
     author: 'Jeffallan',
     category: 'Data & Analysis',
     tags: ['LLM', 'AI', 'ML'],
-    downloadCount: 520,
+    downloadCount: 0,
     createdAt: '2025-03-03',
     source: 'fine-tuning-expert',
     githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/fine-tuning-expert'
@@ -511,7 +512,7 @@ export const MOCK_SKILLS: Skill[] = [
     author: 'Jeffallan',
     category: 'Data & Analysis',
     tags: ['PostgreSQL', 'SQL', 'Optimization'],
-    downloadCount: 310,
+    downloadCount: 0,
     createdAt: '2025-03-03',
     source: 'postgres-pro',
     githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/postgres-pro'
@@ -525,7 +526,7 @@ export const MOCK_SKILLS: Skill[] = [
     author: 'Jeffallan',
     category: 'Data & Analysis',
     tags: ['RAG', 'Vector DB', 'AI'],
-    downloadCount: 450,
+    downloadCount: 0,
     createdAt: '2025-03-03',
     source: 'rag-architect',
     githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/rag-architect'
@@ -539,7 +540,7 @@ export const MOCK_SKILLS: Skill[] = [
     author: 'Jeffallan',
     category: 'Data & Analysis',
     tags: ['Spark', 'Big Data', 'ETL'],
-    downloadCount: 370,
+    downloadCount: 0,
     createdAt: '2025-03-03',
     source: 'spark-engineer',
     githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/spark-engineer'
@@ -554,7 +555,7 @@ export const MOCK_SKILLS: Skill[] = [
     author: 'Anthropic',
     category: 'Media & Content',
     tags: ['Generative Art', 'p5.js', 'Creative'],
-    downloadCount: 1100,
+    downloadCount: 0,
     createdAt: '2025-02-15',
     source: 'algorithmic-art',
     githubUrl: 'https://github.com/anthropics/skills/tree/main/skills/algorithmic-art'
@@ -568,7 +569,7 @@ export const MOCK_SKILLS: Skill[] = [
     author: 'Anthropic',
     category: 'Media & Content',
     tags: ['Design', 'Art', 'Visual'],
-    downloadCount: 920,
+    downloadCount: 0,
     createdAt: '2025-02-18',
     source: 'canvas-design',
     githubUrl: 'https://github.com/anthropics/skills/tree/main/skills/canvas-design'
@@ -582,7 +583,7 @@ export const MOCK_SKILLS: Skill[] = [
     author: 'Anthropic',
     category: 'Media & Content',
     tags: ['Branding', 'Styling', 'Guidelines'],
-    downloadCount: 1500,
+    downloadCount: 0,
     createdAt: '2025-01-10',
     source: 'brand-guidelines',
     githubUrl: 'https://github.com/anthropics/skills/tree/main/skills/brand-guidelines'
@@ -596,7 +597,7 @@ export const MOCK_SKILLS: Skill[] = [
     author: 'Jeffallan',
     category: 'Media & Content',
     tags: ['Unity', 'Unreal', 'GameDev'],
-    downloadCount: 480,
+    downloadCount: 0,
     createdAt: '2025-03-03',
     source: 'game-developer',
     githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/game-developer'
@@ -610,7 +611,7 @@ export const MOCK_SKILLS: Skill[] = [
     author: 'SKILLS All-in-one',
     category: 'Media & Content',
     tags: ['Slack', 'GIF', 'Design'],
-    downloadCount: 420,
+    downloadCount: 0,
     createdAt: '2025-03-03',
     source: 'slack-gif-creator'
   },
@@ -624,7 +625,7 @@ export const MOCK_SKILLS: Skill[] = [
     author: 'michalparkola',
     category: 'Writing & Research',
     tags: ['Scraping', 'Metadata', 'Web'],
-    downloadCount: 430,
+    downloadCount: 0,
     createdAt: '2025-02-15',
     source: 'article-extractor'
   },
@@ -637,9 +638,10 @@ export const MOCK_SKILLS: Skill[] = [
     author: 'obra',
     category: 'Writing & Research',
     tags: ['Ideas', 'Requirements', 'Design'],
-    downloadCount: 2100,
+    downloadCount: 0,
     createdAt: '2025-01-05',
-    source: 'brainstorming'
+    source: 'brainstorming',
+    githubUrl: 'https://github.com/obra/superpowers/tree/main/skills/brainstorming'
   },
   {
     id: 34,
@@ -650,7 +652,7 @@ export const MOCK_SKILLS: Skill[] = [
     author: 'SKILLS All-in-one',
     category: 'Writing & Research',
     tags: ['Documentation', 'Co-authoring', 'Writing'],
-    downloadCount: 250,
+    downloadCount: 0,
     createdAt: '2025-03-03',
     source: 'doc-coauthoring'
   },
@@ -663,7 +665,7 @@ export const MOCK_SKILLS: Skill[] = [
     author: 'Jeffallan',
     category: 'Writing & Research',
     tags: ['Comms', 'Internal', 'Writing'],
-    downloadCount: 190,
+    downloadCount: 0,
     createdAt: '2025-03-03',
     source: 'internal-comms',
     githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/internal-comms'
@@ -678,7 +680,7 @@ export const MOCK_SKILLS: Skill[] = [
     author: 'Jeffallan',
     category: 'Collaboration & Project Management',
     tags: ['Jira', 'Confluence', 'MCP'],
-    downloadCount: 840,
+    downloadCount: 0,
     createdAt: '2025-02-28',
     source: 'atlassian-mcp',
     githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/atlassian-mcp'
@@ -692,7 +694,7 @@ export const MOCK_SKILLS: Skill[] = [
     author: 'Jeffallan',
     category: 'Collaboration & Project Management',
     tags: ['Requirements', 'Product', 'Planning'],
-    downloadCount: 320,
+    downloadCount: 0,
     createdAt: '2025-03-03',
     source: 'feature-forge',
     githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/feature-forge'
@@ -707,7 +709,7 @@ export const MOCK_SKILLS: Skill[] = [
     author: 'Jeffallan',
     category: 'Security & Web Testing',
     tags: ['Chaos Engineering', 'Resilience', 'Testing'],
-    downloadCount: 390,
+    downloadCount: 0,
     createdAt: '2025-03-02',
     source: 'chaos-engineer',
     githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/chaos-engineer'
@@ -721,7 +723,7 @@ export const MOCK_SKILLS: Skill[] = [
     author: 'Jeffallan',
     category: 'Security & Web Testing',
     tags: ['Security', 'Auth', 'OWASP'],
-    downloadCount: 450,
+    downloadCount: 0,
     createdAt: '2025-03-03',
     source: 'secure-code-guardian',
     githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/secure-code-guardian'
@@ -735,7 +737,7 @@ export const MOCK_SKILLS: Skill[] = [
     author: 'Jeffallan',
     category: 'Security & Web Testing',
     tags: ['Audit', 'Vulnerability', 'Pentest'],
-    downloadCount: 390,
+    downloadCount: 0,
     createdAt: '2025-03-03',
     source: 'security-reviewer',
     githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/security-reviewer'
@@ -749,7 +751,7 @@ export const MOCK_SKILLS: Skill[] = [
     author: 'Jeffallan',
     category: 'Development & Code Tools',
     tags: ['Cloud', 'Architecture', 'Infra'],
-    downloadCount: 480,
+    downloadCount: 0,
     createdAt: '2025-03-03',
     source: 'cloud-architect',
     githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/cloud-architect'
@@ -763,7 +765,7 @@ export const MOCK_SKILLS: Skill[] = [
     author: 'Jeffallan',
     category: 'Development & Code Tools',
     tags: ['Documentation', 'JSDoc', 'OpenAPI'],
-    downloadCount: 350,
+    downloadCount: 0,
     createdAt: '2025-03-03',
     source: 'code-documenter',
     githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/code-documenter'
@@ -777,7 +779,7 @@ export const MOCK_SKILLS: Skill[] = [
     author: 'Jeffallan',
     category: 'Development & Code Tools',
     tags: ['Code Review', 'Quality', 'Security'],
-    downloadCount: 520,
+    downloadCount: 0,
     createdAt: '2025-03-03',
     source: 'code-reviewer',
     githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/code-reviewer'
@@ -791,7 +793,7 @@ export const MOCK_SKILLS: Skill[] = [
     author: 'Jeffallan',
     category: 'Development & Code Tools',
     tags: ['C++', 'Performance', 'Systems'],
-    downloadCount: 290,
+    downloadCount: 0,
     createdAt: '2025-03-03',
     source: 'cpp-pro',
     githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/cpp-pro'
@@ -805,7 +807,7 @@ export const MOCK_SKILLS: Skill[] = [
     author: 'Jeffallan',
     category: 'Development & Code Tools',
     tags: ['C#', '.NET', 'Blazor'],
-    downloadCount: 410,
+    downloadCount: 0,
     createdAt: '2025-03-03',
     source: 'csharp-developer',
     githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/csharp-developer'
@@ -819,7 +821,7 @@ export const MOCK_SKILLS: Skill[] = [
     author: 'Jeffallan',
     category: 'Development & Code Tools',
     tags: ['Debugging', 'Troubleshooting', 'RC'],
-    downloadCount: 600,
+    downloadCount: 0,
     createdAt: '2025-03-03',
     source: 'debugging-wizard',
     githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/debugging-wizard'
@@ -833,7 +835,7 @@ export const MOCK_SKILLS: Skill[] = [
     author: 'Jeffallan',
     category: 'Development & Code Tools',
     tags: ['DevOps', 'CI/CD', 'Containers'],
-    downloadCount: 440,
+    downloadCount: 0,
     createdAt: '2025-03-03',
     source: 'devops-engineer',
     githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/devops-engineer'
@@ -847,9 +849,10 @@ export const MOCK_SKILLS: Skill[] = [
     author: 'SKILLS All-in-one',
     category: 'Utility & Automation',
     tags: ['Agent', 'Parallel', 'Multi-task'],
-    downloadCount: 880,
+    downloadCount: 0,
     createdAt: '2025-03-03',
-    source: 'dispatching-parallel-agents'
+    source: 'dispatching-parallel-agents',
+    githubUrl: 'https://github.com/obra/superpowers/tree/main/skills/dispatching-parallel-agents'
   },
   {
     id: 33,
@@ -860,7 +863,7 @@ export const MOCK_SKILLS: Skill[] = [
     author: 'Jeffallan',
     category: 'Development & Code Tools',
     tags: ['Python', 'Django', 'DRF'],
-    downloadCount: 320,
+    downloadCount: 0,
     createdAt: '2025-03-03',
     source: 'django-expert',
     githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/django-expert'
@@ -874,7 +877,7 @@ export const MOCK_SKILLS: Skill[] = [
     author: 'Jeffallan',
     category: 'Development & Code Tools',
     tags: ['.NET Core', 'C#', 'Microservices'],
-    downloadCount: 390,
+    downloadCount: 0,
     createdAt: '2025-03-03',
     source: 'dotnet-core-expert',
     githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/dotnet-core-expert'
@@ -889,10 +892,10 @@ export const MOCK_SKILLS: Skill[] = [
     author: 'Jeffallan',
     category: 'Utility & Automation',
     tags: ['Workflow', 'Execution', 'Planning'],
-    downloadCount: 640,
+    downloadCount: 0,
     createdAt: '2025-03-03',
     source: 'executing-plans',
-    githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/executing-plans'
+    githubUrl: 'https://github.com/obra/superpowers/tree/main/skills/executing-plans'
   },
   {
     id: 41,
@@ -903,10 +906,10 @@ export const MOCK_SKILLS: Skill[] = [
     author: 'Jeffallan',
     category: 'Utility & Automation',
     tags: ['Git', 'Workflow', 'PR'],
-    downloadCount: 510,
+    downloadCount: 0,
     createdAt: '2025-03-03',
     source: 'finishing-a-development-branch',
-    githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/finishing-a-development-branch'
+    githubUrl: 'https://github.com/obra/superpowers/tree/main/skills/finishing-a-development-branch'
   },
   {
     id: 79,
@@ -917,7 +920,7 @@ export const MOCK_SKILLS: Skill[] = [
     author: 'SKILLS All-in-one',
     category: 'Utility & Automation',
     tags: ['Agent', 'Skills', 'Development'],
-    downloadCount: 850,
+    downloadCount: 0,
     createdAt: '2025-03-03',
     source: 'skill-creator'
   },
@@ -931,7 +934,7 @@ export const MOCK_SKILLS: Skill[] = [
     author: 'oil-oil',
     category: 'Development & Code Tools',
     tags: ['UI/UX', 'Design', 'Review'],
-    downloadCount: 950,
+    downloadCount: 0,
     createdAt: '2025-02-20',
     source: 'oiloil-ui-ux-guide',
     githubUrl: 'https://github.com/oil-oil/oiloil-ui-ux-guide'
@@ -945,7 +948,7 @@ export const MOCK_SKILLS: Skill[] = [
     author: 'SKILLS All-in-one',
     category: 'Utility & Automation',
     tags: ['Agent', 'Architecture', 'Writing'],
-    downloadCount: 5000,
+    downloadCount: 0,
     createdAt: '2026-03-03',
     source: 'skill-master'
   },
@@ -958,7 +961,7 @@ export const MOCK_SKILLS: Skill[] = [
     author: 'Jeffallan',
     category: 'Data & Analysis',
     tags: ['SQL', 'Database', 'Optimization'],
-    downloadCount: 310,
+    downloadCount: 0,
     createdAt: '2025-03-03',
     source: 'sql-pro',
     githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/sql-pro'
@@ -972,7 +975,7 @@ export const MOCK_SKILLS: Skill[] = [
     author: 'Jeffallan',
     category: 'Development & Code Tools',
     tags: ['SRE', 'Reliability', 'Monitoring'],
-    downloadCount: 340,
+    downloadCount: 0,
     createdAt: '2025-03-03',
     source: 'sre-engineer',
     githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/sre-engineer'
@@ -986,9 +989,10 @@ export const MOCK_SKILLS: Skill[] = [
     author: 'SKILLS All-in-one',
     category: 'Utility & Automation',
     tags: ['Workflow', 'Agent', 'Implementation'],
-    downloadCount: 420,
+    downloadCount: 0,
     createdAt: '2025-03-03',
-    source: 'subagent-driven-development'
+    source: 'subagent-driven-development',
+    githubUrl: 'https://github.com/obra/superpowers/tree/main/skills/subagent-driven-development'
   },
   {
     id: 83,
@@ -999,7 +1003,7 @@ export const MOCK_SKILLS: Skill[] = [
     author: 'Jeffallan',
     category: 'Development & Code Tools',
     tags: ['Swift', 'iOS', 'SwiftUI'],
-    downloadCount: 280,
+    downloadCount: 0,
     createdAt: '2025-03-03',
     source: 'swift-expert',
     githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/swift-expert'
@@ -1013,10 +1017,10 @@ export const MOCK_SKILLS: Skill[] = [
     author: 'Jeffallan',
     category: 'Development & Code Tools',
     tags: ['Debugging', 'RC', 'Methodology'],
-    downloadCount: 510,
+    downloadCount: 0,
     createdAt: '2025-03-03',
     source: 'systematic-debugging',
-    githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/systematic-debugging'
+    githubUrl: 'https://github.com/obra/superpowers/tree/main/skills/systematic-debugging'
   },
   {
     id: 85,
@@ -1027,7 +1031,7 @@ export const MOCK_SKILLS: Skill[] = [
     author: 'Jeffallan',
     category: 'Development & Code Tools',
     tags: ['Terraform', 'IaC', 'Infra'],
-    downloadCount: 390,
+    downloadCount: 0,
     createdAt: '2025-03-03',
     source: 'terraform-engineer',
     githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/terraform-engineer'
@@ -1041,7 +1045,7 @@ export const MOCK_SKILLS: Skill[] = [
     author: 'Jeffallan',
     category: 'Development & Code Tools',
     tags: ['Testing', 'QA', 'Automation'],
-    downloadCount: 450,
+    downloadCount: 0,
     createdAt: '2025-03-03',
     source: 'test-master',
     githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/test-master'
@@ -1055,7 +1059,7 @@ export const MOCK_SKILLS: Skill[] = [
     author: 'Jeffallan',
     category: 'Writing & Research',
     tags: ['Critical Thinking', 'Red Team', 'Reasoning'],
-    downloadCount: 290,
+    downloadCount: 0,
     createdAt: '2025-03-03',
     source: 'the-fool',
     githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/the-fool'
@@ -1069,7 +1073,7 @@ export const MOCK_SKILLS: Skill[] = [
     author: 'Jeffallan',
     category: 'Media & Content',
     tags: ['Design', 'Themes', 'Styling'],
-    downloadCount: 370,
+    downloadCount: 0,
     createdAt: '2025-03-03',
     source: 'theme-factory',
     githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/theme-factory'
@@ -1083,7 +1087,7 @@ export const MOCK_SKILLS: Skill[] = [
     author: 'Jeffallan',
     category: 'Development & Code Tools',
     tags: ['TypeScript', 'Generics', 'Typing'],
-    downloadCount: 680,
+    downloadCount: 0,
     createdAt: '2025-03-03',
     source: 'typescript-pro',
     githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/typescript-pro'
@@ -1097,10 +1101,10 @@ export const MOCK_SKILLS: Skill[] = [
     author: 'Jeffallan',
     category: 'Utility & Automation',
     tags: ['Git', 'Worktree', 'Workflow'],
-    downloadCount: 310,
+    downloadCount: 0,
     createdAt: '2025-03-03',
     source: 'using-git-worktrees',
-    githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/using-git-worktrees'
+    githubUrl: 'https://github.com/obra/superpowers/tree/main/skills/using-git-worktrees'
   },
   {
     id: 91,
@@ -1111,9 +1115,10 @@ export const MOCK_SKILLS: Skill[] = [
     author: 'SKILLS All-in-one',
     category: 'Utility & Automation',
     tags: ['Agent', 'Skill', 'Workflow'],
-    downloadCount: 1200,
+    downloadCount: 0,
     createdAt: '2025-03-03',
-    source: 'using-superpowers'
+    source: 'using-superpowers',
+    githubUrl: 'https://github.com/obra/superpowers/tree/main/skills/using-superpowers'
   },
   {
     id: 92,
@@ -1124,9 +1129,10 @@ export const MOCK_SKILLS: Skill[] = [
     author: 'SKILLS All-in-one',
     category: 'Development & Code Tools',
     tags: ['Validation', 'Testing', 'Verification'],
-    downloadCount: 850,
+    downloadCount: 0,
     createdAt: '2025-03-03',
-    source: 'verification-before-completion'
+    source: 'verification-before-completion',
+    githubUrl: 'https://github.com/obra/superpowers/tree/main/skills/verification-before-completion'
   },
   {
     id: 93,
@@ -1137,7 +1143,7 @@ export const MOCK_SKILLS: Skill[] = [
     author: 'Jeffallan',
     category: 'Development & Code Tools',
     tags: ['Vue', 'Composition API', 'Nuxt'],
-    downloadCount: 420,
+    downloadCount: 0,
     createdAt: '2025-03-03',
     source: 'vue-expert',
     githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/vue-expert'
@@ -1151,7 +1157,7 @@ export const MOCK_SKILLS: Skill[] = [
     author: 'Jeffallan',
     category: 'Development & Code Tools',
     tags: ['Vue', 'JavaScript', 'JSDoc'],
-    downloadCount: 310,
+    downloadCount: 0,
     createdAt: '2025-03-03',
     source: 'vue-expert-js',
     githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/vue-expert-js'
@@ -1165,7 +1171,7 @@ export const MOCK_SKILLS: Skill[] = [
     author: 'Jeffallan',
     category: 'Security & Web Testing',
     tags: ['Testing', 'Playwright', 'Web'],
-    downloadCount: 380,
+    downloadCount: 0,
     createdAt: '2025-03-03',
     source: 'webapp-testing',
     githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/webapp-testing'
@@ -1179,7 +1185,7 @@ export const MOCK_SKILLS: Skill[] = [
     author: 'Jeffallan',
     category: 'Development & Code Tools',
     tags: ['WebSocket', 'Socket.IO', 'Real-time'],
-    downloadCount: 250,
+    downloadCount: 0,
     createdAt: '2025-03-03',
     source: 'websocket-engineer',
     githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/websocket-engineer'
@@ -1193,7 +1199,7 @@ export const MOCK_SKILLS: Skill[] = [
     author: 'Jeffallan',
     category: 'Development & Code Tools',
     tags: ['WordPress', 'WooCommerce', 'Gutenberg'],
-    downloadCount: 180,
+    downloadCount: 0,
     createdAt: '2025-03-03',
     source: 'wordpress-pro',
     githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/wordpress-pro'
@@ -1207,10 +1213,10 @@ export const MOCK_SKILLS: Skill[] = [
     author: 'Jeffallan',
     category: 'Development & Code Tools',
     tags: ['Planning', 'Implementation', 'Workflow'],
-    downloadCount: 420,
+    downloadCount: 0,
     createdAt: '2025-03-03',
     source: 'writing-plans',
-    githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/writing-plans'
+    githubUrl: 'https://github.com/obra/superpowers/tree/main/skills/writing-plans'
   },
   {
     id: 99,
@@ -1221,10 +1227,10 @@ export const MOCK_SKILLS: Skill[] = [
     author: 'Jeffallan',
     category: 'Utility & Automation',
     tags: ['Skills', 'Documentation', 'TDD', 'Automation'],
-    downloadCount: 350,
+    downloadCount: 0,
     createdAt: '2025-03-03',
     source: 'writing-skills',
-    githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/writing-skills'
+    githubUrl: 'https://github.com/obra/superpowers/tree/main/skills/writing-skills'
   },
   {
     id: 100,
@@ -1235,7 +1241,7 @@ export const MOCK_SKILLS: Skill[] = [
     author: 'Anthropic',
     category: 'Document Skills',
     tags: ['Excel', 'CSV', 'Spreadsheet', 'Data'],
-    downloadCount: 520,
+    downloadCount: 0,
     createdAt: '2025-03-03',
     source: 'xlsx',
     githubUrl: 'https://github.com/anthropics/skills/tree/main/skills/xlsx'
