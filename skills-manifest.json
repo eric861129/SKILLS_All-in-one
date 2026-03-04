@@ -953,6 +953,63 @@
       "scripts/recalc.py"
     ]
   },
+  "stripe": {
+    "category": "Finance & Payments",
+    "files": [
+      "SKILL.md",
+      "skill.json"
+    ]
+  },
+  "aws-agentic-ai": {
+    "category": "Infrastructure & Cloud",
+    "files": [
+      "SKILL.md",
+      "cross-service/credential-management.md",
+      "services/browser/README.md",
+      "services/code-interpreter/README.md",
+      "services/gateway/README.md",
+      "services/gateway/deployment-strategies.md",
+      "services/gateway/troubleshooting-guide.md",
+      "services/identity/README.md",
+      "services/memory/README.md",
+      "services/observability/README.md",
+      "services/runtime/README.md"
+    ]
+  },
+  "aws-cdk-development": {
+    "category": "Infrastructure & Cloud",
+    "files": [
+      "SKILL.md",
+      "references/cdk-patterns.md",
+      "scripts/validate-stack.sh"
+    ]
+  },
+  "aws-cost-operations": {
+    "category": "Infrastructure & Cloud",
+    "files": [
+      "SKILL.md",
+      "references/cloudwatch-alarms.md",
+      "references/operations-patterns.md"
+    ]
+  },
+  "aws-mcp-setup": {
+    "category": "Infrastructure & Cloud",
+    "files": [
+      "SKILL.md"
+    ]
+  },
+  "aws-serverless-eda": {
+    "category": "Infrastructure & Cloud",
+    "files": [
+      "SKILL.md",
+      "references/deployment-best-practices.md",
+      "references/eda-patterns.md",
+      "references/observability-best-practices.md",
+      "references/performance-optimization.md",
+      "references/security-best-practices.md",
+      "references/serverless-patterns.md"
+    ]
+  },
   "algorithmic-art": {
     "category": "Media & Content",
     "files": [
@@ -1109,6 +1166,13 @@
       "themes/ocean-depths.md",
       "themes/sunset-boulevard.md",
       "themes/tech-innovation.md"
+    ]
+  },
+  "supabase": {
+    "category": "SaaS & Backend",
+    "files": [
+      "SKILL.md",
+      "skill.json"
     ]
   },
   "chaos-engineer": {
@@ -1276,6 +1340,24 @@
       "persuasion-principles.md",
       "render-graphs.js",
       "testing-skills-with-subagents.md"
+    ]
+  },
+  "aptos": {
+    "category": "Web3 & Blockchain",
+    "files": [
+      "aptos-cli/SKILL.md",
+      "aptos-core/SKILL.md",
+      "aptos-indexer/SKILL.md",
+      "aptos-standards/SKILL.md",
+      "aptos-ts-sdk/SKILL.md",
+      "move-analyzer/SKILL.md",
+      "move-prover/SKILL.md"
+    ]
+  },
+  "move-code-quality-skill": {
+    "category": "Web3 & Blockchain",
+    "files": [
+      "SKILL.md"
     ]
   },
   "brainstorming": {
