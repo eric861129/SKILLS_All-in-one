@@ -1245,7 +1245,7 @@ export const MOCK_SKILLS: Skill[] = [
     createdAt: '2025-03-03',
     source: 'xlsx',
     githubUrl: 'https://github.com/anthropics/skills/tree/main/skills/xlsx'
-  },
+  },
   {
     id: 102,
     name: 'aws-mcp-setup',
@@ -1315,7 +1315,7 @@ export const MOCK_SKILLS: Skill[] = [
     createdAt: '2026-03-04',
     source: 'aws-agentic-ai',
     githubUrl: 'https://github.com/zxkane/aws-skills/tree/main/plugins/aws-agentic-ai/skills/aws-agentic-ai'
-  },,
+  },
   {
     id: 107,
     name: 'aptos',
@@ -1399,5 +1399,19 @@ export const MOCK_SKILLS: Skill[] = [
     createdAt: '2026-03-04',
     source: 'supabase',
     githubUrl: 'https://github.com/raintree-technology/claude-starter/tree/main/.claude/skills/supabase'
+  },
+  {
+    id: 113,
+    name: 'move-code-quality',
+    nameZh: 'Move 代碼質量檢查員',
+    description: 'Analyzes Move language packages against the official Move Book Code Quality Checklist.',
+    descriptionZh: '根據官方 Move Book 代碼質量清單分析 Move 語言包，確保符合 Move 2024 Edition 最佳實踐。',
+    author: '1NickPappas',
+    category: 'Web3 & Blockchain',
+    tags: ['Move', 'Sui', 'Code Quality', 'Audit'],
+    downloadCount: 0,
+    createdAt: '2026-03-04',
+    source: 'move-code-quality-skill',
+    githubUrl: 'https://github.com/1NickPappas/move-code-quality-skill'
   },
 ];

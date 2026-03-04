@@ -10,6 +10,10 @@ export type SkillCategory =
   | 'Collaboration & Project Management'
   | 'Security & Web Testing'
   | 'Utility & Automation'
+  | 'Infrastructure & Cloud'
+  | 'Web3 & Blockchain'
+  | 'Finance & Payments'
+  | 'SaaS & Backend'
   | 'Collections';
 
 export interface Skill {

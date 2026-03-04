@@ -12,8 +12,10 @@ description: Github Skill Importer (從 GitHub 導入技能 SOP)
 當使用者提供一個 GitHub URL 時，請執行以下步驟：
 
 1.  **進入技能根目錄**：在 Repo 中尋找名為 `skills/` 或 `.claude/skills/` (或其他可能的技能存放路徑) 的資料夾。
-2.  **列出子資料夾**：每個子資料夾通常代表一個獨立的技能。
-3.  **定位目標**：根據使用者的需求，定位到特定的技能資料夾（例如 `skills/my-awesome-skill/`）。
+2.  **辨識 Repo 型態**：
+    -   **多技能型**：若存在 `skills/` 等資料夾，每個子資料夾代表一個獨立技能。
+    -   **單一技能型**：若 Repo 根目錄直接包含 `SKILL.md` 且無 `skills/` 資料夾，則將整個 Repo 視為一個完整技能。
+3.  **定位目標**：根據使用者的需求或 Repo 型態，定位到正確的技能目錄。
 
 ## ✅ 第二階段：格式驗證 (Validation)
 
@@ -40,7 +42,9 @@ description: Github Skill Importer (從 GitHub 導入技能 SOP)
 
 完成導入後，請立即切換至 `Skill Onboarding Guide (技能上架 SOP)` 執行後續動作：
 
-1.  **分類 (Classification)**：決定該技能屬於哪個分類並搬移資料夾。
+1.  **分類 (Classification)**：
+    -   優先從 `@src/types/skill.ts` 中的 `SkillCategory` 選擇最合適的現有分類。
+    -   **嚴禁**隨意建立新分類。只有在現有分類完全不適用時，才應在 `@src/types/skill.ts` 中新增定義後再使用。
 2.  **資料庫同步**：更新 `database/init_skills.sql`。
 3.  **前端同步**：更新 `src/data/skills.ts`。
 4.  **清單同步**：執行 `npm run prebuild` 更新 `skills-manifest.json`。
@@ -75,6 +79,16 @@ description: Github Skill Importer (從 GitHub 導入技能 SOP)
 
 - **問題**：部分 Repo（如 `claude-starter`）將自動啟用的元數據放在 `skill.json` 中，若未抓取會導致技能功能不完整。
 - **對策**：導入時必須同時抓取同目錄下的 `skill.json`。**核心原則：使用者透過此平台下載的 SKILL 必須是完全體，嚴禁出現功能缺失或檔案不全的狀況。**
+
+### 6. 誤判技能路徑 (Skill Path Misidentification)
+
+- **問題**：習慣性尋找 `skills/` 資料夾，而忽略了有些 Repo 本身就是一個單一技能。
+- **對策**：若根目錄存在 `SKILL.md`，應優先判斷該 Repo 是否為單一技能專案。在此情況下，抓取根目錄下的所有相關檔案（如 `references/`, `scripts/` 等）進行導入。
+
+### 7. 分類不一致 (Category Inconsistency)
+
+- **問題**：新增技能時使用了未在系統定義的分類名稱，導致前端顯示異常或型別錯誤。
+- **對策**：所有分類必須對齊 `@src/types/skill.ts` 中的 `SkillCategory`。若需新增分類，必須先修改該型別定義檔案。
 
 ---
 
