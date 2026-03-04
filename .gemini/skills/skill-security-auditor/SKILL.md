@@ -85,3 +85,4 @@ description: Security auditor for AI Agent Skills. Analyzes skill files (SKILL.m
 2. 包含收集並外洩本地環境變數或敏感檔案的邏輯。
 3. 包含企圖破壞使用者本機檔案系統的腳本。
 4. 包含明顯的提示詞注入攻擊，意圖規避 AI 安全護欄。
+```

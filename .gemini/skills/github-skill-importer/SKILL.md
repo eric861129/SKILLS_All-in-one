@@ -90,7 +90,6 @@ description: Github Skill Importer (從 GitHub 導入技能 SOP)
 - **問題**：新增技能時使用了未在系統定義的分類名稱，導致前端顯示異常或型別錯誤。
 - **對策**：所有分類必須對齊 `@src/types/skill.ts` 中的 `SkillCategory`。若需新增分類，必須先修改該型別定義檔案。
 
-
 ---
 
 ## 💡 技巧：如何有效獲取 GitHub 內容
