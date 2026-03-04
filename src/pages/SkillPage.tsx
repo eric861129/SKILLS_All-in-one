@@ -5,6 +5,7 @@ import { MOCK_SKILLS } from '../data/skills';
 import { useLanguage } from '../hooks/useLanguage';
 import { downloadAndZipSkill } from '../utils/downloadSkill';
 import { useToast } from '../components/Toast';
+import { GiscusComments } from '../components/GiscusComments';
 import type { Skill, SkillCategory } from '../types/skill';
 
 const API_BASE_URL = 'https://skill-proxy-api.iamhandsomeboy1129.workers.dev';
@@ -233,6 +234,9 @@ export const SkillPage = () => {
                         </div>
                     </div>
                 )}
+
+                {/* Comments Section */}
+                <GiscusComments skillId={skill.id} skillName={skill.name} />
             </div>
         </div>
     );
