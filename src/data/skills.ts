@@ -1427,5 +1427,19 @@ export const MOCK_SKILLS: Skill[] = [
     createdAt: '2026-03-04',
     source: 'notebooklm',
     githubUrl: 'https://github.com/sanjay3290/ai-skills/tree/main/skills/notebooklm'
+  },,
+  {
+    id: 115,
+    name: 'postgres',
+    nameZh: 'PostgreSQL 唯讀查詢專家',
+    description: "Execute read-only SQL queries against multiple PostgreSQL databases with safety checks.",
+    descriptionZh: '針對多個 PostgreSQL 資料庫執行安全的唯讀 SQL 查詢，支援 Schema 探索與結果限制。',
+    author: 'sanjay3290',
+    category: 'Data & Analysis',
+    tags: ['PostgreSQL', 'SQL', 'Database', 'Analysis'],
+    downloadCount: 0,
+    createdAt: '2026-03-04',
+    source: 'postgres',
+    githubUrl: 'https://github.com/sanjay3290/ai-skills/tree/main/skills/postgres'
   },
 ];

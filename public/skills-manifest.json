@@ -65,6 +65,15 @@
       "references/performance-optimization.md"
     ]
   },
+  "postgres": {
+    "category": "Data & Analysis",
+    "files": [
+      "connections.example.json",
+      "requirements.txt",
+      "scripts/query.py",
+      "SKILL.md"
+    ]
+  },
   "postgres-pro": {
     "category": "Data & Analysis",
     "files": [
