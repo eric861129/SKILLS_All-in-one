@@ -1,0 +1,47 @@
+# Node.js
+node_modules/
+dist/
+dist-ssr/
+*.local
+package-lock.json
+
+# Git
+.git/
+
+# Testing/Temp
+TESTDOWNLOAD/
+.temp/
+.tmp/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editor
+.vscode/
+.idea/
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# SKILLS
+.public\SKILLS\Articles & Blog Posts
+.public\SKILLS\Collaboration & Project Management
+.public\SKILLS\Collections
+.public\SKILLS\Data & Analysis
+.public\SKILLS\Development & Code Tools
+.public\SKILLS\Document Skills
+.public\SKILLS\Health & Life Sciences
+.public\SKILLS\Learning & Knowledge
+.public\SKILLS\Media & Content
+.public\SKILLS\Scientific & Research Tools
+.public\SKILLS\Security & Web Testing
+.public\SKILLS\Utility & Automation
+.public\SKILLS\Writing & Research
