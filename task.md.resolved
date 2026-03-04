@@ -1,0 +1,104 @@
+# 從 awesome-claude-skills 批量導入技能
+
+## 任務總覽
+從 [awesome-claude-skills](https://github.com/BehiSecc/awesome-claude-skills) GitHub README 中收集所有技能，與現有 [skills.ts](file:///Users/eric861129/SKILLS_All-in-one/src/data/skills.ts) 交叉比對，補充缺失的技能與 githubUrl。
+
+---
+
+## Phase 1: 補充缺失的 githubUrl
+- [ ] 更新 [skills.ts](file:///Users/eric861129/SKILLS_All-in-one/src/data/skills.ts) 中 6 個缺少 githubUrl 的現有技能
+- [ ] 同步更新 `init_skills.sql`
+
+## Phase 2: 新增「Document Skills」新技能
+- [ ] polaris-datainsight-doc-extract
+
+## Phase 3: 新增「Development & Code Tools」新技能
+- [ ] pypict-claude-skill
+- [ ] claude-code-terminal-title
+- [ ] charles-proxy-extract
+- [ ] plugin-authoring
+- [ ] azure-devops
+- [ ] jules
+- [ ] hashicorp-agent-skills
+- [ ] agnix
+- [ ] email-html-mjml
+
+## Phase 4: 新增「Data & Analysis」新技能
+- [ ] root-cause-tracing
+- [ ] mysql
+- [ ] mssql
+- [ ] kaggle-skill
+- [ ] octav-api-skill
+- [ ] elicitation
+- [ ] recommendations
+- [ ] x-twitter-scraper
+
+## Phase 5: 新增「Scientific & Research Tools」(新分類)
+- [ ] claude-scientific-skills
+- [ ] materials-simulation-skills
+- [ ] deep-research
+- [ ] manus
+
+## Phase 6: 新增「Writing & Research」新技能
+- [ ] content-research-writer
+- [ ] family-history-research
+
+## Phase 7: 新增「Learning & Knowledge」新技能
+- [ ] tapestry
+- [ ] ship-learn-next
+
+## Phase 8: 新增「Media & Content」新技能
+- [ ] youtube-transcript
+- [ ] video-downloader
+- [ ] image-enhancer
+- [ ] imagen
+- [ ] elevenlabs
+- [ ] google-tts
+- [ ] claude-epub-skill
+- [ ] video-prompting-skill
+- [ ] find-scene
+- [ ] deapi-ai-claude-code-skills
+- [ ] claude-code-video-toolkit
+- [ ] moltdj
+
+## Phase 9: 新增「Health & Life Sciences」(新分類)
+- [ ] claude-ally-health
+
+## Phase 10: 新增「Collaboration & Project Management」新技能
+- [ ] git-pushing
+- [ ] kanban-skill
+- [ ] linear-claude-skill
+- [ ] linear-cli-skill
+- [ ] meeting-insights-analyzer
+- [ ] review-implementing
+- [ ] test-fixing
+- [ ] plannotator
+- [ ] outline
+- [ ] google-workspace-skills
+- [ ] pm-skills
+- [ ] Product-Manager-Skills
+
+## Phase 11: 新增「Security & Web Testing」新技能
+- [ ] VibeSec-Skill
+- [ ] defense-in-depth
+- [ ] ffuf-claude-skill
+- [ ] owasp-security
+- [ ] trail-of-bits-skills
+- [ ] varlock-claude-skill
+
+## Phase 12: 新增「Utility & Automation」新技能
+- [ ] file-organizer
+- [ ] invoice-organizer
+- [ ] template-skill
+- [ ] agentfund-mcp
+- [ ] task-observer
+- [ ] pinme
+
+## Phase 13: 新增「Collections」技能
+- [ ] clawfu-mcp-skills
+- [ ] wondelai-skills
+- [ ] find-skills
+
+## Phase 14: 系統同步
+- [ ] 運行 `npm run prebuild` 更新 manifest
+- [ ] 驗證前端顯示正確

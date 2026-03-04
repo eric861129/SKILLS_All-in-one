@@ -1,0 +1,190 @@
+# 從 awesome-claude-skills 批量導入技能
+
+從 [awesome-claude-skills](https://github.com/BehiSecc/awesome-claude-skills) README 中收集所有技能 GitHub Repo 連結，與現有 [skills.ts](file:///Users/eric861129/SKILLS_All-in-one/src/data/skills.ts) / [init_skills.sql](file:///Users/eric861129/SKILLS_All-in-one/database/init_skills.sql) 交叉比對後，批量新增缺失技能並補上缺失的 githubUrl。
+
+---
+
+## Skill Manager SKILL.md 說明
+
+`skill-manager` 是 SKILLS_All-in-one 的最高級管控工具，標準流程為 **Import → Audit → Onboard → Manifest Sync**。本次為批量元數據導入，技能來源為已策展的 awesome-list，故調整為：
+
+1. **元數據登記** — 直接新增 [skills.ts](file:///Users/eric861129/SKILLS_All-in-one/src/data/skills.ts) 與 [init_skills.sql](file:///Users/eric861129/SKILLS_All-in-one/database/init_skills.sql) 條目
+2. **Manifest 同步** — 執行 `npm run prebuild`
+
+> [!IMPORTANT]
+> 本次僅做**元數據登記與 githubUrl 補全**，不下載 SKILL.md 檔案到 `public/SKILLS/` 目錄。如需完整檔案下載，後續可逐一使用 `github-skill-importer` SOP。
+
+---
+
+## Phase 1: 補全 6 個現有技能的缺失 githubUrl
+
+| id | name | 補上的 githubUrl |
+|----|------|-----------------|
+| 5 | revealjs-skill | `https://github.com/ryanbbrown/revealjs-skill/tree/main` |
+| 6 | web-artifacts-builder | `https://github.com/anthropics/skills/tree/main/skills/web-artifacts-builder` |
+| 8 | claude-starter | `https://github.com/raintree-technology/claude-starter` |
+| 9 | csv-data-summarizer | `https://github.com/coffeefuelbump/csv-data-summarizer-claude-skill` |
+| 11 | article-extractor | `https://github.com/michalparkola/tapestry-skills-for-claude-code/tree/main/article-extractor` |
+| 79 | skill-creator | `https://github.com/anthropics/skills/tree/main/skills/skill-creator` |
+
+#### [MODIFY] [skills.ts](file:///Users/eric861129/SKILLS_All-in-one/src/data/skills.ts)
+- 為上述 6 筆加上 `githubUrl` 欄位
+
+#### [MODIFY] [init_skills.sql](file:///Users/eric861129/SKILLS_All-in-one/database/init_skills.sql)
+- 將上述 6 筆 `NULL` 改為正確 URL
+
+---
+
+## Phase 2: 新增 ~55 個新技能 (id 116–170)
+
+新增兩個新分類：**Scientific & Research Tools**、**Health & Life Sciences**。
+
+### 按分類列出的新技能
+
+#### Document Skills (1 個)
+| id | name | author | githubUrl |
+|----|------|--------|-----------|
+| 116 | polaris-datainsight-doc-extract | jacob-g-park | `https://github.com/jacob-g-park/polaris-datainsight-doc-extract` |
+
+#### Development & Code Tools (9 個)
+| id | name | author | githubUrl |
+|----|------|--------|-----------|
+| 117 | pypict-claude-skill | omkamal | `https://github.com/omkamal/pypict-claude-skill` |
+| 118 | claude-code-terminal-title | bluzername | `https://github.com/bluzername/claude-code-terminal-title` |
+| 119 | charles-proxy-extract | wannabehero | `https://github.com/wannabehero/charles-proxy-extract-skill` |
+| 120 | plugin-authoring | ivan-magda | `https://github.com/ivan-magda/claude-code-plugin-template/tree/main/plugins/plugin-development/skills/plugin-authoring` |
+| 121 | azure-devops | sanjay3290 | `https://github.com/sanjay3290/ai-skills/tree/main/skills/azure-devops` |
+| 122 | jules | sanjay3290 | `https://github.com/sanjay3290/ai-skills/tree/main/skills/jules` |
+| 123 | hashicorp-agent-skills | hashicorp | `https://github.com/hashicorp/agent-skills` |
+| 124 | agnix | avifenesh | `https://github.com/avifenesh/agnix` |
+| 125 | email-html-mjml | framix-team | `https://github.com/framix-team/skill-email-html-mjml` |
+
+#### Data & Analysis (8 個)
+| id | name | author | githubUrl |
+|----|------|--------|-----------|
+| 126 | root-cause-tracing | obra | `https://github.com/obra/superpowers/tree/main/skills/root-cause-tracing` |
+| 127 | mysql | sanjay3290 | `https://github.com/sanjay3290/ai-skills/tree/main/skills/mysql` |
+| 128 | mssql | sanjay3290 | `https://github.com/sanjay3290/ai-skills/tree/main/skills/mssql` |
+| 129 | kaggle-skill | shepsci | `https://github.com/shepsci/kaggle-skill` |
+| 130 | octav-api-skill | Octav-Labs | `https://github.com/Octav-Labs/octav-api-skill` |
+| 131 | elicitation | tasteray | `https://github.com/tasteray/skills/tree/main/elicitation` |
+| 132 | recommendations | tasteray | `https://github.com/tasteray/skills/tree/main/recommendations` |
+| 133 | x-twitter-scraper | Xquik-dev | `https://github.com/Xquik-dev/x-twitter-scraper` |
+
+#### Scientific & Research Tools (4 個) — **新分類**
+| id | name | author | githubUrl |
+|----|------|--------|-----------|
+| 134 | claude-scientific-skills | K-Dense-AI | `https://github.com/K-Dense-AI/claude-scientific-skills` |
+| 135 | materials-simulation-skills | HeshamFS | `https://github.com/HeshamFS/materials-simulation-skills` |
+| 136 | deep-research | sanjay3290 | `https://github.com/sanjay3290/ai-skills/tree/main/skills/deep-research` |
+| 137 | manus | sanjay3290 | `https://github.com/sanjay3290/ai-skills/tree/main/skills/manus` |
+
+#### Writing & Research (2 個)
+| id | name | author | githubUrl |
+|----|------|--------|-----------|
+| 138 | content-research-writer | ComposioHQ | `https://github.com/ComposioHQ/awesome-claude-skills/tree/master/content-research-writer` |
+| 139 | family-history-research | emaynard | `https://github.com/emaynard/claude-family-history-research-skill` |
+
+#### Learning & Knowledge (2 個)
+| id | name | author | githubUrl |
+|----|------|--------|-----------|
+| 140 | tapestry | michalparkola | `https://github.com/michalparkola/tapestry-skills-for-claude-code/tree/main/tapestry` |
+| 141 | ship-learn-next | michalparkola | `https://github.com/michalparkola/tapestry-skills-for-claude-code/tree/main/ship-learn-next` |
+
+#### Media & Content (12 個)
+| id | name | author | githubUrl |
+|----|------|--------|-----------|
+| 142 | youtube-transcript | michalparkola | `https://github.com/michalparkola/tapestry-skills-for-claude-code/tree/main/youtube-transcript` |
+| 143 | video-downloader | ComposioHQ | `https://github.com/ComposioHQ/awesome-claude-skills/tree/master/video-downloader` |
+| 144 | image-enhancer | ComposioHQ | `https://github.com/ComposioHQ/awesome-claude-skills/tree/master/image-enhancer` |
+| 145 | imagen | sanjay3290 | `https://github.com/sanjay3290/ai-skills/tree/main/skills/imagen` |
+| 146 | elevenlabs | sanjay3290 | `https://github.com/sanjay3290/ai-skills/tree/main/skills/elevenlabs` |
+| 147 | google-tts | sanjay3290 | `https://github.com/sanjay3290/ai-skills/tree/main/skills/google-tts` |
+| 148 | claude-epub-skill | smerchek | `https://github.com/smerchek/claude-epub-skill` |
+| 149 | video-prompting-skill | Square-Zero-Labs | `https://github.com/Square-Zero-Labs/video-prompting-skill` |
+| 150 | find-scene | uriva | `https://github.com/uriva/find-scene-skill` |
+| 151 | deapi-ai-media-toolkit | deapi-ai | `https://github.com/deapi-ai/claude-code-skills` |
+| 152 | claude-code-video-toolkit | digitalsamba | `https://github.com/digitalsamba/claude-code-video-toolkit` |
+| 153 | moltdj | polaroteam | `https://github.com/polaroteam/moltdj-skill` |
+
+#### Health & Life Sciences (1 個) — **新分類**
+| id | name | author | githubUrl |
+|----|------|--------|-----------|
+| 154 | claude-ally-health | huifer | `https://github.com/huifer/Claude-Ally-Health` |
+
+#### Collaboration & Project Management (12 個)
+| id | name | author | githubUrl |
+|----|------|--------|-----------|
+| 155 | git-pushing | mhattingpete | `https://github.com/mhattingpete/claude-skills-marketplace/tree/main/engineering-workflow-plugin/skills/git-pushing` |
+| 156 | kanban-skill | mattjoyce | `https://github.com/mattjoyce/kanban-skill` |
+| 157 | linear-claude-skill | wrsmith108 | `https://github.com/wrsmith108/linear-claude-skill` |
+| 158 | linear-cli-skill | Valian | `https://github.com/Valian/linear-cli-skill` |
+| 159 | meeting-insights-analyzer | ComposioHQ | `https://github.com/ComposioHQ/awesome-claude-skills/blob/master/meeting-insights-analyzer/` |
+| 160 | review-implementing | mhattingpete | `https://github.com/mhattingpete/claude-skills-marketplace/tree/main/engineering-workflow-plugin/skills/review-implementing` |
+| 161 | test-fixing | mhattingpete | `https://github.com/mhattingpete/claude-skills-marketplace/tree/main/engineering-workflow-plugin/skills/test-fixing` |
+| 162 | plannotator | backnotprop | `https://github.com/backnotprop/plannotator` |
+| 163 | outline | sanjay3290 | `https://github.com/sanjay3290/ai-skills/tree/main/skills/outline` |
+| 164 | google-workspace-skills | sanjay3290 | `https://github.com/sanjay3290/ai-skills/tree/main/skills` |
+| 165 | pm-skills | product-on-purpose | `https://github.com/product-on-purpose/pm-skills` |
+| 166 | product-manager-skills | deanpeters | `https://github.com/deanpeters/Product-Manager-Skills` |
+
+#### Security & Web Testing (6 個)
+| id | name | author | githubUrl |
+|----|------|--------|-----------|
+| 167 | vibesec-skill | BehiSecc | `https://github.com/BehiSecc/VibeSec-Skill` |
+| 168 | defense-in-depth | obra | `https://github.com/obra/superpowers/blob/main/skills/defense-in-depth` |
+| 169 | ffuf-claude-skill | jthack | `https://github.com/jthack/ffuf_claude_skill` |
+| 170 | owasp-security | agamm | `https://github.com/agamm/claude-code-owasp` |
+| 171 | trail-of-bits-skills | trailofbits | `https://github.com/trailofbits/skills` |
+| 172 | varlock-claude-skill | wrsmith108 | `https://github.com/wrsmith108/varlock-claude-skill` |
+
+#### Utility & Automation (6 個)
+| id | name | author | githubUrl |
+|----|------|--------|-----------|
+| 173 | file-organizer | ComposioHQ | `https://github.com/ComposioHQ/awesome-claude-skills/tree/master/file-organizer` |
+| 174 | invoice-organizer | ComposioHQ | `https://github.com/ComposioHQ/awesome-claude-skills/blob/master/invoice-organizer/SKILL.md` |
+| 175 | template-skill | Anthropic | `https://github.com/anthropics/skills/tree/main/template` |
+| 176 | agentfund-mcp | RioTheGreat-ai | `https://github.com/RioTheGreat-ai/agentfund-mcp` |
+| 177 | task-observer | rebelytics | `https://github.com/rebelytics/one-skill-to-rule-them-all` |
+| 178 | pinme | glitternetwork | `https://github.com/glitternetwork/skills/tree/main/pinme` |
+
+#### Collections → Utility & Automation (3 個)
+| id | name | author | githubUrl |
+|----|------|--------|-----------|
+| 179 | clawfu-mcp-skills | guia-matthieu | `https://github.com/guia-matthieu/clawfu-skills` |
+| 180 | wondelai-skills | wondelai | `https://github.com/wondelai/skills` |
+| 181 | find-skills | agentbay-ai | `https://github.com/agentbay-ai/agentbay-skills` |
+
+---
+
+## Proposed Changes
+
+### Phase 1 — 補全 githubUrl
+#### [MODIFY] [skills.ts](file:///Users/eric861129/SKILLS_All-in-one/src/data/skills.ts)
+- 為 id 5, 6, 8, 9, 11, 79 補上 `githubUrl`
+
+#### [MODIFY] [init_skills.sql](file:///Users/eric861129/SKILLS_All-in-one/database/init_skills.sql)
+- 將 id 5, 6, 8, 9, 10, 11, 79 的 `NULL` 改為正確 URL
+
+### Phase 2 — 新增 66 個技能條目
+#### [MODIFY] [skills.ts](file:///Users/eric861129/SKILLS_All-in-one/src/data/skills.ts)
+- 在陣列末尾追加 id 116–181 共 66 筆新技能
+
+#### [MODIFY] [init_skills.sql](file:///Users/eric861129/SKILLS_All-in-one/database/init_skills.sql)
+- 追加 66 筆 INSERT 語句
+
+### Phase 3 — Manifest 同步
+- 執行 `npm run prebuild` 更新 `public/skills-manifest.json`
+
+---
+
+## Verification Plan
+
+### Automated
+1. `npm run build` — 確認 TypeScript 編譯通過，無語法錯誤
+2. `npm run prebuild` — 確認 manifest 成功生成
+
+### Manual
+1. 開啟 `http://localhost:5173`，搜尋新增技能名稱（如 "VibeSec"），確認出現在搜尋結果
+2. 檢查新分類 "Scientific & Research Tools" 與 "Health & Life Sciences" 是否出現在分類篩選中
+3. 點擊帶有 githubUrl 的技能卡片，確認連結正確
