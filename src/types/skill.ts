@@ -30,4 +30,6 @@ export interface Skill {
   tags: string[];
   version?: string;
   githubUrl?: string; // 原作者 GitHub 連結
+  previewImages?: string[];
+  usageCommand?: string;
 }

@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { ArrowLeft, Download, Github, User, Calendar, Tag, Terminal } from 'lucide-react';
+import { ArrowLeft, Download, Github, User, Calendar, Tag, Terminal, Copy, Check, ImageIcon } from 'lucide-react';
 import { MOCK_SKILLS } from '../data/skills';
 import { useLanguage } from '../hooks/useLanguage';
 import { downloadAndZipSkill } from '../utils/downloadSkill';
@@ -38,6 +38,7 @@ export const SkillPage = () => {
 
     // Fetch real download counts from API
     const [downloadCount, setDownloadCount] = useState<number>(0);
+    const [copied, setCopied] = useState(false);
 
     const skill = useMemo(() => {
         const numId = Number(id);
@@ -130,7 +131,29 @@ export const SkillPage = () => {
                         {language === 'zh' && skill.nameZh && !skill.nameZh.includes(skill.name) && (
                             <p className="text-slate-500 text-sm font-mono mb-4">{skill.name}</p>
                         )}
-                        <p className="text-slate-400 text-lg leading-relaxed max-w-2xl">{displayDescription}</p>
+                        <p className="text-slate-400 text-lg leading-relaxed max-w-2xl mb-8">{displayDescription}</p>
+
+                        {/* Quick Copy CLI */}
+                        <div className="flex items-center max-w-2xl bg-slate-900/80 border border-slate-700/60 rounded-xl overflow-hidden mb-6">
+                            <div className="flex items-center justify-center p-3 sm:px-4 bg-slate-800/50 border-r border-slate-700/60 text-slate-500">
+                                <Terminal className="w-4 h-4" />
+                            </div>
+                            <code className="flex-1 px-4 py-3 text-sm font-mono text-slate-300 truncate selection:bg-blue-500/30">
+                                {skill.usageCommand || `npx install-skill ${skill.source || skill.name}`}
+                            </code>
+                            <button
+                                onClick={() => {
+                                    navigator.clipboard.writeText(skill.usageCommand || `npx install-skill ${skill.source || skill.name}`);
+                                    setCopied(true);
+                                    showToast(language === 'zh' ? '已複製指令' : 'Command copied', 'success');
+                                    setTimeout(() => setCopied(false), 2000);
+                                }}
+                                className={`flex items-center justify-center p-3 sm:px-5 transition-all outline-none focus:outline-none ${copied ? 'bg-emerald-500/20 text-emerald-400' : 'bg-slate-800 hover:bg-slate-700 text-slate-300 active:bg-slate-600'}`}
+                                title={language === 'zh' ? '複製指令' : 'Copy command'}
+                            >
+                                {copied ? <Check className="w-4 h-4 animate-in zoom-in duration-200" /> : <Copy className="w-4 h-4" />}
+                            </button>
+                        </div>
                     </div>
 
                     <div className="flex gap-3 shrink-0">
@@ -153,17 +176,40 @@ export const SkillPage = () => {
                     </div>
                 </div>
 
+                {/* Media Gallery / Preview Images */}
+                {skill.previewImages && skill.previewImages.length > 0 && (
+                    <div className="mb-12">
+                        <div className="flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest text-slate-500 mb-6">
+                            <ImageIcon className="w-4 h-4" />
+                            {language === 'zh' ? '功能預覽' : 'Preview'}
+                        </div>
+                        <div className="flex overflow-x-auto gap-4 pb-4 snap-x snap-mandatory scrollbar-thin scrollbar-thumb-slate-700 scrollbar-track-transparent">
+                            {skill.previewImages.map((img, idx) => (
+                                <img
+                                    key={idx}
+                                    src={img}
+                                    alt={`${skill.name} screenshot ${idx + 1}`}
+                                    className="shrink-0 w-[85%] sm:w-[500px] md:w-[600px] h-[300px] sm:h-[400px] object-cover rounded-2xl border border-slate-800 snap-center shadow-2xl shadow-slate-900/50"
+                                />
+                            ))}
+                        </div>
+                    </div>
+                )}
+
                 {/* Metadata Cards */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-10">
-                    <div className="bg-slate-900 border border-slate-800 rounded-xl p-5 flex items-center gap-4">
-                        <div className="p-2.5 bg-blue-500/10 rounded-xl">
+                    <Link
+                        to={`/author/${encodeURIComponent(skill.author)}`}
+                        className="bg-slate-900 border border-slate-800 rounded-xl p-5 flex items-center gap-4 hover:border-blue-500/50 hover:bg-slate-800/50 transition-all group cursor-pointer"
+                    >
+                        <div className="p-2.5 bg-blue-500/10 rounded-xl group-hover:bg-blue-500/20 transition-colors">
                             <User className="w-5 h-5 text-blue-400" />
                         </div>
                         <div>
                             <p className="text-[10px] font-bold uppercase tracking-widest text-slate-500 mb-1">{language === 'zh' ? '作者' : 'Author'}</p>
-                            <p className="text-sm font-semibold text-slate-200">{skill.author}</p>
+                            <p className="text-sm font-semibold text-slate-200 group-hover:text-blue-400 transition-colors">{skill.author}</p>
                         </div>
-                    </div>
+                    </Link>
                     <div className="bg-slate-900 border border-slate-800 rounded-xl p-5 flex items-center gap-4">
                         <div className="p-2.5 bg-emerald-500/10 rounded-xl">
                             <Download className="w-5 h-5 text-emerald-400" />

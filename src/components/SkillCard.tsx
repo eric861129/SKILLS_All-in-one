@@ -1,4 +1,5 @@
 import { Download, Tag, User, Calendar, Github } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import type { Skill, SkillCategory } from '../types/skill';
 import { useLanguage } from '../hooks/useLanguage';
 
@@ -51,10 +52,12 @@ export const SkillCard = ({ skill, onDownload, onPreview }: SkillCardProps) => {
 
   return (
     <div
-      className="bg-slate-900 border border-slate-800 rounded-2xl p-6 hover:border-slate-700 transition-all duration-[var(--duration-normal)] group flex flex-col h-full hover:-translate-y-0.5 hover:shadow-xl hover:shadow-slate-900/50 cursor-pointer active:scale-[0.98]"
+      className="bg-slate-900 border border-slate-800 rounded-2xl p-6 hover:border-slate-700 transition-all duration-[var(--duration-normal)] group flex flex-col h-full hover:-translate-y-0.5 hover:shadow-2xl hover:shadow-blue-900/10 cursor-pointer active:scale-[0.98] relative overflow-hidden"
       onClick={() => onPreview?.()}
     >
-      <div className="flex justify-between items-start mb-4">
+      <div className="absolute inset-x-0 -top-px h-px bg-gradient-to-r from-transparent via-blue-500/0 to-transparent group-hover:via-blue-500/50 transition-all duration-700"></div>
+
+      <div className="flex justify-between items-start mb-4 relative z-10">
         <span className={`px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider border ${getCategoryStyles(skill.category)}`}>
           {skill.category}
         </span>
@@ -87,11 +90,16 @@ export const SkillCard = ({ skill, onDownload, onPreview }: SkillCardProps) => {
       </div>
 
       <div className="flex items-center justify-between mt-auto pt-4 border-t border-slate-800/50">
-        <div className="flex flex-col">
-          <span className="text-sm font-semibold text-slate-300 flex items-center gap-2 mb-1.5">
-            <User className="w-4 h-4 text-blue-400" />
-            {skill.author}
-          </span>
+        <div className="flex flex-col relative z-10 w-full pr-2">
+          <Link
+            to={`/author/${encodeURIComponent(skill.author)}`}
+            onClick={(e) => e.stopPropagation()}
+            className="text-sm font-semibold text-slate-300 flex items-center gap-2 mb-1.5 hover:text-blue-400 transition-colors truncate"
+            title={skill.author}
+          >
+            <User className="w-4 h-4 text-blue-400 shrink-0" />
+            <span className="truncate">{skill.author}</span>
+          </Link>
           <span className="text-xs text-slate-500 font-medium flex items-center gap-1.5">
             <Download className="w-3.5 h-3.5 text-blue-500/70" />
             <span className="font-mono">{(skill.downloadCount || 0).toLocaleString()}</span>
