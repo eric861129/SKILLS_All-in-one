@@ -39,6 +39,25 @@ body {
   font-family: var(--font-sans);
 }
 
+/* ─── Custom Scrollbar ───────────────────────────── */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(var(--surface-0));
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(var(--surface-2));
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(var(--accent));
+}
+
 code, pre, kbd, .font-mono {
   font-family: var(--font-mono);
 }
