@@ -20,8 +20,8 @@
 - [x] Task: Tactile SkillCard (71e54bb)
     - [x] Refactor `SkillCard.tsx` to use `framer-motion`.
     - [x] Add spring-based hover and click effects.
-- [ ] Task: Skeleton Loaders
-    - [ ] Improve `SkeletonCard.tsx` with refined animations.
+- [x] Task: Skeleton Loaders (0a2084e)
+    - [x] Improve `SkeletonCard.tsx` with refined animations.
 - [ ] Task: Conductor - User Manual Verification 'Phase 3: Component Interactions' (Protocol in workflow.md)
 
 ## Phase 4: Final Polishing
