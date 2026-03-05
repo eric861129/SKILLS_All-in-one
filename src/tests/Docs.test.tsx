@@ -38,20 +38,29 @@ vi.mock('../hooks/useSkills', () => ({
   })
 }));
 
-describe('App Routing', () => {
-  it('should render Docs page when navigating to /docs and load markdown', async () => {
+describe('Docs Page Layout', () => {
+  it('should render a sidebar with navigation links', async () => {
     render(
       <MemoryRouter initialEntries={['/docs']}>
         <App />
       </MemoryRouter>
     );
     
-    // Check if the page title exists
-    expect(screen.getByText(/docsTitle/i)).toBeDefined();
+    // Check if the sidebar exists (we expect it to have a specific role or class later, 
+    // but for now we just look for nav links that SHOULD be there)
+    // This will FAIL because we haven't added the sidebar yet.
+    expect(screen.queryByRole('navigation')).not.toBeNull();
+  });
+
+  it('should render markdown content using a dedicated component', async () => {
+    render(
+      <MemoryRouter initialEntries={['/docs']}>
+        <App />
+      </MemoryRouter>
+    );
     
-    // Check if markdown content is loaded (async)
     await waitFor(() => {
       expect(screen.getByText(/Welcome to Docs/i)).toBeDefined();
-    }, { timeout: 2000 });
+    });
   });
 });
