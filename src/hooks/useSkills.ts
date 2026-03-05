@@ -193,6 +193,8 @@ export const useSkills = () => {
     tagCounts,
     selectedAuthors,
     selectedTags,
+    setSelectedAuthors,
+    setSelectedTags,
     toggleAuthor,
     toggleTag,
     clearSidebarFilters,

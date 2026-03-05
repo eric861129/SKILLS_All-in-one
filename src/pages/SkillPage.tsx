@@ -42,6 +42,83 @@ type TreeNode = {
     children?: TreeNode[];
 };
 
+type FileLoadResult =
+    | { kind: 'text'; content: string }
+    | { kind: 'binary'; sizeBytes: number; mimeType: string };
+
+const BINARY_FILE_EXTENSIONS = new Set([
+    '7z',
+    'bin',
+    'bz2',
+    'class',
+    'db',
+    'dmg',
+    'doc',
+    'docx',
+    'exe',
+    'gz',
+    'ico',
+    'jar',
+    'jpg',
+    'jpeg',
+    'lock',
+    'mp3',
+    'mp4',
+    'otf',
+    'pdf',
+    'png',
+    'ppt',
+    'pptx',
+    'tar',
+    'tgz',
+    'ttf',
+    'wasm',
+    'webp',
+    'woff',
+    'woff2',
+    'xls',
+    'xlsx',
+    'zip',
+]);
+
+const getFileExt = (filePath: string) => filePath.split('.').pop()?.toLowerCase() || '';
+
+const isBinaryFilePath = (filePath: string) => BINARY_FILE_EXTENSIONS.has(getFileExt(filePath));
+
+const isBinaryContentType = (contentType: string) => {
+    if (!contentType) return false;
+    const normalized = contentType.toLowerCase();
+    if (
+        normalized.startsWith('text/') ||
+        normalized.includes('application/json') ||
+        normalized.includes('application/xml') ||
+        normalized.includes('application/javascript') ||
+        normalized.includes('application/x-yaml') ||
+        normalized.includes('application/yaml')
+    ) {
+        return false;
+    }
+    return (
+        normalized.includes('application/octet-stream') ||
+        normalized.includes('application/gzip') ||
+        normalized.includes('application/zip') ||
+        normalized.includes('application/x-tar') ||
+        normalized.includes('application/x-gzip') ||
+        normalized.includes('application/pdf') ||
+        normalized.includes('image/') ||
+        normalized.includes('audio/') ||
+        normalized.includes('video/')
+    );
+};
+
+const formatBytes = (sizeBytes: number) => {
+    if (sizeBytes < 1024) return `${sizeBytes} B`;
+    const kb = sizeBytes / 1024;
+    if (kb < 1024) return `${kb.toFixed(1)} KB`;
+    const mb = kb / 1024;
+    return `${mb.toFixed(1)} MB`;
+};
+
 const getCategoryStyles = (category: SkillCategory) => {
     switch (category) {
         case 'Development & Code Tools':
@@ -306,11 +383,12 @@ export const SkillPage = () => {
     const [manifestLoading, setManifestLoading] = useState(false);
     const [selectedFile, setSelectedFile] = useState<string | null>(null);
     const [fileContent, setFileContent] = useState<string>('');
+    const [fileBinaryMeta, setFileBinaryMeta] = useState<{ sizeBytes: number; mimeType: string } | null>(null);
     const [loadingFile, setLoadingFile] = useState(false);
     const [readerMode, setReaderMode] = useState(false);
     const [highlightedLine, setHighlightedLine] = useState<number | null>(null);
-    const fileCacheRef = useRef<Map<string, string>>(new Map());
-    const fileRequestCacheRef = useRef<Map<string, Promise<string>>>(new Map());
+    const fileCacheRef = useRef<Map<string, FileLoadResult>>(new Map());
+    const fileRequestCacheRef = useRef<Map<string, Promise<FileLoadResult>>>(new Map());
 
     const skill = useMemo(() => {
         const numId = Number(id);
@@ -381,11 +459,30 @@ export const SkillPage = () => {
             for (const path of [...new Set(candidates)]) {
                 const response = await fetch(path, { signal });
                 if (!response.ok) continue;
+                const contentType = (response.headers?.get?.('content-type') || '').toLowerCase();
+                const binaryByPath = isBinaryFilePath(targetFile);
+
+                if (binaryByPath || isBinaryContentType(contentType)) {
+                    if (contentType.includes('text/html')) {
+                        const htmlText = await response.text();
+                        if (looksLikeSpaHtmlFallback(htmlText)) {
+                            continue;
+                        }
+                        return { kind: 'text', content: htmlText } as FileLoadResult;
+                    }
+                    const buffer = await response.arrayBuffer();
+                    return {
+                        kind: 'binary',
+                        sizeBytes: buffer.byteLength,
+                        mimeType: contentType || 'application/octet-stream',
+                    } as FileLoadResult;
+                }
+
                 const text = await response.text();
                 if (!targetFile.toLowerCase().endsWith('.html') && looksLikeSpaHtmlFallback(text)) {
                     continue;
                 }
-                return text;
+                return { kind: 'text', content: text } as FileLoadResult;
             }
             throw new Error('Failed to load file');
         },
@@ -395,7 +492,7 @@ export const SkillPage = () => {
     const loadFileContent = useCallback(
         async (targetFile: string, signal?: AbortSignal) => {
             const cached = fileCacheRef.current.get(targetFile);
-            if (typeof cached === 'string') {
+            if (cached) {
                 return cached;
             }
 
@@ -405,9 +502,9 @@ export const SkillPage = () => {
             }
 
             const request = fetchSkillFile(targetFile, signal)
-                .then((text) => {
-                    fileCacheRef.current.set(targetFile, text);
-                    return text;
+                .then((result) => {
+                    fileCacheRef.current.set(targetFile, result);
+                    return result;
                 })
                 .finally(() => {
                     fileRequestCacheRef.current.delete(targetFile);
@@ -427,21 +524,34 @@ export const SkillPage = () => {
         const loadFile = async () => {
             setHighlightedLine(null);
             const cached = fileCacheRef.current.get(selectedFile);
-            if (typeof cached === 'string') {
-                setFileContent(cached);
+            if (cached) {
+                if (cached.kind === 'binary') {
+                    setFileContent('');
+                    setFileBinaryMeta({ sizeBytes: cached.sizeBytes, mimeType: cached.mimeType });
+                } else {
+                    setFileContent(cached.content);
+                    setFileBinaryMeta(null);
+                }
                 setLoadingFile(false);
                 return;
             }
 
             setLoadingFile(true);
             try {
-                const loadedContent = await loadFileContent(selectedFile, abortController.signal);
+                const loadedResult = await loadFileContent(selectedFile, abortController.signal);
                 if (cancelled) return;
-                setFileContent(loadedContent);
+                if (loadedResult.kind === 'binary') {
+                    setFileContent('');
+                    setFileBinaryMeta({ sizeBytes: loadedResult.sizeBytes, mimeType: loadedResult.mimeType });
+                } else {
+                    setFileContent(loadedResult.content);
+                    setFileBinaryMeta(null);
+                }
             } catch (error) {
                 if (abortController.signal.aborted) return;
                 console.error('Failed to load file content:', error);
                 if (cancelled) return;
+                setFileBinaryMeta(null);
                 setFileContent('// Unable to load file content.');
             } finally {
                 if (cancelled) return;
@@ -475,6 +585,7 @@ export const SkillPage = () => {
 
         const queue = [...manifestEntry.files]
             .filter((file) => file !== selectedFile)
+            .filter((file) => !isBinaryFilePath(file))
             .filter((file) => {
                 const size = fileMeta[file]?.sizeBytes;
                 return typeof size !== 'number' || size <= MAX_FILE_SIZE_BYTES;
@@ -536,13 +647,20 @@ export const SkillPage = () => {
 
     const handleCopyFile = useCallback(async () => {
         if (!selectedFile) return;
+        if (fileBinaryMeta) {
+            showToast(
+                language === 'zh' ? '\u4e8c\u9032\u4f4d\u6a94\u6848\u7121\u6cd5\u4ee5\u6587\u5b57\u8907\u88fd' : 'Binary file cannot be copied as text',
+                'error'
+            );
+            return;
+        }
         try {
             await copyText(fileContent);
             showToast(language === 'zh' ? `\u5df2\u8907\u88fd ${selectedFile}` : `${selectedFile} copied`, 'success');
         } catch {
             showToast(language === 'zh' ? '\u8907\u88fd\u5931\u6557' : 'Copy failed', 'error');
         }
-    }, [fileContent, language, selectedFile, showToast]);
+    }, [fileBinaryMeta, fileContent, language, selectedFile, showToast]);
 
     const relatedSkills = useMemo(() => {
         if (!skill) return [];
@@ -556,7 +674,7 @@ export const SkillPage = () => {
         return buildTreeFromFiles(manifestEntry?.files || []);
     }, [manifestEntry]);
 
-    const isMarkdown = selectedFile?.toLowerCase().endsWith('.md');
+    const isMarkdown = !fileBinaryMeta && selectedFile?.toLowerCase().endsWith('.md');
     const tokenEstimate = manifestEntry?.tokenEstimate;
 
     const renderContent = (reader: boolean) => {
@@ -572,6 +690,26 @@ export const SkillPage = () => {
             return (
                 <div className="flex items-center justify-center h-full text-slate-600">
                     <p>{language === 'zh' ? '\u8acb\u9078\u64c7\u6a94\u6848' : 'Select a file to preview'}</p>
+                </div>
+            );
+        }
+
+        if (fileBinaryMeta) {
+            return (
+                <div className="h-full rounded-xl border border-slate-800 bg-slate-950/50 p-6 flex items-center justify-center">
+                    <div className="max-w-lg text-center">
+                        <h4 className="text-slate-100 text-lg font-semibold mb-2">
+                            {language === 'zh' ? '\u4e8c\u9032\u4f4d\u6a94\u6848\u7121\u6cd5\u7dda\u4e0a\u9810\u89bd' : 'Binary file cannot be previewed as text'}
+                        </h4>
+                        <p className="text-slate-400 text-sm mb-2">
+                            {language === 'zh'
+                                ? '\u9019\u500b\u6a94\u6848\u5c6c\u65bc\u58d3\u7e2e\u6216\u4e8c\u9032\u4f4d\u683c\u5f0f\uff0c\u7121\u6cd5\u4ee5\u7a0b\u5f0f\u78bc\u6aa2\u8996\u5668\u986f\u793a\u3002'
+                                : 'This file is compressed or binary and cannot be rendered in the code viewer.'}
+                        </p>
+                        <p className="text-xs text-slate-500 font-mono">
+                            {fileBinaryMeta.mimeType} · {formatBytes(fileBinaryMeta.sizeBytes)}
+                        </p>
+                    </div>
                 </div>
             );
         }
@@ -785,7 +923,7 @@ export const SkillPage = () => {
                                             <button
                                                 type="button"
                                                 onClick={handleCopyFile}
-                                                disabled={!selectedFile}
+                                                disabled={!selectedFile || Boolean(fileBinaryMeta)}
                                                 className="px-3 py-1.5 text-xs font-bold rounded-lg border border-slate-700 text-slate-300 hover:text-white hover:border-slate-500 disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-1.5"
                                             >
                                                 <Copy className="w-3.5 h-3.5" />
@@ -794,7 +932,7 @@ export const SkillPage = () => {
                                             <button
                                                 type="button"
                                                 onClick={() => setReaderMode(true)}
-                                                disabled={!selectedFile}
+                                                disabled={!selectedFile || Boolean(fileBinaryMeta)}
                                                 className="px-3 py-1.5 text-xs font-bold rounded-lg border border-slate-700 text-slate-300 hover:text-white hover:border-slate-500 disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-1.5"
                                             >
                                                 <Expand className="w-3.5 h-3.5" />

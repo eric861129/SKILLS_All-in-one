@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
-import { useSearchParams, useNavigate, Link } from 'react-router-dom';
+import { useSearchParams, useNavigate, useLocation, useNavigationType, Link } from 'react-router-dom';
 import { Terminal, Search, Filter, X, Flame, Clock, ArrowUpDown, Languages, SlidersHorizontal, Plus, Sparkles, Rocket } from 'lucide-react';
 import { useSkills } from '../hooks/useSkills';
 import { SkillCard } from '../components/SkillCard';
@@ -13,11 +13,24 @@ import type { Skill, SkillCategory } from '../types/skill';
 import type { SortOption } from '../hooks/useSkills';
 
 const ITEMS_PER_PAGE = 24;
+const HOME_PAGE_STATE_KEY = 'skills-home-state-v1';
+
+type HomePageState = {
+    pathWithQuery: string;
+    scrollY: number;
+    visibleCount: number;
+    savedAt: number;
+};
 
 export const HomePage = () => {
     const [searchParams, setSearchParams] = useSearchParams();
     const navigate = useNavigate();
+    const location = useLocation();
+    const navigationType = useNavigationType();
     const searchInputRef = useRef<HTMLInputElement>(null);
+    const pendingRestoreScrollRef = useRef<number | null>(null);
+    const hasRestoredScrollRef = useRef(false);
+    const previousFilterSignatureRef = useRef<string | null>(null);
 
     const {
         skills,
@@ -33,6 +46,8 @@ export const HomePage = () => {
         tagCounts,
         selectedAuthors,
         selectedTags,
+        setSelectedAuthors,
+        setSelectedTags,
         toggleAuthor,
         toggleTag,
         clearSidebarFilters
@@ -40,26 +55,26 @@ export const HomePage = () => {
 
     const { language, setLanguage, t } = useLanguage();
 
-    // 行動端側欄狀態
+    // ??ㄝ???頩??????
     const [showMobileSidebar, setShowMobileSidebar] = useState(false);
-    // How It Works Modal 狀態
+    // How It Works Modal ????
     const [showHowItWorks, setShowHowItWorks] = useState(false);
-    // 分頁
+    // ???
     const [visibleCount, setVisibleCount] = useState(ITEMS_PER_PAGE);
 
-    // 當篩選、搜尋、排序改變時重設分頁
-    useEffect(() => {
-        setVisibleCount(ITEMS_PER_PAGE);
-    }, [searchQuery, selectedCategory, sortBy, selectedAuthors, selectedTags]);
-
+    // ??鈭???圈??頩??蹎??頩???塗??謖?????謍單????
     const visibleSkills = skills.slice(0, visibleCount);
     const hasMore = visibleCount < skills.length;
 
-    // ─── URL 同步：讀取 URL 參數 ──────────────────────
+    // ?????? URL ??擏??謅Ｗ????URL ??憛敢 ????????????????????????????????????????????
     useEffect(() => {
         const q = searchParams.get('q');
         const cat = searchParams.get('cat');
         const sort = searchParams.get('sort');
+        const authors = searchParams.getAll('author');
+        const tags = searchParams.getAll('tag');
+        const vcRaw = searchParams.get('vc');
+        const vcFromQuery = vcRaw ? Number(vcRaw) : NaN;
 
         if (q !== null && q !== searchQuery) setSearchQuery(q);
         if (cat !== null && cat !== selectedCategory) {
@@ -70,15 +85,46 @@ export const HomePage = () => {
         if (sort !== null && (sort === 'Popular' || sort === 'Latest') && sort !== sortBy) {
             setSortBy(sort as SortOption);
         }
+        if (authors.length > 0) {
+            setSelectedAuthors(authors);
+        }
+        if (tags.length > 0) {
+            setSelectedTags(tags);
+        }
+        if (Number.isFinite(vcFromQuery) && vcFromQuery >= ITEMS_PER_PAGE) {
+            setVisibleCount(Math.floor(vcFromQuery));
+        }
+
+        if (navigationType === 'POP') {
+            const raw = sessionStorage.getItem(HOME_PAGE_STATE_KEY);
+            if (raw) {
+                try {
+                    const parsed = JSON.parse(raw) as HomePageState;
+                    const pathWithQuery = `${location.pathname}${location.search}`;
+                    const isFresh = Date.now() - parsed.savedAt < 30 * 60 * 1000;
+                    if (isFresh && parsed.pathWithQuery === pathWithQuery) {
+                        pendingRestoreScrollRef.current = Math.max(0, parsed.scrollY || 0);
+                        if (!Number.isFinite(vcFromQuery) && parsed.visibleCount > ITEMS_PER_PAGE) {
+                            setVisibleCount(parsed.visibleCount);
+                        }
+                    }
+                } catch {
+                    // ignore invalid storage payload
+                }
+            }
+        }
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []); // Only on mount
 
-    // ─── URL 同步：寫入 URL 參數 ──────────────────────
+    // ?????? URL ??擏??謅Ｗ????URL ??憛敢 ????????????????????????????????????????????
     useEffect(() => {
         const params = new URLSearchParams();
         if (searchQuery) params.set('q', searchQuery);
         if (selectedCategory !== 'All') params.set('cat', selectedCategory);
         if (sortBy !== 'Popular') params.set('sort', sortBy);
+        [...selectedAuthors].sort((a, b) => a.localeCompare(b)).forEach((author) => params.append('author', author));
+        [...selectedTags].sort((a, b) => a.localeCompare(b)).forEach((tag) => params.append('tag', tag));
+        if (visibleCount > ITEMS_PER_PAGE) params.set('vc', String(visibleCount));
 
         const newSearch = params.toString();
         const currentSearch = searchParams.toString();
@@ -86,9 +132,50 @@ export const HomePage = () => {
             setSearchParams(params, { replace: true });
         }
         // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [searchQuery, selectedCategory, sortBy]);
+    }, [searchQuery, selectedCategory, sortBy, selectedAuthors, selectedTags, visibleCount]);
 
-    // ─── 鍵盤快捷鍵 ────────────────────────────────
+    useEffect(() => {
+        const signature = JSON.stringify({
+            searchQuery,
+            selectedCategory,
+            sortBy,
+            selectedAuthors: [...selectedAuthors].sort((a, b) => a.localeCompare(b)),
+            selectedTags: [...selectedTags].sort((a, b) => a.localeCompare(b)),
+        });
+
+        if (previousFilterSignatureRef.current === null) {
+            previousFilterSignatureRef.current = signature;
+            return;
+        }
+
+        if (previousFilterSignatureRef.current !== signature) {
+            setVisibleCount(ITEMS_PER_PAGE);
+        }
+        previousFilterSignatureRef.current = signature;
+    }, [searchQuery, selectedCategory, sortBy, selectedAuthors, selectedTags]);
+
+    useEffect(() => {
+        const targetScrollY = pendingRestoreScrollRef.current;
+        if (targetScrollY == null || hasRestoredScrollRef.current || loading) return;
+
+        const requiredHeight = targetScrollY + window.innerHeight;
+        const currentHeight = document.documentElement.scrollHeight;
+
+        if (currentHeight < requiredHeight && hasMore) {
+            setVisibleCount((prev) => Math.min(prev + ITEMS_PER_PAGE, skills.length));
+            return;
+        }
+
+        requestAnimationFrame(() => {
+            window.scrollTo({ top: targetScrollY, behavior: 'auto' });
+            hasRestoredScrollRef.current = true;
+            pendingRestoreScrollRef.current = null;
+            sessionStorage.removeItem(HOME_PAGE_STATE_KEY);
+        });
+    }, [loading, hasMore, skills.length]);
+
+
+    // ?????? ?????撖隡???????????????????????????????????????????????????????????????????
     useEffect(() => {
         const handleKeyDown = (e: KeyboardEvent) => {
             const target = e.target as HTMLElement;
@@ -108,12 +195,19 @@ export const HomePage = () => {
     }, []);
 
     const handlePreview = useCallback((skill: Skill) => {
+        const state: HomePageState = {
+            pathWithQuery: `${location.pathname}${location.search}`,
+            scrollY: window.scrollY,
+            visibleCount,
+            savedAt: Date.now(),
+        };
+        sessionStorage.setItem(HOME_PAGE_STATE_KEY, JSON.stringify(state));
         navigate(`/skill/${skill.id}`);
-    }, [navigate]);
+    }, [location.pathname, location.search, navigate, visibleCount]);
 
     const activeFilterCount = selectedAuthors.length + selectedTags.length;
 
-    // 統計數據
+    // ??嚗????
     const totalDownloads = skills.reduce((sum, s) => sum + (s.downloadCount || 0), 0);
 
     return (
@@ -127,11 +221,11 @@ export const HomePage = () => {
                     className="glass-surface p-2.5 rounded-xl flex items-center gap-2 hover:border-accent/50 transition-all duration-300 text-slate-300 hover:text-accent shadow-2xl"
                 >
                     <Languages size={20} />
-                    <span className="text-xs font-bold uppercase tracking-widest">{language === 'en' ? '中文' : 'EN'}</span>
+                    <span className="text-xs font-bold uppercase tracking-widest">{language === 'en' ? '\u4e2d\u6587' : 'EN'}</span>
                 </button>
             </div>
 
-            {/* ─── Hero Section (Asymmetric) ─── */}
+            {/* ?????? Hero Section (Asymmetric) ?????? */}
             <header className="relative overflow-hidden border-b border-slate-900/50">
                 {/* Background */}
                 <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_50%_at_50%_-20%,rgba(99,102,241,0.1),transparent)]" />
@@ -217,9 +311,9 @@ export const HomePage = () => {
                         {/* Right: Stats Cards */}
                         <div className="flex gap-4 lg:gap-5 lg:pb-2">
                             {[
-                                { value: loading ? '—' : skills.length, label: language === 'zh' ? '總技能數' : 'Total Skills', accent: 'text-accent' },
-                                { value: categories.length, label: language === 'zh' ? '分類數' : 'Categories', accent: 'text-emerald-400' },
-                                { value: totalDownloads.toLocaleString(), label: language === 'zh' ? '總下載次數' : 'Downloads', accent: 'text-amber-400' },
+                                { value: loading ? '...' : skills.length, label: language === 'zh' ? '\u7e3d\u6280\u80fd\u6578' : 'Total Skills', accent: 'text-accent' },
+                                { value: categories.length, label: language === 'zh' ? '\u5206\u985e' : 'Categories', accent: 'text-emerald-400' },
+                                { value: totalDownloads.toLocaleString(), label: language === 'zh' ? '\u7e3d\u4e0b\u8f09\u91cf' : 'Downloads', accent: 'text-amber-400' },
                             ].map((stat) => (
                                 <div key={stat.label} className="bg-slate-900/40 border border-slate-800/50 rounded-2xl px-5 py-4 min-w-[120px] backdrop-blur-sm">
                                     <div className={`text-2xl md:text-3xl font-black tracking-tight font-mono ${stat.accent}`}>
@@ -262,7 +356,7 @@ export const HomePage = () => {
                             <div className="flex-grow">
                                 <div className="flex items-center gap-3 text-slate-400 mb-4">
                                     <Filter className="w-4 h-4" />
-                                    <span className="text-[10px] font-bold uppercase tracking-[0.2em]">{language === 'zh' ? '依分類篩選' : 'Filter by Category'}</span>
+                                    <span className="text-[10px] font-bold uppercase tracking-[0.2em]">{language === 'zh' ? '\u4f9d\u5206\u985e\u7be9\u9078' : 'Filter by Category'}</span>
                                 </div>
                                 <div className="flex flex-nowrap md:flex-wrap gap-2 overflow-x-auto pb-4 md:pb-0 scrollbar-hide -mx-4 px-4 md:mx-0 md:px-0">
                                     <button
@@ -291,7 +385,7 @@ export const HomePage = () => {
 
                             {/* Sort Toggle + Mobile Filter Button */}
                             <div className="flex items-end gap-3 shrink-0">
-                                {/* 行動端篩選按鈕 */}
+                                {/* ??ㄝ??????????*/}
                                 <div className="md:hidden">
                                     <button
                                         onClick={() => setShowMobileSidebar(true)}
@@ -311,7 +405,7 @@ export const HomePage = () => {
                                 <div>
                                     <div className="flex items-center gap-3 text-slate-400 mb-4">
                                         <ArrowUpDown className="w-4 h-4" />
-                                        <span className="text-[10px] font-bold uppercase tracking-[0.2em]">{language === 'zh' ? '排序方式' : 'Sort By'}</span>
+                                        <span className="text-[10px] font-bold uppercase tracking-[0.2em]">{language === 'zh' ? '??????' : 'Sort By'}</span>
                                     </div>
                                     <div className="bg-slate-900 p-1 rounded-xl border border-slate-800 flex">
                                         <button
@@ -344,8 +438,8 @@ export const HomePage = () => {
                         <div className="flex items-center gap-3">
                             <div className="w-1.5 h-6 bg-accent rounded-full"></div>
                             <h2 className="text-xl md:text-2xl font-black tracking-tight">
-                                {selectedCategory === 'All' ? (language === 'zh' ? '所有技能' : 'All Skills') : selectedCategory}
-                                {searchQuery && <span className="text-slate-500 ml-3 font-medium normal-case text-base">{language === 'zh' ? '搜尋結果' : 'Search Results'}</span>}
+                                {selectedCategory === 'All' ? (language === 'zh' ? '\u6240\u6709\u6280\u80fd' : 'All Skills') : selectedCategory}
+                                {searchQuery && <span className="text-slate-500 ml-3 font-medium normal-case text-base">{language === 'zh' ? '?雓?????' : 'Search Results'}</span>}
                             </h2>
                         </div>
                         <div className="text-[10px] font-bold uppercase tracking-widest text-slate-500 bg-slate-900/50 px-3 py-1.5 rounded-lg border border-slate-800/50 font-mono">
@@ -383,7 +477,7 @@ export const HomePage = () => {
                                         onClick={() => setVisibleCount(prev => prev + ITEMS_PER_PAGE)}
                                         className="group flex items-center gap-3 bg-slate-900 border border-slate-800 hover:border-slate-700 text-slate-300 hover:text-white px-8 py-3 rounded-2xl text-sm font-bold transition-all duration-300 hover:-translate-y-px active:scale-[0.98]"
                                     >
-                                        {language === 'zh' ? '載入更多' : 'Load More'}
+                                        {language === 'zh' ? '?謜?????' : 'Load More'}
                                         <span className="text-[10px] font-mono text-slate-500 bg-slate-800 px-2 py-0.5 rounded-md">
                                             {skills.length - visibleCount}
                                         </span>
@@ -398,7 +492,7 @@ export const HomePage = () => {
                             </div>
                             <h3 className="text-xl md:text-2xl font-bold text-slate-200 mb-3">{t('noResults')}</h3>
                             <p className="text-slate-500 max-w-md mx-auto leading-relaxed text-sm md:text-base">
-                                {language === 'zh' ? '嘗試更換關鍵字或清除篩選條件，或是聯繫我們提交新的技能需求。' : 'Try changing your keywords or clearing filters, or contact us to submit a new skill request.'}
+                                {language === 'zh' ? '\u8acb\u5617\u8a66\u8abf\u6574\u95dc\u9375\u5b57\u6216\u6e05\u9664\u7be9\u9078\u689d\u4ef6\uff0c\u4e5f\u53ef\u4ee5\u806f\u7d61\u6211\u5011\u63d0\u4ea4\u65b0\u6280\u80fd\u9700\u6c42\u3002' : 'Try changing your keywords or clearing filters, or contact us to submit a new skill request.'}
                             </p>
                             <button
                                 onClick={() => {
@@ -408,7 +502,7 @@ export const HomePage = () => {
                                 }}
                                 className="mt-8 text-accent hover:text-indigo-300 font-bold uppercase tracking-[0.2em] text-[10px] md:text-xs flex items-center gap-2 transition-colors border border-accent/20 px-6 py-2.5 rounded-xl hover:bg-accent/5"
                             >
-                                {language === 'zh' ? '清除所有篩選條件' : 'Clear All Filters'}
+                                {language === 'zh' ? '\u6e05\u9664\u6240\u6709\u7be9\u9078' : 'Clear All Filters'}
                             </button>
                         </div>
                     )}
@@ -421,7 +515,7 @@ export const HomePage = () => {
                     <Terminal className="w-6 h-6 text-slate-500" />
                 </div>
                 <p className="text-slate-600 text-xs md:text-sm font-medium tracking-wide">
-                    © 2026 SKILLS All-in-one · {language === 'zh' ? '高品質 AI Agent 技能庫' : 'Premium AI Agent Skills Library'}
+                    ??2026 SKILLS All-in-one ??{language === 'zh' ? '??暹???AI Agent ????撓?' : 'Premium AI Agent Skills Library'}
                 </p>
                 <div className="mt-6 flex flex-col items-center gap-6">
                     <a
@@ -436,7 +530,7 @@ export const HomePage = () => {
                     <div className="flex justify-center gap-6 text-slate-700 text-[10px] font-bold uppercase tracking-widest">
                         <a href="https://github.com/eric861129/SKILLS_All-in-one#readme" target="_blank" rel="noopener noreferrer" className="hover:text-slate-400 transition-colors">Documentation</a>
                         <a href="https://github.com/eric861129/SKILLS_All-in-one" target="_blank" rel="noopener noreferrer" className="hover:text-slate-400 transition-colors">GitHub</a>
-                        <a href="https://github.com/eric861129/SKILLS_All-in-one/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener noreferrer" className="hover:text-slate-400 transition-colors">{language === 'zh' ? '如何貢獻' : 'Contributing'}</a>
+                        <a href="https://github.com/eric861129/SKILLS_All-in-one/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener noreferrer" className="hover:text-slate-400 transition-colors">{language === 'zh' ? '\u53c3\u8207\u8ca2\u737b' : 'Contributing'}</a>
                     </div>
                 </div>
             </footer>

@@ -238,4 +238,47 @@ describe('SkillPage Deep Preview', () => {
     });
     expect(screen.getAllByText('N/A').length).toBeGreaterThanOrEqual(2);
   });
+
+  it('shows binary fallback UI for tar.gz files instead of gibberish text', async () => {
+    vi.stubGlobal(
+      'fetch',
+      vi.fn(async (input: RequestInfo | URL) => {
+        const url = String(input);
+        if (url.includes('skills-manifest.json')) {
+          return {
+            ok: true,
+            json: async () => ({
+              'demo-skill': {
+                category: 'Development & Code Tools',
+                files: ['scripts/shadcn-components.tar.gz'],
+                fileMeta: {
+                  'scripts/shadcn-components.tar.gz': {
+                    sizeBytes: 4096,
+                    lineCount: 0,
+                    ext: 'gz',
+                    tabKey: 'scripts',
+                  },
+                },
+              },
+            }),
+          } as Response;
+        }
+        return {
+          ok: true,
+          headers: { get: () => 'application/gzip' },
+          arrayBuffer: async () => new Uint8Array([31, 139, 8, 0, 1, 2, 3, 4]).buffer,
+          text: async () => '',
+        } as unknown as Response;
+      })
+    );
+
+    renderSkillPage();
+
+    await waitFor(() => {
+      expect(screen.getByText('Binary file cannot be previewed as text')).toBeDefined();
+    });
+
+    const copyButton = screen.getByRole('button', { name: /Copy File/i }) as HTMLButtonElement;
+    expect(copyButton.disabled).toBe(true);
+  });
 });

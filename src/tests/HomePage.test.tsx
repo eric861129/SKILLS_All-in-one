@@ -42,6 +42,8 @@ vi.mock('../hooks/useSkills', () => ({
     tagCounts: [],
     selectedAuthors: [],
     selectedTags: [],
+    setSelectedAuthors: vi.fn(),
+    setSelectedTags: vi.fn(),
     toggleAuthor: vi.fn(),
     toggleTag: vi.fn(),
     clearSidebarFilters: vi.fn()
