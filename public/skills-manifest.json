@@ -336,6 +336,86 @@
       "source": "structured"
     }
   },
+  "exploratory-data-analysis": {
+    "category": "Data & Analysis",
+    "files": [
+      "SKILL.md",
+      "assets/report_template.md",
+      "references/bioinformatics_genomics_formats.md",
+      "references/chemistry_molecular_formats.md",
+      "references/general_scientific_formats.md",
+      "references/microscopy_imaging_formats.md",
+      "references/proteomics_metabolomics_formats.md",
+      "references/spectroscopy_analytical_formats.md",
+      "scripts/eda_analyzer.py"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 14316,
+        "lineCount": 445,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "assets/report_template.md": {
+        "sizeBytes": 3488,
+        "lineCount": 197,
+        "ext": "md",
+        "tabKey": "assets"
+      },
+      "references/bioinformatics_genomics_formats.md": {
+        "sizeBytes": 21163,
+        "lineCount": 665,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/chemistry_molecular_formats.md": {
+        "sizeBytes": 22029,
+        "lineCount": 665,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/general_scientific_formats.md": {
+        "sizeBytes": 15287,
+        "lineCount": 519,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/microscopy_imaging_formats.md": {
+        "sizeBytes": 18549,
+        "lineCount": 621,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/proteomics_metabolomics_formats.md": {
+        "sizeBytes": 15543,
+        "lineCount": 518,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/spectroscopy_analytical_formats.md": {
+        "sizeBytes": 18073,
+        "lineCount": 634,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "scripts/eda_analyzer.py": {
+        "sizeBytes": 21318,
+        "lineCount": 548,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 37438,
+      "cl100k": 35788
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
   "fine-tuning-expert": {
     "category": "Data & Analysis",
     "files": [
@@ -9959,6 +10039,242 @@
       "source": "structured"
     }
   },
+  "etetoolkit": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/api_reference.md",
+      "references/visualization.md",
+      "references/workflows.md",
+      "scripts/quick_visualize.py",
+      "scripts/tree_operations.py"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 17884,
+        "lineCount": 622,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/api_reference.md": {
+        "sizeBytes": 12736,
+        "lineCount": 584,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/visualization.md": {
+        "sizeBytes": 19529,
+        "lineCount": 784,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/workflows.md": {
+        "sizeBytes": 18933,
+        "lineCount": 775,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "scripts/quick_visualize.py": {
+        "sizeBytes": 7156,
+        "lineCount": 215,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/tree_operations.py": {
+        "sizeBytes": 8235,
+        "lineCount": 230,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 21117,
+      "cl100k": 21951
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "fda-database": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/animal_veterinary.md",
+      "references/api_basics.md",
+      "references/devices.md",
+      "references/drugs.md",
+      "references/foods.md",
+      "references/other.md",
+      "scripts/fda_examples.py",
+      "scripts/fda_query.py"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 14423,
+        "lineCount": 517,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/animal_veterinary.md": {
+        "sizeBytes": 11799,
+        "lineCount": 378,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/api_basics.md": {
+        "sizeBytes": 15948,
+        "lineCount": 688,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/devices.md": {
+        "sizeBytes": 18934,
+        "lineCount": 633,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/drugs.md": {
+        "sizeBytes": 13903,
+        "lineCount": 469,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/foods.md": {
+        "sizeBytes": 10789,
+        "lineCount": 375,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/other.md": {
+        "sizeBytes": 13735,
+        "lineCount": 473,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "scripts/fda_examples.py": {
+        "sizeBytes": 10785,
+        "lineCount": 336,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/fda_query.py": {
+        "sizeBytes": 15411,
+        "lineCount": 441,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 31431,
+      "cl100k": 30292
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "flowio": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/api_reference.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 16772,
+        "lineCount": 607,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/api_reference.md": {
+        "sizeBytes": 10481,
+        "lineCount": 373,
+        "ext": "md",
+        "tabKey": "references"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 6814,
+      "cl100k": 6751
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "fluidsim": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/advanced_features.md",
+      "references/installation.md",
+      "references/output_analysis.md",
+      "references/parameters.md",
+      "references/simulation_workflow.md",
+      "references/solvers.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 9396,
+        "lineCount": 348,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/advanced_features.md": {
+        "sizeBytes": 9011,
+        "lineCount": 399,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/installation.md": {
+        "sizeBytes": 1204,
+        "lineCount": 69,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/output_analysis.md": {
+        "sizeBytes": 6027,
+        "lineCount": 284,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/parameters.md": {
+        "sizeBytes": 4936,
+        "lineCount": 199,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/simulation_workflow.md": {
+        "sizeBytes": 3862,
+        "lineCount": 173,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/solvers.md": {
+        "sizeBytes": 2419,
+        "lineCount": 95,
+        "ext": "md",
+        "tabKey": "references"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 9201,
+      "cl100k": 9591
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
   "chaos-engineer": {
     "category": "Security & Web Testing",
     "files": [
@@ -10271,6 +10587,36 @@
     "tokenEstimate": {
       "heuristic": 5590,
       "cl100k": 4810
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "agent-without-context": {
+    "category": "Utility & Automation",
+    "files": [],
+    "fileMeta": {},
+    "tokenEstimate": {
+      "heuristic": 0,
+      "cl100k": 0
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "argument-hint-no-args": {
+    "category": "Utility & Automation",
+    "files": [],
+    "fileMeta": {},
+    "tokenEstimate": {
+      "heuristic": 0,
+      "cl100k": 0
     },
     "dependencies": {
       "skills": [],

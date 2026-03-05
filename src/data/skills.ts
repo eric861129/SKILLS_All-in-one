@@ -2421,6 +2421,66 @@ export const MOCK_SKILLS: Skill[] = [
     source: 'esm',
     githubUrl: 'https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/esm'
   },
+  {
+    id: 237,
+    name: 'etetoolkit',
+    description: 'Manipulate and analyze phylogenetic trees with ETE, including topology operations, orthology/paralogy detection, and publication-ready visualization.',
+    author: 'K-Dense-AI',
+    category: 'Scientific & Research Tools',
+    tags: ['Phylogenetics', 'Evolutionary Biology', 'Tree Analysis'],
+    downloadCount: 0,
+    createdAt: '2026-03-05',
+    source: 'etetoolkit',
+    githubUrl: 'https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/etetoolkit'
+  },
+  {
+    id: 238,
+    name: 'exploratory-data-analysis',
+    description: 'Run exploratory analysis on 200+ scientific file formats with automatic type detection, quality checks, and markdown report generation.',
+    author: 'K-Dense-AI',
+    category: 'Data & Analysis',
+    tags: ['EDA', 'Scientific Data', 'Data Profiling'],
+    downloadCount: 0,
+    createdAt: '2026-03-05',
+    source: 'exploratory-data-analysis',
+    githubUrl: 'https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/exploratory-data-analysis'
+  },
+  {
+    id: 239,
+    name: 'fda-database',
+    description: 'Query openFDA datasets for drugs, devices, adverse events, recalls, and regulatory submissions for safety and compliance research.',
+    author: 'K-Dense-AI',
+    category: 'Scientific & Research Tools',
+    tags: ['openFDA', 'Regulatory Data', 'Pharmacovigilance'],
+    downloadCount: 0,
+    createdAt: '2026-03-05',
+    source: 'fda-database',
+    githubUrl: 'https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/fda-database'
+  },
+  {
+    id: 240,
+    name: 'flowio',
+    description: 'Parse and generate FCS flow cytometry files with metadata extraction, channel inspection, and NumPy-based event handling.',
+    author: 'K-Dense-AI',
+    category: 'Scientific & Research Tools',
+    tags: ['Flow Cytometry', 'FCS', 'Bioinformatics'],
+    downloadCount: 0,
+    createdAt: '2026-03-05',
+    source: 'flowio',
+    githubUrl: 'https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/flowio'
+  },
+  {
+    id: 241,
+    name: 'fluidsim',
+    description: 'Configure and run high-performance CFD simulations in Python for Navier-Stokes, shallow-water, and turbulence-focused studies.',
+    author: 'K-Dense-AI',
+    category: 'Scientific & Research Tools',
+    tags: ['CFD', 'Fluid Dynamics', 'Simulation'],
+    downloadCount: 0,
+    createdAt: '2026-03-05',
+    source: 'fluidsim',
+    githubUrl: 'https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/fluidsim'
+  },
   // Writing & Research
   {
     id: 138,

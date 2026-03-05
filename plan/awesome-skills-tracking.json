@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-05T15:37:03.527Z",
+  "generatedAt": "2026-03-05T15:45:25.422Z",
   "sourceReadme": "https://raw.githubusercontent.com/BehiSecc/awesome-claude-skills/main/README.md",
   "stats": {
-    "localSkills": 220,
+    "localSkills": 225,
     "discoveredRepoLinks": 89,
     "expandedCandidates": 402,
     "uniqueCandidates": 374,
-    "missing": 210,
+    "missing": 205,
     "urlMismatch": 8,
     "authorMismatch": 5,
     "fetchFailures": 26
@@ -239,6 +239,25 @@
         "onboard": "completed",
         "sync": "completed"
       }
+    },
+    {
+      "id": "batch-013",
+      "type": "import",
+      "size": 5,
+      "status": "completed",
+      "items": [
+        "etetoolkit",
+        "exploratory-data-analysis",
+        "fda-database",
+        "flowio",
+        "fluidsim"
+      ],
+      "checklist": {
+        "import": "completed",
+        "audit": "pass",
+        "onboard": "completed",
+        "sync": "completed"
+      }
     }
   ],
   "nextBatchProposals": {
@@ -250,11 +269,11 @@
       "deploy-prod"
     ],
     "import": [
-      "etetoolkit",
-      "exploratory-data-analysis",
-      "fda-database",
-      "flowio",
-      "fluidsim"
+      "fred-economic-data",
+      "gene-database",
+      "generate-image",
+      "geniml",
+      "geo-database"
     ]
   },
   "failures": [
@@ -2367,7 +2386,7 @@
     },
     {
       "sourceSlug": "etetoolkit",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "etetoolkit",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/etetoolkit",
@@ -2375,18 +2394,21 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/etetoolkit"
       },
-      "local": null,
+      "local": {
+        "id": 237,
+        "source": "etetoolkit",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/etetoolkit"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/etetoolkit"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "exploratory-data-analysis",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "exploratory-data-analysis",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/exploratory-data-analysis",
@@ -2394,14 +2416,17 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/exploratory-data-analysis"
       },
-      "local": null,
+      "local": {
+        "id": 238,
+        "source": "exploratory-data-analysis",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/exploratory-data-analysis"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/exploratory-data-analysis"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "fastapi-expert",
@@ -2427,7 +2452,7 @@
     },
     {
       "sourceSlug": "fda-database",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "fda-database",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/fda-database",
@@ -2435,14 +2460,17 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/fda-database"
       },
-      "local": null,
+      "local": {
+        "id": 239,
+        "source": "fda-database",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/fda-database"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/fda-database"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "feature-forge",
@@ -2553,7 +2581,7 @@
     },
     {
       "sourceSlug": "flowio",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "flowio",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/flowio",
@@ -2561,18 +2589,21 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/flowio"
       },
-      "local": null,
+      "local": {
+        "id": 240,
+        "source": "flowio",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/flowio"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/flowio"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "fluidsim",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "fluidsim",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/fluidsim",
@@ -2580,14 +2611,17 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/fluidsim"
       },
-      "local": null,
+      "local": {
+        "id": 241,
+        "source": "fluidsim",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/fluidsim"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/fluidsim"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "flutter-expert",
