@@ -8,14 +8,15 @@
   --font-mono: 'JetBrains Mono', monospace;
 
   /* Accent */
-  --accent: 59 130 246;         /* blue-500 */
-  --accent-hover: 96 165 250;   /* blue-400 */
-  --accent-muted: 30 58 138;    /* blue-900 */
+  --accent: 99 102 241;         /* indigo-500 */
+  --accent-hover: 129 140 248;  /* indigo-400 */
+  --accent-muted: 49 46 129;    /* indigo-900 */
 
   /* Surfaces */
   --surface-0: 2 6 23;          /* slate-950 */
   --surface-1: 15 23 42;        /* slate-900 */
   --surface-2: 30 41 59;        /* slate-800 */
+  --surface-border: 30 41 59 / 0.5; /* slate-800 with 50% opacity */
 
   /* Spring easing */
   --ease-spring: cubic-bezier(0.16, 1, 0.3, 1);
@@ -92,6 +93,13 @@ code, pre, kbd, .font-mono {
 /* ─── Tailwind 4 Layer Fix ───────────────────────── */
 /* Ensure responsive variants override base utilities */
 @layer utilities {
+  .glass-surface {
+    background: rgba(var(--surface-1), 0.7);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgb(var(--surface-border));
+  }
+
   .animate-gradient {
     animation: gradient-shift 6s ease infinite;
   }
