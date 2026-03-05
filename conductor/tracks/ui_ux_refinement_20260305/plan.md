@@ -1,8 +1,8 @@
 # Implementation Plan: UI/UX Refinement
 
 ## Phase 1: Foundation & Typography
-- [ ] Task: Install Dependencies
-    - [ ] `npm install framer-motion clsx tailwind-merge`
+- [x] Task: Install Dependencies (94e3507)
+    - [x] `npm install framer-motion clsx tailwind-merge`
 - [ ] Task: Update Typography System
     - [ ] Configure `tailwind.config.js` with `Outfit` and `JetBrains Mono`.
     - [ ] Update `index.css` with global font rules.
