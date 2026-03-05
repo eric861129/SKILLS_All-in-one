@@ -1,10 +1,17 @@
 /**
  * @vitest-environment jsdom
  */
-import { describe, it, expect, afterEach } from 'vitest';
+import { describe, it, expect, afterEach, vi } from 'vitest';
 import { render, screen, fireEvent, cleanup, waitFor } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
 import { AgentWizard } from '../components/AgentWizard';
+vi.mock('../hooks/useLanguage', () => ({
+  useLanguage: () => ({
+    language: 'en',
+    setLanguage: vi.fn(),
+    t: (key: string) => key,
+  }),
+}));
 
 afterEach(() => {
   cleanup();
