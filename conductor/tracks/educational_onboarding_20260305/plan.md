@@ -18,9 +18,9 @@
 - [x] Task: Conductor - User Manual Verification 'Phase 2: 知識庫內容與 Wiki UI 開發' (Protocol in workflow.md) (bd2d140)
 
 ## Phase 3: 互動式 Hero 區塊與動畫
-- [ ] Task: 實作運作原理 (How it Works) UI
-    - [ ] 使用 Framer Motion 實作三步驟進度條組件。
-    - [ ] 開發「連結、選擇、注入」的動態插畫展示。
+- [x] Task: 實作運作原理 (How it Works) UI (5099cff)
+    - [x] 使用 Framer Motion 實作三步驟進度條組件。
+    - [x] 開發「連結、選擇、注入」的動態插畫展示。
 - [ ] Task: 整合至首頁 Hero Section
 - [ ] Task: Conductor - User Manual Verification 'Phase 3: 互動式 Hero 區塊與動畫' (Protocol in workflow.md)
 
