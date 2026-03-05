@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import { List } from 'lucide-react';
 import { DocsLayout } from '../components/Docs/DocsLayout';
 import { MarkdownRenderer } from '../components/Docs/MarkdownRenderer';
+import { AgentWizard } from '../components/AgentWizard';
 
 interface Heading {
   id: string;
@@ -75,7 +76,17 @@ export const DocsPage = () => {
               <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-accent"></div>
             </div>
           ) : (
-            <MarkdownRenderer content={content} />
+            <>
+              <MarkdownRenderer content={content} />
+              
+              {/* Show AgentWizard on the welcome page */}
+              {(!slug || slug === 'welcome') && (
+                <div className="mt-16 pt-16 border-t border-slate-800">
+                  <h2 className="text-3xl font-black text-white tracking-tight mb-8">Setup Wizard</h2>
+                  <AgentWizard />
+                </div>
+              )}
+            </>
           )}
         </div>
         
