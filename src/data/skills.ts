@@ -2061,6 +2061,66 @@ export const MOCK_SKILLS: Skill[] = [
     source: 'clinical-decision-support',
     githubUrl: 'https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/clinical-decision-support'
   },
+  {
+    id: 207,
+    name: 'clinical-reports',
+    description: 'Write compliant clinical reports for case studies, diagnostics, trial documentation, and patient records with validation tooling.',
+    author: 'K-Dense-AI',
+    category: 'Scientific & Research Tools',
+    tags: ['Clinical Writing', 'Regulatory Compliance', 'Healthcare'],
+    downloadCount: 0,
+    createdAt: '2026-03-05',
+    source: 'clinical-reports',
+    githubUrl: 'https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/clinical-reports'
+  },
+  {
+    id: 208,
+    name: 'clinicaltrials-database',
+    description: 'Query ClinicalTrials.gov API v2 to search studies by condition, intervention, location, sponsor, and enrollment status.',
+    author: 'K-Dense-AI',
+    category: 'Scientific & Research Tools',
+    tags: ['ClinicalTrials.gov', 'Clinical Research', 'Trial Search'],
+    downloadCount: 0,
+    createdAt: '2026-03-05',
+    source: 'clinicaltrials-database',
+    githubUrl: 'https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/clinicaltrials-database'
+  },
+  {
+    id: 209,
+    name: 'clinpgx-database',
+    description: 'Access ClinPGx pharmacogenomics data for gene-drug interactions, CPIC guidance, allele functions, and precision dosing support.',
+    author: 'K-Dense-AI',
+    category: 'Scientific & Research Tools',
+    tags: ['Pharmacogenomics', 'CPIC', 'Precision Medicine'],
+    downloadCount: 0,
+    createdAt: '2026-03-05',
+    source: 'clinpgx-database',
+    githubUrl: 'https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/clinpgx-database'
+  },
+  {
+    id: 210,
+    name: 'clinvar-database',
+    description: 'Query NCBI ClinVar for variant clinical significance, review status, and evidence to support genomic interpretation workflows.',
+    author: 'K-Dense-AI',
+    category: 'Scientific & Research Tools',
+    tags: ['ClinVar', 'Variant Interpretation', 'Genomic Medicine'],
+    downloadCount: 0,
+    createdAt: '2026-03-05',
+    source: 'clinvar-database',
+    githubUrl: 'https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/clinvar-database'
+  },
+  {
+    id: 211,
+    name: 'cobrapy',
+    description: 'Perform constraint-based metabolic modeling with COBRApy for FBA/FVA, knockout studies, flux sampling, and systems biology analysis.',
+    author: 'K-Dense-AI',
+    category: 'Scientific & Research Tools',
+    tags: ['Metabolic Modeling', 'COBRA', 'Systems Biology'],
+    downloadCount: 0,
+    createdAt: '2026-03-05',
+    source: 'cobrapy',
+    githubUrl: 'https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/cobrapy'
+  },
   // Writing & Research
   {
     id: 138,

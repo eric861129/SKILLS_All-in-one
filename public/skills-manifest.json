@@ -8447,6 +8447,392 @@
       "source": "structured"
     }
   },
+  "clinical-reports": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "assets/case_report_template.md",
+      "assets/clinical_trial_csr_template.md",
+      "assets/clinical_trial_sae_template.md",
+      "assets/consult_note_template.md",
+      "assets/discharge_summary_template.md",
+      "assets/hipaa_compliance_checklist.md",
+      "assets/history_physical_template.md",
+      "assets/lab_report_template.md",
+      "assets/pathology_report_template.md",
+      "assets/quality_checklist.md",
+      "assets/radiology_report_template.md",
+      "assets/soap_note_template.md",
+      "references/README.md",
+      "references/case_report_guidelines.md",
+      "references/clinical_trial_reporting.md",
+      "references/data_presentation.md",
+      "references/diagnostic_reports_standards.md",
+      "references/medical_terminology.md",
+      "references/patient_documentation.md",
+      "references/peer_review_standards.md",
+      "references/regulatory_compliance.md",
+      "scripts/check_deidentification.py",
+      "scripts/compliance_checker.py",
+      "scripts/extract_clinical_data.py",
+      "scripts/format_adverse_events.py",
+      "scripts/generate_report_template.py",
+      "scripts/terminology_validator.py",
+      "scripts/validate_case_report.py",
+      "scripts/validate_trial_report.py"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 39696,
+        "lineCount": 1132,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "assets/case_report_template.md": {
+        "sizeBytes": 9771,
+        "lineCount": 353,
+        "ext": "md",
+        "tabKey": "assets"
+      },
+      "assets/clinical_trial_csr_template.md": {
+        "sizeBytes": 9196,
+        "lineCount": 354,
+        "ext": "md",
+        "tabKey": "assets"
+      },
+      "assets/clinical_trial_sae_template.md": {
+        "sizeBytes": 10565,
+        "lineCount": 360,
+        "ext": "md",
+        "tabKey": "assets"
+      },
+      "assets/consult_note_template.md": {
+        "sizeBytes": 7345,
+        "lineCount": 306,
+        "ext": "md",
+        "tabKey": "assets"
+      },
+      "assets/discharge_summary_template.md": {
+        "sizeBytes": 11984,
+        "lineCount": 454,
+        "ext": "md",
+        "tabKey": "assets"
+      },
+      "assets/hipaa_compliance_checklist.md": {
+        "sizeBytes": 11804,
+        "lineCount": 396,
+        "ext": "md",
+        "tabKey": "assets"
+      },
+      "assets/history_physical_template.md": {
+        "sizeBytes": 9266,
+        "lineCount": 306,
+        "ext": "md",
+        "tabKey": "assets"
+      },
+      "assets/lab_report_template.md": {
+        "sizeBytes": 8478,
+        "lineCount": 310,
+        "ext": "md",
+        "tabKey": "assets"
+      },
+      "assets/pathology_report_template.md": {
+        "sizeBytes": 6646,
+        "lineCount": 250,
+        "ext": "md",
+        "tabKey": "assets"
+      },
+      "assets/quality_checklist.md": {
+        "sizeBytes": 9973,
+        "lineCount": 339,
+        "ext": "md",
+        "tabKey": "assets"
+      },
+      "assets/radiology_report_template.md": {
+        "sizeBytes": 8009,
+        "lineCount": 319,
+        "ext": "md",
+        "tabKey": "assets"
+      },
+      "assets/soap_note_template.md": {
+        "sizeBytes": 7297,
+        "lineCount": 254,
+        "ext": "md",
+        "tabKey": "assets"
+      },
+      "references/README.md": {
+        "sizeBytes": 8563,
+        "lineCount": 237,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/case_report_guidelines.md": {
+        "sizeBytes": 18830,
+        "lineCount": 571,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/clinical_trial_reporting.md": {
+        "sizeBytes": 20354,
+        "lineCount": 694,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/data_presentation.md": {
+        "sizeBytes": 21068,
+        "lineCount": 531,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/diagnostic_reports_standards.md": {
+        "sizeBytes": 18384,
+        "lineCount": 630,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/medical_terminology.md": {
+        "sizeBytes": 15523,
+        "lineCount": 589,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/patient_documentation.md": {
+        "sizeBytes": 21273,
+        "lineCount": 745,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/peer_review_standards.md": {
+        "sizeBytes": 15481,
+        "lineCount": 586,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/regulatory_compliance.md": {
+        "sizeBytes": 17466,
+        "lineCount": 578,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "scripts/check_deidentification.py": {
+        "sizeBytes": 10710,
+        "lineCount": 347,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/compliance_checker.py": {
+        "sizeBytes": 2176,
+        "lineCount": 79,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/extract_clinical_data.py": {
+        "sizeBytes": 2635,
+        "lineCount": 103,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/format_adverse_events.py": {
+        "sizeBytes": 3049,
+        "lineCount": 104,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/generate_report_template.py": {
+        "sizeBytes": 4713,
+        "lineCount": 164,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/terminology_validator.py": {
+        "sizeBytes": 4140,
+        "lineCount": 134,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/validate_case_report.py": {
+        "sizeBytes": 11540,
+        "lineCount": 335,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/validate_trial_report.py": {
+        "sizeBytes": 2871,
+        "lineCount": 90,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 86643,
+      "cl100k": 83344
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "clinicaltrials-database": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/api_reference.md",
+      "scripts/query_clinicaltrials.py"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 14988,
+        "lineCount": 506,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/api_reference.md": {
+        "sizeBytes": 10694,
+        "lineCount": 359,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "scripts/query_clinicaltrials.py": {
+        "sizeBytes": 6992,
+        "lineCount": 216,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 8169,
+      "cl100k": 7667
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "clinpgx-database": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/api_reference.md",
+      "scripts/query_clinpgx.py"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 20948,
+        "lineCount": 637,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/api_reference.md": {
+        "sizeBytes": 17360,
+        "lineCount": 758,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "scripts/query_clinpgx.py": {
+        "sizeBytes": 14295,
+        "lineCount": 519,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 13152,
+      "cl100k": 13719
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "clinvar-database": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/api_reference.md",
+      "references/clinical_significance.md",
+      "references/data_formats.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 13284,
+        "lineCount": 361,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/api_reference.md": {
+        "sizeBytes": 6396,
+        "lineCount": 228,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/clinical_significance.md": {
+        "sizeBytes": 9371,
+        "lineCount": 219,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/data_formats.md": {
+        "sizeBytes": 10830,
+        "lineCount": 359,
+        "ext": "md",
+        "tabKey": "references"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 9917,
+      "cl100k": 9750
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "cobrapy": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/api_quick_reference.md",
+      "references/workflows.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 12450,
+        "lineCount": 462,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/api_quick_reference.md": {
+        "sizeBytes": 16036,
+        "lineCount": 656,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/workflows.md": {
+        "sizeBytes": 21741,
+        "lineCount": 594,
+        "ext": "md",
+        "tabKey": "references"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 12558,
+      "cl100k": 12367
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
   "chaos-engineer": {
     "category": "Security & Web Testing",
     "files": [
