@@ -1881,6 +1881,66 @@ export const MOCK_SKILLS: Skill[] = [
     source: 'bindingdb-database',
     githubUrl: 'https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/bindingdb-database'
   },
+  {
+    id: 192,
+    name: 'biopython',
+    description: 'Comprehensive molecular biology toolkit for sequence/file processing, BLAST automation, phylogenetics, and NCBI/PubMed access.',
+    author: 'K-Dense-AI',
+    category: 'Scientific & Research Tools',
+    tags: ['Bioinformatics', 'Sequence Analysis', 'Python'],
+    downloadCount: 0,
+    createdAt: '2026-03-05',
+    source: 'biopython',
+    githubUrl: 'https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/biopython'
+  },
+  {
+    id: 193,
+    name: 'biorxiv-database',
+    description: 'Search bioRxiv preprints by keywords, authors, categories, and dates with metadata export and PDF download support.',
+    author: 'K-Dense-AI',
+    category: 'Scientific & Research Tools',
+    tags: ['Preprints', 'Literature Search', 'bioRxiv'],
+    downloadCount: 0,
+    createdAt: '2026-03-05',
+    source: 'biorxiv-database',
+    githubUrl: 'https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/biorxiv-database'
+  },
+  {
+    id: 194,
+    name: 'bioservices',
+    description: 'Unified Python interface to 40+ bioinformatics services for cross-database querying, integration, and identifier mapping workflows.',
+    author: 'K-Dense-AI',
+    category: 'Scientific & Research Tools',
+    tags: ['Bioinformatics APIs', 'ID Mapping', 'Data Integration'],
+    downloadCount: 0,
+    createdAt: '2026-03-05',
+    source: 'bioservices',
+    githubUrl: 'https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/bioservices'
+  },
+  {
+    id: 195,
+    name: 'brenda-database',
+    description: 'Access BRENDA enzyme data via API for kinetic parameters, reaction details, organism comparison, and pathway analysis.',
+    author: 'K-Dense-AI',
+    category: 'Scientific & Research Tools',
+    tags: ['Enzymology', 'Kinetics', 'Metabolic Pathways'],
+    downloadCount: 0,
+    createdAt: '2026-03-05',
+    source: 'brenda-database',
+    githubUrl: 'https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/brenda-database'
+  },
+  {
+    id: 196,
+    name: 'cbioportal-database',
+    description: 'Query cBioPortal cancer genomics datasets for mutations, copy number changes, expression, and clinical association analyses.',
+    author: 'K-Dense-AI',
+    category: 'Scientific & Research Tools',
+    tags: ['Cancer Genomics', 'cBioPortal', 'Clinical Data'],
+    downloadCount: 0,
+    createdAt: '2026-03-05',
+    source: 'cbioportal-database',
+    githubUrl: 'https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/cbioportal-database'
+  },
   // Writing & Research
   {
     id: 138,

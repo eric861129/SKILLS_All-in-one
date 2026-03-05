@@ -7639,6 +7639,273 @@
       "source": "structured"
     }
   },
+  "biopython": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/advanced.md",
+      "references/alignment.md",
+      "references/blast.md",
+      "references/databases.md",
+      "references/phylogenetics.md",
+      "references/sequence_io.md",
+      "references/structure.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 13829,
+        "lineCount": 442,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/advanced.md": {
+        "sizeBytes": 14033,
+        "lineCount": 578,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/alignment.md": {
+        "sizeBytes": 8953,
+        "lineCount": 363,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/blast.md": {
+        "sizeBytes": 12649,
+        "lineCount": 456,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/databases.md": {
+        "sizeBytes": 11506,
+        "lineCount": 485,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/phylogenetics.md": {
+        "sizeBytes": 13835,
+        "lineCount": 567,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/sequence_io.md": {
+        "sizeBytes": 7274,
+        "lineCount": 286,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/structure.md": {
+        "sizeBytes": 12998,
+        "lineCount": 565,
+        "ext": "md",
+        "tabKey": "references"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 23763,
+      "cl100k": 24378
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "biorxiv-database": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/api_reference.md",
+      "scripts/biorxiv_search.py"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 12584,
+        "lineCount": 482,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/api_reference.md": {
+        "sizeBytes": 6405,
+        "lineCount": 281,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "scripts/biorxiv_search.py": {
+        "sizeBytes": 14831,
+        "lineCount": 446,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 8449,
+      "cl100k": 8129
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "bioservices": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/identifier_mapping.md",
+      "references/services_reference.md",
+      "references/workflow_patterns.md",
+      "scripts/batch_id_converter.py",
+      "scripts/compound_cross_reference.py",
+      "scripts/pathway_analysis.py",
+      "scripts/protein_analysis_workflow.py"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 9947,
+        "lineCount": 360,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/identifier_mapping.md": {
+        "sizeBytes": 17551,
+        "lineCount": 686,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/services_reference.md": {
+        "sizeBytes": 12566,
+        "lineCount": 637,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/workflow_patterns.md": {
+        "sizeBytes": 20126,
+        "lineCount": 812,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "scripts/batch_id_converter.py": {
+        "sizeBytes": 10892,
+        "lineCount": 348,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/compound_cross_reference.py": {
+        "sizeBytes": 11289,
+        "lineCount": 379,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/pathway_analysis.py": {
+        "sizeBytes": 9547,
+        "lineCount": 310,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/protein_analysis_workflow.py": {
+        "sizeBytes": 12449,
+        "lineCount": 409,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 26036,
+      "cl100k": 27042
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "brenda-database": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/api_reference.md",
+      "scripts/brenda_queries.py",
+      "scripts/brenda_visualization.py",
+      "scripts/enzyme_pathway_builder.py"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 22165,
+        "lineCount": 718,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/api_reference.md": {
+        "sizeBytes": 15857,
+        "lineCount": 537,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "scripts/brenda_queries.py": {
+        "sizeBytes": 30872,
+        "lineCount": 844,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/brenda_visualization.py": {
+        "sizeBytes": 29361,
+        "lineCount": 772,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/enzyme_pathway_builder.py": {
+        "sizeBytes": 44863,
+        "lineCount": 1053,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 35769,
+      "cl100k": 35268
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "cbioportal-database": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/study_exploration.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 13100,
+        "lineCount": 368,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/study_exploration.md": {
+        "sizeBytes": 4411,
+        "lineCount": 129,
+        "ext": "md",
+        "tabKey": "references"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 4373,
+      "cl100k": 4853
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
   "chaos-engineer": {
     "category": "Security & Web Testing",
     "files": [

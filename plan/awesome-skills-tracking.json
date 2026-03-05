@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-05T14:03:20.465Z",
+  "generatedAt": "2026-03-05T14:12:18.995Z",
   "sourceReadme": "https://raw.githubusercontent.com/BehiSecc/awesome-claude-skills/main/README.md",
   "stats": {
-    "localSkills": 175,
+    "localSkills": 180,
     "discoveredRepoLinks": 89,
     "expandedCandidates": 402,
     "uniqueCandidates": 374,
-    "missing": 255,
+    "missing": 250,
     "urlMismatch": 8,
     "authorMismatch": 5,
     "fetchFailures": 26
@@ -61,6 +61,25 @@
         "benchling-integration",
         "bgpt-paper-search",
         "bindingdb-database"
+      ],
+      "checklist": {
+        "import": "completed",
+        "audit": "pass",
+        "onboard": "completed",
+        "sync": "completed"
+      }
+    },
+    {
+      "id": "batch-004",
+      "type": "import",
+      "size": 5,
+      "status": "completed",
+      "items": [
+        "biopython",
+        "biorxiv-database",
+        "bioservices",
+        "brenda-database",
+        "cbioportal-database"
       ],
       "checklist": {
         "import": "completed",
@@ -822,7 +841,7 @@
     },
     {
       "sourceSlug": "biopython",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "biopython",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/biopython",
@@ -830,18 +849,21 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/biopython"
       },
-      "local": null,
+      "local": {
+        "id": 192,
+        "source": "biopython",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/biopython"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/biopython"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "biorxiv-database",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "biorxiv-database",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/biorxiv-database",
@@ -849,18 +871,21 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/biorxiv-database"
       },
-      "local": null,
+      "local": {
+        "id": 193,
+        "source": "biorxiv-database",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/biorxiv-database"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/biorxiv-database"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "bioservices",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "bioservices",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/bioservices",
@@ -868,14 +893,17 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/bioservices"
       },
-      "local": null,
+      "local": {
+        "id": 194,
+        "source": "bioservices",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/bioservices"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/bioservices"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "brainstorming",
@@ -901,7 +929,7 @@
     },
     {
       "sourceSlug": "brenda-database",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "brenda-database",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/brenda-database",
@@ -909,18 +937,21 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/brenda-database"
       },
-      "local": null,
+      "local": {
+        "id": 195,
+        "source": "brenda-database",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/brenda-database"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/brenda-database"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "cbioportal-database",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "cbioportal-database",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/cbioportal-database",
@@ -928,14 +959,17 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/cbioportal-database"
       },
-      "local": null,
+      "local": {
+        "id": 196,
+        "source": "cbioportal-database",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/cbioportal-database"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/cbioportal-database"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "cellxgene-census",
