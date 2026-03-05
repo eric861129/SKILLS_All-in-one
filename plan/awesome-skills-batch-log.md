@@ -208,6 +208,49 @@
 
 ---
 
+## Batch 006
+
+- 批次 ID：`batch-006`
+- 日期：`2026-03-05`
+- 類型：`import`
+- 筆數：`5`
+- 項目：
+  1. `cellxgene-census`
+  2. `chembl-database`
+  3. `cirq`
+  4. `citation-management`
+  5. `clinical-decision-support`
+
+### 執行內容
+
+1. 來源確認：
+   - canonical repo：`K-Dense-AI/claude-scientific-skills`
+   - canonical path：`scientific-skills/<skill>`
+2. Import：
+   - 匯入 5 筆 skill 檔案到 `public/SKILLS/Uncategorized/<skill>/`
+3. Audit：
+   - 檢查 `SKILL.md`、`references/`、`scripts/`、`assets/`
+   - 未發現需阻擋上架的執行風險
+   - 報告：`plan/security-audits/batch-006.md`
+4. Onboard：
+   - 分類移動到 `public/SKILLS/Scientific & Research Tools/<skill>/`
+   - 新增 `src/data/skills.ts`：id `202~206`
+   - 新增 `database/init_skills.sql`：id `202~206`
+5. Sync：
+   - `npm run prebuild` 重建 manifest
+6. Verify：
+   - `npm run build` 通過
+7. Tracking：
+   - 更新 `plan/awesome-skills-tracking.json`，新增 `batch-006`
+
+### 結果
+
+- Audit：`PASS`
+- Onboard：`completed`
+- Sync：`completed`
+
+---
+
 ## 後續批次填寫模板
 
 請複製以下段落新增 `batch-00N`：

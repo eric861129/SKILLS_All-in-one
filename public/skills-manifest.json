@@ -8033,6 +8033,420 @@
       "source": "structured"
     }
   },
+  "cellxgene-census": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/census_schema.md",
+      "references/common_patterns.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 15439,
+        "lineCount": 510,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/census_schema.md": {
+        "sizeBytes": 5649,
+        "lineCount": 183,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/common_patterns.md": {
+        "sizeBytes": 9935,
+        "lineCount": 352,
+        "ext": "md",
+        "tabKey": "references"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 7757,
+      "cl100k": 7686
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "chembl-database": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/api_reference.md",
+      "scripts/example_queries.py"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 10250,
+        "lineCount": 388,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/api_reference.md": {
+        "sizeBytes": 6879,
+        "lineCount": 273,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "scripts/example_queries.py": {
+        "sizeBytes": 7160,
+        "lineCount": 279,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 6073,
+      "cl100k": 5872
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "cirq": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/building.md",
+      "references/experiments.md",
+      "references/hardware.md",
+      "references/noise.md",
+      "references/simulation.md",
+      "references/transformation.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 10648,
+        "lineCount": 345,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/building.md": {
+        "sizeBytes": 5916,
+        "lineCount": 308,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/experiments.md": {
+        "sizeBytes": 15487,
+        "lineCount": 573,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/hardware.md": {
+        "sizeBytes": 11519,
+        "lineCount": 516,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/noise.md": {
+        "sizeBytes": 13362,
+        "lineCount": 516,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/simulation.md": {
+        "sizeBytes": 8238,
+        "lineCount": 351,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/transformation.md": {
+        "sizeBytes": 10141,
+        "lineCount": 417,
+        "ext": "md",
+        "tabKey": "references"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 18810,
+      "cl100k": 19000
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "citation-management": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "assets/bibtex_template.bib",
+      "assets/citation_checklist.md",
+      "references/bibtex_formatting.md",
+      "references/citation_validation.md",
+      "references/google_scholar_search.md",
+      "references/metadata_extraction.md",
+      "references/pubmed_search.md",
+      "scripts/doi_to_bibtex.py",
+      "scripts/extract_metadata.py",
+      "scripts/format_bibtex.py",
+      "scripts/search_google_scholar.py",
+      "scripts/search_pubmed.py",
+      "scripts/validate_citations.py"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 32596,
+        "lineCount": 1114,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "assets/bibtex_template.bib": {
+        "sizeBytes": 9201,
+        "lineCount": 0,
+        "ext": "bib",
+        "tabKey": "assets"
+      },
+      "assets/citation_checklist.md": {
+        "sizeBytes": 10348,
+        "lineCount": 387,
+        "ext": "md",
+        "tabKey": "assets"
+      },
+      "references/bibtex_formatting.md": {
+        "sizeBytes": 19286,
+        "lineCount": 909,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/citation_validation.md": {
+        "sizeBytes": 16075,
+        "lineCount": 795,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/google_scholar_search.md": {
+        "sizeBytes": 17045,
+        "lineCount": 726,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/metadata_extraction.md": {
+        "sizeBytes": 19182,
+        "lineCount": 871,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/pubmed_search.md": {
+        "sizeBytes": 17735,
+        "lineCount": 840,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "scripts/doi_to_bibtex.py": {
+        "sizeBytes": 6299,
+        "lineCount": 205,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/extract_metadata.py": {
+        "sizeBytes": 20794,
+        "lineCount": 570,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/format_bibtex.py": {
+        "sizeBytes": 11444,
+        "lineCount": 350,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/search_google_scholar.py": {
+        "sizeBytes": 8982,
+        "lineCount": 283,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/search_pubmed.py": {
+        "sizeBytes": 12832,
+        "lineCount": 399,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/validate_citations.py": {
+        "sizeBytes": 17482,
+        "lineCount": 498,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 52488,
+      "cl100k": 51241
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "clinical-decision-support": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "assets/biomarker_report_template.tex",
+      "assets/clinical_pathway_template.tex",
+      "assets/cohort_analysis_template.tex",
+      "assets/color_schemes.tex",
+      "assets/example_gbm_cohort.md",
+      "assets/recommendation_strength_guide.md",
+      "assets/treatment_recommendation_template.tex",
+      "references/README.md",
+      "references/biomarker_classification.md",
+      "references/clinical_decision_algorithms.md",
+      "references/evidence_synthesis.md",
+      "references/outcome_analysis.md",
+      "references/patient_cohort_analysis.md",
+      "references/treatment_recommendations.md",
+      "scripts/biomarker_classifier.py",
+      "scripts/build_decision_tree.py",
+      "scripts/create_cohort_tables.py",
+      "scripts/generate_survival_analysis.py",
+      "scripts/validate_cds_document.py"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 26497,
+        "lineCount": 511,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "assets/biomarker_report_template.tex": {
+        "sizeBytes": 13326,
+        "lineCount": 0,
+        "ext": "tex",
+        "tabKey": "assets"
+      },
+      "assets/clinical_pathway_template.tex": {
+        "sizeBytes": 8325,
+        "lineCount": 0,
+        "ext": "tex",
+        "tabKey": "assets"
+      },
+      "assets/cohort_analysis_template.tex": {
+        "sizeBytes": 12601,
+        "lineCount": 0,
+        "ext": "tex",
+        "tabKey": "assets"
+      },
+      "assets/color_schemes.tex": {
+        "sizeBytes": 7029,
+        "lineCount": 0,
+        "ext": "tex",
+        "tabKey": "assets"
+      },
+      "assets/example_gbm_cohort.md": {
+        "sizeBytes": 9316,
+        "lineCount": 209,
+        "ext": "md",
+        "tabKey": "assets"
+      },
+      "assets/recommendation_strength_guide.md": {
+        "sizeBytes": 11322,
+        "lineCount": 329,
+        "ext": "md",
+        "tabKey": "assets"
+      },
+      "assets/treatment_recommendation_template.tex": {
+        "sizeBytes": 18843,
+        "lineCount": 0,
+        "ext": "tex",
+        "tabKey": "assets"
+      },
+      "references/README.md": {
+        "sizeBytes": 5021,
+        "lineCount": 130,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/biomarker_classification.md": {
+        "sizeBytes": 29270,
+        "lineCount": 720,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/clinical_decision_algorithms.md": {
+        "sizeBytes": 21393,
+        "lineCount": 605,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/evidence_synthesis.md": {
+        "sizeBytes": 33342,
+        "lineCount": 841,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/outcome_analysis.md": {
+        "sizeBytes": 24628,
+        "lineCount": 641,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/patient_cohort_analysis.md": {
+        "sizeBytes": 16551,
+        "lineCount": 428,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/treatment_recommendations.md": {
+        "sizeBytes": 19647,
+        "lineCount": 522,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "scripts/biomarker_classifier.py": {
+        "sizeBytes": 13315,
+        "lineCount": 385,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/build_decision_tree.py": {
+        "sizeBytes": 15891,
+        "lineCount": 448,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/create_cohort_tables.py": {
+        "sizeBytes": 18023,
+        "lineCount": 525,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/generate_survival_analysis.py": {
+        "sizeBytes": 15258,
+        "lineCount": 423,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/validate_cds_document.py": {
+        "sizeBytes": 12735,
+        "lineCount": 336,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 67084,
+      "cl100k": 67814
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
   "chaos-engineer": {
     "category": "Security & Web Testing",
     "files": [

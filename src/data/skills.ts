@@ -2001,6 +2001,66 @@ export const MOCK_SKILLS: Skill[] = [
     source: 'provider-actions',
     githubUrl: 'https://github.com/hashicorp/agent-skills/tree/main/terraform/provider-development/skills/provider-actions'
   },
+  {
+    id: 202,
+    name: 'cellxgene-census',
+    description: 'Query the CELLxGENE Census atlas at population scale for single-cell expression, metadata filtering, and ML-ready access.',
+    author: 'K-Dense-AI',
+    category: 'Scientific & Research Tools',
+    tags: ['Single-cell', 'Transcriptomics', 'Census'],
+    downloadCount: 0,
+    createdAt: '2026-03-05',
+    source: 'cellxgene-census',
+    githubUrl: 'https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/cellxgene-census'
+  },
+  {
+    id: 203,
+    name: 'chembl-database',
+    description: 'Query ChEMBL compounds, targets, and bioactivity data for medicinal chemistry, SAR, and drug discovery workflows.',
+    author: 'K-Dense-AI',
+    category: 'Scientific & Research Tools',
+    tags: ['ChEMBL', 'Drug Discovery', 'Bioactivity'],
+    downloadCount: 0,
+    createdAt: '2026-03-05',
+    source: 'chembl-database',
+    githubUrl: 'https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/chembl-database'
+  },
+  {
+    id: 204,
+    name: 'cirq',
+    description: 'Design, simulate, and run quantum circuits with Cirq for Google hardware integration, noise modeling, and experiments.',
+    author: 'K-Dense-AI',
+    category: 'Scientific & Research Tools',
+    tags: ['Quantum Computing', 'Cirq', 'Simulation'],
+    downloadCount: 0,
+    createdAt: '2026-03-05',
+    source: 'cirq',
+    githubUrl: 'https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/cirq'
+  },
+  {
+    id: 205,
+    name: 'citation-management',
+    description: 'Manage academic citations with search, metadata extraction, validation, and BibTeX generation workflows.',
+    author: 'K-Dense-AI',
+    category: 'Scientific & Research Tools',
+    tags: ['Citations', 'BibTeX', 'Literature Review'],
+    downloadCount: 0,
+    createdAt: '2026-03-05',
+    source: 'citation-management',
+    githubUrl: 'https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/citation-management'
+  },
+  {
+    id: 206,
+    name: 'clinical-decision-support',
+    description: 'Generate evidence-based clinical decision support documents with cohort analytics, survival statistics, and recommendation grading.',
+    author: 'K-Dense-AI',
+    category: 'Scientific & Research Tools',
+    tags: ['Clinical Research', 'Evidence Synthesis', 'Biomarkers'],
+    downloadCount: 0,
+    createdAt: '2026-03-05',
+    source: 'clinical-decision-support',
+    githubUrl: 'https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/clinical-decision-support'
+  },
   // Writing & Research
   {
     id: 138,
