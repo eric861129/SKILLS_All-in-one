@@ -2,10 +2,9 @@
  * @vitest-environment jsdom
  */
 import { describe, it, expect, vi, beforeAll } from 'vitest';
-import { render, screen } from '@testing-library/react';
+import { render } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
 import { HomePage } from '../pages/HomePage';
-import React from 'react';
 
 beforeAll(() => {
   class IntersectionObserverMock {
@@ -57,8 +56,9 @@ describe('HomePage Component', () => {
       </MemoryRouter>
     );
     
-    // Check for some main UI element
-    expect(screen.getByPlaceholderRef ? screen.getByPlaceholderRef() : document.querySelector('input')).toBeDefined();
+    // Check for search input existence
+    const searchInput = document.querySelector('input');
+    expect(searchInput).toBeDefined();
   });
 
   it('should not contain any illegal emojis in its main UI', () => {

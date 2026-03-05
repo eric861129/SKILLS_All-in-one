@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Box, Cpu, Share2, X, ArrowRight, Database, Code2, Globe, Sparkles, FolderTree, FileJson, FileCode, Layers } from 'lucide-react';
 import { useLanguage } from '../hooks/useLanguage';
@@ -172,7 +171,7 @@ export const HowItWorks = ({ isOpen, onClose }: HowItWorksProps) => {
                           { title: t('coreLogic'), desc: 'Contains the instruction set, tools definitions, and YAML header. This is what the Agent actually reads.', icon: <FileCode size={20} className="text-emerald-400" /> },
                           { title: t('metadataInfo'), desc: 'Standardized JSON for category, tags, and versioning. Essential for site-wide search and indexing.', icon: <FileJson size={20} className="text-blue-400" /> },
                           { title: t('extensibility'), desc: 'Complex skills can call external Python/JS scripts or reference static assets for advanced tasks.', icon: <Layers size={20} className="text-amber-400" /> }
-                       ].map((feat, i) => (
+                       ].map((feat) => (
                           <div key={feat.title} className="flex gap-5 group">
                              <div className="shrink-0 w-12 h-12 rounded-2xl bg-white/5 border border-white/5 flex items-center justify-center transition-all group-hover:border-accent/30 group-hover:bg-accent/5">
                                 {feat.icon}

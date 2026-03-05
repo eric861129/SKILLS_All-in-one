@@ -1,10 +1,9 @@
 /**
  * @vitest-environment jsdom
  */
-import { describe, it, expect, vi, afterEach } from 'vitest';
+import { describe, it, expect, afterEach } from 'vitest';
 import { render, screen, fireEvent, cleanup, waitFor } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
-import React from 'react';
 import { AgentWizard } from '../components/AgentWizard';
 
 afterEach(() => {
@@ -20,8 +19,8 @@ describe('AgentWizard Component', () => {
     );
     
     // Check for platform names in buttons
-    expect(screen.getByRole('button', { name: /Claude Desktop/i })).toBeDefined();
-    expect(screen.getByRole('button', { name: /ChatGPT/i })).toBeDefined();
+    expect(screen.getByRole('button', { name: /Claude Code/i })).toBeDefined();
+    expect(screen.getByRole('button', { name: /Cursor/i })).toBeDefined();
     expect(screen.getByRole('button', { name: /Gemini CLI/i })).toBeDefined();
   });
 
@@ -32,14 +31,13 @@ describe('AgentWizard Component', () => {
       </MemoryRouter>
     );
     
-    // Click ChatGPT tab
-    const chatGptTab = screen.getByRole('button', { name: /ChatGPT/i });
-    fireEvent.click(chatGptTab);
+    // Click Cursor tab
+    const cursorTab = screen.getByRole('button', { name: /Cursor/i });
+    fireEvent.click(cursorTab);
     
-    // Check for some text specific to ChatGPT instructions
-    // Use waitFor because AnimatePresence might delay the render
+    // Check for some text specific to Cursor instructions
     await waitFor(() => {
-      expect(screen.getAllByText(/Custom GPT/i).length).toBeGreaterThanOrEqual(1);
+      expect(screen.getAllByText(/cursorrules/i).length).toBeGreaterThanOrEqual(1);
     });
   });
 });

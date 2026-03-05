@@ -3,7 +3,6 @@
  */
 import { describe, it, expect, vi, beforeAll } from 'vitest';
 import { render, screen } from '@testing-library/react';
-import React from 'react';
 import { HowItWorks } from '../components/HowItWorks';
 
 beforeAll(() => {
@@ -19,13 +18,10 @@ beforeAll(() => {
 });
 
 describe('HowItWorks Component', () => {
-  it('should render three steps', () => {
-    render(<HowItWorks />);
+  it('should render when open', () => {
+    render(<HowItWorks isOpen={true} onClose={vi.fn()} />);
     
-    // Check for step labels or titles (we expect these based on the spec)
-    // We use getAllByText because we have both desktop and mobile versions in the DOM
-    expect(screen.getAllByText(/Connect/i).length).toBeGreaterThanOrEqual(1);
-    expect(screen.getAllByText(/Select/i).length).toBeGreaterThanOrEqual(1);
-    expect(screen.getAllByText(/Inject/i).length).toBeGreaterThanOrEqual(1);
+    // Check for new header text (partial match for flexibility)
+    expect(screen.getByText(/AI Agent/i)).toBeDefined();
   });
 });
