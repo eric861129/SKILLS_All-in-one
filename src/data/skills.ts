@@ -667,13 +667,13 @@ export const MOCK_SKILLS: Skill[] = [
     nameZh: '內部通訊專家',
     description: 'Write internal company communications (status reports, newsletters, FAQs, incident reports).',
     descriptionZh: '撰寫公司內部通訊內容（進度報告、電子報、FAQ、事故報告）。',
-    author: 'Jeffallan',
+    author: 'Anthropic',
     category: 'Writing & Research',
     tags: ['Comms', 'Internal', 'Writing'],
     downloadCount: 0,
     createdAt: '2025-03-03',
     source: 'internal-comms',
-    githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/internal-comms'
+    githubUrl: 'https://github.com/anthropics/skills/tree/main/skills/internal-comms'
   },
   // Collaboration & Project Management
   {
@@ -908,7 +908,7 @@ export const MOCK_SKILLS: Skill[] = [
     nameZh: '開發分支結案助手',
     description: 'Guide completion of development work by presenting structured options for merge, PR, or cleanup.',
     descriptionZh: '引導完成開發工作，提供合併、PR 或清理分支的結構化選項。',
-    author: 'Jeffallan',
+    author: 'obra',
     category: 'Utility & Automation',
     tags: ['Git', 'Workflow', 'PR'],
     downloadCount: 0,
@@ -1020,7 +1020,7 @@ export const MOCK_SKILLS: Skill[] = [
     nameZh: '系統化除錯專家',
     description: 'Use when encountering any bug, test failure, or unexpected behavior, before proposing fixes.',
     descriptionZh: '在提出修復前，針對任何 Bug 或異常行為進行系統化分析。',
-    author: 'Jeffallan',
+    author: 'obra',
     category: 'Development & Code Tools',
     tags: ['Debugging', 'RC', 'Methodology'],
     downloadCount: 0,
@@ -1104,7 +1104,7 @@ export const MOCK_SKILLS: Skill[] = [
     nameZh: 'Git Worktree 實戰專家',
     description: 'Use when starting feature work that needs isolation from current workspace or before executing plans.',
     descriptionZh: '在需要與目前工作區隔離的情況下開始新功能開發或執行計畫。',
-    author: 'Jeffallan',
+    author: 'obra',
     category: 'Utility & Automation',
     tags: ['Git', 'Worktree', 'Workflow'],
     downloadCount: 0,
@@ -1174,13 +1174,13 @@ export const MOCK_SKILLS: Skill[] = [
     nameZh: 'Web 應用測試工具',
     description: 'Toolkit for interacting with and testing local web applications using Playwright.',
     descriptionZh: '使用 Playwright 與本地 Web 應用互動並進行測試的工具包。',
-    author: 'Jeffallan',
+    author: 'Anthropic',
     category: 'Security & Web Testing',
     tags: ['Testing', 'Playwright', 'Web'],
     downloadCount: 0,
     createdAt: '2025-03-03',
     source: 'webapp-testing',
-    githubUrl: 'https://github.com/Jeffallan/claude-skills/tree/main/skills/webapp-testing'
+    githubUrl: 'https://github.com/anthropics/skills/tree/main/skills/webapp-testing'
   },
   {
     id: 96,
