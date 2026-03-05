@@ -13,6 +13,7 @@ function App() {
         <Route path="/skill/:id" element={<SkillPage />} />
         <Route path="/author/:name" element={<AuthorPage />} />
         <Route path="/docs" element={<DocsPage />} />
+        <Route path="/docs/:slug" element={<DocsPage />} />
       </Routes>
       <CommandPalette />
     </>

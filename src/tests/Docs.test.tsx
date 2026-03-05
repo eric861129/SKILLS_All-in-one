@@ -46,13 +46,10 @@ describe('Docs Page Layout', () => {
       </MemoryRouter>
     );
     
-    // Check if the sidebar exists (we expect it to have a specific role or class later, 
-    // but for now we just look for nav links that SHOULD be there)
-    // This will FAIL because we haven't added the sidebar yet.
     expect(screen.queryByRole('navigation')).not.toBeNull();
   });
 
-  it('should render markdown content using a dedicated component', async () => {
+  it('should render welcome content by default', async () => {
     render(
       <MemoryRouter initialEntries={['/docs']}>
         <App />
@@ -61,6 +58,21 @@ describe('Docs Page Layout', () => {
     
     await waitFor(() => {
       expect(screen.getByText(/Welcome to Docs/i)).toBeDefined();
+    });
+  });
+
+  it('should render different content based on sub-route', async () => {
+    render(
+      <MemoryRouter initialEntries={['/docs/what-is-a-skill']}>
+        <App />
+      </MemoryRouter>
+    );
+    
+    await waitFor(() => {
+      // Find the h1 specifically within the main content area
+      const heading = screen.getAllByRole('heading', { level: 1 })
+        .find(h => h.textContent === 'What is a Skill?');
+      expect(heading).toBeDefined();
     });
   });
 });
