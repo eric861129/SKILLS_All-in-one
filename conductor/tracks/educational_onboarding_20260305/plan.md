@@ -12,9 +12,9 @@
 ## Phase 2: 知識庫內容與 Wiki UI 開發
 - [x] Task: 撰寫核心文檔內容 (303c662)
     - [x] 建立 `what-is-a-skill.md`, `supported-agents.md`, `security.md`。
-- [ ] Task: 優化 Wiki 閱讀體驗
-    - [ ] 實作目錄索引 (TOC) 自動生成功能。
-    - [ ] 確保行動端導覽順暢（抽屜式選單）。
+- [x] Task: 優化 Wiki 閱讀體驗 (d2cb44d)
+    - [x] 實作目錄索引 (TOC) 自動生成功能。
+    - [x] 確保行動端導覽順暢（抽屜式選單）。
 - [ ] Task: Conductor - User Manual Verification 'Phase 2: 知識庫內容與 Wiki UI 開發' (Protocol in workflow.md)
 
 ## Phase 3: 互動式 Hero 區塊與動畫
