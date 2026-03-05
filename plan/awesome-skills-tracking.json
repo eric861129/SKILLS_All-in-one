@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-05T14:30:38.520Z",
+  "generatedAt": "2026-03-05T14:37:26.494Z",
   "sourceReadme": "https://raw.githubusercontent.com/BehiSecc/awesome-claude-skills/main/README.md",
   "stats": {
-    "localSkills": 195,
+    "localSkills": 200,
     "discoveredRepoLinks": 89,
     "expandedCandidates": 402,
     "uniqueCandidates": 374,
-    "missing": 235,
+    "missing": 230,
     "urlMismatch": 8,
     "authorMismatch": 5,
     "fetchFailures": 26
@@ -144,22 +144,41 @@
         "onboard": "completed",
         "sync": "completed"
       }
+    },
+    {
+      "id": "batch-008",
+      "type": "import",
+      "size": 5,
+      "status": "completed",
+      "items": [
+        "atlassian",
+        "claude-mcp-expert",
+        "claude-skill-builder",
+        "code-review",
+        "consciousness-council"
+      ],
+      "checklist": {
+        "import": "completed",
+        "audit": "pass",
+        "onboard": "completed",
+        "sync": "completed"
+      }
     }
   ],
   "nextBatchProposals": {
     "correction": [
+      "agnix",
       "aptos",
-      "email-html-mjml",
-      "invoice-organizer",
-      "meeting-insights-analyzer",
-      "oiloil-ui-ux-guide"
+      "azure-devops",
+      "deep-research",
+      "deploy-prod"
     ],
     "import": [
       "agent-without-context",
       "argument-hint-no-args",
-      "atlassian",
-      "claude-mcp-expert",
-      "claude-skill-builder"
+      "context-without-agent",
+      "convergence-study",
+      "cosmic-database"
     ]
   },
   "failures": [
@@ -600,7 +619,7 @@
     },
     {
       "sourceSlug": "atlassian",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "atlassian",
         "originUrl": "https://github.com/sanjay3290/ai-skills/tree/main/skills/atlassian",
@@ -608,14 +627,17 @@
         "repo": "sanjay3290/ai-skills",
         "repoPath": "skills/atlassian"
       },
-      "local": null,
+      "local": {
+        "id": 212,
+        "source": "atlassian",
+        "author": "sanjay3290",
+        "githubUrl": "https://github.com/sanjay3290/ai-skills/tree/main/skills/atlassian"
+      },
       "expected": {
         "author": "sanjay3290",
         "githubUrl": "https://github.com/sanjay3290/ai-skills/tree/main/skills/atlassian"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "atlassian-mcp",
@@ -1149,7 +1171,7 @@
     },
     {
       "sourceSlug": "claude-mcp-expert",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "claude-mcp-expert",
         "originUrl": "https://github.com/raintree-technology/claude-starter/tree/main/.claude/skills/anthropic/claude-mcp-expert",
@@ -1157,18 +1179,21 @@
         "repo": "raintree-technology/claude-starter",
         "repoPath": ".claude/skills/anthropic/claude-mcp-expert"
       },
-      "local": null,
+      "local": {
+        "id": 213,
+        "source": "claude-mcp-expert",
+        "author": "raintree-technology",
+        "githubUrl": "https://github.com/raintree-technology/claude-starter/tree/main/.claude/skills/anthropic/claude-mcp-expert"
+      },
       "expected": {
         "author": "raintree-technology",
         "githubUrl": "https://github.com/raintree-technology/claude-starter/tree/main/.claude/skills/anthropic/claude-mcp-expert"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "claude-skill-builder",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "claude-skill-builder",
         "originUrl": "https://github.com/raintree-technology/claude-starter/tree/main/.claude/skills/anthropic/claude-skill-builder",
@@ -1176,14 +1201,17 @@
         "repo": "raintree-technology/claude-starter",
         "repoPath": ".claude/skills/anthropic/claude-skill-builder"
       },
-      "local": null,
+      "local": {
+        "id": 214,
+        "source": "claude-skill-builder",
+        "author": "raintree-technology",
+        "githubUrl": "https://github.com/raintree-technology/claude-starter/tree/main/.claude/skills/anthropic/claude-skill-builder"
+      },
       "expected": {
         "author": "raintree-technology",
         "githubUrl": "https://github.com/raintree-technology/claude-starter/tree/main/.claude/skills/anthropic/claude-skill-builder"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "cli-developer",
@@ -1385,7 +1413,7 @@
     },
     {
       "sourceSlug": "code-review",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "code-review",
         "originUrl": "https://github.com/avifenesh/agnix/tree/main/tests/fixtures/valid/skills/code-review",
@@ -1393,14 +1421,17 @@
         "repo": "avifenesh/agnix",
         "repoPath": "tests/fixtures/valid/skills/code-review"
       },
-      "local": null,
+      "local": {
+        "id": 215,
+        "source": "code-review",
+        "author": "avifenesh",
+        "githubUrl": "https://github.com/avifenesh/agnix/tree/main/tests/fixtures/valid/skills/code-review"
+      },
       "expected": {
         "author": "avifenesh",
         "githubUrl": "https://github.com/avifenesh/agnix/tree/main/tests/fixtures/valid/skills/code-review"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "code-reviewer",
@@ -1426,7 +1457,7 @@
     },
     {
       "sourceSlug": "consciousness-council",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "consciousness-council",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/consciousness-council",
@@ -1434,14 +1465,17 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/consciousness-council"
       },
-      "local": null,
+      "local": {
+        "id": 216,
+        "source": "consciousness-council",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/consciousness-council"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/consciousness-council"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "content-research-writer",

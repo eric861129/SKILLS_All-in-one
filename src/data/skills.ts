@@ -2121,6 +2121,66 @@ export const MOCK_SKILLS: Skill[] = [
     source: 'cobrapy',
     githubUrl: 'https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/cobrapy'
   },
+  {
+    id: 212,
+    name: 'atlassian',
+    description: 'Manage Jira issues and Confluence pages in Atlassian Cloud with OAuth or API-token workflows.',
+    author: 'sanjay3290',
+    category: 'Collaboration & Project Management',
+    tags: ['Atlassian', 'Jira', 'Confluence'],
+    downloadCount: 0,
+    createdAt: '2026-03-05',
+    source: 'atlassian',
+    githubUrl: 'https://github.com/sanjay3290/ai-skills/tree/main/skills/atlassian'
+  },
+  {
+    id: 213,
+    name: 'claude-mcp-expert',
+    description: 'Configure and troubleshoot Model Context Protocol servers in Claude Code across HTTP, SSE, and stdio transports.',
+    author: 'raintree-technology',
+    category: 'Development & Code Tools',
+    tags: ['MCP', 'Claude Code', 'Integration'],
+    downloadCount: 0,
+    createdAt: '2026-03-05',
+    source: 'claude-mcp-expert',
+    githubUrl: 'https://github.com/raintree-technology/claude-starter/tree/main/.claude/skills/anthropic/claude-mcp-expert'
+  },
+  {
+    id: 214,
+    name: 'claude-skill-builder',
+    description: 'Build Claude Code skills with structured SKILL.md frontmatter, trigger design, and reusable templates.',
+    author: 'raintree-technology',
+    category: 'Utility & Automation',
+    tags: ['Skill Authoring', 'Templates', 'Agent Skills'],
+    downloadCount: 0,
+    createdAt: '2026-03-05',
+    source: 'claude-skill-builder',
+    githubUrl: 'https://github.com/raintree-technology/claude-starter/tree/main/.claude/skills/anthropic/claude-skill-builder'
+  },
+  {
+    id: 215,
+    name: 'code-review',
+    description: 'Review code for quality, security, performance, and test coverage with actionable feedback.',
+    author: 'avifenesh',
+    category: 'Development & Code Tools',
+    tags: ['Code Review', 'Security', 'Quality'],
+    downloadCount: 0,
+    createdAt: '2026-03-05',
+    source: 'code-review',
+    githubUrl: 'https://github.com/avifenesh/agnix/tree/main/tests/fixtures/valid/skills/code-review'
+  },
+  {
+    id: 216,
+    name: 'consciousness-council',
+    description: 'Run structured multi-perspective deliberation to explore decisions, trade-offs, and complex questions from multiple viewpoints.',
+    author: 'K-Dense-AI',
+    category: 'Utility & Automation',
+    tags: ['Decision Making', 'Deliberation', 'Reasoning'],
+    downloadCount: 0,
+    createdAt: '2026-03-05',
+    source: 'consciousness-council',
+    githubUrl: 'https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/consciousness-council'
+  },
   // Writing & Research
   {
     id: 138,

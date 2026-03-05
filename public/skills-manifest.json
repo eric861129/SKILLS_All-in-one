@@ -1,15 +1,77 @@
 {
   "atlassian": {
     "category": "Collaboration & Project Management",
-    "files": [],
-    "fileMeta": {},
+    "files": [
+      ".env.example",
+      "SKILL.md",
+      "requirements.txt",
+      "scripts/api_client.py",
+      "scripts/auth.py",
+      "scripts/confluence.py",
+      "scripts/jira.py",
+      "scripts/mcp_client.py"
+    ],
+    "fileMeta": {
+      ".env.example": {
+        "sizeBytes": 688,
+        "lineCount": 0,
+        "ext": "example",
+        "tabKey": "root"
+      },
+      "SKILL.md": {
+        "sizeBytes": 6334,
+        "lineCount": 224,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "requirements.txt": {
+        "sizeBytes": 51,
+        "lineCount": 4,
+        "ext": "txt",
+        "tabKey": "root"
+      },
+      "scripts/api_client.py": {
+        "sizeBytes": 5537,
+        "lineCount": 172,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/auth.py": {
+        "sizeBytes": 23747,
+        "lineCount": 688,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/confluence.py": {
+        "sizeBytes": 27538,
+        "lineCount": 743,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/jira.py": {
+        "sizeBytes": 32867,
+        "lineCount": 836,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/mcp_client.py": {
+        "sizeBytes": 10501,
+        "lineCount": 293,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
     "tokenEstimate": {
-      "heuristic": 0,
-      "cl100k": 0
+      "heuristic": 25982,
+      "cl100k": 23906
     },
     "dependencies": {
       "skills": [],
-      "libraries": [],
+      "libraries": [
+        "httpx",
+        "keyring",
+        "python-dotenv"
+      ],
       "runtimeTools": [],
       "source": "structured"
     }
@@ -875,6 +937,37 @@
       "source": "structured"
     }
   },
+  "claude-mcp-expert": {
+    "category": "Development & Code Tools",
+    "files": [
+      "SKILL.md",
+      "skill.json"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 8336,
+        "lineCount": 326,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "skill.json": {
+        "sizeBytes": 1202,
+        "lineCount": 35,
+        "ext": "json",
+        "tabKey": "root"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 2383,
+      "cl100k": 2549
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
   "cli-developer": {
     "category": "Development & Code Tools",
     "files": [
@@ -1081,6 +1174,30 @@
         "fullstack-guardian",
         "spec-miner"
       ],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "code-review": {
+    "category": "Development & Code Tools",
+    "files": [
+      "SKILL.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 282,
+        "lineCount": 14,
+        "ext": "md",
+        "tabKey": "root"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 71,
+      "cl100k": 58
+    },
+    "dependencies": {
+      "skills": [],
       "libraries": [],
       "runtimeTools": [],
       "source": "structured"
@@ -9175,6 +9292,68 @@
     "tokenEstimate": {
       "heuristic": 0,
       "cl100k": 0
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "claude-skill-builder": {
+    "category": "Utility & Automation",
+    "files": [
+      "SKILL.md",
+      "skill.json"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 7135,
+        "lineCount": 263,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "skill.json": {
+        "sizeBytes": 1178,
+        "lineCount": 35,
+        "ext": "json",
+        "tabKey": "root"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 2054,
+      "cl100k": 2109
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "consciousness-council": {
+    "category": "Utility & Automation",
+    "files": [
+      "SKILL.md",
+      "references/advanced-configurations.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 8728,
+        "lineCount": 151,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/advanced-configurations.md": {
+        "sizeBytes": 5175,
+        "lineCount": 97,
+        "ext": "md",
+        "tabKey": "references"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 3454,
+      "cl100k": 3111
     },
     "dependencies": {
       "skills": [],
