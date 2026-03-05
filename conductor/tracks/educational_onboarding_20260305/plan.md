@@ -1,9 +1,9 @@
 # Implementation Plan: 教育引導與「什麼是技能？」 (Phase 2)
 
 ## Phase 1: 基礎架構與路由設定
-- [ ] Task: 設定路由與文檔系統基礎
-    - [ ] 新增 `/docs` 相關路由設定 (`src/App.tsx`)。
-    - [ ] 建立 `src/data/doc/` 目錄並配置 Markdown 載入邏輯。
+- [x] Task: 設定路由與文檔系統基礎 (d92850b)
+    - [x] 新增 `/docs` 相關路由設定 (`src/App.tsx`)。
+    - [x] 建立 `src/data/doc/` 目錄並配置 Markdown 載入邏輯。
 - [ ] Task: 建立 Wiki 共用佈局組件
     - [ ] 實作包含側邊導覽列的 `DocsLayout`。
     - [ ] 實作 Markdown 渲染組件。
