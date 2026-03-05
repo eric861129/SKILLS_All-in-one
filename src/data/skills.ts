@@ -2241,6 +2241,66 @@ export const MOCK_SKILLS: Skill[] = [
     source: 'deepchem',
     githubUrl: 'https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/deepchem'
   },
+  {
+    id: 222,
+    name: 'convergence-study',
+    description: 'Perform numerical convergence analysis with Richardson extrapolation and Grid Convergence Index for solution verification.',
+    author: 'HeshamFS',
+    category: 'Scientific & Research Tools',
+    tags: ['Numerical Methods', 'Convergence', 'Verification'],
+    downloadCount: 0,
+    createdAt: '2026-03-05',
+    source: 'convergence-study',
+    githubUrl: 'https://github.com/HeshamFS/materials-simulation-skills/tree/main/skills/core-numerical/convergence-study'
+  },
+  {
+    id: 223,
+    name: 'dapp-integration',
+    description: 'Integrate Aptos blockchain dApps with wallet adapters, TypeScript SDK workflows, and frontend transaction handling.',
+    author: 'raintree-technology',
+    category: 'Web3 & Blockchain',
+    tags: ['Aptos', 'dApp', 'Wallet Integration'],
+    downloadCount: 0,
+    createdAt: '2026-03-05',
+    source: 'dapp-integration',
+    githubUrl: 'https://github.com/raintree-technology/claude-starter/tree/main/skills/aptos/dapp-integration'
+  },
+  {
+    id: 224,
+    name: 'decibel',
+    description: 'Build against the Decibel Aptos perpetual futures platform for market data, order management, TWAP, and trading automation.',
+    author: 'raintree-technology',
+    category: 'Web3 & Blockchain',
+    tags: ['Perpetual Futures', 'Trading API', 'Aptos'],
+    downloadCount: 0,
+    createdAt: '2026-03-05',
+    source: 'decibel',
+    githubUrl: 'https://github.com/raintree-technology/claude-starter/tree/main/skills/aptos/decibel'
+  },
+  {
+    id: 225,
+    name: 'deeptools',
+    description: 'Analyze NGS data with deepTools for BAM-to-bigWig conversion, QC, sample comparison, and genomic signal visualization.',
+    author: 'K-Dense-AI',
+    category: 'Scientific & Research Tools',
+    tags: ['NGS', 'Genomics', 'Bioinformatics'],
+    downloadCount: 0,
+    createdAt: '2026-03-05',
+    source: 'deeptools',
+    githubUrl: 'https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/deeptools'
+  },
+  {
+    id: 226,
+    name: 'denario',
+    description: 'Orchestrate multi-agent scientific research workflows from hypothesis generation and analysis to publication-ready papers.',
+    author: 'K-Dense-AI',
+    category: 'Scientific & Research Tools',
+    tags: ['Research Automation', 'Multi-agent', 'Scientific Writing'],
+    downloadCount: 0,
+    createdAt: '2026-03-05',
+    source: 'denario',
+    githubUrl: 'https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/denario'
+  },
   // Writing & Research
   {
     id: 138,

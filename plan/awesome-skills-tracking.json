@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-05T14:43:35.251Z",
+  "generatedAt": "2026-03-05T14:47:23.796Z",
   "sourceReadme": "https://raw.githubusercontent.com/BehiSecc/awesome-claude-skills/main/README.md",
   "stats": {
-    "localSkills": 205,
+    "localSkills": 210,
     "discoveredRepoLinks": 89,
     "expandedCandidates": 402,
     "uniqueCandidates": 374,
-    "missing": 225,
+    "missing": 220,
     "urlMismatch": 8,
     "authorMismatch": 5,
     "fetchFailures": 26
@@ -182,6 +182,25 @@
         "onboard": "completed",
         "sync": "completed"
       }
+    },
+    {
+      "id": "batch-010",
+      "type": "import",
+      "size": 5,
+      "status": "completed",
+      "items": [
+        "convergence-study",
+        "dapp-integration",
+        "decibel",
+        "deeptools",
+        "denario"
+      ],
+      "checklist": {
+        "import": "completed",
+        "audit": "pass",
+        "onboard": "completed",
+        "sync": "completed"
+      }
     }
   ],
   "nextBatchProposals": {
@@ -193,11 +212,11 @@
       "deploy-prod"
     ],
     "import": [
-      "convergence-study",
-      "dapp-integration",
-      "decibel",
-      "deeptools",
-      "denario"
+      "depmap",
+      "dhdna-profiler",
+      "diffdock",
+      "differentiation-schemes",
+      "dnanexus-integration"
     ]
   },
   "failures": [
@@ -1539,7 +1558,7 @@
     },
     {
       "sourceSlug": "convergence-study",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "convergence-study",
         "originUrl": "https://github.com/HeshamFS/materials-simulation-skills/tree/main/skills/core-numerical/convergence-study",
@@ -1547,14 +1566,17 @@
         "repo": "HeshamFS/materials-simulation-skills",
         "repoPath": "skills/core-numerical/convergence-study"
       },
-      "local": null,
+      "local": {
+        "id": 222,
+        "source": "convergence-study",
+        "author": "HeshamFS",
+        "githubUrl": "https://github.com/HeshamFS/materials-simulation-skills/tree/main/skills/core-numerical/convergence-study"
+      },
       "expected": {
         "author": "HeshamFS",
         "githubUrl": "https://github.com/HeshamFS/materials-simulation-skills/tree/main/skills/core-numerical/convergence-study"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "cosmic-database",
@@ -1624,7 +1646,7 @@
     },
     {
       "sourceSlug": "dapp-integration",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "dapp-integration",
         "originUrl": "https://github.com/raintree-technology/claude-starter/tree/main/skills/aptos/dapp-integration",
@@ -1632,14 +1654,17 @@
         "repo": "raintree-technology/claude-starter",
         "repoPath": "skills/aptos/dapp-integration"
       },
-      "local": null,
+      "local": {
+        "id": 223,
+        "source": "dapp-integration",
+        "author": "raintree-technology",
+        "githubUrl": "https://github.com/raintree-technology/claude-starter/tree/main/skills/aptos/dapp-integration"
+      },
       "expected": {
         "author": "raintree-technology",
         "githubUrl": "https://github.com/raintree-technology/claude-starter/tree/main/skills/aptos/dapp-integration"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "dask",
@@ -1753,7 +1778,7 @@
     },
     {
       "sourceSlug": "decibel",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "decibel",
         "originUrl": "https://github.com/raintree-technology/claude-starter/tree/main/skills/aptos/decibel",
@@ -1761,14 +1786,17 @@
         "repo": "raintree-technology/claude-starter",
         "repoPath": "skills/aptos/decibel"
       },
-      "local": null,
+      "local": {
+        "id": 224,
+        "source": "decibel",
+        "author": "raintree-technology",
+        "githubUrl": "https://github.com/raintree-technology/claude-starter/tree/main/skills/aptos/decibel"
+      },
       "expected": {
         "author": "raintree-technology",
         "githubUrl": "https://github.com/raintree-technology/claude-starter/tree/main/skills/aptos/decibel"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "deep-reference",
@@ -1837,7 +1865,7 @@
     },
     {
       "sourceSlug": "deeptools",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "deeptools",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/deeptools",
@@ -1845,18 +1873,21 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/deeptools"
       },
-      "local": null,
+      "local": {
+        "id": 225,
+        "source": "deeptools",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/deeptools"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/deeptools"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "denario",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "denario",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/denario",
@@ -1864,14 +1895,17 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/denario"
       },
-      "local": null,
+      "local": {
+        "id": 226,
+        "source": "denario",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/denario"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/denario"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "deploy-prod",

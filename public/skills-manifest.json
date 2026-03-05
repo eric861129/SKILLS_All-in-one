@@ -8950,6 +8950,75 @@
       "source": "structured"
     }
   },
+  "convergence-study": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/convergence_theory.md",
+      "references/gci_guidelines.md",
+      "scripts/dt_refinement.py",
+      "scripts/gci_calculator.py",
+      "scripts/h_refinement.py",
+      "scripts/richardson_extrapolation.py"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 4281,
+        "lineCount": 99,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/convergence_theory.md": {
+        "sizeBytes": 3282,
+        "lineCount": 104,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/gci_guidelines.md": {
+        "sizeBytes": 3872,
+        "lineCount": 127,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "scripts/dt_refinement.py": {
+        "sizeBytes": 7531,
+        "lineCount": 205,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/gci_calculator.py": {
+        "sizeBytes": 5926,
+        "lineCount": 175,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/h_refinement.py": {
+        "sizeBytes": 7524,
+        "lineCount": 206,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/richardson_extrapolation.py": {
+        "sizeBytes": 4899,
+        "lineCount": 145,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 9331,
+      "cl100k": 9552
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [
+        "Bash",
+        "Read"
+      ],
+      "source": "structured"
+    }
+  },
   "cosmic-database": {
     "category": "Scientific & Research Tools",
     "files": [
@@ -9223,6 +9292,131 @@
     "tokenEstimate": {
       "heuristic": 17177,
       "cl100k": 16739
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "deeptools": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "assets/quick_reference.md",
+      "references/effective_genome_sizes.md",
+      "references/normalization_methods.md",
+      "references/tools_reference.md",
+      "references/workflows.md",
+      "scripts/validate_files.py",
+      "scripts/workflow_generator.py"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 17985,
+        "lineCount": 530,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "assets/quick_reference.md": {
+        "sizeBytes": 1520,
+        "lineCount": 59,
+        "ext": "md",
+        "tabKey": "assets"
+      },
+      "references/effective_genome_sizes.md": {
+        "sizeBytes": 3677,
+        "lineCount": 117,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/normalization_methods.md": {
+        "sizeBytes": 11082,
+        "lineCount": 411,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/tools_reference.md": {
+        "sizeBytes": 18891,
+        "lineCount": 534,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/workflows.md": {
+        "sizeBytes": 10963,
+        "lineCount": 475,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "scripts/validate_files.py": {
+        "sizeBytes": 6039,
+        "lineCount": 196,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/workflow_generator.py": {
+        "sizeBytes": 14130,
+        "lineCount": 455,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 21049,
+      "cl100k": 20953
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "denario": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/examples.md",
+      "references/installation.md",
+      "references/llm_configuration.md",
+      "references/research_pipeline.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 6000,
+        "lineCount": 214,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/examples.md": {
+        "sizeBytes": 12754,
+        "lineCount": 495,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/installation.md": {
+        "sizeBytes": 3942,
+        "lineCount": 214,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/llm_configuration.md": {
+        "sizeBytes": 6713,
+        "lineCount": 266,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/research_pipeline.md": {
+        "sizeBytes": 11884,
+        "lineCount": 472,
+        "ext": "md",
+        "tabKey": "references"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 10285,
+      "cl100k": 9028
     },
     "dependencies": {
       "skills": [],
@@ -10290,6 +10484,54 @@
     "tokenEstimate": {
       "heuristic": 2234,
       "cl100k": 2069
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "dapp-integration": {
+    "category": "Web3 & Blockchain",
+    "files": [
+      "SKILL.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 5026,
+        "lineCount": 213,
+        "ext": "md",
+        "tabKey": "root"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 1257,
+      "cl100k": 1212
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "decibel": {
+    "category": "Web3 & Blockchain",
+    "files": [
+      "SKILL.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 6808,
+        "lineCount": 332,
+        "ext": "md",
+        "tabKey": "root"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 1702,
+      "cl100k": 1795
     },
     "dependencies": {
       "skills": [],
