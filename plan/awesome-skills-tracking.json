@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-03-05T09:28:33.526Z",
+  "generatedAt": "2026-03-05T09:41:18.666Z",
   "sourceReadme": "https://raw.githubusercontent.com/BehiSecc/awesome-claude-skills/main/README.md",
   "stats": {
-    "localSkills": 165,
+    "localSkills": 170,
     "discoveredRepoLinks": 89,
     "expandedCandidates": 402,
     "uniqueCandidates": 374,
-    "missing": 269,
+    "missing": 264,
     "urlMismatch": 8,
     "authorMismatch": 5,
-    "fetchFailures": 27
+    "fetchFailures": 26
   },
   "batches": [
     {
@@ -30,6 +30,25 @@
         "onboard": "completed",
         "sync": "completed"
       }
+    },
+    {
+      "id": "batch-002",
+      "type": "import",
+      "size": 5,
+      "status": "completed",
+      "items": [
+        "adaptyv",
+        "aeon",
+        "alpha-vantage",
+        "alphafold-database",
+        "anndata"
+      ],
+      "checklist": {
+        "import": "completed",
+        "audit": "pass",
+        "onboard": "completed",
+        "sync": "completed"
+      }
     }
   ],
   "nextBatchProposals": {
@@ -41,18 +60,14 @@
       "oiloil-ui-ux-guide"
     ],
     "import": [
-      "adaptyv",
-      "aeon",
       "agent-without-context",
-      "alpha-vantage",
-      "alphafold-database"
+      "arboreto",
+      "argument-hint-no-args",
+      "astropy",
+      "atlassian"
     ]
   },
   "failures": [
-    {
-      "url": "https://github.com/emaynard/claude-family-history-research-skill",
-      "reason": "403 rate limit exceeded - https://api.github.com/repos/emaynard/claude-family-history-research-skill"
-    },
     {
       "url": "https://github.com/smerchek/claude-epub-skill",
       "reason": "403 rate limit exceeded - https://api.github.com/repos/smerchek/claude-epub-skill"
@@ -161,7 +176,7 @@
   "items": [
     {
       "sourceSlug": "adaptyv",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "adaptyv",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/adaptyv",
@@ -169,18 +184,21 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/adaptyv"
       },
-      "local": null,
+      "local": {
+        "id": 182,
+        "source": "adaptyv",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/adaptyv"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/adaptyv"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "aeon",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "aeon",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/aeon",
@@ -188,14 +206,17 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/aeon"
       },
-      "local": null,
+      "local": {
+        "id": 183,
+        "source": "aeon",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/aeon"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/aeon"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "agent-without-context",
@@ -243,7 +264,7 @@
     },
     {
       "sourceSlug": "alpha-vantage",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "alpha-vantage",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/alpha-vantage",
@@ -251,18 +272,21 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/alpha-vantage"
       },
-      "local": null,
+      "local": {
+        "id": 184,
+        "source": "alpha-vantage",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/alpha-vantage"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/alpha-vantage"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "alphafold-database",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "alphafold-database",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/alphafold-database",
@@ -270,14 +294,17 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/alphafold-database"
       },
-      "local": null,
+      "local": {
+        "id": 185,
+        "source": "alphafold-database",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/alphafold-database"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/alphafold-database"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "angular-architect",
@@ -303,7 +330,7 @@
     },
     {
       "sourceSlug": "anndata",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "anndata",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/anndata",
@@ -311,14 +338,17 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/anndata"
       },
-      "local": null,
+      "local": {
+        "id": 186,
+        "source": "anndata",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/anndata"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/anndata"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "api-designer",

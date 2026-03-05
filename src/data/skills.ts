@@ -1761,6 +1761,66 @@ export const MOCK_SKILLS: Skill[] = [
     source: 'manus',
     githubUrl: 'https://github.com/sanjay3290/ai-skills/tree/main/skills/manus'
   },
+  {
+    id: 182,
+    name: 'adaptyv',
+    description: 'Cloud laboratory platform for automated protein testing and validation workflows.',
+    author: 'K-Dense-AI',
+    category: 'Scientific & Research Tools',
+    tags: ['Protein Design', 'Wet Lab', 'Bioinformatics'],
+    downloadCount: 0,
+    createdAt: '2026-03-05',
+    source: 'adaptyv',
+    githubUrl: 'https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/adaptyv'
+  },
+  {
+    id: 183,
+    name: 'aeon',
+    description: 'Time series machine learning toolkit for classification, forecasting, clustering, and anomaly detection.',
+    author: 'K-Dense-AI',
+    category: 'Scientific & Research Tools',
+    tags: ['Time Series', 'Machine Learning', 'Forecasting'],
+    downloadCount: 0,
+    createdAt: '2026-03-05',
+    source: 'aeon',
+    githubUrl: 'https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/aeon'
+  },
+  {
+    id: 184,
+    name: 'alpha-vantage',
+    description: 'Financial market data skill for stocks, forex, crypto, commodities, and technical indicators via API.',
+    author: 'K-Dense-AI',
+    category: 'Scientific & Research Tools',
+    tags: ['Finance API', 'Market Data', 'Technical Indicators'],
+    downloadCount: 0,
+    createdAt: '2026-03-05',
+    source: 'alpha-vantage',
+    githubUrl: 'https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/alpha-vantage'
+  },
+  {
+    id: 185,
+    name: 'alphafold-database',
+    description: 'Access and analyze AlphaFold predicted protein structures with confidence metrics and downloadable files.',
+    author: 'K-Dense-AI',
+    category: 'Scientific & Research Tools',
+    tags: ['Protein Structure', 'AlphaFold', 'Structural Biology'],
+    downloadCount: 0,
+    createdAt: '2026-03-05',
+    source: 'alphafold-database',
+    githubUrl: 'https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/alphafold-database'
+  },
+  {
+    id: 186,
+    name: 'anndata',
+    description: 'Annotated matrix data structure skill for single-cell workflows and scverse ecosystem interoperability.',
+    author: 'K-Dense-AI',
+    category: 'Scientific & Research Tools',
+    tags: ['Single-cell', 'Data Structure', 'Python'],
+    downloadCount: 0,
+    createdAt: '2026-03-05',
+    source: 'anndata',
+    githubUrl: 'https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/anndata'
+  },
   // Writing & Research
   {
     id: 138,

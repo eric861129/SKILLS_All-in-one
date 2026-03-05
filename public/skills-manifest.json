@@ -7106,6 +7106,329 @@
       "source": "structured"
     }
   },
+  "adaptyv": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "reference/api_reference.md",
+      "reference/examples.md",
+      "reference/experiments.md",
+      "reference/protein_optimization.md",
+      "SKILL.md"
+    ],
+    "fileMeta": {
+      "reference/api_reference.md": {
+        "sizeBytes": 6973,
+        "lineCount": 309,
+        "ext": "md",
+        "tabKey": "reference"
+      },
+      "reference/examples.md": {
+        "sizeBytes": 24004,
+        "lineCount": 914,
+        "ext": "md",
+        "tabKey": "reference"
+      },
+      "reference/experiments.md": {
+        "sizeBytes": 10307,
+        "lineCount": 361,
+        "ext": "md",
+        "tabKey": "reference"
+      },
+      "reference/protein_optimization.md": {
+        "sizeBytes": 18498,
+        "lineCount": 638,
+        "ext": "md",
+        "tabKey": "reference"
+      },
+      "SKILL.md": {
+        "sizeBytes": 3854,
+        "lineCount": 113,
+        "ext": "md",
+        "tabKey": "root"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 15897,
+      "cl100k": 14518
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "aeon": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "references/anomaly_detection.md",
+      "references/classification.md",
+      "references/clustering.md",
+      "references/datasets_benchmarking.md",
+      "references/distances.md",
+      "references/forecasting.md",
+      "references/networks.md",
+      "references/regression.md",
+      "references/segmentation.md",
+      "references/similarity_search.md",
+      "references/transformations.md",
+      "SKILL.md"
+    ],
+    "fileMeta": {
+      "references/anomaly_detection.md": {
+        "sizeBytes": 5066,
+        "lineCount": 155,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/classification.md": {
+        "sizeBytes": 5521,
+        "lineCount": 145,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/clustering.md": {
+        "sizeBytes": 3867,
+        "lineCount": 124,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/datasets_benchmarking.md": {
+        "sizeBytes": 9258,
+        "lineCount": 388,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/distances.md": {
+        "sizeBytes": 6665,
+        "lineCount": 257,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/forecasting.md": {
+        "sizeBytes": 4019,
+        "lineCount": 141,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/networks.md": {
+        "sizeBytes": 8138,
+        "lineCount": 290,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/regression.md": {
+        "sizeBytes": 4078,
+        "lineCount": 119,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/segmentation.md": {
+        "sizeBytes": 5087,
+        "lineCount": 164,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/similarity_search.md": {
+        "sizeBytes": 5429,
+        "lineCount": 188,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/transformations.md": {
+        "sizeBytes": 7971,
+        "lineCount": 247,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "SKILL.md": {
+        "sizeBytes": 10959,
+        "lineCount": 373,
+        "ext": "md",
+        "tabKey": "root"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 19017,
+      "cl100k": 17331
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "alpha-vantage": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "references/commodities.md",
+      "references/economic-indicators.md",
+      "references/forex-crypto.md",
+      "references/fundamentals.md",
+      "references/intelligence.md",
+      "references/options.md",
+      "references/technical-indicators.md",
+      "references/time-series.md",
+      "SKILL.md"
+    ],
+    "fileMeta": {
+      "references/commodities.md": {
+        "sizeBytes": 3975,
+        "lineCount": 154,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/economic-indicators.md": {
+        "sizeBytes": 4072,
+        "lineCount": 159,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/forex-crypto.md": {
+        "sizeBytes": 4326,
+        "lineCount": 155,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/fundamentals.md": {
+        "sizeBytes": 7732,
+        "lineCount": 224,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/intelligence.md": {
+        "sizeBytes": 5009,
+        "lineCount": 139,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/options.md": {
+        "sizeBytes": 2840,
+        "lineCount": 94,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/technical-indicators.md": {
+        "sizeBytes": 12771,
+        "lineCount": 375,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/time-series.md": {
+        "sizeBytes": 4552,
+        "lineCount": 158,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "SKILL.md": {
+        "sizeBytes": 6401,
+        "lineCount": 143,
+        "ext": "md",
+        "tabKey": "root"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 12839,
+      "cl100k": 14098
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "alphafold-database": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "references/api_reference.md",
+      "SKILL.md"
+    ],
+    "fileMeta": {
+      "references/api_reference.md": {
+        "sizeBytes": 12980,
+        "lineCount": 424,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "SKILL.md": {
+        "sizeBytes": 16912,
+        "lineCount": 512,
+        "ext": "md",
+        "tabKey": "root"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 7461,
+      "cl100k": 7938
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "anndata": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "references/best_practices.md",
+      "references/concatenation.md",
+      "references/data_structure.md",
+      "references/io_operations.md",
+      "references/manipulation.md",
+      "SKILL.md"
+    ],
+    "fileMeta": {
+      "references/best_practices.md": {
+        "sizeBytes": 12631,
+        "lineCount": 526,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/concatenation.md": {
+        "sizeBytes": 10900,
+        "lineCount": 397,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/data_structure.md": {
+        "sizeBytes": 9058,
+        "lineCount": 315,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/io_operations.md": {
+        "sizeBytes": 9860,
+        "lineCount": 405,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/manipulation.md": {
+        "sizeBytes": 12382,
+        "lineCount": 517,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "SKILL.md": {
+        "sizeBytes": 10612,
+        "lineCount": 399,
+        "ext": "md",
+        "tabKey": "root"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 16361,
+      "cl100k": 17096
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
   "chaos-engineer": {
     "category": "Security & Web Testing",
     "files": [
