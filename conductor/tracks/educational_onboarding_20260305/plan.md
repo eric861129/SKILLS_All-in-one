@@ -4,9 +4,9 @@
 - [x] Task: 設定路由與文檔系統基礎 (d92850b)
     - [x] 新增 `/docs` 相關路由設定 (`src/App.tsx`)。
     - [x] 建立 `src/data/doc/` 目錄並配置 Markdown 載入邏輯。
-- [ ] Task: 建立 Wiki 共用佈局組件
-    - [ ] 實作包含側邊導覽列的 `DocsLayout`。
-    - [ ] 實作 Markdown 渲染組件。
+- [x] Task: 建立 Wiki 共用佈局組件 (7a85bad)
+    - [x] 實作包含側邊導覽列的 `DocsLayout`。
+    - [x] 實作 Markdown 渲染組件。
 - [ ] Task: Conductor - User Manual Verification 'Phase 1: 基礎架構與路由設定' (Protocol in workflow.md)
 
 ## Phase 2: 知識庫內容與 Wiki UI 開發
