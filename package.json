@@ -4,6 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "predev": "node scripts/generate-manifest.js",
     "dev": "vite",
     "prebuild": "node scripts/generate-manifest.js",
     "build": "tsc -b && vite build",
@@ -16,12 +17,16 @@
     "clsx": "^2.1.1",
     "framer-motion": "^12.35.0",
     "fuse.js": "^7.1.0",
+    "gray-matter": "^4.0.3",
+    "js-tiktoken": "^1.0.21",
     "jszip": "^3.10.1",
     "lucide-react": "^0.576.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "react-markdown": "^10.1.0",
     "react-router-dom": "^7.13.1",
+    "react-syntax-highlighter": "^16.1.1",
+    "reactflow": "^11.11.4",
     "tailwind-merge": "^3.5.0"
   },
   "devDependencies": {
@@ -32,6 +37,7 @@
     "@types/node": "^24.10.1",
     "@types/react": "^19.2.7",
     "@types/react-dom": "^19.2.3",
+    "@types/react-syntax-highlighter": "^15.5.13",
     "@vitejs/plugin-react": "^5.1.4",
     "autoprefixer": "^10.4.27",
     "eslint": "^9.39.1",
