@@ -10,6 +10,7 @@
 ## 2. 工具與函式庫 (Tools & Libraries)
 - **Search:** **Fuse.js** — 輕量化前端模糊搜尋，支援多維度加權檢索。
 - **Compression:** **JSZip** — 實現多檔案打包與自動化下載邏輯。
+- **Animation:** **Framer Motion** — 實現基於物理彈性的微互動與流暢過渡動畫。
 
 ## 3. 後端與數據 (Backend & Data)
 - **Backend Bridge:** **Cloudflare Workers** — 處理 CORS、API 路由與數據轉發。
