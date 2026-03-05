@@ -25,9 +25,9 @@
 - [x] Task: Conductor - User Manual Verification 'Phase 3: 互動式 Hero 區塊與動畫' (Protocol in workflow.md) (dbeacf5)
 
 ## Phase 4: 多平台整合引導精靈 (Wizards)
-- [ ] Task: 建立引導精靈框架組件
-    - [ ] 實作可切換平台的 Tab 或選單。
-    - [ ] 實作分步指令顯示組件（支援程式碼一鍵複製）。
+- [x] Task: 建立引導精靈框架組件 (176d87c)
+    - [x] 實作可切換平台的 Tab 或選單。
+    - [x] 實作分步指令顯示組件（支援程式碼一鍵複製）。
 - [ ] Task: 實作各平台特定引導內容
     - [ ] 完成 Claude Desktop, ChatGPT, 通用 MCP 教學。
     - [ ] 完成 Gemini CLI, Google Antigravity, Claude Code 教學。
