@@ -19,7 +19,11 @@ export const DocsLayout = ({ children }: DocsLayoutProps) => {
   ];
 
   const sidebarContent = (
-    <nav className="flex flex-col gap-1 py-4 px-2" role="navigation">
+    <nav 
+      className="flex flex-col gap-1 py-4 px-2" 
+      role="navigation"
+      data-testid="docs-nav"
+    >
       <div className="flex items-center gap-2 px-4 mb-6 text-accent">
         <Book size={20} />
         <span className="font-black tracking-tight text-lg uppercase">{t('docsTitle') || 'Docs'}</span>
@@ -62,6 +66,7 @@ export const DocsLayout = ({ children }: DocsLayoutProps) => {
         <button 
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           className="p-2 text-slate-400 hover:text-white transition-colors"
+          aria-label="Toggle Menu"
         >
           {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
