@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-05T14:47:23.796Z",
+  "generatedAt": "2026-03-05T14:56:42.369Z",
   "sourceReadme": "https://raw.githubusercontent.com/BehiSecc/awesome-claude-skills/main/README.md",
   "stats": {
-    "localSkills": 210,
+    "localSkills": 215,
     "discoveredRepoLinks": 89,
     "expandedCandidates": 402,
     "uniqueCandidates": 374,
-    "missing": 220,
+    "missing": 215,
     "urlMismatch": 8,
     "authorMismatch": 5,
     "fetchFailures": 26
@@ -201,6 +201,25 @@
         "onboard": "completed",
         "sync": "completed"
       }
+    },
+    {
+      "id": "batch-011",
+      "type": "import",
+      "size": 5,
+      "status": "completed",
+      "items": [
+        "depmap",
+        "dhdna-profiler",
+        "diffdock",
+        "dnanexus-integration",
+        "differentiation-schemes"
+      ],
+      "checklist": {
+        "import": "completed",
+        "audit": "pass",
+        "onboard": "completed",
+        "sync": "completed"
+      }
     }
   ],
   "nextBatchProposals": {
@@ -212,11 +231,11 @@
       "deploy-prod"
     ],
     "import": [
-      "depmap",
-      "dhdna-profiler",
-      "diffdock",
-      "differentiation-schemes",
-      "dnanexus-integration"
+      "drugbank-database",
+      "edgartools",
+      "ena-database",
+      "ensembl-database",
+      "esm"
     ]
   },
   "failures": [
@@ -1929,7 +1948,7 @@
     },
     {
       "sourceSlug": "depmap",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "depmap",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/depmap",
@@ -1937,14 +1956,17 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/depmap"
       },
-      "local": null,
+      "local": {
+        "id": 227,
+        "source": "depmap",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/depmap"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/depmap"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "devops-engineer",
@@ -1970,7 +1992,7 @@
     },
     {
       "sourceSlug": "dhdna-profiler",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "dhdna-profiler",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/dhdna-profiler",
@@ -1978,18 +2000,21 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/dhdna-profiler"
       },
-      "local": null,
+      "local": {
+        "id": 228,
+        "source": "dhdna-profiler",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/dhdna-profiler"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/dhdna-profiler"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "diffdock",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "diffdock",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/diffdock",
@@ -1997,18 +2022,21 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/diffdock"
       },
-      "local": null,
+      "local": {
+        "id": 229,
+        "source": "diffdock",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/diffdock"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/diffdock"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "differentiation-schemes",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "differentiation-schemes",
         "originUrl": "https://github.com/HeshamFS/materials-simulation-skills/tree/main/skills/core-numerical/differentiation-schemes",
@@ -2016,14 +2044,17 @@
         "repo": "HeshamFS/materials-simulation-skills",
         "repoPath": "skills/core-numerical/differentiation-schemes"
       },
-      "local": null,
+      "local": {
+        "id": 231,
+        "source": "differentiation-schemes",
+        "author": "HeshamFS",
+        "githubUrl": "https://github.com/HeshamFS/materials-simulation-skills/tree/main/skills/core-numerical/differentiation-schemes"
+      },
       "expected": {
         "author": "HeshamFS",
         "githubUrl": "https://github.com/HeshamFS/materials-simulation-skills/tree/main/skills/core-numerical/differentiation-schemes"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "django-expert",
@@ -2049,7 +2080,7 @@
     },
     {
       "sourceSlug": "dnanexus-integration",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "dnanexus-integration",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/dnanexus-integration",
@@ -2057,14 +2088,17 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/dnanexus-integration"
       },
-      "local": null,
+      "local": {
+        "id": 230,
+        "source": "dnanexus-integration",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/dnanexus-integration"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/dnanexus-integration"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "docx",

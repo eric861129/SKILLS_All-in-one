@@ -2301,6 +2301,66 @@ export const MOCK_SKILLS: Skill[] = [
     source: 'denario',
     githubUrl: 'https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/denario'
   },
+  {
+    id: 227,
+    name: 'depmap',
+    description: 'Query Cancer Dependency Map data to analyze gene essentiality, synthetic lethality, and oncology target vulnerabilities.',
+    author: 'K-Dense-AI',
+    category: 'Scientific & Research Tools',
+    tags: ['Cancer Genomics', 'Dependency Analysis', 'Target Discovery'],
+    downloadCount: 0,
+    createdAt: '2026-03-05',
+    source: 'depmap',
+    githubUrl: 'https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/depmap'
+  },
+  {
+    id: 228,
+    name: 'dhdna-profiler',
+    description: 'Extract cognitive style and reasoning signatures from text using a structured digital human DNA profiling framework.',
+    author: 'K-Dense-AI',
+    category: 'Learning & Knowledge',
+    tags: ['Cognitive Analysis', 'Reasoning', 'Text Profiling'],
+    downloadCount: 0,
+    createdAt: '2026-03-05',
+    source: 'dhdna-profiler',
+    githubUrl: 'https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/dhdna-profiler'
+  },
+  {
+    id: 229,
+    name: 'diffdock',
+    description: 'Predict protein-ligand binding poses with diffusion-based docking for structure-guided drug discovery workflows.',
+    author: 'K-Dense-AI',
+    category: 'Scientific & Research Tools',
+    tags: ['Molecular Docking', 'Drug Discovery', 'Structural Biology'],
+    downloadCount: 0,
+    createdAt: '2026-03-05',
+    source: 'diffdock',
+    githubUrl: 'https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/diffdock'
+  },
+  {
+    id: 230,
+    name: 'dnanexus-integration',
+    description: 'Build and run DNAnexus genomics apps and workflows for cloud-based FASTQ/BAM/VCF data processing pipelines.',
+    author: 'K-Dense-AI',
+    category: 'Scientific & Research Tools',
+    tags: ['Genomics', 'Cloud Platform', 'Bioinformatics'],
+    downloadCount: 0,
+    createdAt: '2026-03-05',
+    source: 'dnanexus-integration',
+    githubUrl: 'https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/dnanexus-integration'
+  },
+  {
+    id: 231,
+    name: 'differentiation-schemes',
+    description: 'Select and apply numerical differentiation stencils for PDE/ODE discretization, boundary handling, and truncation error analysis.',
+    author: 'HeshamFS',
+    category: 'Scientific & Research Tools',
+    tags: ['Numerical Methods', 'Discretization', 'Finite Difference'],
+    downloadCount: 0,
+    createdAt: '2026-03-05',
+    source: 'differentiation-schemes',
+    githubUrl: 'https://github.com/HeshamFS/materials-simulation-skills/tree/main/skills/core-numerical/differentiation-schemes'
+  },
   // Writing & Research
   {
     id: 138,

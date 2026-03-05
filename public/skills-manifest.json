@@ -6260,6 +6260,37 @@
       "source": "structured"
     }
   },
+  "dhdna-profiler": {
+    "category": "Learning & Knowledge",
+    "files": [
+      "SKILL.md",
+      "references/advanced-profiling.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 10081,
+        "lineCount": 163,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/advanced-profiling.md": {
+        "sizeBytes": 3220,
+        "lineCount": 73,
+        "ext": "md",
+        "tabKey": "references"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 3207,
+      "cl100k": 2943
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
   "notebooklm": {
     "category": "Learning & Knowledge",
     "files": [
@@ -9417,6 +9448,249 @@
     "tokenEstimate": {
       "heuristic": 10285,
       "cl100k": 9028
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "depmap": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/dependency_analysis.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 11277,
+        "lineCount": 301,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/dependency_analysis.md": {
+        "sizeBytes": 5775,
+        "lineCount": 179,
+        "ext": "md",
+        "tabKey": "references"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 4253,
+      "cl100k": 4151
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "diffdock": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "assets/batch_template.csv",
+      "assets/custom_inference_config.yaml",
+      "references/confidence_and_limitations.md",
+      "references/parameters_reference.md",
+      "references/workflows_examples.md",
+      "scripts/analyze_results.py",
+      "scripts/prepare_batch_csv.py",
+      "scripts/setup_check.py"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 15487,
+        "lineCount": 482,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "assets/batch_template.csv": {
+        "sizeBytes": 410,
+        "lineCount": 5,
+        "ext": "csv",
+        "tabKey": "assets"
+      },
+      "assets/custom_inference_config.yaml": {
+        "sizeBytes": 2846,
+        "lineCount": 91,
+        "ext": "yaml",
+        "tabKey": "assets"
+      },
+      "references/confidence_and_limitations.md": {
+        "sizeBytes": 6900,
+        "lineCount": 183,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/parameters_reference.md": {
+        "sizeBytes": 5072,
+        "lineCount": 164,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/workflows_examples.md": {
+        "sizeBytes": 10520,
+        "lineCount": 393,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "scripts/analyze_results.py": {
+        "sizeBytes": 11036,
+        "lineCount": 335,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/prepare_batch_csv.py": {
+        "sizeBytes": 8730,
+        "lineCount": 255,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/setup_check.py": {
+        "sizeBytes": 8016,
+        "lineCount": 279,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 17203,
+      "cl100k": 16552
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "differentiation-schemes": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/boundary_handling.md",
+      "references/error_guidance.md",
+      "references/scheme_selection.md",
+      "references/stencil_catalog.md",
+      "scripts/scheme_selector.py",
+      "scripts/stencil_generator.py",
+      "scripts/truncation_error.py"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 5561,
+        "lineCount": 160,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/boundary_handling.md": {
+        "sizeBytes": 7445,
+        "lineCount": 366,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/error_guidance.md": {
+        "sizeBytes": 7188,
+        "lineCount": 322,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/scheme_selection.md": {
+        "sizeBytes": 6831,
+        "lineCount": 299,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/stencil_catalog.md": {
+        "sizeBytes": 6311,
+        "lineCount": 324,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "scripts/scheme_selector.py": {
+        "sizeBytes": 3419,
+        "lineCount": 109,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/stencil_generator.py": {
+        "sizeBytes": 4461,
+        "lineCount": 149,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/truncation_error.py": {
+        "sizeBytes": 2009,
+        "lineCount": 72,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 10704,
+      "cl100k": 12746
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "dnanexus-integration": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/app-development.md",
+      "references/configuration.md",
+      "references/data-operations.md",
+      "references/job-execution.md",
+      "references/python-sdk.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 10650,
+        "lineCount": 382,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/app-development.md": {
+        "sizeBytes": 5291,
+        "lineCount": 248,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/configuration.md": {
+        "sizeBytes": 13172,
+        "lineCount": 647,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/data-operations.md": {
+        "sizeBytes": 8120,
+        "lineCount": 401,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/job-execution.md": {
+        "sizeBytes": 8766,
+        "lineCount": 413,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/python-sdk.md": {
+        "sizeBytes": 9776,
+        "lineCount": 524,
+        "ext": "md",
+        "tabKey": "references"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 13908,
+      "cl100k": 14268
     },
     "dependencies": {
       "skills": [],
