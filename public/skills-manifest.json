@@ -8950,6 +8950,287 @@
       "source": "structured"
     }
   },
+  "cosmic-database": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/cosmic_data_reference.md",
+      "scripts/download_cosmic.py"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 10032,
+        "lineCount": 335,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/cosmic_data_reference.md": {
+        "sizeBytes": 6291,
+        "lineCount": 221,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "scripts/download_cosmic.py": {
+        "sizeBytes": 7974,
+        "lineCount": 232,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 6075,
+      "cl100k": 5787
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "dask": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/arrays.md",
+      "references/bags.md",
+      "references/best-practices.md",
+      "references/dataframes.md",
+      "references/futures.md",
+      "references/schedulers.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 14303,
+        "lineCount": 455,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/arrays.md": {
+        "sizeBytes": 11649,
+        "lineCount": 498,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/bags.md": {
+        "sizeBytes": 10869,
+        "lineCount": 469,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/best-practices.md": {
+        "sizeBytes": 7317,
+        "lineCount": 278,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/dataframes.md": {
+        "sizeBytes": 8778,
+        "lineCount": 369,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/futures.md": {
+        "sizeBytes": 12051,
+        "lineCount": 542,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/schedulers.md": {
+        "sizeBytes": 11313,
+        "lineCount": 505,
+        "ext": "md",
+        "tabKey": "references"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 19063,
+      "cl100k": 18288
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "datacommons-client": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/getting_started.md",
+      "references/node.md",
+      "references/observation.md",
+      "references/resolve.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 7986,
+        "lineCount": 254,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/getting_started.md": {
+        "sizeBytes": 10145,
+        "lineCount": 418,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/node.md": {
+        "sizeBytes": 6126,
+        "lineCount": 251,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/observation.md": {
+        "sizeBytes": 5498,
+        "lineCount": 186,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/resolve.md": {
+        "sizeBytes": 7204,
+        "lineCount": 247,
+        "ext": "md",
+        "tabKey": "references"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 9229,
+      "cl100k": 8576
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "datamol": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/conformers_module.md",
+      "references/core_api.md",
+      "references/descriptors_viz.md",
+      "references/fragments_scaffolds.md",
+      "references/io_module.md",
+      "references/reactions_data.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 18867,
+        "lineCount": 705,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/conformers_module.md": {
+        "sizeBytes": 5022,
+        "lineCount": 132,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/core_api.md": {
+        "sizeBytes": 4242,
+        "lineCount": 131,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/descriptors_viz.md": {
+        "sizeBytes": 7366,
+        "lineCount": 196,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/fragments_scaffolds.md": {
+        "sizeBytes": 5808,
+        "lineCount": 175,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/io_module.md": {
+        "sizeBytes": 4315,
+        "lineCount": 110,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/reactions_data.md": {
+        "sizeBytes": 6656,
+        "lineCount": 219,
+        "ext": "md",
+        "tabKey": "references"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 13064,
+      "cl100k": 13694
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "deepchem": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/api_reference.md",
+      "references/workflows.md",
+      "scripts/graph_neural_network.py",
+      "scripts/predict_solubility.py",
+      "scripts/transfer_learning.py"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 17783,
+        "lineCount": 596,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/api_reference.md": {
+        "sizeBytes": 11597,
+        "lineCount": 304,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/workflows.md": {
+        "sizeBytes": 11800,
+        "lineCount": 492,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "scripts/graph_neural_network.py": {
+        "sizeBytes": 9742,
+        "lineCount": 339,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/predict_solubility.py": {
+        "sizeBytes": 6546,
+        "lineCount": 225,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/transfer_learning.py": {
+        "sizeBytes": 11353,
+        "lineCount": 376,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 17177,
+      "cl100k": 16739
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
   "chaos-engineer": {
     "category": "Security & Web Testing",
     "files": [

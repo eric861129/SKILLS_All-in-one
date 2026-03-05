@@ -2181,6 +2181,66 @@ export const MOCK_SKILLS: Skill[] = [
     source: 'consciousness-council',
     githubUrl: 'https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/consciousness-council'
   },
+  {
+    id: 217,
+    name: 'cosmic-database',
+    description: 'Access COSMIC cancer mutation database for somatic mutations, Cancer Gene Census, mutational signatures, and precision oncology workflows.',
+    author: 'K-Dense-AI',
+    category: 'Scientific & Research Tools',
+    tags: ['Cancer Genomics', 'COSMIC', 'Mutation Database'],
+    downloadCount: 0,
+    createdAt: '2026-03-05',
+    source: 'cosmic-database',
+    githubUrl: 'https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/cosmic-database'
+  },
+  {
+    id: 218,
+    name: 'dask',
+    description: 'Scale pandas and NumPy workloads with distributed computing for larger-than-memory processing and parallel analytics.',
+    author: 'K-Dense-AI',
+    category: 'Scientific & Research Tools',
+    tags: ['Distributed Computing', 'Parallel Processing', 'Out-of-Core'],
+    downloadCount: 0,
+    createdAt: '2026-03-05',
+    source: 'dask',
+    githubUrl: 'https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/dask'
+  },
+  {
+    id: 219,
+    name: 'datacommons-client',
+    description: 'Query Data Commons public statistical datasets for demographics, economics, health, environment, and geo-entity resolution.',
+    author: 'K-Dense-AI',
+    category: 'Scientific & Research Tools',
+    tags: ['Public Data', 'Statistics', 'Knowledge Graph'],
+    downloadCount: 0,
+    createdAt: '2026-03-05',
+    source: 'datacommons-client',
+    githubUrl: 'https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/datacommons-client'
+  },
+  {
+    id: 220,
+    name: 'datamol',
+    description: 'Pythonic RDKit wrapper for cheminformatics workflows including standardization, descriptors, fingerprints, and conformer generation.',
+    author: 'K-Dense-AI',
+    category: 'Scientific & Research Tools',
+    tags: ['Cheminformatics', 'RDKit', 'Drug Discovery'],
+    downloadCount: 0,
+    createdAt: '2026-03-05',
+    source: 'datamol',
+    githubUrl: 'https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/datamol'
+  },
+  {
+    id: 221,
+    name: 'deepchem',
+    description: 'Build molecular machine learning pipelines for property prediction, graph neural networks, and MoleculeNet benchmark workflows.',
+    author: 'K-Dense-AI',
+    category: 'Scientific & Research Tools',
+    tags: ['Molecular ML', 'GNN', 'Drug Discovery'],
+    downloadCount: 0,
+    createdAt: '2026-03-05',
+    source: 'deepchem',
+    githubUrl: 'https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/deepchem'
+  },
   // Writing & Research
   {
     id: 138,

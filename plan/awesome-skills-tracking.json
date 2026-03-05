@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-05T14:37:26.494Z",
+  "generatedAt": "2026-03-05T14:43:35.251Z",
   "sourceReadme": "https://raw.githubusercontent.com/BehiSecc/awesome-claude-skills/main/README.md",
   "stats": {
-    "localSkills": 200,
+    "localSkills": 205,
     "discoveredRepoLinks": 89,
     "expandedCandidates": 402,
     "uniqueCandidates": 374,
-    "missing": 230,
+    "missing": 225,
     "urlMismatch": 8,
     "authorMismatch": 5,
     "fetchFailures": 26
@@ -163,6 +163,25 @@
         "onboard": "completed",
         "sync": "completed"
       }
+    },
+    {
+      "id": "batch-009",
+      "type": "import",
+      "size": 5,
+      "status": "completed",
+      "items": [
+        "cosmic-database",
+        "dask",
+        "datacommons-client",
+        "datamol",
+        "deepchem"
+      ],
+      "checklist": {
+        "import": "completed",
+        "audit": "pass",
+        "onboard": "completed",
+        "sync": "completed"
+      }
     }
   ],
   "nextBatchProposals": {
@@ -174,11 +193,11 @@
       "deploy-prod"
     ],
     "import": [
-      "agent-without-context",
-      "argument-hint-no-args",
-      "context-without-agent",
       "convergence-study",
-      "cosmic-database"
+      "dapp-integration",
+      "decibel",
+      "deeptools",
+      "denario"
     ]
   },
   "failures": [
@@ -1539,7 +1558,7 @@
     },
     {
       "sourceSlug": "cosmic-database",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "cosmic-database",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/cosmic-database",
@@ -1547,14 +1566,17 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/cosmic-database"
       },
-      "local": null,
+      "local": {
+        "id": 217,
+        "source": "cosmic-database",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/cosmic-database"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/cosmic-database"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "cpp-pro",
@@ -1621,7 +1643,7 @@
     },
     {
       "sourceSlug": "dask",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "dask",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/dask",
@@ -1629,14 +1651,17 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/dask"
       },
-      "local": null,
+      "local": {
+        "id": 218,
+        "source": "dask",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/dask"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/dask"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "database-optimizer",
@@ -1662,7 +1687,7 @@
     },
     {
       "sourceSlug": "datacommons-client",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "datacommons-client",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/datacommons-client",
@@ -1670,18 +1695,21 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/datacommons-client"
       },
-      "local": null,
+      "local": {
+        "id": 219,
+        "source": "datacommons-client",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/datacommons-client"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/datacommons-client"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "datamol",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "datamol",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/datamol",
@@ -1689,14 +1717,17 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/datamol"
       },
-      "local": null,
+      "local": {
+        "id": 220,
+        "source": "datamol",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/datamol"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/datamol"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "debugging-wizard",
@@ -1784,7 +1815,7 @@
     },
     {
       "sourceSlug": "deepchem",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "deepchem",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/deepchem",
@@ -1792,14 +1823,17 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/deepchem"
       },
-      "local": null,
+      "local": {
+        "id": 221,
+        "source": "deepchem",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/deepchem"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/deepchem"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "deeptools",
