@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
-import { useSearchParams, useNavigate } from 'react-router-dom';
-import { Terminal, Search, Filter, X, Flame, Clock, ArrowUpDown, Languages, SlidersHorizontal, Plus } from 'lucide-react';
+import { useSearchParams, useNavigate, Link } from 'react-router-dom';
+import { Terminal, Search, Filter, X, Flame, Clock, ArrowUpDown, Languages, SlidersHorizontal, Plus, Sparkles, Rocket } from 'lucide-react';
 import { useSkills } from '../hooks/useSkills';
 import { SkillCard } from '../components/SkillCard';
 import { FilterSidebar } from '../components/FilterSidebar';
@@ -42,6 +42,8 @@ export const HomePage = () => {
 
     // 行動端側欄狀態
     const [showMobileSidebar, setShowMobileSidebar] = useState(false);
+    // How It Works Modal 狀態
+    const [showHowItWorks, setShowHowItWorks] = useState(false);
     // 分頁
     const [visibleCount, setVisibleCount] = useState(ITEMS_PER_PAGE);
 
@@ -146,14 +148,14 @@ export const HomePage = () => {
                             </div>
 
                             <h1 className="text-4xl md:text-6xl font-black tracking-tighter text-white leading-tight mb-4">
-                                {language === 'zh' ? 'AI 技能下載中心' : 'AI Skills Library'}
+                                {t('title')}
                             </h1>
                             <p className="text-base md:text-lg text-slate-400 leading-relaxed max-w-[55ch] mb-8">
                                 {t('subtitle')}
                             </p>
 
                             {/* Search Bar */}
-                            <div className="relative w-full group">
+                            <div className="relative w-full group mb-8">
                                 <Search className="absolute left-5 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-500 group-focus-within:text-accent transition-colors" />
                                 <input
                                     ref={searchInputRef}
@@ -178,6 +180,38 @@ export const HomePage = () => {
                                     )}
                                 </div>
                             </div>
+
+                            <div className="flex flex-wrap items-center gap-4">
+                                <button
+                                    onClick={() => setShowHowItWorks(true)}
+                                    className="group relative flex items-center gap-3 bg-white/5 border border-white/10 hover:border-accent/50 px-6 py-3 rounded-2xl transition-all duration-500 hover:-translate-y-1 shadow-xl hover:shadow-accent/10 active:scale-95"
+                                >
+                                    <div className="p-2 bg-accent/10 rounded-xl group-hover:bg-accent/20 transition-colors">
+                                        <Sparkles className="w-4 h-4 text-accent" />
+                                    </div>
+                                    <div className="flex flex-col items-start">
+                                        <span className="text-[10px] font-black uppercase tracking-[0.2em] text-slate-500 group-hover:text-accent transition-colors">Architecture</span>
+                                        <span className="text-sm font-bold text-white tracking-tight">{t('whatIsSkill')}</span>
+                                    </div>
+                                    {/* Subtle Glow */}
+                                    <div className="absolute inset-0 bg-accent/0 group-hover:bg-accent/5 rounded-2xl transition-colors pointer-events-none" />
+                                </button>
+
+                                <Link
+                                    to="/setup"
+                                    className="group relative flex items-center gap-3 bg-white/5 border border-white/10 hover:border-emerald-400/50 px-6 py-3 rounded-2xl transition-all duration-500 hover:-translate-y-1 shadow-xl hover:shadow-emerald-400/10 active:scale-95"
+                                >
+                                    <div className="p-2 bg-emerald-400/10 rounded-xl group-hover:bg-emerald-400/20 transition-colors">
+                                        <Rocket className="w-4 h-4 text-emerald-400" />
+                                    </div>
+                                    <div className="flex flex-col items-start">
+                                        <span className="text-[10px] font-black uppercase tracking-[0.2em] text-slate-500 group-hover:text-emerald-400 transition-colors">Integration</span>
+                                        <span className="text-sm font-bold text-white tracking-tight">{t('setupYourAgent')}</span>
+                                    </div>
+                                    {/* Subtle Glow */}
+                                    <div className="absolute inset-0 bg-emerald-400/0 group-hover:bg-emerald-400/5 rounded-2xl transition-colors pointer-events-none" />
+                                </Link>
+                            </div>
                         </div>
 
                         {/* Right: Stats Cards */}
@@ -201,7 +235,7 @@ export const HomePage = () => {
                 </div>
             </header>
 
-            <HowItWorks />
+            <HowItWorks isOpen={showHowItWorks} onClose={() => setShowHowItWorks(false)} />
 
             {/* Main Content: Sidebar + Content Area */}
             <div className="flex max-w-[1600px] mx-auto min-h-[calc(100dvh-400px)]">
