@@ -263,6 +263,79 @@
       "source": "structured"
     }
   },
+  "edgartools": {
+    "category": "Data & Analysis",
+    "files": [
+      "SKILL.md",
+      "references/ai-integration.md",
+      "references/companies.md",
+      "references/data-objects.md",
+      "references/entity-facts.md",
+      "references/filings.md",
+      "references/financial-data.md",
+      "references/xbrl.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 5604,
+        "lineCount": 137,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/ai-integration.md": {
+        "sizeBytes": 6888,
+        "lineCount": 275,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/companies.md": {
+        "sizeBytes": 6126,
+        "lineCount": 269,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/data-objects.md": {
+        "sizeBytes": 5572,
+        "lineCount": 238,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/entity-facts.md": {
+        "sizeBytes": 8338,
+        "lineCount": 373,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/filings.md": {
+        "sizeBytes": 9113,
+        "lineCount": 388,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/financial-data.md": {
+        "sizeBytes": 7106,
+        "lineCount": 275,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/xbrl.md": {
+        "sizeBytes": 9466,
+        "lineCount": 374,
+        "ext": "md",
+        "tabKey": "references"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 14520,
+      "cl100k": 15115
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
   "fine-tuning-expert": {
     "category": "Data & Analysis",
     "files": [
@@ -9691,6 +9764,193 @@
     "tokenEstimate": {
       "heuristic": 13908,
       "cl100k": 14268
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "drugbank-database": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/chemical-analysis.md",
+      "references/data-access.md",
+      "references/drug-queries.md",
+      "references/interactions.md",
+      "references/targets-pathways.md",
+      "scripts/drugbank_helper.py"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 9398,
+        "lineCount": 189,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/chemical-analysis.md": {
+        "sizeBytes": 19413,
+        "lineCount": 591,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/data-access.md": {
+        "sizeBytes": 6062,
+        "lineCount": 243,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/drug-queries.md": {
+        "sizeBytes": 11772,
+        "lineCount": 387,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/interactions.md": {
+        "sizeBytes": 13794,
+        "lineCount": 426,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/targets-pathways.md": {
+        "sizeBytes": 18253,
+        "lineCount": 519,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "scripts/drugbank_helper.py": {
+        "sizeBytes": 11822,
+        "lineCount": 351,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 22629,
+      "cl100k": 21231
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "ena-database": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/api_reference.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 7034,
+        "lineCount": 203,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/api_reference.md": {
+        "sizeBytes": 13339,
+        "lineCount": 491,
+        "ext": "md",
+        "tabKey": "references"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 5094,
+      "cl100k": 5166
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "ensembl-database": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/api_endpoints.md",
+      "scripts/ensembl_query.py"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 8259,
+        "lineCount": 310,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/api_endpoints.md": {
+        "sizeBytes": 10046,
+        "lineCount": 347,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "scripts/ensembl_query.py": {
+        "sizeBytes": 13595,
+        "lineCount": 428,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 7976,
+      "cl100k": 7576
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "esm": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/esm-c-api.md",
+      "references/esm3-api.md",
+      "references/forge-api.md",
+      "references/workflows.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 10562,
+        "lineCount": 305,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/esm-c-api.md": {
+        "sizeBytes": 15715,
+        "lineCount": 584,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/esm3-api.md": {
+        "sizeBytes": 11852,
+        "lineCount": 453,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/forge-api.md": {
+        "sizeBytes": 17615,
+        "lineCount": 658,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/workflows.md": {
+        "sizeBytes": 20667,
+        "lineCount": 686,
+        "ext": "md",
+        "tabKey": "references"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 19104,
+      "cl100k": 18061
     },
     "dependencies": {
       "skills": [],
