@@ -12,8 +12,8 @@
 - [x] Task: Define Color Palette & Glassmorphism (4a0c274)
     - [x] Update Tailwind theme with "Deep Sea/Obsidian" accents.
     - [x] Create reusable glassmorphism utility classes.
-- [ ] Task: Custom Scrollbar
-    - [ ] Implement a minimal, dark-themed scrollbar in CSS.
+- [x] Task: Custom Scrollbar (86db940)
+    - [x] Implement a minimal, dark-themed scrollbar in CSS.
 - [ ] Task: Conductor - User Manual Verification 'Phase 2: Design System Refinement' (Protocol in workflow.md)
 
 ## Phase 3: Component Interactions
