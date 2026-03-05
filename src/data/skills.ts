@@ -2361,6 +2361,66 @@ export const MOCK_SKILLS: Skill[] = [
     source: 'differentiation-schemes',
     githubUrl: 'https://github.com/HeshamFS/materials-simulation-skills/tree/main/skills/core-numerical/differentiation-schemes'
   },
+  {
+    id: 232,
+    name: 'drugbank-database',
+    description: 'Access DrugBank data for drug properties, interactions, targets, pathways, and structure-driven pharmacology analysis.',
+    author: 'K-Dense-AI',
+    category: 'Scientific & Research Tools',
+    tags: ['Drug Discovery', 'Pharmacology', 'Cheminformatics'],
+    downloadCount: 0,
+    createdAt: '2026-03-05',
+    source: 'drugbank-database',
+    githubUrl: 'https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/drugbank-database'
+  },
+  {
+    id: 233,
+    name: 'edgartools',
+    description: 'Analyze SEC EDGAR filings with structured access to forms, XBRL financial statements, and regulatory disclosure data.',
+    author: 'K-Dense-AI',
+    category: 'Data & Analysis',
+    tags: ['SEC EDGAR', 'Financial Statements', 'Regulatory Data'],
+    downloadCount: 0,
+    createdAt: '2026-03-05',
+    source: 'edgartools',
+    githubUrl: 'https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/edgartools'
+  },
+  {
+    id: 234,
+    name: 'ena-database',
+    description: 'Query ENA archives for nucleotide sequences, raw reads, assemblies, and metadata via API or FTP pipelines.',
+    author: 'K-Dense-AI',
+    category: 'Scientific & Research Tools',
+    tags: ['Genomics', 'Sequence Archive', 'Bioinformatics'],
+    downloadCount: 0,
+    createdAt: '2026-03-05',
+    source: 'ena-database',
+    githubUrl: 'https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/ena-database'
+  },
+  {
+    id: 235,
+    name: 'ensembl-database',
+    description: 'Use Ensembl REST APIs for multi-species gene lookup, sequence retrieval, variant interpretation, and comparative genomics.',
+    author: 'K-Dense-AI',
+    category: 'Scientific & Research Tools',
+    tags: ['Genomics', 'Ensembl', 'Variant Analysis'],
+    downloadCount: 0,
+    createdAt: '2026-03-05',
+    source: 'ensembl-database',
+    githubUrl: 'https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/ensembl-database'
+  },
+  {
+    id: 236,
+    name: 'esm',
+    description: 'Apply ESM protein language models for sequence design, structure-aware generation, and embedding-based protein analysis.',
+    author: 'K-Dense-AI',
+    category: 'Scientific & Research Tools',
+    tags: ['Protein Language Models', 'Protein Design', 'Computational Biology'],
+    downloadCount: 0,
+    createdAt: '2026-03-05',
+    source: 'esm',
+    githubUrl: 'https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/esm'
+  },
   // Writing & Research
   {
     id: 138,
