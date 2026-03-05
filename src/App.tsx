@@ -2,7 +2,6 @@ import { Routes, Route } from 'react-router-dom';
 import { HomePage } from './pages/HomePage';
 import { SkillPage } from './pages/SkillPage';
 import { AuthorPage } from './pages/AuthorPage';
-import { DocsPage } from './pages/DocsPage';
 import { SetupPage } from './pages/SetupPage';
 import { CommandPalette } from './components/CommandPalette';
 

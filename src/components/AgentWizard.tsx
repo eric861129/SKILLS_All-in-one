@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { 
-  Copy, Check, Terminal as TerminalIcon, Cpu, Settings, Globe, 
+  Terminal as TerminalIcon, Cpu, Settings, Globe, 
   ExternalLink, BookOpen, AlertCircle, Lightbulb, ChevronRight, 
-  Info, Zap, Share2, FileCode, Sparkles, ShieldAlert, Layers, Code2, Command
+  Info, Zap, Share2, FileCode, Sparkles, ShieldAlert, Layers, Code2
 } from 'lucide-react';
 import { useLanguage } from '../hooks/useLanguage';
 
