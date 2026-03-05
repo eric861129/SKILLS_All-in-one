@@ -9,13 +9,13 @@
     - [x] 實作 Markdown 渲染組件。
 - [x] Task: Conductor - User Manual Verification 'Phase 1: 基礎架構與路由設定' (Protocol in workflow.md) (977b5cb)
 
-## Phase 2: 知識庫內容與 Wiki UI 開發
+## Phase 2: 知識庫內容與 Wiki UI 開發 [checkpoint: bd2d140]
 - [x] Task: 撰寫核心文檔內容 (303c662)
     - [x] 建立 `what-is-a-skill.md`, `supported-agents.md`, `security.md`。
 - [x] Task: 優化 Wiki 閱讀體驗 (d2cb44d)
     - [x] 實作目錄索引 (TOC) 自動生成功能。
     - [x] 確保行動端導覽順暢（抽屜式選單）。
-- [ ] Task: Conductor - User Manual Verification 'Phase 2: 知識庫內容與 Wiki UI 開發' (Protocol in workflow.md)
+- [x] Task: Conductor - User Manual Verification 'Phase 2: 知識庫內容與 Wiki UI 開發' (Protocol in workflow.md) (bd2d140)
 
 ## Phase 3: 互動式 Hero 區塊與動畫
 - [ ] Task: 實作運作原理 (How it Works) UI
