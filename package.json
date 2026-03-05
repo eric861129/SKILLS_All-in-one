@@ -12,13 +12,16 @@
   },
   "dependencies": {
     "@giscus/react": "^3.1.0",
+    "clsx": "^2.1.1",
+    "framer-motion": "^12.35.0",
     "fuse.js": "^7.1.0",
     "jszip": "^3.10.1",
     "lucide-react": "^0.576.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "react-markdown": "^10.1.0",
-    "react-router-dom": "^7.13.1"
+    "react-router-dom": "^7.13.1",
+    "tailwind-merge": "^3.5.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",
