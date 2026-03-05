@@ -1,7 +1,17 @@
 import { Download, Tag, User, Calendar } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
+import { clsx, type ClassValue } from 'clsx';
+import { twMerge } from 'tailwind-merge';
 import type { Skill, SkillCategory } from '../types/skill';
 import { useLanguage } from '../hooks/useLanguage';
+
+/**
+ * Utility to merge tailwind classes safely
+ */
+function cn(...inputs: ClassValue[]) {
+  return twMerge(clsx(inputs));
+}
 
 const MAX_VISIBLE_TAGS = 3;
 
@@ -13,13 +23,10 @@ interface SkillCardProps {
 export const SkillCard = ({ skill, onPreview }: SkillCardProps) => {
   const { language } = useLanguage();
 
-  // Actions removed to maintain minimal card design as per user request
-  // Detailed actions moved to SkillPage
-
   const getCategoryStyles = (category: SkillCategory) => {
     switch (category) {
       case 'Development & Code Tools':
-        return 'bg-blue-500/10 text-blue-400 border-blue-500/20';
+        return 'bg-accent/10 text-accent border-accent/20';
       case 'Document Skills':
         return 'bg-amber-500/10 text-amber-400 border-amber-500/20';
       case 'Data & Analysis':
@@ -46,14 +53,30 @@ export const SkillCard = ({ skill, onPreview }: SkillCardProps) => {
   const hiddenTagCount = (skill.tags?.length || 0) - MAX_VISIBLE_TAGS;
 
   return (
-    <div
-      className="bg-slate-900 border border-slate-800 rounded-2xl p-6 hover:border-slate-700 transition-all duration-[var(--duration-normal)] group flex flex-col h-full hover:-translate-y-0.5 hover:shadow-2xl hover:shadow-blue-900/10 cursor-pointer active:scale-[0.98] relative overflow-hidden"
+    <motion.div
+      layout
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      whileHover={{
+        y: -4,
+        transition: { type: 'spring', stiffness: 400, damping: 17 }
+      }}
+      whileTap={{ scale: 0.985 }}
+      className={cn(
+        "glass-surface rounded-2xl p-6 group flex flex-col h-full cursor-pointer relative overflow-hidden",
+        "hover:border-accent/40 transition-colors duration-300",
+        "hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.5),0_0_20px_rgba(99,102,241,0.1)]"
+      )}
       onClick={() => onPreview?.()}
     >
-      <div className="absolute inset-x-0 -top-px h-px bg-gradient-to-r from-transparent via-blue-500/0 to-transparent group-hover:via-blue-500/50 transition-all duration-700"></div>
+      {/* Top Accent line on hover */}
+      <div className="absolute inset-x-0 -top-px h-px bg-gradient-to-r from-transparent via-accent/0 to-transparent group-hover:via-accent/50 transition-all duration-700"></div>
 
       <div className="flex justify-between items-start mb-4 relative z-10">
-        <span className={`px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider border ${getCategoryStyles(skill.category)}`}>
+        <span className={cn(
+          "px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider border",
+          getCategoryStyles(skill.category)
+        )}>
           {skill.category}
         </span>
         <span className="text-slate-500 text-[10px] font-medium flex items-center gap-1">
@@ -62,7 +85,7 @@ export const SkillCard = ({ skill, onPreview }: SkillCardProps) => {
         </span>
       </div>
 
-      <h3 className="text-xl font-bold text-slate-100 mb-2 group-hover:text-blue-400 transition-colors duration-[var(--duration-normal)]">
+      <h3 className="text-xl font-bold text-slate-100 mb-2 group-hover:text-accent transition-colors duration-300">
         {displayName}
       </h3>
 
@@ -89,20 +112,21 @@ export const SkillCard = ({ skill, onPreview }: SkillCardProps) => {
           <Link
             to={`/author/${encodeURIComponent(skill.author)}`}
             onClick={(e) => e.stopPropagation()}
-            className="text-sm font-semibold text-slate-300 flex items-center gap-2 mb-1.5 hover:text-blue-400 transition-colors truncate w-fit"
+            className="text-sm font-semibold text-slate-300 flex items-center gap-2 mb-1.5 hover:text-accent transition-colors truncate w-fit"
             title={skill.author}
           >
-            <User className="w-4 h-4 text-blue-400 shrink-0" />
+            <User className="w-4 h-4 text-accent shrink-0" />
             <span className="truncate">{skill.author}</span>
           </Link>
           <div className="flex items-center gap-3">
             <span className="text-xs text-slate-500 font-medium flex items-center gap-1.5">
-              <Download className="w-3.5 h-3.5 text-blue-500/70" />
+              <Download className="w-3.5 h-3.5 text-accent/70" />
               <span className="font-mono">{(skill.downloadCount || 0).toLocaleString()}</span>
             </span>
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
+
