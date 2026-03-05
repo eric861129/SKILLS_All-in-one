@@ -17,12 +17,12 @@
     - [x] 確保行動端導覽順暢（抽屜式選單）。
 - [x] Task: Conductor - User Manual Verification 'Phase 2: 知識庫內容與 Wiki UI 開發' (Protocol in workflow.md) (bd2d140)
 
-## Phase 3: 互動式 Hero 區塊與動畫
+## Phase 3: 互動式 Hero 區塊與動畫 [checkpoint: dbeacf5]
 - [x] Task: 實作運作原理 (How it Works) UI (5099cff)
     - [x] 使用 Framer Motion 實作三步驟進度條組件。
     - [x] 開發「連結、選擇、注入」的動態插畫展示。
 - [x] Task: 整合至首頁 Hero Section (8f3b89f)
-- [ ] Task: Conductor - User Manual Verification 'Phase 3: 互動式 Hero 區塊與動畫' (Protocol in workflow.md)
+- [x] Task: Conductor - User Manual Verification 'Phase 3: 互動式 Hero 區塊與動畫' (Protocol in workflow.md) (dbeacf5)
 
 ## Phase 4: 多平台整合引導精靈 (Wizards)
 - [ ] Task: 建立引導精靈框架組件
