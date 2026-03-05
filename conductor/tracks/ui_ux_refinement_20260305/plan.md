@@ -8,13 +8,13 @@
     - [x] Update `index.css` with global font rules.
 - [x] Task: Conductor - User Manual Verification 'Phase 1: Foundation & Typography' (Protocol in workflow.md)
 
-## Phase 2: Design System Refinement
+## Phase 2: Design System Refinement [checkpoint: 8b0bc9c]
 - [x] Task: Define Color Palette & Glassmorphism (4a0c274)
     - [x] Update Tailwind theme with "Deep Sea/Obsidian" accents.
     - [x] Create reusable glassmorphism utility classes.
 - [x] Task: Custom Scrollbar (86db940)
     - [x] Implement a minimal, dark-themed scrollbar in CSS.
-- [ ] Task: Conductor - User Manual Verification 'Phase 2: Design System Refinement' (Protocol in workflow.md)
+- [x] Task: Conductor - User Manual Verification 'Phase 2: Design System Refinement' (Protocol in workflow.md)
 
 ## Phase 3: Component Interactions
 - [ ] Task: Tactile SkillCard
