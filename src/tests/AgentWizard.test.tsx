@@ -3,6 +3,7 @@
  */
 import { describe, it, expect, vi, afterEach } from 'vitest';
 import { render, screen, fireEvent, cleanup, waitFor } from '@testing-library/react';
+import { MemoryRouter } from 'react-router-dom';
 import React from 'react';
 import { AgentWizard } from '../components/AgentWizard';
 
@@ -12,7 +13,11 @@ afterEach(() => {
 
 describe('AgentWizard Component', () => {
   it('should render platform tabs', () => {
-    render(<AgentWizard />);
+    render(
+      <MemoryRouter>
+        <AgentWizard />
+      </MemoryRouter>
+    );
     
     // Check for platform names in buttons
     expect(screen.getByRole('button', { name: /Claude Desktop/i })).toBeDefined();
@@ -21,7 +26,11 @@ describe('AgentWizard Component', () => {
   });
 
   it('should switch content when a tab is clicked', async () => {
-    render(<AgentWizard />);
+    render(
+      <MemoryRouter>
+        <AgentWizard />
+      </MemoryRouter>
+    );
     
     // Click ChatGPT tab
     const chatGptTab = screen.getByRole('button', { name: /ChatGPT/i });

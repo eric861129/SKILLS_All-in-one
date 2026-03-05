@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Copy, Check, Monitor, MessageSquare, Terminal as TerminalIcon, ExternalLink, Cpu, Globe, Rocket } from 'lucide-react';
 
@@ -157,12 +158,12 @@ export const AgentWizard = () => {
                   Documentation current as of 2026
                 </span>
               </div>
-              <a 
-                href="/SKILLS_All-in-one/docs" 
+              <Link 
+                to="/docs" 
                 className="group flex items-center gap-2 px-6 py-2.5 rounded-xl bg-slate-800 hover:bg-accent text-slate-300 hover:text-white text-xs font-bold transition-all duration-300 border border-slate-700 hover:border-accent/50"
               >
                 Explore Wiki <ExternalLink size={14} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-              </a>
+              </Link>
             </div>
           </motion.div>
         </AnimatePresence>
