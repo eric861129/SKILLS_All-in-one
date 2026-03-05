@@ -165,6 +165,49 @@
 
 ---
 
+## Batch 005
+
+- 批次 ID：`batch-005`
+- 日期：`2026-03-05`
+- 類型：`import`
+- 筆數：`5`
+- 項目：
+  1. `aws-ami-builder`
+  2. `azure-image-builder`
+  3. `azure-verified-modules`
+  4. `new-terraform-provider`
+  5. `provider-actions`
+
+### 執行內容
+
+1. 來源確認：
+   - canonical repo：`hashicorp/agent-skills`
+   - canonical path：`packer/*`、`terraform/*`
+2. Import：
+   - 匯入 5 筆 skill 檔案到 `public/SKILLS/Uncategorized/<skill>/`
+3. Audit：
+   - 檢查 `SKILL.md`、`assets/`
+   - 未發現需阻擋上架的執行風險
+   - 報告：`plan/security-audits/batch-005.md`
+4. Onboard：
+   - 分類移動到 `public/SKILLS/Infrastructure & Cloud/<skill>/`
+   - 新增 `src/data/skills.ts`：id `197~201`
+   - 新增 `database/init_skills.sql`：id `197~201`
+5. Sync：
+   - `npm run prebuild` 重建 manifest
+6. Verify：
+   - `npm run build` 通過
+7. Tracking：
+   - 更新 `plan/awesome-skills-tracking.json`，新增 `batch-005`
+
+### 結果
+
+- Audit：`PASS`
+- Onboard：`completed`
+- Sync：`completed`
+
+---
+
 ## 後續批次填寫模板
 
 請複製以下段落新增 `batch-00N`：

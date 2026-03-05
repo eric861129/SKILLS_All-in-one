@@ -5808,6 +5808,30 @@
       "source": "structured"
     }
   },
+  "aws-ami-builder": {
+    "category": "Infrastructure & Cloud",
+    "files": [
+      "SKILL.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 3663,
+        "lineCount": 171,
+        "ext": "md",
+        "tabKey": "root"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 916,
+      "cl100k": 998
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
   "aws-cdk-development": {
     "category": "Infrastructure & Cloud",
     "files": [
@@ -6013,6 +6037,109 @@
         "mcp__awsdocs__*",
         "mcp__cdk__*"
       ],
+      "source": "structured"
+    }
+  },
+  "azure-image-builder": {
+    "category": "Infrastructure & Cloud",
+    "files": [
+      "SKILL.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 4203,
+        "lineCount": 182,
+        "ext": "md",
+        "tabKey": "root"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 1051,
+      "cl100k": 1025
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "azure-verified-modules": {
+    "category": "Infrastructure & Cloud",
+    "files": [
+      "SKILL.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 16261,
+        "lineCount": 614,
+        "ext": "md",
+        "tabKey": "root"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 4066,
+      "cl100k": 3962
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "new-terraform-provider": {
+    "category": "Infrastructure & Cloud",
+    "files": [
+      "SKILL.md",
+      "assets/main.go"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 896,
+        "lineCount": 26,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "assets/main.go": {
+        "sizeBytes": 1070,
+        "lineCount": 41,
+        "ext": "go",
+        "tabKey": "assets"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 492,
+      "cl100k": 480
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "provider-actions": {
+    "category": "Infrastructure & Cloud",
+    "files": [
+      "SKILL.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 13972,
+        "lineCount": 479,
+        "ext": "md",
+        "tabKey": "root"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 3486,
+      "cl100k": 3002
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
       "source": "structured"
     }
   },

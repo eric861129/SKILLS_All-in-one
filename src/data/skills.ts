@@ -1941,6 +1941,66 @@ export const MOCK_SKILLS: Skill[] = [
     source: 'cbioportal-database',
     githubUrl: 'https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/cbioportal-database'
   },
+  {
+    id: 197,
+    name: 'aws-ami-builder',
+    description: 'Build custom AWS AMIs with Packer amazon-ebs templates, provisioning steps, and multi-region publishing workflows.',
+    author: 'hashicorp',
+    category: 'Infrastructure & Cloud',
+    tags: ['Packer', 'AWS', 'AMI'],
+    downloadCount: 0,
+    createdAt: '2026-03-05',
+    source: 'aws-ami-builder',
+    githubUrl: 'https://github.com/hashicorp/agent-skills/tree/main/packer/builders/skills/aws-ami-builder'
+  },
+  {
+    id: 198,
+    name: 'azure-image-builder',
+    description: 'Build Azure managed images and Azure Compute Gallery images with Packer azure-arm workflows.',
+    author: 'hashicorp',
+    category: 'Infrastructure & Cloud',
+    tags: ['Packer', 'Azure', 'Image Build'],
+    downloadCount: 0,
+    createdAt: '2026-03-05',
+    source: 'azure-image-builder',
+    githubUrl: 'https://github.com/hashicorp/agent-skills/tree/main/packer/builders/skills/azure-image-builder'
+  },
+  {
+    id: 199,
+    name: 'azure-verified-modules',
+    description: 'Apply Azure Verified Modules requirements and best practices for Terraform module certification and compliance.',
+    author: 'hashicorp',
+    category: 'Infrastructure & Cloud',
+    tags: ['Terraform', 'Azure', 'AVM'],
+    downloadCount: 0,
+    createdAt: '2026-03-05',
+    source: 'azure-verified-modules',
+    githubUrl: 'https://github.com/hashicorp/agent-skills/tree/main/terraform/code-generation/skills/azure-verified-modules'
+  },
+  {
+    id: 200,
+    name: 'new-terraform-provider',
+    description: 'Scaffold a new Terraform provider using Plugin Framework, standard workspace setup, and baseline Go project steps.',
+    author: 'hashicorp',
+    category: 'Infrastructure & Cloud',
+    tags: ['Terraform Provider', 'Plugin Framework', 'Go'],
+    downloadCount: 0,
+    createdAt: '2026-03-05',
+    source: 'new-terraform-provider',
+    githubUrl: 'https://github.com/hashicorp/agent-skills/tree/main/terraform/provider-development/skills/new-terraform-provider'
+  },
+  {
+    id: 201,
+    name: 'provider-actions',
+    description: 'Implement Terraform Provider actions for lifecycle events with schema patterns, progress reporting, and timeout/error handling.',
+    author: 'hashicorp',
+    category: 'Infrastructure & Cloud',
+    tags: ['Terraform Provider', 'Actions', 'Plugin Framework'],
+    downloadCount: 0,
+    createdAt: '2026-03-05',
+    source: 'provider-actions',
+    githubUrl: 'https://github.com/hashicorp/agent-skills/tree/main/terraform/provider-development/skills/provider-actions'
+  },
   // Writing & Research
   {
     id: 138,

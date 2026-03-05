@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-05T14:12:18.995Z",
+  "generatedAt": "2026-03-05T14:15:21.950Z",
   "sourceReadme": "https://raw.githubusercontent.com/BehiSecc/awesome-claude-skills/main/README.md",
   "stats": {
-    "localSkills": 180,
+    "localSkills": 185,
     "discoveredRepoLinks": 89,
     "expandedCandidates": 402,
     "uniqueCandidates": 374,
-    "missing": 250,
+    "missing": 245,
     "urlMismatch": 8,
     "authorMismatch": 5,
     "fetchFailures": 26
@@ -87,6 +87,25 @@
         "onboard": "completed",
         "sync": "completed"
       }
+    },
+    {
+      "id": "batch-005",
+      "type": "import",
+      "size": 5,
+      "status": "completed",
+      "items": [
+        "aws-ami-builder",
+        "azure-image-builder",
+        "azure-verified-modules",
+        "new-terraform-provider",
+        "provider-actions"
+      ],
+      "checklist": {
+        "import": "completed",
+        "audit": "pass",
+        "onboard": "completed",
+        "sync": "completed"
+      }
     }
   ],
   "nextBatchProposals": {
@@ -101,8 +120,8 @@
       "agent-without-context",
       "argument-hint-no-args",
       "atlassian",
-      "aws-ami-builder",
-      "azure-image-builder"
+      "cellxgene-census",
+      "chembl-database"
     ]
   },
   "failures": [
@@ -606,7 +625,7 @@
     },
     {
       "sourceSlug": "aws-ami-builder",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "aws-ami-builder",
         "originUrl": "https://github.com/hashicorp/agent-skills/tree/main/packer/builders/skills/aws-ami-builder",
@@ -614,14 +633,17 @@
         "repo": "hashicorp/agent-skills",
         "repoPath": "packer/builders/skills/aws-ami-builder"
       },
-      "local": null,
+      "local": {
+        "id": 197,
+        "source": "aws-ami-builder",
+        "author": "hashicorp",
+        "githubUrl": "https://github.com/hashicorp/agent-skills/tree/main/packer/builders/skills/aws-ami-builder"
+      },
       "expected": {
         "author": "hashicorp",
         "githubUrl": "https://github.com/hashicorp/agent-skills/tree/main/packer/builders/skills/aws-ami-builder"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "aws-cdk-development",
@@ -737,7 +759,7 @@
     },
     {
       "sourceSlug": "azure-image-builder",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "azure-image-builder",
         "originUrl": "https://github.com/hashicorp/agent-skills/tree/main/packer/builders/skills/azure-image-builder",
@@ -745,18 +767,21 @@
         "repo": "hashicorp/agent-skills",
         "repoPath": "packer/builders/skills/azure-image-builder"
       },
-      "local": null,
+      "local": {
+        "id": 198,
+        "source": "azure-image-builder",
+        "author": "hashicorp",
+        "githubUrl": "https://github.com/hashicorp/agent-skills/tree/main/packer/builders/skills/azure-image-builder"
+      },
       "expected": {
         "author": "hashicorp",
         "githubUrl": "https://github.com/hashicorp/agent-skills/tree/main/packer/builders/skills/azure-image-builder"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "azure-verified-modules",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "azure-verified-modules",
         "originUrl": "https://github.com/hashicorp/agent-skills/tree/main/terraform/code-generation/skills/azure-verified-modules",
@@ -764,14 +789,17 @@
         "repo": "hashicorp/agent-skills",
         "repoPath": "terraform/code-generation/skills/azure-verified-modules"
       },
-      "local": null,
+      "local": {
+        "id": 199,
+        "source": "azure-verified-modules",
+        "author": "hashicorp",
+        "githubUrl": "https://github.com/hashicorp/agent-skills/tree/main/terraform/code-generation/skills/azure-verified-modules"
+      },
       "expected": {
         "author": "hashicorp",
         "githubUrl": "https://github.com/hashicorp/agent-skills/tree/main/terraform/code-generation/skills/azure-verified-modules"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "benchling-integration",
@@ -4259,7 +4287,7 @@
     },
     {
       "sourceSlug": "new-terraform-provider",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "new-terraform-provider",
         "originUrl": "https://github.com/hashicorp/agent-skills/tree/main/terraform/provider-development/skills/new-terraform-provider",
@@ -4267,14 +4295,17 @@
         "repo": "hashicorp/agent-skills",
         "repoPath": "terraform/provider-development/skills/new-terraform-provider"
       },
-      "local": null,
+      "local": {
+        "id": 200,
+        "source": "new-terraform-provider",
+        "author": "hashicorp",
+        "githubUrl": "https://github.com/hashicorp/agent-skills/tree/main/terraform/provider-development/skills/new-terraform-provider"
+      },
       "expected": {
         "author": "hashicorp",
         "githubUrl": "https://github.com/hashicorp/agent-skills/tree/main/terraform/provider-development/skills/new-terraform-provider"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "nextjs-developer",
@@ -5140,7 +5171,7 @@
     },
     {
       "sourceSlug": "provider-actions",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "provider-actions",
         "originUrl": "https://github.com/hashicorp/agent-skills/tree/main/terraform/provider-development/skills/provider-actions",
@@ -5148,14 +5179,17 @@
         "repo": "hashicorp/agent-skills",
         "repoPath": "terraform/provider-development/skills/provider-actions"
       },
-      "local": null,
+      "local": {
+        "id": 201,
+        "source": "provider-actions",
+        "author": "hashicorp",
+        "githubUrl": "https://github.com/hashicorp/agent-skills/tree/main/terraform/provider-development/skills/provider-actions"
+      },
       "expected": {
         "author": "hashicorp",
         "githubUrl": "https://github.com/hashicorp/agent-skills/tree/main/terraform/provider-development/skills/provider-actions"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "provider-resources",
