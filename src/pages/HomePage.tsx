@@ -6,6 +6,7 @@ import { SkillCard } from '../components/SkillCard';
 import { FilterSidebar } from '../components/FilterSidebar';
 import { SkeletonCard } from '../components/SkeletonCard';
 import { ScrollToTop } from '../components/ScrollToTop';
+import { HowItWorks } from '../components/HowItWorks';
 import { JsonLd } from '../components/JsonLd';
 import { useLanguage } from '../hooks/useLanguage';
 import type { Skill, SkillCategory } from '../types/skill';
@@ -199,6 +200,8 @@ export const HomePage = () => {
                     </div>
                 </div>
             </header>
+
+            <HowItWorks />
 
             {/* Main Content: Sidebar + Content Area */}
             <div className="flex max-w-[1600px] mx-auto min-h-[calc(100dvh-400px)]">
