@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-05T09:41:18.666Z",
+  "generatedAt": "2026-03-05T14:03:20.465Z",
   "sourceReadme": "https://raw.githubusercontent.com/BehiSecc/awesome-claude-skills/main/README.md",
   "stats": {
-    "localSkills": 170,
+    "localSkills": 175,
     "discoveredRepoLinks": 89,
     "expandedCandidates": 402,
     "uniqueCandidates": 374,
-    "missing": 264,
+    "missing": 255,
     "urlMismatch": 8,
     "authorMismatch": 5,
     "fetchFailures": 26
@@ -49,6 +49,25 @@
         "onboard": "completed",
         "sync": "completed"
       }
+    },
+    {
+      "id": "batch-003",
+      "type": "import",
+      "size": 5,
+      "status": "completed",
+      "items": [
+        "arboreto",
+        "astropy",
+        "benchling-integration",
+        "bgpt-paper-search",
+        "bindingdb-database"
+      ],
+      "checklist": {
+        "import": "completed",
+        "audit": "pass",
+        "onboard": "completed",
+        "sync": "completed"
+      }
     }
   ],
   "nextBatchProposals": {
@@ -61,10 +80,10 @@
     ],
     "import": [
       "agent-without-context",
-      "arboreto",
       "argument-hint-no-args",
-      "astropy",
-      "atlassian"
+      "atlassian",
+      "aws-ami-builder",
+      "azure-image-builder"
     ]
   },
   "failures": [
@@ -398,7 +417,7 @@
     },
     {
       "sourceSlug": "arboreto",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "arboreto",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/arboreto",
@@ -406,14 +425,17 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/arboreto"
       },
-      "local": null,
+      "local": {
+        "id": 187,
+        "source": "arboreto",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/arboreto"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/arboreto"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "architecture-designer",
@@ -480,7 +502,7 @@
     },
     {
       "sourceSlug": "astropy",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "astropy",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/astropy",
@@ -488,14 +510,17 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/astropy"
       },
-      "local": null,
+      "local": {
+        "id": 188,
+        "source": "astropy",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/astropy"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/astropy"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "atlassian",
@@ -731,7 +756,7 @@
     },
     {
       "sourceSlug": "benchling-integration",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "benchling-integration",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/benchling-integration",
@@ -739,18 +764,21 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/benchling-integration"
       },
-      "local": null,
+      "local": {
+        "id": 189,
+        "source": "benchling-integration",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/benchling-integration"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/benchling-integration"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "bgpt-paper-search",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "bgpt-paper-search",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/bgpt-paper-search",
@@ -758,18 +786,21 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/bgpt-paper-search"
       },
-      "local": null,
+      "local": {
+        "id": 190,
+        "source": "bgpt-paper-search",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/bgpt-paper-search"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/bgpt-paper-search"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "bindingdb-database",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "bindingdb-database",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/bindingdb-database",
@@ -777,14 +808,17 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/bindingdb-database"
       },
-      "local": null,
+      "local": {
+        "id": 191,
+        "source": "bindingdb-database",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/bindingdb-database"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/bindingdb-database"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "biopython",

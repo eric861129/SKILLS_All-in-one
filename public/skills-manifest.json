@@ -1,4 +1,19 @@
 {
+  "atlassian": {
+    "category": "Collaboration & Project Management",
+    "files": [],
+    "fileMeta": {},
+    "tokenEstimate": {
+      "heuristic": 0,
+      "cl100k": 0
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
   "atlassian-mcp": {
     "category": "Collaboration & Project Management",
     "files": [
@@ -7399,6 +7414,231 @@
       "source": "structured"
     }
   },
+  "arboreto": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/algorithms.md",
+      "references/basic_inference.md",
+      "references/distributed_computing.md",
+      "scripts/basic_grn_inference.py"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 6929,
+        "lineCount": 242,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/algorithms.md": {
+        "sizeBytes": 4361,
+        "lineCount": 139,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/basic_inference.md": {
+        "sizeBytes": 3811,
+        "lineCount": 152,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/distributed_computing.md": {
+        "sizeBytes": 6734,
+        "lineCount": 243,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "scripts/basic_grn_inference.py": {
+        "sizeBytes": 2969,
+        "lineCount": 98,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 6202,
+      "cl100k": 5776
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "astropy": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/coordinates.md",
+      "references/cosmology.md",
+      "references/fits.md",
+      "references/tables.md",
+      "references/time.md",
+      "references/units.md",
+      "references/wcs_and_other_modules.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 11534,
+        "lineCount": 330,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/coordinates.md": {
+        "sizeBytes": 7111,
+        "lineCount": 274,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/cosmology.md": {
+        "sizeBytes": 6482,
+        "lineCount": 308,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/fits.md": {
+        "sizeBytes": 8670,
+        "lineCount": 397,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/tables.md": {
+        "sizeBytes": 9385,
+        "lineCount": 490,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/time.md": {
+        "sizeBytes": 9083,
+        "lineCount": 405,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/units.md": {
+        "sizeBytes": 3766,
+        "lineCount": 179,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/wcs_and_other_modules.md": {
+        "sizeBytes": 8515,
+        "lineCount": 374,
+        "ext": "md",
+        "tabKey": "references"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 16138,
+      "cl100k": 18473
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "benchling-integration": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/api_endpoints.md",
+      "references/authentication.md",
+      "references/sdk_reference.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 13063,
+        "lineCount": 479,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/api_endpoints.md": {
+        "sizeBytes": 14226,
+        "lineCount": 884,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/authentication.md": {
+        "sizeBytes": 10124,
+        "lineCount": 380,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/sdk_reference.md": {
+        "sizeBytes": 17624,
+        "lineCount": 775,
+        "ext": "md",
+        "tabKey": "references"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 13758,
+      "cl100k": 13704
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "bgpt-paper-search": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 2872,
+        "lineCount": 82,
+        "ext": "md",
+        "tabKey": "root"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 715,
+      "cl100k": 634
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "bindingdb-database": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/affinity_queries.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 12069,
+        "lineCount": 333,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/affinity_queries.md": {
+        "sizeBytes": 5835,
+        "lineCount": 179,
+        "ext": "md",
+        "tabKey": "references"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 4470,
+      "cl100k": 4830
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
   "chaos-engineer": {
     "category": "Security & Web Testing",
     "files": [
@@ -7711,6 +7951,36 @@
     "tokenEstimate": {
       "heuristic": 5590,
       "cl100k": 4810
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "agent-without-context": {
+    "category": "Utility & Automation",
+    "files": [],
+    "fileMeta": {},
+    "tokenEstimate": {
+      "heuristic": 0,
+      "cl100k": 0
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "argument-hint-no-args": {
+    "category": "Utility & Automation",
+    "files": [],
+    "fileMeta": {},
+    "tokenEstimate": {
+      "heuristic": 0,
+      "cl100k": 0
     },
     "dependencies": {
       "skills": [],

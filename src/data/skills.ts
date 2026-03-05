@@ -1821,6 +1821,66 @@ export const MOCK_SKILLS: Skill[] = [
     source: 'anndata',
     githubUrl: 'https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/anndata'
   },
+  {
+    id: 187,
+    name: 'arboreto',
+    description: 'Infer gene regulatory networks from expression data using GRNBoost2/GENIE3 with scalable distributed computation.',
+    author: 'K-Dense-AI',
+    category: 'Scientific & Research Tools',
+    tags: ['Gene Regulation', 'Transcriptomics', 'Bioinformatics'],
+    downloadCount: 0,
+    createdAt: '2026-03-05',
+    source: 'arboreto',
+    githubUrl: 'https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/arboreto'
+  },
+  {
+    id: 188,
+    name: 'astropy',
+    description: 'Comprehensive astronomy Python library for coordinates, units, FITS, cosmology, time systems, and WCS data analysis.',
+    author: 'K-Dense-AI',
+    category: 'Scientific & Research Tools',
+    tags: ['Astronomy', 'Astrophysics', 'Python'],
+    downloadCount: 0,
+    createdAt: '2026-03-05',
+    source: 'astropy',
+    githubUrl: 'https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/astropy'
+  },
+  {
+    id: 189,
+    name: 'benchling-integration',
+    description: 'Integrate Benchling APIs and SDK for registry, inventory, ELN workflows, and lab data automation.',
+    author: 'K-Dense-AI',
+    category: 'Scientific & Research Tools',
+    tags: ['Benchling', 'ELN', 'Life Sciences'],
+    downloadCount: 0,
+    createdAt: '2026-03-05',
+    source: 'benchling-integration',
+    githubUrl: 'https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/benchling-integration'
+  },
+  {
+    id: 190,
+    name: 'bgpt-paper-search',
+    description: 'Search scientific papers via BGPT MCP and retrieve structured full-text experimental data for evidence synthesis.',
+    author: 'K-Dense-AI',
+    category: 'Scientific & Research Tools',
+    tags: ['Literature Review', 'MCP', 'Scientific Data'],
+    downloadCount: 0,
+    createdAt: '2026-03-05',
+    source: 'bgpt-paper-search',
+    githubUrl: 'https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/bgpt-paper-search'
+  },
+  {
+    id: 191,
+    name: 'bindingdb-database',
+    description: 'Query BindingDB for measured drug-target affinities (Ki/Kd/IC50/EC50) for discovery, SAR, and polypharmacology analysis.',
+    author: 'K-Dense-AI',
+    category: 'Scientific & Research Tools',
+    tags: ['Drug Discovery', 'Binding Affinity', 'Chemoinformatics'],
+    downloadCount: 0,
+    createdAt: '2026-03-05',
+    source: 'bindingdb-database',
+    githubUrl: 'https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/bindingdb-database'
+  },
   // Writing & Research
   {
     id: 138,
