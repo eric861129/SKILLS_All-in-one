@@ -34,6 +34,6 @@
 - [x] Task: Conductor - User Manual Verification 'Phase 4: 多平台整合引導精靈 (Wizards)' (Protocol in workflow.md) (147c551)
 
 ## Phase 5: 最終整合與拋光
-- [ ] Task: 全站內容審計與鏈接校對
-- [ ] Task: 確保與現有設計系統（Anti-AI Slop）高度一致
+- [x] Task: 全站內容審計與鏈接校對 (f0ac954)
+- [x] Task: 確保與現有設計系統（Anti-AI Slop）高度一致 (f0ac954)
 - [ ] Task: Conductor - User Manual Verification 'Phase 5: 最終整合與拋光' (Protocol in workflow.md)
