@@ -27,6 +27,6 @@
 ## Phase 4: Final Polishing
 - [x] Task: Layout Jitter Prevention (b3d2df1)
     - [x] Audit and enforce strict aspect ratios for all dynamic containers.
-- [ ] Task: Global Review
-    - [ ] Ensure no emojis are used as UI icons (replace with Lucide).
+- [x] Task: Global Review (94a9e48)
+    - [x] Ensure no emojis are used as UI icons (replace with Lucide).
 - [ ] Task: Conductor - User Manual Verification 'Phase 4: Final Polishing' (Protocol in workflow.md)
