@@ -121,7 +121,7 @@ export const HomePage = () => {
             <div className="fixed top-6 right-6 z-40">
                 <button
                     onClick={() => setLanguage(language === 'en' ? 'zh' : 'en')}
-                    className="bg-slate-900/80 backdrop-blur-md border border-slate-800 p-2.5 rounded-xl flex items-center gap-2 hover:border-blue-500/50 transition-all duration-[var(--duration-normal)] text-slate-300 hover:text-blue-400 shadow-2xl"
+                    className="glass-surface p-2.5 rounded-xl flex items-center gap-2 hover:border-accent/50 transition-all duration-300 text-slate-300 hover:text-accent shadow-2xl"
                 >
                     <Languages size={20} />
                     <span className="text-xs font-bold uppercase tracking-widest">{language === 'en' ? '中文' : 'EN'}</span>
@@ -129,22 +129,22 @@ export const HomePage = () => {
             </div>
 
             {/* ─── Hero Section (Asymmetric) ─── */}
-            <header className="relative overflow-hidden border-b border-slate-900">
+            <header className="relative overflow-hidden border-b border-slate-900/50">
                 {/* Background */}
-                <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_50%_at_50%_-20%,rgba(59,130,246,0.12),transparent)]" />
+                <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_50%_at_50%_-20%,rgba(99,102,241,0.1),transparent)]" />
 
                 <div className="relative max-w-[1600px] mx-auto px-4 md:px-8 py-16 md:py-24">
                     <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-10 lg:gap-16">
                         {/* Left: Title & Search */}
                         <div className="flex-1 max-w-2xl">
                             <div className="flex items-center gap-3 mb-6">
-                                <div className="p-2.5 bg-blue-500/10 rounded-2xl border border-blue-500/20">
-                                    <Terminal className="w-7 h-7 text-blue-400" />
+                                <div className="p-2.5 bg-accent/10 rounded-2xl border border-accent/20">
+                                    <Terminal className="w-7 h-7 text-accent" />
                                 </div>
                                 <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-slate-500">Open Source</span>
                             </div>
 
-                            <h1 className="text-4xl md:text-6xl font-black tracking-tighter text-white leading-none mb-4">
+                            <h1 className="text-4xl md:text-6xl font-black tracking-tighter text-white leading-tight mb-4">
                                 {language === 'zh' ? 'AI 技能下載中心' : 'AI Skills Library'}
                             </h1>
                             <p className="text-base md:text-lg text-slate-400 leading-relaxed max-w-[55ch] mb-8">
@@ -153,14 +153,14 @@ export const HomePage = () => {
 
                             {/* Search Bar */}
                             <div className="relative w-full group">
-                                <Search className="absolute left-5 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-500 group-focus-within:text-blue-400 transition-colors" />
+                                <Search className="absolute left-5 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-500 group-focus-within:text-accent transition-colors" />
                                 <input
                                     ref={searchInputRef}
                                     type="text"
                                     value={searchQuery}
                                     onChange={(e) => setSearchQuery(e.target.value)}
                                     placeholder={t('searchPlaceholder')}
-                                    className="w-full bg-slate-900/80 backdrop-blur-xl border border-slate-800 rounded-2xl py-4 pl-13 pr-14 focus:outline-none focus:ring-2 focus:ring-blue-500/40 focus:border-blue-500/50 transition-all duration-[var(--duration-normal)] text-slate-100 text-base placeholder:text-slate-600 shadow-2xl"
+                                    className="w-full bg-slate-900/50 backdrop-blur-xl border border-slate-800 rounded-2xl py-4 pl-13 pr-14 focus:outline-none focus:ring-2 focus:ring-accent/40 focus:border-accent/50 transition-all duration-300 text-slate-100 text-base placeholder:text-slate-600 shadow-2xl"
                                 />
                                 <div className="absolute right-5 top-1/2 -translate-y-1/2 flex items-center gap-2">
                                     {searchQuery ? (
@@ -182,11 +182,11 @@ export const HomePage = () => {
                         {/* Right: Stats Cards */}
                         <div className="flex gap-4 lg:gap-5 lg:pb-2">
                             {[
-                                { value: loading ? '—' : skills.length, label: language === 'zh' ? '總技能數' : 'Total Skills', accent: 'text-blue-400' },
+                                { value: loading ? '—' : skills.length, label: language === 'zh' ? '總技能數' : 'Total Skills', accent: 'text-accent' },
                                 { value: categories.length, label: language === 'zh' ? '分類數' : 'Categories', accent: 'text-emerald-400' },
                                 { value: totalDownloads.toLocaleString(), label: language === 'zh' ? '總下載次數' : 'Downloads', accent: 'text-amber-400' },
                             ].map((stat) => (
-                                <div key={stat.label} className="bg-slate-900/60 border border-slate-800 rounded-2xl px-5 py-4 min-w-[110px]">
+                                <div key={stat.label} className="bg-slate-900/40 border border-slate-800/50 rounded-2xl px-5 py-4 min-w-[120px] backdrop-blur-sm">
                                     <div className={`text-2xl md:text-3xl font-black tracking-tight font-mono ${stat.accent}`}>
                                         {stat.value}
                                     </div>
@@ -201,7 +201,7 @@ export const HomePage = () => {
             </header>
 
             {/* Main Content: Sidebar + Content Area */}
-            <div className="flex max-w-[1600px] mx-auto min-h-[calc(100dvh-300px)]">
+            <div className="flex max-w-[1600px] mx-auto min-h-[calc(100dvh-400px)]">
                 {/* Sidebar */}
                 <FilterSidebar
                     authorCounts={authorCounts}
@@ -230,8 +230,8 @@ export const HomePage = () => {
                                 <div className="flex flex-nowrap md:flex-wrap gap-2 overflow-x-auto pb-4 md:pb-0 scrollbar-hide -mx-4 px-4 md:mx-0 md:px-0">
                                     <button
                                         onClick={() => setSelectedCategory('All')}
-                                        className={`whitespace-nowrap px-4 py-2 rounded-xl text-xs font-bold transition-all duration-[var(--duration-normal)] border shrink-0 hover:-translate-y-px ${selectedCategory === 'All'
-                                            ? 'bg-blue-600 border-blue-500 text-white shadow-lg shadow-blue-600/20'
+                                        className={`whitespace-nowrap px-4 py-2 rounded-xl text-xs font-bold transition-all duration-300 border shrink-0 hover:-translate-y-px ${selectedCategory === 'All'
+                                            ? 'bg-accent border-accent/50 text-white shadow-lg shadow-accent/20'
                                             : 'bg-slate-900 border-slate-800 text-slate-400 hover:border-slate-700 hover:text-slate-200'
                                             }`}
                                     >
@@ -241,8 +241,8 @@ export const HomePage = () => {
                                         <button
                                             key={cat}
                                             onClick={() => setSelectedCategory(cat)}
-                                            className={`whitespace-nowrap px-4 py-2 rounded-xl text-xs font-bold transition-all duration-[var(--duration-normal)] border shrink-0 hover:-translate-y-px ${selectedCategory === cat
-                                                ? 'bg-blue-600 border-blue-500 text-white shadow-lg shadow-blue-600/20'
+                                            className={`whitespace-nowrap px-4 py-2 rounded-xl text-xs font-bold transition-all duration-300 border shrink-0 hover:-translate-y-px ${selectedCategory === cat
+                                                ? 'bg-accent border-accent/50 text-white shadow-lg shadow-accent/20'
                                                 : 'bg-slate-900 border-slate-800 text-slate-400 hover:border-slate-700 hover:text-slate-200'
                                                 }`}
                                         >
@@ -259,7 +259,7 @@ export const HomePage = () => {
                                     <button
                                         onClick={() => setShowMobileSidebar(true)}
                                         className={`flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold border transition-all ${activeFilterCount > 0
-                                            ? 'bg-blue-600 border-blue-500 text-white shadow-lg shadow-blue-600/20'
+                                            ? 'bg-accent border-accent/50 text-white shadow-lg shadow-accent/20'
                                             : 'bg-slate-900 border-slate-800 text-slate-400 hover:border-slate-700 hover:text-slate-200'
                                             }`}
                                     >
@@ -280,7 +280,7 @@ export const HomePage = () => {
                                         <button
                                             onClick={() => setSortBy('Popular')}
                                             className={`flex items-center gap-2 px-4 py-1.5 rounded-lg text-xs font-bold transition-all ${sortBy === 'Popular'
-                                                ? 'bg-slate-800 text-blue-400 shadow-sm'
+                                                ? 'bg-slate-800 text-accent shadow-sm'
                                                 : 'text-slate-500 hover:text-slate-300'
                                                 }`}
                                         >
@@ -290,7 +290,7 @@ export const HomePage = () => {
                                         <button
                                             onClick={() => setSortBy('Latest')}
                                             className={`flex items-center gap-2 px-4 py-1.5 rounded-lg text-xs font-bold transition-all ${sortBy === 'Latest'
-                                                ? 'bg-slate-800 text-blue-400 shadow-sm'
+                                                ? 'bg-slate-800 text-accent shadow-sm'
                                                 : 'text-slate-500 hover:text-slate-300'
                                                 }`}
                                         >
@@ -305,7 +305,7 @@ export const HomePage = () => {
 
                     <div className="flex items-center justify-between mb-8">
                         <div className="flex items-center gap-3">
-                            <div className="w-1 h-6 bg-blue-500 rounded-full"></div>
+                            <div className="w-1.5 h-6 bg-accent rounded-full"></div>
                             <h2 className="text-xl md:text-2xl font-black tracking-tight">
                                 {selectedCategory === 'All' ? (language === 'zh' ? '所有技能' : 'All Skills') : selectedCategory}
                                 {searchQuery && <span className="text-slate-500 ml-3 font-medium normal-case text-base">{language === 'zh' ? '搜尋結果' : 'Search Results'}</span>}
@@ -317,13 +317,13 @@ export const HomePage = () => {
                     </div>
 
                     {loading ? (
-                        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+                        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 min-h-[600px]">
                             {Array.from({ length: 9 }).map((_, i) => (
                                 <SkeletonCard key={i} />
                             ))}
                         </div>
                     ) : visibleSkills.length > 0 ? (
-                        <>
+                        <div className="min-h-[600px]">
                             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
                                 {visibleSkills.map((skill, index) => (
                                     <div
@@ -344,7 +344,7 @@ export const HomePage = () => {
                                 <div className="flex justify-center mt-12">
                                     <button
                                         onClick={() => setVisibleCount(prev => prev + ITEMS_PER_PAGE)}
-                                        className="group flex items-center gap-3 bg-slate-900 border border-slate-800 hover:border-slate-700 text-slate-300 hover:text-white px-8 py-3 rounded-2xl text-sm font-bold transition-all duration-[var(--duration-normal)] hover:-translate-y-px active:scale-[0.98]"
+                                        className="group flex items-center gap-3 bg-slate-900 border border-slate-800 hover:border-slate-700 text-slate-300 hover:text-white px-8 py-3 rounded-2xl text-sm font-bold transition-all duration-300 hover:-translate-y-px active:scale-[0.98]"
                                     >
                                         {language === 'zh' ? '載入更多' : 'Load More'}
                                         <span className="text-[10px] font-mono text-slate-500 bg-slate-800 px-2 py-0.5 rounded-md">
@@ -353,9 +353,9 @@ export const HomePage = () => {
                                     </button>
                                 </div>
                             )}
-                        </>
+                        </div>
                     ) : (
-                        <div className="flex flex-col items-center justify-center py-24 md:py-32 text-center bg-slate-900/30 rounded-3xl border border-dashed border-slate-800 px-4">
+                        <div className="flex flex-col items-center justify-center py-24 md:py-32 text-center bg-slate-900/30 rounded-3xl border border-dashed border-slate-800 px-4 min-h-[400px]">
                             <div className="p-5 bg-slate-800/50 rounded-full mb-6 text-slate-600">
                                 <Search className="w-10 h-10 md:w-12 md:h-12" />
                             </div>
@@ -369,7 +369,7 @@ export const HomePage = () => {
                                     setSelectedCategory('All');
                                     clearSidebarFilters();
                                 }}
-                                className="mt-8 text-blue-400 hover:text-blue-300 font-bold uppercase tracking-[0.2em] text-[10px] md:text-xs flex items-center gap-2 transition-colors border border-blue-400/20 px-6 py-2.5 rounded-xl hover:bg-blue-400/5"
+                                className="mt-8 text-accent hover:text-indigo-300 font-bold uppercase tracking-[0.2em] text-[10px] md:text-xs flex items-center gap-2 transition-colors border border-accent/20 px-6 py-2.5 rounded-xl hover:bg-accent/5"
                             >
                                 {language === 'zh' ? '清除所有篩選條件' : 'Clear All Filters'}
                             </button>
@@ -379,8 +379,8 @@ export const HomePage = () => {
             </div>
 
             {/* Footer */}
-            <footer className="border-t border-slate-900 py-16 px-4 text-center mt-20">
-                <div className="p-3 bg-slate-900 rounded-2xl w-fit mx-auto mb-6 border border-slate-800">
+            <footer className="border-t border-slate-900/50 py-16 px-4 text-center mt-20">
+                <div className="p-3 bg-slate-900/50 rounded-2xl w-fit mx-auto mb-6 border border-slate-800/50">
                     <Terminal className="w-6 h-6 text-slate-500" />
                 </div>
                 <p className="text-slate-600 text-xs md:text-sm font-medium tracking-wide">
@@ -391,7 +391,7 @@ export const HomePage = () => {
                         href="https://github.com/eric861129/SKILLS_All-in-one/issues/new?template=submit_skill.md"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-500 text-white px-5 py-2.5 rounded-xl text-xs font-bold uppercase tracking-widest transition-all shadow-lg shadow-blue-600/20 hover:shadow-blue-500/30 active:scale-95"
+                        className="inline-flex items-center gap-2 bg-accent hover:bg-indigo-500 text-white px-5 py-2.5 rounded-xl text-xs font-bold uppercase tracking-widest transition-all shadow-lg shadow-accent/20 hover:shadow-indigo-500/30 active:scale-95"
                     >
                         <Plus className="w-4 h-4" />
                         {t('submitSkill')}
