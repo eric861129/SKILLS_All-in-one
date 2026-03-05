@@ -10,8 +10,8 @@
 - [x] Task: Conductor - User Manual Verification 'Phase 1: 基礎架構與路由設定' (Protocol in workflow.md) (977b5cb)
 
 ## Phase 2: 知識庫內容與 Wiki UI 開發
-- [ ] Task: 撰寫核心文檔內容
-    - [ ] 建立 `what-is-a-skill.md`, `supported-agents.md`, `security.md`。
+- [x] Task: 撰寫核心文檔內容 (303c662)
+    - [x] 建立 `what-is-a-skill.md`, `supported-agents.md`, `security.md`。
 - [ ] Task: 優化 Wiki 閱讀體驗
     - [ ] 實作目錄索引 (TOC) 自動生成功能。
     - [ ] 確保行動端導覽順暢（抽屜式選單）。
