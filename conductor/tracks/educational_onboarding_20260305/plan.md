@@ -1,13 +1,13 @@
 # Implementation Plan: 教育引導與「什麼是技能？」 (Phase 2)
 
-## Phase 1: 基礎架構與路由設定
+## Phase 1: 基礎架構與路由設定 [checkpoint: 977b5cb]
 - [x] Task: 設定路由與文檔系統基礎 (d92850b)
     - [x] 新增 `/docs` 相關路由設定 (`src/App.tsx`)。
     - [x] 建立 `src/data/doc/` 目錄並配置 Markdown 載入邏輯。
 - [x] Task: 建立 Wiki 共用佈局組件 (7a85bad)
     - [x] 實作包含側邊導覽列的 `DocsLayout`。
     - [x] 實作 Markdown 渲染組件。
-- [ ] Task: Conductor - User Manual Verification 'Phase 1: 基礎架構與路由設定' (Protocol in workflow.md)
+- [x] Task: Conductor - User Manual Verification 'Phase 1: 基礎架構與路由設定' (Protocol in workflow.md) (977b5cb)
 
 ## Phase 2: 知識庫內容與 Wiki UI 開發
 - [ ] Task: 撰寫核心文檔內容
