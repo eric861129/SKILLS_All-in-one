@@ -1,0 +1,32 @@
+# Implementation Plan: UI/UX Refinement
+
+## Phase 1: Foundation & Typography [checkpoint: d2dd001]
+- [x] Task: Install Dependencies (94e3507)
+    - [x] `npm install framer-motion clsx tailwind-merge`
+- [x] Task: Update Typography System (3b845ec)
+    - [x] Configure `tailwind.config.js` with `Outfit` and `JetBrains Mono`.
+    - [x] Update `index.css` with global font rules.
+- [x] Task: Conductor - User Manual Verification 'Phase 1: Foundation & Typography' (Protocol in workflow.md)
+
+## Phase 2: Design System Refinement [checkpoint: 8b0bc9c]
+- [x] Task: Define Color Palette & Glassmorphism (4a0c274)
+    - [x] Update Tailwind theme with "Deep Sea/Obsidian" accents.
+    - [x] Create reusable glassmorphism utility classes.
+- [x] Task: Custom Scrollbar (86db940)
+    - [x] Implement a minimal, dark-themed scrollbar in CSS.
+- [x] Task: Conductor - User Manual Verification 'Phase 2: Design System Refinement' (Protocol in workflow.md)
+
+## Phase 3: Component Interactions [checkpoint: dbe959f]
+- [x] Task: Tactile SkillCard (71e54bb)
+    - [x] Refactor `SkillCard.tsx` to use `framer-motion`.
+    - [x] Add spring-based hover and click effects.
+- [x] Task: Skeleton Loaders (0a2084e)
+    - [x] Improve `SkeletonCard.tsx` with refined animations.
+- [x] Task: Conductor - User Manual Verification 'Phase 3: Component Interactions' (Protocol in workflow.md)
+
+## Phase 4: Final Polishing [checkpoint: ed5d18f]
+- [x] Task: Layout Jitter Prevention (b3d2df1)
+    - [x] Audit and enforce strict aspect ratios for all dynamic containers.
+- [x] Task: Global Review (94a9e48)
+    - [x] Ensure no emojis are used as UI icons (replace with Lucide).
+- [x] Task: Conductor - User Manual Verification 'Phase 4: Final Polishing' (ed5d18f)
