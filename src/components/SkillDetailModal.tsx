@@ -1,11 +1,13 @@
 import { useState, useEffect, useMemo, useCallback } from 'react';
 import Markdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 import {
     X, Download, Github, User, Calendar, Tag,
     Folder, FolderOpen, FileText, ChevronRight, ChevronDown, Loader2
 } from 'lucide-react';
 import type { Skill, SkillCategory } from '../types/skill';
 import { useLanguage } from '../hooks/useLanguage';
+import { getLocalized } from '../utils/i18n';
 
 interface SkillDetailModalProps {
     skill: Skill;
@@ -155,10 +157,8 @@ export const SkillDetailModal = ({ skill, onClose, onDownload }: SkillDetailModa
     const [loadingFiles, setLoadingFiles] = useState(true);
     const [loadingContent, setLoadingContent] = useState(false);
 
-    const displayName = language === 'zh' && skill.nameZh
-        ? (skill.nameZh.includes(skill.name) ? skill.nameZh : `${skill.nameZh} (${skill.name})`)
-        : skill.name;
-    const displayDescription = language === 'zh' && skill.descriptionZh ? skill.descriptionZh : skill.description;
+    const displayName = getLocalized(skill, 'name', language);
+    const displayDescription = getLocalized(skill, 'description', language);
 
     const GITHUB_REPO_ROOT = 'https://github.com/eric861129/SKILLS_All-in-one/tree/main/public/SKILLS';
     const githubUrl = skill.githubUrl || `${GITHUB_REPO_ROOT}/${encodeURIComponent(skill.category)}/${encodeURIComponent(skill.source)}`;
@@ -365,8 +365,8 @@ export const SkillDetailModal = ({ skill, onClose, onDownload }: SkillDetailModa
                                     <span className="text-xs font-bold text-slate-400 uppercase tracking-wider">{selectedFile}</span>
                                 </div>
                                 {isMarkdown ? (
-                                    <div className="prose prose-invert prose-sm max-w-none prose-headings:text-slate-100 prose-p:text-slate-300 prose-a:text-blue-400 prose-code:text-emerald-400 prose-code:bg-slate-800 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded prose-pre:bg-slate-900 prose-pre:border prose-pre:border-slate-800 prose-strong:text-slate-200 prose-li:text-slate-300 prose-blockquote:border-blue-500/50 prose-blockquote:text-slate-400">
-                                        <Markdown>{fileContent}</Markdown>
+                                    <div className="prose prose-invert prose-sm max-w-none">
+                                        <Markdown components={markdownComponents} remarkPlugins={[remarkGfm]}>{fileContent}</Markdown>
                                     </div>
                                 ) : (
                                     <pre className="text-sm text-slate-300 bg-slate-900 border border-slate-800 rounded-xl p-4 overflow-x-auto whitespace-pre-wrap font-mono leading-relaxed">

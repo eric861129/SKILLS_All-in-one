@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import Markdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 import type { Components } from 'react-markdown';
 import { useParams, Link } from 'react-router-dom';
 import {
@@ -30,6 +31,7 @@ import { useLanguage } from '../hooks/useLanguage';
 import { downloadAndZipSkill } from '../utils/downloadSkill';
 import { useToast } from '../components/Toast';
 import { GiscusComments } from '../components/GiscusComments';
+import { getLocalized } from '../utils/i18n';
 import type { Skill, SkillCategory } from '../types/skill';
 import type { SkillManifestEntry, SkillsManifest } from '../types/manifest';
 
@@ -638,10 +640,10 @@ export const SkillPage = () => {
             setDownloadCount((prev) => prev + 1);
             fetch(`${API_BASE_URL}/increment-download?id=${s.id}`, { method: 'POST' }).catch(() => {});
             await downloadAndZipSkill(s);
-            showToast(language === 'zh' ? `${s.nameZh || s.name} \u4e0b\u8f09\u6210\u529f` : `${s.name} downloaded successfully`, 'success');
+            showToast(t('downloadSuccess', { name: getLocalized(s, 'name', language) }), 'success');
         } catch (err) {
             console.error('Download failed:', err);
-            showToast(language === 'zh' ? '\u4e0b\u8f09\u5931\u6557\uff0c\u8acb\u7a0d\u5f8c\u518d\u8a66' : 'Download failed, please try again', 'error');
+            showToast(t('downloadFailed'), 'error');
         }
     };
 
@@ -656,9 +658,9 @@ export const SkillPage = () => {
         }
         try {
             await copyText(fileContent);
-            showToast(language === 'zh' ? `\u5df2\u8907\u88fd ${selectedFile}` : `${selectedFile} copied`, 'success');
+            showToast(t('copySuccess', { name: selectedFile }), 'success');
         } catch {
-            showToast(language === 'zh' ? '\u8907\u88fd\u5931\u6557' : 'Copy failed', 'error');
+            showToast(t('copyFailed'), 'error');
         }
     }, [fileBinaryMeta, fileContent, language, selectedFile, showToast]);
 
@@ -682,14 +684,14 @@ export const SkillPage = () => {
             return (
                 <div className="flex items-center justify-center h-full text-slate-500">
                     <Loader2 className="w-5 h-5 animate-spin mr-2" />
-                    <span>{language === 'zh' ? '\u8f09\u5165\u6a94\u6848\u4e2d...' : 'Loading file...'}</span>
+                    <span>{t('loadingFile')}</span>
                 </div>
             );
         }
         if (!selectedFile) {
             return (
                 <div className="flex items-center justify-center h-full text-slate-600">
-                    <p>{language === 'zh' ? '\u8acb\u9078\u64c7\u6a94\u6848' : 'Select a file to preview'}</p>
+                    <p>{t('selectFile')}</p>
                 </div>
             );
         }
@@ -699,11 +701,11 @@ export const SkillPage = () => {
                 <div className="h-full rounded-xl border border-slate-800 bg-slate-950/50 p-6 flex items-center justify-center">
                     <div className="max-w-lg text-center">
                         <h4 className="text-slate-100 text-lg font-semibold mb-2">
-                            {language === 'zh' ? '\u4e8c\u9032\u4f4d\u6a94\u6848\u7121\u6cd5\u7dda\u4e0a\u9810\u89bd' : 'Binary file cannot be previewed as text'}
+                            {t('binaryNotPreviewable')}
                         </h4>
                         <p className="text-slate-400 text-sm mb-2">
                             {language === 'zh'
-                                ? '\u9019\u500b\u6a94\u6848\u5c6c\u65bc\u58d3\u7e2e\u6216\u4e8c\u9032\u4f4d\u683c\u5f0f\uff0c\u7121\u6cd5\u4ee5\u7a0b\u5f0f\u78bc\u6aa2\u8996\u5668\u986f\u793a\u3002'
+                                ? '這個檔案屬於壓縮或二進位格式，無法以程式碼檢視器顯示。'
                                 : 'This file is compressed or binary and cannot be rendered in the code viewer.'}
                         </p>
                         <p className="text-xs text-slate-500 font-mono">
@@ -730,7 +732,7 @@ export const SkillPage = () => {
                             </pre>
                         </details>
                     )}
-                    <Markdown components={markdownComponents}>{body}</Markdown>
+                    <Markdown components={markdownComponents} remarkPlugins={[remarkGfm]}>{body}</Markdown>
                 </div>
             );
         }
@@ -770,10 +772,10 @@ export const SkillPage = () => {
                 <div className="p-4 bg-slate-900 rounded-2xl border border-slate-800">
                     <Terminal className="w-12 h-12 text-slate-500" />
                 </div>
-                <h1 className="text-2xl font-bold text-slate-200">{language === 'zh' ? '\u627e\u4e0d\u5230\u6280\u80fd' : 'Skill Not Found'}</h1>
+                <h1 className="text-2xl font-bold text-slate-200">{t('skillNotFound')}</h1>
                 <p className="text-slate-500">
                     {language === 'zh'
-                        ? '\u9019\u500b\u6280\u80fd\u53ef\u80fd\u5df2\u79fb\u9664\uff0c\u6216\u4f60\u8f38\u5165\u4e86\u932f\u8aa4\u7684 ID\u3002'
+                        ? '這個技能可能已移除，或你輸入了錯誤的 ID。'
                         : 'This skill may have been removed or the ID is incorrect.'}
                 </p>
                 <Link
@@ -781,19 +783,14 @@ export const SkillPage = () => {
                     className="text-blue-400 hover:text-blue-300 font-bold uppercase tracking-widest text-xs flex items-center gap-2 border border-blue-400/20 px-5 py-2.5 rounded-xl hover:bg-blue-400/5 transition-colors"
                 >
                     <ArrowLeft className="w-4 h-4" />
-                    {language === 'zh' ? '\u56de\u5230\u9996\u9801' : 'Back to Home'}
+                    {t('backToHome')}
                 </Link>
             </div>
         );
     }
 
-    const displayName =
-        language === 'zh' && skill.nameZh
-            ? skill.nameZh.includes(skill.name)
-                ? skill.nameZh
-                : `${skill.nameZh}`
-            : skill.name;
-    const displayDescription = language === 'zh' && skill.descriptionZh ? skill.descriptionZh : skill.description;
+    const displayName = getLocalized(skill, 'name', language);
+    const displayDescription = getLocalized(skill, 'description', language);
 
     return (
         <div className="min-h-screen bg-slate-950 text-white">
@@ -804,7 +801,7 @@ export const SkillPage = () => {
                         className="flex items-center gap-2 text-slate-400 hover:text-blue-400 transition-colors text-sm font-medium"
                     >
                         <ArrowLeft className="w-4 h-4" />
-                        {language === 'zh' ? '\u56de\u5230\u6280\u80fd\u5eab' : 'Back to Library'}
+                        {t('backToLibrary')}
                     </Link>
                 </div>
             </nav>
@@ -840,7 +837,7 @@ export const SkillPage = () => {
                                 className="bg-slate-800 hover:bg-slate-700 text-slate-300 p-3 rounded-xl transition-all active:scale-95 border border-slate-700 hover:border-slate-500 flex items-center gap-2 px-5"
                             >
                                 <Github className="w-5 h-5" />
-                                <span className="text-sm font-bold">{skill.githubUrl ? (language === 'zh' ? '\u4f86\u6e90' : 'Source') : 'Repo'}</span>
+                                <span className="text-sm font-bold">{skill.githubUrl ? t('originalSource') : t('viewInRepo')}</span>
                             </a>
                             <button
                                 onClick={() => handleDownload(skill)}
@@ -873,7 +870,7 @@ export const SkillPage = () => {
                                     </span>
                                 </div>
                                 <p className="text-xs text-slate-500 pt-1">
-                                    {language === 'zh' ? '\u4ee5\u4e0a\u70ba\u4f30\u7b97\u503c\uff0c\u5be6\u969b token \u53ef\u80fd\u4f9d\u6a21\u578b\u800c\u7570\u3002' : 'Values are estimates and may vary by model.'}
+                                    {t('valuesEstimates')}
                                 </p>
                             </div>
                         </div>
@@ -911,7 +908,7 @@ export const SkillPage = () => {
                                         </div>
                                     ) : (
                                         <p className="text-sm text-slate-600 px-3 py-8 text-center">
-                                            {language === 'zh' ? '\u6b64\u6280\u80fd\u6c92\u6709\u53ef\u9810\u89bd\u6a94\u6848' : 'No files available for this skill'}
+                                            {t('noFilesFound')}
                                         </p>
                                     )}
                                 </div>
@@ -927,7 +924,7 @@ export const SkillPage = () => {
                                                 className="px-3 py-1.5 text-xs font-bold rounded-lg border border-slate-700 text-slate-300 hover:text-white hover:border-slate-500 disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-1.5"
                                             >
                                                 <Copy className="w-3.5 h-3.5" />
-                                                {language === 'zh' ? '\u8907\u88fd\u6a94\u6848' : 'Copy File'}
+                                                {t('copyFile')}
                                             </button>
                                             <button
                                                 type="button"
@@ -951,7 +948,7 @@ export const SkillPage = () => {
                     <div className="mb-12">
                         <div className="flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest text-slate-500 mb-6">
                             <ImageIcon className="w-4 h-4" />
-                            {language === 'zh' ? '\u9810\u89bd\u5716' : 'Preview'}
+                            {t('preview')}
                         </div>
                         <div className="flex overflow-x-auto gap-4 pb-4 snap-x snap-mandatory scrollbar-thin scrollbar-thumb-slate-700 scrollbar-track-transparent">
                             {skill.previewImages.map((img, idx) => (
@@ -975,7 +972,7 @@ export const SkillPage = () => {
                             <User className="w-5 h-5 text-blue-400" />
                         </div>
                         <div>
-                            <p className="text-[10px] font-bold uppercase tracking-widest text-slate-500 mb-1">{language === 'zh' ? '\u4f5c\u8005' : 'Author'}</p>
+                            <p className="text-[10px] font-bold uppercase tracking-widest text-slate-500 mb-1">{t('author')}</p>
                             <p className="text-sm font-semibold text-slate-200 group-hover:text-blue-400 transition-colors">{skill.author}</p>
                         </div>
                     </Link>
@@ -984,7 +981,7 @@ export const SkillPage = () => {
                             <Download className="w-5 h-5 text-emerald-400" />
                         </div>
                         <div>
-                            <p className="text-[10px] font-bold uppercase tracking-widest text-slate-500 mb-1">{language === 'zh' ? '\u4e0b\u8f09\u6b21\u6578' : 'Downloads'}</p>
+                            <p className="text-[10px] font-bold uppercase tracking-widest text-slate-500 mb-1">{t('downloads')}</p>
                             <p className="text-sm font-semibold text-slate-200">{downloadCount.toLocaleString()}</p>
                         </div>
                     </div>
@@ -993,7 +990,7 @@ export const SkillPage = () => {
                             <Calendar className="w-5 h-5 text-amber-400" />
                         </div>
                         <div>
-                            <p className="text-[10px] font-bold uppercase tracking-widest text-slate-500 mb-1">{language === 'zh' ? '\u5efa\u7acb\u65e5\u671f' : 'Created'}</p>
+                            <p className="text-[10px] font-bold uppercase tracking-widest text-slate-500 mb-1">{t('created')}</p>
                             <p className="text-sm font-semibold text-slate-200">{skill.createdAt}</p>
                         </div>
                     </div>
@@ -1002,7 +999,7 @@ export const SkillPage = () => {
                 <div className="mb-10">
                     <h2 className="text-[10px] font-bold uppercase tracking-widest text-slate-500 mb-4 flex items-center gap-2">
                         <Tag className="w-3.5 h-3.5" />
-                        {language === 'zh' ? '\u6a19\u7c64' : 'Tags'}
+                        {t('tags')}
                     </h2>
                     <div className="flex flex-wrap gap-2">
                         {skill.tags?.map((tag) => (
@@ -1020,16 +1017,11 @@ export const SkillPage = () => {
                 {relatedSkills.length > 0 && (
                     <div>
                         <h2 className="text-[10px] font-bold uppercase tracking-widest text-slate-500 mb-6 flex items-center gap-2">
-                            {language === 'zh' ? '\u76f8\u95dc\u6280\u80fd' : 'Related Skills'}
+                            {t('relatedSkills')}
                         </h2>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                             {relatedSkills.map((relatedSkill) => {
-                                const relatedName =
-                                    language === 'zh' && relatedSkill.nameZh
-                                        ? relatedSkill.nameZh.includes(relatedSkill.name)
-                                            ? relatedSkill.nameZh
-                                            : `${relatedSkill.nameZh}`
-                                        : relatedSkill.name;
+                                const relatedName = getLocalized(relatedSkill, 'name', language);
                                 return (
                                     <Link
                                         key={relatedSkill.id}

@@ -12,7 +12,7 @@ export const AuthorPage = () => {
     const { name } = useParams<{ name: string }>();
     const navigate = useNavigate();
     const { skills, loading } = useSkills();
-    const { language } = useLanguage();
+    const { t } = useLanguage();
 
     // Filter skills exactly by author
     const authorSkills = useMemo(() => {
@@ -41,7 +41,7 @@ export const AuthorPage = () => {
                         className="flex items-center gap-2 text-slate-400 hover:text-blue-400 transition-colors text-sm font-medium"
                     >
                         <ArrowLeft className="w-4 h-4" />
-                        {language === 'zh' ? '返回技能庫' : 'Back to Library'}
+                        {t('backToLibrary')}
                     </Link>
                 </div>
             </nav>
@@ -59,9 +59,7 @@ export const AuthorPage = () => {
                     </h1>
 
                     <p className="text-slate-400 text-lg max-w-2xl mb-8">
-                        {language === 'zh'
-                            ? `探索 ${name} 開發的高品質 Agent 技能。這些工具幫助您更高效地完成各式開發任務。`
-                            : `Explore high-quality Agent skills developed by ${name}. These tools help you build and automate more efficiently.`}
+                        {t('authorIntro', { name })}
                     </p>
 
                     <div className="flex gap-4">
@@ -70,7 +68,7 @@ export const AuthorPage = () => {
                                 {loading ? '—' : authorSkills.length}
                             </div>
                             <div className="text-[10px] font-bold uppercase tracking-[0.15em] text-slate-500 mt-1">
-                                {language === 'zh' ? '開發技能數' : 'Skills created'}
+                                {t('skillsCreated')}
                             </div>
                         </div>
                         <div className="bg-slate-900/60 border border-slate-800 rounded-2xl px-6 py-4">
@@ -78,7 +76,7 @@ export const AuthorPage = () => {
                                 {loading ? '—' : totalDownloads.toLocaleString()}
                             </div>
                             <div className="text-[10px] font-bold uppercase tracking-[0.15em] text-slate-500 mt-1">
-                                {language === 'zh' ? '總下載量' : 'Total downloads'}
+                                {t('downloads')}
                             </div>
                         </div>
                     </div>
@@ -90,7 +88,7 @@ export const AuthorPage = () => {
                 <div className="flex items-center gap-3 mb-8">
                     <div className="w-1 h-6 bg-blue-500 rounded-full"></div>
                     <h2 className="text-xl md:text-2xl font-black tracking-tight">
-                        {language === 'zh' ? '作品集' : 'Portfolio'}
+                        {t('portfolio')}
                     </h2>
                 </div>
 
@@ -118,8 +116,8 @@ export const AuthorPage = () => {
                 ) : (
                     <div className="flex flex-col items-center justify-center py-24 text-center bg-slate-900/30 rounded-3xl border border-dashed border-slate-800">
                         <Terminal className="w-12 h-12 text-slate-600 mb-4" />
-                        <h3 className="text-xl font-bold text-slate-200 mb-2">{language === 'zh' ? '查無技能' : 'No skills found'}</h3>
-                        <p className="text-slate-500">{language === 'zh' ? '這位作者目前沒有公開的技能。' : 'This author has no public skills yet.'}</p>
+                        <h3 className="text-xl font-bold text-slate-200 mb-2">{t('noResults')}</h3>
+                        <p className="text-slate-500">{t('noSkillsCreated')}</p>
                     </div>
                 )}
             </main>

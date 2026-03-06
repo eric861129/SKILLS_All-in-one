@@ -1008,7 +1008,7 @@ export const AgentWizard = () => {
       {/* Sidebar Navigation */}
       <aside className="w-full lg:w-72 shrink-0 space-y-2 sticky top-24">
         <div className="px-4 mb-6">
-           <h4 className="text-[10px] font-black uppercase tracking-[0.3em] text-slate-600 mb-2">Select Agent</h4>
+           <h4 className="text-[10px] font-black uppercase tracking-[0.3em] text-slate-600 mb-2">{t('selectAgent')}</h4>
            <div className="h-1 w-8 bg-accent/20 rounded-full"></div>
         </div>
         {platforms.map((platform) => (
@@ -1058,7 +1058,7 @@ export const AgentWizard = () => {
            
            <div className="shrink-0 flex items-center gap-4 px-6 py-3 rounded-2xl bg-emerald-500/5 border border-emerald-500/10 h-fit">
               <div className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-              <span className="text-[10px] font-black text-emerald-500/70 uppercase tracking-widest">Protocol Verified</span>
+              <span className="text-[10px] font-black text-emerald-500/70 uppercase tracking-widest">{t('protocolVerified')}</span>
            </div>
         </div>
 

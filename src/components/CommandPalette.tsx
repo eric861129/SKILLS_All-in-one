@@ -4,6 +4,7 @@ import Fuse from 'fuse.js';
 import { Search, Command, X, Terminal } from 'lucide-react';
 import { MOCK_SKILLS } from '../data/skills';
 import { useLanguage } from '../hooks/useLanguage';
+import { getLocalized } from '../utils/i18n';
 
 export const CommandPalette = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -11,7 +12,7 @@ export const CommandPalette = () => {
     const [selectedIndex, setSelectedIndex] = useState(0);
     const inputRef = useRef<HTMLInputElement>(null);
     const navigate = useNavigate();
-    const { language } = useLanguage();
+    const { language, t } = useLanguage();
 
     const fuse = useMemo(() => {
         return new Fuse(MOCK_SKILLS, {
@@ -108,7 +109,7 @@ export const CommandPalette = () => {
                             setQuery(e.target.value);
                             setSelectedIndex(0);
                         }}
-                        placeholder={language === 'zh' ? '搜尋技能、標籤或作者...' : 'Search skills, tags, or authors...'}
+                        placeholder={t('searchPlaceholder')}
                         className="flex-1 bg-transparent text-slate-100 text-lg placeholder:text-slate-500 focus:outline-none"
                     />
                     <div className="flex items-center gap-2 ml-4">
@@ -125,13 +126,13 @@ export const CommandPalette = () => {
                 <div className="max-h-[60vh] overflow-y-auto p-2">
                     {results.length === 0 ? (
                         <div className="p-8 text-center text-slate-500 text-sm">
-                            {language === 'zh' ? '找不到相關技能' : 'No skills found'}
+                            {t('noResults')}
                         </div>
                     ) : (
                         <div className="flex flex-col gap-1">
                             {results.map((skill, index) => {
                                 const isSelected = index === selectedIndex;
-                                const displayName = language === 'zh' && skill.nameZh ? skill.nameZh : skill.name;
+                                const displayName = getLocalized(skill, 'name', language);
 
                                 return (
                                     <button

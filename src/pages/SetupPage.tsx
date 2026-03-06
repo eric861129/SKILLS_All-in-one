@@ -17,7 +17,7 @@ export const SetupPage = () => {
                             <ArrowLeft size={18} className="text-slate-400 group-hover:text-accent" />
                         </div>
                         <span className="text-[10px] font-black uppercase tracking-[0.2em] text-slate-500 group-hover:text-white transition-colors">
-                            {language === 'zh' ? '返回索引' : 'Back to Registry'}
+                            {t('backToRegistry')}
                         </span>
                     </Link>
                     

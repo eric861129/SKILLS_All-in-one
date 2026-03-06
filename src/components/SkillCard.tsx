@@ -5,6 +5,7 @@ import { clsx, type ClassValue } from 'clsx';
 import { twMerge } from 'tailwind-merge';
 import type { Skill, SkillCategory } from '../types/skill';
 import { useLanguage } from '../hooks/useLanguage';
+import { getLocalized } from '../utils/i18n';
 
 /**
  * Utility to merge tailwind classes safely
@@ -44,10 +45,8 @@ export const SkillCard = ({ skill, onPreview }: SkillCardProps) => {
     }
   };
 
-  const displayName = language === 'zh' && skill.nameZh
-    ? (skill.nameZh.includes(skill.name) ? skill.nameZh : `${skill.nameZh} (${skill.name})`)
-    : skill.name;
-  const displayDescription = language === 'zh' && skill.descriptionZh ? skill.descriptionZh : skill.description;
+  const displayName = getLocalized(skill, 'name', language);
+  const displayDescription = getLocalized(skill, 'description', language);
 
   const visibleTags = skill.tags?.slice(0, MAX_VISIBLE_TAGS) || [];
   const hiddenTagCount = (skill.tags?.length || 0) - MAX_VISIBLE_TAGS;

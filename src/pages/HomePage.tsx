@@ -221,7 +221,7 @@ export const HomePage = () => {
                     className="glass-surface p-2.5 rounded-xl flex items-center gap-2 hover:border-accent/50 transition-all duration-300 text-slate-300 hover:text-accent shadow-2xl"
                 >
                     <Languages size={20} />
-                    <span className="text-xs font-bold uppercase tracking-widest">{language === 'en' ? '\u4e2d\u6587' : 'EN'}</span>
+                    <span className="text-xs font-bold uppercase tracking-widest">{language === 'en' ? '中文' : 'EN'}</span>
                 </button>
             </div>
 
@@ -311,9 +311,9 @@ export const HomePage = () => {
                         {/* Right: Stats Cards */}
                         <div className="flex gap-4 lg:gap-5 lg:pb-2">
                             {[
-                                { value: loading ? '...' : skills.length, label: language === 'zh' ? '\u7e3d\u6280\u80fd\u6578' : 'Total Skills', accent: 'text-accent' },
-                                { value: categories.length, label: language === 'zh' ? '\u5206\u985e' : 'Categories', accent: 'text-emerald-400' },
-                                { value: totalDownloads.toLocaleString(), label: language === 'zh' ? '\u7e3d\u4e0b\u8f09\u91cf' : 'Downloads', accent: 'text-amber-400' },
+                                { value: loading ? '...' : skills.length, label: t('totalSkills'), accent: 'text-accent' },
+                                { value: categories.length, label: t('categories'), accent: 'text-emerald-400' },
+                                { value: totalDownloads.toLocaleString(), label: t('downloads'), accent: 'text-amber-400' },
                             ].map((stat) => (
                                 <div key={stat.label} className="bg-slate-900/40 border border-slate-800/50 rounded-2xl px-5 py-4 min-w-[120px] backdrop-blur-sm">
                                     <div className={`text-2xl md:text-3xl font-black tracking-tight font-mono ${stat.accent}`}>
@@ -356,7 +356,7 @@ export const HomePage = () => {
                             <div className="flex-grow">
                                 <div className="flex items-center gap-3 text-slate-400 mb-4">
                                     <Filter className="w-4 h-4" />
-                                    <span className="text-[10px] font-bold uppercase tracking-[0.2em]">{language === 'zh' ? '\u4f9d\u5206\u985e\u7be9\u9078' : 'Filter by Category'}</span>
+                                    <span className="text-[10px] font-bold uppercase tracking-[0.2em]">{t('filterByCategory')}</span>
                                 </div>
                                 <div className="flex flex-nowrap md:flex-wrap gap-2 overflow-x-auto pb-4 md:pb-0 scrollbar-hide -mx-4 px-4 md:mx-0 md:px-0">
                                     <button
@@ -405,7 +405,7 @@ export const HomePage = () => {
                                 <div>
                                     <div className="flex items-center gap-3 text-slate-400 mb-4">
                                         <ArrowUpDown className="w-4 h-4" />
-                                        <span className="text-[10px] font-bold uppercase tracking-[0.2em]">{language === 'zh' ? '??????' : 'Sort By'}</span>
+                                        <span className="text-[10px] font-bold uppercase tracking-[0.2em]">{t('sortBy')}</span>
                                     </div>
                                     <div className="bg-slate-900 p-1 rounded-xl border border-slate-800 flex">
                                         <button
@@ -438,8 +438,8 @@ export const HomePage = () => {
                         <div className="flex items-center gap-3">
                             <div className="w-1.5 h-6 bg-accent rounded-full"></div>
                             <h2 className="text-xl md:text-2xl font-black tracking-tight">
-                                {selectedCategory === 'All' ? (language === 'zh' ? '\u6240\u6709\u6280\u80fd' : 'All Skills') : selectedCategory}
-                                {searchQuery && <span className="text-slate-500 ml-3 font-medium normal-case text-base">{language === 'zh' ? '?雓?????' : 'Search Results'}</span>}
+                                {selectedCategory === 'All' ? t('allSkills') : selectedCategory}
+                                {searchQuery && <span className="text-slate-500 ml-3 font-medium normal-case text-base">{t('searchResults')}</span>}
                             </h2>
                         </div>
                         <div className="text-[10px] font-bold uppercase tracking-widest text-slate-500 bg-slate-900/50 px-3 py-1.5 rounded-lg border border-slate-800/50 font-mono">
@@ -477,7 +477,7 @@ export const HomePage = () => {
                                         onClick={() => setVisibleCount(prev => prev + ITEMS_PER_PAGE)}
                                         className="group flex items-center gap-3 bg-slate-900 border border-slate-800 hover:border-slate-700 text-slate-300 hover:text-white px-8 py-3 rounded-2xl text-sm font-bold transition-all duration-300 hover:-translate-y-px active:scale-[0.98]"
                                     >
-                                        {language === 'zh' ? '?謜?????' : 'Load More'}
+                                        {t('loadMore')}
                                         <span className="text-[10px] font-mono text-slate-500 bg-slate-800 px-2 py-0.5 rounded-md">
                                             {skills.length - visibleCount}
                                         </span>
@@ -492,7 +492,7 @@ export const HomePage = () => {
                             </div>
                             <h3 className="text-xl md:text-2xl font-bold text-slate-200 mb-3">{t('noResults')}</h3>
                             <p className="text-slate-500 max-w-md mx-auto leading-relaxed text-sm md:text-base">
-                                {language === 'zh' ? '\u8acb\u5617\u8a66\u8abf\u6574\u95dc\u9375\u5b57\u6216\u6e05\u9664\u7be9\u9078\u689d\u4ef6\uff0c\u4e5f\u53ef\u4ee5\u806f\u7d61\u6211\u5011\u63d0\u4ea4\u65b0\u6280\u80fd\u9700\u6c42\u3002' : 'Try changing your keywords or clearing filters, or contact us to submit a new skill request.'}
+                                {t('noSkillsDescription')}
                             </p>
                             <button
                                 onClick={() => {
@@ -502,7 +502,7 @@ export const HomePage = () => {
                                 }}
                                 className="mt-8 text-accent hover:text-indigo-300 font-bold uppercase tracking-[0.2em] text-[10px] md:text-xs flex items-center gap-2 transition-colors border border-accent/20 px-6 py-2.5 rounded-xl hover:bg-accent/5"
                             >
-                                {language === 'zh' ? '\u6e05\u9664\u6240\u6709\u7be9\u9078' : 'Clear All Filters'}
+                                {t('clearAllFilters')}
                             </button>
                         </div>
                     )}
@@ -515,7 +515,7 @@ export const HomePage = () => {
                     <Terminal className="w-6 h-6 text-slate-500" />
                 </div>
                 <p className="text-slate-600 text-xs md:text-sm font-medium tracking-wide">
-                    ??2026 SKILLS All-in-one ??{language === 'zh' ? '??暹???AI Agent ????撓?' : 'Premium AI Agent Skills Library'}
+                    © 2026 SKILLS All-in-one · {t('subtitle')}
                 </p>
                 <div className="mt-6 flex flex-col items-center gap-6">
                     <a
@@ -530,7 +530,7 @@ export const HomePage = () => {
                     <div className="flex justify-center gap-6 text-slate-700 text-[10px] font-bold uppercase tracking-widest">
                         <a href="https://github.com/eric861129/SKILLS_All-in-one#readme" target="_blank" rel="noopener noreferrer" className="hover:text-slate-400 transition-colors">Documentation</a>
                         <a href="https://github.com/eric861129/SKILLS_All-in-one" target="_blank" rel="noopener noreferrer" className="hover:text-slate-400 transition-colors">GitHub</a>
-                        <a href="https://github.com/eric861129/SKILLS_All-in-one/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener noreferrer" className="hover:text-slate-400 transition-colors">{language === 'zh' ? '\u53c3\u8207\u8ca2\u737b' : 'Contributing'}</a>
+                        <a href="https://github.com/eric861129/SKILLS_All-in-one/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener noreferrer" className="hover:text-slate-400 transition-colors">{t('contributing')}</a>
                     </div>
                 </div>
             </footer>

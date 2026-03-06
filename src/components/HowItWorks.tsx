@@ -1,28 +1,259 @@
 import { motion, AnimatePresence } from "framer-motion";
-import {
-  Box,
-  Cpu,
-  Share2,
-  X,
-  ArrowRight,
-  Database,
-  Code2,
-  Globe,
-  Sparkles,
-  FolderTree,
-  FileJson,
-  FileCode,
-  Layers,
-} from "lucide-react";
+import { X, Sparkles, Terminal } from "lucide-react";
+import Markdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 import { useLanguage } from "../hooks/useLanguage";
+import type { Components } from 'react-markdown';
 
 interface HowItWorksProps {
   isOpen: boolean;
   onClose: () => void;
 }
 
+const markdownComponents: Components = {
+  h1: ({ children }) => <h1 className="text-3xl md:text-4xl font-black tracking-tight text-white mt-2 mb-8 leading-tight">{children}</h1>,
+  h2: ({ children }) => <h2 className="text-2xl font-bold text-white mt-12 mb-6 pb-2 border-b border-slate-800">{children}</h2>,
+  h3: ({ children }) => <h3 className="text-xl font-bold text-slate-100 mt-10 mb-4">{children}</h3>,
+  h4: ({ children }) => <h4 className="text-lg font-semibold text-slate-200 mt-8 mb-3">{children}</h4>,
+  p: ({ children }) => <p className="text-slate-400 leading-8 mb-6 text-base md:text-lg">{children}</p>,
+  a: ({ href, children }) => (
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-accent hover:text-indigo-300 underline underline-offset-4 transition-colors"
+    >
+      {children}
+    </a>
+  ),
+  ul: ({ children }) => <ul className="list-disc marker:text-accent pl-6 space-y-3 text-slate-400 mb-6">{children}</ul>,
+  ol: ({ children }) => <ol className="list-decimal marker:text-emerald-400 pl-6 space-y-3 text-slate-400 mb-6">{children}</ol>,
+  li: ({ children }) => <li className="leading-relaxed">{children}</li>,
+  blockquote: ({ children }) => (
+    <blockquote className="border-l-4 border-accent bg-accent/5 text-slate-300 rounded-r-2xl pl-6 py-4 mb-8 italic">
+      {children}
+    </blockquote>
+  ),
+  hr: () => <hr className="my-12 border-slate-800/50" />,
+  table: ({ children }) => (
+    <div className="mb-8 overflow-x-auto rounded-2xl border border-slate-800 bg-slate-950/50">
+      <table className="w-full text-sm text-left">{children}</table>
+    </div>
+  ),
+  thead: ({ children }) => <thead className="bg-slate-900/80 text-slate-200">{children}</thead>,
+  tbody: ({ children }) => <tbody className="text-slate-400">{children}</tbody>,
+  tr: ({ children }) => <tr className="border-b border-slate-800/50 last:border-0">{children}</tr>,
+  th: ({ children }) => <th className="px-6 py-4 font-black uppercase tracking-widest text-[10px] text-slate-500">{children}</th>,
+  td: ({ children }) => <td className="px-6 py-4 align-top leading-relaxed">{children}</td>,
+  pre: ({ children }) => (
+    <pre className="bg-slate-950 border border-white/5 rounded-2xl p-6 mb-8 overflow-x-auto text-sm leading-relaxed font-mono text-emerald-400 shadow-2xl">
+      {children}
+    </pre>
+  ),
+  code: ({ children, className }) => {
+    const isInline = !className;
+    if (isInline) {
+      return <code className="font-mono text-accent bg-accent/10 px-1.5 py-0.5 rounded text-sm">{children}</code>;
+    }
+    return <code className="font-mono">{children}</code>;
+  },
+  strong: ({ children }) => <strong className="text-slate-100 font-black">{children}</strong>,
+  em: ({ children }) => <em className="text-slate-200 italic">{children}</em>,
+};
+
+const ARTICLE_CONTENT_ZH = `# 什麼是 AI Agent SKILL？定義未來協作的「能力單元」
+
+在 AI Agent 的世界中，大語言模型（LLM）是「大腦」，但如果沒有 **SKILL（技能）**，大腦就像是一個空有知識卻無法與物理世界互動、沒有專業 SOP 的靈魂。
+
+### 💡 核心定義
+
+**AI Agent SKILL** 是一個標準化的「能力封裝包」。它不只是幾行程式碼，而是結合了 **特定意圖（Intent）**、**操作工具（Tools）** 與 **執行邏輯（Logic）** 的模組。
+
+簡單來說：
+
+* **LLM** 知道「什麼是電子郵件」。
+* **SKILL** 讓 Agent 知道「如何存取你的 Outlook、遵循你的語氣風格，並在週五下午自動彙報進度」。
+
+---
+
+## SKILL 的三大組成要素
+
+一個高品質的 SKILL 遵循「感知－決策－執行」的閉環：
+
+1. **指令規範 (System Instructions)**：定義 Agent 在具備此技能時的「人格」與「作業標準書」。
+2. **工具組 (Toolsets/Functions)**：定義 Agent 可以調用的 API、腳本或本地指令（如：檔案讀寫、網頁搜索）。
+3. **知識上下文 (Injected Context)**：提供該領域必備的知識庫或範例（Few-shot prompting），減少模型幻覺。
+
+---
+
+## SKILLS 平台的標準格式 (Standard Specification)
+
+為了確保所有的 SKILL 都能在不同的 Agent 環境（如 Claude Code, Claude Desktop, ChatGPT）中無縫切換，我們採用 **\`SKILLS v1.0\` 標準結構**（兼容 agentskills.io 規範）。
+
+每個 SKILL 必須以一個資料夾形式存在，結構如下：
+
+\`\`\`text
+/your-skill-name
+├── SKILL.md          # 核心能力索引與說明書 (必備)
+├── config.json       # 自動化配置與元數據 (選填)
+├── scripts/          # 執行的腳本邏輯 (Python/JS/Bash) (選填)
+├── templates/        # 輸出的格式模板或範例 (選填)
+├── reference/        # 格式範本、專有名詞、填寫範例 (選填)
+└── assets/           # 靜態資源：圖片、資料檔、PDF (選填)
+\`\`\`
+
+### 1. \`SKILL.md\`：技能的身分證與「導航地圖」
+
+這是最重要的檔案，採用結構化 Markdown 撰寫。它不僅是給人看的文件，更是 **Agent 在掃描可用技能時的唯一依據**。
+
+#### 🛡️ 檔案頭部 (YAML Frontmatter) 規範
+
+\`SKILL.md\` 開頭必須包含精確的 YAML 定義，這決定了 Agent 是否能正確「檢索」到此技能：
+
+\`\`\`yaml
+---
+name: skill-name
+description: A description of what this skill does and when to use it.
+---
+\`\`\`
+
+**嚴格命名規則：**
+
+* **Name**: 長度 1-64 字元。只能包含小寫字母、數字與破折號 \`-\`（不能以 \`-\` 開頭結尾或連續）。**必須與目錄名稱完全一致**。
+* **Description**: 長度 1-1024 字元。這是寫給 Agent 看的「廣告」，應清晰描述：**「這個技能能幫你做什麼？」** 以及 **「在什麼情況下你應該啟用它？」**。
+
+#### 📄 內容結構 (Content Body)
+
+* **Capabilities**: 條列此技能可以解決什麼問題，建議使用動詞開頭（例如：Refactor, Analyze, Generate）。
+* **Prerequisites**: 需要安裝什麼環境或 API Key。
+* **Safety Audit**: 標註該技能是否涉及敏感操作（如刪除檔案）。
+
+---
+
+### 2. \`config.json\`：機器可讀配置 (MCP/JSON Schema)
+
+用於自動化部署與工具定義。如果你希望 Agent 能「主動呼叫」特定 Function，請在此定義工具的 JSON Schema。
+
+\`\`\`json
+{
+  "id": "code-refactor-pro",
+  "version": "1.2.0",
+  "author": "EricHuang",
+  "runtime": "node20",
+  "permissions": ["file_read", "file_write"],
+  "tools": [
+    {
+      "name": "analyze_complexity",
+      "description": "計算指定程式碼檔案的圈複雜度（Cyclomatic Complexity）",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "filePath": { "type": "string" }
+        }
+      }
+    }
+  ]
+}
+\`\`\``;
+
+const ARTICLE_CONTENT_EN = `# What is AI Agent SKILL? Defining "Atomic Capabilities" for the Future
+
+In the world of AI Agents, large language models (LLMs) are the "brain," but without **SKILLS**, the brain is like a soul full of knowledge but unable to interact with the physical world or follow professional SOPs.
+
+### 💡 Core Definition
+
+An **AI Agent SKILL** is a standardized "capability encapsulation package." It's not just a few lines of code, but a module that combines **Specific Intents**, **Operational Tools**, and **Execution Logic**.
+
+Simply put:
+
+* **LLM** knows "what an email is."
+* **SKILL** tells the Agent "how to access your Outlook, follow your tone of voice, and automatically report progress every Friday afternoon."
+
+---
+
+## Three Pillars of a SKILL
+
+A high-quality SKILL follows the "Perceive – Decide – Execute" loop:
+
+1. **System Instructions**: Defines the "persona" and "standard operating procedures" (SOP) when the Agent possesses this skill.
+2. **Toolsets/Functions**: Defines the APIs, scripts, or local commands (e.g., file I/O, web search) the Agent can invoke.
+3. **Injected Context**: Provides essential domain knowledge or few-shot examples to reduce model hallucination.
+
+---
+
+## Standard Specification for the SKILLS Platform
+
+To ensure all SKILLs can seamlessly switch across different environments (like Claude Code, Cursor, Gemini), we adopt the **\`SKILLS v1.0\` standard structure**.
+
+Each SKILL must exist as a folder with the following structure:
+
+\`\`\`text
+/your-skill-name
+├── SKILL.md          # Core capability index and manual (Required)
+├── config.json       # Automated config and metadata (Optional)
+├── scripts/          # Execution logic scripts (Python/JS/Bash) (Optional)
+├── templates/        # Output format templates or examples (Optional)
+├── reference/        # Reference docs and terminology (Optional)
+└── assets/           # Static resources: images, data files, PDFs (Optional)
+\`\`\`
+
+### 1. \`SKILL.md\`: The Identity and Navigation Map
+
+This is the most critical file, written in structured Markdown. It is not just for humans but is the **sole source of truth for the Agent when scanning for available capabilities**.
+
+#### 🛡️ YAML Frontmatter Specification
+
+The top of \`SKILL.md\` must contain precise YAML definitions to ensure the Agent can correctly "retrieve" the skill:
+
+\`\`\`yaml
+---
+name: skill-name
+description: A description of what this skill does and when to use it.
+---
+\`\`\`
+
+**Strict Naming Rules:**
+
+* **Name**: 1-64 characters. Lowercase letters, numbers, and hyphens \`-\` only. **Must match the directory name exactly**.
+* **Description**: 1-1024 characters. This is the "ad" for the Agent. It should clearly state: **"What can this skill do for you?"** and **"Under what conditions should you enable it?"**.
+
+#### 📄 Content Body
+
+* **Capabilities**: List what problems this skill solves (e.g., Refactor, Analyze, Generate).
+* **Prerequisites**: Required environments or API keys.
+* **Safety Audit**: Marks if the skill involves sensitive operations (like deleting files).
+
+---
+
+### 2. \`config.json\`: Machine-Readable Config (MCP/JSON Schema)
+
+Used for automated deployment and tool definitions. If you want the Agent to "proactively call" specific functions, define the JSON Schema here.
+
+\`\`\`json
+{
+  "id": "code-refactor-pro",
+  "version": "1.2.0",
+  "author": "EricHuang",
+  "runtime": "node20",
+  "permissions": ["file_read", "file_write"],
+  "tools": [
+    {
+      "name": "analyze_complexity",
+      "description": "Calculate the cyclomatic complexity of a specified code file",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "filePath": { "type": "string" }
+        }
+      }
+    }
+  ]
+}
+\`\`\``;
+
 export const HowItWorks = ({ isOpen, onClose }: HowItWorksProps) => {
-  const { t } = useLanguage();
+  const { language, t } = useLanguage();
+  const content = language === 'zh' ? ARTICLE_CONTENT_ZH : ARTICLE_CONTENT_EN;
 
   return (
     <AnimatePresence>
@@ -42,7 +273,7 @@ export const HowItWorks = ({ isOpen, onClose }: HowItWorksProps) => {
             initial={{ opacity: 0, scale: 0.9, y: 40 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.9, y: 40 }}
-            className="fixed inset-4 md:inset-auto md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2 md:w-full md:max-w-5xl max-h-[90vh] bg-slate-900 border border-white/5 rounded-[2.5rem] shadow-[0_0_100px_rgba(0,0,0,0.5)] z-[70] flex flex-col overflow-hidden"
+            className="fixed inset-4 md:inset-auto md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2 md:w-full md:max-w-5xl h-[85vh] bg-slate-900 border border-white/5 rounded-[2.5rem] shadow-[0_0_100px_rgba(0,0,0,0.5)] z-[70] flex flex-col overflow-hidden"
           >
             {/* Decorative Background Elements */}
             <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none -z-10">
@@ -51,263 +282,51 @@ export const HowItWorks = ({ isOpen, onClose }: HowItWorksProps) => {
             </div>
 
             {/* Header */}
-            <div className="flex items-center justify-between p-6 md:p-8 border-b border-white/5 bg-white/[0.02]">
+            <div className="flex items-center justify-between p-6 md:px-10 md:py-8 border-b border-white/5 bg-white/[0.02]">
               <div className="flex items-center gap-6">
-                <div className="hidden sm:flex shrink-0 w-12 h-12 rounded-2xl bg-accent/10 border border-accent/20 items-center justify-center text-accent">
-                  <Sparkles size={20} />
+                <div className="hidden sm:flex shrink-0 w-12 h-12 rounded-2xl bg-accent/10 border border-accent/20 items-center justify-center text-accent shadow-inner">
+                  <Terminal size={20} />
                 </div>
                 <div>
                   <div className="inline-flex items-center gap-2 px-2 py-0.5 rounded-md bg-accent/10 border border-accent/20 text-accent text-[9px] font-black uppercase tracking-widest mb-2">
-                    Architecture
+                    Industry Standard Protocol
                   </div>
-                  <h2 className="text-2xl md:text-3xl font-black tracking-tighter text-white leading-tight">
-                    {t("whatIsSkill")}
+                  <h2 className="text-2xl md:text-3xl font-black tracking-tighter text-white leading-tight uppercase italic">
+                    Capability Unit
                   </h2>
                 </div>
               </div>
               <button
                 onClick={onClose}
-                className="p-3 bg-slate-800/50 hover:bg-slate-700 text-slate-400 hover:text-white rounded-xl border border-white/5 transition-all shadow-xl"
+                className="p-3 bg-slate-800/50 hover:bg-slate-700 text-slate-400 hover:text-white rounded-xl border border-white/5 transition-all shadow-xl active:scale-95"
               >
                 <X size={20} />
               </button>
             </div>
 
-            {/* Content: Scrollable */}
-            <div className="flex-1 overflow-y-auto p-6 md:p-10 space-y-20">
-              {/* Intro */}
-              <div className="text-center">
-                <p className="text-slate-400 text-sm md:text-base font-medium leading-relaxed max-w-xl mx-auto">
-                  {t("whatIsSkillSubtitle")}
-                </p>
-              </div>
-
-              {/* Section 1: Architecture Visualization */}
-              <div className="relative py-10 px-6 bg-slate-950/50 border border-white/5 rounded-[2.5rem]">
-                <div className="grid grid-cols-1 lg:grid-cols-7 items-center gap-4 text-center">
-                  <div className="lg:col-span-2 p-8 rounded-[2rem] bg-slate-900 border border-slate-800 shadow-2xl relative group">
-                    <div className="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1 bg-slate-800 border border-slate-700 rounded-full text-[10px] font-black text-slate-400 uppercase tracking-widest">
-                      The Brain
-                    </div>
-                    <div className="w-16 h-16 bg-blue-500/20 border border-blue-500/30 rounded-2xl flex items-center justify-center mx-auto mb-6 text-blue-400 group-hover:scale-110 transition-transform">
-                      <Cpu size={32} />
-                    </div>
-                    <h4 className="text-white font-black text-xl mb-2">
-                      AI Model
-                    </h4>
-                    <p className="text-slate-500 text-[10px] leading-tight uppercase font-bold tracking-wider">
-                      Claude / Gemini / GPT-4
-                    </p>
-                  </div>
-                  <div className="hidden lg:flex lg:col-span-1 justify-center">
-                    <ArrowRight
-                      className="text-slate-700 animate-pulse"
-                      size={32}
-                    />
-                  </div>
-                  <div className="lg:col-span-1 p-6 rounded-[2rem] bg-accent/10 border border-accent/20 shadow-2xl relative">
-                    <div className="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1 bg-accent border border-accent/50 rounded-full text-[10px] font-black text-white uppercase tracking-widest shadow-lg shadow-accent/20">
-                      Protocol
-                    </div>
-                    <div className="font-black text-3xl text-accent">MCP</div>
-                    <div className="text-[10px] text-accent/70 font-bold uppercase tracking-tighter mt-1">
-                      Standard
-                    </div>
-                  </div>
-                  <div className="hidden lg:flex lg:col-span-1 justify-center">
-                    <ArrowRight
-                      className="text-slate-700 animate-pulse"
-                      size={32}
-                    />
-                  </div>
-                  <div className="lg:col-span-2 p-8 rounded-[2rem] bg-slate-900 border border-slate-800 shadow-2xl relative group">
-                    <div className="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1 bg-slate-800 border border-slate-700 rounded-full text-[10px] font-black text-slate-400 uppercase tracking-widest">
-                      Capabilities
-                    </div>
-                    <div className="flex gap-2 justify-center mb-6">
-                      <div className="w-12 h-12 bg-emerald-500/20 border border-emerald-500/30 rounded-xl flex items-center justify-center text-emerald-400 group-hover:-translate-y-1 transition-transform">
-                        <Database size={20} />
-                      </div>
-                      <div className="w-12 h-12 bg-amber-500/20 border border-amber-500/30 rounded-xl flex items-center justify-center text-amber-400 group-hover:translate-y-1 transition-transform">
-                        <Code2 size={20} />
-                      </div>
-                      <div className="w-12 h-12 bg-purple-500/20 border border-purple-500/30 rounded-xl flex items-center justify-center text-purple-400 group-hover:-translate-y-1 transition-transform">
-                        <Globe size={20} />
-                      </div>
-                    </div>
-                    <h4 className="text-white font-black text-xl mb-2">
-                      Agent Skills
-                    </h4>
-                    <p className="text-slate-500 text-[10px] leading-tight uppercase font-bold tracking-wider">
-                      Modular Tools & APIs
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Section 2: Three Concepts Grid */}
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                {[
-                  {
-                    id: 1,
-                    title: t("skillConcept1"),
-                    description: t("skillDesc1"),
-                    icon: <Box size={24} />,
-                    color: "text-blue-400",
-                    bg: "bg-blue-400/10",
-                  },
-                  {
-                    id: 2,
-                    title: t("skillConcept2"),
-                    description: t("skillDesc2"),
-                    icon: <Cpu size={24} />,
-                    color: "text-emerald-400",
-                    bg: "bg-emerald-400/10",
-                  },
-                  {
-                    id: 3,
-                    title: t("skillConcept3"),
-                    description: t("skillDesc3"),
-                    icon: <Share2 size={24} />,
-                    color: "text-amber-400",
-                    bg: "bg-amber-400/10",
-                  },
-                ].map((item, index) => (
-                  <motion.div
-                    key={item.id}
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: 0.2 + index * 0.1 }}
-                    className="p-8 rounded-[2.5rem] bg-white/5 border border-white/5 hover:border-white/10 transition-all duration-500"
-                  >
-                    <div
-                      className={`w-14 h-14 rounded-2xl flex items-center justify-center mb-6 ${item.bg} ${item.color} border border-white/5 shadow-inner`}
-                    >
-                      {item.icon}
-                    </div>
-                    <h3 className="text-xl font-black text-white mb-3 tracking-tight italic uppercase">
-                      {item.title}
-                    </h3>
-                    <p className="text-slate-400 text-xs leading-relaxed font-medium">
-                      {item.description}
-                    </p>
-                  </motion.div>
-                ))}
-              </div>
-
-              {/* Section 3: Standard Directory Structure */}
-              <div className="pt-10">
-                <div className="flex flex-col items-center text-center mb-12">
-                  <h3 className="text-3xl font-black text-white tracking-tighter uppercase italic mb-4">
-                    {t("skillStructureTitle")}
-                  </h3>
-                  <div className="w-16 h-1 bg-accent rounded-full mb-6"></div>
-                  <p className="text-slate-400 text-sm font-medium max-w-2xl">
-                    {t("skillStructureDesc")}
-                  </p>
-                </div>
-
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                  {/* File Tree Visualization */}
-                  <div className="bg-slate-950 border border-white/10 rounded-[2.5rem] p-10 font-mono text-sm relative group overflow-hidden shadow-2xl">
-                    <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-accent via-emerald-500 to-amber-500 opacity-50"></div>
-                    <div className="space-y-4">
-                      <div className="flex items-center gap-3 text-slate-300">
-                        <FolderTree size={18} className="text-accent" />
-                        <span className="font-bold">my-awesome-skill/</span>
-                      </div>
-                      <div className="pl-8 space-y-4 border-l border-slate-800">
-                        <div className="flex items-center gap-3 text-slate-400 group-hover:text-white transition-colors">
-                          <FileCode size={16} className="text-emerald-400" />
-                          <span>SKILL.md</span>
-                          <span className="text-[10px] text-slate-600 ml-auto uppercase font-black">
-                            Required
-                          </span>
-                        </div>
-                        <div className="flex items-center gap-3 text-slate-400 group-hover:text-white transition-colors">
-                          <FileJson size={16} className="text-blue-400" />
-                          <span>metadata.json</span>
-                          <span className="text-[10px] text-slate-600 ml-auto uppercase font-black">
-                            Registry
-                          </span>
-                        </div>
-                        <div className="flex items-center gap-3 text-slate-500">
-                          <FolderTree size={16} className="text-slate-700" />
-                          <span>scripts/</span>
-                          <span className="text-[10px] text-slate-700 ml-auto uppercase font-black italic">
-                            Optional
-                          </span>
-                        </div>
-                        <div className="flex items-center gap-3 text-slate-500">
-                          <Layers size={16} className="text-slate-700" />
-                          <span>assets/</span>
-                          <span className="text-[10px] text-slate-700 ml-auto uppercase font-black italic">
-                            Optional
-                          </span>
-                        </div>
-                        <div className="flex items-center gap-3 text-slate-500">
-                          <Layers size={16} className="text-slate-700" />
-                          <span>referances/</span>
-                          <span className="text-[10px] text-slate-700 ml-auto uppercase font-black italic">
-                            Optional
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Explanations */}
-                  <div className="space-y-8">
-                    {[
-                      {
-                        title: t("coreLogic"),
-                        desc: "Contains the instruction set, tools definitions, and YAML header. This is what the Agent actually reads.",
-                        icon: (
-                          <FileCode size={20} className="text-emerald-400" />
-                        ),
-                      },
-                      {
-                        title: t("metadataInfo"),
-                        desc: "Standardized JSON for category, tags, and versioning. Essential for site-wide search and indexing.",
-                        icon: <FileJson size={20} className="text-blue-400" />,
-                      },
-                      {
-                        title: t("extensibility"),
-                        desc: "Complex skills can call external Python/JS scripts or reference static assets for advanced tasks.",
-                        icon: <Layers size={20} className="text-amber-400" />,
-                      },
-                    ].map((feat) => (
-                      <div key={feat.title} className="flex gap-5 group">
-                        <div className="shrink-0 w-12 h-12 rounded-2xl bg-white/5 border border-white/5 flex items-center justify-center transition-all group-hover:border-accent/30 group-hover:bg-accent/5">
-                          {feat.icon}
-                        </div>
-                        <div>
-                          <h4 className="text-white font-black text-sm uppercase tracking-tight mb-1 group-hover:text-accent transition-colors">
-                            {feat.title}
-                          </h4>
-                          <p className="text-slate-400 text-xs leading-relaxed">
-                            {feat.desc}
-                          </p>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </div>
+            {/* Content: Scrollable Article */}
+            <div className="flex-1 overflow-y-auto p-8 md:p-16 custom-scrollbar">
+              <article className="max-w-3xl mx-auto">
+                <Markdown 
+                  components={markdownComponents} 
+                  remarkPlugins={[remarkGfm]}
+                >
+                  {content}
+                </Markdown>
+              </article>
             </div>
 
             {/* Footer */}
-            <div className="p-6 border-t border-white/5 bg-slate-950/50 flex flex-col md:flex-row items-center justify-between gap-4">
+            <div className="p-6 md:px-10 border-t border-white/5 bg-slate-950/50 flex flex-col md:flex-row items-center justify-between gap-4">
               <div className="flex items-center gap-3">
                 <div className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse shadow-[0_0_8px_rgba(99,102,241,0.6)]" />
                 <span className="text-[9px] font-black uppercase tracking-[0.2em] text-slate-500">
-                  Industry Standard MCP Enabled
+                  Standardized Skill Specification v1.0
                 </span>
               </div>
               <button
                 onClick={onClose}
-                className="w-full md:w-auto px-8 py-2.5 rounded-xl bg-white text-slate-950 font-black uppercase tracking-[0.15em] text-[10px] hover:bg-accent hover:text-white transition-all duration-300 shadow-xl active:scale-95"
+                className="w-full md:w-auto px-10 py-3 rounded-2xl bg-white text-slate-950 font-black uppercase tracking-[0.15em] text-[10px] hover:bg-accent hover:text-white transition-all duration-500 shadow-xl active:scale-95"
               >
                 {t("closeModal")}
               </button>
