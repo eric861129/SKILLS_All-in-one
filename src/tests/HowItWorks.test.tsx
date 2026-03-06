@@ -31,7 +31,10 @@ describe('HowItWorks Component', () => {
       <HowItWorks isOpen={true} onClose={vi.fn()} />
     );
     
-    // Check for new header text (partial match for flexibility)
-    expect(screen.getByText(/AI Agent/i)).toBeDefined();
+    expect(
+      screen.getByRole('heading', {
+        name: /What is AI Agent SKILL\?/i,
+      })
+    ).toBeDefined();
   });
 });

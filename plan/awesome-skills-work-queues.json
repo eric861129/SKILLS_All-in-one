@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-06T05:12:14.250Z",
+  "generatedAt": "2026-03-06T08:49:18.286Z",
   "queues": {
     "mismatch": [],
     "local_present_tracking_missing": [
@@ -656,9 +656,10 @@
         "repoPath": "scientific-skills/molecular-dynamics",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-024 imported and onboarded on 2026-03-06"
         ]
       },
       {
@@ -667,9 +668,10 @@
         "repoPath": "scientific-skills/molfeat",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-024 imported and onboarded on 2026-03-06"
         ]
       },
       {
@@ -678,9 +680,10 @@
         "repoPath": "scientific-skills/monarch-database",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-024 imported and onboarded on 2026-03-06"
         ]
       },
       {
@@ -689,9 +692,10 @@
         "repoPath": "scientific-skills/networkx",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-024 imported and onboarded on 2026-03-06"
         ]
       },
       {
@@ -700,9 +704,10 @@
         "repoPath": "scientific-skills/neurokit2",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-024 imported and onboarded on 2026-03-06"
         ]
       },
       {

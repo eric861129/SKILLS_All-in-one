@@ -2961,6 +2961,66 @@ export const MOCK_SKILLS: Skill[] = [
     source: 'modal',
     githubUrl: 'https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/modal'
   },
+  {
+    id: 282,
+    name: 'molecular-dynamics',
+    description: 'Run and analyze molecular dynamics simulations with OpenMM and MDAnalysis for structure, trajectory, and biophysics workflows.',
+    author: 'K-Dense-AI',
+    category: 'Scientific & Research Tools',
+    tags: ['Molecular Dynamics', 'OpenMM', 'MDAnalysis'],
+    downloadCount: 0,
+    createdAt: '2026-03-06',
+    source: 'molecular-dynamics',
+    githubUrl: 'https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/molecular-dynamics'
+  },
+  {
+    id: 283,
+    name: 'molfeat',
+    description: 'Featurize molecules into ML-ready representations using fingerprints, descriptors, and pretrained embeddings for cheminformatics pipelines.',
+    author: 'K-Dense-AI',
+    category: 'Scientific & Research Tools',
+    tags: ['Cheminformatics', 'Molecular Features', 'Machine Learning'],
+    downloadCount: 0,
+    createdAt: '2026-03-06',
+    source: 'molfeat',
+    githubUrl: 'https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/molfeat'
+  },
+  {
+    id: 284,
+    name: 'monarch-database',
+    description: 'Query Monarch Initiative knowledge graph for disease-gene-phenotype associations and cross-species phenotype evidence.',
+    author: 'K-Dense-AI',
+    category: 'Scientific & Research Tools',
+    tags: ['Monarch Initiative', 'Phenotype Ontology', 'Rare Disease'],
+    downloadCount: 0,
+    createdAt: '2026-03-06',
+    source: 'monarch-database',
+    githubUrl: 'https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/monarch-database'
+  },
+  {
+    id: 285,
+    name: 'networkx',
+    description: 'Create, analyze, and visualize complex graph structures with algorithms for paths, centrality, communities, and network metrics.',
+    author: 'K-Dense-AI',
+    category: 'Data & Analysis',
+    tags: ['Graph Analysis', 'Network Science', 'Python'],
+    downloadCount: 0,
+    createdAt: '2026-03-06',
+    source: 'networkx',
+    githubUrl: 'https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/networkx'
+  },
+  {
+    id: 286,
+    name: 'neurokit2',
+    description: 'Process physiological biosignals including ECG, EEG, EDA, RSP, PPG, and EMG for psychophysiology and health analytics.',
+    author: 'K-Dense-AI',
+    category: 'Health & Life Sciences',
+    tags: ['Biosignal Processing', 'Neurophysiology', 'Heart Rate Variability'],
+    downloadCount: 0,
+    createdAt: '2026-03-06',
+    source: 'neurokit2',
+    githubUrl: 'https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/neurokit2'
+  },
   // Writing & Research
   {
     id: 138,

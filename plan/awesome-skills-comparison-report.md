@@ -1,17 +1,17 @@
 # Awesome Claude Skills 比對報告（含檔案系統比對）
-## 增量更新（2026-03-06，Batch 023）
-- Tracking 產生時間：`2026-03-06T05:12:14.250Z`
-- Wave 2 import 已完成：`batch-016`、`batch-017`、`batch-018`、`batch-019`、`batch-020`、`batch-021`、`batch-022`、`batch-023`（共 40 筆）
+## 增量更新（2026-03-06，Batch 024）
+- Tracking 產生時間：`2026-03-06T08:49:18.286Z`
+- Wave 2 import 已完成：`batch-016`、`batch-017`、`batch-018`、`batch-019`、`batch-020`、`batch-021`、`batch-022`、`batch-023`、`batch-024`（共 45 筆）
 - mismatch（url/author）：`0`（維持）
-- `status=missing`：`165`（由 `170` 降至 `165`）
+- `status=missing`：`160`（由 `165` 降至 `160`）
 - `needs_manual_review`：`18`（維持）
 
 ### 下一批（import, non-fixture）
-1. `molecular-dynamics`
-2. `molfeat`
-3. `monarch-database`
-4. `networkx`
-5. `neurokit2`
+1. `neuropixels-analysis`
+2. `offer-k-dense-web`
+3. `omero-integration`
+4. `open-notebook`
+5. `openalex-database`
 
 ## 增量更新（2026-03-06，Batch 020）
 - Tracking 產生時間：`2026-03-06T03:36:41.469Z`

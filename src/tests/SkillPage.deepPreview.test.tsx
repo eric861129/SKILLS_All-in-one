@@ -117,7 +117,7 @@ describe('SkillPage Deep Preview', () => {
     expect(screen.getByText('120')).toBeDefined();
     expect(screen.getByText('88')).toBeDefined();
 
-    const copyButton = screen.getByRole('button', { name: /Copy File/i }) as HTMLButtonElement;
+    const copyButton = screen.getByRole('button', { name: /copyFile/i }) as HTMLButtonElement;
     await waitFor(() => {
       expect(copyButton.disabled).toBe(false);
     });
@@ -275,10 +275,10 @@ describe('SkillPage Deep Preview', () => {
     renderSkillPage();
 
     await waitFor(() => {
-      expect(screen.getByText('Binary file cannot be previewed as text')).toBeDefined();
+      expect(screen.getByText('binaryNotPreviewable')).toBeDefined();
     });
 
-    const copyButton = screen.getByRole('button', { name: /Copy File/i }) as HTMLButtonElement;
+    const copyButton = screen.getByRole('button', { name: /copyFile/i }) as HTMLButtonElement;
     expect(copyButton.disabled).toBe(true);
   });
 });
