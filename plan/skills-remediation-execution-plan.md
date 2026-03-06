@@ -62,6 +62,7 @@
 4. `plan/awesome-skills-comparison-report.md`（最新單一版）
 5. `plan/security-audits/`（全保留）
 6. `plan/skills-remediation-execution-plan.md`（本企劃落地檔）
+7. `plan/awesome-skills-work-queues.json`（批次調度 SoT）
 
 ### 歸檔規則
 

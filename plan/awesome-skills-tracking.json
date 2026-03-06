@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-03-05T15:45:25.422Z",
+  "generatedAt": "2026-03-06T05:12:14.250Z",
   "sourceReadme": "https://raw.githubusercontent.com/BehiSecc/awesome-claude-skills/main/README.md",
   "stats": {
-    "localSkills": 225,
+    "localSkills": 265,
     "discoveredRepoLinks": 89,
     "expandedCandidates": 402,
     "uniqueCandidates": 374,
-    "missing": 205,
-    "urlMismatch": 8,
-    "authorMismatch": 5,
+    "missing": 165,
+    "urlMismatch": 0,
+    "authorMismatch": 0,
     "fetchFailures": 26
   },
   "batches": [
@@ -258,22 +258,206 @@
         "onboard": "completed",
         "sync": "completed"
       }
+    },
+    {
+      "id": "batch-014",
+      "type": "correction",
+      "size": 5,
+      "status": "completed",
+      "items": [
+        "aptos",
+        "email-html-mjml",
+        "invoice-organizer",
+        "meeting-insights-analyzer",
+        "oiloil-ui-ux-guide"
+      ],
+      "checklist": {
+        "import": "not_required_metadata_only",
+        "audit": "pass_metadata_only",
+        "onboard": "completed",
+        "sync": "completed"
+      }
+    },
+    {
+      "id": "batch-015",
+      "type": "correction",
+      "size": 5,
+      "status": "completed",
+      "items": [
+        "plaid",
+        "polaris-datainsight-doc-extract",
+        "skill-creator",
+        "whop",
+        "x-twitter-scraper"
+      ],
+      "checklist": {
+        "import": "not_required_metadata_only",
+        "audit": "pass_metadata_only",
+        "onboard": "completed",
+        "sync": "completed"
+      }
+    },
+    {
+      "id": "batch-016",
+      "type": "import",
+      "size": 5,
+      "status": "completed",
+      "items": [
+        "fred-economic-data",
+        "gene-database",
+        "generate-image",
+        "geniml",
+        "geo-database"
+      ],
+      "checklist": {
+        "import": "completed",
+        "audit": "pass",
+        "onboard": "completed",
+        "sync": "completed"
+      }
+    },
+    {
+      "id": "batch-017",
+      "type": "import",
+      "size": 5,
+      "status": "completed",
+      "items": [
+        "geomaster",
+        "geopandas",
+        "get-available-resources",
+        "gget",
+        "ginkgo-cloud-lab"
+      ],
+      "checklist": {
+        "import": "completed",
+        "audit": "pass",
+        "onboard": "completed",
+        "sync": "completed"
+      }
+    },
+    {
+      "id": "batch-018",
+      "type": "import",
+      "size": 5,
+      "status": "completed",
+      "items": [
+        "glycoengineering",
+        "gnomad-database",
+        "gtars",
+        "gtex-database",
+        "gwas-database"
+      ],
+      "checklist": {
+        "import": "completed",
+        "audit": "pass",
+        "onboard": "completed",
+        "sync": "completed"
+      }
+    },
+    {
+      "id": "batch-019",
+      "type": "import",
+      "size": 5,
+      "status": "completed",
+      "items": [
+        "hedgefundmonitor",
+        "histolab",
+        "hmdb-database",
+        "hypogenic",
+        "hypothesis-generation"
+      ],
+      "checklist": {
+        "import": "completed",
+        "audit": "pass",
+        "onboard": "completed",
+        "sync": "completed"
+      }
+    },
+    {
+      "id": "batch-020",
+      "type": "import",
+      "size": 5,
+      "status": "completed",
+      "items": [
+        "imaging-data-commons",
+        "infographics",
+        "interpro-database",
+        "iso-13485-certification",
+        "jaspar-database"
+      ],
+      "checklist": {
+        "import": "completed",
+        "audit": "pass",
+        "onboard": "completed",
+        "sync": "completed"
+      }
+    },
+    {
+      "id": "batch-021",
+      "type": "import",
+      "size": 5,
+      "status": "completed",
+      "items": [
+        "kegg-database",
+        "labarchive-integration",
+        "lamindb",
+        "latchbio-integration",
+        "latex-posters"
+      ],
+      "checklist": {
+        "import": "completed",
+        "audit": "pass",
+        "onboard": "completed",
+        "sync": "completed"
+      }
+    },
+    {
+      "id": "batch-022",
+      "type": "import",
+      "size": 5,
+      "status": "completed",
+      "items": [
+        "literature-review",
+        "markdown-mermaid-writing",
+        "market-research-reports",
+        "markitdown",
+        "matchms"
+      ],
+      "checklist": {
+        "import": "completed",
+        "audit": "pass",
+        "onboard": "completed",
+        "sync": "completed"
+      }
+    },
+    {
+      "id": "batch-023",
+      "type": "import",
+      "size": 5,
+      "status": "completed",
+      "items": [
+        "matlab",
+        "matplotlib",
+        "medchem",
+        "metabolomics-workbench-database",
+        "modal"
+      ],
+      "checklist": {
+        "import": "completed",
+        "audit": "pass",
+        "onboard": "completed",
+        "sync": "completed"
+      }
     }
   ],
   "nextBatchProposals": {
-    "correction": [
-      "agnix",
-      "aptos",
-      "azure-devops",
-      "deep-research",
-      "deploy-prod"
-    ],
+    "correction": [],
     "import": [
-      "fred-economic-data",
-      "gene-database",
-      "generate-image",
-      "geniml",
-      "geo-database"
+      "molecular-dynamics",
+      "molfeat",
+      "monarch-database",
+      "networkx",
+      "neurokit2"
     ]
   },
   "failures": [
@@ -583,7 +767,7 @@
     },
     {
       "sourceSlug": "aptos",
-      "status": "author_mismatch",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "aptos",
         "originUrl": "https://github.com/raintree-technology/claude-starter/tree/main/skills/aptos",
@@ -594,16 +778,14 @@
       "local": {
         "id": 107,
         "source": "aptos",
-        "author": "raintree",
+        "author": "raintree-technology",
         "githubUrl": "https://github.com/raintree-technology/claude-starter/tree/main/skills/aptos"
       },
       "expected": {
         "author": "raintree-technology",
         "githubUrl": "https://github.com/raintree-technology/claude-starter/tree/main/skills/aptos"
       },
-      "notes": [
-        "author differs from canonical owner/frontmatter fallback."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "arboreto",
@@ -2274,7 +2456,7 @@
     },
     {
       "sourceSlug": "email-html-mjml",
-      "status": "url_mismatch",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "email-html-mjml",
         "originUrl": "https://github.com/framix-team/skill-email-html-mjml/tree/master/email-html-mjml",
@@ -2286,15 +2468,13 @@
         "id": 125,
         "source": "email-html-mjml",
         "author": "framix-team",
-        "githubUrl": "https://github.com/framix-team/skill-email-html-mjml"
+        "githubUrl": "https://github.com/framix-team/skill-email-html-mjml/tree/master/email-html-mjml"
       },
       "expected": {
         "author": "framix-team",
         "githubUrl": "https://github.com/framix-team/skill-email-html-mjml/tree/master/email-html-mjml"
       },
-      "notes": [
-        "githubUrl differs from canonical origin."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "embedded-systems",
@@ -2704,7 +2884,7 @@
     },
     {
       "sourceSlug": "fred-economic-data",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "fred-economic-data",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/fred-economic-data",
@@ -2712,14 +2892,17 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/fred-economic-data"
       },
-      "local": null,
+      "local": {
+        "id": 242,
+        "source": "fred-economic-data",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/fred-economic-data"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/fred-economic-data"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "fullstack-guardian",
@@ -2786,7 +2969,7 @@
     },
     {
       "sourceSlug": "gene-database",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "gene-database",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/gene-database",
@@ -2794,18 +2977,21 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/gene-database"
       },
-      "local": null,
+      "local": {
+        "id": 243,
+        "source": "gene-database",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/gene-database"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/gene-database"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "generate-image",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "generate-image",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/generate-image",
@@ -2813,18 +2999,21 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/generate-image"
       },
-      "local": null,
+      "local": {
+        "id": 244,
+        "source": "generate-image",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/generate-image"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/generate-image"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "geniml",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "geniml",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/geniml",
@@ -2832,18 +3021,21 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/geniml"
       },
-      "local": null,
+      "local": {
+        "id": 245,
+        "source": "geniml",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/geniml"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/geniml"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "geo-database",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "geo-database",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/geo-database",
@@ -2851,18 +3043,21 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/geo-database"
       },
-      "local": null,
+      "local": {
+        "id": 246,
+        "source": "geo-database",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/geo-database"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/geo-database"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "geomaster",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "geomaster",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/geomaster",
@@ -2870,18 +3065,21 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/geomaster"
       },
-      "local": null,
+      "local": {
+        "id": 247,
+        "source": "geomaster",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/geomaster"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/geomaster"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "geopandas",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "geopandas",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/geopandas",
@@ -2889,18 +3087,21 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/geopandas"
       },
-      "local": null,
+      "local": {
+        "id": 248,
+        "source": "geopandas",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/geopandas"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/geopandas"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "get-available-resources",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "get-available-resources",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/get-available-resources",
@@ -2908,18 +3109,21 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/get-available-resources"
       },
-      "local": null,
+      "local": {
+        "id": 249,
+        "source": "get-available-resources",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/get-available-resources"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/get-available-resources"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "gget",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "gget",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/gget",
@@ -2927,18 +3131,21 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/gget"
       },
-      "local": null,
+      "local": {
+        "id": 250,
+        "source": "gget",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/gget"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/gget"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "ginkgo-cloud-lab",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "ginkgo-cloud-lab",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/ginkgo-cloud-lab",
@@ -2946,18 +3153,21 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/ginkgo-cloud-lab"
       },
-      "local": null,
+      "local": {
+        "id": 251,
+        "source": "ginkgo-cloud-lab",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/ginkgo-cloud-lab"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/ginkgo-cloud-lab"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "glycoengineering",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "glycoengineering",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/glycoengineering",
@@ -2965,14 +3175,17 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/glycoengineering"
       },
-      "local": null,
+      "local": {
+        "id": 252,
+        "source": "glycoengineering",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/glycoengineering"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/glycoengineering"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "gmail",
@@ -2995,7 +3208,7 @@
     },
     {
       "sourceSlug": "gnomad-database",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "gnomad-database",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/gnomad-database",
@@ -3003,14 +3216,17 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/gnomad-database"
       },
-      "local": null,
+      "local": {
+        "id": 253,
+        "source": "gnomad-database",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/gnomad-database"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/gnomad-database"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "golang-pro",
@@ -3196,7 +3412,7 @@
     },
     {
       "sourceSlug": "gtars",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "gtars",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/gtars",
@@ -3204,18 +3420,21 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/gtars"
       },
-      "local": null,
+      "local": {
+        "id": 254,
+        "source": "gtars",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/gtars"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/gtars"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "gtex-database",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "gtex-database",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/gtex-database",
@@ -3223,18 +3442,21 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/gtex-database"
       },
-      "local": null,
+      "local": {
+        "id": 255,
+        "source": "gtex-database",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/gtex-database"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/gtex-database"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "gwas-database",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "gwas-database",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/gwas-database",
@@ -3242,18 +3464,21 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/gwas-database"
       },
-      "local": null,
+      "local": {
+        "id": 256,
+        "source": "gwas-database",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/gwas-database"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/gwas-database"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "hedgefundmonitor",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "hedgefundmonitor",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/hedgefundmonitor",
@@ -3261,14 +3486,17 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/hedgefundmonitor"
       },
-      "local": null,
+      "local": {
+        "id": 257,
+        "source": "hedgefundmonitor",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/hedgefundmonitor"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/hedgefundmonitor"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "helius",
@@ -3298,7 +3526,7 @@
     },
     {
       "sourceSlug": "histolab",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "histolab",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/histolab",
@@ -3306,18 +3534,21 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/histolab"
       },
-      "local": null,
+      "local": {
+        "id": 258,
+        "source": "histolab",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/histolab"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/histolab"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "hmdb-database",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "hmdb-database",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/hmdb-database",
@@ -3325,18 +3556,21 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/hmdb-database"
       },
-      "local": null,
+      "local": {
+        "id": 259,
+        "source": "hmdb-database",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/hmdb-database"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/hmdb-database"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "hypogenic",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "hypogenic",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/hypogenic",
@@ -3344,18 +3578,21 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/hypogenic"
       },
-      "local": null,
+      "local": {
+        "id": 260,
+        "source": "hypogenic",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/hypogenic"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/hypogenic"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "hypothesis-generation",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "hypothesis-generation",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/hypothesis-generation",
@@ -3363,14 +3600,17 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/hypothesis-generation"
       },
-      "local": null,
+      "local": {
+        "id": 261,
+        "source": "hypothesis-generation",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/hypothesis-generation"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/hypothesis-generation"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "image-enhancer",
@@ -3420,7 +3660,7 @@
     },
     {
       "sourceSlug": "imaging-data-commons",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "imaging-data-commons",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/imaging-data-commons",
@@ -3428,14 +3668,17 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/imaging-data-commons"
       },
-      "local": null,
+      "local": {
+        "id": 262,
+        "source": "imaging-data-commons",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/imaging-data-commons"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/imaging-data-commons"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "indexed-arguments-no-hint",
@@ -3458,7 +3701,7 @@
     },
     {
       "sourceSlug": "infographics",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "infographics",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/infographics",
@@ -3466,14 +3709,17 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/infographics"
       },
-      "local": null,
+      "local": {
+        "id": 263,
+        "source": "infographics",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/infographics"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/infographics"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "internal-comms",
@@ -3499,7 +3745,7 @@
     },
     {
       "sourceSlug": "interpro-database",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "interpro-database",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/interpro-database",
@@ -3507,14 +3753,17 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/interpro-database"
       },
-      "local": null,
+      "local": {
+        "id": 264,
+        "source": "interpro-database",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/interpro-database"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/interpro-database"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "invalid-agent",
@@ -3613,7 +3862,7 @@
     },
     {
       "sourceSlug": "invoice-organizer",
-      "status": "url_mismatch",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "invoice-organizer",
         "originUrl": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/invoice-organizer",
@@ -3625,19 +3874,17 @@
         "id": 174,
         "source": "invoice-organizer",
         "author": "ComposioHQ",
-        "githubUrl": "https://github.com/ComposioHQ/awesome-claude-skills/blob/master/invoice-organizer/SKILL.md"
+        "githubUrl": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/invoice-organizer"
       },
       "expected": {
         "author": "ComposioHQ",
         "githubUrl": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/invoice-organizer"
       },
-      "notes": [
-        "githubUrl differs from canonical origin."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "iso-13485-certification",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "iso-13485-certification",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/iso-13485-certification",
@@ -3645,18 +3892,21 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/iso-13485-certification"
       },
-      "local": null,
+      "local": {
+        "id": 265,
+        "source": "iso-13485-certification",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/iso-13485-certification"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/iso-13485-certification"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "jaspar-database",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "jaspar-database",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/jaspar-database",
@@ -3664,14 +3914,17 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/jaspar-database"
       },
-      "local": null,
+      "local": {
+        "id": 266,
+        "source": "jaspar-database",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/jaspar-database"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/jaspar-database"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "java-architect",
@@ -3759,7 +4012,7 @@
     },
     {
       "sourceSlug": "kegg-database",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "kegg-database",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/kegg-database",
@@ -3767,14 +4020,17 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/kegg-database"
       },
-      "local": null,
+      "local": {
+        "id": 267,
+        "source": "kegg-database",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/kegg-database"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/kegg-database"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "kotlin-specialist",
@@ -3816,7 +4072,7 @@
     },
     {
       "sourceSlug": "labarchive-integration",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "labarchive-integration",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/labarchive-integration",
@@ -3824,18 +4080,21 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/labarchive-integration"
       },
-      "local": null,
+      "local": {
+        "id": 268,
+        "source": "labarchive-integration",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/labarchive-integration"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/labarchive-integration"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "lamindb",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "lamindb",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/lamindb",
@@ -3843,14 +4102,17 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/lamindb"
       },
-      "local": null,
+      "local": {
+        "id": 269,
+        "source": "lamindb",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/lamindb"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/lamindb"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "laravel-specialist",
@@ -3873,7 +4135,7 @@
     },
     {
       "sourceSlug": "latchbio-integration",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "latchbio-integration",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/latchbio-integration",
@@ -3881,18 +4143,21 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/latchbio-integration"
       },
-      "local": null,
+      "local": {
+        "id": 270,
+        "source": "latchbio-integration",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/latchbio-integration"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/latchbio-integration"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "latex-posters",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "latex-posters",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/latex-posters",
@@ -3900,14 +4165,17 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/latex-posters"
       },
-      "local": null,
+      "local": {
+        "id": 271,
+        "source": "latex-posters",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/latex-posters"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/latex-posters"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "legacy-modernizer",
@@ -3949,7 +4217,7 @@
     },
     {
       "sourceSlug": "literature-review",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "literature-review",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/literature-review",
@@ -3957,14 +4225,17 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/literature-review"
       },
-      "local": null,
+      "local": {
+        "id": 272,
+        "source": "literature-review",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/literature-review"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/literature-review"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "manus",
@@ -3992,7 +4263,7 @@
     },
     {
       "sourceSlug": "markdown-mermaid-writing",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "markdown-mermaid-writing",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/markdown-mermaid-writing",
@@ -4000,18 +4271,21 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/markdown-mermaid-writing"
       },
-      "local": null,
+      "local": {
+        "id": 273,
+        "source": "markdown-mermaid-writing",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/markdown-mermaid-writing"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/markdown-mermaid-writing"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "market-research-reports",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "market-research-reports",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/market-research-reports",
@@ -4019,18 +4293,21 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/market-research-reports"
       },
-      "local": null,
+      "local": {
+        "id": 274,
+        "source": "market-research-reports",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/market-research-reports"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/market-research-reports"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "markitdown",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "markitdown",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/markitdown",
@@ -4038,18 +4315,21 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/markitdown"
       },
-      "local": null,
+      "local": {
+        "id": 275,
+        "source": "markitdown",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/markitdown"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/markitdown"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "matchms",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "matchms",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/matchms",
@@ -4057,18 +4337,21 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/matchms"
       },
-      "local": null,
+      "local": {
+        "id": 276,
+        "source": "matchms",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/matchms"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/matchms"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "matlab",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "matlab",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/matlab",
@@ -4076,18 +4359,21 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/matlab"
       },
-      "local": null,
+      "local": {
+        "id": 277,
+        "source": "matlab",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/matlab"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/matlab"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "matplotlib",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "matplotlib",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/matplotlib",
@@ -4095,14 +4381,17 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/matplotlib"
       },
-      "local": null,
+      "local": {
+        "id": 278,
+        "source": "matplotlib",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/matplotlib"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/matplotlib"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "mcp-developer",
@@ -4125,7 +4414,7 @@
     },
     {
       "sourceSlug": "medchem",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "medchem",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/medchem",
@@ -4133,18 +4422,21 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/medchem"
       },
-      "local": null,
+      "local": {
+        "id": 279,
+        "source": "medchem",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/medchem"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/medchem"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "meeting-insights-analyzer",
-      "status": "url_mismatch",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "meeting-insights-analyzer",
         "originUrl": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/meeting-insights-analyzer",
@@ -4156,15 +4448,13 @@
         "id": 159,
         "source": "meeting-insights-analyzer",
         "author": "ComposioHQ",
-        "githubUrl": "https://github.com/ComposioHQ/awesome-claude-skills/blob/master/meeting-insights-analyzer/"
+        "githubUrl": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/meeting-insights-analyzer"
       },
       "expected": {
         "author": "ComposioHQ",
         "githubUrl": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/meeting-insights-analyzer"
       },
-      "notes": [
-        "githubUrl differs from canonical origin."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "mesh-generation",
@@ -4187,7 +4477,7 @@
     },
     {
       "sourceSlug": "metabolomics-workbench-database",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "metabolomics-workbench-database",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/metabolomics-workbench-database",
@@ -4195,14 +4485,17 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/metabolomics-workbench-database"
       },
-      "local": null,
+      "local": {
+        "id": 280,
+        "source": "metabolomics-workbench-database",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/metabolomics-workbench-database"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/metabolomics-workbench-database"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "microservices-architect",
@@ -4263,7 +4556,7 @@
     },
     {
       "sourceSlug": "modal",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "modal",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/modal",
@@ -4271,14 +4564,17 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/modal"
       },
-      "local": null,
+      "local": {
+        "id": 281,
+        "source": "modal",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/modal"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/modal"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "molecular-dynamics",
@@ -4719,7 +5015,7 @@
     },
     {
       "sourceSlug": "oiloil-ui-ux-guide",
-      "status": "url_mismatch",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "oiloil-ui-ux-guide",
         "originUrl": "https://github.com/oil-oil/oiloil-ui-ux-guide/tree/main/skills/oiloil-ui-ux-guide",
@@ -4731,15 +5027,13 @@
         "id": 12,
         "source": "oiloil-ui-ux-guide",
         "author": "oil-oil",
-        "githubUrl": "https://github.com/oil-oil/oiloil-ui-ux-guide"
+        "githubUrl": "https://github.com/oil-oil/oiloil-ui-ux-guide/tree/main/skills/oiloil-ui-ux-guide"
       },
       "expected": {
         "author": "oil-oil",
         "githubUrl": "https://github.com/oil-oil/oiloil-ui-ux-guide/tree/main/skills/oiloil-ui-ux-guide"
       },
-      "notes": [
-        "githubUrl differs from canonical origin."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "omero-integration",
@@ -5172,7 +5466,7 @@
     },
     {
       "sourceSlug": "plaid",
-      "status": "author_mismatch",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "plaid",
         "originUrl": "https://github.com/raintree-technology/claude-starter/tree/main/skills/plaid",
@@ -5183,16 +5477,14 @@
       "local": {
         "id": 109,
         "source": "plaid",
-        "author": "raintree",
+        "author": "raintree-technology",
         "githubUrl": "https://github.com/raintree-technology/claude-starter/tree/main/skills/plaid"
       },
       "expected": {
         "author": "raintree-technology",
         "githubUrl": "https://github.com/raintree-technology/claude-starter/tree/main/skills/plaid"
       },
-      "notes": [
-        "author differs from canonical owner/frontmatter fallback."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "playwright-expert",
@@ -5256,7 +5548,7 @@
     },
     {
       "sourceSlug": "polaris-datainsight-doc-extract",
-      "status": "url_mismatch",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "polaris-datainsight-doc-extract",
         "originUrl": "https://github.com/jacob-g-park/polaris-datainsight-doc-extract/tree/main/skills/polaris-datainsight-doc-extract",
@@ -5268,15 +5560,13 @@
         "id": 116,
         "source": "polaris-datainsight-doc-extract",
         "author": "jacob-g-park",
-        "githubUrl": "https://github.com/jacob-g-park/polaris-datainsight-doc-extract"
+        "githubUrl": "https://github.com/jacob-g-park/polaris-datainsight-doc-extract/tree/main/skills/polaris-datainsight-doc-extract"
       },
       "expected": {
         "author": "jacob-g-park",
         "githubUrl": "https://github.com/jacob-g-park/polaris-datainsight-doc-extract/tree/main/skills/polaris-datainsight-doc-extract"
       },
-      "notes": [
-        "githubUrl differs from canonical origin."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "polars",
@@ -6603,7 +6893,7 @@
     },
     {
       "sourceSlug": "skill-creator",
-      "status": "author_mismatch",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "skill-creator",
         "originUrl": "https://github.com/anthropics/skills/tree/main/skills/skill-creator",
@@ -6614,16 +6904,14 @@
       "local": {
         "id": 79,
         "source": "skill-creator",
-        "author": "SKILLS All-in-one",
+        "author": "Anthropic",
         "githubUrl": "https://github.com/anthropics/skills/tree/main/skills/skill-creator"
       },
       "expected": {
         "author": "Anthropic",
         "githubUrl": "https://github.com/anthropics/skills/tree/main/skills/skill-creator"
       },
-      "notes": [
-        "author differs from canonical owner/frontmatter fallback."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "slurm-job-script-generator",
@@ -7756,7 +8044,7 @@
     },
     {
       "sourceSlug": "whop",
-      "status": "author_mismatch",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "whop",
         "originUrl": "https://github.com/raintree-technology/claude-starter/tree/main/skills/whop",
@@ -7767,16 +8055,14 @@
       "local": {
         "id": 111,
         "source": "whop",
-        "author": "raintree",
+        "author": "raintree-technology",
         "githubUrl": "https://github.com/raintree-technology/claude-starter/tree/main/skills/whop"
       },
       "expected": {
         "author": "raintree-technology",
         "githubUrl": "https://github.com/raintree-technology/claude-starter/tree/main/skills/whop"
       },
-      "notes": [
-        "author differs from canonical owner/frontmatter fallback."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "windows-builder",
@@ -7935,7 +8221,7 @@
     },
     {
       "sourceSlug": "x-twitter-scraper",
-      "status": "url_mismatch",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "x-twitter-scraper",
         "originUrl": "https://github.com/Xquik-dev/x-twitter-scraper/tree/master/skills/x-twitter-scraper",
@@ -7947,15 +8233,13 @@
         "id": 133,
         "source": "x-twitter-scraper",
         "author": "Xquik-dev",
-        "githubUrl": "https://github.com/Xquik-dev/x-twitter-scraper"
+        "githubUrl": "https://github.com/Xquik-dev/x-twitter-scraper/tree/master/skills/x-twitter-scraper"
       },
       "expected": {
         "author": "Xquik-dev",
         "githubUrl": "https://github.com/Xquik-dev/x-twitter-scraper/tree/master/skills/x-twitter-scraper"
       },
-      "notes": [
-        "githubUrl differs from canonical origin."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "xlsx",

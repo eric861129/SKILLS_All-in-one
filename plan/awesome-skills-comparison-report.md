@@ -1,9 +1,78 @@
 # Awesome Claude Skills 比對報告（含檔案系統比對）
+## 增量更新（2026-03-06，Batch 023）
+- Tracking 產生時間：`2026-03-06T05:12:14.250Z`
+- Wave 2 import 已完成：`batch-016`、`batch-017`、`batch-018`、`batch-019`、`batch-020`、`batch-021`、`batch-022`、`batch-023`（共 40 筆）
+- mismatch（url/author）：`0`（維持）
+- `status=missing`：`165`（由 `170` 降至 `165`）
+- `needs_manual_review`：`18`（維持）
+
+### 下一批（import, non-fixture）
+1. `molecular-dynamics`
+2. `molfeat`
+3. `monarch-database`
+4. `networkx`
+5. `neurokit2`
+
+## 增量更新（2026-03-06，Batch 020）
+- Tracking 產生時間：`2026-03-06T03:36:41.469Z`
+- Wave 2 import 已完成：`batch-016`、`batch-017`、`batch-018`、`batch-019`、`batch-020`（共 25 筆）
+- mismatch（url/author）：`0`（維持）
+- `status=missing`：`180`（由 `185` 降至 `180`）
+- `needs_manual_review`：`18`（維持）
+
+### 下一批（import, non-fixture）
+1. `kegg-database`
+2. `labarchive-integration`
+3. `lamindb`
+4. `latchbio-integration`
+5. `latex-posters`
+
+## 增量更新（2026-03-06，Batch 019）
+- Tracking 產生時間：`2026-03-06T03:21:06.117Z`
+- Wave 2 import 已完成：`batch-016`、`batch-017`、`batch-018`、`batch-019`（共 20 筆）
+- mismatch（url/author）：`0`（維持）
+- `status=missing`：`185`（由 `190` 降至 `185`）
+- `needs_manual_review`：`18`（維持）
+
+### 下一批（import, non-fixture）
+1. `imaging-data-commons`
+2. `infographics`
+3. `interpro-database`
+4. `iso-13485-certification`
+5. `jaspar-database`
+
 
 - 報告時間: 2026-03-05T15:53:23.972Z
 - 比對基準: https://raw.githubusercontent.com/BehiSecc/awesome-claude-skills/main/README.md
 - Tracking 快照時間: 2026-03-05T15:45:25.422Z
 - 檔案系統掃描目錄: /Users/eric861129/SKILLS_All-in-one/public/SKILLS
+
+## 增量更新（2026-03-06）
+
+- Tracking 快照時間：`2026-03-06T03:07:16.335Z`
+- Wave 1 metadata remediation 已完成（`batch-014`、`batch-015`）
+- Wave 2 import 新增完成（`batch-016`、`batch-017`、`batch-018`，單 repo 各 5 筆）
+- mismatch（url/author）已由 `10 -> 0`
+- `status=missing` 目前為 `190`
+- `needs_manual_review` 目前為 `18`
+
+### Work Queue 現況（SoT）
+
+| Queue | 數量 |
+| --- | ---: |
+| `queues.mismatch` | 0 |
+| `queues.local_present_tracking_missing` | 15 |
+| `queues.import_nonfixture_by_repo` | 162 |
+| `queues.fixture_manual_review` | 46 |
+| `queues.local_only_custom` | 63 |
+
+### 下一批建議（import, non-fixture）
+
+1. `hedgefundmonitor`
+2. `histolab`
+3. `hmdb-database`
+4. `hypogenic`
+5. `hypothesis-generation`
 
 ## 總覽
 

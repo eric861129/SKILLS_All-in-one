@@ -562,6 +562,227 @@
 
 ---
 
+## Batch 014
+
+- 批次 ID：`batch-014`
+- 日期：`2026-03-06`
+- 類型：`correction`
+- 筆數：`5`
+- 項目：
+  1. `aptos`
+  2. `email-html-mjml`
+  3. `invoice-organizer`
+  4. `meeting-insights-analyzer`
+  5. `oiloil-ui-ux-guide`
+
+### 執行內容
+
+1. 來源確認：
+   - 依 `plan/awesome-skills-tracking.json` 的 canonical source 校正 metadata
+2. Correction：
+   - 僅修正 `author` / `githubUrl` 欄位，不新增 skill 檔案
+3. Audit：
+   - Metadata-only 審查，無新匯入資產
+   - 報告：`plan/security-audits/batch-014.md`
+4. Onboard：
+   - 更新 `src/data/skills.ts`
+   - 同步更新 `database/init_skills.sql`
+5. Sync：
+   - `npm run prebuild` 重建 manifest
+6. Verify：
+   - `npm run build`、`npm run test`
+7. Tracking：
+   - 更新 `plan/awesome-skills-tracking.json`，新增 `batch-014`
+
+### 結果
+
+- Audit：`PASS`
+- Onboard：`completed`
+- Sync：`completed`
+
+## Batch 015
+
+- 批次 ID：`batch-015`
+- 日期：`2026-03-06`
+- 類型：`correction`
+- 筆數：`5`
+- 項目：
+  1. `plaid`
+  2. `polaris-datainsight-doc-extract`
+  3. `skill-creator`
+  4. `whop`
+  5. `x-twitter-scraper`
+
+### 執行內容
+
+1. 來源確認：
+   - 依 `plan/awesome-skills-tracking.json` 的 canonical source 校正 metadata
+2. Correction：
+   - 僅修正 `author` / `githubUrl` 欄位，不新增 skill 檔案
+3. Audit：
+   - Metadata-only 審查，無新匯入資產
+   - 報告：`plan/security-audits/batch-015.md`
+4. Onboard：
+   - 更新 `src/data/skills.ts`
+   - 同步更新 `database/init_skills.sql`
+5. Sync：
+   - `npm run prebuild` 重建 manifest
+6. Verify：
+   - `npm run build`、`npm run test`
+7. Tracking：
+   - 更新 `plan/awesome-skills-tracking.json`，新增 `batch-015`
+
+### 結果
+
+- Audit：`PASS`
+- Onboard：`completed`
+- Sync：`completed`
+
+---
+
+## Batch 016
+
+- 批次 ID：`batch-016`
+- 日期：`2026-03-06`
+- 類型：`import`
+- 筆數：`5`
+- 項目：
+  1. `fred-economic-data`
+  2. `gene-database`
+  3. `generate-image`
+  4. `geniml`
+  5. `geo-database`
+
+### 執行內容
+
+1. 來源確認：
+   - canonical repo：`K-Dense-AI/claude-scientific-skills`
+   - canonical path：`scientific-skills/<skill>`
+2. Import：
+   - 以 sparse checkout 匯入 5 筆到 `public/SKILLS/Uncategorized/<skill>/`
+3. Audit：
+   - 檢查 `SKILL.md`、`scripts/`、`references/`
+   - 主要為 API 查詢與資料流程腳本，未發現需阻擋上架的高風險行為
+   - 報告：`plan/security-audits/batch-016.md`
+4. Onboard：
+   - 分類移動到：
+     - `Data & Analysis`: `fred-economic-data`
+     - `Media & Content`: `generate-image`
+     - `Scientific & Research Tools`: `gene-database`, `geniml`, `geo-database`
+   - 新增 `src/data/skills.ts`：id `242~246`
+   - 新增 `database/init_skills.sql`：id `242~246`
+5. Sync：
+   - `npm run prebuild` 重建 manifest
+6. Verify：
+   - `npm run build` 通過
+   - `npm run test` 通過
+7. Tracking：
+   - 更新 `plan/awesome-skills-tracking.json`，新增 `batch-016`
+   - 回寫 `plan/awesome-skills-work-queues.json`（本批 5 筆標記 `done`）
+
+### 結果
+
+- Audit：`PASS`
+- Onboard：`completed`
+- Sync：`completed`
+
+---
+
+## Batch 017
+
+- 批次 ID：`batch-017`
+- 日期：`2026-03-06`
+- 類型：`import`
+- 筆數：`5`
+- 項目：
+  1. `geomaster`
+  2. `geopandas`
+  3. `get-available-resources`
+  4. `gget`
+  5. `ginkgo-cloud-lab`
+
+### 執行內容
+
+1. 來源確認：
+   - canonical repo：`K-Dense-AI/claude-scientific-skills`
+   - canonical path：`scientific-skills/<skill>`
+2. Import：
+   - 以 sparse checkout 匯入 5 筆到 `public/SKILLS/Uncategorized/<skill>/`
+3. Audit：
+   - 檢查 `SKILL.md`、`scripts/`、`references/`
+   - 主要為資料分析與 API 互動腳本，未發現需阻擋上架的高風險行為
+   - 報告：`plan/security-audits/batch-017.md`
+4. Onboard：
+   - 分類移動到：
+     - `Data & Analysis`: `geomaster`, `geopandas`
+     - `Utility & Automation`: `get-available-resources`
+     - `Scientific & Research Tools`: `gget`
+     - `Health & Life Sciences`: `ginkgo-cloud-lab`
+   - 新增 `src/data/skills.ts`：id `247~251`
+   - 新增 `database/init_skills.sql`：id `247~251`
+5. Sync：
+   - `npm run prebuild` 重建 manifest
+6. Verify：
+   - `npm run build` 通過
+   - `npm run test` 通過
+7. Tracking：
+   - 更新 `plan/awesome-skills-tracking.json`，新增 `batch-017`
+   - 回寫 `plan/awesome-skills-work-queues.json`（本批 5 筆標記 `done`）
+
+### 結果
+
+- Audit：`PASS`
+- Onboard：`completed`
+- Sync：`completed`
+
+---
+
+## Batch 018
+
+- 批次 ID：`batch-018`
+- 日期：`2026-03-06`
+- 類型：`import`
+- 筆數：`5`
+- 項目：
+  1. `glycoengineering`
+  2. `gnomad-database`
+  3. `gtars`
+  4. `gtex-database`
+  5. `gwas-database`
+
+### 執行內容
+
+1. 來源確認：
+   - canonical repo：`K-Dense-AI/claude-scientific-skills`
+   - canonical path：`scientific-skills/<skill>`
+2. Import：
+   - 以 sparse checkout 匯入 5 筆到 `public/SKILLS/Uncategorized/<skill>/`
+3. Audit：
+   - 檢查 `SKILL.md`、`references/`
+   - 未發現需阻擋上架的高風險行為
+   - 報告：`plan/security-audits/batch-018.md`
+4. Onboard：
+   - 分類移動到：
+     - `Scientific & Research Tools`: `glycoengineering`, `gnomad-database`, `gtars`, `gtex-database`, `gwas-database`
+   - 新增 `src/data/skills.ts`：id `252~256`
+   - 新增 `database/init_skills.sql`：id `252~256`
+5. Sync：
+   - `npm run prebuild` 重建 manifest
+6. Verify：
+   - `npm run build` 通過
+   - `npm run test` 通過
+7. Tracking：
+   - 更新 `plan/awesome-skills-tracking.json`，新增 `batch-018`
+   - 回寫 `plan/awesome-skills-work-queues.json`（本批 5 筆標記 `done`）
+
+### 結果
+
+- Audit：`PASS`
+- Onboard：`completed`
+- Sync：`completed`
+
+---
+
 ## 後續批次填寫模板
 
 請複製以下段落新增 `batch-00N`：
@@ -597,3 +818,233 @@
 - Sync：`completed/pending`
 - 備註：`...`
 ```
+## Batch 019
+
+- 批次 ID：`batch-019`
+- 日期：`2026-03-06`
+- 類型：`import`
+- 數量：`5`
+- 項目：
+  1. `hedgefundmonitor`
+  2. `histolab`
+  3. `hmdb-database`
+  4. `hypogenic`
+  5. `hypothesis-generation`
+
+### 執行摘要
+
+1. Source 對齊：
+   - canonical repo：`K-Dense-AI/claude-scientific-skills`
+   - canonical path：`scientific-skills/<skill>`
+2. Import：
+   - 使用 sparse checkout 載入 5 個技能，並匯入 `public/SKILLS/<Category>/<skill>/`
+3. Audit：
+   - 檢查 `SKILL.md`、`references/`、`assets/`
+   - 未發現 secrets、惡意 payload 或自動執行腳本
+   - 審查報告：`plan/security-audits/batch-019.md`
+4. Onboard：
+   - 分類：
+     - `Data & Analysis`: `hedgefundmonitor`, `hypogenic`
+     - `Health & Life Sciences`: `histolab`
+     - `Scientific & Research Tools`: `hmdb-database`
+     - `Writing & Research`: `hypothesis-generation`
+   - 更新 `src/data/skills.ts`：id `257~261`
+   - 更新 `database/init_skills.sql`：id `257~261`
+5. Sync：
+   - `npm run prebuild` 重新產生 manifest
+6. Verify：
+   - `npm run build`
+   - `npm run test`
+7. Tracking：
+   - 更新 `plan/awesome-skills-tracking.json`（追加 `batch-019`）
+   - 更新 `plan/awesome-skills-work-queues.json`（本批次 5 筆標記 `done`）
+
+### 結果
+
+- Audit：`PASS`
+- Onboard：`completed`
+- Sync：`completed`
+## Batch 020
+
+- 批次 ID：`batch-020`
+- 日期：`2026-03-06`
+- 類型：`import`
+- 數量：`5`
+- 項目：
+  1. `imaging-data-commons`
+  2. `infographics`
+  3. `interpro-database`
+  4. `iso-13485-certification`
+  5. `jaspar-database`
+
+### 執行摘要
+
+1. Source 對齊：
+   - canonical repo：`K-Dense-AI/claude-scientific-skills`
+   - canonical path：`scientific-skills/<skill>`
+2. Import：
+   - 使用 sparse checkout 載入 5 個技能，並匯入 `public/SKILLS/<Category>/<skill>/`
+3. Audit：
+   - 檢查 `SKILL.md`、`references/`、`scripts/`、`assets/`
+   - 未發現 secrets、惡意 payload 或自動執行腳本
+   - 審查報告：`plan/security-audits/batch-020.md`
+4. Onboard：
+   - 分類：
+     - `Health & Life Sciences`: `imaging-data-commons`, `iso-13485-certification`
+     - `Media & Content`: `infographics`
+     - `Scientific & Research Tools`: `interpro-database`, `jaspar-database`
+   - 更新 `src/data/skills.ts`：id `262~266`
+   - 更新 `database/init_skills.sql`：id `262~266`
+5. Sync：
+   - `npm run prebuild` 重新產生 manifest
+6. Verify：
+   - `npm run build`
+   - `npm run test`
+7. Tracking：
+   - 更新 `plan/awesome-skills-tracking.json`（追加 `batch-020`）
+   - 更新 `plan/awesome-skills-work-queues.json`（本批次 5 筆標記 `done`）
+
+### 結果
+
+- Audit：`PASS`
+- Onboard：`completed`
+- Sync：`completed`
+## Batch 021
+
+- 批次 ID：`batch-021`
+- 日期：`2026-03-06`
+- 類型：`import`
+- 數量：`5`
+- 項目：
+  1. `kegg-database`
+  2. `labarchive-integration`
+  3. `lamindb`
+  4. `latchbio-integration`
+  5. `latex-posters`
+
+### 執行摘要
+
+1. Source 對齊：
+   - canonical repo：`K-Dense-AI/claude-scientific-skills`
+   - canonical path：`scientific-skills/<skill>`
+2. Import：
+   - 使用 sparse checkout 載入 5 個技能，並匯入 `public/SKILLS/<Category>/<skill>/`
+3. Audit：
+   - 檢查 `SKILL.md`、`references/`、`scripts/`、`assets/`
+   - 未發現 secrets、惡意 payload 或自動執行腳本
+   - 審查報告：`plan/security-audits/batch-021.md`
+4. Onboard：
+   - 分類：
+     - `Scientific & Research Tools`: `kegg-database`, `labarchive-integration`, `lamindb`, `latchbio-integration`
+     - `Writing & Research`: `latex-posters`
+   - 更新 `src/data/skills.ts`：id `267~271`
+   - 更新 `database/init_skills.sql`：id `267~271`
+5. Sync：
+   - `npm run prebuild` 重新產生 manifest
+6. Verify：
+   - `npm run build`
+   - `npm run test`
+7. Tracking：
+   - 更新 `plan/awesome-skills-tracking.json`（追加 `batch-021`）
+   - 更新 `plan/awesome-skills-work-queues.json`（本批次 5 筆標記 `done`）
+
+### 結果
+
+- Audit：`PASS`
+- Onboard：`completed`
+- Sync：`completed`
+
+## Batch 022
+
+- 批次 ID：`batch-022`
+- 日期：`2026-03-06`
+- 類型：`import`
+- 數量：`5`
+- 項目：
+  1. `literature-review`
+  2. `markdown-mermaid-writing`
+  3. `market-research-reports`
+  4. `markitdown`
+  5. `matchms`
+
+### 執行摘要
+
+1. Source 對齊：
+   - canonical repo：`K-Dense-AI/claude-scientific-skills`
+   - canonical path：`scientific-skills/<skill>`
+2. Import：
+   - 使用 sparse checkout 載入 5 個技能，並匯入 `public/SKILLS/<Category>/<skill>/`
+3. Audit：
+   - 檢查 `SKILL.md`、`references/`、`scripts/`、`assets/`
+   - 未發現 secrets、惡意 payload 或自動執行腳本
+   - 審查報告：`plan/security-audits/batch-022.md`
+4. Onboard：
+   - 分類：
+     - `Writing & Research`: `literature-review`, `markdown-mermaid-writing`
+     - `Data & Analysis`: `market-research-reports`
+     - `Utility & Automation`: `markitdown`
+     - `Scientific & Research Tools`: `matchms`
+   - 更新 `src/data/skills.ts`：id `272~276`
+   - 更新 `database/init_skills.sql`：id `272~276`
+5. Sync：
+   - `npm run prebuild` 重新產生 manifest
+6. Verify：
+   - `npm run build`
+   - `npm run test`
+7. Tracking：
+   - 更新 `plan/awesome-skills-tracking.json`（追加 `batch-022`）
+   - 更新 `plan/awesome-skills-work-queues.json`（本批次 5 筆標記 `done`）
+
+### 結果
+
+- Audit：`PASS`
+- Onboard：`completed`
+- Sync：`completed`
+
+---
+
+## Batch 023
+
+- 批次 ID：`batch-023`
+- 日期：`2026-03-06`
+- 類型：`import`
+- 數量：`5`
+- 項目：
+  1. `matlab`
+  2. `matplotlib`
+  3. `medchem`
+  4. `metabolomics-workbench-database`
+  5. `modal`
+
+### 執行摘要
+
+1. Source 對齊：
+   - canonical repo：`K-Dense-AI/claude-scientific-skills`
+   - canonical path：`scientific-skills/<skill>`
+2. Import：
+   - 使用 sparse checkout 載入 5 個技能，並匯入 `public/SKILLS/<Category>/<skill>/`
+3. Audit：
+   - 檢查 `SKILL.md`、`references/`、`scripts/`、`assets/`
+   - 未發現 secrets、惡意 payload 或自動執行腳本
+   - 審查報告：`plan/security-audits/batch-023.md`
+4. Onboard：
+   - 分類：
+     - `Data & Analysis`: `matlab`, `matplotlib`
+     - `Scientific & Research Tools`: `medchem`, `metabolomics-workbench-database`
+     - `Infrastructure & Cloud`: `modal`
+   - 更新 `src/data/skills.ts`：id `277~281`
+   - 更新 `database/init_skills.sql`：id `277~281`
+5. Sync：
+   - `npm run prebuild` 重新產生 manifest
+6. Verify：
+   - `npm run build`
+   - `npm run test`
+7. Tracking：
+   - 更新 `plan/awesome-skills-tracking.json`（追加 `batch-023`）
+   - 更新 `plan/awesome-skills-work-queues.json`（本批次 5 筆標記 `done`）
+
+### 結果
+
+- Audit：`PASS`
+- Onboard：`completed`
+- Sync：`completed`
