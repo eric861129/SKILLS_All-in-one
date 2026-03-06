@@ -477,6 +477,597 @@
       "source": "structured"
     }
   },
+  "fred-economic-data": {
+    "category": "Data & Analysis",
+    "files": [
+      "SKILL.md",
+      "references/api_basics.md",
+      "references/categories.md",
+      "references/geofred.md",
+      "references/releases.md",
+      "references/series.md",
+      "references/sources.md",
+      "references/tags.md",
+      "scripts/fred_examples.py",
+      "scripts/fred_query.py"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 11987,
+        "lineCount": 434,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/api_basics.md": {
+        "sizeBytes": 4569,
+        "lineCount": 213,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/categories.md": {
+        "sizeBytes": 10766,
+        "lineCount": 443,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/geofred.md": {
+        "sizeBytes": 13999,
+        "lineCount": 589,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/releases.md": {
+        "sizeBytes": 15990,
+        "lineCount": 643,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/series.md": {
+        "sizeBytes": 14479,
+        "lineCount": 585,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/sources.md": {
+        "sizeBytes": 10654,
+        "lineCount": 424,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/tags.md": {
+        "sizeBytes": 11321,
+        "lineCount": 486,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "scripts/fred_examples.py": {
+        "sizeBytes": 10384,
+        "lineCount": 355,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/fred_query.py": {
+        "sizeBytes": 18948,
+        "lineCount": 591,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 30777,
+      "cl100k": 32078
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "geomaster": {
+    "category": "Data & Analysis",
+    "files": [
+      "README.md",
+      "SKILL.md",
+      "references/advanced-gis.md",
+      "references/big-data.md",
+      "references/code-examples.md",
+      "references/core-libraries.md",
+      "references/data-sources.md",
+      "references/gis-software.md",
+      "references/industry-applications.md",
+      "references/machine-learning.md",
+      "references/programming-languages.md",
+      "references/remote-sensing.md",
+      "references/scientific-domains.md",
+      "references/specialized-topics.md"
+    ],
+    "fileMeta": {
+      "README.md": {
+        "sizeBytes": 3219,
+        "lineCount": 106,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "SKILL.md": {
+        "sizeBytes": 20705,
+        "lineCount": 691,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/advanced-gis.md": {
+        "sizeBytes": 10745,
+        "lineCount": 377,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/big-data.md": {
+        "sizeBytes": 8455,
+        "lineCount": 364,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/code-examples.md": {
+        "sizeBytes": 12492,
+        "lineCount": 532,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/core-libraries.md": {
+        "sizeBytes": 6593,
+        "lineCount": 274,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/data-sources.md": {
+        "sizeBytes": 9001,
+        "lineCount": 331,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/gis-software.md": {
+        "sizeBytes": 8915,
+        "lineCount": 370,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/industry-applications.md": {
+        "sizeBytes": 13071,
+        "lineCount": 421,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/machine-learning.md": {
+        "sizeBytes": 12783,
+        "lineCount": 463,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/programming-languages.md": {
+        "sizeBytes": 9302,
+        "lineCount": 394,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/remote-sensing.md": {
+        "sizeBytes": 10104,
+        "lineCount": 371,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/scientific-domains.md": {
+        "sizeBytes": 10611,
+        "lineCount": 417,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/specialized-topics.md": {
+        "sizeBytes": 10686,
+        "lineCount": 429,
+        "ext": "md",
+        "tabKey": "references"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 36647,
+      "cl100k": 39701
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "geopandas": {
+    "category": "Data & Analysis",
+    "files": [
+      "SKILL.md",
+      "references/crs-management.md",
+      "references/data-io.md",
+      "references/data-structures.md",
+      "references/geometric-operations.md",
+      "references/spatial-analysis.md",
+      "references/visualization.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 7117,
+        "lineCount": 250,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/crs-management.md": {
+        "sizeBytes": 4835,
+        "lineCount": 244,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/data-io.md": {
+        "sizeBytes": 3690,
+        "lineCount": 166,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/data-structures.md": {
+        "sizeBytes": 1638,
+        "lineCount": 71,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/geometric-operations.md": {
+        "sizeBytes": 4183,
+        "lineCount": 222,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/spatial-analysis.md": {
+        "sizeBytes": 4816,
+        "lineCount": 185,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/visualization.md": {
+        "sizeBytes": 5415,
+        "lineCount": 244,
+        "ext": "md",
+        "tabKey": "references"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 7925,
+      "cl100k": 8477
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "hedgefundmonitor": {
+    "category": "Data & Analysis",
+    "files": [
+      "SKILL.md",
+      "references/api-overview.md",
+      "references/datasets.md",
+      "references/endpoints-combined.md",
+      "references/endpoints-metadata.md",
+      "references/endpoints-series-data.md",
+      "references/examples.md",
+      "references/parameters.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 6824,
+        "lineCount": 129,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/api-overview.md": {
+        "sizeBytes": 2429,
+        "lineCount": 94,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/datasets.md": {
+        "sizeBytes": 5827,
+        "lineCount": 151,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/endpoints-combined.md": {
+        "sizeBytes": 5849,
+        "lineCount": 197,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/endpoints-metadata.md": {
+        "sizeBytes": 4439,
+        "lineCount": 137,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/endpoints-series-data.md": {
+        "sizeBytes": 3640,
+        "lineCount": 127,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/examples.md": {
+        "sizeBytes": 7886,
+        "lineCount": 288,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/parameters.md": {
+        "sizeBytes": 3329,
+        "lineCount": 105,
+        "ext": "md",
+        "tabKey": "references"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 10038,
+      "cl100k": 10839
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "hypogenic": {
+    "category": "Data & Analysis",
+    "files": [
+      "SKILL.md",
+      "references/config_template.yaml"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 21654,
+        "lineCount": 654,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/config_template.yaml": {
+        "sizeBytes": 4113,
+        "lineCount": 151,
+        "ext": "yaml",
+        "tabKey": "references"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 6417,
+      "cl100k": 5941
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "market-research-reports": {
+    "category": "Data & Analysis",
+    "files": [
+      "SKILL.md",
+      "assets/FORMATTING_GUIDE.md",
+      "assets/market_report_template.tex",
+      "assets/market_research.sty",
+      "references/data_analysis_patterns.md",
+      "references/report_structure_guide.md",
+      "references/visual_generation_guide.md",
+      "scripts/generate_market_visuals.py"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 28743,
+        "lineCount": 906,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "assets/FORMATTING_GUIDE.md": {
+        "sizeBytes": 10110,
+        "lineCount": 429,
+        "ext": "md",
+        "tabKey": "assets"
+      },
+      "assets/market_report_template.tex": {
+        "sizeBytes": 50218,
+        "lineCount": 0,
+        "ext": "tex",
+        "tabKey": "assets"
+      },
+      "assets/market_research.sty": {
+        "sizeBytes": 15617,
+        "lineCount": 0,
+        "ext": "sty",
+        "tabKey": "assets"
+      },
+      "references/data_analysis_patterns.md": {
+        "sizeBytes": 17690,
+        "lineCount": 549,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/report_structure_guide.md": {
+        "sizeBytes": 23572,
+        "lineCount": 1000,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/visual_generation_guide.md": {
+        "sizeBytes": 37281,
+        "lineCount": 1078,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "scripts/generate_market_visuals.py": {
+        "sizeBytes": 20423,
+        "lineCount": 530,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 34315,
+      "cl100k": 32783
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "matlab": {
+    "category": "Data & Analysis",
+    "files": [
+      "SKILL.md",
+      "references/data-import-export.md",
+      "references/executing-scripts.md",
+      "references/graphics-visualization.md",
+      "references/mathematics.md",
+      "references/matrices-arrays.md",
+      "references/octave-compatibility.md",
+      "references/programming.md",
+      "references/python-integration.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 10044,
+        "lineCount": 377,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/data-import-export.md": {
+        "sizeBytes": 10600,
+        "lineCount": 480,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/executing-scripts.md": {
+        "sizeBytes": 9508,
+        "lineCount": 445,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/graphics-visualization.md": {
+        "sizeBytes": 12845,
+        "lineCount": 580,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/mathematics.md": {
+        "sizeBytes": 15237,
+        "lineCount": 554,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/matrices-arrays.md": {
+        "sizeBytes": 10913,
+        "lineCount": 350,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/octave-compatibility.md": {
+        "sizeBytes": 9977,
+        "lineCount": 545,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/programming.md": {
+        "sizeBytes": 11885,
+        "lineCount": 673,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/python-integration.md": {
+        "sizeBytes": 9504,
+        "lineCount": 434,
+        "ext": "md",
+        "tabKey": "references"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 25127,
+      "cl100k": 28824
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "matplotlib": {
+    "category": "Data & Analysis",
+    "files": [
+      "SKILL.md",
+      "references/api_reference.md",
+      "references/common_issues.md",
+      "references/plot_types.md",
+      "references/styling_guide.md",
+      "scripts/plot_template.py",
+      "scripts/style_configurator.py"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 11454,
+        "lineCount": 360,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/api_reference.md": {
+        "sizeBytes": 11233,
+        "lineCount": 413,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/common_issues.md": {
+        "sizeBytes": 12836,
+        "lineCount": 564,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/plot_types.md": {
+        "sizeBytes": 11839,
+        "lineCount": 477,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/styling_guide.md": {
+        "sizeBytes": 13583,
+        "lineCount": 590,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "scripts/plot_template.py": {
+        "sizeBytes": 12093,
+        "lineCount": 402,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/style_configurator.py": {
+        "sizeBytes": 13179,
+        "lineCount": 410,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 21555,
+      "cl100k": 24093
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
   "ml-pipeline": {
     "category": "Data & Analysis",
     "files": [
@@ -5972,6 +6563,277 @@
       "source": "structured"
     }
   },
+  "ginkgo-cloud-lab": {
+    "category": "Health & Life Sciences",
+    "files": [
+      "SKILL.md",
+      "references/cell-free-protein-expression-optimization.md",
+      "references/cell-free-protein-expression-validation.md",
+      "references/fluorescent-pixel-art-generation.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 3469,
+        "lineCount": 57,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/cell-free-protein-expression-optimization.md": {
+        "sizeBytes": 2710,
+        "lineCount": 86,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/cell-free-protein-expression-validation.md": {
+        "sizeBytes": 2073,
+        "lineCount": 72,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/fluorescent-pixel-art-generation.md": {
+        "sizeBytes": 2654,
+        "lineCount": 88,
+        "ext": "md",
+        "tabKey": "references"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 2728,
+      "cl100k": 2571
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "histolab": {
+    "category": "Health & Life Sciences",
+    "files": [
+      "SKILL.md",
+      "references/filters_preprocessing.md",
+      "references/slide_management.md",
+      "references/tile_extraction.md",
+      "references/tissue_masks.md",
+      "references/visualization.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 20152,
+        "lineCount": 677,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/filters_preprocessing.md": {
+        "sizeBytes": 12700,
+        "lineCount": 515,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/slide_management.md": {
+        "sizeBytes": 4701,
+        "lineCount": 173,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/tile_extraction.md": {
+        "sizeBytes": 11297,
+        "lineCount": 422,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/tissue_masks.md": {
+        "sizeBytes": 7232,
+        "lineCount": 252,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/visualization.md": {
+        "sizeBytes": 13970,
+        "lineCount": 548,
+        "ext": "md",
+        "tabKey": "references"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 17515,
+      "cl100k": 16720
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "imaging-data-commons": {
+    "category": "Health & Life Sciences",
+    "files": [
+      "SKILL.md",
+      "references/bigquery_guide.md",
+      "references/cli_guide.md",
+      "references/clinical_data_guide.md",
+      "references/cloud_storage_guide.md",
+      "references/dicomweb_guide.md",
+      "references/digital_pathology_guide.md",
+      "references/index_tables_guide.md",
+      "references/sql_patterns.md",
+      "references/use_cases.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 34425,
+        "lineCount": 844,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/bigquery_guide.md": {
+        "sizeBytes": 18766,
+        "lineCount": 557,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/cli_guide.md": {
+        "sizeBytes": 7742,
+        "lineCount": 273,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/clinical_data_guide.md": {
+        "sizeBytes": 11757,
+        "lineCount": 325,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/cloud_storage_guide.md": {
+        "sizeBytes": 14065,
+        "lineCount": 334,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/dicomweb_guide.md": {
+        "sizeBytes": 14985,
+        "lineCount": 400,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/digital_pathology_guide.md": {
+        "sizeBytes": 15357,
+        "lineCount": 404,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/index_tables_guide.md": {
+        "sizeBytes": 6864,
+        "lineCount": 147,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/sql_patterns.md": {
+        "sizeBytes": 7153,
+        "lineCount": 208,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/use_cases.md": {
+        "sizeBytes": 5370,
+        "lineCount": 187,
+        "ext": "md",
+        "tabKey": "references"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 34105,
+      "cl100k": 32784
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "iso-13485-certification": {
+    "category": "Health & Life Sciences",
+    "files": [
+      "SKILL.md",
+      "assets/templates/procedures/CAPA-procedure-template.md",
+      "assets/templates/procedures/document-control-procedure-template.md",
+      "assets/templates/quality-manual-template.md",
+      "references/gap-analysis-checklist.md",
+      "references/iso-13485-requirements.md",
+      "references/mandatory-documents.md",
+      "references/quality-manual-guide.md",
+      "scripts/gap_analyzer.py"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 23249,
+        "lineCount": 679,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "assets/templates/procedures/CAPA-procedure-template.md": {
+        "sizeBytes": 15055,
+        "lineCount": 454,
+        "ext": "md",
+        "tabKey": "assets"
+      },
+      "assets/templates/procedures/document-control-procedure-template.md": {
+        "sizeBytes": 18062,
+        "lineCount": 568,
+        "ext": "md",
+        "tabKey": "assets"
+      },
+      "assets/templates/quality-manual-template.md": {
+        "sizeBytes": 20618,
+        "lineCount": 522,
+        "ext": "md",
+        "tabKey": "assets"
+      },
+      "references/gap-analysis-checklist.md": {
+        "sizeBytes": 27586,
+        "lineCount": 569,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/iso-13485-requirements.md": {
+        "sizeBytes": 25697,
+        "lineCount": 611,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/mandatory-documents.md": {
+        "sizeBytes": 21428,
+        "lineCount": 607,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/quality-manual-guide.md": {
+        "sizeBytes": 26197,
+        "lineCount": 689,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "scripts/gap_analyzer.py": {
+        "sizeBytes": 15529,
+        "lineCount": 441,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 48342,
+      "cl100k": 43922
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
   "aws-agentic-ai": {
     "category": "Infrastructure & Cloud",
     "files": [
@@ -6350,6 +7212,114 @@
     "tokenEstimate": {
       "heuristic": 4066,
       "cl100k": 3962
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "modal": {
+    "category": "Infrastructure & Cloud",
+    "files": [
+      "SKILL.md",
+      "references/api_reference.md",
+      "references/examples.md",
+      "references/functions.md",
+      "references/getting-started.md",
+      "references/gpu.md",
+      "references/images.md",
+      "references/resources.md",
+      "references/scaling.md",
+      "references/scheduled-jobs.md",
+      "references/secrets.md",
+      "references/volumes.md",
+      "references/web-endpoints.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 10635,
+        "lineCount": 382,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/api_reference.md": {
+        "sizeBytes": 956,
+        "lineCount": 35,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/examples.md": {
+        "sizeBytes": 9782,
+        "lineCount": 434,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/functions.md": {
+        "sizeBytes": 4457,
+        "lineCount": 275,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/getting-started.md": {
+        "sizeBytes": 1984,
+        "lineCount": 93,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/gpu.md": {
+        "sizeBytes": 3551,
+        "lineCount": 169,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/images.md": {
+        "sizeBytes": 5414,
+        "lineCount": 262,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/resources.md": {
+        "sizeBytes": 2681,
+        "lineCount": 130,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/scaling.md": {
+        "sizeBytes": 5354,
+        "lineCount": 231,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/scheduled-jobs.md": {
+        "sizeBytes": 6032,
+        "lineCount": 304,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/secrets.md": {
+        "sizeBytes": 3922,
+        "lineCount": 181,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/volumes.md": {
+        "sizeBytes": 6081,
+        "lineCount": 304,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/web-endpoints.md": {
+        "sizeBytes": 7202,
+        "lineCount": 338,
+        "ext": "md",
+        "tabKey": "references"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 17013,
+      "cl100k": 16405
     },
     "dependencies": {
       "skills": [],
@@ -7228,6 +8198,96 @@
     "tokenEstimate": {
       "heuristic": 13108,
       "cl100k": 11324
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "generate-image": {
+    "category": "Media & Content",
+    "files": [
+      "SKILL.md",
+      "scripts/generate_image.py"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 7048,
+        "lineCount": 184,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "scripts/generate_image.py": {
+        "sizeBytes": 8815,
+        "lineCount": 282,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 3958,
+      "cl100k": 3616
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "infographics": {
+    "category": "Media & Content",
+    "files": [
+      "SKILL.md",
+      "references/color_palettes.md",
+      "references/design_principles.md",
+      "references/infographic_types.md",
+      "scripts/generate_infographic.py",
+      "scripts/generate_infographic_ai.py"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 18071,
+        "lineCount": 564,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/color_palettes.md": {
+        "sizeBytes": 14120,
+        "lineCount": 497,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/design_principles.md": {
+        "sizeBytes": 19080,
+        "lineCount": 637,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/infographic_types.md": {
+        "sizeBytes": 28996,
+        "lineCount": 908,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "scripts/generate_infographic.py": {
+        "sizeBytes": 10198,
+        "lineCount": 235,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/generate_infographic_ai.py": {
+        "sizeBytes": 49715,
+        "lineCount": 1291,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 34059,
+      "cl100k": 32655
     },
     "dependencies": {
       "skills": [],
@@ -10275,6 +11335,861 @@
       "source": "structured"
     }
   },
+  "gene-database": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/api_reference.md",
+      "references/common_workflows.md",
+      "scripts/batch_gene_lookup.py",
+      "scripts/fetch_gene_data.py",
+      "scripts/query_gene.py"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 6396,
+        "lineCount": 178,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/api_reference.md": {
+        "sizeBytes": 9121,
+        "lineCount": 405,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/common_workflows.md": {
+        "sizeBytes": 10395,
+        "lineCount": 429,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "scripts/batch_gene_lookup.py": {
+        "sizeBytes": 9109,
+        "lineCount": 299,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/fetch_gene_data.py": {
+        "sizeBytes": 8602,
+        "lineCount": 278,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/query_gene.py": {
+        "sizeBytes": 7409,
+        "lineCount": 252,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 12759,
+      "cl100k": 12687
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "geniml": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/bedspace.md",
+      "references/consensus_peaks.md",
+      "references/region2vec.md",
+      "references/scembed.md",
+      "references/utilities.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 10092,
+        "lineCount": 317,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/bedspace.md": {
+        "sizeBytes": 3869,
+        "lineCount": 128,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/consensus_peaks.md": {
+        "sizeBytes": 6337,
+        "lineCount": 239,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/region2vec.md": {
+        "sizeBytes": 2859,
+        "lineCount": 91,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/scembed.md": {
+        "sizeBytes": 5268,
+        "lineCount": 198,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/utilities.md": {
+        "sizeBytes": 8652,
+        "lineCount": 386,
+        "ext": "md",
+        "tabKey": "references"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 9267,
+      "cl100k": 8659
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "geo-database": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/geo_reference.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 24529,
+        "lineCount": 814,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/geo_reference.md": {
+        "sizeBytes": 21102,
+        "lineCount": 830,
+        "ext": "md",
+        "tabKey": "references"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 11393,
+      "cl100k": 11362
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "gget": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/database_info.md",
+      "references/module_reference.md",
+      "references/workflows.md",
+      "scripts/batch_sequence_analysis.py",
+      "scripts/enrichment_pipeline.py",
+      "scripts/gene_analysis.py"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 25088,
+        "lineCount": 870,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/database_info.md": {
+        "sizeBytes": 10210,
+        "lineCount": 301,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/module_reference.md": {
+        "sizeBytes": 17562,
+        "lineCount": 468,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/workflows.md": {
+        "sizeBytes": 25756,
+        "lineCount": 815,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "scripts/batch_sequence_analysis.py": {
+        "sizeBytes": 5978,
+        "lineCount": 192,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/enrichment_pipeline.py": {
+        "sizeBytes": 7201,
+        "lineCount": 236,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/gene_analysis.py": {
+        "sizeBytes": 5778,
+        "lineCount": 162,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 24390,
+      "cl100k": 25187
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "glycoengineering": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/glycan_databases.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 12462,
+        "lineCount": 339,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/glycan_databases.md": {
+        "sizeBytes": 5758,
+        "lineCount": 166,
+        "ext": "md",
+        "tabKey": "references"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 4551,
+      "cl100k": 5063
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "gnomad-database": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/graphql_queries.md",
+      "references/variant_interpretation.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 12505,
+        "lineCount": 396,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/graphql_queries.md": {
+        "sizeBytes": 5340,
+        "lineCount": 220,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/variant_interpretation.md": {
+        "sizeBytes": 3551,
+        "lineCount": 86,
+        "ext": "md",
+        "tabKey": "references"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 5330,
+      "cl100k": 5693
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "gtars": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/cli.md",
+      "references/coverage.md",
+      "references/overlap.md",
+      "references/python-api.md",
+      "references/refget.md",
+      "references/tokenizers.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 7806,
+        "lineCount": 284,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/cli.md": {
+        "sizeBytes": 5060,
+        "lineCount": 223,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/coverage.md": {
+        "sizeBytes": 3995,
+        "lineCount": 173,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/overlap.md": {
+        "sizeBytes": 3679,
+        "lineCount": 157,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/python-api.md": {
+        "sizeBytes": 4222,
+        "lineCount": 212,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/refget.md": {
+        "sizeBytes": 3165,
+        "lineCount": 148,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/tokenizers.md": {
+        "sizeBytes": 2444,
+        "lineCount": 104,
+        "ext": "md",
+        "tabKey": "references"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 7595,
+      "cl100k": 7139
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "gtex-database": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/api_reference.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 11034,
+        "lineCount": 316,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/api_reference.md": {
+        "sizeBytes": 4888,
+        "lineCount": 192,
+        "ext": "md",
+        "tabKey": "references"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 3979,
+      "cl100k": 4321
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "gwas-database": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/api_reference.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 20085,
+        "lineCount": 607,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/api_reference.md": {
+        "sizeBytes": 21221,
+        "lineCount": 794,
+        "ext": "md",
+        "tabKey": "references"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 10322,
+      "cl100k": 10090
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "hmdb-database": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/hmdb_data_fields.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 8006,
+        "lineCount": 195,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/hmdb_data_fields.md": {
+        "sizeBytes": 8736,
+        "lineCount": 268,
+        "ext": "md",
+        "tabKey": "references"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 4185,
+      "cl100k": 4152
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "interpro-database": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/domain_analysis.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 10785,
+        "lineCount": 306,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/domain_analysis.md": {
+        "sizeBytes": 4909,
+        "lineCount": 160,
+        "ext": "md",
+        "tabKey": "references"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 3922,
+      "cl100k": 4185
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "jaspar-database": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/api_reference.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 11986,
+        "lineCount": 352,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/api_reference.md": {
+        "sizeBytes": 4375,
+        "lineCount": 183,
+        "ext": "md",
+        "tabKey": "references"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 4089,
+      "cl100k": 4794
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "kegg-database": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/kegg_reference.md",
+      "scripts/kegg_api.py"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 11768,
+        "lineCount": 376,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/kegg_reference.md": {
+        "sizeBytes": 10749,
+        "lineCount": 327,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "scripts/kegg_api.py": {
+        "sizeBytes": 7697,
+        "lineCount": 252,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 7547,
+      "cl100k": 8047
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "labarchive-integration": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/api_reference.md",
+      "references/authentication_guide.md",
+      "references/integrations.md",
+      "scripts/entry_operations.py",
+      "scripts/notebook_operations.py",
+      "scripts/setup_config.py"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 9443,
+        "lineCount": 267,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/api_reference.md": {
+        "sizeBytes": 9012,
+        "lineCount": 343,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/authentication_guide.md": {
+        "sizeBytes": 10709,
+        "lineCount": 358,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/integrations.md": {
+        "sizeBytes": 12645,
+        "lineCount": 426,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "scripts/entry_operations.py": {
+        "sizeBytes": 10576,
+        "lineCount": 335,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/notebook_operations.py": {
+        "sizeBytes": 8677,
+        "lineCount": 270,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/setup_config.py": {
+        "sizeBytes": 6412,
+        "lineCount": 206,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 16844,
+      "cl100k": 14885
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "lamindb": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/annotation-validation.md",
+      "references/core-concepts.md",
+      "references/data-management.md",
+      "references/integrations.md",
+      "references/ontologies.md",
+      "references/setup-deployment.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 14370,
+        "lineCount": 389,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/annotation-validation.md": {
+        "sizeBytes": 12276,
+        "lineCount": 514,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/core-concepts.md": {
+        "sizeBytes": 9782,
+        "lineCount": 381,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/data-management.md": {
+        "sizeBytes": 10709,
+        "lineCount": 434,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/integrations.md": {
+        "sizeBytes": 13489,
+        "lineCount": 643,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/ontologies.md": {
+        "sizeBytes": 13535,
+        "lineCount": 498,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/setup-deployment.md": {
+        "sizeBytes": 14576,
+        "lineCount": 734,
+        "ext": "md",
+        "tabKey": "references"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 22181,
+      "cl100k": 21400
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "latchbio-integration": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/data-management.md",
+      "references/resource-configuration.md",
+      "references/verified-workflows.md",
+      "references/workflow-creation.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 9816,
+        "lineCount": 352,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/data-management.md": {
+        "sizeBytes": 9737,
+        "lineCount": 428,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/resource-configuration.md": {
+        "sizeBytes": 9569,
+        "lineCount": 430,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/verified-workflows.md": {
+        "sizeBytes": 10472,
+        "lineCount": 488,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/workflow-creation.md": {
+        "sizeBytes": 6333,
+        "lineCount": 255,
+        "ext": "md",
+        "tabKey": "references"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 11478,
+      "cl100k": 10815
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "matchms": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/filtering.md",
+      "references/importing_exporting.md",
+      "references/similarity.md",
+      "references/workflows.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 7010,
+        "lineCount": 202,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/filtering.md": {
+        "sizeBytes": 10038,
+        "lineCount": 289,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/importing_exporting.md": {
+        "sizeBytes": 10894,
+        "lineCount": 417,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/similarity.md": {
+        "sizeBytes": 12974,
+        "lineCount": 381,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/workflows.md": {
+        "sizeBytes": 22230,
+        "lineCount": 648,
+        "ext": "md",
+        "tabKey": "references"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 15778,
+      "cl100k": 14571
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "medchem": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/api_guide.md",
+      "references/rules_catalog.md",
+      "scripts/filter_molecules.py"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 10153,
+        "lineCount": 405,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/api_guide.md": {
+        "sizeBytes": 12344,
+        "lineCount": 601,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/rules_catalog.md": {
+        "sizeBytes": 12512,
+        "lineCount": 605,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "scripts/filter_molecules.py": {
+        "sizeBytes": 15696,
+        "lineCount": 419,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 12651,
+      "cl100k": 13216
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "metabolomics-workbench-database": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/api_reference.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 10310,
+        "lineCount": 258,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/api_reference.md": {
+        "sizeBytes": 16384,
+        "lineCount": 495,
+        "ext": "md",
+        "tabKey": "references"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 6674,
+      "cl100k": 6887
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
   "chaos-engineer": {
     "category": "Security & Web Testing",
     "files": [
@@ -10721,6 +12636,103 @@
     "tokenEstimate": {
       "heuristic": 1058,
       "cl100k": 1088
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "get-available-resources": {
+    "category": "Utility & Automation",
+    "files": [
+      "SKILL.md",
+      "scripts/detect_resources.py"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 9837,
+        "lineCount": 276,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "scripts/detect_resources.py": {
+        "sizeBytes": 14081,
+        "lineCount": 402,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 5976,
+      "cl100k": 5395
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "markitdown": {
+    "category": "Utility & Automation",
+    "files": [
+      "SKILL.md",
+      "assets/example_usage.md",
+      "references/api_reference.md",
+      "references/file_formats.md",
+      "scripts/batch_convert.py",
+      "scripts/convert_literature.py",
+      "scripts/convert_with_ai.py"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 12632,
+        "lineCount": 489,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "assets/example_usage.md": {
+        "sizeBytes": 10378,
+        "lineCount": 464,
+        "ext": "md",
+        "tabKey": "assets"
+      },
+      "references/api_reference.md": {
+        "sizeBytes": 8851,
+        "lineCount": 397,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/file_formats.md": {
+        "sizeBytes": 8985,
+        "lineCount": 543,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "scripts/batch_convert.py": {
+        "sizeBytes": 6650,
+        "lineCount": 229,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/convert_literature.py": {
+        "sizeBytes": 8915,
+        "lineCount": 284,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/convert_with_ai.py": {
+        "sizeBytes": 7461,
+        "lineCount": 241,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 15955,
+      "cl100k": 15234
     },
     "dependencies": {
       "skills": [],
@@ -11432,6 +13444,72 @@
       "source": "structured"
     }
   },
+  "hypothesis-generation": {
+    "category": "Writing & Research",
+    "files": [
+      "SKILL.md",
+      "assets/FORMATTING_GUIDE.md",
+      "assets/hypothesis_generation.sty",
+      "assets/hypothesis_report_template.tex",
+      "references/experimental_design_patterns.md",
+      "references/hypothesis_quality_criteria.md",
+      "references/literature_search_strategies.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 13847,
+        "lineCount": 298,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "assets/FORMATTING_GUIDE.md": {
+        "sizeBytes": 19304,
+        "lineCount": 673,
+        "ext": "md",
+        "tabKey": "assets"
+      },
+      "assets/hypothesis_generation.sty": {
+        "sizeBytes": 7625,
+        "lineCount": 0,
+        "ext": "sty",
+        "tabKey": "assets"
+      },
+      "assets/hypothesis_report_template.tex": {
+        "sizeBytes": 20148,
+        "lineCount": 0,
+        "ext": "tex",
+        "tabKey": "assets"
+      },
+      "references/experimental_design_patterns.md": {
+        "sizeBytes": 14208,
+        "lineCount": 330,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/hypothesis_quality_criteria.md": {
+        "sizeBytes": 8051,
+        "lineCount": 199,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/literature_search_strategies.md": {
+        "sizeBytes": 20277,
+        "lineCount": 623,
+        "ext": "md",
+        "tabKey": "references"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 18908,
+      "cl100k": 16961
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
   "internal-comms": {
     "category": "Writing & Research",
     "files": [
@@ -11483,6 +13561,442 @@
     "tokenEstimate": {
       "heuristic": 5603,
       "cl100k": 4700
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "latex-posters": {
+    "category": "Writing & Research",
+    "files": [
+      "SKILL.md",
+      "assets/baposter_template.tex",
+      "assets/beamerposter_template.tex",
+      "assets/poster_quality_checklist.md",
+      "assets/tikzposter_template.tex",
+      "references/README.md",
+      "references/latex_poster_packages.md",
+      "references/poster_content_guide.md",
+      "references/poster_design_principles.md",
+      "references/poster_layout_design.md",
+      "scripts/review_poster.sh"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 59801,
+        "lineCount": 1603,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "assets/baposter_template.tex": {
+        "sizeBytes": 7432,
+        "lineCount": 0,
+        "ext": "tex",
+        "tabKey": "assets"
+      },
+      "assets/beamerposter_template.tex": {
+        "sizeBytes": 7652,
+        "lineCount": 0,
+        "ext": "tex",
+        "tabKey": "assets"
+      },
+      "assets/poster_quality_checklist.md": {
+        "sizeBytes": 11172,
+        "lineCount": 359,
+        "ext": "md",
+        "tabKey": "assets"
+      },
+      "assets/tikzposter_template.tex": {
+        "sizeBytes": 7887,
+        "lineCount": 0,
+        "ext": "tex",
+        "tabKey": "assets"
+      },
+      "references/README.md": {
+        "sizeBytes": 11654,
+        "lineCount": 418,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/latex_poster_packages.md": {
+        "sizeBytes": 17836,
+        "lineCount": 746,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/poster_content_guide.md": {
+        "sizeBytes": 20361,
+        "lineCount": 749,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/poster_design_principles.md": {
+        "sizeBytes": 22916,
+        "lineCount": 807,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/poster_layout_design.md": {
+        "sizeBytes": 22327,
+        "lineCount": 901,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "scripts/review_poster.sh": {
+        "sizeBytes": 7939,
+        "lineCount": 215,
+        "ext": "sh",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 43119,
+      "cl100k": 45138
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "literature-review": {
+    "category": "Writing & Research",
+    "files": [
+      "SKILL.md",
+      "assets/review_template.md",
+      "references/citation_styles.md",
+      "references/database_strategies.md",
+      "scripts/generate_pdf.py",
+      "scripts/search_databases.py",
+      "scripts/verify_citations.py"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 23789,
+        "lineCount": 638,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "assets/review_template.md": {
+        "sizeBytes": 12982,
+        "lineCount": 413,
+        "ext": "md",
+        "tabKey": "assets"
+      },
+      "references/citation_styles.md": {
+        "sizeBytes": 6112,
+        "lineCount": 167,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/database_strategies.md": {
+        "sizeBytes": 15491,
+        "lineCount": 456,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "scripts/generate_pdf.py": {
+        "sizeBytes": 5410,
+        "lineCount": 177,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/search_databases.py": {
+        "sizeBytes": 9036,
+        "lineCount": 304,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/verify_citations.py": {
+        "sizeBytes": 7050,
+        "lineCount": 223,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 19952,
+      "cl100k": 19419
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "markdown-mermaid-writing": {
+    "category": "Writing & Research",
+    "files": [
+      "SKILL.md",
+      "assets/examples/example-research-report.md",
+      "references/diagrams/architecture.md",
+      "references/diagrams/block.md",
+      "references/diagrams/c4.md",
+      "references/diagrams/class.md",
+      "references/diagrams/complex_examples.md",
+      "references/diagrams/er.md",
+      "references/diagrams/flowchart.md",
+      "references/diagrams/gantt.md",
+      "references/diagrams/git_graph.md",
+      "references/diagrams/kanban.md",
+      "references/diagrams/mindmap.md",
+      "references/diagrams/packet.md",
+      "references/diagrams/pie.md",
+      "references/diagrams/quadrant.md",
+      "references/diagrams/radar.md",
+      "references/diagrams/requirement.md",
+      "references/diagrams/sankey.md",
+      "references/diagrams/sequence.md",
+      "references/diagrams/state.md",
+      "references/diagrams/timeline.md",
+      "references/diagrams/treemap.md",
+      "references/diagrams/user_journey.md",
+      "references/diagrams/xy_chart.md",
+      "references/diagrams/zenuml.md",
+      "references/markdown_style_guide.md",
+      "references/mermaid_style_guide.md",
+      "templates/decision_record.md",
+      "templates/how_to_guide.md",
+      "templates/issue.md",
+      "templates/kanban.md",
+      "templates/presentation.md",
+      "templates/project_documentation.md",
+      "templates/pull_request.md",
+      "templates/research_paper.md",
+      "templates/status_report.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 14888,
+        "lineCount": 328,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "assets/examples/example-research-report.md": {
+        "sizeBytes": 9010,
+        "lineCount": 222,
+        "ext": "md",
+        "tabKey": "assets"
+      },
+      "references/diagrams/architecture.md": {
+        "sizeBytes": 4369,
+        "lineCount": 109,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/diagrams/block.md": {
+        "sizeBytes": 4825,
+        "lineCount": 178,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/diagrams/c4.md": {
+        "sizeBytes": 6201,
+        "lineCount": 137,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/diagrams/class.md": {
+        "sizeBytes": 8521,
+        "lineCount": 247,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/diagrams/complex_examples.md": {
+        "sizeBytes": 17079,
+        "lineCount": 385,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/diagrams/er.md": {
+        "sizeBytes": 7601,
+        "lineCount": 223,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/diagrams/flowchart.md": {
+        "sizeBytes": 6961,
+        "lineCount": 178,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/diagrams/gantt.md": {
+        "sizeBytes": 5851,
+        "lineCount": 139,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/diagrams/git_graph.md": {
+        "sizeBytes": 2009,
+        "lineCount": 75,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/diagrams/kanban.md": {
+        "sizeBytes": 3544,
+        "lineCount": 108,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/diagrams/mindmap.md": {
+        "sizeBytes": 2232,
+        "lineCount": 75,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/diagrams/packet.md": {
+        "sizeBytes": 1721,
+        "lineCount": 56,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/diagrams/pie.md": {
+        "sizeBytes": 1560,
+        "lineCount": 53,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/diagrams/quadrant.md": {
+        "sizeBytes": 2163,
+        "lineCount": 67,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/diagrams/radar.md": {
+        "sizeBytes": 2176,
+        "lineCount": 60,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/diagrams/requirement.md": {
+        "sizeBytes": 2463,
+        "lineCount": 89,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/diagrams/sankey.md": {
+        "sizeBytes": 2143,
+        "lineCount": 72,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/diagrams/sequence.md": {
+        "sizeBytes": 5510,
+        "lineCount": 175,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/diagrams/state.md": {
+        "sizeBytes": 5464,
+        "lineCount": 151,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/diagrams/timeline.md": {
+        "sizeBytes": 4181,
+        "lineCount": 97,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/diagrams/treemap.md": {
+        "sizeBytes": 2039,
+        "lineCount": 67,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/diagrams/user_journey.md": {
+        "sizeBytes": 5049,
+        "lineCount": 109,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/diagrams/xy_chart.md": {
+        "sizeBytes": 1887,
+        "lineCount": 54,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/diagrams/zenuml.md": {
+        "sizeBytes": 2285,
+        "lineCount": 72,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/markdown_style_guide.md": {
+        "sizeBytes": 35114,
+        "lineCount": 734,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/mermaid_style_guide.md": {
+        "sizeBytes": 26433,
+        "lineCount": 459,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "templates/decision_record.md": {
+        "sizeBytes": 7169,
+        "lineCount": 212,
+        "ext": "md",
+        "tabKey": "templates"
+      },
+      "templates/how_to_guide.md": {
+        "sizeBytes": 7091,
+        "lineCount": 276,
+        "ext": "md",
+        "tabKey": "templates"
+      },
+      "templates/issue.md": {
+        "sizeBytes": 12835,
+        "lineCount": 304,
+        "ext": "md",
+        "tabKey": "templates"
+      },
+      "templates/kanban.md": {
+        "sizeBytes": 11403,
+        "lineCount": 224,
+        "ext": "md",
+        "tabKey": "templates"
+      },
+      "templates/presentation.md": {
+        "sizeBytes": 8068,
+        "lineCount": 313,
+        "ext": "md",
+        "tabKey": "templates"
+      },
+      "templates/project_documentation.md": {
+        "sizeBytes": 11489,
+        "lineCount": 413,
+        "ext": "md",
+        "tabKey": "templates"
+      },
+      "templates/pull_request.md": {
+        "sizeBytes": 12903,
+        "lineCount": 320,
+        "ext": "md",
+        "tabKey": "templates"
+      },
+      "templates/research_paper.md": {
+        "sizeBytes": 10157,
+        "lineCount": 305,
+        "ext": "md",
+        "tabKey": "templates"
+      },
+      "templates/status_report.md": {
+        "sizeBytes": 7185,
+        "lineCount": 186,
+        "ext": "md",
+        "tabKey": "templates"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 69445,
+      "cl100k": 66885
     },
     "dependencies": {
       "skills": [],
