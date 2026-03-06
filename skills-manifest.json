@@ -7001,6 +7001,229 @@
       "source": "structured"
     }
   },
+  "neuropixels-analysis": {
+    "category": "Health & Life Sciences",
+    "files": [
+      "SKILL.md",
+      "assets/analysis_template.py",
+      "references/AI_CURATION.md",
+      "references/ANALYSIS.md",
+      "references/AUTOMATED_CURATION.md",
+      "references/MOTION_CORRECTION.md",
+      "references/PREPROCESSING.md",
+      "references/QUALITY_METRICS.md",
+      "references/SPIKE_SORTING.md",
+      "references/api_reference.md",
+      "references/plotting_guide.md",
+      "references/standard_workflow.md",
+      "scripts/compute_metrics.py",
+      "scripts/explore_recording.py",
+      "scripts/export_to_phy.py",
+      "scripts/neuropixels_pipeline.py",
+      "scripts/preprocess_recording.py",
+      "scripts/run_sorting.py"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 11551,
+        "lineCount": 349,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "assets/analysis_template.py": {
+        "sizeBytes": 9014,
+        "lineCount": 272,
+        "ext": "py",
+        "tabKey": "assets"
+      },
+      "references/AI_CURATION.md": {
+        "sizeBytes": 8635,
+        "lineCount": 346,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/ANALYSIS.md": {
+        "sizeBytes": 9869,
+        "lineCount": 393,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/AUTOMATED_CURATION.md": {
+        "sizeBytes": 10033,
+        "lineCount": 359,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/MOTION_CORRECTION.md": {
+        "sizeBytes": 8670,
+        "lineCount": 324,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/PREPROCESSING.md": {
+        "sizeBytes": 6696,
+        "lineCount": 274,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/QUALITY_METRICS.md": {
+        "sizeBytes": 9454,
+        "lineCount": 360,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/SPIKE_SORTING.md": {
+        "sizeBytes": 7918,
+        "lineCount": 340,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/api_reference.md": {
+        "sizeBytes": 8153,
+        "lineCount": 416,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/plotting_guide.md": {
+        "sizeBytes": 10837,
+        "lineCount": 455,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/standard_workflow.md": {
+        "sizeBytes": 8646,
+        "lineCount": 386,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "scripts/compute_metrics.py": {
+        "sizeBytes": 5226,
+        "lineCount": 179,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/explore_recording.py": {
+        "sizeBytes": 5529,
+        "lineCount": 169,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/export_to_phy.py": {
+        "sizeBytes": 2477,
+        "lineCount": 80,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/neuropixels_pipeline.py": {
+        "sizeBytes": 13286,
+        "lineCount": 433,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/preprocess_recording.py": {
+        "sizeBytes": 4235,
+        "lineCount": 123,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/run_sorting.py": {
+        "sizeBytes": 2573,
+        "lineCount": 99,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 35672,
+      "cl100k": 36498
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "omero-integration": {
+    "category": "Health & Life Sciences",
+    "files": [
+      "SKILL.md",
+      "references/advanced.md",
+      "references/connection.md",
+      "references/data_access.md",
+      "references/image_processing.md",
+      "references/metadata.md",
+      "references/rois.md",
+      "references/scripts.md",
+      "references/tables.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 8044,
+        "lineCount": 250,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/advanced.md": {
+        "sizeBytes": 15013,
+        "lineCount": 632,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/connection.md": {
+        "sizeBytes": 8404,
+        "lineCount": 370,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/data_access.md": {
+        "sizeBytes": 13555,
+        "lineCount": 545,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/image_processing.md": {
+        "sizeBytes": 15705,
+        "lineCount": 666,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/metadata.md": {
+        "sizeBytes": 17020,
+        "lineCount": 689,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/rois.md": {
+        "sizeBytes": 16388,
+        "lineCount": 649,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/scripts.md": {
+        "sizeBytes": 17319,
+        "lineCount": 638,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/tables.md": {
+        "sizeBytes": 14835,
+        "lineCount": 533,
+        "ext": "md",
+        "tabKey": "references"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 31549,
+      "cl100k": 30949
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
   "aws-agentic-ai": {
     "category": "Infrastructure & Cloud",
     "files": [
@@ -12464,6 +12687,30 @@
       "source": "structured"
     }
   },
+  "offer-k-dense-web": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 870,
+        "lineCount": 22,
+        "ext": "md",
+        "tabKey": "root"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 218,
+      "cl100k": 201
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
   "chaos-engineer": {
     "category": "Security & Web Testing",
     "files": [
@@ -14271,6 +14518,138 @@
     "tokenEstimate": {
       "heuristic": 69445,
       "cl100k": 66885
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "open-notebook": {
+    "category": "Writing & Research",
+    "files": [
+      "SKILL.md",
+      "references/api_reference.md",
+      "references/architecture.md",
+      "references/configuration.md",
+      "references/examples.md",
+      "scripts/chat_interaction.py",
+      "scripts/notebook_management.py",
+      "scripts/source_ingestion.py",
+      "scripts/test_open_notebook_skill.py"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 10451,
+        "lineCount": 290,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/api_reference.md": {
+        "sizeBytes": 10325,
+        "lineCount": 716,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/architecture.md": {
+        "sizeBytes": 7441,
+        "lineCount": 164,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/configuration.md": {
+        "sizeBytes": 5313,
+        "lineCount": 227,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/examples.md": {
+        "sizeBytes": 8417,
+        "lineCount": 291,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "scripts/chat_interaction.py": {
+        "sizeBytes": 6227,
+        "lineCount": 191,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/notebook_management.py": {
+        "sizeBytes": 4170,
+        "lineCount": 143,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/source_ingestion.py": {
+        "sizeBytes": 4901,
+        "lineCount": 161,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/test_open_notebook_skill.py": {
+        "sizeBytes": 16061,
+        "lineCount": 424,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 18071,
+      "cl100k": 16597
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "openalex-database": {
+    "category": "Writing & Research",
+    "files": [
+      "SKILL.md",
+      "references/api_guide.md",
+      "references/common_queries.md",
+      "scripts/openalex_client.py",
+      "scripts/query_helpers.py"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 12072,
+        "lineCount": 493,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/api_guide.md": {
+        "sizeBytes": 10185,
+        "lineCount": 372,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/common_queries.md": {
+        "sizeBytes": 9587,
+        "lineCount": 382,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "scripts/openalex_client.py": {
+        "sizeBytes": 10148,
+        "lineCount": 338,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/query_helpers.py": {
+        "sizeBytes": 8443,
+        "lineCount": 307,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 12587,
+      "cl100k": 12494
     },
     "dependencies": {
       "skills": [],
