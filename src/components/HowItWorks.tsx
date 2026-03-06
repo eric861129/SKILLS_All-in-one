@@ -1,5 +1,5 @@
 import { motion, AnimatePresence } from "framer-motion";
-import { X, Sparkles, Terminal } from "lucide-react";
+import { X, Terminal } from "lucide-react";
 import Markdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import { useLanguage } from "../hooks/useLanguage";

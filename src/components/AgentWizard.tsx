@@ -998,7 +998,7 @@ description: 明確描述「什麼情況下」Agent 應該載入這包技能。
 ];
 
 export const AgentWizard = () => {
-  const { language } = useLanguage();
+  const { language, t } = useLanguage();
   const [activeTab, setActiveTab] = useState(platforms[0].id);
 
   const activePlatform = platforms.find(p => p.id === activeTab) || platforms[0];

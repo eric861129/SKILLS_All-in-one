@@ -1,6 +1,7 @@
 import { useState, useEffect, useMemo, useCallback } from 'react';
 import Markdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
+import type { Components } from 'react-markdown';
 import {
     X, Download, Github, User, Calendar, Tag,
     Folder, FolderOpen, FileText, ChevronRight, ChevronDown, Loader2
@@ -145,6 +146,57 @@ const getCategoryStyles = (category: SkillCategory) => {
         default:
             return 'bg-slate-500/10 text-slate-400 border-slate-500/20';
     }
+};
+
+const markdownComponents: Components = {
+    h1: ({ children }) => <h1 className="text-3xl md:text-4xl font-black tracking-tight text-slate-100 mt-2 mb-6">{children}</h1>,
+    h2: ({ children }) => <h2 className="text-2xl font-bold text-slate-100 mt-10 mb-4 pb-2 border-b border-slate-800">{children}</h2>,
+    h3: ({ children }) => <h3 className="text-xl font-bold text-slate-200 mt-8 mb-3">{children}</h3>,
+    h4: ({ children }) => <h4 className="text-lg font-semibold text-slate-200 mt-6 mb-2">{children}</h4>,
+    p: ({ children }) => <p className="text-slate-300 leading-8 mb-4">{children}</p>,
+    a: ({ href, children }) => (
+        <a
+            href={href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-300 hover:text-blue-200 underline underline-offset-4 decoration-blue-400/60 transition-colors"
+        >
+            {children}
+        </a>
+    ),
+    ul: ({ children }) => <ul className="list-disc marker:text-blue-400 pl-6 space-y-2 text-slate-300 mb-4">{children}</ul>,
+    ol: ({ children }) => <ol className="list-decimal marker:text-emerald-400 pl-6 space-y-2 text-slate-300 mb-4">{children}</ol>,
+    li: ({ children }) => <li className="leading-7">{children}</li>,
+    blockquote: ({ children }) => (
+        <blockquote className="border-l-4 border-blue-500/50 bg-slate-900/60 text-slate-300 rounded-r-xl pl-4 py-3 mb-5 italic">
+            {children}
+        </blockquote>
+    ),
+    hr: () => <hr className="my-8 border-slate-800" />,
+    table: ({ children }) => (
+        <div className="mb-6 overflow-x-auto rounded-xl border border-slate-800">
+            <table className="w-full text-sm">{children}</table>
+        </div>
+    ),
+    thead: ({ children }) => <thead className="bg-slate-900/80 text-slate-200">{children}</thead>,
+    tbody: ({ children }) => <tbody className="text-slate-300">{children}</tbody>,
+    tr: ({ children }) => <tr className="border-b border-slate-800 last:border-0">{children}</tr>,
+    th: ({ children }) => <th className="text-left px-4 py-2.5 font-semibold">{children}</th>,
+    td: ({ children }) => <td className="px-4 py-2.5 align-top">{children}</td>,
+    pre: ({ children }) => (
+        <pre className="bg-slate-900 border border-slate-800 rounded-xl p-4 md:p-5 mb-5 overflow-x-auto text-sm leading-7">
+            {children}
+        </pre>
+    ),
+    code: ({ children, className }) => {
+        const isInline = !className;
+        if (isInline) {
+            return <code className="font-mono text-emerald-300 bg-slate-800 px-1.5 py-0.5 rounded">{children}</code>;
+        }
+        return <code className="font-mono text-slate-200">{children}</code>;
+    },
+    strong: ({ children }) => <strong className="text-slate-100 font-semibold">{children}</strong>,
+    em: ({ children }) => <em className="text-slate-200">{children}</em>,
 };
 
 // ─── 主元件 ─────────────────────────────────────
