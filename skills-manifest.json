@@ -1132,6 +1132,65 @@
       "source": "structured"
     }
   },
+  "networkx": {
+    "category": "Data & Analysis",
+    "files": [
+      "SKILL.md",
+      "references/algorithms.md",
+      "references/generators.md",
+      "references/graph-basics.md",
+      "references/io.md",
+      "references/visualization.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 12714,
+        "lineCount": 436,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/algorithms.md": {
+        "sizeBytes": 9170,
+        "lineCount": 384,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/generators.md": {
+        "sizeBytes": 8228,
+        "lineCount": 379,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/graph-basics.md": {
+        "sizeBytes": 6261,
+        "lineCount": 284,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/io.md": {
+        "sizeBytes": 9395,
+        "lineCount": 442,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/visualization.md": {
+        "sizeBytes": 12388,
+        "lineCount": 530,
+        "ext": "md",
+        "tabKey": "references"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 14537,
+      "cl100k": 15863
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
   "pandas-pro": {
     "category": "Data & Analysis",
     "files": [
@@ -6834,6 +6893,114 @@
       "source": "structured"
     }
   },
+  "neurokit2": {
+    "category": "Health & Life Sciences",
+    "files": [
+      "SKILL.md",
+      "references/bio_module.md",
+      "references/complexity.md",
+      "references/ecg_cardiac.md",
+      "references/eda.md",
+      "references/eeg.md",
+      "references/emg.md",
+      "references/eog.md",
+      "references/epochs_events.md",
+      "references/hrv.md",
+      "references/ppg.md",
+      "references/rsp.md",
+      "references/signal_processing.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 12020,
+        "lineCount": 355,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/bio_module.md": {
+        "sizeBytes": 13099,
+        "lineCount": 418,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/complexity.md": {
+        "sizeBytes": 17352,
+        "lineCount": 716,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/ecg_cardiac.md": {
+        "sizeBytes": 10810,
+        "lineCount": 356,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/eda.md": {
+        "sizeBytes": 14733,
+        "lineCount": 498,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/eeg.md": {
+        "sizeBytes": 14306,
+        "lineCount": 507,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/emg.md": {
+        "sizeBytes": 12390,
+        "lineCount": 409,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/eog.md": {
+        "sizeBytes": 12271,
+        "lineCount": 408,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/epochs_events.md": {
+        "sizeBytes": 14793,
+        "lineCount": 472,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/hrv.md": {
+        "sizeBytes": 15493,
+        "lineCount": 481,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/ppg.md": {
+        "sizeBytes": 11168,
+        "lineCount": 414,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/rsp.md": {
+        "sizeBytes": 13946,
+        "lineCount": 511,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/signal_processing.md": {
+        "sizeBytes": 16652,
+        "lineCount": 649,
+        "ext": "md",
+        "tabKey": "references"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 44705,
+      "cl100k": 44998
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
   "aws-agentic-ai": {
     "category": "Infrastructure & Cloud",
     "files": [
@@ -12182,6 +12349,113 @@
     "tokenEstimate": {
       "heuristic": 6674,
       "cl100k": 6887
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "molecular-dynamics": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/mdanalysis_analysis.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 14700,
+        "lineCount": 458,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/mdanalysis_analysis.md": {
+        "sizeBytes": 5643,
+        "lineCount": 209,
+        "ext": "md",
+        "tabKey": "references"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 5081,
+      "cl100k": 5256
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "molfeat": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/api_reference.md",
+      "references/available_featurizers.md",
+      "references/examples.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 14811,
+        "lineCount": 510,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/api_reference.md": {
+        "sizeBytes": 11502,
+        "lineCount": 429,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/available_featurizers.md": {
+        "sizeBytes": 10709,
+        "lineCount": 334,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/examples.md": {
+        "sizeBytes": 17709,
+        "lineCount": 724,
+        "ext": "md",
+        "tabKey": "references"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 13683,
+      "cl100k": 13799
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "monarch-database": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/phenotype_ontology.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 12828,
+        "lineCount": 373,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/phenotype_ontology.md": {
+        "sizeBytes": 5148,
+        "lineCount": 161,
+        "ext": "md",
+        "tabKey": "references"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 4493,
+      "cl100k": 4825
     },
     "dependencies": {
       "skills": [],
