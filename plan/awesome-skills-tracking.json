@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-06T08:49:18.286Z",
+  "generatedAt": "2026-03-06T12:32:32.225Z",
   "sourceReadme": "https://raw.githubusercontent.com/BehiSecc/awesome-claude-skills/main/README.md",
   "stats": {
-    "localSkills": 270,
+    "localSkills": 275,
     "discoveredRepoLinks": 89,
     "expandedCandidates": 402,
     "uniqueCandidates": 374,
-    "missing": 160,
+    "missing": 155,
     "urlMismatch": 0,
     "authorMismatch": 0,
     "fetchFailures": 26
@@ -467,16 +467,35 @@
         "onboard": "completed",
         "sync": "completed"
       }
+    },
+    {
+      "id": "batch-025",
+      "type": "import",
+      "size": 5,
+      "status": "completed",
+      "items": [
+        "neuropixels-analysis",
+        "offer-k-dense-web",
+        "omero-integration",
+        "open-notebook",
+        "openalex-database"
+      ],
+      "checklist": {
+        "import": "completed",
+        "audit": "warning",
+        "onboard": "completed",
+        "sync": "completed"
+      }
     }
   ],
   "nextBatchProposals": {
     "correction": [],
     "import": [
-      "neuropixels-analysis",
-      "offer-k-dense-web",
-      "omero-integration",
-      "open-notebook",
-      "openalex-database"
+      "opentargets-database",
+      "opentrons-integration",
+      "paper-2-web",
+      "parallel-web",
+      "pathml"
     ]
   },
   "failures": [
@@ -4870,7 +4889,7 @@
     },
     {
       "sourceSlug": "neuropixels-analysis",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "neuropixels-analysis",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/neuropixels-analysis",
@@ -4878,14 +4897,17 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/neuropixels-analysis"
       },
-      "local": null,
+      "local": {
+        "id": 287,
+        "source": "neuropixels-analysis",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/neuropixels-analysis"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/neuropixels-analysis"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "new-terraform-provider",
@@ -5030,7 +5052,7 @@
     },
     {
       "sourceSlug": "offer-k-dense-web",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "offer-k-dense-web",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/offer-k-dense-web",
@@ -5038,13 +5060,18 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/offer-k-dense-web"
       },
-      "local": null,
+      "local": {
+        "id": 288,
+        "source": "offer-k-dense-web",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/offer-k-dense-web"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/offer-k-dense-web"
       },
       "notes": [
-        "No local skill matched by source slug or canonical URL."
+        "Imported as marketplace content; treat the source's \"always run\" wording as non-binding promotional copy."
       ]
     },
     {
@@ -5071,7 +5098,7 @@
     },
     {
       "sourceSlug": "omero-integration",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "omero-integration",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/omero-integration",
@@ -5079,14 +5106,17 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/omero-integration"
       },
-      "local": null,
+      "local": {
+        "id": 289,
+        "source": "omero-integration",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/omero-integration"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/omero-integration"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "ontology-explorer",
@@ -5147,7 +5177,7 @@
     },
     {
       "sourceSlug": "open-notebook",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "open-notebook",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/open-notebook",
@@ -5155,18 +5185,21 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/open-notebook"
       },
-      "local": null,
+      "local": {
+        "id": 290,
+        "source": "open-notebook",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/open-notebook"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/open-notebook"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "openalex-database",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "openalex-database",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/openalex-database",
@@ -5174,14 +5207,17 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/openalex-database"
       },
-      "local": null,
+      "local": {
+        "id": 291,
+        "source": "openalex-database",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/openalex-database"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/openalex-database"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "opentargets-database",

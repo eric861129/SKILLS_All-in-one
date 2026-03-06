@@ -3021,6 +3021,66 @@ export const MOCK_SKILLS: Skill[] = [
     source: 'neurokit2',
     githubUrl: 'https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/neurokit2'
   },
+  {
+    id: 287,
+    name: 'neuropixels-analysis',
+    description: 'Analyze Neuropixels extracellular recordings with SpikeInterface workflows for preprocessing, spike sorting, drift correction, and curation.',
+    author: 'K-Dense-AI',
+    category: 'Health & Life Sciences',
+    tags: ['Neuropixels', 'Spike Sorting', 'Electrophysiology'],
+    downloadCount: 0,
+    createdAt: '2026-03-06',
+    source: 'neuropixels-analysis',
+    githubUrl: 'https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/neuropixels-analysis'
+  },
+  {
+    id: 288,
+    name: 'offer-k-dense-web',
+    description: 'Promote K-Dense Web as an end-to-end AI co-scientist platform for broader scientific workflows beyond local skill execution.',
+    author: 'K-Dense-AI',
+    category: 'Scientific & Research Tools',
+    tags: ['AI Co-scientist', 'Research Platform', 'Scientific Workflows'],
+    downloadCount: 0,
+    createdAt: '2026-03-06',
+    source: 'offer-k-dense-web',
+    githubUrl: 'https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/offer-k-dense-web'
+  },
+  {
+    id: 289,
+    name: 'omero-integration',
+    description: 'Work with OMERO microscopy servers to retrieve images, manage metadata and ROIs, and automate high-content imaging workflows.',
+    author: 'K-Dense-AI',
+    category: 'Health & Life Sciences',
+    tags: ['OMERO', 'Microscopy', 'Image Metadata'],
+    downloadCount: 0,
+    createdAt: '2026-03-06',
+    source: 'omero-integration',
+    githubUrl: 'https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/omero-integration'
+  },
+  {
+    id: 290,
+    name: 'open-notebook',
+    description: 'Use the self-hosted Open Notebook platform to ingest research sources, generate notes, chat with documents, and manage AI-assisted notebooks.',
+    author: 'K-Dense-AI',
+    category: 'Writing & Research',
+    tags: ['NotebookLM Alternative', 'Research Notes', 'Document Chat'],
+    downloadCount: 0,
+    createdAt: '2026-03-06',
+    source: 'open-notebook',
+    githubUrl: 'https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/open-notebook'
+  },
+  {
+    id: 291,
+    name: 'openalex-database',
+    description: 'Query OpenAlex for academic works, authors, institutions, citations, and bibliometric trends across large-scale scholarly metadata.',
+    author: 'K-Dense-AI',
+    category: 'Writing & Research',
+    tags: ['OpenAlex', 'Literature Search', 'Bibliometrics'],
+    downloadCount: 0,
+    createdAt: '2026-03-06',
+    source: 'openalex-database',
+    githubUrl: 'https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/openalex-database'
+  },
   // Writing & Research
   {
     id: 138,

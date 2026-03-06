@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-06T08:49:18.286Z",
+  "generatedAt": "2026-03-06T12:32:32.225Z",
   "queues": {
     "mismatch": [],
     "local_present_tracking_missing": [
@@ -716,9 +716,10 @@
         "repoPath": "scientific-skills/neuropixels-analysis",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-025 imported and onboarded on 2026-03-06"
         ]
       },
       {
@@ -727,9 +728,10 @@
         "repoPath": "scientific-skills/offer-k-dense-web",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-025 imported and onboarded on 2026-03-06"
         ]
       },
       {
@@ -738,9 +740,10 @@
         "repoPath": "scientific-skills/omero-integration",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-025 imported and onboarded on 2026-03-06"
         ]
       },
       {
@@ -749,9 +752,10 @@
         "repoPath": "scientific-skills/open-notebook",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-025 imported and onboarded on 2026-03-06"
         ]
       },
       {
@@ -760,9 +764,10 @@
         "repoPath": "scientific-skills/openalex-database",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-025 imported and onboarded on 2026-03-06"
         ]
       },
       {

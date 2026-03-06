@@ -1,17 +1,15 @@
-# Awesome Claude Skills 比對報告（含檔案系統比對）
-## 增量更新（2026-03-06，Batch 024）
-- Tracking 產生時間：`2026-03-06T08:49:18.286Z`
-- Wave 2 import 已完成：`batch-016`、`batch-017`、`batch-018`、`batch-019`、`batch-020`、`batch-021`、`batch-022`、`batch-023`、`batch-024`（共 45 筆）
-- mismatch（url/author）：`0`（維持）
-- `status=missing`：`160`（由 `165` 降至 `160`）
-- `needs_manual_review`：`18`（維持）
+# Awesome Claude Skills ????????????????????
+## ????????026-03-06??atch 025??- Tracking ????????2026-03-06T12:32:32.225Z`
+- Wave 2 import ??????`batch-016`??batch-017`??batch-018`??batch-019`??batch-020`??batch-021`??batch-022`??batch-023`??batch-024`??batch-025`??? 50 ???
+- mismatch??rl/author???`0`??????
+- `status=missing`??155`??? `160` ??? `155`??- `needs_manual_review`??18`??????
 
-### 下一批（import, non-fixture）
-1. `neuropixels-analysis`
-2. `offer-k-dense-web`
-3. `omero-integration`
-4. `open-notebook`
-5. `openalex-database`
+### ??????import, non-fixture??1. `opentargets-database`
+2. `opentrons-integration`
+3. `paper-2-web`
+4. `parallel-web`
+5. `pathml`
+
 
 ## 增量更新（2026-03-06，Batch 020）
 - Tracking 產生時間：`2026-03-06T03:36:41.469Z`
