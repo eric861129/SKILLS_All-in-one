@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-06T12:32:32.225Z",
+  "generatedAt": "2026-03-06T14:45:34.659Z",
   "queues": {
     "mismatch": [],
     "local_present_tracking_missing": [
@@ -776,9 +776,10 @@
         "repoPath": "scientific-skills/opentargets-database",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-026 imported and onboarded on 2026-03-06"
         ]
       },
       {
@@ -787,9 +788,10 @@
         "repoPath": "scientific-skills/opentrons-integration",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-026 imported and onboarded on 2026-03-06"
         ]
       },
       {
@@ -798,9 +800,10 @@
         "repoPath": "scientific-skills/paper-2-web",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-026 imported and onboarded on 2026-03-06"
         ]
       },
       {
@@ -809,9 +812,10 @@
         "repoPath": "scientific-skills/parallel-web",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-026 imported and onboarded on 2026-03-06"
         ]
       },
       {
@@ -820,9 +824,10 @@
         "repoPath": "scientific-skills/pathml",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-026 imported and onboarded on 2026-03-06"
         ]
       },
       {

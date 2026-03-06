@@ -7224,6 +7224,124 @@
       "source": "structured"
     }
   },
+  "opentargets-database": {
+    "category": "Health & Life Sciences",
+    "files": [
+      "SKILL.md",
+      "references/api_reference.md",
+      "references/evidence_types.md",
+      "references/target_annotations.md",
+      "scripts/query_opentargets.py"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 14077,
+        "lineCount": 372,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/api_reference.md": {
+        "sizeBytes": 6332,
+        "lineCount": 250,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/evidence_types.md": {
+        "sizeBytes": 8765,
+        "lineCount": 307,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/target_annotations.md": {
+        "sizeBytes": 10292,
+        "lineCount": 402,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "scripts/query_opentargets.py": {
+        "sizeBytes": 10641,
+        "lineCount": 404,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 12527,
+      "cl100k": 11187
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "pathml": {
+    "category": "Health & Life Sciences",
+    "files": [
+      "SKILL.md",
+      "references/data_management.md",
+      "references/graphs.md",
+      "references/image_loading.md",
+      "references/machine_learning.md",
+      "references/multiparametric.md",
+      "references/preprocessing.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 7367,
+        "lineCount": 165,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/data_management.md": {
+        "sizeBytes": 19018,
+        "lineCount": 743,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/graphs.md": {
+        "sizeBytes": 16726,
+        "lineCount": 654,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/image_loading.md": {
+        "sizeBytes": 12146,
+        "lineCount": 449,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/machine_learning.md": {
+        "sizeBytes": 19946,
+        "lineCount": 726,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/multiparametric.md": {
+        "sizeBytes": 18199,
+        "lineCount": 687,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/preprocessing.md": {
+        "sizeBytes": 18209,
+        "lineCount": 723,
+        "ext": "md",
+        "tabKey": "references"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 27788,
+      "cl100k": 27231
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
   "aws-agentic-ai": {
     "category": "Infrastructure & Cloud",
     "files": [
@@ -12711,6 +12829,58 @@
       "source": "structured"
     }
   },
+  "opentrons-integration": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/api_reference.md",
+      "scripts/basic_protocol_template.py",
+      "scripts/pcr_setup_template.py",
+      "scripts/serial_dilution_template.py"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 14721,
+        "lineCount": 572,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/api_reference.md": {
+        "sizeBytes": 13117,
+        "lineCount": 367,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "scripts/basic_protocol_template.py": {
+        "sizeBytes": 1537,
+        "lineCount": 68,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/pcr_setup_template.py": {
+        "sizeBytes": 4538,
+        "lineCount": 155,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/serial_dilution_template.py": {
+        "sizeBytes": 3171,
+        "lineCount": 97,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 9265,
+      "cl100k": 9675
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
   "chaos-engineer": {
     "category": "Security & Web Testing",
     "files": [
@@ -13023,6 +13193,36 @@
     "tokenEstimate": {
       "heuristic": 5590,
       "cl100k": 4810
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "agent-without-context": {
+    "category": "Utility & Automation",
+    "files": [],
+    "fileMeta": {},
+    "tokenEstimate": {
+      "heuristic": 0,
+      "cl100k": 0
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "argument-hint-no-args": {
+    "category": "Utility & Automation",
+    "files": [],
+    "fileMeta": {},
+    "tokenEstimate": {
+      "heuristic": 0,
+      "cl100k": 0
     },
     "dependencies": {
       "skills": [],
@@ -14650,6 +14850,131 @@
     "tokenEstimate": {
       "heuristic": 12587,
       "cl100k": 12494
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "paper-2-web": {
+    "category": "Writing & Research",
+    "files": [
+      "SKILL.md",
+      "references/installation.md",
+      "references/paper2poster.md",
+      "references/paper2video.md",
+      "references/paper2web.md",
+      "references/usage_examples.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 16447,
+        "lineCount": 496,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/installation.md": {
+        "sizeBytes": 3644,
+        "lineCount": 142,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/paper2poster.md": {
+        "sizeBytes": 10207,
+        "lineCount": 347,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/paper2video.md": {
+        "sizeBytes": 9796,
+        "lineCount": 306,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/paper2web.md": {
+        "sizeBytes": 5388,
+        "lineCount": 188,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/usage_examples.md": {
+        "sizeBytes": 10633,
+        "lineCount": 437,
+        "ext": "md",
+        "tabKey": "references"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 13831,
+      "cl100k": 12731
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "parallel-web": {
+    "category": "Writing & Research",
+    "files": [
+      "SKILL.md",
+      "references/api_reference.md",
+      "references/deep_research_guide.md",
+      "references/extraction_patterns.md",
+      "references/search_best_practices.md",
+      "references/workflow_recipes.md",
+      "scripts/parallel_web.py"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 11656,
+        "lineCount": 315,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/api_reference.md": {
+        "sizeBytes": 5161,
+        "lineCount": 245,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/deep_research_guide.md": {
+        "sizeBytes": 12898,
+        "lineCount": 363,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/extraction_patterns.md": {
+        "sizeBytes": 9564,
+        "lineCount": 339,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/search_best_practices.md": {
+        "sizeBytes": 9310,
+        "lineCount": 298,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/workflow_recipes.md": {
+        "sizeBytes": 16360,
+        "lineCount": 457,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "scripts/parallel_web.py": {
+        "sizeBytes": 19801,
+        "lineCount": 569,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 21182,
+      "cl100k": 18964
     },
     "dependencies": {
       "skills": [],

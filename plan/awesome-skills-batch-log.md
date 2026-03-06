@@ -1142,3 +1142,49 @@
 - Audit：`WARNING`
 - Onboard：`completed`
 - Sync：`completed`
+
+## Batch 026
+
+- 批次 ID：`batch-026`
+- 日期：`2026-03-06`
+- 類型：`import`
+- 數量：`5`
+- 項目：
+  1. `opentargets-database`
+  2. `opentrons-integration`
+  3. `paper-2-web`
+  4. `parallel-web`
+  5. `pathml`
+
+### 執行摘要
+
+1. Source 對齊：
+   - canonical repo：`K-Dense-AI/claude-scientific-skills`
+   - canonical path：`scientific-skills/<skill>`
+2. Import：
+   - 使用 sparse checkout 載入 5 個技能，並匯入 `public/SKILLS/<Category>/<skill>/`
+3. Audit：
+   - 檢查 `SKILL.md`、`references/`、`scripts/`、`assets/`
+   - 主要風險點為 API 網路存取與文件中的安裝命令示例，未發現秘密值或破壞性自動執行行為
+   - 審查報告：`plan/security-audits/batch-026.md`
+4. Onboard：
+   - 分類：
+     - `Health & Life Sciences`: `opentargets-database`, `pathml`
+     - `Scientific & Research Tools`: `opentrons-integration`
+     - `Writing & Research`: `paper-2-web`, `parallel-web`
+   - 更新 `src/data/skills.ts`：id `292~296`
+   - 更新 `database/init_skills.sql`：id `292~296`
+5. Sync：
+   - `npm run prebuild` 重新產生 manifest
+6. Verify：
+   - `npm run build`
+   - `npm run test`
+7. Tracking：
+   - 更新 `plan/awesome-skills-tracking.json`（追加 `batch-026`）
+   - 更新 `plan/awesome-skills-work-queues.json`（本批次 5 筆標記 `done`）
+
+### 結果
+
+- Audit：`PASS`
+- Onboard：`completed`
+- Sync：`completed`

@@ -3081,6 +3081,66 @@ export const MOCK_SKILLS: Skill[] = [
     source: 'openalex-database',
     githubUrl: 'https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/openalex-database'
   },
+  {
+    id: 292,
+    name: 'opentargets-database',
+    description: 'Query Open Targets Platform GraphQL APIs for disease-target evidence, tractability, safety annotations, and drug discovery prioritization.',
+    author: 'K-Dense-AI',
+    category: 'Health & Life Sciences',
+    tags: ['Open Targets', 'Drug Discovery', 'Target Prioritization'],
+    downloadCount: 0,
+    createdAt: '2026-03-06',
+    source: 'opentargets-database',
+    githubUrl: 'https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/opentargets-database'
+  },
+  {
+    id: 293,
+    name: 'opentrons-integration',
+    description: 'Author and validate Opentrons Protocol API v2 workflows for OT-2/Flex liquid handling, module control, and reproducible lab automation.',
+    author: 'K-Dense-AI',
+    category: 'Scientific & Research Tools',
+    tags: ['Opentrons', 'Lab Automation', 'Protocol API'],
+    downloadCount: 0,
+    createdAt: '2026-03-06',
+    source: 'opentrons-integration',
+    githubUrl: 'https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/opentrons-integration'
+  },
+  {
+    id: 294,
+    name: 'paper-2-web',
+    description: 'Transform academic papers into interactive websites, presentation videos, and conference posters for research dissemination workflows.',
+    author: 'K-Dense-AI',
+    category: 'Writing & Research',
+    tags: ['Paper2All', 'Research Communication', 'Conference Materials'],
+    downloadCount: 0,
+    createdAt: '2026-03-06',
+    source: 'paper-2-web',
+    githubUrl: 'https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/paper-2-web'
+  },
+  {
+    id: 295,
+    name: 'parallel-web',
+    description: 'Use Parallel Web Systems APIs for web search, deep research synthesis, and citation-aware URL extraction workflows.',
+    author: 'K-Dense-AI',
+    category: 'Writing & Research',
+    tags: ['Web Research', 'Parallel API', 'Citations'],
+    downloadCount: 0,
+    createdAt: '2026-03-06',
+    source: 'parallel-web',
+    githubUrl: 'https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/parallel-web'
+  },
+  {
+    id: 296,
+    name: 'pathml',
+    description: 'Build computational pathology pipelines for whole-slide imaging, nucleus analysis, spatial graphs, and pathology-focused ML workflows.',
+    author: 'K-Dense-AI',
+    category: 'Health & Life Sciences',
+    tags: ['Computational Pathology', 'Whole Slide Imaging', 'Medical AI'],
+    downloadCount: 0,
+    createdAt: '2026-03-06',
+    source: 'pathml',
+    githubUrl: 'https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/pathml'
+  },
   // Writing & Research
   {
     id: 138,

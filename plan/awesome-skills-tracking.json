@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-06T12:32:32.225Z",
+  "generatedAt": "2026-03-06T14:45:34.659Z",
   "sourceReadme": "https://raw.githubusercontent.com/BehiSecc/awesome-claude-skills/main/README.md",
   "stats": {
-    "localSkills": 275,
+    "localSkills": 280,
     "discoveredRepoLinks": 89,
     "expandedCandidates": 402,
     "uniqueCandidates": 374,
-    "missing": 155,
+    "missing": 150,
     "urlMismatch": 0,
     "authorMismatch": 0,
     "fetchFailures": 26
@@ -486,16 +486,35 @@
         "onboard": "completed",
         "sync": "completed"
       }
+    },
+    {
+      "id": "batch-026",
+      "type": "import",
+      "size": 5,
+      "status": "completed",
+      "items": [
+        "opentargets-database",
+        "opentrons-integration",
+        "paper-2-web",
+        "parallel-web",
+        "pathml"
+      ],
+      "checklist": {
+        "import": "completed",
+        "audit": "pass",
+        "onboard": "completed",
+        "sync": "completed"
+      }
     }
   ],
   "nextBatchProposals": {
     "correction": [],
     "import": [
-      "opentargets-database",
-      "opentrons-integration",
-      "paper-2-web",
-      "parallel-web",
-      "pathml"
+      "pdb-database",
+      "peer-review",
+      "pennylane",
+      "perplexity-search",
+      "phylogenetics"
     ]
   },
   "failures": [
@@ -5221,7 +5240,7 @@
     },
     {
       "sourceSlug": "opentargets-database",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "opentargets-database",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/opentargets-database",
@@ -5229,18 +5248,21 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/opentargets-database"
       },
-      "local": null,
+      "local": {
+        "id": 292,
+        "source": "opentargets-database",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/opentargets-database"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/opentargets-database"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "opentrons-integration",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "opentrons-integration",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/opentrons-integration",
@@ -5248,14 +5270,17 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/opentrons-integration"
       },
-      "local": null,
+      "local": {
+        "id": 293,
+        "source": "opentrons-integration",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/opentrons-integration"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/opentrons-integration"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "outline",
@@ -5302,7 +5327,7 @@
     },
     {
       "sourceSlug": "paper-2-web",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "paper-2-web",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/paper-2-web",
@@ -5310,18 +5335,21 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/paper-2-web"
       },
-      "local": null,
+      "local": {
+        "id": 294,
+        "source": "paper-2-web",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/paper-2-web"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/paper-2-web"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "parallel-web",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "parallel-web",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/parallel-web",
@@ -5329,14 +5357,17 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/parallel-web"
       },
-      "local": null,
+      "local": {
+        "id": 295,
+        "source": "parallel-web",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/parallel-web"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/parallel-web"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "parameter-optimization",
@@ -5359,7 +5390,7 @@
     },
     {
       "sourceSlug": "pathml",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "pathml",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/pathml",
@@ -5367,14 +5398,17 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/pathml"
       },
-      "local": null,
+      "local": {
+        "id": 296,
+        "source": "pathml",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/pathml"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/pathml"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "pdb-database",
