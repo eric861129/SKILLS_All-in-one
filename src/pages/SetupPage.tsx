@@ -123,7 +123,7 @@ export const SetupPage = () => {
             </main>
 
             {/* Footer */}
-            <footer className="border-t border-white/5 py-24 px-4 text-center">
+            <footer className="border-t border-white/5 py-16 px-4 text-center mt-12">
                 <div className="p-4 bg-white/5 rounded-3xl w-fit mx-auto mb-10 border border-white/5 shadow-2xl">
                     <Terminal size={32} className="text-slate-700" />
                 </div>

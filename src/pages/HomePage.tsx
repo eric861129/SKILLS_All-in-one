@@ -510,7 +510,7 @@ export const HomePage = () => {
             </div>
 
             {/* Footer */}
-            <footer className="border-t border-slate-900/50 py-16 px-4 text-center mt-20">
+            <footer className="border-t border-slate-900/50 py-10 px-4 text-center mt-12">
                 <div className="p-3 bg-slate-900/50 rounded-2xl w-fit mx-auto mb-6 border border-slate-800/50">
                     <Terminal className="w-6 h-6 text-slate-500" />
                 </div>
