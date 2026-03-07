@@ -20948,6 +20948,36 @@
       "source": "structured"
     }
   },
+  "agent-without-context": {
+    "category": "Utility & Automation",
+    "files": [],
+    "fileMeta": {},
+    "tokenEstimate": {
+      "heuristic": 0,
+      "cl100k": 0
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "argument-hint-no-args": {
+    "category": "Utility & Automation",
+    "files": [],
+    "fileMeta": {},
+    "tokenEstimate": {
+      "heuristic": 0,
+      "cl100k": 0
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
   "claude-skill-builder": {
     "category": "Utility & Automation",
     "files": [
