@@ -13977,6 +13977,246 @@
       "source": "structured"
     }
   },
+  "ontology-explorer": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/asmo_guide.md",
+      "references/asmo_summary.json",
+      "references/cmso_guide.md",
+      "references/cmso_summary.json",
+      "references/ontology_registry.json",
+      "references/owl_primer.md",
+      "scripts/class_browser.py",
+      "scripts/ontology_summarizer.py",
+      "scripts/owl_parser.py",
+      "scripts/property_lookup.py"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 8177,
+        "lineCount": 169,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/asmo_guide.md": {
+        "sizeBytes": 7602,
+        "lineCount": 226,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/asmo_summary.json": {
+        "sizeBytes": 38203,
+        "lineCount": 1131,
+        "ext": "json",
+        "tabKey": "references"
+      },
+      "references/cmso_guide.md": {
+        "sizeBytes": 6326,
+        "lineCount": 176,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/cmso_summary.json": {
+        "sizeBytes": 21788,
+        "lineCount": 692,
+        "ext": "json",
+        "tabKey": "references"
+      },
+      "references/ontology_registry.json": {
+        "sizeBytes": 908,
+        "lineCount": 27,
+        "ext": "json",
+        "tabKey": "references"
+      },
+      "references/owl_primer.md": {
+        "sizeBytes": 3385,
+        "lineCount": 79,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "scripts/class_browser.py": {
+        "sizeBytes": 10192,
+        "lineCount": 293,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/ontology_summarizer.py": {
+        "sizeBytes": 6969,
+        "lineCount": 207,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/owl_parser.py": {
+        "sizeBytes": 11064,
+        "lineCount": 334,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/property_lookup.py": {
+        "sizeBytes": 10365,
+        "lineCount": 277,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 30971,
+      "cl100k": 31343
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "ontology-mapper": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/asmo_mappings.json",
+      "references/cmso_mappings.json",
+      "references/crystal_systems.json",
+      "references/element_data.json",
+      "references/mapping_patterns.md",
+      "scripts/concept_mapper.py",
+      "scripts/crystal_mapper.py",
+      "scripts/sample_annotator.py"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 7863,
+        "lineCount": 172,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/asmo_mappings.json": {
+        "sizeBytes": 6119,
+        "lineCount": 156,
+        "ext": "json",
+        "tabKey": "references"
+      },
+      "references/cmso_mappings.json": {
+        "sizeBytes": 4136,
+        "lineCount": 116,
+        "ext": "json",
+        "tabKey": "references"
+      },
+      "references/crystal_systems.json": {
+        "sizeBytes": 1968,
+        "lineCount": 63,
+        "ext": "json",
+        "tabKey": "references"
+      },
+      "references/element_data.json": {
+        "sizeBytes": 3610,
+        "lineCount": 67,
+        "ext": "json",
+        "tabKey": "references"
+      },
+      "references/mapping_patterns.md": {
+        "sizeBytes": 2049,
+        "lineCount": 64,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "scripts/concept_mapper.py": {
+        "sizeBytes": 10737,
+        "lineCount": 332,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/crystal_mapper.py": {
+        "sizeBytes": 14771,
+        "lineCount": 427,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/sample_annotator.py": {
+        "sizeBytes": 13440,
+        "lineCount": 364,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 16159,
+      "cl100k": 16774
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "ontology-validator": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/asmo_constraints.json",
+      "references/cmso_constraints.json",
+      "references/validation_rules.md",
+      "scripts/completeness_checker.py",
+      "scripts/relationship_checker.py",
+      "scripts/schema_checker.py"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 5781,
+        "lineCount": 137,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/asmo_constraints.json": {
+        "sizeBytes": 1114,
+        "lineCount": 39,
+        "ext": "json",
+        "tabKey": "references"
+      },
+      "references/cmso_constraints.json": {
+        "sizeBytes": 1045,
+        "lineCount": 38,
+        "ext": "json",
+        "tabKey": "references"
+      },
+      "references/validation_rules.md": {
+        "sizeBytes": 2038,
+        "lineCount": 43,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "scripts/completeness_checker.py": {
+        "sizeBytes": 8527,
+        "lineCount": 250,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/relationship_checker.py": {
+        "sizeBytes": 6986,
+        "lineCount": 220,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/schema_checker.py": {
+        "sizeBytes": 9626,
+        "lineCount": 282,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 8769,
+      "cl100k": 7352
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
   "opentrons-integration": {
     "category": "Scientific & Research Tools",
     "files": [
@@ -14021,6 +14261,86 @@
     "tokenEstimate": {
       "heuristic": 9265,
       "cl100k": 9675
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "parameter-optimization": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/doe_methods.md",
+      "references/optimizer_selection.md",
+      "references/sensitivity_guidelines.md",
+      "references/surrogate_guidelines.md",
+      "scripts/doe_generator.py",
+      "scripts/optimizer_selector.py",
+      "scripts/sensitivity_summary.py",
+      "scripts/surrogate_builder.py"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 5446,
+        "lineCount": 142,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/doe_methods.md": {
+        "sizeBytes": 4419,
+        "lineCount": 172,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/optimizer_selection.md": {
+        "sizeBytes": 5551,
+        "lineCount": 213,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/sensitivity_guidelines.md": {
+        "sizeBytes": 4669,
+        "lineCount": 195,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/surrogate_guidelines.md": {
+        "sizeBytes": 5416,
+        "lineCount": 234,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "scripts/doe_generator.py": {
+        "sizeBytes": 4162,
+        "lineCount": 129,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/optimizer_selector.py": {
+        "sizeBytes": 2490,
+        "lineCount": 80,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/sensitivity_summary.py": {
+        "sizeBytes": 2131,
+        "lineCount": 72,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/surrogate_builder.py": {
+        "sizeBytes": 2115,
+        "lineCount": 70,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 9065,
+      "cl100k": 9094
     },
     "dependencies": {
       "skills": [],
