@@ -16753,6 +16753,79 @@
       "source": "structured"
     }
   },
+  "simpy": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/events.md",
+      "references/monitoring.md",
+      "references/process-interaction.md",
+      "references/real-time.md",
+      "references/resources.md",
+      "scripts/basic_simulation_template.py",
+      "scripts/resource_monitor.py"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 12165,
+        "lineCount": 428,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/events.md": {
+        "sizeBytes": 8579,
+        "lineCount": 375,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/monitoring.md": {
+        "sizeBytes": 12923,
+        "lineCount": 476,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/process-interaction.md": {
+        "sizeBytes": 11525,
+        "lineCount": 425,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/real-time.md": {
+        "sizeBytes": 10728,
+        "lineCount": 396,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/resources.md": {
+        "sizeBytes": 7327,
+        "lineCount": 276,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "scripts/basic_simulation_template.py": {
+        "sizeBytes": 5558,
+        "lineCount": 194,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/resource_monitor.py": {
+        "sizeBytes": 11680,
+        "lineCount": 346,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 20122,
+      "cl100k": 18629
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
   "chaos-engineer": {
     "category": "Security & Web Testing",
     "files": [
