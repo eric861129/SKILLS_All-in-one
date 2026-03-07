@@ -23432,64 +23432,118 @@
       "source": "structured"
     }
   },
-  "aptos": {
+  "aptos-cli": {
     "category": "Web3 & Blockchain",
     "files": [
-      "aptos-cli/SKILL.md",
-      "aptos-core/SKILL.md",
-      "aptos-indexer/SKILL.md",
-      "aptos-standards/SKILL.md",
-      "aptos-ts-sdk/SKILL.md",
-      "move-analyzer/SKILL.md",
-      "move-prover/SKILL.md"
+      "SKILL.md"
     ],
     "fileMeta": {
-      "aptos-cli/SKILL.md": {
+      "SKILL.md": {
         "sizeBytes": 846,
         "lineCount": 41,
         "ext": "md",
-        "tabKey": "aptos-cli"
-      },
-      "aptos-core/SKILL.md": {
-        "sizeBytes": 1601,
-        "lineCount": 40,
-        "ext": "md",
-        "tabKey": "aptos-core"
-      },
-      "aptos-indexer/SKILL.md": {
-        "sizeBytes": 920,
-        "lineCount": 27,
-        "ext": "md",
-        "tabKey": "aptos-indexer"
-      },
-      "aptos-standards/SKILL.md": {
-        "sizeBytes": 1018,
-        "lineCount": 31,
-        "ext": "md",
-        "tabKey": "aptos-standards"
-      },
-      "aptos-ts-sdk/SKILL.md": {
-        "sizeBytes": 1265,
-        "lineCount": 48,
-        "ext": "md",
-        "tabKey": "aptos-ts-sdk"
-      },
-      "move-analyzer/SKILL.md": {
-        "sizeBytes": 1231,
-        "lineCount": 38,
-        "ext": "md",
-        "tabKey": "move-analyzer"
-      },
-      "move-prover/SKILL.md": {
-        "sizeBytes": 2048,
-        "lineCount": 78,
-        "ext": "md",
-        "tabKey": "move-prover"
+        "tabKey": "root"
       }
     },
     "tokenEstimate": {
-      "heuristic": 2234,
-      "cl100k": 2069
+      "heuristic": 212,
+      "cl100k": 185
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "aptos-core": {
+    "category": "Web3 & Blockchain",
+    "files": [
+      "SKILL.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 1601,
+        "lineCount": 40,
+        "ext": "md",
+        "tabKey": "root"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 401,
+      "cl100k": 361
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "aptos-indexer": {
+    "category": "Web3 & Blockchain",
+    "files": [
+      "SKILL.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 920,
+        "lineCount": 27,
+        "ext": "md",
+        "tabKey": "root"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 230,
+      "cl100k": 211
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "aptos-standards": {
+    "category": "Web3 & Blockchain",
+    "files": [
+      "SKILL.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 1018,
+        "lineCount": 31,
+        "ext": "md",
+        "tabKey": "root"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 255,
+      "cl100k": 257
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "aptos-ts-sdk": {
+    "category": "Web3 & Blockchain",
+    "files": [
+      "SKILL.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 1265,
+        "lineCount": 48,
+        "ext": "md",
+        "tabKey": "root"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 317,
+      "cl100k": 307
     },
     "dependencies": {
       "skills": [],
@@ -23625,6 +23679,30 @@
       "source": "structured"
     }
   },
+  "move-analyzer": {
+    "category": "Web3 & Blockchain",
+    "files": [
+      "SKILL.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 1231,
+        "lineCount": 38,
+        "ext": "md",
+        "tabKey": "root"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 308,
+      "cl100k": 276
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
   "move-code-quality-skill": {
     "category": "Web3 & Blockchain",
     "files": [
@@ -23665,6 +23743,30 @@
     "tokenEstimate": {
       "heuristic": 1041,
       "cl100k": 1064
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "move-prover": {
+    "category": "Web3 & Blockchain",
+    "files": [
+      "SKILL.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 2048,
+        "lineCount": 78,
+        "ext": "md",
+        "tabKey": "root"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 512,
+      "cl100k": 472
     },
     "dependencies": {
       "skills": [],
