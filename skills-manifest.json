@@ -3748,6 +3748,82 @@
       "source": "structured"
     }
   },
+  "charles-proxy-extract": {
+    "category": "Development & Code Tools",
+    "files": [
+      "LICENSE.md",
+      "README.md",
+      "SKILL.md",
+      "extract_responses.py"
+    ],
+    "fileMeta": {
+      "LICENSE.md": {
+        "sizeBytes": 1070,
+        "lineCount": 22,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "README.md": {
+        "sizeBytes": 7063,
+        "lineCount": 237,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "SKILL.md": {
+        "sizeBytes": 6007,
+        "lineCount": 181,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "extract_responses.py": {
+        "sizeBytes": 7994,
+        "lineCount": 246,
+        "ext": "py",
+        "tabKey": "root"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 5524,
+      "cl100k": 5219
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "claude-code-terminal-title": {
+    "category": "Development & Code Tools",
+    "files": [
+      "SKILL.md",
+      "scripts/set_title.sh"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 4755,
+        "lineCount": 137,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "scripts/set_title.sh": {
+        "sizeBytes": 2153,
+        "lineCount": 66,
+        "ext": "sh",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 1724,
+      "cl100k": 1652
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
   "claude-mcp-expert": {
     "category": "Development & Code Tools",
     "files": [
@@ -3771,6 +3847,121 @@
     "tokenEstimate": {
       "heuristic": 2383,
       "cl100k": 2549
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "claude-starter": {
+    "category": "Development & Code Tools",
+    "files": [
+      "SKILL.md",
+      "claude-code/skill.json",
+      "claude-code/skill.md",
+      "claude-command-builder/skill.json",
+      "claude-command-builder/skill.md",
+      "claude-hook-builder/skill.json",
+      "claude-hook-builder/skill.md",
+      "claude-mcp-expert/SKILL.md",
+      "claude-mcp-expert/skill.json",
+      "claude-settings-expert/skill.json",
+      "claude-settings-expert/skill.md",
+      "claude-skill-builder/SKILL.md",
+      "claude-skill-builder/skill.json",
+      "skill.json"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 4406,
+        "lineCount": 170,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "claude-code/skill.json": {
+        "sizeBytes": 1194,
+        "lineCount": 39,
+        "ext": "json",
+        "tabKey": "claude-code"
+      },
+      "claude-code/skill.md": {
+        "sizeBytes": 4937,
+        "lineCount": 178,
+        "ext": "md",
+        "tabKey": "claude-code"
+      },
+      "claude-command-builder/skill.json": {
+        "sizeBytes": 1167,
+        "lineCount": 35,
+        "ext": "json",
+        "tabKey": "claude-command-builder"
+      },
+      "claude-command-builder/skill.md": {
+        "sizeBytes": 13087,
+        "lineCount": 586,
+        "ext": "md",
+        "tabKey": "claude-command-builder"
+      },
+      "claude-hook-builder/skill.json": {
+        "sizeBytes": 1168,
+        "lineCount": 35,
+        "ext": "json",
+        "tabKey": "claude-hook-builder"
+      },
+      "claude-hook-builder/skill.md": {
+        "sizeBytes": 17830,
+        "lineCount": 907,
+        "ext": "md",
+        "tabKey": "claude-hook-builder"
+      },
+      "claude-mcp-expert/SKILL.md": {
+        "sizeBytes": 8336,
+        "lineCount": 326,
+        "ext": "md",
+        "tabKey": "claude-mcp-expert"
+      },
+      "claude-mcp-expert/skill.json": {
+        "sizeBytes": 1202,
+        "lineCount": 35,
+        "ext": "json",
+        "tabKey": "claude-mcp-expert"
+      },
+      "claude-settings-expert/skill.json": {
+        "sizeBytes": 1157,
+        "lineCount": 35,
+        "ext": "json",
+        "tabKey": "claude-settings-expert"
+      },
+      "claude-settings-expert/skill.md": {
+        "sizeBytes": 15039,
+        "lineCount": 724,
+        "ext": "md",
+        "tabKey": "claude-settings-expert"
+      },
+      "claude-skill-builder/SKILL.md": {
+        "sizeBytes": 7135,
+        "lineCount": 263,
+        "ext": "md",
+        "tabKey": "claude-skill-builder"
+      },
+      "claude-skill-builder/skill.json": {
+        "sizeBytes": 1178,
+        "lineCount": 35,
+        "ext": "json",
+        "tabKey": "claude-skill-builder"
+      },
+      "skill.json": {
+        "sizeBytes": 1274,
+        "lineCount": 39,
+        "ext": "json",
+        "tabKey": "root"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 19721,
+      "cl100k": 20809
     },
     "dependencies": {
       "skills": [],
@@ -4935,6 +5126,30 @@
         "database-optimizer",
         "microservices-architect"
       ],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "hashicorp-agent-skills": {
+    "category": "Development & Code Tools",
+    "files": [
+      "SKILL.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 16698,
+        "lineCount": 600,
+        "ext": "md",
+        "tabKey": "root"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 4163,
+      "cl100k": 3633
+    },
+    "dependencies": {
+      "skills": [],
       "libraries": [],
       "runtimeTools": [],
       "source": "structured"
@@ -12728,6 +12943,30 @@
       "source": "structured"
     }
   },
+  "claude-scientific-skills": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 9837,
+        "lineCount": 276,
+        "ext": "md",
+        "tabKey": "root"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 2458,
+      "cl100k": 2271
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
   "clinical-decision-support": {
     "category": "Scientific & Research Tools",
     "files": [
@@ -15277,6 +15516,79 @@
     "tokenEstimate": {
       "heuristic": 15778,
       "cl100k": 14571
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "materials-simulation-skills": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/aggregation_methods.md",
+      "references/campaign_patterns.md",
+      "references/sweep_strategies.md",
+      "scripts/campaign_manager.py",
+      "scripts/job_tracker.py",
+      "scripts/result_aggregator.py",
+      "scripts/sweep_generator.py"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 7633,
+        "lineCount": 231,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/aggregation_methods.md": {
+        "sizeBytes": 4102,
+        "lineCount": 196,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/campaign_patterns.md": {
+        "sizeBytes": 3861,
+        "lineCount": 132,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/sweep_strategies.md": {
+        "sizeBytes": 3335,
+        "lineCount": 141,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "scripts/campaign_manager.py": {
+        "sizeBytes": 8231,
+        "lineCount": 258,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/job_tracker.py": {
+        "sizeBytes": 9643,
+        "lineCount": 318,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/result_aggregator.py": {
+        "sizeBytes": 9658,
+        "lineCount": 340,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/sweep_generator.py": {
+        "sizeBytes": 10330,
+        "lineCount": 331,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 14046,
+      "cl100k": 13583
     },
     "dependencies": {
       "skills": [],
