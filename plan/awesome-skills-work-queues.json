@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-07T06:38:00.000Z",
+  "generatedAt": "2026-03-07T08:05:00.000Z",
   "queues": {
     "mismatch": [],
     "local_present_tracking_missing": [
@@ -2654,9 +2654,11 @@
         "repoPath": null,
         "reason": "local_custom_skill_not_in_awesome_tracking",
         "priority": "P3",
-        "status": "deferred",
+        "status": "blocked",
         "notes": [
-          "batch-052 triage: local custom skill outside awesome baseline; deferred on 2026-03-07"
+          "batch-052 triage: local custom skill outside awesome baseline; deferred on 2026-03-07",
+          "batch-059 remediation blocked: no_skill_md_found:RioTheGreat-ai/agentfund-mcp on 2026-03-07",
+          "batch-060 remap import blocked: upstream repository/path unavailable or no canonical skill package on 2026-03-07"
         ]
       },
       {
@@ -2665,9 +2667,10 @@
         "repoPath": null,
         "reason": "local_custom_skill_not_in_awesome_tracking",
         "priority": "P3",
-        "status": "deferred",
+        "status": "done",
         "notes": [
-          "batch-052 triage: local custom skill outside awesome baseline; deferred on 2026-03-07"
+          "batch-052 triage: local custom skill outside awesome baseline; deferred on 2026-03-07",
+          "batch-059 remediation: skill folder verified at public/SKILLS/Media & Content/algorithmic-art/SKILL.md on 2026-03-07"
         ]
       },
       {
@@ -2676,9 +2679,10 @@
         "repoPath": null,
         "reason": "local_custom_skill_not_in_awesome_tracking",
         "priority": "P3",
-        "status": "deferred",
+        "status": "done",
         "notes": [
-          "batch-052 triage: local custom skill outside awesome baseline; deferred on 2026-03-07"
+          "batch-052 triage: local custom skill outside awesome baseline; deferred on 2026-03-07",
+          "batch-059 remediation: skill folder verified at public/SKILLS/Media & Content/brand-guidelines/SKILL.md on 2026-03-07"
         ]
       },
       {
@@ -2687,9 +2691,10 @@
         "repoPath": null,
         "reason": "local_custom_skill_not_in_awesome_tracking",
         "priority": "P3",
-        "status": "deferred",
+        "status": "done",
         "notes": [
-          "batch-052 triage: local custom skill outside awesome baseline; deferred on 2026-03-07"
+          "batch-052 triage: local custom skill outside awesome baseline; deferred on 2026-03-07",
+          "batch-059 remediation: skill folder verified at public/SKILLS/Media & Content/canvas-design/SKILL.md on 2026-03-07"
         ]
       },
       {
@@ -2698,9 +2703,10 @@
         "repoPath": null,
         "reason": "local_custom_skill_not_in_awesome_tracking",
         "priority": "P3",
-        "status": "deferred",
+        "status": "done",
         "notes": [
-          "batch-052 triage: local custom skill outside awesome baseline; deferred on 2026-03-07"
+          "batch-052 triage: local custom skill outside awesome baseline; deferred on 2026-03-07",
+          "batch-059 remediation: skill folder verified at public/SKILLS/Development & Code Tools/charles-proxy-extract/SKILL.md on 2026-03-07"
         ]
       },
       {
@@ -2709,9 +2715,11 @@
         "repoPath": null,
         "reason": "local_custom_skill_not_in_awesome_tracking",
         "priority": "P3",
-        "status": "deferred",
+        "status": "done",
         "notes": [
-          "batch-053 triage: local custom skill outside awesome baseline; deferred on 2026-03-07"
+          "batch-053 triage: local custom skill outside awesome baseline; deferred on 2026-03-07",
+          "batch-059 remediation blocked: no_skill_md_found:huifer/Claude-Ally-Health on 2026-03-07",
+          "batch-060 remap import: mapped upstream path and verified at public/SKILLS/Health & Life Sciences/claude-ally-health/SKILL.md on 2026-03-07"
         ]
       },
       {
@@ -2720,9 +2728,11 @@
         "repoPath": null,
         "reason": "local_custom_skill_not_in_awesome_tracking",
         "priority": "P3",
-        "status": "deferred",
+        "status": "done",
         "notes": [
-          "batch-053 triage: local custom skill outside awesome baseline; deferred on 2026-03-07"
+          "batch-053 triage: local custom skill outside awesome baseline; deferred on 2026-03-07",
+          "batch-059 remediation blocked: no_skill_md_found:bluzername/claude-code-terminal-title on 2026-03-07",
+          "batch-060 remap import: mapped upstream path and verified at public/SKILLS/Development & Code Tools/claude-code-terminal-title/SKILL.md on 2026-03-07"
         ]
       },
       {
@@ -2731,9 +2741,11 @@
         "repoPath": null,
         "reason": "local_custom_skill_not_in_awesome_tracking",
         "priority": "P3",
-        "status": "deferred",
+        "status": "done",
         "notes": [
-          "batch-053 triage: local custom skill outside awesome baseline; deferred on 2026-03-07"
+          "batch-053 triage: local custom skill outside awesome baseline; deferred on 2026-03-07",
+          "batch-059 remediation blocked: no_skill_md_found:digitalsamba/claude-code-video-toolkit on 2026-03-07",
+          "batch-060 remap import: mapped upstream path and verified at public/SKILLS/Media & Content/claude-code-video-toolkit/SKILL.md on 2026-03-07"
         ]
       },
       {
@@ -2742,9 +2754,11 @@
         "repoPath": null,
         "reason": "local_custom_skill_not_in_awesome_tracking",
         "priority": "P3",
-        "status": "deferred",
+        "status": "done",
         "notes": [
-          "batch-053 triage: local custom skill outside awesome baseline; deferred on 2026-03-07"
+          "batch-053 triage: local custom skill outside awesome baseline; deferred on 2026-03-07",
+          "batch-059 remediation blocked: no_skill_md_found:smerchek/claude-epub-skill on 2026-03-07",
+          "batch-060 remap import: mapped upstream path and verified at public/SKILLS/Media & Content/claude-epub-skill/SKILL.md on 2026-03-07"
         ]
       },
       {
@@ -2753,9 +2767,11 @@
         "repoPath": null,
         "reason": "local_custom_skill_not_in_awesome_tracking",
         "priority": "P3",
-        "status": "deferred",
+        "status": "done",
         "notes": [
-          "batch-053 triage: local custom skill outside awesome baseline; deferred on 2026-03-07"
+          "batch-053 triage: local custom skill outside awesome baseline; deferred on 2026-03-07",
+          "batch-059 remediation blocked: clone_failed:K-Dense-AI/claude-scientific-skills on 2026-03-07",
+          "batch-060 remap import: mapped upstream path and verified at public/SKILLS/Scientific & Research Tools/claude-scientific-skills/SKILL.md on 2026-03-07"
         ]
       },
       {
@@ -2764,9 +2780,11 @@
         "repoPath": null,
         "reason": "local_custom_skill_not_in_awesome_tracking",
         "priority": "P3",
-        "status": "deferred",
+        "status": "done",
         "notes": [
-          "batch-054 triage: local custom skill outside awesome baseline; deferred on 2026-03-07"
+          "batch-054 triage: local custom skill outside awesome baseline; deferred on 2026-03-07",
+          "batch-059 remediation blocked: no_skill_md_found:raintree-technology/claude-starter on 2026-03-07",
+          "batch-060 remap import: mapped upstream path and verified at public/SKILLS/Development & Code Tools/claude-starter/skill.md on 2026-03-07"
         ]
       },
       {
@@ -2775,9 +2793,11 @@
         "repoPath": null,
         "reason": "local_custom_skill_not_in_awesome_tracking",
         "priority": "P3",
-        "status": "deferred",
+        "status": "done",
         "notes": [
-          "batch-054 triage: local custom skill outside awesome baseline; deferred on 2026-03-07"
+          "batch-054 triage: local custom skill outside awesome baseline; deferred on 2026-03-07",
+          "batch-059 remediation blocked: no_skill_md_found:guia-matthieu/clawfu-skills on 2026-03-07",
+          "batch-060 remap import: mapped upstream path and verified at public/SKILLS/Utility & Automation/clawfu-mcp-skills/SKILL.md on 2026-03-07"
         ]
       },
       {
@@ -2786,9 +2806,10 @@
         "repoPath": null,
         "reason": "local_custom_skill_not_in_awesome_tracking",
         "priority": "P3",
-        "status": "deferred",
+        "status": "done",
         "notes": [
-          "batch-054 triage: local custom skill outside awesome baseline; deferred on 2026-03-07"
+          "batch-054 triage: local custom skill outside awesome baseline; deferred on 2026-03-07",
+          "batch-059 remediation: skill folder verified at public/SKILLS/Data & Analysis/csv-data-summarizer/SKILL.md on 2026-03-07"
         ]
       },
       {
@@ -2797,9 +2818,11 @@
         "repoPath": null,
         "reason": "local_custom_skill_not_in_awesome_tracking",
         "priority": "P3",
-        "status": "deferred",
+        "status": "done",
         "notes": [
-          "batch-054 triage: local custom skill outside awesome baseline; deferred on 2026-03-07"
+          "batch-054 triage: local custom skill outside awesome baseline; deferred on 2026-03-07",
+          "batch-059 remediation blocked: no_skill_md_found:deapi-ai/claude-code-skills on 2026-03-07",
+          "batch-060 remap import: mapped upstream path and verified at public/SKILLS/Media & Content/deapi-ai-media-toolkit/SKILL.md on 2026-03-07"
         ]
       },
       {
@@ -2808,9 +2831,11 @@
         "repoPath": null,
         "reason": "local_custom_skill_not_in_awesome_tracking",
         "priority": "P3",
-        "status": "deferred",
+        "status": "blocked",
         "notes": [
-          "batch-054 triage: local custom skill outside awesome baseline; deferred on 2026-03-07"
+          "batch-054 triage: local custom skill outside awesome baseline; deferred on 2026-03-07",
+          "batch-059 remediation blocked: no_skill_md_found:obra/superpowers on 2026-03-07",
+          "batch-060 remap import blocked: upstream repository/path unavailable or no canonical skill package on 2026-03-07"
         ]
       },
       {
@@ -2819,9 +2844,10 @@
         "repoPath": null,
         "reason": "local_custom_skill_not_in_awesome_tracking",
         "priority": "P3",
-        "status": "deferred",
+        "status": "done",
         "notes": [
-          "batch-055 triage: local custom skill outside awesome baseline; deferred on 2026-03-07"
+          "batch-055 triage: local custom skill outside awesome baseline; deferred on 2026-03-07",
+          "batch-059 remediation: skill folder verified at public/SKILLS/Utility & Automation/dispatching-parallel-agents/SKILL.md on 2026-03-07"
         ]
       },
       {
@@ -2830,9 +2856,10 @@
         "repoPath": null,
         "reason": "local_custom_skill_not_in_awesome_tracking",
         "priority": "P3",
-        "status": "deferred",
+        "status": "done",
         "notes": [
-          "batch-055 triage: local custom skill outside awesome baseline; deferred on 2026-03-07"
+          "batch-055 triage: local custom skill outside awesome baseline; deferred on 2026-03-07",
+          "batch-059 remediation: skill folder verified at public/SKILLS/Writing & Research/doc-coauthoring/SKILL.md on 2026-03-07"
         ]
       },
       {
@@ -2841,9 +2868,10 @@
         "repoPath": null,
         "reason": "local_custom_skill_not_in_awesome_tracking",
         "priority": "P3",
-        "status": "deferred",
+        "status": "done",
         "notes": [
-          "batch-055 triage: local custom skill outside awesome baseline; deferred on 2026-03-07"
+          "batch-055 triage: local custom skill outside awesome baseline; deferred on 2026-03-07",
+          "batch-059 remediation: skill folder verified at public/SKILLS/Utility & Automation/executing-plans/SKILL.md on 2026-03-07"
         ]
       },
       {
@@ -2852,9 +2880,10 @@
         "repoPath": null,
         "reason": "local_custom_skill_not_in_awesome_tracking",
         "priority": "P3",
-        "status": "deferred",
+        "status": "done",
         "notes": [
-          "batch-055 triage: local custom skill outside awesome baseline; deferred on 2026-03-07"
+          "batch-055 triage: local custom skill outside awesome baseline; deferred on 2026-03-07",
+          "batch-059 remediation: skill folder verified at public/SKILLS/Writing & Research/family-history-research/SKILL.md on 2026-03-07"
         ]
       },
       {
@@ -2863,9 +2892,11 @@
         "repoPath": null,
         "reason": "local_custom_skill_not_in_awesome_tracking",
         "priority": "P3",
-        "status": "deferred",
+        "status": "done",
         "notes": [
-          "batch-055 triage: local custom skill outside awesome baseline; deferred on 2026-03-07"
+          "batch-055 triage: local custom skill outside awesome baseline; deferred on 2026-03-07",
+          "batch-059 remediation blocked: no_skill_md_found:jthack/ffuf_claude_skill on 2026-03-07",
+          "batch-060 remap import: mapped upstream path and verified at public/SKILLS/Security & Web Testing/ffuf-claude-skill/SKILL.md on 2026-03-07"
         ]
       },
       {
@@ -2874,9 +2905,10 @@
         "repoPath": null,
         "reason": "local_custom_skill_not_in_awesome_tracking",
         "priority": "P3",
-        "status": "deferred",
+        "status": "done",
         "notes": [
-          "batch-056 triage: local custom skill outside awesome baseline; deferred on 2026-03-07"
+          "batch-056 triage: local custom skill outside awesome baseline; deferred on 2026-03-07",
+          "batch-059 remediation: skill folder verified at public/SKILLS/Media & Content/find-scene/SKILL.md on 2026-03-07"
         ]
       },
       {
@@ -2885,9 +2917,10 @@
         "repoPath": null,
         "reason": "local_custom_skill_not_in_awesome_tracking",
         "priority": "P3",
-        "status": "deferred",
+        "status": "done",
         "notes": [
-          "batch-056 triage: local custom skill outside awesome baseline; deferred on 2026-03-07"
+          "batch-056 triage: local custom skill outside awesome baseline; deferred on 2026-03-07",
+          "batch-059 remediation: skill folder verified at public/SKILLS/Utility & Automation/find-skills/SKILL.md on 2026-03-07"
         ]
       },
       {
@@ -2896,9 +2929,10 @@
         "repoPath": null,
         "reason": "local_custom_skill_not_in_awesome_tracking",
         "priority": "P3",
-        "status": "deferred",
+        "status": "done",
         "notes": [
-          "batch-056 triage: local custom skill outside awesome baseline; deferred on 2026-03-07"
+          "batch-056 triage: local custom skill outside awesome baseline; deferred on 2026-03-07",
+          "batch-059 remediation: skill folder verified at public/SKILLS/Development & Code Tools/frontend-design/SKILL.md on 2026-03-07"
         ]
       },
       {
@@ -2907,9 +2941,10 @@
         "repoPath": null,
         "reason": "local_custom_skill_not_in_awesome_tracking",
         "priority": "P3",
-        "status": "deferred",
+        "status": "done",
         "notes": [
-          "batch-056 triage: local custom skill outside awesome baseline; deferred on 2026-03-07"
+          "batch-056 triage: local custom skill outside awesome baseline; deferred on 2026-03-07",
+          "batch-059 remediation: skill folder verified at public/SKILLS/Collaboration & Project Management/git-pushing/SKILL.md on 2026-03-07"
         ]
       },
       {
@@ -2918,9 +2953,11 @@
         "repoPath": null,
         "reason": "local_custom_skill_not_in_awesome_tracking",
         "priority": "P3",
-        "status": "deferred",
+        "status": "done",
         "notes": [
-          "batch-056 triage: local custom skill outside awesome baseline; deferred on 2026-03-07"
+          "batch-056 triage: local custom skill outside awesome baseline; deferred on 2026-03-07",
+          "batch-059 remediation blocked: no_skill_md_found:sanjay3290/ai-skills on 2026-03-07",
+          "batch-060 remap import: mapped upstream path and verified at public/SKILLS/Collaboration & Project Management/google-workspace-skills/SKILL.md on 2026-03-07"
         ]
       },
       {
@@ -2929,8 +2966,12 @@
         "repoPath": null,
         "reason": "local_custom_skill_not_in_awesome_tracking",
         "priority": "P3",
-        "status": "todo",
-        "notes": []
+        "status": "done",
+        "notes": [
+          "batch-057 triage: local custom skill outside awesome baseline; deferred on 2026-03-07",
+          "batch-059 remediation blocked: no_skill_md_found:hashicorp/agent-skills on 2026-03-07",
+          "batch-060 remap import: mapped upstream path and verified at public/SKILLS/Development & Code Tools/hashicorp-agent-skills/SKILL.md on 2026-03-07"
+        ]
       },
       {
         "sourceSlug": "kaggle-skill",
@@ -2938,8 +2979,12 @@
         "repoPath": null,
         "reason": "local_custom_skill_not_in_awesome_tracking",
         "priority": "P3",
-        "status": "todo",
-        "notes": []
+        "status": "done",
+        "notes": [
+          "batch-057 triage: local custom skill outside awesome baseline; deferred on 2026-03-07",
+          "batch-059 remediation blocked: no_skill_md_found:shepsci/kaggle-skill on 2026-03-07",
+          "batch-060 remap import: mapped upstream path and verified at public/SKILLS/Data & Analysis/kaggle-skill/SKILL.md on 2026-03-07"
+        ]
       },
       {
         "sourceSlug": "kanban-skill",
@@ -2947,8 +2992,12 @@
         "repoPath": null,
         "reason": "local_custom_skill_not_in_awesome_tracking",
         "priority": "P3",
-        "status": "todo",
-        "notes": []
+        "status": "blocked",
+        "notes": [
+          "batch-057 triage: local custom skill outside awesome baseline; deferred on 2026-03-07",
+          "batch-059 remediation blocked: no_skill_md_found:mattjoyce/kanban-skill on 2026-03-07",
+          "batch-060 remap import blocked: upstream repository/path unavailable or no canonical skill package on 2026-03-07"
+        ]
       },
       {
         "sourceSlug": "linear-claude-skill",
@@ -2956,8 +3005,11 @@
         "repoPath": null,
         "reason": "local_custom_skill_not_in_awesome_tracking",
         "priority": "P3",
-        "status": "todo",
-        "notes": []
+        "status": "done",
+        "notes": [
+          "batch-057 triage: local custom skill outside awesome baseline; deferred on 2026-03-07",
+          "batch-059 remediation: skill folder verified at public/SKILLS/Collaboration & Project Management/linear-claude-skill/SKILL.md on 2026-03-07"
+        ]
       },
       {
         "sourceSlug": "linear-cli-skill",
@@ -2965,8 +3017,12 @@
         "repoPath": null,
         "reason": "local_custom_skill_not_in_awesome_tracking",
         "priority": "P3",
-        "status": "todo",
-        "notes": []
+        "status": "done",
+        "notes": [
+          "batch-057 triage: local custom skill outside awesome baseline; deferred on 2026-03-07",
+          "batch-059 remediation blocked: no_skill_md_found:Valian/linear-cli-skill on 2026-03-07",
+          "batch-060 remap import: mapped upstream path and verified at public/SKILLS/Collaboration & Project Management/linear-cli-skill/SKILL.md on 2026-03-07"
+        ]
       },
       {
         "sourceSlug": "materials-simulation-skills",
@@ -2974,8 +3030,13 @@
         "repoPath": null,
         "reason": "local_custom_skill_not_in_awesome_tracking",
         "priority": "P3",
-        "status": "todo",
-        "notes": []
+        "status": "done",
+        "notes": [
+          "batch-058 triage: local custom skill outside awesome baseline; deferred on 2026-03-07",
+          "batch-058 import blocked: upstream repo has no root SKILL.md; only sub-skill folders",
+          "batch-059 remediation blocked: no_skill_md_found:HeshamFS/materials-simulation-skills on 2026-03-07",
+          "batch-060 remap import: mapped upstream path and verified at public/SKILLS/Scientific & Research Tools/materials-simulation-skills/SKILL.md on 2026-03-07"
+        ]
       },
       {
         "sourceSlug": "moltdj",
@@ -2983,8 +3044,12 @@
         "repoPath": null,
         "reason": "local_custom_skill_not_in_awesome_tracking",
         "priority": "P3",
-        "status": "todo",
-        "notes": []
+        "status": "done",
+        "notes": [
+          "batch-058 triage: local custom skill outside awesome baseline; deferred on 2026-03-07",
+          "batch-058 imported to public/SKILLS/Media & Content/moltdj on 2026-03-07",
+          "batch-059 remediation: skill folder verified at public/SKILLS/Media & Content/moltdj/SKILL.md on 2026-03-07"
+        ]
       },
       {
         "sourceSlug": "move-code-quality-skill",
@@ -2992,8 +3057,12 @@
         "repoPath": null,
         "reason": "local_custom_skill_not_in_awesome_tracking",
         "priority": "P3",
-        "status": "todo",
-        "notes": []
+        "status": "done",
+        "notes": [
+          "batch-058 triage: local custom skill outside awesome baseline; deferred on 2026-03-07",
+          "already present at public/SKILLS/Web3 & Blockchain/move-code-quality-skill (verified in batch-058)",
+          "batch-059 remediation: skill folder verified at public/SKILLS/Web3 & Blockchain/move-code-quality-skill/SKILL.md on 2026-03-07"
+        ]
       },
       {
         "sourceSlug": "octav-api-skill",
@@ -3001,8 +3070,12 @@
         "repoPath": null,
         "reason": "local_custom_skill_not_in_awesome_tracking",
         "priority": "P3",
-        "status": "todo",
-        "notes": []
+        "status": "done",
+        "notes": [
+          "batch-058 triage: local custom skill outside awesome baseline; deferred on 2026-03-07",
+          "batch-058 imported to public/SKILLS/Data & Analysis/octav-api-skill on 2026-03-07",
+          "batch-059 remediation: skill folder verified at public/SKILLS/Data & Analysis/octav-api-skill/SKILL.md on 2026-03-07"
+        ]
       },
       {
         "sourceSlug": "owasp-security",
@@ -3010,8 +3083,12 @@
         "repoPath": null,
         "reason": "local_custom_skill_not_in_awesome_tracking",
         "priority": "P3",
-        "status": "todo",
-        "notes": []
+        "status": "done",
+        "notes": [
+          "batch-058 triage: local custom skill outside awesome baseline; deferred on 2026-03-07",
+          "batch-058 imported to public/SKILLS/Security & Web Testing/owasp-security on 2026-03-07",
+          "batch-059 remediation: skill folder verified at public/SKILLS/Security & Web Testing/owasp-security/SKILL.md on 2026-03-07"
+        ]
       },
       {
         "sourceSlug": "pinme",

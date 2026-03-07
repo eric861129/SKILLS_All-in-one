@@ -2503,3 +2503,176 @@
 - Audit：`PASS`
 - Onboard：`not_applicable`
 - Queue action：`deferred`
+
+## Batch 057
+
+- 批次 ID：`batch-057`
+- 日期：`2026-03-07`
+- 類型：`triage/local-only-custom`
+- 數量：`5`
+- 項目：
+  1. `hashicorp-agent-skills`
+  2. `kaggle-skill`
+  3. `kanban-skill`
+  4. `linear-claude-skill`
+  5. `linear-cli-skill`
+
+### 執行摘要
+
+1. Source 對齊：
+   - 佇列來源：`local_only_custom`
+   - 原因：`local_custom_skill_not_in_awesome_tracking`
+2. Triage：
+   - 本批 5 筆均屬本地客製技能，不在 awesome baseline 匯入範圍
+   - 決策：標記 `deferred`，不進主線統計
+3. Audit：
+   - 進行人工審閱，未發現需緊急阻擋項目
+   - 審查報告：`plan/security-audits/batch-057.md`
+4. Onboard：
+   - `not_applicable`（不修改 `src/data/skills.ts` / `database/init_skills.sql`）
+5. Sync/Verify：
+   - `not_applicable`（本批無匯入、無 catalog 變更）
+6. Tracking：
+   - 更新 `plan/awesome-skills-tracking.json`（追加 triage 批次）
+   - 更新 `plan/awesome-skills-work-queues.json`（`local_only_custom` 本批 5 筆標記 `deferred`）
+
+### 結果
+
+- Audit：`PASS`
+- Onboard：`not_applicable`
+- Queue action：`deferred`
+
+## Batch 058
+
+- 批次 ID：`batch-058`
+- 日期：`2026-03-07`
+- 類型：`triage/local-only-custom`
+- 數量：`5`
+- 項目：
+  1. `materials-simulation-skills`
+  2. `moltdj`
+  3. `move-code-quality-skill`
+  4. `octav-api-skill`
+  5. `owasp-security`
+
+### 執行摘要
+
+1. Source 對齊：
+   - 佇列來源：`local_only_custom`
+   - 原因：`local_custom_skill_not_in_awesome_tracking`
+2. Triage：
+   - 本批 5 筆均屬本地客製技能，不在 awesome baseline 匯入範圍
+   - 決策：標記 `deferred`，不進主線統計
+3. Audit：
+   - 進行人工審閱，未發現需緊急阻擋項目
+   - 審查報告：`plan/security-audits/batch-058.md`
+4. Onboard：
+   - `not_applicable`（不修改 `src/data/skills.ts` / `database/init_skills.sql`）
+5. Sync/Verify：
+   - `not_applicable`（本批無匯入、無 catalog 變更）
+6. 結論：
+   - 本批**不會新增**任何 skill 到 `public/SKILLS`
+7. Tracking：
+   - 更新 `plan/awesome-skills-tracking.json`（追加 triage 批次）
+   - 更新 `plan/awesome-skills-work-queues.json`（`local_only_custom` 本批 5 筆標記 `deferred`）
+
+### 結果
+
+- Audit：`PASS`
+- Onboard：`not_applicable`
+- Public/SKILLS：`no_change`
+- Queue action：`deferred`
+
+### Batch 058 補充（外部來源實際匯入）
+
+- 調整日期：`2026-03-07`
+- 調整說明：將原先 triage-only 改為外部來源驗證後的部分匯入（`3/5`）
+- 已匯入至 `public/SKILLS`：
+  1. `moltdj` -> `public/SKILLS/Media & Content/moltdj/`
+  2. `octav-api-skill` -> `public/SKILLS/Data & Analysis/octav-api-skill/`
+  3. `owasp-security` -> `public/SKILLS/Security & Web Testing/owasp-security/`
+- 已存在（無需匯入）：
+  1. `move-code-quality-skill`（已存在於 `public/SKILLS/Web3 & Blockchain/move-code-quality-skill/`）
+- 仍 deferred：
+  1. `materials-simulation-skills`（上游無單一 root `SKILL.md`，僅子技能）
+
+## Batch 059
+
+- 批次 ID：`batch-059`
+- 日期：`2026-03-07`
+- 類型：`remediation/reimport-from-batch-052`
+- 數量：`35`（Batch 052~058 全量重跑）
+
+### 執行摘要
+
+1. Import（依 `skills.ts` 的 `githubUrl` 逐筆回查）
+   - 新增匯入成功：`10`
+   - 已存在驗證：`8`
+   - 阻塞：`17`
+2. Audit
+   - 已輸出：`plan/security-audits/batch-059.md`
+   - 結果：`PASS`（僅針對已匯入/已存在項目）
+3. Onboard
+   - `not_applicable`（上述項目已存在 metadata，無新增 id）
+4. Sync
+   - 已執行 `npm run prebuild` 更新 manifest
+5. Queue 回寫
+   - `local_only_custom`：本輪 35 筆中 `done=18`、`blocked=17`
+
+### 本次新增至 public/SKILLS（10）
+
+1. `charles-proxy-extract`
+2. `csv-data-summarizer`
+3. `family-history-research`
+4. `find-scene`
+5. `find-skills`
+6. `git-pushing`
+7. `linear-claude-skill`
+8. `moltdj`
+9. `octav-api-skill`
+10. `owasp-security`
+
+## Batch 060
+
+- 批次 ID：`batch-060`
+- 日期：`2026-03-07`
+- 類型：`remediation/blocked-remap-import`
+- 數量：`17`（前批 blocked 全量重跑）
+
+### 執行摘要
+
+1. Import（上游實際路徑映射）
+   - 成功匯入：`14`
+   - 仍 blocked：`3`
+2. Audit
+   - 報告：`plan/security-audits/batch-060.md`
+   - 結果：`PASS`
+3. Onboard
+   - `not_applicable`（`skills.ts`/`init_skills.sql` 已有對應 metadata）
+4. Sync
+   - 執行 `npm run prebuild`
+5. Verify
+   - 執行 `npm run build`、`npm run test`
+
+### 匯入成功（14）
+
+1. `claude-ally-health`
+2. `claude-code-terminal-title`
+3. `claude-code-video-toolkit`
+4. `claude-epub-skill`
+5. `claude-scientific-skills`
+6. `claude-starter`
+7. `clawfu-mcp-skills`
+8. `deapi-ai-media-toolkit`
+9. `ffuf-claude-skill`
+10. `google-workspace-skills`
+11. `hashicorp-agent-skills`
+12. `kaggle-skill`
+13. `linear-cli-skill`
+14. `materials-simulation-skills`
+
+### 仍 blocked（3）
+
+1. `agentfund-mcp`
+2. `defense-in-depth`
+3. `kanban-skill`

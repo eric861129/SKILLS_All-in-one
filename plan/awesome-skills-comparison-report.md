@@ -1,3 +1,66 @@
+## 增量更新（2026-03-07，Batch 060）
+- Tracking 產生時間：`2026-03-07T08:05:00.000Z`
+- 重跑範圍：Batch 059 的 17 筆 blocked
+- remap 後新增到 `public/SKILLS`：`14`
+- 仍 blocked：`3`
+- `src/data/skills.ts` / `database/init_skills.sql`（Batch 052~058 範圍 35 筆）缺漏：`0`
+
+### 下一步
+1. 僅剩 3 筆 blocked 需來源替代或手動包裝
+2. 其餘已完成 import + prebuild/build/test 驗證
+
+## 增量更新（2026-03-07，Batch 059）
+- Tracking 產生時間：`2026-03-07T07:45:00.000Z`
+- 重跑範圍：`batch-052` ~ `batch-058`
+- 新增到 `public/SKILLS`：`10`
+- 已存在驗證：`8`
+- blocked：`17`
+- queue（local_only_custom）：`done=18`、`blocked=17`（此重跑範圍內）
+
+### 下一步
+1. 先針對 17 筆 blocked 做上游路徑精準映射（多技能 repo）
+2. 每批維持單 repo x 5，完成後持續 prebuild/build/test
+
+## 增量更新（2026-03-07，Batch 058 修正）
+- Tracking 產生時間：`2026-03-07T07:20:00.000Z`
+- Batch 058 改為 `mixed/local-custom-import`
+- 本批是否新增到 `public/SKILLS`：`是（3/5）`
+- 已存在（no-op）：`1/5`
+- deferred/blocked：`1/5`
+- mismatch（url/author）：`0`（維持）
+- `status=missing`：`28`（維持）
+- `needs_manual_review`：`18`（維持）
+
+### 下一批
+1. 優先做可驗證外部來源的 `local_only_custom`
+2. `import_nonfixture_by_repo` 目前無 `todo`
+3. `local_present_tracking_missing` 目前無 `todo`
+
+## 增量更新（2026-03-07，Batch 058）
+- Tracking 產生時間：`2026-03-07T07:00:00.000Z`
+- Batch 058 採 `local_only_custom` triage（5 筆）
+- 本批是否新增到 `public/SKILLS`：`否`
+- mismatch（url/author）：`0`（維持）
+- `status=missing`：`28`（維持）
+- `needs_manual_review`：`18`（維持）
+
+### 下一批
+1. `import_nonfixture_by_repo` 目前無 `todo`
+2. `local_present_tracking_missing` 目前無 `todo`
+3. 可續做 `local_only_custom` 或 `fixture_manual_review` 分流
+
+## 增量更新（2026-03-07，Batch 057）
+- Tracking 產生時間：`2026-03-07T06:45:00.000Z`
+- Batch 057 採 `local_only_custom` triage（5 筆）
+- mismatch（url/author）：`0`（維持）
+- `status=missing`：`28`（維持）
+- `needs_manual_review`：`18`（維持）
+
+### 下一批
+1. `import_nonfixture_by_repo` 目前無 `todo`
+2. `local_present_tracking_missing` 目前無 `todo`
+3. 可續做 `local_only_custom` 或 `fixture_manual_review` 分流
+
 ## 增量更新（2026-03-07，Batch 056）
 - Tracking 產生時間：`2026-03-07T06:38:00.000Z`
 - Batch 056 採 `local_only_custom` triage（5 筆）

@@ -202,6 +202,37 @@
       "source": "structured"
     }
   },
+  "git-pushing": {
+    "category": "Collaboration & Project Management",
+    "files": [
+      "SKILL.md",
+      "scripts/smart_commit.sh"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 1084,
+        "lineCount": 32,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "scripts/smart_commit.sh": {
+        "sizeBytes": 4123,
+        "lineCount": 154,
+        "ext": "sh",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 1300,
+      "cl100k": 1402
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
   "gmail": {
     "category": "Collaboration & Project Management",
     "files": [
@@ -617,6 +648,559 @@
       "skills": [],
       "libraries": [
         "keyring"
+      ],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "google-workspace-skills": {
+    "category": "Collaboration & Project Management",
+    "files": [
+      "README.md",
+      "SKILL.md",
+      "requirements.txt",
+      "scripts/auth.py",
+      "scripts/docs.py",
+      "scripts/requirements.txt"
+    ],
+    "fileMeta": {
+      "README.md": {
+        "sizeBytes": 3117,
+        "lineCount": 107,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "SKILL.md": {
+        "sizeBytes": 2545,
+        "lineCount": 84,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "requirements.txt": {
+        "sizeBytes": 16,
+        "lineCount": 2,
+        "ext": "txt",
+        "tabKey": "root"
+      },
+      "scripts/auth.py": {
+        "sizeBytes": 13082,
+        "lineCount": 389,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/docs.py": {
+        "sizeBytes": 10920,
+        "lineCount": 339,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/requirements.txt": {
+        "sizeBytes": 16,
+        "lineCount": 2,
+        "ext": "txt",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 7424,
+      "cl100k": 6795
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [
+        "keyring"
+      ],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "linear-claude-skill": {
+    "category": "Collaboration & Project Management",
+    "files": [
+      ".claude-plugin/plugin.json",
+      ".env.schema",
+      ".github/workflows/ci.yml",
+      ".github/workflows/release.yml",
+      ".gitignore",
+      "CHANGELOG.md",
+      "LICENSE",
+      "README.md",
+      "SKILL.md",
+      "api.md",
+      "docs/labels.md",
+      "eslint.config.js",
+      "hooks/post-edit.sh",
+      "package-lock.json",
+      "package.json",
+      "projects.md",
+      "release.config.js",
+      "scripts/create-initiative-update.ts",
+      "scripts/create-issue-with-project.ts",
+      "scripts/create-project-update.ts",
+      "scripts/extract-image.ts",
+      "scripts/lib/agent-selection.ts",
+      "scripts/lib/exit-codes.ts",
+      "scripts/lib/index.ts",
+      "scripts/lib/initiative.ts",
+      "scripts/lib/labels.ts",
+      "scripts/lib/linear-utils.ts",
+      "scripts/lib/project-template.ts",
+      "scripts/lib/taxonomy-data.ts",
+      "scripts/lib/taxonomy-validation.ts",
+      "scripts/lib/taxonomy.ts",
+      "scripts/lib/verify.ts",
+      "scripts/linear-api.mjs",
+      "scripts/linear-ops.ts",
+      "scripts/phase-complete.ts",
+      "scripts/query.sh",
+      "scripts/query.ts",
+      "scripts/setup.ts",
+      "scripts/sync.ts",
+      "scripts/upload-image.ts",
+      "sdk.md",
+      "sync.md",
+      "troubleshooting.md",
+      "tsconfig.json"
+    ],
+    "fileMeta": {
+      ".claude-plugin/plugin.json": {
+        "sizeBytes": 503,
+        "lineCount": 18,
+        "ext": "json",
+        "tabKey": ".claude-plugin"
+      },
+      ".env.schema": {
+        "sizeBytes": 349,
+        "lineCount": 0,
+        "ext": "schema",
+        "tabKey": "root"
+      },
+      ".github/workflows/ci.yml": {
+        "sizeBytes": 398,
+        "lineCount": 27,
+        "ext": "yml",
+        "tabKey": ".github"
+      },
+      ".github/workflows/release.yml": {
+        "sizeBytes": 646,
+        "lineCount": 34,
+        "ext": "yml",
+        "tabKey": ".github"
+      },
+      ".gitignore": {
+        "sizeBytes": 210,
+        "lineCount": 0,
+        "ext": "none",
+        "tabKey": "root"
+      },
+      "CHANGELOG.md": {
+        "sizeBytes": 16345,
+        "lineCount": 384,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "LICENSE": {
+        "sizeBytes": 1056,
+        "lineCount": 0,
+        "ext": "none",
+        "tabKey": "root"
+      },
+      "README.md": {
+        "sizeBytes": 11318,
+        "lineCount": 380,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "SKILL.md": {
+        "sizeBytes": 15913,
+        "lineCount": 575,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "api.md": {
+        "sizeBytes": 8385,
+        "lineCount": 378,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "docs/labels.md": {
+        "sizeBytes": 6808,
+        "lineCount": 233,
+        "ext": "md",
+        "tabKey": "docs"
+      },
+      "eslint.config.js": {
+        "sizeBytes": 611,
+        "lineCount": 24,
+        "ext": "js",
+        "tabKey": "root"
+      },
+      "hooks/post-edit.sh": {
+        "sizeBytes": 2430,
+        "lineCount": 85,
+        "ext": "sh",
+        "tabKey": "hooks"
+      },
+      "package-lock.json": {
+        "sizeBytes": 250104,
+        "lineCount": 7571,
+        "ext": "json",
+        "tabKey": "root"
+      },
+      "package.json": {
+        "sizeBytes": 1868,
+        "lineCount": 69,
+        "ext": "json",
+        "tabKey": "root"
+      },
+      "projects.md": {
+        "sizeBytes": 19643,
+        "lineCount": 654,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "release.config.js": {
+        "sizeBytes": 530,
+        "lineCount": 19,
+        "ext": "js",
+        "tabKey": "root"
+      },
+      "scripts/create-initiative-update.ts": {
+        "sizeBytes": 5906,
+        "lineCount": 188,
+        "ext": "ts",
+        "tabKey": "scripts"
+      },
+      "scripts/create-issue-with-project.ts": {
+        "sizeBytes": 8409,
+        "lineCount": 313,
+        "ext": "ts",
+        "tabKey": "scripts"
+      },
+      "scripts/create-project-update.ts": {
+        "sizeBytes": 5661,
+        "lineCount": 188,
+        "ext": "ts",
+        "tabKey": "scripts"
+      },
+      "scripts/extract-image.ts": {
+        "sizeBytes": 2284,
+        "lineCount": 69,
+        "ext": "ts",
+        "tabKey": "scripts"
+      },
+      "scripts/lib/agent-selection.ts": {
+        "sizeBytes": 8921,
+        "lineCount": 307,
+        "ext": "ts",
+        "tabKey": "scripts"
+      },
+      "scripts/lib/exit-codes.ts": {
+        "sizeBytes": 357,
+        "lineCount": 16,
+        "ext": "ts",
+        "tabKey": "scripts"
+      },
+      "scripts/lib/index.ts": {
+        "sizeBytes": 2088,
+        "lineCount": 100,
+        "ext": "ts",
+        "tabKey": "scripts"
+      },
+      "scripts/lib/initiative.ts": {
+        "sizeBytes": 7454,
+        "lineCount": 247,
+        "ext": "ts",
+        "tabKey": "scripts"
+      },
+      "scripts/lib/labels.ts": {
+        "sizeBytes": 8753,
+        "lineCount": 330,
+        "ext": "ts",
+        "tabKey": "scripts"
+      },
+      "scripts/lib/linear-utils.ts": {
+        "sizeBytes": 6445,
+        "lineCount": 272,
+        "ext": "ts",
+        "tabKey": "scripts"
+      },
+      "scripts/lib/project-template.ts": {
+        "sizeBytes": 9040,
+        "lineCount": 335,
+        "ext": "ts",
+        "tabKey": "scripts"
+      },
+      "scripts/lib/taxonomy-data.ts": {
+        "sizeBytes": 8281,
+        "lineCount": 315,
+        "ext": "ts",
+        "tabKey": "scripts"
+      },
+      "scripts/lib/taxonomy-validation.ts": {
+        "sizeBytes": 10238,
+        "lineCount": 326,
+        "ext": "ts",
+        "tabKey": "scripts"
+      },
+      "scripts/lib/taxonomy.ts": {
+        "sizeBytes": 3685,
+        "lineCount": 168,
+        "ext": "ts",
+        "tabKey": "scripts"
+      },
+      "scripts/lib/verify.ts": {
+        "sizeBytes": 8995,
+        "lineCount": 297,
+        "ext": "ts",
+        "tabKey": "scripts"
+      },
+      "scripts/linear-api.mjs": {
+        "sizeBytes": 12385,
+        "lineCount": 535,
+        "ext": "mjs",
+        "tabKey": "scripts"
+      },
+      "scripts/linear-ops.ts": {
+        "sizeBytes": 47679,
+        "lineCount": 1382,
+        "ext": "ts",
+        "tabKey": "scripts"
+      },
+      "scripts/phase-complete.ts": {
+        "sizeBytes": 12671,
+        "lineCount": 480,
+        "ext": "ts",
+        "tabKey": "scripts"
+      },
+      "scripts/query.sh": {
+        "sizeBytes": 498,
+        "lineCount": 22,
+        "ext": "sh",
+        "tabKey": "scripts"
+      },
+      "scripts/query.ts": {
+        "sizeBytes": 3566,
+        "lineCount": 106,
+        "ext": "ts",
+        "tabKey": "scripts"
+      },
+      "scripts/setup.ts": {
+        "sizeBytes": 7990,
+        "lineCount": 253,
+        "ext": "ts",
+        "tabKey": "scripts"
+      },
+      "scripts/sync.ts": {
+        "sizeBytes": 5814,
+        "lineCount": 201,
+        "ext": "ts",
+        "tabKey": "scripts"
+      },
+      "scripts/upload-image.ts": {
+        "sizeBytes": 4498,
+        "lineCount": 146,
+        "ext": "ts",
+        "tabKey": "scripts"
+      },
+      "sdk.md": {
+        "sizeBytes": 6920,
+        "lineCount": 285,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "sync.md": {
+        "sizeBytes": 7237,
+        "lineCount": 263,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "troubleshooting.md": {
+        "sizeBytes": 4776,
+        "lineCount": 182,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "tsconfig.json": {
+        "sizeBytes": 484,
+        "lineCount": 20,
+        "ext": "json",
+        "tabKey": "root"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 136364,
+      "cl100k": 168493
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [
+        "@eslint/js",
+        "@linear/sdk",
+        "@semantic-release/changelog",
+        "@semantic-release/git",
+        "@types/node",
+        "eslint",
+        "semantic-release",
+        "typescript",
+        "typescript-eslint"
+      ],
+      "runtimeTools": [
+        "Bash",
+        "mcp__linear",
+        "WebFetch(domain:linear.app)"
+      ],
+      "source": "structured"
+    }
+  },
+  "linear-cli-skill": {
+    "category": "Collaboration & Project Management",
+    "files": [
+      ".env.example",
+      ".gitignore",
+      "SKILL.md",
+      "linear",
+      "package-lock.json",
+      "package.json",
+      "scripts/linear-cli.js"
+    ],
+    "fileMeta": {
+      ".env.example": {
+        "sizeBytes": 169,
+        "lineCount": 0,
+        "ext": "example",
+        "tabKey": "root"
+      },
+      ".gitignore": {
+        "sizeBytes": 31,
+        "lineCount": 0,
+        "ext": "none",
+        "tabKey": "root"
+      },
+      "SKILL.md": {
+        "sizeBytes": 3159,
+        "lineCount": 129,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "linear": {
+        "sizeBytes": 538,
+        "lineCount": 0,
+        "ext": "none",
+        "tabKey": "root"
+      },
+      "package-lock.json": {
+        "sizeBytes": 4277,
+        "lineCount": 120,
+        "ext": "json",
+        "tabKey": "root"
+      },
+      "package.json": {
+        "sizeBytes": 263,
+        "lineCount": 14,
+        "ext": "json",
+        "tabKey": "root"
+      },
+      "scripts/linear-cli.js": {
+        "sizeBytes": 30541,
+        "lineCount": 1124,
+        "ext": "js",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 9559,
+      "cl100k": 10217
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [
+        "@linear/sdk",
+        "dotenv"
+      ],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "csv-data-summarizer": {
+    "category": "Data & Analysis",
+    "files": [
+      ".gitignore",
+      "README.md",
+      "SKILL.md",
+      "analyze.py",
+      "csv-data-summarizer.zip",
+      "examples/showcase_financial_pl_data.csv",
+      "requirements.txt",
+      "resources/README.md",
+      "resources/sample.csv"
+    ],
+    "fileMeta": {
+      ".gitignore": {
+        "sizeBytes": 446,
+        "lineCount": 0,
+        "ext": "none",
+        "tabKey": "root"
+      },
+      "README.md": {
+        "sizeBytes": 7505,
+        "lineCount": 199,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "SKILL.md": {
+        "sizeBytes": 5692,
+        "lineCount": 150,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "analyze.py": {
+        "sizeBytes": 6884,
+        "lineCount": 183,
+        "ext": "py",
+        "tabKey": "root"
+      },
+      "csv-data-summarizer.zip": {
+        "sizeBytes": 7570,
+        "lineCount": 0,
+        "ext": "zip",
+        "tabKey": "root"
+      },
+      "examples/showcase_financial_pl_data.csv": {
+        "sizeBytes": 6978,
+        "lineCount": 47,
+        "ext": "csv",
+        "tabKey": "examples"
+      },
+      "requirements.txt": {
+        "sizeBytes": 49,
+        "lineCount": 5,
+        "ext": "txt",
+        "tabKey": "root"
+      },
+      "resources/README.md": {
+        "sizeBytes": 2853,
+        "lineCount": 84,
+        "ext": "md",
+        "tabKey": "resources"
+      },
+      "resources/sample.csv": {
+        "sizeBytes": 838,
+        "lineCount": 23,
+        "ext": "csv",
+        "tabKey": "resources"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 7643,
+      "cl100k": 9830
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [
+        "matplotlib",
+        "pandas",
+        "seaborn"
       ],
       "runtimeTools": [],
       "source": "structured"
@@ -1601,6 +2185,338 @@
       "source": "structured"
     }
   },
+  "kaggle-skill": {
+    "category": "Data & Analysis",
+    "files": [
+      "SKILL.md",
+      "modules/badge-collector/README.md",
+      "modules/badge-collector/references/badge-catalog.md",
+      "modules/badge-collector/scripts/badge_registry.py",
+      "modules/badge-collector/scripts/badge_tracker.py",
+      "modules/badge-collector/scripts/orchestrator.py",
+      "modules/badge-collector/scripts/phase_1_instant_api.py",
+      "modules/badge-collector/scripts/phase_2_competition.py",
+      "modules/badge-collector/scripts/phase_3_pipeline.py",
+      "modules/badge-collector/scripts/phase_4_browser.py",
+      "modules/badge-collector/scripts/phase_5_streaks.py",
+      "modules/badge-collector/scripts/templates/README_dataset.md",
+      "modules/badge-collector/scripts/templates/dataset-metadata.json",
+      "modules/badge-collector/scripts/templates/kernel-metadata.json",
+      "modules/badge-collector/scripts/templates/model-instance-metadata.json",
+      "modules/badge-collector/scripts/templates/model-metadata.json",
+      "modules/badge-collector/scripts/templates/python_notebook.ipynb",
+      "modules/badge-collector/scripts/templates/r_notebook.ipynb",
+      "modules/badge-collector/scripts/templates/utility_script.py",
+      "modules/badge-collector/scripts/utils.py",
+      "modules/comp-report/README.md",
+      "modules/comp-report/references/competition-categories.md",
+      "modules/comp-report/scripts/competition_details.py",
+      "modules/comp-report/scripts/list_competitions.py",
+      "modules/comp-report/scripts/utils.py",
+      "modules/kllm/README.md",
+      "modules/kllm/references/cli-reference.md",
+      "modules/kllm/references/kaggle-knowledge.md",
+      "modules/kllm/references/kagglehub-reference.md",
+      "modules/kllm/references/mcp-reference.md",
+      "modules/kllm/scripts/check_credentials.py",
+      "modules/kllm/scripts/cli_competition.sh",
+      "modules/kllm/scripts/cli_download.sh",
+      "modules/kllm/scripts/cli_execute.sh",
+      "modules/kllm/scripts/cli_publish.sh",
+      "modules/kllm/scripts/kagglehub_download.py",
+      "modules/kllm/scripts/kagglehub_publish.py",
+      "modules/kllm/scripts/network_check.sh",
+      "modules/kllm/scripts/poll_kernel.sh",
+      "modules/kllm/scripts/setup_env.sh",
+      "modules/registration/README.md",
+      "modules/registration/references/kaggle-setup.md",
+      "modules/registration/scripts/check_registration.py",
+      "modules/registration/scripts/setup_env.sh",
+      "shared/check_all_credentials.py"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 11204,
+        "lineCount": 255,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "modules/badge-collector/README.md": {
+        "sizeBytes": 2633,
+        "lineCount": 78,
+        "ext": "md",
+        "tabKey": "modules"
+      },
+      "modules/badge-collector/references/badge-catalog.md": {
+        "sizeBytes": 5945,
+        "lineCount": 101,
+        "ext": "md",
+        "tabKey": "modules"
+      },
+      "modules/badge-collector/scripts/badge_registry.py": {
+        "sizeBytes": 8731,
+        "lineCount": 182,
+        "ext": "py",
+        "tabKey": "modules"
+      },
+      "modules/badge-collector/scripts/badge_tracker.py": {
+        "sizeBytes": 3548,
+        "lineCount": 118,
+        "ext": "py",
+        "tabKey": "modules"
+      },
+      "modules/badge-collector/scripts/orchestrator.py": {
+        "sizeBytes": 5312,
+        "lineCount": 160,
+        "ext": "py",
+        "tabKey": "modules"
+      },
+      "modules/badge-collector/scripts/phase_1_instant_api.py": {
+        "sizeBytes": 25290,
+        "lineCount": 730,
+        "ext": "py",
+        "tabKey": "modules"
+      },
+      "modules/badge-collector/scripts/phase_2_competition.py": {
+        "sizeBytes": 15049,
+        "lineCount": 422,
+        "ext": "py",
+        "tabKey": "modules"
+      },
+      "modules/badge-collector/scripts/phase_3_pipeline.py": {
+        "sizeBytes": 12319,
+        "lineCount": 347,
+        "ext": "py",
+        "tabKey": "modules"
+      },
+      "modules/badge-collector/scripts/phase_4_browser.py": {
+        "sizeBytes": 11404,
+        "lineCount": 336,
+        "ext": "py",
+        "tabKey": "modules"
+      },
+      "modules/badge-collector/scripts/phase_5_streaks.py": {
+        "sizeBytes": 3849,
+        "lineCount": 115,
+        "ext": "py",
+        "tabKey": "modules"
+      },
+      "modules/badge-collector/scripts/templates/README_dataset.md": {
+        "sizeBytes": 621,
+        "lineCount": 26,
+        "ext": "md",
+        "tabKey": "modules"
+      },
+      "modules/badge-collector/scripts/templates/dataset-metadata.json": {
+        "sizeBytes": 877,
+        "lineCount": 31,
+        "ext": "json",
+        "tabKey": "modules"
+      },
+      "modules/badge-collector/scripts/templates/kernel-metadata.json": {
+        "sizeBytes": 418,
+        "lineCount": 17,
+        "ext": "json",
+        "tabKey": "modules"
+      },
+      "modules/badge-collector/scripts/templates/model-instance-metadata.json": {
+        "sizeBytes": 255,
+        "lineCount": 10,
+        "ext": "json",
+        "tabKey": "modules"
+      },
+      "modules/badge-collector/scripts/templates/model-metadata.json": {
+        "sizeBytes": 359,
+        "lineCount": 11,
+        "ext": "json",
+        "tabKey": "modules"
+      },
+      "modules/badge-collector/scripts/templates/python_notebook.ipynb": {
+        "sizeBytes": 1355,
+        "lineCount": 0,
+        "ext": "ipynb",
+        "tabKey": "modules"
+      },
+      "modules/badge-collector/scripts/templates/r_notebook.ipynb": {
+        "sizeBytes": 1103,
+        "lineCount": 0,
+        "ext": "ipynb",
+        "tabKey": "modules"
+      },
+      "modules/badge-collector/scripts/templates/utility_script.py": {
+        "sizeBytes": 802,
+        "lineCount": 30,
+        "ext": "py",
+        "tabKey": "modules"
+      },
+      "modules/badge-collector/scripts/utils.py": {
+        "sizeBytes": 3353,
+        "lineCount": 109,
+        "ext": "py",
+        "tabKey": "modules"
+      },
+      "modules/comp-report/README.md": {
+        "sizeBytes": 4901,
+        "lineCount": 121,
+        "ext": "md",
+        "tabKey": "modules"
+      },
+      "modules/comp-report/references/competition-categories.md": {
+        "sizeBytes": 2632,
+        "lineCount": 42,
+        "ext": "md",
+        "tabKey": "modules"
+      },
+      "modules/comp-report/scripts/competition_details.py": {
+        "sizeBytes": 4251,
+        "lineCount": 134,
+        "ext": "py",
+        "tabKey": "modules"
+      },
+      "modules/comp-report/scripts/list_competitions.py": {
+        "sizeBytes": 7033,
+        "lineCount": 197,
+        "ext": "py",
+        "tabKey": "modules"
+      },
+      "modules/comp-report/scripts/utils.py": {
+        "sizeBytes": 3315,
+        "lineCount": 107,
+        "ext": "py",
+        "tabKey": "modules"
+      },
+      "modules/kllm/README.md": {
+        "sizeBytes": 6068,
+        "lineCount": 120,
+        "ext": "md",
+        "tabKey": "modules"
+      },
+      "modules/kllm/references/cli-reference.md": {
+        "sizeBytes": 6248,
+        "lineCount": 217,
+        "ext": "md",
+        "tabKey": "modules"
+      },
+      "modules/kllm/references/kaggle-knowledge.md": {
+        "sizeBytes": 18384,
+        "lineCount": 482,
+        "ext": "md",
+        "tabKey": "modules"
+      },
+      "modules/kllm/references/kagglehub-reference.md": {
+        "sizeBytes": 4957,
+        "lineCount": 166,
+        "ext": "md",
+        "tabKey": "modules"
+      },
+      "modules/kllm/references/mcp-reference.md": {
+        "sizeBytes": 5033,
+        "lineCount": 175,
+        "ext": "md",
+        "tabKey": "modules"
+      },
+      "modules/kllm/scripts/check_credentials.py": {
+        "sizeBytes": 4390,
+        "lineCount": 116,
+        "ext": "py",
+        "tabKey": "modules"
+      },
+      "modules/kllm/scripts/cli_competition.sh": {
+        "sizeBytes": 3542,
+        "lineCount": 98,
+        "ext": "sh",
+        "tabKey": "modules"
+      },
+      "modules/kllm/scripts/cli_download.sh": {
+        "sizeBytes": 1166,
+        "lineCount": 38,
+        "ext": "sh",
+        "tabKey": "modules"
+      },
+      "modules/kllm/scripts/cli_execute.sh": {
+        "sizeBytes": 3458,
+        "lineCount": 99,
+        "ext": "sh",
+        "tabKey": "modules"
+      },
+      "modules/kllm/scripts/cli_publish.sh": {
+        "sizeBytes": 3670,
+        "lineCount": 104,
+        "ext": "sh",
+        "tabKey": "modules"
+      },
+      "modules/kllm/scripts/kagglehub_download.py": {
+        "sizeBytes": 1340,
+        "lineCount": 41,
+        "ext": "py",
+        "tabKey": "modules"
+      },
+      "modules/kllm/scripts/kagglehub_publish.py": {
+        "sizeBytes": 2264,
+        "lineCount": 71,
+        "ext": "py",
+        "tabKey": "modules"
+      },
+      "modules/kllm/scripts/network_check.sh": {
+        "sizeBytes": 1636,
+        "lineCount": 54,
+        "ext": "sh",
+        "tabKey": "modules"
+      },
+      "modules/kllm/scripts/poll_kernel.sh": {
+        "sizeBytes": 1421,
+        "lineCount": 48,
+        "ext": "sh",
+        "tabKey": "modules"
+      },
+      "modules/kllm/scripts/setup_env.sh": {
+        "sizeBytes": 1973,
+        "lineCount": 70,
+        "ext": "sh",
+        "tabKey": "modules"
+      },
+      "modules/registration/README.md": {
+        "sizeBytes": 4252,
+        "lineCount": 130,
+        "ext": "md",
+        "tabKey": "modules"
+      },
+      "modules/registration/references/kaggle-setup.md": {
+        "sizeBytes": 6205,
+        "lineCount": 172,
+        "ext": "md",
+        "tabKey": "modules"
+      },
+      "modules/registration/scripts/check_registration.py": {
+        "sizeBytes": 4131,
+        "lineCount": 115,
+        "ext": "py",
+        "tabKey": "modules"
+      },
+      "modules/registration/scripts/setup_env.sh": {
+        "sizeBytes": 1533,
+        "lineCount": 60,
+        "ext": "sh",
+        "tabKey": "modules"
+      },
+      "shared/check_all_credentials.py": {
+        "sizeBytes": 5795,
+        "lineCount": 152,
+        "ext": "py",
+        "tabKey": "shared"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 55175,
+      "cl100k": 54276
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
   "market-research-reports": {
     "category": "Data & Analysis",
     "files": [
@@ -1935,6 +2851,44 @@
     "tokenEstimate": {
       "heuristic": 14537,
       "cl100k": 15863
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "octav-api-skill": {
+    "category": "Data & Analysis",
+    "files": [
+      "LICENSE",
+      "README.md",
+      "SKILL.md"
+    ],
+    "fileMeta": {
+      "LICENSE": {
+        "sizeBytes": 1067,
+        "lineCount": 0,
+        "ext": "none",
+        "tabKey": "root"
+      },
+      "README.md": {
+        "sizeBytes": 888,
+        "lineCount": 31,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "SKILL.md": {
+        "sizeBytes": 11389,
+        "lineCount": 402,
+        "ext": "md",
+        "tabKey": "root"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 3069,
+      "cl100k": 3345
     },
     "dependencies": {
       "skills": [],
@@ -2794,6 +3748,82 @@
       "source": "structured"
     }
   },
+  "charles-proxy-extract": {
+    "category": "Development & Code Tools",
+    "files": [
+      "LICENSE.md",
+      "README.md",
+      "SKILL.md",
+      "extract_responses.py"
+    ],
+    "fileMeta": {
+      "LICENSE.md": {
+        "sizeBytes": 1070,
+        "lineCount": 22,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "README.md": {
+        "sizeBytes": 7063,
+        "lineCount": 237,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "SKILL.md": {
+        "sizeBytes": 6007,
+        "lineCount": 181,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "extract_responses.py": {
+        "sizeBytes": 7994,
+        "lineCount": 246,
+        "ext": "py",
+        "tabKey": "root"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 5524,
+      "cl100k": 5219
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "claude-code-terminal-title": {
+    "category": "Development & Code Tools",
+    "files": [
+      "SKILL.md",
+      "scripts/set_title.sh"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 4755,
+        "lineCount": 137,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "scripts/set_title.sh": {
+        "sizeBytes": 2153,
+        "lineCount": 66,
+        "ext": "sh",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 1724,
+      "cl100k": 1652
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
   "claude-mcp-expert": {
     "category": "Development & Code Tools",
     "files": [
@@ -2817,6 +3847,121 @@
     "tokenEstimate": {
       "heuristic": 2383,
       "cl100k": 2549
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "claude-starter": {
+    "category": "Development & Code Tools",
+    "files": [
+      "SKILL.md",
+      "claude-code/skill.json",
+      "claude-code/skill.md",
+      "claude-command-builder/skill.json",
+      "claude-command-builder/skill.md",
+      "claude-hook-builder/skill.json",
+      "claude-hook-builder/skill.md",
+      "claude-mcp-expert/SKILL.md",
+      "claude-mcp-expert/skill.json",
+      "claude-settings-expert/skill.json",
+      "claude-settings-expert/skill.md",
+      "claude-skill-builder/SKILL.md",
+      "claude-skill-builder/skill.json",
+      "skill.json"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 4406,
+        "lineCount": 170,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "claude-code/skill.json": {
+        "sizeBytes": 1194,
+        "lineCount": 39,
+        "ext": "json",
+        "tabKey": "claude-code"
+      },
+      "claude-code/skill.md": {
+        "sizeBytes": 4937,
+        "lineCount": 178,
+        "ext": "md",
+        "tabKey": "claude-code"
+      },
+      "claude-command-builder/skill.json": {
+        "sizeBytes": 1167,
+        "lineCount": 35,
+        "ext": "json",
+        "tabKey": "claude-command-builder"
+      },
+      "claude-command-builder/skill.md": {
+        "sizeBytes": 13087,
+        "lineCount": 586,
+        "ext": "md",
+        "tabKey": "claude-command-builder"
+      },
+      "claude-hook-builder/skill.json": {
+        "sizeBytes": 1168,
+        "lineCount": 35,
+        "ext": "json",
+        "tabKey": "claude-hook-builder"
+      },
+      "claude-hook-builder/skill.md": {
+        "sizeBytes": 17830,
+        "lineCount": 907,
+        "ext": "md",
+        "tabKey": "claude-hook-builder"
+      },
+      "claude-mcp-expert/SKILL.md": {
+        "sizeBytes": 8336,
+        "lineCount": 326,
+        "ext": "md",
+        "tabKey": "claude-mcp-expert"
+      },
+      "claude-mcp-expert/skill.json": {
+        "sizeBytes": 1202,
+        "lineCount": 35,
+        "ext": "json",
+        "tabKey": "claude-mcp-expert"
+      },
+      "claude-settings-expert/skill.json": {
+        "sizeBytes": 1157,
+        "lineCount": 35,
+        "ext": "json",
+        "tabKey": "claude-settings-expert"
+      },
+      "claude-settings-expert/skill.md": {
+        "sizeBytes": 15039,
+        "lineCount": 724,
+        "ext": "md",
+        "tabKey": "claude-settings-expert"
+      },
+      "claude-skill-builder/SKILL.md": {
+        "sizeBytes": 7135,
+        "lineCount": 263,
+        "ext": "md",
+        "tabKey": "claude-skill-builder"
+      },
+      "claude-skill-builder/skill.json": {
+        "sizeBytes": 1178,
+        "lineCount": 35,
+        "ext": "json",
+        "tabKey": "claude-skill-builder"
+      },
+      "skill.json": {
+        "sizeBytes": 1274,
+        "lineCount": 39,
+        "ext": "json",
+        "tabKey": "root"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 19721,
+      "cl100k": 20809
     },
     "dependencies": {
       "skills": [],
@@ -3981,6 +5126,30 @@
         "database-optimizer",
         "microservices-architect"
       ],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "hashicorp-agent-skills": {
+    "category": "Development & Code Tools",
+    "files": [
+      "SKILL.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 16698,
+        "lineCount": 600,
+        "ext": "md",
+        "tabKey": "root"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 4163,
+      "cl100k": 3633
+    },
+    "dependencies": {
+      "skills": [],
       "libraries": [],
       "runtimeTools": [],
       "source": "structured"
@@ -7676,6 +8845,79 @@
       "source": "structured"
     }
   },
+  "claude-ally-health": {
+    "category": "Health & Life Sciences",
+    "files": [
+      "SKILL.md",
+      "data-sources.md",
+      "knowledge-base/chronic-disease.md",
+      "knowledge-base/fitness.md",
+      "knowledge-base/index.md",
+      "knowledge-base/mental-health.md",
+      "knowledge-base/nutrition.md",
+      "knowledge-base/sleep.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 19948,
+        "lineCount": 686,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "data-sources.md": {
+        "sizeBytes": 16418,
+        "lineCount": 528,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "knowledge-base/chronic-disease.md": {
+        "sizeBytes": 14997,
+        "lineCount": 472,
+        "ext": "md",
+        "tabKey": "knowledge-base"
+      },
+      "knowledge-base/fitness.md": {
+        "sizeBytes": 11362,
+        "lineCount": 324,
+        "ext": "md",
+        "tabKey": "knowledge-base"
+      },
+      "knowledge-base/index.md": {
+        "sizeBytes": 11368,
+        "lineCount": 304,
+        "ext": "md",
+        "tabKey": "knowledge-base"
+      },
+      "knowledge-base/mental-health.md": {
+        "sizeBytes": 11953,
+        "lineCount": 359,
+        "ext": "md",
+        "tabKey": "knowledge-base"
+      },
+      "knowledge-base/nutrition.md": {
+        "sizeBytes": 8326,
+        "lineCount": 234,
+        "ext": "md",
+        "tabKey": "knowledge-base"
+      },
+      "knowledge-base/sleep.md": {
+        "sizeBytes": 11255,
+        "lineCount": 343,
+        "ext": "md",
+        "tabKey": "knowledge-base"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 26237,
+      "cl100k": 25201
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
   "ginkgo-cloud-lab": {
     "category": "Health & Life Sciences",
     "files": [
@@ -10270,6 +11512,218 @@
       "source": "structured"
     }
   },
+  "claude-code-video-toolkit": {
+    "category": "Media & Content",
+    "files": [
+      "SKILL.md",
+      "reference.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 6186,
+        "lineCount": 161,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "reference.md": {
+        "sizeBytes": 10300,
+        "lineCount": 500,
+        "ext": "md",
+        "tabKey": "root"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 4117,
+      "cl100k": 4396
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "claude-epub-skill": {
+    "category": "Media & Content",
+    "files": [
+      "REFERENCE.md",
+      "SKILL.md",
+      "requirements.txt",
+      "scripts/epub_generator.py",
+      "scripts/markdown_processor.py"
+    ],
+    "fileMeta": {
+      "REFERENCE.md": {
+        "sizeBytes": 8734,
+        "lineCount": 362,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "SKILL.md": {
+        "sizeBytes": 6599,
+        "lineCount": 198,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "requirements.txt": {
+        "sizeBytes": 52,
+        "lineCount": 4,
+        "ext": "txt",
+        "tabKey": "root"
+      },
+      "scripts/epub_generator.py": {
+        "sizeBytes": 12889,
+        "lineCount": 508,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/markdown_processor.py": {
+        "sizeBytes": 24090,
+        "lineCount": 717,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 13078,
+      "cl100k": 11482
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [
+        "ebooklib",
+        "markdown2",
+        "Pygments"
+      ],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "deapi-ai-media-toolkit": {
+    "category": "Media & Content",
+    "files": [
+      "SKILL.md",
+      "commands/deapi-balance.md",
+      "commands/deapi-setup.md",
+      "commands/embed.md",
+      "commands/generate-audio.md",
+      "commands/generate-image.md",
+      "commands/generate-video.md",
+      "commands/ocr.md",
+      "commands/remove-bg.md",
+      "commands/transcribe.md",
+      "commands/transform-image.md",
+      "commands/upscale.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 1725,
+        "lineCount": 54,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "commands/deapi-balance.md": {
+        "sizeBytes": 591,
+        "lineCount": 28,
+        "ext": "md",
+        "tabKey": "commands"
+      },
+      "commands/deapi-setup.md": {
+        "sizeBytes": 3671,
+        "lineCount": 151,
+        "ext": "md",
+        "tabKey": "commands"
+      },
+      "commands/embed.md": {
+        "sizeBytes": 2180,
+        "lineCount": 88,
+        "ext": "md",
+        "tabKey": "commands"
+      },
+      "commands/generate-audio.md": {
+        "sizeBytes": 3397,
+        "lineCount": 106,
+        "ext": "md",
+        "tabKey": "commands"
+      },
+      "commands/generate-image.md": {
+        "sizeBytes": 2687,
+        "lineCount": 87,
+        "ext": "md",
+        "tabKey": "commands"
+      },
+      "commands/generate-video.md": {
+        "sizeBytes": 2346,
+        "lineCount": 87,
+        "ext": "md",
+        "tabKey": "commands"
+      },
+      "commands/ocr.md": {
+        "sizeBytes": 2005,
+        "lineCount": 72,
+        "ext": "md",
+        "tabKey": "commands"
+      },
+      "commands/remove-bg.md": {
+        "sizeBytes": 1972,
+        "lineCount": 73,
+        "ext": "md",
+        "tabKey": "commands"
+      },
+      "commands/transcribe.md": {
+        "sizeBytes": 1900,
+        "lineCount": 67,
+        "ext": "md",
+        "tabKey": "commands"
+      },
+      "commands/transform-image.md": {
+        "sizeBytes": 3468,
+        "lineCount": 109,
+        "ext": "md",
+        "tabKey": "commands"
+      },
+      "commands/upscale.md": {
+        "sizeBytes": 2136,
+        "lineCount": 78,
+        "ext": "md",
+        "tabKey": "commands"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 7006,
+      "cl100k": 7849
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "find-scene": {
+    "category": "Media & Content",
+    "files": [
+      "SKILL.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 15576,
+        "lineCount": 506,
+        "ext": "md",
+        "tabKey": "root"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 3891,
+      "cl100k": 4275
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
   "game-developer": {
     "category": "Media & Content",
     "files": [
@@ -10411,6 +11865,86 @@
     "tokenEstimate": {
       "heuristic": 34059,
       "cl100k": 32655
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "moltdj": {
+    "category": "Media & Content",
+    "files": [
+      "ERRORS.md",
+      "HEARTBEAT.md",
+      "LICENSE",
+      "PAYMENTS.md",
+      "README.md",
+      "REQUESTS.md",
+      "SKILL.md",
+      "assets/banner.png",
+      "skill.json"
+    ],
+    "fileMeta": {
+      "ERRORS.md": {
+        "sizeBytes": 3878,
+        "lineCount": 171,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "HEARTBEAT.md": {
+        "sizeBytes": 3274,
+        "lineCount": 156,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "LICENSE": {
+        "sizeBytes": 1069,
+        "lineCount": 0,
+        "ext": "none",
+        "tabKey": "root"
+      },
+      "PAYMENTS.md": {
+        "sizeBytes": 7108,
+        "lineCount": 240,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "README.md": {
+        "sizeBytes": 7516,
+        "lineCount": 184,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "REQUESTS.md": {
+        "sizeBytes": 11683,
+        "lineCount": 564,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "SKILL.md": {
+        "sizeBytes": 17203,
+        "lineCount": 568,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "assets/banner.png": {
+        "sizeBytes": 33065,
+        "lineCount": 0,
+        "ext": "png",
+        "tabKey": "assets"
+      },
+      "skill.json": {
+        "sizeBytes": 6796,
+        "lineCount": 243,
+        "ext": "json",
+        "tabKey": "root"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 14349,
+      "cl100k": 16378
     },
     "dependencies": {
       "skills": [],
@@ -11766,6 +13300,30 @@
     "tokenEstimate": {
       "heuristic": 52488,
       "cl100k": 51241
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "claude-scientific-skills": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 9837,
+        "lineCount": 276,
+        "ext": "md",
+        "tabKey": "root"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 2458,
+      "cl100k": 2271
     },
     "dependencies": {
       "skills": [],
@@ -14323,6 +15881,79 @@
     "tokenEstimate": {
       "heuristic": 15778,
       "cl100k": 14571
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "materials-simulation-skills": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/aggregation_methods.md",
+      "references/campaign_patterns.md",
+      "references/sweep_strategies.md",
+      "scripts/campaign_manager.py",
+      "scripts/job_tracker.py",
+      "scripts/result_aggregator.py",
+      "scripts/sweep_generator.py"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 7633,
+        "lineCount": 231,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/aggregation_methods.md": {
+        "sizeBytes": 4102,
+        "lineCount": 196,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/campaign_patterns.md": {
+        "sizeBytes": 3861,
+        "lineCount": 132,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/sweep_strategies.md": {
+        "sizeBytes": 3335,
+        "lineCount": 141,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "scripts/campaign_manager.py": {
+        "sizeBytes": 8231,
+        "lineCount": 258,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/job_tracker.py": {
+        "sizeBytes": 9643,
+        "lineCount": 318,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/result_aggregator.py": {
+        "sizeBytes": 9658,
+        "lineCount": 340,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/sweep_generator.py": {
+        "sizeBytes": 10330,
+        "lineCount": 331,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 14046,
+      "cl100k": 13583
     },
     "dependencies": {
       "skills": [],
@@ -18946,6 +20577,75 @@
       "source": "structured"
     }
   },
+  "ffuf-claude-skill": {
+    "category": "Security & Web Testing",
+    "files": [
+      "SKILL.md",
+      "ffuf_helper.py",
+      "resources/REQUEST_TEMPLATES.md",
+      "resources/WORDLISTS.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 17381,
+        "lineCount": 499,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "ffuf_helper.py": {
+        "sizeBytes": 7336,
+        "lineCount": 195,
+        "ext": "py",
+        "tabKey": "root"
+      },
+      "resources/REQUEST_TEMPLATES.md": {
+        "sizeBytes": 4789,
+        "lineCount": 204,
+        "ext": "md",
+        "tabKey": "resources"
+      },
+      "resources/WORDLISTS.md": {
+        "sizeBytes": 4487,
+        "lineCount": 162,
+        "ext": "md",
+        "tabKey": "resources"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 8495,
+      "cl100k": 9568
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "owasp-security": {
+    "category": "Security & Web Testing",
+    "files": [
+      "SKILL.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 16917,
+        "lineCount": 536,
+        "ext": "md",
+        "tabKey": "root"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 4230,
+      "cl100k": 4052
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
   "playwright-expert": {
     "category": "Security & Web Testing",
     "files": [
@@ -19203,6 +20903,36 @@
       "source": "structured"
     }
   },
+  "agent-without-context": {
+    "category": "Utility & Automation",
+    "files": [],
+    "fileMeta": {},
+    "tokenEstimate": {
+      "heuristic": 0,
+      "cl100k": 0
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "argument-hint-no-args": {
+    "category": "Utility & Automation",
+    "files": [],
+    "fileMeta": {},
+    "tokenEstimate": {
+      "heuristic": 0,
+      "cl100k": 0
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
   "claude-skill-builder": {
     "category": "Utility & Automation",
     "files": [
@@ -19226,6 +20956,30 @@
     "tokenEstimate": {
       "heuristic": 2054,
       "cl100k": 2109
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "clawfu-mcp-skills": {
+    "category": "Utility & Automation",
+    "files": [
+      "SKILL.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 4930,
+        "lineCount": 129,
+        "ext": "md",
+        "tabKey": "root"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 1231,
+      "cl100k": 1255
     },
     "dependencies": {
       "skills": [],
@@ -19305,6 +21059,37 @@
     "tokenEstimate": {
       "heuristic": 638,
       "cl100k": 562
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "find-skills": {
+    "category": "Utility & Automation",
+    "files": [
+      "SKILL.md",
+      "scripts/request.py"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 7225,
+        "lineCount": 176,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "scripts/request.py": {
+        "sizeBytes": 13289,
+        "lineCount": 428,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 5078,
+      "cl100k": 4567
     },
     "dependencies": {
       "skills": [],
@@ -20328,6 +22113,163 @@
     "tokenEstimate": {
       "heuristic": 3954,
       "cl100k": 3289
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "family-history-research": {
+    "category": "Writing & Research",
+    "files": [
+      ".github/FUNDING.yml",
+      ".github/workflows/release.yml",
+      ".gitignore",
+      "CHANGELOG.md",
+      "LICENSE",
+      "README.md",
+      "RELEASE_NOTES_v1.0.3.md",
+      "RELEASE_NOTES_v1.0.4.md",
+      "RELEASE_NOTES_v1.0.5.md",
+      "SKILL.md",
+      "assets/templates/citation-template.md",
+      "assets/templates/evidence-analysis-template.md",
+      "assets/templates/research-log-template.md",
+      "assets/templates/research-plan-template.md",
+      "references/citation-templates.md",
+      "references/evidence-evaluation.md",
+      "references/gps-guidelines.md",
+      "references/research-log-guidance.md",
+      "references/research-plan-guidance.md",
+      "references/research-strategies.md"
+    ],
+    "fileMeta": {
+      ".github/FUNDING.yml": {
+        "sizeBytes": 894,
+        "lineCount": 16,
+        "ext": "yml",
+        "tabKey": ".github"
+      },
+      ".github/workflows/release.yml": {
+        "sizeBytes": 3224,
+        "lineCount": 89,
+        "ext": "yml",
+        "tabKey": ".github"
+      },
+      ".gitignore": {
+        "sizeBytes": 268,
+        "lineCount": 0,
+        "ext": "none",
+        "tabKey": "root"
+      },
+      "CHANGELOG.md": {
+        "sizeBytes": 5498,
+        "lineCount": 135,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "LICENSE": {
+        "sizeBytes": 1056,
+        "lineCount": 0,
+        "ext": "none",
+        "tabKey": "root"
+      },
+      "README.md": {
+        "sizeBytes": 11286,
+        "lineCount": 303,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "RELEASE_NOTES_v1.0.3.md": {
+        "sizeBytes": 3865,
+        "lineCount": 85,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "RELEASE_NOTES_v1.0.4.md": {
+        "sizeBytes": 5266,
+        "lineCount": 125,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "RELEASE_NOTES_v1.0.5.md": {
+        "sizeBytes": 4667,
+        "lineCount": 112,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "SKILL.md": {
+        "sizeBytes": 16551,
+        "lineCount": 350,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "assets/templates/citation-template.md": {
+        "sizeBytes": 4112,
+        "lineCount": 181,
+        "ext": "md",
+        "tabKey": "assets"
+      },
+      "assets/templates/evidence-analysis-template.md": {
+        "sizeBytes": 7890,
+        "lineCount": 348,
+        "ext": "md",
+        "tabKey": "assets"
+      },
+      "assets/templates/research-log-template.md": {
+        "sizeBytes": 1615,
+        "lineCount": 89,
+        "ext": "md",
+        "tabKey": "assets"
+      },
+      "assets/templates/research-plan-template.md": {
+        "sizeBytes": 2700,
+        "lineCount": 173,
+        "ext": "md",
+        "tabKey": "assets"
+      },
+      "references/citation-templates.md": {
+        "sizeBytes": 11302,
+        "lineCount": 371,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/evidence-evaluation.md": {
+        "sizeBytes": 14008,
+        "lineCount": 416,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/gps-guidelines.md": {
+        "sizeBytes": 14580,
+        "lineCount": 515,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/research-log-guidance.md": {
+        "sizeBytes": 12299,
+        "lineCount": 369,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/research-plan-guidance.md": {
+        "sizeBytes": 17958,
+        "lineCount": 584,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/research-strategies.md": {
+        "sizeBytes": 13588,
+        "lineCount": 533,
+        "ext": "md",
+        "tabKey": "references"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 37707,
+      "cl100k": 33588
     },
     "dependencies": {
       "skills": [],

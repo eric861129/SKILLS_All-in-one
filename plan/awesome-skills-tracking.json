@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-07T06:38:00.000Z",
+  "generatedAt": "2026-03-07T08:05:00.000Z",
   "sourceReadme": "https://raw.githubusercontent.com/BehiSecc/awesome-claude-skills/main/README.md",
   "stats": {
     "localSkills": 402,
@@ -1071,6 +1071,124 @@
         "audit": "pass",
         "onboard": "not_applicable",
         "sync": "not_applicable"
+      }
+    },
+    {
+      "id": "batch-057",
+      "type": "triage/local-only-custom",
+      "size": 5,
+      "status": "completed",
+      "items": [
+        "hashicorp-agent-skills",
+        "kaggle-skill",
+        "kanban-skill",
+        "linear-claude-skill",
+        "linear-cli-skill"
+      ],
+      "checklist": {
+        "import": "not_applicable",
+        "audit": "pass",
+        "onboard": "not_applicable",
+        "sync": "not_applicable"
+      }
+    },
+    {
+      "id": "batch-058",
+      "type": "mixed/local-custom-import",
+      "size": 5,
+      "status": "completed",
+      "items": [
+        "materials-simulation-skills",
+        "moltdj",
+        "move-code-quality-skill",
+        "octav-api-skill",
+        "owasp-security"
+      ],
+      "checklist": {
+        "import": "partial",
+        "audit": "pass",
+        "onboard": "not_applicable",
+        "sync": "completed"
+      }
+    },
+    {
+      "id": "batch-059",
+      "type": "remediation/reimport-from-batch-052",
+      "size": 35,
+      "status": "completed",
+      "items": [
+        "agentfund-mcp",
+        "algorithmic-art",
+        "brand-guidelines",
+        "canvas-design",
+        "charles-proxy-extract",
+        "claude-ally-health",
+        "claude-code-terminal-title",
+        "claude-code-video-toolkit",
+        "claude-epub-skill",
+        "claude-scientific-skills",
+        "claude-starter",
+        "clawfu-mcp-skills",
+        "csv-data-summarizer",
+        "deapi-ai-media-toolkit",
+        "defense-in-depth",
+        "dispatching-parallel-agents",
+        "doc-coauthoring",
+        "executing-plans",
+        "family-history-research",
+        "ffuf-claude-skill",
+        "find-scene",
+        "find-skills",
+        "frontend-design",
+        "git-pushing",
+        "google-workspace-skills",
+        "hashicorp-agent-skills",
+        "kaggle-skill",
+        "kanban-skill",
+        "linear-claude-skill",
+        "linear-cli-skill",
+        "materials-simulation-skills",
+        "moltdj",
+        "move-code-quality-skill",
+        "octav-api-skill",
+        "owasp-security"
+      ],
+      "checklist": {
+        "import": "partial",
+        "audit": "pass",
+        "onboard": "not_applicable",
+        "sync": "completed"
+      }
+    },
+    {
+      "id": "batch-060",
+      "type": "remediation/blocked-remap-import",
+      "size": 17,
+      "status": "completed",
+      "items": [
+        "agentfund-mcp",
+        "claude-ally-health",
+        "claude-code-terminal-title",
+        "claude-code-video-toolkit",
+        "claude-epub-skill",
+        "claude-scientific-skills",
+        "claude-starter",
+        "clawfu-mcp-skills",
+        "deapi-ai-media-toolkit",
+        "defense-in-depth",
+        "ffuf-claude-skill",
+        "google-workspace-skills",
+        "hashicorp-agent-skills",
+        "kaggle-skill",
+        "kanban-skill",
+        "linear-cli-skill",
+        "materials-simulation-skills"
+      ],
+      "checklist": {
+        "import": "partial",
+        "audit": "pass",
+        "onboard": "not_applicable",
+        "sync": "completed"
       }
     }
   ],
