@@ -1252,6 +1252,131 @@
       "source": "structured"
     }
   },
+  "plotly": {
+    "category": "Data & Analysis",
+    "files": [
+      "SKILL.md",
+      "references/chart-types.md",
+      "references/export-interactivity.md",
+      "references/graph-objects.md",
+      "references/layouts-styling.md",
+      "references/plotly-express.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 7199,
+        "lineCount": 266,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/chart-types.md": {
+        "sizeBytes": 8763,
+        "lineCount": 489,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/export-interactivity.md": {
+        "sizeBytes": 9204,
+        "lineCount": 454,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/graph-objects.md": {
+        "sizeBytes": 5986,
+        "lineCount": 303,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/layouts-styling.md": {
+        "sizeBytes": 9128,
+        "lineCount": 458,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/plotly-express.md": {
+        "sizeBytes": 4893,
+        "lineCount": 214,
+        "ext": "md",
+        "tabKey": "references"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 11295,
+      "cl100k": 12792
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "polars": {
+    "category": "Data & Analysis",
+    "files": [
+      "SKILL.md",
+      "references/best_practices.md",
+      "references/core_concepts.md",
+      "references/io_guide.md",
+      "references/operations.md",
+      "references/pandas_migration.md",
+      "references/transformations.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 9431,
+        "lineCount": 386,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/best_practices.md": {
+        "sizeBytes": 14181,
+        "lineCount": 650,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/core_concepts.md": {
+        "sizeBytes": 8348,
+        "lineCount": 379,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/io_guide.md": {
+        "sizeBytes": 11208,
+        "lineCount": 558,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/operations.md": {
+        "sizeBytes": 12080,
+        "lineCount": 603,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/pandas_migration.md": {
+        "sizeBytes": 12353,
+        "lineCount": 418,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/transformations.md": {
+        "sizeBytes": 11183,
+        "lineCount": 550,
+        "ext": "md",
+        "tabKey": "references"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 19698,
+      "cl100k": 21998
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
   "postgres": {
     "category": "Data & Analysis",
     "files": [
@@ -1545,6 +1670,183 @@
       "skills": [
         "devops-engineer"
       ],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "usfiscaldata": {
+    "category": "Data & Analysis",
+    "files": [
+      "SKILL.md",
+      "references/api-basics.md",
+      "references/datasets-debt.md",
+      "references/datasets-fiscal.md",
+      "references/datasets-interest-rates.md",
+      "references/datasets-securities.md",
+      "references/examples.md",
+      "references/parameters.md",
+      "references/response-format.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 7297,
+        "lineCount": 164,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/api-basics.md": {
+        "sizeBytes": 2846,
+        "lineCount": 87,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/datasets-debt.md": {
+        "sizeBytes": 5139,
+        "lineCount": 164,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/datasets-fiscal.md": {
+        "sizeBytes": 7149,
+        "lineCount": 197,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/datasets-interest-rates.md": {
+        "sizeBytes": 6058,
+        "lineCount": 183,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/datasets-securities.md": {
+        "sizeBytes": 6799,
+        "lineCount": 217,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/examples.md": {
+        "sizeBytes": 9510,
+        "lineCount": 259,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/parameters.md": {
+        "sizeBytes": 4417,
+        "lineCount": 156,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/response-format.md": {
+        "sizeBytes": 4980,
+        "lineCount": 177,
+        "ext": "md",
+        "tabKey": "references"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 13530,
+      "cl100k": 13942
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "vaex": {
+    "category": "Data & Analysis",
+    "files": [
+      "SKILL.md",
+      "references/core_dataframes.md",
+      "references/data_processing.md",
+      "references/io_operations.md",
+      "references/machine_learning.md",
+      "references/performance.md",
+      "references/visualization.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 6596,
+        "lineCount": 181,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/core_dataframes.md": {
+        "sizeBytes": 7878,
+        "lineCount": 368,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/data_processing.md": {
+        "sizeBytes": 12451,
+        "lineCount": 556,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/io_operations.md": {
+        "sizeBytes": 14989,
+        "lineCount": 704,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/machine_learning.md": {
+        "sizeBytes": 15941,
+        "lineCount": 729,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/performance.md": {
+        "sizeBytes": 13705,
+        "lineCount": 572,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/visualization.md": {
+        "sizeBytes": 13188,
+        "lineCount": 614,
+        "ext": "md",
+        "tabKey": "references"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 21188,
+      "cl100k": 22503
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "zarr-python": {
+    "category": "Data & Analysis",
+    "files": [
+      "SKILL.md",
+      "references/api_reference.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 20047,
+        "lineCount": 778,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/api_reference.md": {
+        "sizeBytes": 12538,
+        "lineCount": 516,
+        "ext": "md",
+        "tabKey": "references"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 8133,
+      "cl100k": 9355
+    },
+    "dependencies": {
+      "skills": [],
       "libraries": [],
       "runtimeTools": [],
       "source": "structured"
