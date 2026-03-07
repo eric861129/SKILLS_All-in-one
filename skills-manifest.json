@@ -15732,6 +15732,110 @@
       "source": "structured"
     }
   },
+  "rdkit": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/api_reference.md",
+      "references/descriptors_reference.md",
+      "references/smarts_patterns.md",
+      "scripts/molecular_properties.py",
+      "scripts/similarity_search.py",
+      "scripts/substructure_filter.py"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 20421,
+        "lineCount": 779,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/api_reference.md": {
+        "sizeBytes": 16789,
+        "lineCount": 433,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/descriptors_reference.md": {
+        "sizeBytes": 11779,
+        "lineCount": 596,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/smarts_patterns.md": {
+        "sizeBytes": 8143,
+        "lineCount": 669,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "scripts/molecular_properties.py": {
+        "sizeBytes": 7361,
+        "lineCount": 244,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/similarity_search.py": {
+        "sizeBytes": 9543,
+        "lineCount": 298,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/substructure_filter.py": {
+        "sizeBytes": 12351,
+        "lineCount": 387,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 21599,
+      "cl100k": 23971
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "reactome-database": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/api_reference.md",
+      "scripts/reactome_query.py"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 7836,
+        "lineCount": 277,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/api_reference.md": {
+        "sizeBytes": 10507,
+        "lineCount": 466,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "scripts/reactome_query.py": {
+        "sizeBytes": 9254,
+        "lineCount": 287,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 6900,
+      "cl100k": 6710
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
   "chaos-engineer": {
     "category": "Security & Web Testing",
     "files": [
