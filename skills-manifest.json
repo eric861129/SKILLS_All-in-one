@@ -17003,6 +17003,79 @@
       "source": "structured"
     }
   },
+  "stable-baselines3": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/algorithms.md",
+      "references/callbacks.md",
+      "references/custom_environments.md",
+      "references/vectorized_envs.md",
+      "scripts/custom_env_template.py",
+      "scripts/evaluate_agent.py",
+      "scripts/train_rl_agent.py"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 9507,
+        "lineCount": 298,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/algorithms.md": {
+        "sizeBytes": 10038,
+        "lineCount": 334,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/callbacks.md": {
+        "sizeBytes": 15631,
+        "lineCount": 557,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/custom_environments.md": {
+        "sizeBytes": 13729,
+        "lineCount": 527,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/vectorized_envs.md": {
+        "sizeBytes": 14789,
+        "lineCount": 569,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "scripts/custom_env_template.py": {
+        "sizeBytes": 9350,
+        "lineCount": 315,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/evaluate_agent.py": {
+        "sizeBytes": 7335,
+        "lineCount": 246,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/train_rl_agent.py": {
+        "sizeBytes": 5123,
+        "lineCount": 166,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 21367,
+      "cl100k": 20375
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
   "chaos-engineer": {
     "category": "Security & Web Testing",
     "files": [
