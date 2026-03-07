@@ -714,6 +714,51 @@
       "source": "structured"
     }
   },
+  "kanban-skill": {
+    "category": "Collaboration & Project Management",
+    "files": [
+      ".gitignore",
+      "README.md",
+      "SKILL.md",
+      "references/data-model.md"
+    ],
+    "fileMeta": {
+      ".gitignore": {
+        "sizeBytes": 16,
+        "lineCount": 0,
+        "ext": "none",
+        "tabKey": "root"
+      },
+      "README.md": {
+        "sizeBytes": 1768,
+        "lineCount": 59,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "SKILL.md": {
+        "sizeBytes": 3842,
+        "lineCount": 86,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/data-model.md": {
+        "sizeBytes": 5448,
+        "lineCount": 142,
+        "ext": "md",
+        "tabKey": "references"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 2755,
+      "cl100k": 2923
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
   "linear-claude-skill": {
     "category": "Collaboration & Project Management",
     "files": [

@@ -1,3 +1,13 @@
+## 增量更新（2026-03-07，Batch 061）
+- Tracking 產生時間：`2026-03-07T08:25:00.000Z`
+- 對象：剩餘 3 筆 blocked
+- 新增到 `public/SKILLS`：`1`（`kanban-skill`）
+- 仍 blocked：`2`（`agentfund-mcp`、`defense-in-depth`）
+- `src/data/skills.ts` / `database/init_skills.sql`（Batch 052 以後重跑範圍）缺漏：`0`
+
+### 下一步
+1. 若要清零 blocked，需替 `agentfund-mcp`、`defense-in-depth` 指定可接受替代來源
+
 ## 增量更新（2026-03-07，Batch 060）
 - Tracking 產生時間：`2026-03-07T08:05:00.000Z`
 - 重跑範圍：Batch 059 的 17 筆 blocked

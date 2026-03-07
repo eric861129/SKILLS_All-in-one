@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-07T08:05:00.000Z",
+  "generatedAt": "2026-03-07T08:25:00.000Z",
   "queues": {
     "mismatch": [],
     "local_present_tracking_missing": [
@@ -2658,7 +2658,8 @@
         "notes": [
           "batch-052 triage: local custom skill outside awesome baseline; deferred on 2026-03-07",
           "batch-059 remediation blocked: no_skill_md_found:RioTheGreat-ai/agentfund-mcp on 2026-03-07",
-          "batch-060 remap import blocked: upstream repository/path unavailable or no canonical skill package on 2026-03-07"
+          "batch-060 remap import blocked: upstream repository/path unavailable or no canonical skill package on 2026-03-07",
+          "batch-061 recheck blocked: no standalone canonical SKILL package found on 2026-03-07"
         ]
       },
       {
@@ -2835,7 +2836,8 @@
         "notes": [
           "batch-054 triage: local custom skill outside awesome baseline; deferred on 2026-03-07",
           "batch-059 remediation blocked: no_skill_md_found:obra/superpowers on 2026-03-07",
-          "batch-060 remap import blocked: upstream repository/path unavailable or no canonical skill package on 2026-03-07"
+          "batch-060 remap import blocked: upstream repository/path unavailable or no canonical skill package on 2026-03-07",
+          "batch-061 recheck blocked: no standalone canonical SKILL package found on 2026-03-07"
         ]
       },
       {
@@ -2992,11 +2994,12 @@
         "repoPath": null,
         "reason": "local_custom_skill_not_in_awesome_tracking",
         "priority": "P3",
-        "status": "blocked",
+        "status": "done",
         "notes": [
           "batch-057 triage: local custom skill outside awesome baseline; deferred on 2026-03-07",
           "batch-059 remediation blocked: no_skill_md_found:mattjoyce/kanban-skill on 2026-03-07",
-          "batch-060 remap import blocked: upstream repository/path unavailable or no canonical skill package on 2026-03-07"
+          "batch-060 remap import blocked: upstream repository/path unavailable or no canonical skill package on 2026-03-07",
+          "batch-061 remap import: imported from LachyFS/kanban-skill on 2026-03-07"
         ]
       },
       {

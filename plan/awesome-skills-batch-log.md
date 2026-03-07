@@ -2676,3 +2676,22 @@
 1. `agentfund-mcp`
 2. `defense-in-depth`
 3. `kanban-skill`
+
+## Batch 061
+
+- 批次 ID：`batch-061`
+- 日期：`2026-03-07`
+- 類型：`remediation/blocked-remap-followup`
+- 數量：`3`
+
+### 執行摘要
+
+1. `kanban-skill`
+   - remap 到 `LachyFS/kanban-skill`
+   - 已匯入 `public/SKILLS/Collaboration & Project Management/kanban-skill/`
+   - 已同步 `src/data/skills.ts`、`database/init_skills.sql` 的 author/githubUrl
+2. `agentfund-mcp`、`defense-in-depth`
+   - 再次檢查後仍無可用 standalone canonical `SKILL.md` package
+   - 維持 `blocked`
+3. 驗證
+   - `npm run prebuild && npm run build && npm run test`

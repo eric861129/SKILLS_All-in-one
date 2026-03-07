@@ -4868,13 +4868,13 @@ export const MOCK_SKILLS: Skill[] = [
     nameZh: 'Markdown 看板管理',
     description: 'Markdown-based Kanban board with file-based cards, YAML frontmatter for status/priority/dependencies, and no database required.',
     descriptionZh: '基於 Markdown 的看板系統，使用 YAML 前置資料管理狀態、優先級與相依性，無需資料庫。',
-    author: 'mattjoyce',
+    author: 'LachyFS',
     category: 'Collaboration & Project Management',
     tags: ['Kanban', 'Markdown', 'Project'],
     downloadCount: 0,
     createdAt: '2026-03-04',
     source: 'kanban-skill',
-    githubUrl: 'https://github.com/mattjoyce/kanban-skill'
+    githubUrl: 'https://github.com/LachyFS/kanban-skill'
   },
   {
     id: 157,
