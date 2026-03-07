@@ -15673,6 +15673,131 @@
       "source": "structured"
     }
   },
+  "qutip": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/advanced.md",
+      "references/analysis.md",
+      "references/core_concepts.md",
+      "references/time_evolution.md",
+      "references/visualization.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 9048,
+        "lineCount": 317,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/advanced.md": {
+        "sizeBytes": 11628,
+        "lineCount": 556,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/analysis.md": {
+        "sizeBytes": 9387,
+        "lineCount": 524,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/core_concepts.md": {
+        "sizeBytes": 5595,
+        "lineCount": 294,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/time_evolution.md": {
+        "sizeBytes": 7866,
+        "lineCount": 349,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/visualization.md": {
+        "sizeBytes": 8288,
+        "lineCount": 432,
+        "ext": "md",
+        "tabKey": "references"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 12897,
+      "cl100k": 16131
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "rdkit": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/api_reference.md",
+      "references/descriptors_reference.md",
+      "references/smarts_patterns.md",
+      "scripts/molecular_properties.py",
+      "scripts/similarity_search.py",
+      "scripts/substructure_filter.py"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 20421,
+        "lineCount": 779,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/api_reference.md": {
+        "sizeBytes": 16789,
+        "lineCount": 433,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/descriptors_reference.md": {
+        "sizeBytes": 11779,
+        "lineCount": 596,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/smarts_patterns.md": {
+        "sizeBytes": 8143,
+        "lineCount": 669,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "scripts/molecular_properties.py": {
+        "sizeBytes": 7361,
+        "lineCount": 244,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/similarity_search.py": {
+        "sizeBytes": 9543,
+        "lineCount": 298,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/substructure_filter.py": {
+        "sizeBytes": 12351,
+        "lineCount": 387,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 21599,
+      "cl100k": 23971
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
   "chaos-engineer": {
     "category": "Security & Web Testing",
     "files": [
