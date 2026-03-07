@@ -17799,37 +17799,6 @@
       "source": "structured"
     }
   },
-  "umap-learn": {
-    "category": "Scientific & Research Tools",
-    "files": [
-      "SKILL.md",
-      "references/api_reference.md"
-    ],
-    "fileMeta": {
-      "SKILL.md": {
-        "sizeBytes": 15394,
-        "lineCount": 478,
-        "ext": "md",
-        "tabKey": "root"
-      },
-      "references/api_reference.md": {
-        "sizeBytes": 18966,
-        "lineCount": 533,
-        "ext": "md",
-        "tabKey": "references"
-      }
-    },
-    "tokenEstimate": {
-      "heuristic": 8591,
-      "cl100k": 7857
-    },
-    "dependencies": {
-      "skills": [],
-      "libraries": [],
-      "runtimeTools": [],
-      "source": "structured"
-    }
-  },
   "chaos-engineer": {
     "category": "Security & Web Testing",
     "files": [
