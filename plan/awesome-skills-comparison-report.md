@@ -1,3 +1,256 @@
+## 增量更新（2026-03-07，Batch 044）
+- Tracking 產生時間：`2026-03-07T03:28:32.000Z`
+- Wave 2 import 已完成：`batch-016` 至 `batch-044`（新增 142 筆）
+- mismatch（url/author）：`0`（維持）
+- `status=missing`：`63`（由 `68` 降至 `63`）
+- `needs_manual_review`：`18`（維持）
+
+### 下一批（import, non-fixture）
+1. `terraform-stacks`
+2. `terraform-style-guide`
+3. `terraform-test`
+4. `windows-builder`
+5. `framework`
+
+## 增量更新（2026-03-07，Batch 043）
+- Tracking 產生時間：`2026-03-07T03:16:29.000Z`
+- Wave 2 import 已完成：`batch-016` 至 `batch-043`（新增 137 筆）
+- mismatch（url/author）：`0`（維持）
+- `status=missing`：`68`（由 `73` 降至 `68`）
+- `needs_manual_review`：`18`（維持）
+
+### 下一批（import, non-fixture）
+1. `provider-resources`
+2. `push-to-registry`
+3. `refactor-module`
+4. `run-acceptance-tests`
+5. `terraform-search-import`
+
+## 增量更新（2026-03-07，Batch 042）
+- Tracking 產生時間：`2026-03-06T17:54:48.000Z`
+- Wave 2 import 已完成：`batch-016` 至 `batch-042`（新增 132 筆）
+- mismatch（url/author）：`0`（維持）
+- `status=missing`：`73`（由 `78` 降至 `73`）
+- `needs_manual_review`：`18`（維持）
+
+### 下一批（import, non-fixture）
+1. `post-processing`
+2. `simulation-orchestrator`
+3. `simulation-validator`
+4. `slurm-job-script-generator`
+5. `time-stepping`
+
+## 增量更新（2026-03-07，Batch 041）
+- Tracking 產生時間：`2026-03-06T17:26:57.000Z`
+- Wave 2 import 已完成：`batch-016` 至 `batch-041`（新增 127 筆）
+- mismatch（url/author）：`0`（維持）
+- `status=missing`：`78`（由 `83` 降至 `78`）
+- `needs_manual_review`：`18`（維持）
+
+### 下一批（import, non-fixture）
+1. `ontology-explorer`
+2. `ontology-mapper`
+3. `ontology-validator`
+4. `parameter-optimization`
+5. `performance-profiling`
+
+## 增量更新（2026-03-07，Batch 040）
+- Tracking 產生時間：`2026-03-06T16:54:26.000Z`
+- Wave 2 import 已完成：`batch-016` 至 `batch-040`（新增 122 筆）
+- mismatch（url/author）：`0`（維持）
+- `status=missing`：`83`（由 `85` 降至 `83`）
+- `needs_manual_review`：`18`（維持）
+- 備註：本批次為 partial，`linear-solvers`、`mesh-generation`、`nonlinear-solvers` 上游路徑缺失
+
+### 下一批（import, non-fixture）
+1. `linear-solvers`
+2. `mesh-generation`
+3. `nonlinear-solvers`
+4. `numerical-integration`
+5. `numerical-stability`
+
+## 增量更新（2026-03-07，Batch 039）
+- Tracking 產生時間：`2026-03-06T16:39:44.000Z`
+- Wave 2 import 已完成：`batch-016` 至 `batch-039`（新增 120 筆）
+- mismatch（url/author）：`0`（維持）
+- `status=missing`：`85`（由 `90` 降至 `85`）
+- `needs_manual_review`：`18`（維持）
+
+### 下一批（import, non-fixture）
+1. `zarr-python`
+2. `zinc-database`
+3. `linear-solvers`
+4. `mesh-generation`
+5. `nonlinear-solvers`
+
+## 增量更新（2026-03-07，Batch 038）
+- Tracking 產生時間：`2026-03-06T16:21:11.000Z`
+- Wave 2 import 已完成：`batch-016` 至 `batch-038`（新增 115 筆）
+- mismatch（url/author）：`0`（維持）
+- `status=missing`：`90`（由 `95` 降至 `90`）
+- `needs_manual_review`：`18`（維持）
+
+### 下一批（import, non-fixture）
+1. `usfiscaldata`
+2. `uspto-database`
+3. `vaex`
+4. `venue-templates`
+5. `what-if-oracle`
+
+## 增量更新（2026-03-07，Batch 037）
+- Tracking 產生時間：`2026-03-06T16:14:46.000Z`
+- Wave 2 import 已完成：`batch-016` 至 `batch-037`（新增 110 筆）
+- mismatch（url/author）：`0`（維持）
+- `status=missing`：`95`（由 `100` 降至 `95`）
+- `needs_manual_review`：`18`（維持）
+
+### 下一批（import, non-fixture）
+1. `torchdrug`
+2. `transformers`
+3. `treatment-plans`
+4. `umap-learn`
+5. `uniprot-database`
+
+## 增量更新（2026-03-07，Batch 036）
+- Tracking 產生時間：`2026-03-06T16:10:15.000Z`
+- Wave 2 import 已完成：`batch-016` 至 `batch-036`（新增 105 筆）
+- mismatch（url/author）：`0`（維持）
+- `status=missing`：`100`（由 `105` 降至 `100`）
+- `needs_manual_review`：`18`（維持）
+
+### 下一批（import, non-fixture）
+1. `string-database`
+2. `sympy`
+3. `tiledbvcf`
+4. `timesfm-forecasting`
+5. `torch_geometric`
+
+## 增量更新（2026-03-07，Batch 035）
+- Tracking 產生時間：`2026-03-06T16:05:56.000Z`
+- Wave 2 import 已完成：`batch-016` 至 `batch-035`（新增 100 筆）
+- mismatch（url/author）：`0`（維持）
+- `status=missing`：`105`（由 `110` 降至 `105`）
+- `needs_manual_review`：`18`（維持）
+
+### 下一批（import, non-fixture）
+1. `shap`
+2. `simpy`
+3. `stable-baselines3`
+4. `statistical-analysis`
+5. `statsmodels`
+
+## 增量更新（2026-03-06，Batch 034）
+- Tracking 產生時間：`2026-03-06T15:51:49.000Z`
+- Wave 2 import 已完成：`batch-016` 至 `batch-034`（新增 95 筆）
+- mismatch（url/author）：`0`（維持）
+- `status=missing`：`110`（由 `115` 降至 `110`）
+- `needs_manual_review`：`18`（維持）
+
+### 下一批（import, non-fixture）
+1. `scikit-learn`
+2. `scikit-survival`
+3. `scvelo`
+4. `scvi-tools`
+5. `seaborn`
+
+## 增量更新（2026-03-06，Batch 033）
+- Tracking 產生時間：`2026-03-06T15:43:25.000Z`
+- Wave 2 import 已完成：`batch-016` 至 `batch-033`（新增 90 筆）
+- mismatch（url/author）：`0`（維持）
+- `status=missing`：`115`（由 `120` 降至 `115`）
+- `needs_manual_review`：`18`（維持）
+
+### 下一批（import, non-fixture）
+1. `scientific-schematics`
+2. `scientific-slides`
+3. `scientific-visualization`
+4. `scientific-writing`
+5. `scikit-bio`
+
+## 增量更新（2026-03-06，Batch 032）
+- Tracking 產生時間：`2026-03-06T15:40:22.000Z`
+- Wave 2 import 已完成：`batch-016` 至 `batch-032`（新增 85 筆）
+- mismatch（url/author）：`0`（維持）
+- `status=missing`：`120`（由 `125` 降至 `120`）
+- `needs_manual_review`：`18`（維持）
+
+### 下一批（import, non-fixture）
+1. `rowan`
+2. `scanpy`
+3. `scholar-evaluation`
+4. `scientific-brainstorming`
+5. `scientific-critical-thinking`
+
+## 增量更新（2026-03-06，Batch 031）
+- Tracking 產生時間：`2026-03-06T15:26:04.000Z`
+- Wave 2 import 已完成：`batch-016` 至 `batch-031`（新增 80 筆）
+- mismatch（url/author）：`0`（維持）
+- `status=missing`：`125`（由 `130` 降至 `125`）
+- `needs_manual_review`：`18`（維持）
+
+### 下一批（import, non-fixture）
+1. `qutip`
+2. `rdkit`
+3. `reactome-database`
+4. `research-grants`
+5. `research-lookup`
+
+## 增量更新（2026-03-06，Batch 030）
+- Tracking 產生時間：`2026-03-06T15:09:28.000Z`
+- Wave 2 import 已完成：`batch-016` 至 `batch-030`（新增 75 筆）
+- mismatch（url/author）：`0`（維持）
+- `status=missing`：`130`（由 `135` 降至 `130`）
+- `needs_manual_review`：`18`（維持）
+
+### 下一批（import, non-fixture）
+1. `pysam`
+2. `pytdc`
+3. `pytorch-lightning`
+4. `pyzotero`
+5. `qiskit`
+
+## 增量更新（2026-03-06，Batch 029）
+- Tracking 產生時間：`2026-03-06T15:05:31.000Z`
+- Wave 2 import 已完成：`batch-016` 至 `batch-029`（新增 70 筆）
+- mismatch（url/author）：`0`（維持）
+- `status=missing`：`135`（由 `140` 降至 `135`）
+- `needs_manual_review`：`18`（維持）
+
+### 下一批（import, non-fixture）
+1. `pylabrobot`
+2. `pymatgen`
+3. `pymc`
+4. `pymoo`
+5. `pyopenms`
+
+## 增量更新（2026-03-06，Batch 028）
+- Tracking 產生時間：`2026-03-06T15:01:14.000Z`
+- Wave 2 import 已完成：`batch-016` 至 `batch-028`（新增 65 筆）
+- mismatch（url/author）：`0`（維持）
+- `status=missing`：`140`（由 `145` 降至 `140`）
+- `needs_manual_review`：`18`（維持）
+
+### 下一批（import, non-fixture）
+1. `pubmed-database`
+2. `pufferlib`
+3. `pydeseq2`
+4. `pydicom`
+5. `pyhealth`
+
+## 增量更新（2026-03-06，Batch 027）
+- Tracking 產生時間：`2026-03-06T14:55:54.000Z`
+- Wave 2 import 已完成：`batch-016` 至 `batch-027`（新增 60 筆）
+- mismatch（url/author）：`0`（維持）
+- `status=missing`：`145`（由 `150` 降至 `145`）
+- `needs_manual_review`：`18`（維持）
+
+### 下一批（import, non-fixture）
+1. `plotly`
+2. `polars`
+3. `pptx-posters`
+4. `protocolsio-integration`
+5. `pubchem-database`
+
 # Awesome Claude Skills ????????????????????
 ## ????????026-03-06??atch 025??- Tracking ????????2026-03-06T12:32:32.225Z`
 - Wave 2 import ??????`batch-016`??batch-017`??batch-018`??batch-019`??batch-020`??batch-021`??batch-022`??batch-023`??batch-024`??batch-025`??? 50 ???

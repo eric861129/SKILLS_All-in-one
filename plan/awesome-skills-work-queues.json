@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-06T14:45:34.659Z",
+  "generatedAt": "2026-03-07T03:28:32.000Z",
   "queues": {
     "mismatch": [],
     "local_present_tracking_missing": [
@@ -836,9 +836,10 @@
         "repoPath": "scientific-skills/pdb-database",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-027 imported and onboarded on 2026-03-06"
         ]
       },
       {
@@ -847,9 +848,10 @@
         "repoPath": "scientific-skills/peer-review",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-027 imported and onboarded on 2026-03-06"
         ]
       },
       {
@@ -858,9 +860,10 @@
         "repoPath": "scientific-skills/pennylane",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-027 imported and onboarded on 2026-03-06"
         ]
       },
       {
@@ -869,9 +872,10 @@
         "repoPath": "scientific-skills/perplexity-search",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-027 imported and onboarded on 2026-03-06"
         ]
       },
       {
@@ -880,9 +884,10 @@
         "repoPath": "scientific-skills/phylogenetics",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-027 imported and onboarded on 2026-03-06"
         ]
       },
       {
@@ -891,9 +896,10 @@
         "repoPath": "scientific-skills/plotly",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-028 imported and onboarded on 2026-03-06"
         ]
       },
       {
@@ -902,9 +908,10 @@
         "repoPath": "scientific-skills/polars",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-028 imported and onboarded on 2026-03-06"
         ]
       },
       {
@@ -913,9 +920,10 @@
         "repoPath": "scientific-skills/pptx-posters",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-028 imported and onboarded on 2026-03-06"
         ]
       },
       {
@@ -924,9 +932,10 @@
         "repoPath": "scientific-skills/protocolsio-integration",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-028 imported and onboarded on 2026-03-06"
         ]
       },
       {
@@ -935,9 +944,10 @@
         "repoPath": "scientific-skills/pubchem-database",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-028 imported and onboarded on 2026-03-06"
         ]
       },
       {
@@ -946,9 +956,10 @@
         "repoPath": "scientific-skills/pubmed-database",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-029 imported and onboarded on 2026-03-06"
         ]
       },
       {
@@ -957,9 +968,10 @@
         "repoPath": "scientific-skills/pufferlib",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-029 imported and onboarded on 2026-03-06"
         ]
       },
       {
@@ -968,9 +980,10 @@
         "repoPath": "scientific-skills/pydeseq2",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-029 imported and onboarded on 2026-03-06"
         ]
       },
       {
@@ -979,9 +992,10 @@
         "repoPath": "scientific-skills/pydicom",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-029 imported and onboarded on 2026-03-06"
         ]
       },
       {
@@ -990,9 +1004,10 @@
         "repoPath": "scientific-skills/pyhealth",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-029 imported and onboarded on 2026-03-06"
         ]
       },
       {
@@ -1001,9 +1016,10 @@
         "repoPath": "scientific-skills/pylabrobot",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-030 imported and onboarded on 2026-03-06"
         ]
       },
       {
@@ -1012,9 +1028,10 @@
         "repoPath": "scientific-skills/pymatgen",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-030 imported and onboarded on 2026-03-06"
         ]
       },
       {
@@ -1023,9 +1040,10 @@
         "repoPath": "scientific-skills/pymc",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-030 imported and onboarded on 2026-03-06"
         ]
       },
       {
@@ -1034,9 +1052,10 @@
         "repoPath": "scientific-skills/pymoo",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-030 imported and onboarded on 2026-03-06"
         ]
       },
       {
@@ -1045,9 +1064,10 @@
         "repoPath": "scientific-skills/pyopenms",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-030 imported and onboarded on 2026-03-06"
         ]
       },
       {
@@ -1056,9 +1076,10 @@
         "repoPath": "scientific-skills/pysam",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-031 imported and onboarded on 2026-03-06"
         ]
       },
       {
@@ -1067,9 +1088,10 @@
         "repoPath": "scientific-skills/pytdc",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-031 imported and onboarded on 2026-03-06"
         ]
       },
       {
@@ -1078,9 +1100,10 @@
         "repoPath": "scientific-skills/pytorch-lightning",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-031 imported and onboarded on 2026-03-06"
         ]
       },
       {
@@ -1089,9 +1112,10 @@
         "repoPath": "scientific-skills/pyzotero",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-031 imported and onboarded on 2026-03-06"
         ]
       },
       {
@@ -1100,9 +1124,10 @@
         "repoPath": "scientific-skills/qiskit",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-031 imported and onboarded on 2026-03-06"
         ]
       },
       {
@@ -1111,9 +1136,10 @@
         "repoPath": "scientific-skills/qutip",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-032 imported and onboarded on 2026-03-06"
         ]
       },
       {
@@ -1122,9 +1148,10 @@
         "repoPath": "scientific-skills/rdkit",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-032 imported and onboarded on 2026-03-06"
         ]
       },
       {
@@ -1133,9 +1160,10 @@
         "repoPath": "scientific-skills/reactome-database",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-032 imported and onboarded on 2026-03-06"
         ]
       },
       {
@@ -1144,9 +1172,10 @@
         "repoPath": "scientific-skills/research-grants",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-032 imported and onboarded on 2026-03-06"
         ]
       },
       {
@@ -1155,9 +1184,10 @@
         "repoPath": "scientific-skills/research-lookup",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-032 imported and onboarded on 2026-03-06"
         ]
       },
       {
@@ -1166,9 +1196,10 @@
         "repoPath": "scientific-skills/rowan",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-033 imported and onboarded on 2026-03-06"
         ]
       },
       {
@@ -1177,9 +1208,10 @@
         "repoPath": "scientific-skills/scanpy",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-033 imported and onboarded on 2026-03-06"
         ]
       },
       {
@@ -1188,9 +1220,10 @@
         "repoPath": "scientific-skills/scholar-evaluation",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-033 imported and onboarded on 2026-03-06"
         ]
       },
       {
@@ -1199,9 +1232,10 @@
         "repoPath": "scientific-skills/scientific-brainstorming",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-033 imported and onboarded on 2026-03-06"
         ]
       },
       {
@@ -1210,9 +1244,10 @@
         "repoPath": "scientific-skills/scientific-critical-thinking",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-033 imported and onboarded on 2026-03-06"
         ]
       },
       {
@@ -1221,9 +1256,10 @@
         "repoPath": "scientific-skills/scientific-schematics",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-034 imported and onboarded on 2026-03-06"
         ]
       },
       {
@@ -1232,9 +1268,10 @@
         "repoPath": "scientific-skills/scientific-slides",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-034 imported and onboarded on 2026-03-06"
         ]
       },
       {
@@ -1243,9 +1280,10 @@
         "repoPath": "scientific-skills/scientific-visualization",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-034 imported and onboarded on 2026-03-06"
         ]
       },
       {
@@ -1254,9 +1292,10 @@
         "repoPath": "scientific-skills/scientific-writing",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-034 imported and onboarded on 2026-03-06"
         ]
       },
       {
@@ -1265,9 +1304,10 @@
         "repoPath": "scientific-skills/scikit-bio",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-034 imported and onboarded on 2026-03-06"
         ]
       },
       {
@@ -1276,9 +1316,10 @@
         "repoPath": "scientific-skills/scikit-learn",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-035 imported and onboarded on 2026-03-07"
         ]
       },
       {
@@ -1287,9 +1328,10 @@
         "repoPath": "scientific-skills/scikit-survival",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-035 imported and onboarded on 2026-03-07"
         ]
       },
       {
@@ -1298,9 +1340,10 @@
         "repoPath": "scientific-skills/scvelo",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-035 imported and onboarded on 2026-03-07"
         ]
       },
       {
@@ -1309,9 +1352,10 @@
         "repoPath": "scientific-skills/scvi-tools",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-035 imported and onboarded on 2026-03-07"
         ]
       },
       {
@@ -1320,9 +1364,10 @@
         "repoPath": "scientific-skills/seaborn",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-035 imported and onboarded on 2026-03-07"
         ]
       },
       {
@@ -1331,9 +1376,10 @@
         "repoPath": "scientific-skills/shap",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-036 imported and onboarded on 2026-03-07"
         ]
       },
       {
@@ -1342,9 +1388,10 @@
         "repoPath": "scientific-skills/simpy",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-036 imported and onboarded on 2026-03-07"
         ]
       },
       {
@@ -1353,9 +1400,10 @@
         "repoPath": "scientific-skills/stable-baselines3",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-036 imported and onboarded on 2026-03-07"
         ]
       },
       {
@@ -1364,9 +1412,10 @@
         "repoPath": "scientific-skills/statistical-analysis",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-036 imported and onboarded on 2026-03-07"
         ]
       },
       {
@@ -1375,9 +1424,10 @@
         "repoPath": "scientific-skills/statsmodels",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-036 imported and onboarded on 2026-03-07"
         ]
       },
       {
@@ -1386,9 +1436,10 @@
         "repoPath": "scientific-skills/string-database",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-037 imported and onboarded on 2026-03-07"
         ]
       },
       {
@@ -1397,9 +1448,10 @@
         "repoPath": "scientific-skills/sympy",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-037 imported and onboarded on 2026-03-07"
         ]
       },
       {
@@ -1408,9 +1460,10 @@
         "repoPath": "scientific-skills/tiledbvcf",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-037 imported and onboarded on 2026-03-07"
         ]
       },
       {
@@ -1419,9 +1472,10 @@
         "repoPath": "scientific-skills/timesfm-forecasting",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-037 imported and onboarded on 2026-03-07"
         ]
       },
       {
@@ -1430,9 +1484,10 @@
         "repoPath": "scientific-skills/torch_geometric",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-037 imported and onboarded on 2026-03-07"
         ]
       },
       {
@@ -1441,9 +1496,10 @@
         "repoPath": "scientific-skills/torchdrug",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-038 imported and onboarded on 2026-03-07"
         ]
       },
       {
@@ -1452,9 +1508,10 @@
         "repoPath": "scientific-skills/transformers",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-038 imported and onboarded on 2026-03-07"
         ]
       },
       {
@@ -1463,9 +1520,10 @@
         "repoPath": "scientific-skills/treatment-plans",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-038 imported and onboarded on 2026-03-07"
         ]
       },
       {
@@ -1474,9 +1532,10 @@
         "repoPath": "scientific-skills/umap-learn",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-038 imported and onboarded on 2026-03-07"
         ]
       },
       {
@@ -1485,9 +1544,10 @@
         "repoPath": "scientific-skills/uniprot-database",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-038 imported and onboarded on 2026-03-07"
         ]
       },
       {
@@ -1496,9 +1556,10 @@
         "repoPath": "scientific-skills/usfiscaldata",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-039 imported and onboarded on 2026-03-07"
         ]
       },
       {
@@ -1507,9 +1568,10 @@
         "repoPath": "scientific-skills/uspto-database",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-039 imported and onboarded on 2026-03-07"
         ]
       },
       {
@@ -1518,9 +1580,10 @@
         "repoPath": "scientific-skills/vaex",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-039 imported and onboarded on 2026-03-07"
         ]
       },
       {
@@ -1529,9 +1592,10 @@
         "repoPath": "scientific-skills/venue-templates",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-039 imported and onboarded on 2026-03-07"
         ]
       },
       {
@@ -1540,9 +1604,10 @@
         "repoPath": "scientific-skills/what-if-oracle",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-039 imported and onboarded on 2026-03-07"
         ]
       },
       {
@@ -1551,9 +1616,10 @@
         "repoPath": "scientific-skills/zarr-python",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-040 imported and onboarded on 2026-03-07"
         ]
       },
       {
@@ -1562,9 +1628,10 @@
         "repoPath": "scientific-skills/zinc-database",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-040 imported and onboarded on 2026-03-07"
         ]
       },
       {
@@ -1573,9 +1640,11 @@
         "repoPath": "skills/core-numerical/linear-solvers",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "upstream path missing in claude-scientific-skills snapshot on 2026-03-07",
+          "batch-041 imported and onboarded on 2026-03-07"
         ]
       },
       {
@@ -1584,9 +1653,11 @@
         "repoPath": "skills/core-numerical/mesh-generation",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "upstream path missing in claude-scientific-skills snapshot on 2026-03-07",
+          "batch-041 imported and onboarded on 2026-03-07"
         ]
       },
       {
@@ -1595,9 +1666,11 @@
         "repoPath": "skills/core-numerical/nonlinear-solvers",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "upstream path missing in claude-scientific-skills snapshot on 2026-03-07",
+          "batch-041 imported and onboarded on 2026-03-07"
         ]
       },
       {
@@ -1606,9 +1679,10 @@
         "repoPath": "skills/core-numerical/numerical-integration",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-041 imported and onboarded on 2026-03-07"
         ]
       },
       {
@@ -1617,9 +1691,10 @@
         "repoPath": "skills/core-numerical/numerical-stability",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-041 imported and onboarded on 2026-03-07"
         ]
       },
       {
@@ -1628,9 +1703,10 @@
         "repoPath": "skills/ontology/ontology-explorer",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-042 imported and onboarded on 2026-03-07"
         ]
       },
       {
@@ -1639,9 +1715,10 @@
         "repoPath": "skills/ontology/ontology-mapper",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-042 imported and onboarded on 2026-03-07"
         ]
       },
       {
@@ -1650,9 +1727,10 @@
         "repoPath": "skills/ontology/ontology-validator",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-042 imported and onboarded on 2026-03-07"
         ]
       },
       {
@@ -1661,9 +1739,10 @@
         "repoPath": "skills/simulation-workflow/parameter-optimization",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-042 imported and onboarded on 2026-03-07"
         ]
       },
       {
@@ -1672,9 +1751,10 @@
         "repoPath": "skills/simulation-workflow/performance-profiling",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-042 imported and onboarded on 2026-03-07"
         ]
       },
       {
@@ -1683,9 +1763,10 @@
         "repoPath": "skills/simulation-workflow/post-processing",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-043 imported and onboarded on 2026-03-07"
         ]
       },
       {
@@ -1694,9 +1775,10 @@
         "repoPath": "skills/simulation-workflow/simulation-orchestrator",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-043 imported and onboarded on 2026-03-07"
         ]
       },
       {
@@ -1705,9 +1787,10 @@
         "repoPath": "skills/simulation-workflow/simulation-validator",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-043 imported and onboarded on 2026-03-07"
         ]
       },
       {
@@ -1716,9 +1799,10 @@
         "repoPath": "skills/hpc-deployment/slurm-job-script-generator",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-043 imported and onboarded on 2026-03-07"
         ]
       },
       {
@@ -1727,9 +1811,10 @@
         "repoPath": "skills/core-numerical/time-stepping",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-043 imported and onboarded on 2026-03-07"
         ]
       },
       {
@@ -1738,9 +1823,10 @@
         "repoPath": "terraform/provider-development/skills/provider-resources",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-044 imported and onboarded on 2026-03-07"
         ]
       },
       {
@@ -1749,9 +1835,10 @@
         "repoPath": "packer/hcp/skills/push-to-registry",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-044 imported and onboarded on 2026-03-07"
         ]
       },
       {
@@ -1760,9 +1847,10 @@
         "repoPath": "terraform/module-generation/skills/refactor-module",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-044 imported and onboarded on 2026-03-07"
         ]
       },
       {
@@ -1771,9 +1859,10 @@
         "repoPath": "terraform/provider-development/skills/run-acceptance-tests",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-044 imported and onboarded on 2026-03-07"
         ]
       },
       {
@@ -1782,9 +1871,10 @@
         "repoPath": "terraform/code-generation/skills/terraform-search-import",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-044 imported and onboarded on 2026-03-07"
         ]
       },
       {

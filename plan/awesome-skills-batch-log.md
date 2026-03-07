@@ -1188,3 +1188,810 @@
 - Audit：`PASS`
 - Onboard：`completed`
 - Sync：`completed`
+
+## Batch 027
+
+- 批次 ID：`batch-027`
+- 日期：`2026-03-06`
+- 類型：`import`
+- 數量：`5`
+- 項目：
+  1. `pdb-database`
+  2. `peer-review`
+  3. `pennylane`
+  4. `perplexity-search`
+  5. `phylogenetics`
+
+### 執行摘要
+
+1. Source 對齊：
+   - canonical repo：`K-Dense-AI/claude-scientific-skills`
+   - canonical path：`scientific-skills/<skill>`
+2. Import：
+   - 使用 codeload 封包來源匯入 5 個技能，並放置到 `public/SKILLS/<Category>/<skill>/`
+3. Audit：
+   - 檢查 `SKILL.md`、`references/`、`scripts/`、`assets/`
+   - 未發現 secrets、惡意 payload 或自動破壞性執行邏輯
+   - 審查報告：`plan/security-audits/batch-027.md`
+4. Onboard：
+   - 分類：
+     - `Scientific & Research Tools`: `pdb-database`, `pennylane`, `phylogenetics`
+     - `Writing & Research`: `peer-review`, `perplexity-search`
+   - 更新 `src/data/skills.ts`：id `297~301`
+   - 更新 `database/init_skills.sql`：id `297~301`
+5. Sync：
+   - `npm run prebuild` 重新產生 manifest
+6. Verify：
+   - `npm run build`
+   - `npm run test`
+7. Tracking：
+   - 更新 `plan/awesome-skills-tracking.json`（追加 `batch-027`）
+   - 更新 `plan/awesome-skills-work-queues.json`（本批次 5 筆標記 `done`）
+
+### 結果
+
+- Audit：`PASS`
+- Onboard：`completed`
+- Sync：`completed`
+
+## Batch 028
+
+- 批次 ID：`batch-028`
+- 日期：`2026-03-06`
+- 類型：`import`
+- 數量：`5`
+- 項目：
+  1. `plotly`
+  2. `polars`
+  3. `pptx-posters`
+  4. `protocolsio-integration`
+  5. `pubchem-database`
+
+### 執行摘要
+
+1. Source 對齊：
+   - canonical repo：`K-Dense-AI/claude-scientific-skills`
+   - canonical path：`scientific-skills/<skill>`
+2. Import：
+   - 匯入 5 個技能至 `public/SKILLS/<Category>/<skill>/`
+3. Audit：
+   - 檢查 `SKILL.md`、`references/`、`scripts/`、`assets/`
+   - 未發現 secrets、惡意 payload 或破壞性自動執行邏輯
+   - 審查報告：`plan/security-audits/batch-028.md`
+4. Onboard：
+   - 分類：
+     - `Data & Analysis`: `plotly`, `polars`
+     - `Writing & Research`: `pptx-posters`
+     - `Scientific & Research Tools`: `protocolsio-integration`, `pubchem-database`
+   - 更新 `src/data/skills.ts`：id `302~306`
+   - 更新 `database/init_skills.sql`：id `302~306`
+5. Sync：
+   - `npm run prebuild` 重新產生 manifest
+6. Verify：
+   - `npm run build`
+   - `npm run test`
+7. Tracking：
+   - 更新 `plan/awesome-skills-tracking.json`（追加 `batch-028`）
+   - 更新 `plan/awesome-skills-work-queues.json`（本批次 5 筆標記 `done`）
+
+### 結果
+
+- Audit：`PASS`
+- Onboard：`completed`
+- Sync：`completed`
+
+## Batch 029
+
+- 批次 ID：`batch-029`
+- 日期：`2026-03-06`
+- 類型：`import`
+- 數量：`5`
+- 項目：
+  1. `pubmed-database`
+  2. `pufferlib`
+  3. `pydeseq2`
+  4. `pydicom`
+  5. `pyhealth`
+
+### 執行摘要
+
+1. Source 對齊：
+   - canonical repo：`K-Dense-AI/claude-scientific-skills`
+   - canonical path：`scientific-skills/<skill>`
+2. Import：
+   - 匯入 5 個技能至 `public/SKILLS/<Category>/<skill>/`
+3. Audit：
+   - 檢查 `SKILL.md`、`references/`、`scripts/`
+   - 未發現 secrets、惡意 payload 或破壞性自動執行邏輯
+   - 審查報告：`plan/security-audits/batch-029.md`
+4. Onboard：
+   - 分類：
+     - `Writing & Research`: `pubmed-database`
+     - `Scientific & Research Tools`: `pufferlib`, `pydeseq2`
+     - `Health & Life Sciences`: `pydicom`, `pyhealth`
+   - 更新 `src/data/skills.ts`：id `307~311`
+   - 更新 `database/init_skills.sql`：id `307~311`
+5. Sync：
+   - `npm run prebuild` 重新產生 manifest
+6. Verify：
+   - `npm run build`
+   - `npm run test`
+7. Tracking：
+   - 更新 `plan/awesome-skills-tracking.json`（追加 `batch-029`）
+   - 更新 `plan/awesome-skills-work-queues.json`（本批次 5 筆標記 `done`）
+
+### 結果
+
+- Audit：`PASS`
+- Onboard：`completed`
+- Sync：`completed`
+
+## Batch 030
+
+- 批次 ID：`batch-030`
+- 日期：`2026-03-06`
+- 類型：`import`
+- 數量：`5`
+- 項目：
+  1. `pylabrobot`
+  2. `pymatgen`
+  3. `pymc`
+  4. `pymoo`
+  5. `pyopenms`
+
+### 執行摘要
+
+1. Source 對齊：
+   - canonical repo：`K-Dense-AI/claude-scientific-skills`
+   - canonical path：`scientific-skills/<skill>`
+2. Import：
+   - 匯入 5 個技能至 `public/SKILLS/Scientific & Research Tools/<skill>/`
+3. Audit：
+   - 檢查 `SKILL.md`、`references/`、`scripts/`、`assets/`
+   - 未發現 secrets、惡意 payload 或破壞性自動執行邏輯
+   - 審查報告：`plan/security-audits/batch-030.md`
+4. Onboard：
+   - 分類：
+     - `Scientific & Research Tools`: `pylabrobot`, `pymatgen`, `pymc`, `pymoo`, `pyopenms`
+   - 更新 `src/data/skills.ts`：id `312~316`
+   - 更新 `database/init_skills.sql`：id `312~316`
+5. Sync：
+   - `npm run prebuild` 重新產生 manifest
+6. Verify：
+   - `npm run build`
+   - `npm run test`
+7. Tracking：
+   - 更新 `plan/awesome-skills-tracking.json`（追加 `batch-030`）
+   - 更新 `plan/awesome-skills-work-queues.json`（本批次 5 筆標記 `done`）
+
+### 結果
+
+- Audit：`PASS`
+- Onboard：`completed`
+- Sync：`completed`
+
+## Batch 031
+
+- 批次 ID：`batch-031`
+- 日期：`2026-03-06`
+- 類型：`import`
+- 數量：`5`
+- 項目：
+  1. `pysam`
+  2. `pytdc`
+  3. `pytorch-lightning`
+  4. `pyzotero`
+  5. `qiskit`
+
+### 執行摘要
+
+1. Source 對齊：
+   - canonical repo：`K-Dense-AI/claude-scientific-skills`
+   - canonical path：`scientific-skills/<skill>`
+2. Import：
+   - 匯入 5 個技能至 `public/SKILLS/Scientific & Research Tools/<skill>/`
+3. Audit：
+   - 檢查 `SKILL.md`、`references/`、`scripts/`
+   - 未發現 secrets、惡意 payload 或破壞性自動執行邏輯
+   - 審查報告：`plan/security-audits/batch-031.md`
+4. Onboard：
+   - 分類：
+     - `Scientific & Research Tools`: `pysam`, `pytdc`, `pytorch-lightning`, `pyzotero`, `qiskit`
+   - 更新 `src/data/skills.ts`：id `317~321`
+   - 更新 `database/init_skills.sql`：id `317~321`
+5. Sync：
+   - `npm run prebuild` 重新產生 manifest
+6. Verify：
+   - `npm run build`
+   - `npm run test`
+7. Tracking：
+   - 更新 `plan/awesome-skills-tracking.json`（追加 `batch-031`）
+   - 更新 `plan/awesome-skills-work-queues.json`（本批次 5 筆標記 `done`）
+
+### 結果
+
+- Audit：`PASS`
+- Onboard：`completed`
+- Sync：`completed`
+
+## Batch 032
+
+- 批次 ID：`batch-032`
+- 日期：`2026-03-06`
+- 類型：`import`
+- 數量：`5`
+- 項目：
+  1. `qutip`
+  2. `rdkit`
+  3. `reactome-database`
+  4. `research-grants`
+  5. `research-lookup`
+
+### 執行摘要
+
+1. Source 對齊：
+   - canonical repo：`K-Dense-AI/claude-scientific-skills`
+   - canonical path：`scientific-skills/<skill>`
+2. Import：
+   - 匯入 5 個技能至 `public/SKILLS/<Category>/<skill>/`
+3. Audit：
+   - 檢查 `SKILL.md`、`references/`、`scripts/`、`assets/`
+   - 未發現 secrets、惡意 payload 或破壞性自動執行邏輯
+   - 審查報告：`plan/security-audits/batch-032.md`
+4. Onboard：
+   - 分類：
+     - `Scientific & Research Tools`: `qutip`, `rdkit`, `reactome-database`
+     - `Writing & Research`: `research-grants`, `research-lookup`
+   - 更新 `src/data/skills.ts`：id `322~326`
+   - 更新 `database/init_skills.sql`：id `322~326`
+5. Sync：
+   - `npm run prebuild` 重新產生 manifest
+6. Verify：
+   - `npm run build`
+   - `npm run test`
+7. Tracking：
+   - 更新 `plan/awesome-skills-tracking.json`（追加 `batch-032`）
+   - 更新 `plan/awesome-skills-work-queues.json`（本批次 5 筆標記 `done`）
+
+### 結果
+
+- Audit：`PASS`
+- Onboard：`completed`
+- Sync：`completed`
+
+## Batch 033
+
+- 批次 ID：`batch-033`
+- 日期：`2026-03-06`
+- 類型：`import`
+- 數量：`5`
+- 項目：
+  1. `rowan`
+  2. `scanpy`
+  3. `scholar-evaluation`
+  4. `scientific-brainstorming`
+  5. `scientific-critical-thinking`
+
+### 執行摘要
+
+1. Source 對齊：
+   - canonical repo：`K-Dense-AI/claude-scientific-skills`
+   - canonical path：`scientific-skills/<skill>`
+2. Import：
+   - 匯入 5 個技能至 `public/SKILLS/<Category>/<skill>/`
+3. Audit：
+   - 檢查 `SKILL.md`、`references/`、`scripts/`、`assets/`
+   - 未發現 secrets、惡意 payload 或破壞性自動執行邏輯
+   - 審查報告：`plan/security-audits/batch-033.md`
+4. Onboard：
+   - 分類：
+     - `Scientific & Research Tools`: `rowan`, `scanpy`, `scholar-evaluation`, `scientific-critical-thinking`
+     - `Writing & Research`: `scientific-brainstorming`
+   - 更新 `src/data/skills.ts`：id `327~331`
+   - 更新 `database/init_skills.sql`：id `327~331`
+5. Sync：
+   - `npm run prebuild` 重新產生 manifest
+6. Verify：
+   - `npm run build`
+   - `npm run test`
+7. Tracking：
+   - 更新 `plan/awesome-skills-tracking.json`（追加 `batch-033`）
+   - 更新 `plan/awesome-skills-work-queues.json`（本批次 5 筆標記 `done`）
+
+### 結果
+
+- Audit：`PASS`
+- Onboard：`completed`
+- Sync：`completed`
+
+## Batch 034
+
+- 批次 ID：`batch-034`
+- 日期：`2026-03-06`
+- 類型：`import`
+- 數量：`5`
+- 項目：
+  1. `scientific-schematics`
+  2. `scientific-slides`
+  3. `scientific-visualization`
+  4. `scientific-writing`
+  5. `scikit-bio`
+
+### 執行摘要
+
+1. Source 對齊：
+   - canonical repo：`K-Dense-AI/claude-scientific-skills`
+   - canonical path：`scientific-skills/<skill>`
+2. Import：
+   - 匯入 5 個技能至 `public/SKILLS/<Category>/<skill>/`
+3. Audit：
+   - 檢查 `SKILL.md`、`references/`、`scripts/`、`assets/`
+   - 未發現 secrets、惡意 payload 或破壞性自動執行邏輯
+   - 審查報告：`plan/security-audits/batch-034.md`
+4. Onboard：
+   - 分類：
+     - `Scientific & Research Tools`: `scientific-schematics`, `scientific-slides`, `scientific-visualization`, `scikit-bio`
+     - `Writing & Research`: `scientific-writing`
+   - 更新 `src/data/skills.ts`：id `332~336`
+   - 更新 `database/init_skills.sql`：id `332~336`
+5. Sync：
+   - `npm run prebuild` 重新產生 manifest
+6. Verify：
+   - `npm run build`
+   - `npm run test`
+7. Tracking：
+   - 更新 `plan/awesome-skills-tracking.json`（追加 `batch-034`）
+   - 更新 `plan/awesome-skills-work-queues.json`（本批次 5 筆標記 `done`）
+
+### 結果
+
+- Audit：`PASS`
+- Onboard：`completed`
+- Sync：`completed`
+
+## Batch 035
+
+- 批次 ID：`batch-035`
+- 日期：`2026-03-07`
+- 類型：`import`
+- 數量：`5`
+- 項目：
+  1. `scikit-learn`
+  2. `scikit-survival`
+  3. `scvelo`
+  4. `scvi-tools`
+  5. `seaborn`
+
+### 執行摘要
+
+1. Source 對齊：
+   - canonical repo：`K-Dense-AI/claude-scientific-skills`
+   - canonical path：`scientific-skills/<skill>`
+2. Import：
+   - 匯入 5 個技能至 `public/SKILLS/Scientific & Research Tools/<skill>/`
+3. Audit：
+   - 檢查 `SKILL.md`、`references/`、`scripts/`
+   - 未發現 secrets、惡意 payload 或破壞性自動執行邏輯
+   - 審查報告：`plan/security-audits/batch-035.md`
+4. Onboard：
+   - 分類：
+     - `Scientific & Research Tools`: `scikit-learn`, `scikit-survival`, `scvelo`, `scvi-tools`, `seaborn`
+   - 更新 `src/data/skills.ts`：id `337~341`
+   - 更新 `database/init_skills.sql`：id `337~341`
+5. Sync：
+   - `npm run prebuild` 重新產生 manifest
+6. Verify：
+   - `npm run build`
+   - `npm run test`
+7. Tracking：
+   - 更新 `plan/awesome-skills-tracking.json`（追加 `batch-035`）
+   - 更新 `plan/awesome-skills-work-queues.json`（本批次 5 筆標記 `done`）
+
+### 結果
+
+- Audit：`PASS`
+- Onboard：`completed`
+- Sync：`completed`
+
+## Batch 036
+
+- 批次 ID：`batch-036`
+- 日期：`2026-03-07`
+- 類型：`import`
+- 數量：`5`
+- 項目：
+  1. `shap`
+  2. `simpy`
+  3. `stable-baselines3`
+  4. `statistical-analysis`
+  5. `statsmodels`
+
+### 執行摘要
+
+1. Source 對齊：
+   - canonical repo：`K-Dense-AI/claude-scientific-skills`
+   - canonical path：`scientific-skills/<skill>`
+2. Import：
+   - 匯入 5 個技能至 `public/SKILLS/Scientific & Research Tools/<skill>/`
+3. Audit：
+   - 檢查 `SKILL.md`、`references/`、`scripts/`
+   - 未發現 secrets、惡意 payload 或破壞性自動執行邏輯
+   - 審查報告：`plan/security-audits/batch-036.md`
+4. Onboard：
+   - 分類：
+     - `Scientific & Research Tools`: `shap`, `simpy`, `stable-baselines3`, `statistical-analysis`, `statsmodels`
+   - 更新 `src/data/skills.ts`：id `342~346`
+   - 更新 `database/init_skills.sql`：id `342~346`
+5. Sync：
+   - `npm run prebuild` 重新產生 manifest
+6. Verify：
+   - `npm run build`
+   - `npm run test`
+7. Tracking：
+   - 更新 `plan/awesome-skills-tracking.json`（追加 `batch-036`）
+   - 更新 `plan/awesome-skills-work-queues.json`（本批次 5 筆標記 `done`）
+
+### 結果
+
+- Audit：`PASS`
+- Onboard：`completed`
+- Sync：`completed`
+
+## Batch 037
+
+- 批次 ID：`batch-037`
+- 日期：`2026-03-07`
+- 類型：`import`
+- 數量：`5`
+- 項目：
+  1. `string-database`
+  2. `sympy`
+  3. `tiledbvcf`
+  4. `timesfm-forecasting`
+  5. `torch_geometric`
+
+### 執行摘要
+
+1. Source 對齊：
+   - canonical repo：`K-Dense-AI/claude-scientific-skills`
+   - canonical path：`scientific-skills/<skill>`
+   - `torch_geometric` 來源實際目錄為 `torch-geometric`，本地以 slug `torch_geometric` 上架
+2. Import：
+   - 匯入 5 個技能至 `public/SKILLS/Scientific & Research Tools/<skill>/`
+3. Audit：
+   - 檢查 `SKILL.md`、`references/`、`scripts/`、`examples/`
+   - 未發現 secrets、惡意 payload 或破壞性自動執行邏輯
+   - 審查報告：`plan/security-audits/batch-037.md`
+4. Onboard：
+   - 分類：
+     - `Scientific & Research Tools`: `string-database`, `sympy`, `tiledbvcf`, `timesfm-forecasting`, `torch_geometric`
+   - 更新 `src/data/skills.ts`：id `347~351`
+   - 更新 `database/init_skills.sql`：id `347~351`
+5. Sync：
+   - `npm run prebuild` 重新產生 manifest
+6. Verify：
+   - `npm run build`
+   - `npm run test`
+7. Tracking：
+   - 更新 `plan/awesome-skills-tracking.json`（追加 `batch-037`）
+   - 更新 `plan/awesome-skills-work-queues.json`（本批次 5 筆標記 `done`）
+
+### 結果
+
+- Audit：`PASS`
+- Onboard：`completed`
+- Sync：`completed`
+
+## Batch 038
+
+- 批次 ID：`batch-038`
+- 日期：`2026-03-07`
+- 類型：`import`
+- 數量：`5`
+- 項目：
+  1. `torchdrug`
+  2. `transformers`
+  3. `treatment-plans`
+  4. `umap-learn`
+  5. `uniprot-database`
+
+### 執行摘要
+
+1. Source 對齊：
+   - canonical repo：`K-Dense-AI/claude-scientific-skills`
+   - canonical path：`scientific-skills/<skill>`
+2. Import：
+   - 匯入 5 個技能至 `public/SKILLS/<category>/<skill>/`
+3. Audit：
+   - 檢查 `SKILL.md`、`references/`、`scripts/`、`assets/`
+   - 未發現 secrets、惡意 payload 或破壞性自動執行邏輯
+   - 審查報告：`plan/security-audits/batch-038.md`
+4. Onboard：
+   - 分類：
+     - `Scientific & Research Tools`: `torchdrug`, `transformers`, `umap-learn`, `uniprot-database`
+     - `Health & Life Sciences`: `treatment-plans`
+   - 更新 `src/data/skills.ts`：id `352~356`
+   - 更新 `database/init_skills.sql`：id `352~356`
+5. Sync：
+   - `npm run prebuild` 重新產生 manifest
+6. Verify：
+   - `npm run build`
+   - `npm run test`
+7. Tracking：
+   - 更新 `plan/awesome-skills-tracking.json`（追加 `batch-038`）
+   - 更新 `plan/awesome-skills-work-queues.json`（本批次 5 筆標記 `done`）
+
+### 結果
+
+- Audit：`PASS`
+- Onboard：`completed`
+- Sync：`completed`
+
+## Batch 039
+
+- 批次 ID：`batch-039`
+- 日期：`2026-03-07`
+- 類型：`import`
+- 數量：`5`
+- 項目：
+  1. `usfiscaldata`
+  2. `uspto-database`
+  3. `vaex`
+  4. `venue-templates`
+  5. `what-if-oracle`
+
+### 執行摘要
+
+1. Source 對齊：
+   - canonical repo：`K-Dense-AI/claude-scientific-skills`
+   - canonical path：`scientific-skills/<skill>`
+2. Import：
+   - 匯入 5 個技能至 `public/SKILLS/<category>/<skill>/`
+3. Audit：
+   - 檢查 `SKILL.md`、`references/`、`scripts/`、`assets/`
+   - 未發現 secrets、惡意 payload 或破壞性自動執行邏輯
+   - 審查報告：`plan/security-audits/batch-039.md`
+4. Onboard：
+   - 分類：
+     - `Data & Analysis`: `usfiscaldata`, `vaex`
+     - `Scientific & Research Tools`: `uspto-database`
+     - `Writing & Research`: `venue-templates`, `what-if-oracle`
+   - 更新 `src/data/skills.ts`：id `357~361`
+   - 更新 `database/init_skills.sql`：id `357~361`
+5. Sync：
+   - `npm run prebuild` 重新產生 manifest
+6. Verify：
+   - `npm run build`
+   - `npm run test`
+7. Tracking：
+   - 更新 `plan/awesome-skills-tracking.json`（追加 `batch-039`）
+   - 更新 `plan/awesome-skills-work-queues.json`（本批次 5 筆標記 `done`）
+
+### 結果
+
+- Audit：`PASS`
+- Onboard：`completed`
+- Sync：`completed`
+
+## Batch 040
+
+- 批次 ID：`batch-040`
+- 日期：`2026-03-07`
+- 類型：`import`（partial）
+- 數量：`2/5`
+- 匯入項目：
+  1. `zarr-python`
+  2. `zinc-database`
+- 上游缺失（未匯入）：
+  3. `linear-solvers`
+  4. `mesh-generation`
+  5. `nonlinear-solvers`
+
+### 執行摘要
+
+1. Source 對齊：
+   - canonical repo：`K-Dense-AI/claude-scientific-skills`
+   - canonical path：`scientific-skills/<skill>`
+   - `linear-solvers`、`mesh-generation`、`nonlinear-solvers` 於上游快照不存在
+2. Import：
+   - 匯入 2 個技能至 `public/SKILLS/<category>/<skill>/`
+3. Audit：
+   - 檢查 `SKILL.md`、`references/`
+   - 未發現 secrets、惡意 payload 或破壞性自動執行邏輯
+   - 審查報告：`plan/security-audits/batch-040.md`
+4. Onboard：
+   - 分類：
+     - `Data & Analysis`: `zarr-python`
+     - `Scientific & Research Tools`: `zinc-database`
+   - 更新 `src/data/skills.ts`：id `362~363`
+   - 更新 `database/init_skills.sql`：id `362~363`
+5. Sync：
+   - `npm run prebuild` 重新產生 manifest
+6. Verify：
+   - `npm run build`
+   - `npm run test`
+7. Tracking：
+   - 更新 `plan/awesome-skills-tracking.json`（追加 `batch-040` partial）
+   - 更新 `plan/awesome-skills-work-queues.json`（2 筆標記 `done`，3 筆補上 upstream missing 註記）
+
+### 結果
+
+- Audit：`PASS`
+- Onboard：`partial_completed`（2/5）
+- Sync：`completed`
+
+## Batch 041
+
+- 批次 ID：`batch-041`
+- 日期：`2026-03-07`
+- 類型：`import`
+- 數量：`5`
+- 項目：
+  1. `linear-solvers`
+  2. `mesh-generation`
+  3. `nonlinear-solvers`
+  4. `numerical-integration`
+  5. `numerical-stability`
+
+### 執行摘要
+
+1. Source 對齊：
+   - canonical repo：`HeshamFS/materials-simulation-skills`
+   - canonical path：`skills/core-numerical/<skill>`
+2. Import：
+   - 匯入 5 個技能至 `public/SKILLS/Scientific & Research Tools/<skill>/`
+3. Audit：
+   - 檢查 `SKILL.md`、`references/`、`scripts/`
+   - 未發現 secrets、惡意 payload 或破壞性自動執行邏輯
+   - 審查報告：`plan/security-audits/batch-041.md`
+4. Onboard：
+   - 分類：
+     - `Scientific & Research Tools`: `linear-solvers`, `mesh-generation`, `nonlinear-solvers`, `numerical-integration`, `numerical-stability`
+   - 更新 `src/data/skills.ts`：id `364~368`
+   - 更新 `database/init_skills.sql`：id `364~368`
+5. Sync：
+   - `npm run prebuild` 重新產生 manifest
+6. Verify：
+   - `npm run build`
+   - `npm run test`
+7. Tracking：
+   - 更新 `plan/awesome-skills-tracking.json`（追加 `batch-041`）
+   - 更新 `plan/awesome-skills-work-queues.json`（本批次 5 筆標記 `done`）
+
+### 結果
+
+- Audit：`PASS`
+- Onboard：`completed`
+- Sync：`completed`
+
+## Batch 042
+
+- 批次 ID：`batch-042`
+- 日期：`2026-03-07`
+- 類型：`import`
+- 數量：`5`
+- 項目：
+  1. `ontology-explorer`
+  2. `ontology-mapper`
+  3. `ontology-validator`
+  4. `parameter-optimization`
+  5. `performance-profiling`
+
+### 執行摘要
+
+1. Source 對齊：
+   - canonical repo：`HeshamFS/materials-simulation-skills`
+   - canonical path：`skills/ontology/<skill>`、`skills/simulation-workflow/<skill>`
+2. Import：
+   - 匯入 5 個技能至 `public/SKILLS/Scientific & Research Tools/<skill>/`
+3. Audit：
+   - 檢查 `SKILL.md`、`references/`、`scripts/`
+   - 未發現 secrets、惡意 payload 或破壞性自動執行邏輯
+   - 審查報告：`plan/security-audits/batch-042.md`
+4. Onboard：
+   - 分類：
+     - `Scientific & Research Tools`: `ontology-explorer`, `ontology-mapper`, `ontology-validator`, `parameter-optimization`, `performance-profiling`
+   - 更新 `src/data/skills.ts`：id `369~373`
+   - 更新 `database/init_skills.sql`：id `369~373`
+5. Sync：
+   - `npm run prebuild` 重新產生 manifest
+6. Verify：
+   - `npm run build`
+   - `npm run test`
+7. Tracking：
+   - 更新 `plan/awesome-skills-tracking.json`（追加 `batch-042`）
+   - 更新 `plan/awesome-skills-work-queues.json`（本批次 5 筆標記 `done`）
+
+### 結果
+
+- Audit：`PASS`
+- Onboard：`completed`
+- Sync：`completed`
+
+## Batch 043
+
+- 批次 ID：`batch-043`
+- 日期：`2026-03-07`
+- 類型：`import`
+- 數量：`5`
+- 項目：
+  1. `post-processing`
+  2. `simulation-orchestrator`
+  3. `simulation-validator`
+  4. `slurm-job-script-generator`
+  5. `time-stepping`
+
+### 執行摘要
+
+1. Source 對齊：
+   - canonical repo：`HeshamFS/materials-simulation-skills`
+   - canonical path：`skills/simulation-workflow/<skill>`、`skills/hpc-deployment/<skill>`、`skills/core-numerical/<skill>`
+2. Import：
+   - 匯入 5 個技能至 `public/SKILLS/Scientific & Research Tools/<skill>/`
+3. Audit：
+   - 檢查 `SKILL.md`、`references/`、`scripts/`
+   - 未發現 secrets、惡意 payload 或破壞性自動執行邏輯
+   - 審查報告：`plan/security-audits/batch-043.md`
+4. Onboard：
+   - 分類：
+     - `Scientific & Research Tools`: `post-processing`, `simulation-orchestrator`, `simulation-validator`, `slurm-job-script-generator`, `time-stepping`
+   - 更新 `src/data/skills.ts`：id `374~378`
+   - 更新 `database/init_skills.sql`：id `374~378`
+5. Sync：
+   - `npm run prebuild` 重新產生 manifest
+6. Verify：
+   - `npm run build`
+   - `npm run test`
+7. Tracking：
+   - 更新 `plan/awesome-skills-tracking.json`（追加 `batch-043`）
+   - 更新 `plan/awesome-skills-work-queues.json`（本批次 5 筆標記 `done`）
+
+### 結果
+
+- Audit：`PASS`
+- Onboard：`completed`
+- Sync：`completed`
+
+## Batch 044
+
+- 批次 ID：`batch-044`
+- 日期：`2026-03-07`
+- 類型：`import`
+- 數量：`5`
+- 項目：
+  1. `provider-resources`
+  2. `push-to-registry`
+  3. `refactor-module`
+  4. `run-acceptance-tests`
+  5. `terraform-search-import`
+
+### 執行摘要
+
+1. Source 對齊：
+   - canonical repo：`hashicorp/agent-skills`
+   - canonical path：`terraform/*/skills/<skill>`、`packer/hcp/skills/<skill>`
+2. Import：
+   - 匯入 5 個技能至 `public/SKILLS/Infrastructure & Cloud/<skill>/`
+3. Audit：
+   - 檢查 `SKILL.md`、`references/`、`scripts/`
+   - 未發現 secrets、惡意 payload 或破壞性自動執行邏輯
+   - 審查報告：`plan/security-audits/batch-044.md`
+4. Onboard：
+   - 分類：
+     - `Infrastructure & Cloud`: `provider-resources`, `push-to-registry`, `refactor-module`, `run-acceptance-tests`, `terraform-search-import`
+   - 更新 `src/data/skills.ts`：id `379~383`
+   - 更新 `database/init_skills.sql`：id `379~383`
+5. Sync：
+   - `npm run prebuild` 重新產生 manifest
+6. Verify：
+   - `npm run build`
+   - `npm run test`
+7. Tracking：
+   - 更新 `plan/awesome-skills-tracking.json`（追加 `batch-044`）
+   - 更新 `plan/awesome-skills-work-queues.json`（本批次 5 筆標記 `done`）
+
+### 結果
+
+- Audit：`PASS`
+- Onboard：`completed`
+- Sync：`completed`

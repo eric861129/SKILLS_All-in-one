@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-06T14:45:34.659Z",
+  "generatedAt": "2026-03-07T03:28:32.000Z",
   "sourceReadme": "https://raw.githubusercontent.com/BehiSecc/awesome-claude-skills/main/README.md",
   "stats": {
-    "localSkills": 280,
+    "localSkills": 367,
     "discoveredRepoLinks": 89,
     "expandedCandidates": 402,
     "uniqueCandidates": 374,
-    "missing": 150,
+    "missing": 63,
     "urlMismatch": 0,
     "authorMismatch": 0,
     "fetchFailures": 26
@@ -505,16 +505,355 @@
         "onboard": "completed",
         "sync": "completed"
       }
+    },
+    {
+      "id": "batch-027",
+      "type": "import",
+      "size": 5,
+      "status": "completed",
+      "items": [
+        "pdb-database",
+        "peer-review",
+        "pennylane",
+        "perplexity-search",
+        "phylogenetics"
+      ],
+      "checklist": {
+        "import": "completed",
+        "audit": "pass",
+        "onboard": "completed",
+        "sync": "completed"
+      }
+    },
+    {
+      "id": "batch-028",
+      "type": "import",
+      "size": 5,
+      "status": "completed",
+      "items": [
+        "plotly",
+        "polars",
+        "pptx-posters",
+        "protocolsio-integration",
+        "pubchem-database"
+      ],
+      "checklist": {
+        "import": "completed",
+        "audit": "pass",
+        "onboard": "completed",
+        "sync": "completed"
+      }
+    },
+    {
+      "id": "batch-029",
+      "type": "import",
+      "size": 5,
+      "status": "completed",
+      "items": [
+        "pubmed-database",
+        "pufferlib",
+        "pydeseq2",
+        "pydicom",
+        "pyhealth"
+      ],
+      "checklist": {
+        "import": "completed",
+        "audit": "pass",
+        "onboard": "completed",
+        "sync": "completed"
+      }
+    },
+    {
+      "id": "batch-030",
+      "type": "import",
+      "size": 5,
+      "status": "completed",
+      "items": [
+        "pylabrobot",
+        "pymatgen",
+        "pymc",
+        "pymoo",
+        "pyopenms"
+      ],
+      "checklist": {
+        "import": "completed",
+        "audit": "pass",
+        "onboard": "completed",
+        "sync": "completed"
+      }
+    },
+    {
+      "id": "batch-031",
+      "type": "import",
+      "size": 5,
+      "status": "completed",
+      "items": [
+        "pysam",
+        "pytdc",
+        "pytorch-lightning",
+        "pyzotero",
+        "qiskit"
+      ],
+      "checklist": {
+        "import": "completed",
+        "audit": "pass",
+        "onboard": "completed",
+        "sync": "completed"
+      }
+    },
+    {
+      "id": "batch-032",
+      "type": "import",
+      "size": 5,
+      "status": "completed",
+      "items": [
+        "qutip",
+        "rdkit",
+        "reactome-database",
+        "research-grants",
+        "research-lookup"
+      ],
+      "checklist": {
+        "import": "completed",
+        "audit": "pass",
+        "onboard": "completed",
+        "sync": "completed"
+      }
+    },
+    {
+      "id": "batch-033",
+      "type": "import",
+      "size": 5,
+      "status": "completed",
+      "items": [
+        "rowan",
+        "scanpy",
+        "scholar-evaluation",
+        "scientific-brainstorming",
+        "scientific-critical-thinking"
+      ],
+      "checklist": {
+        "import": "completed",
+        "audit": "pass",
+        "onboard": "completed",
+        "sync": "completed"
+      }
+    },
+    {
+      "id": "batch-034",
+      "type": "import",
+      "size": 5,
+      "status": "completed",
+      "items": [
+        "scientific-schematics",
+        "scientific-slides",
+        "scientific-visualization",
+        "scientific-writing",
+        "scikit-bio"
+      ],
+      "checklist": {
+        "import": "completed",
+        "audit": "pass",
+        "onboard": "completed",
+        "sync": "completed"
+      }
+    },
+    {
+      "id": "batch-035",
+      "type": "import",
+      "size": 5,
+      "status": "completed",
+      "items": [
+        "scikit-learn",
+        "scikit-survival",
+        "scvelo",
+        "scvi-tools",
+        "seaborn"
+      ],
+      "checklist": {
+        "import": "completed",
+        "audit": "pass",
+        "onboard": "completed",
+        "sync": "completed"
+      }
+    },
+    {
+      "id": "batch-036",
+      "type": "import",
+      "size": 5,
+      "status": "completed",
+      "items": [
+        "shap",
+        "simpy",
+        "stable-baselines3",
+        "statistical-analysis",
+        "statsmodels"
+      ],
+      "checklist": {
+        "import": "completed",
+        "audit": "pass",
+        "onboard": "completed",
+        "sync": "completed"
+      }
+    },
+    {
+      "id": "batch-037",
+      "type": "import",
+      "size": 5,
+      "status": "completed",
+      "items": [
+        "string-database",
+        "sympy",
+        "tiledbvcf",
+        "timesfm-forecasting",
+        "torch_geometric"
+      ],
+      "checklist": {
+        "import": "completed",
+        "audit": "pass",
+        "onboard": "completed",
+        "sync": "completed"
+      }
+    },
+    {
+      "id": "batch-038",
+      "type": "import",
+      "size": 5,
+      "status": "completed",
+      "items": [
+        "torchdrug",
+        "transformers",
+        "treatment-plans",
+        "umap-learn",
+        "uniprot-database"
+      ],
+      "checklist": {
+        "import": "completed",
+        "audit": "pass",
+        "onboard": "completed",
+        "sync": "completed"
+      }
+    },
+    {
+      "id": "batch-039",
+      "type": "import",
+      "size": 5,
+      "status": "completed",
+      "items": [
+        "usfiscaldata",
+        "uspto-database",
+        "vaex",
+        "venue-templates",
+        "what-if-oracle"
+      ],
+      "checklist": {
+        "import": "completed",
+        "audit": "pass",
+        "onboard": "completed",
+        "sync": "completed"
+      }
+    },
+    {
+      "id": "batch-040",
+      "type": "import",
+      "size": 2,
+      "status": "partial",
+      "items": [
+        "zarr-python",
+        "zinc-database"
+      ],
+      "checklist": {
+        "import": "partial_completed",
+        "audit": "pass",
+        "onboard": "partial_completed",
+        "sync": "completed"
+      }
+    },
+    {
+      "id": "batch-041",
+      "type": "import",
+      "size": 5,
+      "status": "completed",
+      "items": [
+        "linear-solvers",
+        "mesh-generation",
+        "nonlinear-solvers",
+        "numerical-integration",
+        "numerical-stability"
+      ],
+      "checklist": {
+        "import": "completed",
+        "audit": "pass",
+        "onboard": "completed",
+        "sync": "completed"
+      }
+    },
+    {
+      "id": "batch-042",
+      "type": "import",
+      "size": 5,
+      "status": "completed",
+      "items": [
+        "ontology-explorer",
+        "ontology-mapper",
+        "ontology-validator",
+        "parameter-optimization",
+        "performance-profiling"
+      ],
+      "checklist": {
+        "import": "completed",
+        "audit": "pass",
+        "onboard": "completed",
+        "sync": "completed"
+      }
+    },
+    {
+      "id": "batch-043",
+      "type": "import",
+      "size": 5,
+      "status": "completed",
+      "items": [
+        "post-processing",
+        "simulation-orchestrator",
+        "simulation-validator",
+        "slurm-job-script-generator",
+        "time-stepping"
+      ],
+      "checklist": {
+        "import": "completed",
+        "audit": "pass",
+        "onboard": "completed",
+        "sync": "completed"
+      }
+    },
+    {
+      "id": "batch-044",
+      "type": "import",
+      "size": 5,
+      "status": "completed",
+      "items": [
+        "provider-resources",
+        "push-to-registry",
+        "refactor-module",
+        "run-acceptance-tests",
+        "terraform-search-import"
+      ],
+      "checklist": {
+        "import": "completed",
+        "audit": "pass",
+        "onboard": "completed",
+        "sync": "completed"
+      }
     }
   ],
   "nextBatchProposals": {
     "correction": [],
     "import": [
-      "pdb-database",
-      "peer-review",
-      "pennylane",
-      "perplexity-search",
-      "phylogenetics"
+      "terraform-stacks",
+      "terraform-style-guide",
+      "terraform-test",
+      "windows-builder",
+      "framework"
     ]
   },
   "failures": [
@@ -4255,7 +4594,7 @@
     },
     {
       "sourceSlug": "linear-solvers",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "linear-solvers",
         "originUrl": "https://github.com/HeshamFS/materials-simulation-skills/tree/main/skills/core-numerical/linear-solvers",
@@ -4263,14 +4602,17 @@
         "repo": "HeshamFS/materials-simulation-skills",
         "repoPath": "skills/core-numerical/linear-solvers"
       },
-      "local": null,
+      "local": {
+        "id": 364,
+        "name": "linear-solvers",
+        "author": "HeshamFS",
+        "githubUrl": "https://github.com/HeshamFS/materials-simulation-skills/tree/main/skills/core-numerical/linear-solvers"
+      },
       "expected": {
         "author": "HeshamFS",
         "githubUrl": "https://github.com/HeshamFS/materials-simulation-skills/tree/main/skills/core-numerical/linear-solvers"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "literature-review",
@@ -4515,7 +4857,7 @@
     },
     {
       "sourceSlug": "mesh-generation",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "mesh-generation",
         "originUrl": "https://github.com/HeshamFS/materials-simulation-skills/tree/main/skills/core-numerical/mesh-generation",
@@ -4523,14 +4865,17 @@
         "repo": "HeshamFS/materials-simulation-skills",
         "repoPath": "skills/core-numerical/mesh-generation"
       },
-      "local": null,
+      "local": {
+        "id": 365,
+        "name": "mesh-generation",
+        "author": "HeshamFS",
+        "githubUrl": "https://github.com/HeshamFS/materials-simulation-skills/tree/main/skills/core-numerical/mesh-generation"
+      },
       "expected": {
         "author": "HeshamFS",
         "githubUrl": "https://github.com/HeshamFS/materials-simulation-skills/tree/main/skills/core-numerical/mesh-generation"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "metabolomics-workbench-database",
@@ -4971,7 +5316,7 @@
     },
     {
       "sourceSlug": "nonlinear-solvers",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "nonlinear-solvers",
         "originUrl": "https://github.com/HeshamFS/materials-simulation-skills/tree/main/skills/core-numerical/nonlinear-solvers",
@@ -4979,14 +5324,17 @@
         "repo": "HeshamFS/materials-simulation-skills",
         "repoPath": "skills/core-numerical/nonlinear-solvers"
       },
-      "local": null,
+      "local": {
+        "id": 366,
+        "name": "nonlinear-solvers",
+        "author": "HeshamFS",
+        "githubUrl": "https://github.com/HeshamFS/materials-simulation-skills/tree/main/skills/core-numerical/nonlinear-solvers"
+      },
       "expected": {
         "author": "HeshamFS",
         "githubUrl": "https://github.com/HeshamFS/materials-simulation-skills/tree/main/skills/core-numerical/nonlinear-solvers"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "notebooklm",
@@ -5014,7 +5362,7 @@
     },
     {
       "sourceSlug": "numerical-integration",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "numerical-integration",
         "originUrl": "https://github.com/HeshamFS/materials-simulation-skills/tree/main/skills/core-numerical/numerical-integration",
@@ -5022,18 +5370,21 @@
         "repo": "HeshamFS/materials-simulation-skills",
         "repoPath": "skills/core-numerical/numerical-integration"
       },
-      "local": null,
+      "local": {
+        "id": 367,
+        "name": "numerical-integration",
+        "author": "HeshamFS",
+        "githubUrl": "https://github.com/HeshamFS/materials-simulation-skills/tree/main/skills/core-numerical/numerical-integration"
+      },
       "expected": {
         "author": "HeshamFS",
         "githubUrl": "https://github.com/HeshamFS/materials-simulation-skills/tree/main/skills/core-numerical/numerical-integration"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "numerical-stability",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "numerical-stability",
         "originUrl": "https://github.com/HeshamFS/materials-simulation-skills/tree/main/skills/core-numerical/numerical-stability",
@@ -5041,14 +5392,17 @@
         "repo": "HeshamFS/materials-simulation-skills",
         "repoPath": "skills/core-numerical/numerical-stability"
       },
-      "local": null,
+      "local": {
+        "id": 368,
+        "name": "numerical-stability",
+        "author": "HeshamFS",
+        "githubUrl": "https://github.com/HeshamFS/materials-simulation-skills/tree/main/skills/core-numerical/numerical-stability"
+      },
       "expected": {
         "author": "HeshamFS",
         "githubUrl": "https://github.com/HeshamFS/materials-simulation-skills/tree/main/skills/core-numerical/numerical-stability"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "object-model",
@@ -5139,7 +5493,7 @@
     },
     {
       "sourceSlug": "ontology-explorer",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "ontology-explorer",
         "originUrl": "https://github.com/HeshamFS/materials-simulation-skills/tree/main/skills/ontology/ontology-explorer",
@@ -5147,18 +5501,21 @@
         "repo": "HeshamFS/materials-simulation-skills",
         "repoPath": "skills/ontology/ontology-explorer"
       },
-      "local": null,
+      "local": {
+        "id": 369,
+        "name": "ontology-explorer",
+        "author": "HeshamFS",
+        "githubUrl": "https://github.com/HeshamFS/materials-simulation-skills/tree/main/skills/ontology/ontology-explorer"
+      },
       "expected": {
         "author": "HeshamFS",
         "githubUrl": "https://github.com/HeshamFS/materials-simulation-skills/tree/main/skills/ontology/ontology-explorer"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "ontology-mapper",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "ontology-mapper",
         "originUrl": "https://github.com/HeshamFS/materials-simulation-skills/tree/main/skills/ontology/ontology-mapper",
@@ -5166,18 +5523,21 @@
         "repo": "HeshamFS/materials-simulation-skills",
         "repoPath": "skills/ontology/ontology-mapper"
       },
-      "local": null,
+      "local": {
+        "id": 370,
+        "name": "ontology-mapper",
+        "author": "HeshamFS",
+        "githubUrl": "https://github.com/HeshamFS/materials-simulation-skills/tree/main/skills/ontology/ontology-mapper"
+      },
       "expected": {
         "author": "HeshamFS",
         "githubUrl": "https://github.com/HeshamFS/materials-simulation-skills/tree/main/skills/ontology/ontology-mapper"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "ontology-validator",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "ontology-validator",
         "originUrl": "https://github.com/HeshamFS/materials-simulation-skills/tree/main/skills/ontology/ontology-validator",
@@ -5185,14 +5545,17 @@
         "repo": "HeshamFS/materials-simulation-skills",
         "repoPath": "skills/ontology/ontology-validator"
       },
-      "local": null,
+      "local": {
+        "id": 371,
+        "name": "ontology-validator",
+        "author": "HeshamFS",
+        "githubUrl": "https://github.com/HeshamFS/materials-simulation-skills/tree/main/skills/ontology/ontology-validator"
+      },
       "expected": {
         "author": "HeshamFS",
         "githubUrl": "https://github.com/HeshamFS/materials-simulation-skills/tree/main/skills/ontology/ontology-validator"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "open-notebook",
@@ -5371,7 +5734,7 @@
     },
     {
       "sourceSlug": "parameter-optimization",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "parameter-optimization",
         "originUrl": "https://github.com/HeshamFS/materials-simulation-skills/tree/main/skills/simulation-workflow/parameter-optimization",
@@ -5379,14 +5742,17 @@
         "repo": "HeshamFS/materials-simulation-skills",
         "repoPath": "skills/simulation-workflow/parameter-optimization"
       },
-      "local": null,
+      "local": {
+        "id": 372,
+        "name": "parameter-optimization",
+        "author": "HeshamFS",
+        "githubUrl": "https://github.com/HeshamFS/materials-simulation-skills/tree/main/skills/simulation-workflow/parameter-optimization"
+      },
       "expected": {
         "author": "HeshamFS",
         "githubUrl": "https://github.com/HeshamFS/materials-simulation-skills/tree/main/skills/simulation-workflow/parameter-optimization"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "pathml",
@@ -5412,7 +5778,7 @@
     },
     {
       "sourceSlug": "pdb-database",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "pdb-database",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/pdb-database",
@@ -5420,14 +5786,17 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/pdb-database"
       },
-      "local": null,
+      "local": {
+        "id": 297,
+        "source": "pdb-database",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/pdb-database"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/pdb-database"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "pdf",
@@ -5453,7 +5822,7 @@
     },
     {
       "sourceSlug": "peer-review",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "peer-review",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/peer-review",
@@ -5461,18 +5830,21 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/peer-review"
       },
-      "local": null,
+      "local": {
+        "id": 298,
+        "source": "peer-review",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/peer-review"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/peer-review"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "pennylane",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "pennylane",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/pennylane",
@@ -5480,18 +5852,21 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/pennylane"
       },
-      "local": null,
+      "local": {
+        "id": 299,
+        "source": "pennylane",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/pennylane"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/pennylane"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "performance-profiling",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "performance-profiling",
         "originUrl": "https://github.com/HeshamFS/materials-simulation-skills/tree/main/skills/simulation-workflow/performance-profiling",
@@ -5499,18 +5874,21 @@
         "repo": "HeshamFS/materials-simulation-skills",
         "repoPath": "skills/simulation-workflow/performance-profiling"
       },
-      "local": null,
+      "local": {
+        "id": 373,
+        "name": "performance-profiling",
+        "author": "HeshamFS",
+        "githubUrl": "https://github.com/HeshamFS/materials-simulation-skills/tree/main/skills/simulation-workflow/performance-profiling"
+      },
       "expected": {
         "author": "HeshamFS",
         "githubUrl": "https://github.com/HeshamFS/materials-simulation-skills/tree/main/skills/simulation-workflow/performance-profiling"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "perplexity-search",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "perplexity-search",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/perplexity-search",
@@ -5518,14 +5896,17 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/perplexity-search"
       },
-      "local": null,
+      "local": {
+        "id": 300,
+        "source": "perplexity-search",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/perplexity-search"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/perplexity-search"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "php-pro",
@@ -5551,7 +5932,7 @@
     },
     {
       "sourceSlug": "phylogenetics",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "phylogenetics",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/phylogenetics",
@@ -5559,14 +5940,17 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/phylogenetics"
       },
-      "local": null,
+      "local": {
+        "id": 301,
+        "source": "phylogenetics",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/phylogenetics"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/phylogenetics"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "plaid",
@@ -5611,7 +5995,7 @@
     },
     {
       "sourceSlug": "plotly",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "plotly",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/plotly",
@@ -5619,14 +6003,17 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/plotly"
       },
-      "local": null,
+      "local": {
+        "id": 302,
+        "source": "plotly",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/plotly"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/plotly"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "plugin-authoring",
@@ -5674,7 +6061,7 @@
     },
     {
       "sourceSlug": "polars",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "polars",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/polars",
@@ -5682,18 +6069,21 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/polars"
       },
-      "local": null,
+      "local": {
+        "id": 303,
+        "source": "polars",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/polars"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/polars"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "post-processing",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "post-processing",
         "originUrl": "https://github.com/HeshamFS/materials-simulation-skills/tree/main/skills/simulation-workflow/post-processing",
@@ -5701,14 +6091,17 @@
         "repo": "HeshamFS/materials-simulation-skills",
         "repoPath": "skills/simulation-workflow/post-processing"
       },
-      "local": null,
+      "local": {
+        "id": 374,
+        "name": "post-processing",
+        "author": "HeshamFS",
+        "githubUrl": "https://github.com/HeshamFS/materials-simulation-skills/tree/main/skills/simulation-workflow/post-processing"
+      },
       "expected": {
         "author": "HeshamFS",
         "githubUrl": "https://github.com/HeshamFS/materials-simulation-skills/tree/main/skills/simulation-workflow/post-processing"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "postgres",
@@ -5780,7 +6173,7 @@
     },
     {
       "sourceSlug": "pptx-posters",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "pptx-posters",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/pptx-posters",
@@ -5788,14 +6181,17 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/pptx-posters"
       },
-      "local": null,
+      "local": {
+        "id": 304,
+        "source": "pptx-posters",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/pptx-posters"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/pptx-posters"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "prompt-engineer",
@@ -5818,7 +6214,7 @@
     },
     {
       "sourceSlug": "protocolsio-integration",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "protocolsio-integration",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/protocolsio-integration",
@@ -5826,14 +6222,17 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/protocolsio-integration"
       },
-      "local": null,
+      "local": {
+        "id": 305,
+        "source": "protocolsio-integration",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/protocolsio-integration"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/protocolsio-integration"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "provider-actions",
@@ -5859,7 +6258,7 @@
     },
     {
       "sourceSlug": "provider-resources",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "provider-resources",
         "originUrl": "https://github.com/hashicorp/agent-skills/tree/main/terraform/provider-development/skills/provider-resources",
@@ -5867,18 +6266,21 @@
         "repo": "hashicorp/agent-skills",
         "repoPath": "terraform/provider-development/skills/provider-resources"
       },
-      "local": null,
+      "local": {
+        "id": 379,
+        "name": "provider-resources",
+        "author": "hashicorp",
+        "githubUrl": "https://github.com/hashicorp/agent-skills/tree/main/terraform/provider-development/skills/provider-resources"
+      },
       "expected": {
         "author": "hashicorp",
         "githubUrl": "https://github.com/hashicorp/agent-skills/tree/main/terraform/provider-development/skills/provider-resources"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "pubchem-database",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "pubchem-database",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/pubchem-database",
@@ -5886,18 +6288,21 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/pubchem-database"
       },
-      "local": null,
+      "local": {
+        "id": 306,
+        "source": "pubchem-database",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/pubchem-database"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/pubchem-database"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "pubmed-database",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "pubmed-database",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/pubmed-database",
@@ -5905,18 +6310,21 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/pubmed-database"
       },
-      "local": null,
+      "local": {
+        "id": 307,
+        "source": "pubmed-database",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/pubmed-database"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/pubmed-database"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "pufferlib",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "pufferlib",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/pufferlib",
@@ -5924,18 +6332,21 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/pufferlib"
       },
-      "local": null,
+      "local": {
+        "id": 308,
+        "source": "pufferlib",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/pufferlib"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/pufferlib"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "push-to-registry",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "push-to-registry",
         "originUrl": "https://github.com/hashicorp/agent-skills/tree/main/packer/hcp/skills/push-to-registry",
@@ -5943,18 +6354,21 @@
         "repo": "hashicorp/agent-skills",
         "repoPath": "packer/hcp/skills/push-to-registry"
       },
-      "local": null,
+      "local": {
+        "id": 380,
+        "name": "push-to-registry",
+        "author": "hashicorp",
+        "githubUrl": "https://github.com/hashicorp/agent-skills/tree/main/packer/hcp/skills/push-to-registry"
+      },
       "expected": {
         "author": "hashicorp",
         "githubUrl": "https://github.com/hashicorp/agent-skills/tree/main/packer/hcp/skills/push-to-registry"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "pydeseq2",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "pydeseq2",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/pydeseq2",
@@ -5962,18 +6376,21 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/pydeseq2"
       },
-      "local": null,
+      "local": {
+        "id": 309,
+        "source": "pydeseq2",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/pydeseq2"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/pydeseq2"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "pydicom",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "pydicom",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/pydicom",
@@ -5981,18 +6398,21 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/pydicom"
       },
-      "local": null,
+      "local": {
+        "id": 310,
+        "source": "pydicom",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/pydicom"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/pydicom"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "pyhealth",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "pyhealth",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/pyhealth",
@@ -6000,18 +6420,21 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/pyhealth"
       },
-      "local": null,
+      "local": {
+        "id": 311,
+        "source": "pyhealth",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/pyhealth"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/pyhealth"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "pylabrobot",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "pylabrobot",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/pylabrobot",
@@ -6019,18 +6442,21 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/pylabrobot"
       },
-      "local": null,
+      "local": {
+        "id": 312,
+        "source": "pylabrobot",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/pylabrobot"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/pylabrobot"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "pymatgen",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "pymatgen",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/pymatgen",
@@ -6038,18 +6464,21 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/pymatgen"
       },
-      "local": null,
+      "local": {
+        "id": 313,
+        "source": "pymatgen",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/pymatgen"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/pymatgen"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "pymc",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "pymc",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/pymc",
@@ -6057,18 +6486,21 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/pymc"
       },
-      "local": null,
+      "local": {
+        "id": 314,
+        "source": "pymc",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/pymc"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/pymc"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "pymoo",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "pymoo",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/pymoo",
@@ -6076,18 +6508,21 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/pymoo"
       },
-      "local": null,
+      "local": {
+        "id": 315,
+        "source": "pymoo",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/pymoo"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/pymoo"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "pyopenms",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "pyopenms",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/pyopenms",
@@ -6095,18 +6530,21 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/pyopenms"
       },
-      "local": null,
+      "local": {
+        "id": 316,
+        "source": "pyopenms",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/pyopenms"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/pyopenms"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "pysam",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "pysam",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/pysam",
@@ -6114,18 +6552,21 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/pysam"
       },
-      "local": null,
+      "local": {
+        "id": 317,
+        "source": "pysam",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/pysam"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/pysam"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "pytdc",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "pytdc",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/pytdc",
@@ -6133,14 +6574,17 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/pytdc"
       },
-      "local": null,
+      "local": {
+        "id": 318,
+        "source": "pytdc",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/pytdc"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/pytdc"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "python-pro",
@@ -6166,7 +6610,7 @@
     },
     {
       "sourceSlug": "pytorch-lightning",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "pytorch-lightning",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/pytorch-lightning",
@@ -6174,18 +6618,21 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/pytorch-lightning"
       },
-      "local": null,
+      "local": {
+        "id": 319,
+        "source": "pytorch-lightning",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/pytorch-lightning"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/pytorch-lightning"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "pyzotero",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "pyzotero",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/pyzotero",
@@ -6193,18 +6640,21 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/pyzotero"
       },
-      "local": null,
+      "local": {
+        "id": 320,
+        "source": "pyzotero",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/pyzotero"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/pyzotero"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "qiskit",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "qiskit",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/qiskit",
@@ -6212,18 +6662,21 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/qiskit"
       },
-      "local": null,
+      "local": {
+        "id": 321,
+        "source": "qiskit",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/qiskit"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/qiskit"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "qutip",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "qutip",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/qutip",
@@ -6231,14 +6684,17 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/qutip"
       },
-      "local": null,
+      "local": {
+        "id": 322,
+        "source": "qutip",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/qutip"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/qutip"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "rag-architect",
@@ -6286,7 +6742,7 @@
     },
     {
       "sourceSlug": "rdkit",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "rdkit",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/rdkit",
@@ -6294,14 +6750,17 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/rdkit"
       },
-      "local": null,
+      "local": {
+        "id": 323,
+        "source": "rdkit",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/rdkit"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/rdkit"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "react-expert",
@@ -6349,7 +6808,7 @@
     },
     {
       "sourceSlug": "reactome-database",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "reactome-database",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/reactome-database",
@@ -6357,14 +6816,17 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/reactome-database"
       },
-      "local": null,
+      "local": {
+        "id": 324,
+        "source": "reactome-database",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/reactome-database"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/reactome-database"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "recommendations",
@@ -6390,7 +6852,7 @@
     },
     {
       "sourceSlug": "refactor-module",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "refactor-module",
         "originUrl": "https://github.com/hashicorp/agent-skills/tree/main/terraform/module-generation/skills/refactor-module",
@@ -6398,18 +6860,21 @@
         "repo": "hashicorp/agent-skills",
         "repoPath": "terraform/module-generation/skills/refactor-module"
       },
-      "local": null,
+      "local": {
+        "id": 381,
+        "name": "refactor-module",
+        "author": "hashicorp",
+        "githubUrl": "https://github.com/hashicorp/agent-skills/tree/main/terraform/module-generation/skills/refactor-module"
+      },
       "expected": {
         "author": "hashicorp",
         "githubUrl": "https://github.com/hashicorp/agent-skills/tree/main/terraform/module-generation/skills/refactor-module"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "research-grants",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "research-grants",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/research-grants",
@@ -6417,18 +6882,21 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/research-grants"
       },
-      "local": null,
+      "local": {
+        "id": 325,
+        "source": "research-grants",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/research-grants"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/research-grants"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "research-lookup",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "research-lookup",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/research-lookup",
@@ -6436,14 +6904,17 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/research-lookup"
       },
-      "local": null,
+      "local": {
+        "id": 326,
+        "source": "research-lookup",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/research-lookup"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/research-lookup"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "revealjs",
@@ -6466,7 +6937,7 @@
     },
     {
       "sourceSlug": "rowan",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "rowan",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/rowan",
@@ -6474,18 +6945,21 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/rowan"
       },
-      "local": null,
+      "local": {
+        "id": 327,
+        "source": "rowan",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/rowan"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/rowan"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "run-acceptance-tests",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "run-acceptance-tests",
         "originUrl": "https://github.com/hashicorp/agent-skills/tree/main/terraform/provider-development/skills/run-acceptance-tests",
@@ -6493,14 +6967,17 @@
         "repo": "hashicorp/agent-skills",
         "repoPath": "terraform/provider-development/skills/run-acceptance-tests"
       },
-      "local": null,
+      "local": {
+        "id": 382,
+        "name": "run-acceptance-tests",
+        "author": "hashicorp",
+        "githubUrl": "https://github.com/hashicorp/agent-skills/tree/main/terraform/provider-development/skills/run-acceptance-tests"
+      },
       "expected": {
         "author": "hashicorp",
         "githubUrl": "https://github.com/hashicorp/agent-skills/tree/main/terraform/provider-development/skills/run-acceptance-tests"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "rust-engineer",
@@ -6548,7 +7025,7 @@
     },
     {
       "sourceSlug": "scanpy",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "scanpy",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/scanpy",
@@ -6556,18 +7033,21 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/scanpy"
       },
-      "local": null,
+      "local": {
+        "id": 328,
+        "source": "scanpy",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/scanpy"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/scanpy"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "scholar-evaluation",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "scholar-evaluation",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/scholar-evaluation",
@@ -6575,18 +7055,21 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/scholar-evaluation"
       },
-      "local": null,
+      "local": {
+        "id": 329,
+        "source": "scholar-evaluation",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/scholar-evaluation"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/scholar-evaluation"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "scientific-brainstorming",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "scientific-brainstorming",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/scientific-brainstorming",
@@ -6594,18 +7077,21 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/scientific-brainstorming"
       },
-      "local": null,
+      "local": {
+        "id": 330,
+        "source": "scientific-brainstorming",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/scientific-brainstorming"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/scientific-brainstorming"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "scientific-critical-thinking",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "scientific-critical-thinking",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/scientific-critical-thinking",
@@ -6613,18 +7099,21 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/scientific-critical-thinking"
       },
-      "local": null,
+      "local": {
+        "id": 331,
+        "source": "scientific-critical-thinking",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/scientific-critical-thinking"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/scientific-critical-thinking"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "scientific-schematics",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "scientific-schematics",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/scientific-schematics",
@@ -6632,18 +7121,21 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/scientific-schematics"
       },
-      "local": null,
+      "local": {
+        "id": 332,
+        "source": "scientific-schematics",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/scientific-schematics"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/scientific-schematics"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "scientific-slides",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "scientific-slides",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/scientific-slides",
@@ -6651,18 +7143,21 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/scientific-slides"
       },
-      "local": null,
+      "local": {
+        "id": 333,
+        "source": "scientific-slides",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/scientific-slides"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/scientific-slides"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "scientific-visualization",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "scientific-visualization",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/scientific-visualization",
@@ -6670,18 +7165,21 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/scientific-visualization"
       },
-      "local": null,
+      "local": {
+        "id": 334,
+        "source": "scientific-visualization",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/scientific-visualization"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/scientific-visualization"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "scientific-writing",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "scientific-writing",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/scientific-writing",
@@ -6689,18 +7187,21 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/scientific-writing"
       },
-      "local": null,
+      "local": {
+        "id": 335,
+        "source": "scientific-writing",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/scientific-writing"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/scientific-writing"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "scikit-bio",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "scikit-bio",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/scikit-bio",
@@ -6708,18 +7209,21 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/scikit-bio"
       },
-      "local": null,
+      "local": {
+        "id": 336,
+        "source": "scikit-bio",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/scikit-bio"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/scikit-bio"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "scikit-learn",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "scikit-learn",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/scikit-learn",
@@ -6727,18 +7231,21 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/scikit-learn"
       },
-      "local": null,
+      "local": {
+        "id": 337,
+        "source": "scikit-learn",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/scikit-learn"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/scikit-learn"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "scikit-survival",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "scikit-survival",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/scikit-survival",
@@ -6746,18 +7253,21 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/scikit-survival"
       },
-      "local": null,
+      "local": {
+        "id": 338,
+        "source": "scikit-survival",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/scikit-survival"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/scikit-survival"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "scvelo",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "scvelo",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/scvelo",
@@ -6765,18 +7275,21 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/scvelo"
       },
-      "local": null,
+      "local": {
+        "id": 339,
+        "source": "scvelo",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/scvelo"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/scvelo"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "scvi-tools",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "scvi-tools",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/scvi-tools",
@@ -6784,18 +7297,21 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/scvi-tools"
       },
-      "local": null,
+      "local": {
+        "id": 340,
+        "source": "scvi-tools",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/scvi-tools"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/scvi-tools"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "seaborn",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "seaborn",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/seaborn",
@@ -6803,14 +7319,17 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/seaborn"
       },
-      "local": null,
+      "local": {
+        "id": 341,
+        "source": "seaborn",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/seaborn"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/seaborn"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "secure-code-guardian",
@@ -6858,7 +7377,7 @@
     },
     {
       "sourceSlug": "shap",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "shap",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/shap",
@@ -6866,14 +7385,17 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/shap"
       },
-      "local": null,
+      "local": {
+        "id": 342,
+        "source": "shap",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/shap"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/shap"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "shelby",
@@ -6940,7 +7462,7 @@
     },
     {
       "sourceSlug": "simpy",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "simpy",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/simpy",
@@ -6948,18 +7470,21 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/simpy"
       },
-      "local": null,
+      "local": {
+        "id": 343,
+        "source": "simpy",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/simpy"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/simpy"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "simulation-orchestrator",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "simulation-orchestrator",
         "originUrl": "https://github.com/HeshamFS/materials-simulation-skills/tree/main/skills/simulation-workflow/simulation-orchestrator",
@@ -6967,18 +7492,21 @@
         "repo": "HeshamFS/materials-simulation-skills",
         "repoPath": "skills/simulation-workflow/simulation-orchestrator"
       },
-      "local": null,
+      "local": {
+        "id": 375,
+        "name": "simulation-orchestrator",
+        "author": "HeshamFS",
+        "githubUrl": "https://github.com/HeshamFS/materials-simulation-skills/tree/main/skills/simulation-workflow/simulation-orchestrator"
+      },
       "expected": {
         "author": "HeshamFS",
         "githubUrl": "https://github.com/HeshamFS/materials-simulation-skills/tree/main/skills/simulation-workflow/simulation-orchestrator"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "simulation-validator",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "simulation-validator",
         "originUrl": "https://github.com/HeshamFS/materials-simulation-skills/tree/main/skills/simulation-workflow/simulation-validator",
@@ -6986,14 +7514,17 @@
         "repo": "HeshamFS/materials-simulation-skills",
         "repoPath": "skills/simulation-workflow/simulation-validator"
       },
-      "local": null,
+      "local": {
+        "id": 376,
+        "name": "simulation-validator",
+        "author": "HeshamFS",
+        "githubUrl": "https://github.com/HeshamFS/materials-simulation-skills/tree/main/skills/simulation-workflow/simulation-validator"
+      },
       "expected": {
         "author": "HeshamFS",
         "githubUrl": "https://github.com/HeshamFS/materials-simulation-skills/tree/main/skills/simulation-workflow/simulation-validator"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "skill-creator",
@@ -7019,7 +7550,7 @@
     },
     {
       "sourceSlug": "slurm-job-script-generator",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "slurm-job-script-generator",
         "originUrl": "https://github.com/HeshamFS/materials-simulation-skills/tree/main/skills/hpc-deployment/slurm-job-script-generator",
@@ -7027,14 +7558,17 @@
         "repo": "HeshamFS/materials-simulation-skills",
         "repoPath": "skills/hpc-deployment/slurm-job-script-generator"
       },
-      "local": null,
+      "local": {
+        "id": 377,
+        "name": "slurm-job-script-generator",
+        "author": "HeshamFS",
+        "githubUrl": "https://github.com/HeshamFS/materials-simulation-skills/tree/main/skills/hpc-deployment/slurm-job-script-generator"
+      },
       "expected": {
         "author": "HeshamFS",
         "githubUrl": "https://github.com/HeshamFS/materials-simulation-skills/tree/main/skills/hpc-deployment/slurm-job-script-generator"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "spark-engineer",
@@ -7148,7 +7682,7 @@
     },
     {
       "sourceSlug": "stable-baselines3",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "stable-baselines3",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/stable-baselines3",
@@ -7156,18 +7690,21 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/stable-baselines3"
       },
-      "local": null,
+      "local": {
+        "id": 344,
+        "source": "stable-baselines3",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/stable-baselines3"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/stable-baselines3"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "statistical-analysis",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "statistical-analysis",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/statistical-analysis",
@@ -7175,18 +7712,21 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/statistical-analysis"
       },
-      "local": null,
+      "local": {
+        "id": 345,
+        "source": "statistical-analysis",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/statistical-analysis"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/statistical-analysis"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "statsmodels",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "statsmodels",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/statsmodels",
@@ -7194,14 +7734,17 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/statsmodels"
       },
-      "local": null,
+      "local": {
+        "id": 346,
+        "source": "statsmodels",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/statsmodels"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/statsmodels"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "string-boolean-disable",
@@ -7243,7 +7786,7 @@
     },
     {
       "sourceSlug": "string-database",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "string-database",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/string-database",
@@ -7251,14 +7794,17 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/string-database"
       },
-      "local": null,
+      "local": {
+        "id": 347,
+        "source": "string-database",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/string-database"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/string-database"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "swift-expert",
@@ -7284,7 +7830,7 @@
     },
     {
       "sourceSlug": "sympy",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "sympy",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/sympy",
@@ -7292,14 +7838,17 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/sympy"
       },
-      "local": null,
+      "local": {
+        "id": 348,
+        "source": "sympy",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/sympy"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/sympy"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "systematic-debugging",
@@ -7410,7 +7959,7 @@
     },
     {
       "sourceSlug": "terraform-search-import",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "terraform-search-import",
         "originUrl": "https://github.com/hashicorp/agent-skills/tree/main/terraform/code-generation/skills/terraform-search-import",
@@ -7418,14 +7967,17 @@
         "repo": "hashicorp/agent-skills",
         "repoPath": "terraform/code-generation/skills/terraform-search-import"
       },
-      "local": null,
+      "local": {
+        "id": 383,
+        "name": "terraform-search-import",
+        "author": "hashicorp",
+        "githubUrl": "https://github.com/hashicorp/agent-skills/tree/main/terraform/code-generation/skills/terraform-search-import"
+      },
       "expected": {
         "author": "hashicorp",
         "githubUrl": "https://github.com/hashicorp/agent-skills/tree/main/terraform/code-generation/skills/terraform-search-import"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "terraform-stacks",
@@ -7572,7 +8124,7 @@
     },
     {
       "sourceSlug": "tiledbvcf",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "tiledbvcf",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/tiledbvcf",
@@ -7580,18 +8132,21 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/tiledbvcf"
       },
-      "local": null,
+      "local": {
+        "id": 349,
+        "source": "tiledbvcf",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/tiledbvcf"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/tiledbvcf"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "time-stepping",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "time-stepping",
         "originUrl": "https://github.com/HeshamFS/materials-simulation-skills/tree/main/skills/core-numerical/time-stepping",
@@ -7599,18 +8154,21 @@
         "repo": "HeshamFS/materials-simulation-skills",
         "repoPath": "skills/core-numerical/time-stepping"
       },
-      "local": null,
+      "local": {
+        "id": 378,
+        "name": "time-stepping",
+        "author": "HeshamFS",
+        "githubUrl": "https://github.com/HeshamFS/materials-simulation-skills/tree/main/skills/core-numerical/time-stepping"
+      },
       "expected": {
         "author": "HeshamFS",
         "githubUrl": "https://github.com/HeshamFS/materials-simulation-skills/tree/main/skills/core-numerical/time-stepping"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "timesfm-forecasting",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "timesfm-forecasting",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/timesfm-forecasting",
@@ -7618,14 +8176,17 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/timesfm-forecasting"
       },
-      "local": null,
+      "local": {
+        "id": 350,
+        "source": "timesfm-forecasting",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/timesfm-forecasting"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/timesfm-forecasting"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "token-standards",
@@ -7687,7 +8248,7 @@
     },
     {
       "sourceSlug": "torch_geometric",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "torch_geometric",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/torch_geometric",
@@ -7695,18 +8256,21 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/torch_geometric"
       },
-      "local": null,
+      "local": {
+        "id": 351,
+        "source": "torch_geometric",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/torch_geometric"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/torch_geometric"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "torchdrug",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "torchdrug",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/torchdrug",
@@ -7714,18 +8278,21 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/torchdrug"
       },
-      "local": null,
+      "local": {
+        "id": 352,
+        "name": "torchdrug",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/torchdrug"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/torchdrug"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "transformers",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "transformers",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/transformers",
@@ -7733,18 +8300,21 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/transformers"
       },
-      "local": null,
+      "local": {
+        "id": 353,
+        "name": "transformers",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/transformers"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/transformers"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "treatment-plans",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "treatment-plans",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/treatment-plans",
@@ -7752,14 +8322,17 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/treatment-plans"
       },
-      "local": null,
+      "local": {
+        "id": 354,
+        "name": "treatment-plans",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/treatment-plans"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/treatment-plans"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "typescript-pro",
@@ -7785,7 +8358,7 @@
     },
     {
       "sourceSlug": "umap-learn",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "umap-learn",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/umap-learn",
@@ -7793,18 +8366,21 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/umap-learn"
       },
-      "local": null,
+      "local": {
+        "id": 355,
+        "name": "umap-learn",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/umap-learn"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/umap-learn"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "uniprot-database",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "uniprot-database",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/uniprot-database",
@@ -7812,14 +8388,17 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/uniprot-database"
       },
-      "local": null,
+      "local": {
+        "id": 356,
+        "name": "uniprot-database",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/uniprot-database"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/uniprot-database"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "unknown-frontmatter-field",
@@ -7880,7 +8459,7 @@
     },
     {
       "sourceSlug": "usfiscaldata",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "usfiscaldata",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/usfiscaldata",
@@ -7888,14 +8467,17 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/usfiscaldata"
       },
-      "local": null,
+      "local": {
+        "id": 357,
+        "name": "usfiscaldata",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/usfiscaldata"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/usfiscaldata"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "using-git-worktrees",
@@ -7921,7 +8503,7 @@
     },
     {
       "sourceSlug": "uspto-database",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "uspto-database",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/uspto-database",
@@ -7929,18 +8511,21 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/uspto-database"
       },
-      "local": null,
+      "local": {
+        "id": 358,
+        "name": "uspto-database",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/uspto-database"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/uspto-database"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "vaex",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "vaex",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/vaex",
@@ -7948,14 +8533,17 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/vaex"
       },
-      "local": null,
+      "local": {
+        "id": 359,
+        "name": "vaex",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/vaex"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/vaex"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "vague-name",
@@ -7978,7 +8566,7 @@
     },
     {
       "sourceSlug": "venue-templates",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "venue-templates",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/venue-templates",
@@ -7986,14 +8574,17 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/venue-templates"
       },
-      "local": null,
+      "local": {
+        "id": 360,
+        "name": "venue-templates",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/venue-templates"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/venue-templates"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "video-downloader",
@@ -8129,7 +8720,7 @@
     },
     {
       "sourceSlug": "what-if-oracle",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "what-if-oracle",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/what-if-oracle",
@@ -8137,14 +8728,17 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/what-if-oracle"
       },
-      "local": null,
+      "local": {
+        "id": 361,
+        "name": "what-if-oracle",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/what-if-oracle"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/what-if-oracle"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "whop",
@@ -8391,7 +8985,7 @@
     },
     {
       "sourceSlug": "zarr-python",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "zarr-python",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/zarr-python",
@@ -8399,18 +8993,21 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/zarr-python"
       },
-      "local": null,
+      "local": {
+        "id": 362,
+        "name": "zarr-python",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/zarr-python"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/zarr-python"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "zinc-database",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "zinc-database",
         "originUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/zinc-database",
@@ -8418,14 +9015,17 @@
         "repo": "K-Dense-AI/claude-scientific-skills",
         "repoPath": "scientific-skills/zinc-database"
       },
-      "local": null,
+      "local": {
+        "id": 363,
+        "name": "zinc-database",
+        "author": "K-Dense-AI",
+        "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/zinc-database"
+      },
       "expected": {
         "author": "K-Dense-AI",
         "githubUrl": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/zinc-database"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     }
   ]
 }
