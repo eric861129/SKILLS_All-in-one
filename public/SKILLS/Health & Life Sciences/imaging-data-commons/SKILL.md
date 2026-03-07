@@ -7,7 +7,8 @@ metadata:
     skill-author: Andrey Fedorov, @fedorov
     idc-index: "0.11.10"
     idc-data-version: "v23"
-    repository: https://github.com/ImagingDataCommons/idc-claude-skill
+    repository: https://github.com/k-dense-ai/claude-scientific-skills
+    upstream-repository: https://github.com/ImagingDataCommons/idc-claude-skill
 ---
 
 # Imaging Data Commons

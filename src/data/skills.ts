@@ -2731,7 +2731,7 @@ export const MOCK_SKILLS: Skill[] = [
     downloadCount: 0,
     createdAt: '2026-03-06',
     source: 'imaging-data-commons',
-    githubUrl: 'https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/imaging-data-commons'
+    githubUrl: 'https://github.com/k-dense-ai/claude-scientific-skills/tree/main/scientific-skills/imaging-data-commons'
   },
   {
     id: 263,
