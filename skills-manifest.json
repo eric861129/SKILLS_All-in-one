@@ -4057,6 +4057,30 @@
       "source": "structured"
     }
   },
+  "agnix": {
+    "category": "Development & Code Tools",
+    "files": [
+      "SKILL.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 3972,
+        "lineCount": 144,
+        "ext": "md",
+        "tabKey": "root"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 993,
+      "cl100k": 1060
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
   "angular-architect": {
     "category": "Development & Code Tools",
     "files": [
@@ -4243,6 +4267,151 @@
         "secure-code-guardian"
       ],
       "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "azure-devops": {
+    "category": "Development & Code Tools",
+    "files": [
+      "README.md",
+      "SKILL.md",
+      "requirements.txt",
+      "scripts/api_client.py",
+      "scripts/attachments.py",
+      "scripts/auth.py",
+      "scripts/core.py",
+      "scripts/environments.py",
+      "scripts/pipelines.py",
+      "scripts/policies.py",
+      "scripts/repos.py",
+      "scripts/search.py",
+      "scripts/security.py",
+      "scripts/test_plans.py",
+      "scripts/variable_groups.py",
+      "scripts/wiki.py",
+      "scripts/work.py",
+      "scripts/work_items.py"
+    ],
+    "fileMeta": {
+      "README.md": {
+        "sizeBytes": 2985,
+        "lineCount": 88,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "SKILL.md": {
+        "sizeBytes": 16789,
+        "lineCount": 478,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "requirements.txt": {
+        "sizeBytes": 16,
+        "lineCount": 2,
+        "ext": "txt",
+        "tabKey": "root"
+      },
+      "scripts/api_client.py": {
+        "sizeBytes": 5758,
+        "lineCount": 179,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/attachments.py": {
+        "sizeBytes": 6909,
+        "lineCount": 198,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/auth.py": {
+        "sizeBytes": 12995,
+        "lineCount": 349,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/core.py": {
+        "sizeBytes": 1803,
+        "lineCount": 64,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/environments.py": {
+        "sizeBytes": 5142,
+        "lineCount": 146,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/pipelines.py": {
+        "sizeBytes": 10231,
+        "lineCount": 277,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/policies.py": {
+        "sizeBytes": 7944,
+        "lineCount": 186,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/repos.py": {
+        "sizeBytes": 15674,
+        "lineCount": 385,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/search.py": {
+        "sizeBytes": 2877,
+        "lineCount": 105,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/security.py": {
+        "sizeBytes": 2412,
+        "lineCount": 77,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/test_plans.py": {
+        "sizeBytes": 5971,
+        "lineCount": 171,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/variable_groups.py": {
+        "sizeBytes": 5675,
+        "lineCount": 156,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/wiki.py": {
+        "sizeBytes": 4282,
+        "lineCount": 125,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/work.py": {
+        "sizeBytes": 5474,
+        "lineCount": 151,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/work_items.py": {
+        "sizeBytes": 14382,
+        "lineCount": 388,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 31685,
+      "cl100k": 29867
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [
+        "keyring"
+      ],
       "runtimeTools": [],
       "source": "structured"
     }
@@ -5169,6 +5338,86 @@
       "source": "structured"
     }
   },
+  "email-html-mjml": {
+    "category": "Development & Code Tools",
+    "files": [
+      "SKILL.md",
+      "assets/examples/basic-layout.mjml",
+      "compilation.md",
+      "components/advanced.md",
+      "components/content.md",
+      "components/head.md",
+      "components/interactive.md",
+      "components/layout.md",
+      "mjml-reference.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 8146,
+        "lineCount": 162,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "assets/examples/basic-layout.mjml": {
+        "sizeBytes": 3438,
+        "lineCount": 0,
+        "ext": "mjml",
+        "tabKey": "assets"
+      },
+      "compilation.md": {
+        "sizeBytes": 1911,
+        "lineCount": 64,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "components/advanced.md": {
+        "sizeBytes": 4026,
+        "lineCount": 125,
+        "ext": "md",
+        "tabKey": "components"
+      },
+      "components/content.md": {
+        "sizeBytes": 5233,
+        "lineCount": 177,
+        "ext": "md",
+        "tabKey": "components"
+      },
+      "components/head.md": {
+        "sizeBytes": 3128,
+        "lineCount": 112,
+        "ext": "md",
+        "tabKey": "components"
+      },
+      "components/interactive.md": {
+        "sizeBytes": 6703,
+        "lineCount": 209,
+        "ext": "md",
+        "tabKey": "components"
+      },
+      "components/layout.md": {
+        "sizeBytes": 4422,
+        "lineCount": 145,
+        "ext": "md",
+        "tabKey": "components"
+      },
+      "mjml-reference.md": {
+        "sizeBytes": 5450,
+        "lineCount": 160,
+        "ext": "md",
+        "tabKey": "root"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 9672,
+      "cl100k": 10078
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
   "embedded-systems": {
     "category": "Development & Code Tools",
     "files": [
@@ -5774,6 +6023,30 @@
       "skills": [
         "fullstack-guardian"
       ],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "jules": {
+    "category": "Development & Code Tools",
+    "files": [
+      "SKILL.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 5470,
+        "lineCount": 201,
+        "ext": "md",
+        "tabKey": "root"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 1364,
+      "cl100k": 1494
+    },
+    "dependencies": {
+      "skills": [],
       "libraries": [],
       "runtimeTools": [],
       "source": "structured"
@@ -6474,6 +6747,334 @@
         "fastapi-expert",
         "fullstack-guardian"
       ],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "plugin-authoring": {
+    "category": "Development & Code Tools",
+    "files": [
+      "SKILL.md",
+      "best-practices/common-mistakes.md",
+      "best-practices/naming-conventions.md",
+      "best-practices/organization.md",
+      "examples/simple-plugin.md",
+      "examples/testing-workflow.md",
+      "schemas/hooks-schema.md",
+      "schemas/marketplace-schema.md",
+      "schemas/plugin-manifest.md",
+      "templates/agent-template.md",
+      "templates/command-template.md",
+      "templates/marketplace-manifest.json",
+      "templates/plugin-manifest.json",
+      "templates/skill-template.md",
+      "testing-plugin-authoring.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 6736,
+        "lineCount": 137,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "best-practices/common-mistakes.md": {
+        "sizeBytes": 6780,
+        "lineCount": 310,
+        "ext": "md",
+        "tabKey": "best-practices"
+      },
+      "best-practices/naming-conventions.md": {
+        "sizeBytes": 8389,
+        "lineCount": 405,
+        "ext": "md",
+        "tabKey": "best-practices"
+      },
+      "best-practices/organization.md": {
+        "sizeBytes": 9247,
+        "lineCount": 441,
+        "ext": "md",
+        "tabKey": "best-practices"
+      },
+      "examples/simple-plugin.md": {
+        "sizeBytes": 2868,
+        "lineCount": 136,
+        "ext": "md",
+        "tabKey": "examples"
+      },
+      "examples/testing-workflow.md": {
+        "sizeBytes": 4859,
+        "lineCount": 234,
+        "ext": "md",
+        "tabKey": "examples"
+      },
+      "schemas/hooks-schema.md": {
+        "sizeBytes": 13119,
+        "lineCount": 654,
+        "ext": "md",
+        "tabKey": "schemas"
+      },
+      "schemas/marketplace-schema.md": {
+        "sizeBytes": 10309,
+        "lineCount": 433,
+        "ext": "md",
+        "tabKey": "schemas"
+      },
+      "schemas/plugin-manifest.md": {
+        "sizeBytes": 9794,
+        "lineCount": 395,
+        "ext": "md",
+        "tabKey": "schemas"
+      },
+      "templates/agent-template.md": {
+        "sizeBytes": 1369,
+        "lineCount": 62,
+        "ext": "md",
+        "tabKey": "templates"
+      },
+      "templates/command-template.md": {
+        "sizeBytes": 599,
+        "lineCount": 33,
+        "ext": "md",
+        "tabKey": "templates"
+      },
+      "templates/marketplace-manifest.json": {
+        "sizeBytes": 563,
+        "lineCount": 26,
+        "ext": "json",
+        "tabKey": "templates"
+      },
+      "templates/plugin-manifest.json": {
+        "sizeBytes": 407,
+        "lineCount": 15,
+        "ext": "json",
+        "tabKey": "templates"
+      },
+      "templates/skill-template.md": {
+        "sizeBytes": 1726,
+        "lineCount": 62,
+        "ext": "md",
+        "tabKey": "templates"
+      },
+      "testing-plugin-authoring.md": {
+        "sizeBytes": 6074,
+        "lineCount": 197,
+        "ext": "md",
+        "tabKey": "root"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 20439,
+      "cl100k": 20730
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "pypict-claude-skill": {
+    "category": "Development & Code Tools",
+    "files": [
+      ".claude-plugin/marketplace.json",
+      ".claude-plugin/plugin.json",
+      ".github/ISSUE_TEMPLATE/bug_report.md",
+      ".github/ISSUE_TEMPLATE/feature_request.md",
+      ".github/markdown-link-check-config.json",
+      ".github/pull_request_template.md",
+      ".github/workflows/ci.yml",
+      ".gitignore",
+      "CHANGELOG.md",
+      "CONTRIBUTING.md",
+      "LICENSE",
+      "PUBLISHING.md",
+      "QUICKSTART.md",
+      "README.md",
+      "SKILL.md",
+      "STRUCTURE.md",
+      "examples/README.md",
+      "examples/atm-specification.md",
+      "examples/atm-test-plan.md",
+      "examples/gearbox-specification.md",
+      "examples/gearbox-test-plan.md",
+      "references/examples.md",
+      "references/pict_syntax.md",
+      "releases/README.md",
+      "releases/pict-test-designer-minimal.zip",
+      "scripts/README.md",
+      "scripts/pict_helper.py"
+    ],
+    "fileMeta": {
+      ".claude-plugin/marketplace.json": {
+        "sizeBytes": 901,
+        "lineCount": 24,
+        "ext": "json",
+        "tabKey": ".claude-plugin"
+      },
+      ".claude-plugin/plugin.json": {
+        "sizeBytes": 828,
+        "lineCount": 25,
+        "ext": "json",
+        "tabKey": ".claude-plugin"
+      },
+      ".github/ISSUE_TEMPLATE/bug_report.md": {
+        "sizeBytes": 1078,
+        "lineCount": 58,
+        "ext": "md",
+        "tabKey": ".github"
+      },
+      ".github/ISSUE_TEMPLATE/feature_request.md": {
+        "sizeBytes": 1520,
+        "lineCount": 66,
+        "ext": "md",
+        "tabKey": ".github"
+      },
+      ".github/markdown-link-check-config.json": {
+        "sizeBytes": 444,
+        "lineCount": 25,
+        "ext": "json",
+        "tabKey": ".github"
+      },
+      ".github/pull_request_template.md": {
+        "sizeBytes": 2148,
+        "lineCount": 91,
+        "ext": "md",
+        "tabKey": ".github"
+      },
+      ".github/workflows/ci.yml": {
+        "sizeBytes": 966,
+        "lineCount": 41,
+        "ext": "yml",
+        "tabKey": ".github"
+      },
+      ".gitignore": {
+        "sizeBytes": 590,
+        "lineCount": 0,
+        "ext": "none",
+        "tabKey": "root"
+      },
+      "CHANGELOG.md": {
+        "sizeBytes": 5327,
+        "lineCount": 144,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "CONTRIBUTING.md": {
+        "sizeBytes": 5526,
+        "lineCount": 236,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "LICENSE": {
+        "sizeBytes": 1435,
+        "lineCount": 0,
+        "ext": "none",
+        "tabKey": "root"
+      },
+      "PUBLISHING.md": {
+        "sizeBytes": 6293,
+        "lineCount": 265,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "QUICKSTART.md": {
+        "sizeBytes": 5613,
+        "lineCount": 209,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "README.md": {
+        "sizeBytes": 12545,
+        "lineCount": 374,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "SKILL.md": {
+        "sizeBytes": 10928,
+        "lineCount": 363,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "STRUCTURE.md": {
+        "sizeBytes": 6926,
+        "lineCount": 194,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "examples/README.md": {
+        "sizeBytes": 6008,
+        "lineCount": 146,
+        "ext": "md",
+        "tabKey": "examples"
+      },
+      "examples/atm-specification.md": {
+        "sizeBytes": 5154,
+        "lineCount": 148,
+        "ext": "md",
+        "tabKey": "examples"
+      },
+      "examples/atm-test-plan.md": {
+        "sizeBytes": 17719,
+        "lineCount": 428,
+        "ext": "md",
+        "tabKey": "examples"
+      },
+      "examples/gearbox-specification.md": {
+        "sizeBytes": 6642,
+        "lineCount": 208,
+        "ext": "md",
+        "tabKey": "examples"
+      },
+      "examples/gearbox-test-plan.md": {
+        "sizeBytes": 15901,
+        "lineCount": 297,
+        "ext": "md",
+        "tabKey": "examples"
+      },
+      "references/examples.md": {
+        "sizeBytes": 2343,
+        "lineCount": 99,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/pict_syntax.md": {
+        "sizeBytes": 1915,
+        "lineCount": 84,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "releases/README.md": {
+        "sizeBytes": 2495,
+        "lineCount": 89,
+        "ext": "md",
+        "tabKey": "releases"
+      },
+      "releases/pict-test-designer-minimal.zip": {
+        "sizeBytes": 9424,
+        "lineCount": 0,
+        "ext": "zip",
+        "tabKey": "releases"
+      },
+      "scripts/README.md": {
+        "sizeBytes": 1680,
+        "lineCount": 78,
+        "ext": "md",
+        "tabKey": "scripts"
+      },
+      "scripts/pict_helper.py": {
+        "sizeBytes": 5620,
+        "lineCount": 208,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 31524,
+      "cl100k": 31366
+    },
+    "dependencies": {
+      "skills": [],
       "libraries": [],
       "runtimeTools": [],
       "source": "structured"
@@ -14665,6 +15266,68 @@
       "source": "structured"
     }
   },
+  "deep-research": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      ".env.example",
+      ".gitignore",
+      "README.md",
+      "SKILL.md",
+      "requirements.txt",
+      "scripts/research.py"
+    ],
+    "fileMeta": {
+      ".env.example": {
+        "sizeBytes": 344,
+        "lineCount": 0,
+        "ext": "example",
+        "tabKey": "root"
+      },
+      ".gitignore": {
+        "sizeBytes": 304,
+        "lineCount": 0,
+        "ext": "none",
+        "tabKey": "root"
+      },
+      "README.md": {
+        "sizeBytes": 7675,
+        "lineCount": 247,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "SKILL.md": {
+        "sizeBytes": 2734,
+        "lineCount": 107,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "requirements.txt": {
+        "sizeBytes": 35,
+        "lineCount": 3,
+        "ext": "txt",
+        "tabKey": "root"
+      },
+      "scripts/research.py": {
+        "sizeBytes": 24204,
+        "lineCount": 693,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 8555,
+      "cl100k": 7366
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [
+        "httpx",
+        "python-dotenv"
+      ],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
   "deepchem": {
     "category": "Scientific & Research Tools",
     "files": [
@@ -16328,6 +16991,37 @@
     "tokenEstimate": {
       "heuristic": 15771,
       "cl100k": 16794
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "manus": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/api.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 6801,
+        "lineCount": 185,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/api.md": {
+        "sizeBytes": 2601,
+        "lineCount": 154,
+        "ext": "md",
+        "tabKey": "references"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 2348,
+      "cl100k": 2558
     },
     "dependencies": {
       "skills": [],
