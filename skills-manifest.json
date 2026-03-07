@@ -14887,6 +14887,385 @@
       "source": "structured"
     }
   },
+  "pylabrobot": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/analytical-equipment.md",
+      "references/hardware-backends.md",
+      "references/liquid-handling.md",
+      "references/material-handling.md",
+      "references/resources.md",
+      "references/visualization.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 8194,
+        "lineCount": 184,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/analytical-equipment.md": {
+        "sizeBytes": 11935,
+        "lineCount": 465,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/hardware-backends.md": {
+        "sizeBytes": 12944,
+        "lineCount": 481,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/liquid-handling.md": {
+        "sizeBytes": 10206,
+        "lineCount": 404,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/material-handling.md": {
+        "sizeBytes": 13997,
+        "lineCount": 621,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/resources.md": {
+        "sizeBytes": 12263,
+        "lineCount": 490,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/visualization.md": {
+        "sizeBytes": 13560,
+        "lineCount": 533,
+        "ext": "md",
+        "tabKey": "references"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 20766,
+      "cl100k": 20108
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "pymatgen": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/analysis_modules.md",
+      "references/core_classes.md",
+      "references/io_formats.md",
+      "references/materials_project_api.md",
+      "references/transformations_workflows.md",
+      "scripts/phase_diagram_generator.py",
+      "scripts/structure_analyzer.py",
+      "scripts/structure_converter.py"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 20034,
+        "lineCount": 690,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/analysis_modules.md": {
+        "sizeBytes": 12942,
+        "lineCount": 531,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/core_classes.md": {
+        "sizeBytes": 9445,
+        "lineCount": 319,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/io_formats.md": {
+        "sizeBytes": 10518,
+        "lineCount": 470,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/materials_project_api.md": {
+        "sizeBytes": 12770,
+        "lineCount": 518,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/transformations_workflows.md": {
+        "sizeBytes": 16805,
+        "lineCount": 592,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "scripts/phase_diagram_generator.py": {
+        "sizeBytes": 7353,
+        "lineCount": 234,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/structure_analyzer.py": {
+        "sizeBytes": 8452,
+        "lineCount": 267,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/structure_converter.py": {
+        "sizeBytes": 5179,
+        "lineCount": 170,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 25860,
+      "cl100k": 25920
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "pymc": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "assets/hierarchical_model_template.py",
+      "assets/linear_regression_template.py",
+      "references/distributions.md",
+      "references/sampling_inference.md",
+      "references/workflows.md",
+      "scripts/model_comparison.py",
+      "scripts/model_diagnostics.py"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 15780,
+        "lineCount": 571,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "assets/hierarchical_model_template.py": {
+        "sizeBytes": 11858,
+        "lineCount": 334,
+        "ext": "py",
+        "tabKey": "assets"
+      },
+      "assets/linear_regression_template.py": {
+        "sizeBytes": 8118,
+        "lineCount": 242,
+        "ext": "py",
+        "tabKey": "assets"
+      },
+      "references/distributions.md": {
+        "sizeBytes": 10834,
+        "lineCount": 321,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/sampling_inference.md": {
+        "sizeBytes": 10384,
+        "lineCount": 425,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/workflows.md": {
+        "sizeBytes": 14106,
+        "lineCount": 527,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "scripts/model_comparison.py": {
+        "sizeBytes": 12411,
+        "lineCount": 388,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/model_diagnostics.py": {
+        "sizeBytes": 11113,
+        "lineCount": 351,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 23588,
+      "cl100k": 24155
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "pymoo": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/algorithms.md",
+      "references/constraints_mcdm.md",
+      "references/operators.md",
+      "references/problems.md",
+      "references/visualization.md",
+      "scripts/custom_problem_example.py",
+      "scripts/decision_making_example.py",
+      "scripts/many_objective_example.py",
+      "scripts/multi_objective_example.py",
+      "scripts/single_objective_example.py"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 16753,
+        "lineCount": 570,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/algorithms.md": {
+        "sizeBytes": 6124,
+        "lineCount": 181,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/constraints_mcdm.md": {
+        "sizeBytes": 10852,
+        "lineCount": 418,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/operators.md": {
+        "sizeBytes": 8815,
+        "lineCount": 346,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/problems.md": {
+        "sizeBytes": 7116,
+        "lineCount": 266,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/visualization.md": {
+        "sizeBytes": 9229,
+        "lineCount": 354,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "scripts/custom_problem_example.py": {
+        "sizeBytes": 4770,
+        "lineCount": 182,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/decision_making_example.py": {
+        "sizeBytes": 4588,
+        "lineCount": 162,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/many_objective_example.py": {
+        "sizeBytes": 2103,
+        "lineCount": 73,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/multi_objective_example.py": {
+        "sizeBytes": 1731,
+        "lineCount": 64,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/single_objective_example.py": {
+        "sizeBytes": 1620,
+        "lineCount": 60,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 18413,
+      "cl100k": 18160
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "pyopenms": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/data_structures.md",
+      "references/feature_detection.md",
+      "references/file_io.md",
+      "references/identification.md",
+      "references/metabolomics.md",
+      "references/signal_processing.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 5629,
+        "lineCount": 216,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/data_structures.md": {
+        "sizeBytes": 12390,
+        "lineCount": 498,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/feature_detection.md": {
+        "sizeBytes": 10539,
+        "lineCount": 411,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/file_io.md": {
+        "sizeBytes": 7716,
+        "lineCount": 350,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/identification.md": {
+        "sizeBytes": 11329,
+        "lineCount": 423,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/metabolomics.md": {
+        "sizeBytes": 13349,
+        "lineCount": 483,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/signal_processing.md": {
+        "sizeBytes": 9335,
+        "lineCount": 434,
+        "ext": "md",
+        "tabKey": "references"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 17574,
+      "cl100k": 17749
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
   "chaos-engineer": {
     "category": "Security & Web Testing",
     "files": [
