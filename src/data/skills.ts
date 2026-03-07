@@ -1226,20 +1226,6 @@ export const MOCK_SKILLS: Skill[] = [
     githubUrl: 'https://github.com/obra/superpowers/tree/main/skills/writing-skills'
   },
   {
-    id: 100,
-    name: 'xlsx',
-    nameZh: 'Excel 處理專家 (xlsx)',
-    description: 'Use this skill any time a spreadsheet file is the primary input or output (Excel, CSV, TSV).',
-    descriptionZh: '當試算表文件（Excel、CSV、TSV）為主要輸入輸出時使用此技能。',
-    author: 'Anthropic',
-    category: 'Document Skills',
-    tags: ['Excel', 'CSV', 'Spreadsheet', 'Data'],
-    downloadCount: 0,
-    createdAt: '2025-03-03',
-    source: 'xlsx',
-    githubUrl: 'https://github.com/anthropics/skills/tree/main/skills/xlsx'
-  },
-  {
     id: 102,
     name: 'aws-mcp-setup',
     nameZh: 'AWS MCP 配置助手',
@@ -1310,20 +1296,6 @@ export const MOCK_SKILLS: Skill[] = [
     githubUrl: 'https://github.com/zxkane/aws-skills/tree/main/plugins/aws-agentic-ai/skills/aws-agentic-ai'
   },
   {
-    id: 107,
-    name: 'aptos',
-    nameZh: 'Aptos & Move 專家',
-    description: 'Aptos blockchain and Move language expert.',
-    descriptionZh: 'Aptos 區塊鏈與 Move 程式語言專家，涵蓋智能合約開發與代幣標準。',
-    author: 'raintree-technology',
-    category: 'Web3 & Blockchain',
-    tags: ['Aptos', 'Move', 'Blockchain', 'Smart Contract'],
-    downloadCount: 0,
-    createdAt: '2026-03-04',
-    source: 'aptos',
-    githubUrl: 'https://github.com/raintree-technology/claude-starter/tree/main/skills/aptos'
-  },
-  {
     id: 108,
     name: 'helius',
     nameZh: 'Solana Helius 專家',
@@ -1336,6 +1308,104 @@ export const MOCK_SKILLS: Skill[] = [
     createdAt: '2026-03-04',
     source: 'helius',
     githubUrl: 'https://github.com/raintree-technology/claude-starter/tree/main/skills/helius'
+  },
+  {
+    id: 419,
+    name: 'aptos-cli',
+    nameZh: 'Aptos CLI 專家',
+    description: 'Expert in Aptos CLI for account management, contract deployment, transaction submission, and node operations.',
+    descriptionZh: '專精 Aptos CLI，用於帳戶管理、合約部署、交易提交與節點操作。',
+    author: 'raintree-technology',
+    category: 'Web3 & Blockchain',
+    tags: ['Aptos', 'CLI', 'Move', 'Blockchain'],
+    downloadCount: 0,
+    createdAt: '2026-03-07',
+    source: 'aptos-cli',
+    githubUrl: 'https://github.com/raintree-technology/claude-starter/tree/main/skills/aptos/aptos-cli'
+  },
+  {
+    id: 420,
+    name: 'aptos-core',
+    nameZh: 'Aptos 核心協議專家',
+    description: 'Expert in Aptos blockchain core architecture, consensus, execution, networking, and validator operations.',
+    descriptionZh: '專精 Aptos 核心架構、共識、執行引擎、網路層與驗證節點運作。',
+    author: 'raintree-technology',
+    category: 'Web3 & Blockchain',
+    tags: ['Aptos', 'Core', 'Consensus', 'Validator'],
+    downloadCount: 0,
+    createdAt: '2026-03-07',
+    source: 'aptos-core',
+    githubUrl: 'https://github.com/raintree-technology/claude-starter/tree/main/skills/aptos/aptos-core'
+  },
+  {
+    id: 421,
+    name: 'aptos-indexer',
+    nameZh: 'Aptos Indexer 專家',
+    description: 'Expert in Aptos Indexer architecture and GraphQL API for querying and processing blockchain data.',
+    descriptionZh: '專精 Aptos Indexer 架構與 GraphQL API，用於查詢與處理鏈上資料。',
+    author: 'raintree-technology',
+    category: 'Web3 & Blockchain',
+    tags: ['Aptos', 'Indexer', 'GraphQL', 'Data'],
+    downloadCount: 0,
+    createdAt: '2026-03-07',
+    source: 'aptos-indexer',
+    githubUrl: 'https://github.com/raintree-technology/claude-starter/tree/main/skills/aptos/aptos-indexer'
+  },
+  {
+    id: 422,
+    name: 'aptos-standards',
+    nameZh: 'Aptos 標準與框架專家',
+    description: 'Expert in Aptos Framework and token standards including Fungible Assets, Digital Assets, and core modules.',
+    descriptionZh: '專精 Aptos Framework 與代幣標準，包含 Fungible Assets、Digital Assets 與核心模組。',
+    author: 'raintree-technology',
+    category: 'Web3 & Blockchain',
+    tags: ['Aptos', 'Standards', 'Token', 'Framework'],
+    downloadCount: 0,
+    createdAt: '2026-03-07',
+    source: 'aptos-standards',
+    githubUrl: 'https://github.com/raintree-technology/claude-starter/tree/main/skills/aptos/aptos-standards'
+  },
+  {
+    id: 423,
+    name: 'aptos-ts-sdk',
+    nameZh: 'Aptos TypeScript SDK 專家',
+    description: 'Expert in Aptos TypeScript SDK for frontend apps, account management, transaction submission, and indexer queries.',
+    descriptionZh: '專精 Aptos TypeScript SDK，用於前端應用、帳戶管理、交易提交與 Indexer 查詢。',
+    author: 'raintree-technology',
+    category: 'Web3 & Blockchain',
+    tags: ['Aptos', 'TypeScript', 'SDK', 'Frontend'],
+    downloadCount: 0,
+    createdAt: '2026-03-07',
+    source: 'aptos-ts-sdk',
+    githubUrl: 'https://github.com/raintree-technology/claude-starter/tree/main/skills/aptos/aptos-ts-sdk'
+  },
+  {
+    id: 424,
+    name: 'move-analyzer',
+    nameZh: 'Move Analyzer 開發工具專家',
+    description: 'Expert in Move language server tooling, IDE integration, and development workflow optimization.',
+    descriptionZh: '專精 Move 語言伺服器工具、IDE 整合與開發流程最佳化。',
+    author: 'raintree-technology',
+    category: 'Web3 & Blockchain',
+    tags: ['Move', 'LSP', 'IDE', 'Tooling'],
+    downloadCount: 0,
+    createdAt: '2026-03-07',
+    source: 'move-analyzer',
+    githubUrl: 'https://github.com/raintree-technology/claude-starter/tree/main/skills/aptos/move-analyzer'
+  },
+  {
+    id: 425,
+    name: 'move-prover',
+    nameZh: 'Move Prover 形式驗證專家',
+    description: 'Formal verification expert for Move smart contracts using specifications, invariants, and proof workflows.',
+    descriptionZh: '專精 Move 智能合約形式驗證，涵蓋規格、不可變條件與證明流程。',
+    author: 'raintree-technology',
+    category: 'Web3 & Blockchain',
+    tags: ['Move', 'Formal Verification', 'Smart Contract', 'Prover'],
+    downloadCount: 0,
+    createdAt: '2026-03-07',
+    source: 'move-prover',
+    githubUrl: 'https://github.com/raintree-technology/claude-starter/tree/main/skills/aptos/move-prover'
   },
   {
     id: 109,
@@ -1420,20 +1490,6 @@ export const MOCK_SKILLS: Skill[] = [
     createdAt: '2026-03-04',
     source: 'notebooklm',
     githubUrl: 'https://github.com/sanjay3290/ai-skills/tree/main/skills/notebooklm'
-  },
-  {
-    id: 115,
-    name: 'postgres',
-    nameZh: 'PostgreSQL 唯讀查詢專家',
-    description: "Execute read-only SQL queries against multiple PostgreSQL databases with safety checks.",
-    descriptionZh: '針對多個 PostgreSQL 資料庫執行安全的唯讀 SQL 查詢，支援 Schema 探索與結果限制。',
-    author: 'sanjay3290',
-    category: 'Data & Analysis',
-    tags: ['PostgreSQL', 'SQL', 'Database', 'Analysis'],
-    downloadCount: 0,
-    createdAt: '2026-03-04',
-    source: 'postgres',
-    githubUrl: 'https://github.com/sanjay3290/ai-skills/tree/main/skills/postgres'
   },
   // ===== NEW SKILLS FROM awesome-claude-skills =====
   // Document Skills
@@ -4638,20 +4694,6 @@ export const MOCK_SKILLS: Skill[] = [
     githubUrl: 'https://github.com/michalparkola/tapestry-skills-for-claude-code/tree/main/youtube-transcript'
   },
   {
-    id: 143,
-    name: 'video-downloader',
-    nameZh: '影片下載工具',
-    description: 'Downloads videos from YouTube and other platforms for offline viewing, editing, or archival.',
-    descriptionZh: '從 YouTube 等平台下載影片，用於離線觀看、編輯或存檔。',
-    author: 'ComposioHQ',
-    category: 'Media & Content',
-    tags: ['Video', 'Download', 'YouTube'],
-    downloadCount: 0,
-    createdAt: '2026-03-04',
-    source: 'video-downloader',
-    githubUrl: 'https://github.com/ComposioHQ/awesome-claude-skills/tree/master/video-downloader'
-  },
-  {
     id: 144,
     name: 'image-enhancer',
     nameZh: '圖片增強工具',
@@ -4678,34 +4720,6 @@ export const MOCK_SKILLS: Skill[] = [
     createdAt: '2026-03-04',
     source: 'imagen',
     githubUrl: 'https://github.com/sanjay3290/ai-skills/tree/main/skills/imagen'
-  },
-  {
-    id: 146,
-    name: 'elevenlabs',
-    nameZh: 'ElevenLabs 語音合成',
-    description: 'Text-to-speech narration and two-host podcast generation from documents using ElevenLabs API.',
-    descriptionZh: '使用 ElevenLabs API 進行文字轉語音旁白與雙主持人播客生成。',
-    author: 'sanjay3290',
-    category: 'Media & Content',
-    tags: ['TTS', 'Podcast', 'ElevenLabs'],
-    downloadCount: 0,
-    createdAt: '2026-03-04',
-    source: 'elevenlabs',
-    githubUrl: 'https://github.com/sanjay3290/ai-skills/tree/main/skills/elevenlabs'
-  },
-  {
-    id: 147,
-    name: 'google-tts',
-    nameZh: 'Google 語音合成',
-    description: 'Text-to-speech narration and podcast generation using Google Cloud TTS.',
-    descriptionZh: '使用 Google Cloud TTS 進行文字轉語音旁白與播客生成。',
-    author: 'sanjay3290',
-    category: 'Media & Content',
-    tags: ['TTS', 'Google Cloud', 'Podcast'],
-    downloadCount: 0,
-    createdAt: '2026-03-04',
-    source: 'google-tts',
-    githubUrl: 'https://github.com/sanjay3290/ai-skills/tree/main/skills/google-tts'
   },
   {
     id: 148,
@@ -4935,20 +4949,6 @@ export const MOCK_SKILLS: Skill[] = [
   },
   // Security & Web Testing
   {
-    id: 167,
-    name: 'vibesec-skill',
-    nameZh: 'VibeSec 安全編碼',
-    description: 'VibeSec helps Claude write secure code and prevent common vulnerabilities.',
-    descriptionZh: 'VibeSec 協助 Claude 撰寫安全程式碼並防範常見漏洞。',
-    author: 'BehiSecc',
-    category: 'Security & Web Testing',
-    tags: ['Security', 'Secure Code', 'Vulnerabilities'],
-    downloadCount: 0,
-    createdAt: '2026-03-04',
-    source: 'vibesec-skill',
-    githubUrl: 'https://github.com/BehiSecc/VibeSec-Skill'
-  },
-  {
     id: 169,
     name: 'ffuf-claude-skill',
     nameZh: 'FFUF 模糊測試',
@@ -4975,20 +4975,6 @@ export const MOCK_SKILLS: Skill[] = [
     createdAt: '2026-03-04',
     source: 'owasp-security',
     githubUrl: 'https://github.com/agamm/claude-code-owasp'
-  },
-  {
-    id: 172,
-    name: 'varlock-claude-skill',
-    nameZh: '環境變數安全管理',
-    description: 'Secure environment variable management ensuring secrets never appear in Claude sessions, terminals, logs, or git commits.',
-    descriptionZh: '安全環境變數管理，確保機密資訊不會出現在 Claude 會話、終端、日誌或 Git 提交中。',
-    author: 'wrsmith108',
-    category: 'Security & Web Testing',
-    tags: ['Secrets', 'Env', 'Security'],
-    downloadCount: 0,
-    createdAt: '2026-03-04',
-    source: 'varlock-claude-skill',
-    githubUrl: 'https://github.com/wrsmith108/varlock-claude-skill'
   },
   // Utility & Automation
   {
@@ -5091,7 +5077,7 @@ export const MOCK_SKILLS: Skill[] = [
     githubUrl: 'https://github.com/agentbay-ai/agentbay-skills'
   },
   {
-    id: 182,
+    id: 426,
     name: 'mcp-builder',
     nameZh: 'MCP 伺服器建構指南',
     description: 'Guide for creating high-quality MCP (Model Context Protocol) servers for integrating external services and APIs.',
