@@ -16140,37 +16140,6 @@
       "source": "structured"
     }
   },
-  "scientific-brainstorming": {
-    "category": "Writing & Research",
-    "files": [
-      "SKILL.md",
-      "references/brainstorming_methods.md"
-    ],
-    "fileMeta": {
-      "SKILL.md": {
-        "sizeBytes": 8179,
-        "lineCount": 190,
-        "ext": "md",
-        "tabKey": "root"
-      },
-      "references/brainstorming_methods.md": {
-        "sizeBytes": 12065,
-        "lineCount": 327,
-        "ext": "md",
-        "tabKey": "references"
-      }
-    },
-    "tokenEstimate": {
-      "heuristic": 5054,
-      "cl100k": 4081
-    },
-    "dependencies": {
-      "skills": [],
-      "libraries": [],
-      "runtimeTools": [],
-      "source": "structured"
-    }
-  },
   "the-fool": {
     "category": "Writing & Research",
     "files": [
