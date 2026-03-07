@@ -16826,6 +16826,183 @@
       "source": "structured"
     }
   },
+  "simulation-orchestrator": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/aggregation_methods.md",
+      "references/campaign_patterns.md",
+      "references/sweep_strategies.md",
+      "scripts/campaign_manager.py",
+      "scripts/job_tracker.py",
+      "scripts/result_aggregator.py",
+      "scripts/sweep_generator.py"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 7633,
+        "lineCount": 231,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/aggregation_methods.md": {
+        "sizeBytes": 4102,
+        "lineCount": 196,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/campaign_patterns.md": {
+        "sizeBytes": 3861,
+        "lineCount": 132,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/sweep_strategies.md": {
+        "sizeBytes": 3335,
+        "lineCount": 141,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "scripts/campaign_manager.py": {
+        "sizeBytes": 8231,
+        "lineCount": 258,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/job_tracker.py": {
+        "sizeBytes": 9643,
+        "lineCount": 318,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/result_aggregator.py": {
+        "sizeBytes": 9658,
+        "lineCount": 340,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/sweep_generator.py": {
+        "sizeBytes": 10330,
+        "lineCount": 331,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 14046,
+      "cl100k": 13583
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "simulation-validator": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/log_patterns.md",
+      "references/validation_protocol.md",
+      "scripts/failure_diagnoser.py",
+      "scripts/preflight_checker.py",
+      "scripts/result_validator.py",
+      "scripts/runtime_monitor.py"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 6536,
+        "lineCount": 196,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/log_patterns.md": {
+        "sizeBytes": 6933,
+        "lineCount": 259,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/validation_protocol.md": {
+        "sizeBytes": 5885,
+        "lineCount": 197,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "scripts/failure_diagnoser.py": {
+        "sizeBytes": 2141,
+        "lineCount": 64,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/preflight_checker.py": {
+        "sizeBytes": 6631,
+        "lineCount": 215,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/result_validator.py": {
+        "sizeBytes": 4072,
+        "lineCount": 126,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/runtime_monitor.py": {
+        "sizeBytes": 3801,
+        "lineCount": 131,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 8977,
+      "cl100k": 8764
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "slurm-job-script-generator": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/slurm_directives.md",
+      "scripts/slurm_script_generator.py"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 5138,
+        "lineCount": 136,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/slurm_directives.md": {
+        "sizeBytes": 1811,
+        "lineCount": 47,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "scripts/slurm_script_generator.py": {
+        "sizeBytes": 16606,
+        "lineCount": 489,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 5883,
+      "cl100k": 5949
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
   "chaos-engineer": {
     "category": "Security & Web Testing",
     "files": [
