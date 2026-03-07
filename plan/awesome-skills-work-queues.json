@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-07T03:28:32.000Z",
+  "generatedAt": "2026-03-07T06:38:00.000Z",
   "queues": {
     "mismatch": [],
     "local_present_tracking_missing": [
@@ -9,9 +9,10 @@
         "repoPath": "skills/javascript-pro",
         "reason": "tracking_missing_but_local_skill_exists",
         "priority": "P1",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-049 onboard-local mapping completed on 2026-03-07"
         ]
       },
       {
@@ -20,9 +21,10 @@
         "repoPath": "skills/kotlin-specialist",
         "reason": "tracking_missing_but_local_skill_exists",
         "priority": "P1",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-049 onboard-local mapping completed on 2026-03-07"
         ]
       },
       {
@@ -31,9 +33,10 @@
         "repoPath": "skills/kubernetes-specialist",
         "reason": "tracking_missing_but_local_skill_exists",
         "priority": "P1",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-049 onboard-local mapping completed on 2026-03-07"
         ]
       },
       {
@@ -42,9 +45,10 @@
         "repoPath": "skills/laravel-specialist",
         "reason": "tracking_missing_but_local_skill_exists",
         "priority": "P1",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-049 onboard-local mapping completed on 2026-03-07"
         ]
       },
       {
@@ -53,9 +57,10 @@
         "repoPath": "skills/legacy-modernizer",
         "reason": "tracking_missing_but_local_skill_exists",
         "priority": "P1",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-049 onboard-local mapping completed on 2026-03-07"
         ]
       },
       {
@@ -64,9 +69,10 @@
         "repoPath": "skills/mcp-developer",
         "reason": "tracking_missing_but_local_skill_exists",
         "priority": "P1",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-050 onboard-local mapping completed on 2026-03-07"
         ]
       },
       {
@@ -75,9 +81,10 @@
         "repoPath": "skills/microservices-architect",
         "reason": "tracking_missing_but_local_skill_exists",
         "priority": "P1",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-050 onboard-local mapping completed on 2026-03-07"
         ]
       },
       {
@@ -86,9 +93,10 @@
         "repoPath": "skills/ml-pipeline",
         "reason": "tracking_missing_but_local_skill_exists",
         "priority": "P1",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-050 onboard-local mapping completed on 2026-03-07"
         ]
       },
       {
@@ -97,9 +105,10 @@
         "repoPath": "skills/monitoring-expert",
         "reason": "tracking_missing_but_local_skill_exists",
         "priority": "P1",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-050 onboard-local mapping completed on 2026-03-07"
         ]
       },
       {
@@ -108,9 +117,10 @@
         "repoPath": "skills/nestjs-expert",
         "reason": "tracking_missing_but_local_skill_exists",
         "priority": "P1",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-050 onboard-local mapping completed on 2026-03-07"
         ]
       },
       {
@@ -119,9 +129,10 @@
         "repoPath": "skills/nextjs-developer",
         "reason": "tracking_missing_but_local_skill_exists",
         "priority": "P1",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-051 onboard-local mapping completed on 2026-03-07"
         ]
       },
       {
@@ -130,9 +141,10 @@
         "repoPath": "skills/pandas-pro",
         "reason": "tracking_missing_but_local_skill_exists",
         "priority": "P1",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-051 onboard-local mapping completed on 2026-03-07"
         ]
       },
       {
@@ -141,9 +153,10 @@
         "repoPath": "skills/playwright-expert",
         "reason": "tracking_missing_but_local_skill_exists",
         "priority": "P1",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-051 onboard-local mapping completed on 2026-03-07"
         ]
       },
       {
@@ -152,9 +165,10 @@
         "repoPath": "skills/prompt-engineer",
         "reason": "tracking_missing_but_local_skill_exists",
         "priority": "P1",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-051 onboard-local mapping completed on 2026-03-07"
         ]
       },
       {
@@ -163,9 +177,10 @@
         "repoPath": "skills/revealjs",
         "reason": "tracking_missing_but_local_skill_exists",
         "priority": "P1",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-051 onboard-local mapping completed on 2026-03-07"
         ]
       }
     ],
@@ -1883,9 +1898,10 @@
         "repoPath": "terraform/module-generation/skills/terraform-stacks",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-045 imported and onboarded on 2026-03-07"
         ]
       },
       {
@@ -1894,9 +1910,10 @@
         "repoPath": "terraform/code-generation/skills/terraform-style-guide",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-045 imported and onboarded on 2026-03-07"
         ]
       },
       {
@@ -1905,9 +1922,10 @@
         "repoPath": "terraform/code-generation/skills/terraform-test",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-045 imported and onboarded on 2026-03-07"
         ]
       },
       {
@@ -1916,9 +1934,10 @@
         "repoPath": "packer/builders/skills/windows-builder",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-045 imported and onboarded on 2026-03-07"
         ]
       },
       {
@@ -1927,9 +1946,10 @@
         "repoPath": "skills/aptos/framework",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-045 imported and onboarded on 2026-03-07"
         ]
       },
       {
@@ -1938,9 +1958,10 @@
         "repoPath": "skills/aptos/gas-optimization",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-046 imported and onboarded on 2026-03-07"
         ]
       },
       {
@@ -1949,9 +1970,10 @@
         "repoPath": "skills/aptos/move-language",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-046 imported and onboarded on 2026-03-07"
         ]
       },
       {
@@ -1960,9 +1982,10 @@
         "repoPath": "skills/aptos/move-testing",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-046 imported and onboarded on 2026-03-07"
         ]
       },
       {
@@ -1971,9 +1994,10 @@
         "repoPath": "skills/aptos/object-model",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-046 imported and onboarded on 2026-03-07"
         ]
       },
       {
@@ -1982,9 +2006,10 @@
         "repoPath": "skills/aptos/shelby",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-046 imported and onboarded on 2026-03-07"
         ]
       },
       {
@@ -1993,9 +2018,10 @@
         "repoPath": "skills/aptos/token-standards",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-047 imported and onboarded on 2026-03-07"
         ]
       },
       {
@@ -2004,9 +2030,10 @@
         "repoPath": "skills/gmail",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-047 imported and onboarded on 2026-03-07"
         ]
       },
       {
@@ -2015,9 +2042,10 @@
         "repoPath": "skills/google-calendar",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-047 imported and onboarded on 2026-03-07"
         ]
       },
       {
@@ -2026,9 +2054,10 @@
         "repoPath": "skills/google-chat",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-047 imported and onboarded on 2026-03-07"
         ]
       },
       {
@@ -2037,9 +2066,10 @@
         "repoPath": "skills/google-docs",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-047 imported and onboarded on 2026-03-07"
         ]
       },
       {
@@ -2048,9 +2078,10 @@
         "repoPath": "skills/google-drive",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-048 imported and onboarded on 2026-03-07"
         ]
       },
       {
@@ -2059,9 +2090,10 @@
         "repoPath": "skills/google-sheets",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-048 imported and onboarded on 2026-03-07"
         ]
       },
       {
@@ -2070,9 +2102,10 @@
         "repoPath": "skills/google-slides",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-048 imported and onboarded on 2026-03-07"
         ]
       },
       {
@@ -2081,9 +2114,10 @@
         "repoPath": "temp_extract/terminal-title",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-048 imported and onboarded on 2026-03-07"
         ]
       },
       {
@@ -2092,9 +2126,10 @@
         "repoPath": "skills/kaggle",
         "reason": "missing_nonfixture_import_required",
         "priority": "P2",
-        "status": "todo",
+        "status": "done",
         "notes": [
-          "No local skill matched by source slug or canonical URL."
+          "No local skill matched by source slug or canonical URL.",
+          "batch-048 imported and onboarded on 2026-03-07"
         ]
       }
     ],
@@ -2619,8 +2654,10 @@
         "repoPath": null,
         "reason": "local_custom_skill_not_in_awesome_tracking",
         "priority": "P3",
-        "status": "todo",
-        "notes": []
+        "status": "deferred",
+        "notes": [
+          "batch-052 triage: local custom skill outside awesome baseline; deferred on 2026-03-07"
+        ]
       },
       {
         "sourceSlug": "algorithmic-art",
@@ -2628,8 +2665,10 @@
         "repoPath": null,
         "reason": "local_custom_skill_not_in_awesome_tracking",
         "priority": "P3",
-        "status": "todo",
-        "notes": []
+        "status": "deferred",
+        "notes": [
+          "batch-052 triage: local custom skill outside awesome baseline; deferred on 2026-03-07"
+        ]
       },
       {
         "sourceSlug": "brand-guidelines",
@@ -2637,8 +2676,10 @@
         "repoPath": null,
         "reason": "local_custom_skill_not_in_awesome_tracking",
         "priority": "P3",
-        "status": "todo",
-        "notes": []
+        "status": "deferred",
+        "notes": [
+          "batch-052 triage: local custom skill outside awesome baseline; deferred on 2026-03-07"
+        ]
       },
       {
         "sourceSlug": "canvas-design",
@@ -2646,8 +2687,10 @@
         "repoPath": null,
         "reason": "local_custom_skill_not_in_awesome_tracking",
         "priority": "P3",
-        "status": "todo",
-        "notes": []
+        "status": "deferred",
+        "notes": [
+          "batch-052 triage: local custom skill outside awesome baseline; deferred on 2026-03-07"
+        ]
       },
       {
         "sourceSlug": "charles-proxy-extract",
@@ -2655,8 +2698,10 @@
         "repoPath": null,
         "reason": "local_custom_skill_not_in_awesome_tracking",
         "priority": "P3",
-        "status": "todo",
-        "notes": []
+        "status": "deferred",
+        "notes": [
+          "batch-052 triage: local custom skill outside awesome baseline; deferred on 2026-03-07"
+        ]
       },
       {
         "sourceSlug": "claude-ally-health",
@@ -2664,8 +2709,10 @@
         "repoPath": null,
         "reason": "local_custom_skill_not_in_awesome_tracking",
         "priority": "P3",
-        "status": "todo",
-        "notes": []
+        "status": "deferred",
+        "notes": [
+          "batch-053 triage: local custom skill outside awesome baseline; deferred on 2026-03-07"
+        ]
       },
       {
         "sourceSlug": "claude-code-terminal-title",
@@ -2673,8 +2720,10 @@
         "repoPath": null,
         "reason": "local_custom_skill_not_in_awesome_tracking",
         "priority": "P3",
-        "status": "todo",
-        "notes": []
+        "status": "deferred",
+        "notes": [
+          "batch-053 triage: local custom skill outside awesome baseline; deferred on 2026-03-07"
+        ]
       },
       {
         "sourceSlug": "claude-code-video-toolkit",
@@ -2682,8 +2731,10 @@
         "repoPath": null,
         "reason": "local_custom_skill_not_in_awesome_tracking",
         "priority": "P3",
-        "status": "todo",
-        "notes": []
+        "status": "deferred",
+        "notes": [
+          "batch-053 triage: local custom skill outside awesome baseline; deferred on 2026-03-07"
+        ]
       },
       {
         "sourceSlug": "claude-epub-skill",
@@ -2691,8 +2742,10 @@
         "repoPath": null,
         "reason": "local_custom_skill_not_in_awesome_tracking",
         "priority": "P3",
-        "status": "todo",
-        "notes": []
+        "status": "deferred",
+        "notes": [
+          "batch-053 triage: local custom skill outside awesome baseline; deferred on 2026-03-07"
+        ]
       },
       {
         "sourceSlug": "claude-scientific-skills",
@@ -2700,8 +2753,10 @@
         "repoPath": null,
         "reason": "local_custom_skill_not_in_awesome_tracking",
         "priority": "P3",
-        "status": "todo",
-        "notes": []
+        "status": "deferred",
+        "notes": [
+          "batch-053 triage: local custom skill outside awesome baseline; deferred on 2026-03-07"
+        ]
       },
       {
         "sourceSlug": "claude-starter",
@@ -2709,8 +2764,10 @@
         "repoPath": null,
         "reason": "local_custom_skill_not_in_awesome_tracking",
         "priority": "P3",
-        "status": "todo",
-        "notes": []
+        "status": "deferred",
+        "notes": [
+          "batch-054 triage: local custom skill outside awesome baseline; deferred on 2026-03-07"
+        ]
       },
       {
         "sourceSlug": "clawfu-mcp-skills",
@@ -2718,8 +2775,10 @@
         "repoPath": null,
         "reason": "local_custom_skill_not_in_awesome_tracking",
         "priority": "P3",
-        "status": "todo",
-        "notes": []
+        "status": "deferred",
+        "notes": [
+          "batch-054 triage: local custom skill outside awesome baseline; deferred on 2026-03-07"
+        ]
       },
       {
         "sourceSlug": "csv-data-summarizer",
@@ -2727,8 +2786,10 @@
         "repoPath": null,
         "reason": "local_custom_skill_not_in_awesome_tracking",
         "priority": "P3",
-        "status": "todo",
-        "notes": []
+        "status": "deferred",
+        "notes": [
+          "batch-054 triage: local custom skill outside awesome baseline; deferred on 2026-03-07"
+        ]
       },
       {
         "sourceSlug": "deapi-ai-media-toolkit",
@@ -2736,8 +2797,10 @@
         "repoPath": null,
         "reason": "local_custom_skill_not_in_awesome_tracking",
         "priority": "P3",
-        "status": "todo",
-        "notes": []
+        "status": "deferred",
+        "notes": [
+          "batch-054 triage: local custom skill outside awesome baseline; deferred on 2026-03-07"
+        ]
       },
       {
         "sourceSlug": "defense-in-depth",
@@ -2745,8 +2808,10 @@
         "repoPath": null,
         "reason": "local_custom_skill_not_in_awesome_tracking",
         "priority": "P3",
-        "status": "todo",
-        "notes": []
+        "status": "deferred",
+        "notes": [
+          "batch-054 triage: local custom skill outside awesome baseline; deferred on 2026-03-07"
+        ]
       },
       {
         "sourceSlug": "dispatching-parallel-agents",
@@ -2754,8 +2819,10 @@
         "repoPath": null,
         "reason": "local_custom_skill_not_in_awesome_tracking",
         "priority": "P3",
-        "status": "todo",
-        "notes": []
+        "status": "deferred",
+        "notes": [
+          "batch-055 triage: local custom skill outside awesome baseline; deferred on 2026-03-07"
+        ]
       },
       {
         "sourceSlug": "doc-coauthoring",
@@ -2763,8 +2830,10 @@
         "repoPath": null,
         "reason": "local_custom_skill_not_in_awesome_tracking",
         "priority": "P3",
-        "status": "todo",
-        "notes": []
+        "status": "deferred",
+        "notes": [
+          "batch-055 triage: local custom skill outside awesome baseline; deferred on 2026-03-07"
+        ]
       },
       {
         "sourceSlug": "executing-plans",
@@ -2772,8 +2841,10 @@
         "repoPath": null,
         "reason": "local_custom_skill_not_in_awesome_tracking",
         "priority": "P3",
-        "status": "todo",
-        "notes": []
+        "status": "deferred",
+        "notes": [
+          "batch-055 triage: local custom skill outside awesome baseline; deferred on 2026-03-07"
+        ]
       },
       {
         "sourceSlug": "family-history-research",
@@ -2781,8 +2852,10 @@
         "repoPath": null,
         "reason": "local_custom_skill_not_in_awesome_tracking",
         "priority": "P3",
-        "status": "todo",
-        "notes": []
+        "status": "deferred",
+        "notes": [
+          "batch-055 triage: local custom skill outside awesome baseline; deferred on 2026-03-07"
+        ]
       },
       {
         "sourceSlug": "ffuf-claude-skill",
@@ -2790,8 +2863,10 @@
         "repoPath": null,
         "reason": "local_custom_skill_not_in_awesome_tracking",
         "priority": "P3",
-        "status": "todo",
-        "notes": []
+        "status": "deferred",
+        "notes": [
+          "batch-055 triage: local custom skill outside awesome baseline; deferred on 2026-03-07"
+        ]
       },
       {
         "sourceSlug": "find-scene",
@@ -2799,8 +2874,10 @@
         "repoPath": null,
         "reason": "local_custom_skill_not_in_awesome_tracking",
         "priority": "P3",
-        "status": "todo",
-        "notes": []
+        "status": "deferred",
+        "notes": [
+          "batch-056 triage: local custom skill outside awesome baseline; deferred on 2026-03-07"
+        ]
       },
       {
         "sourceSlug": "find-skills",
@@ -2808,8 +2885,10 @@
         "repoPath": null,
         "reason": "local_custom_skill_not_in_awesome_tracking",
         "priority": "P3",
-        "status": "todo",
-        "notes": []
+        "status": "deferred",
+        "notes": [
+          "batch-056 triage: local custom skill outside awesome baseline; deferred on 2026-03-07"
+        ]
       },
       {
         "sourceSlug": "frontend-design",
@@ -2817,8 +2896,10 @@
         "repoPath": null,
         "reason": "local_custom_skill_not_in_awesome_tracking",
         "priority": "P3",
-        "status": "todo",
-        "notes": []
+        "status": "deferred",
+        "notes": [
+          "batch-056 triage: local custom skill outside awesome baseline; deferred on 2026-03-07"
+        ]
       },
       {
         "sourceSlug": "git-pushing",
@@ -2826,8 +2907,10 @@
         "repoPath": null,
         "reason": "local_custom_skill_not_in_awesome_tracking",
         "priority": "P3",
-        "status": "todo",
-        "notes": []
+        "status": "deferred",
+        "notes": [
+          "batch-056 triage: local custom skill outside awesome baseline; deferred on 2026-03-07"
+        ]
       },
       {
         "sourceSlug": "google-workspace-skills",
@@ -2835,8 +2918,10 @@
         "repoPath": null,
         "reason": "local_custom_skill_not_in_awesome_tracking",
         "priority": "P3",
-        "status": "todo",
-        "notes": []
+        "status": "deferred",
+        "notes": [
+          "batch-056 triage: local custom skill outside awesome baseline; deferred on 2026-03-07"
+        ]
       },
       {
         "sourceSlug": "hashicorp-agent-skills",

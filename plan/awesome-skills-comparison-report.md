@@ -1,3 +1,158 @@
+## 增量更新（2026-03-07，Batch 056）
+- Tracking 產生時間：`2026-03-07T06:38:00.000Z`
+- Batch 056 採 `local_only_custom` triage（5 筆）
+- mismatch（url/author）：`0`（維持）
+- `status=missing`：`28`（維持）
+- `needs_manual_review`：`18`（維持）
+
+### 下一批
+1. `import_nonfixture_by_repo` 目前無 `todo`
+2. `local_present_tracking_missing` 目前無 `todo`
+3. 可續做 `local_only_custom` 或 `fixture_manual_review` 分流
+
+## 增量更新（2026-03-07，Batch 055）
+- Tracking 產生時間：`2026-03-07T06:31:00.000Z`
+- Batch 055 採 `local_only_custom` triage（5 筆）
+- mismatch（url/author）：`0`（維持）
+- `status=missing`：`28`（維持）
+- `needs_manual_review`：`18`（維持）
+
+### 下一批
+1. `import_nonfixture_by_repo` 目前無 `todo`
+2. `local_present_tracking_missing` 目前無 `todo`
+3. 可續做 `local_only_custom` 或 `fixture_manual_review` 分流
+
+## 增量更新（2026-03-07，Batch 054）
+- Tracking 產生時間：`2026-03-07T06:25:00.000Z`
+- Batch 054 採 `local_only_custom` triage（5 筆）
+- mismatch（url/author）：`0`（維持）
+- `status=missing`：`28`（維持）
+- `needs_manual_review`：`18`（維持）
+
+### 下一批
+1. `import_nonfixture_by_repo` 目前無 `todo`
+2. `local_present_tracking_missing` 目前無 `todo`
+3. 可續做 `local_only_custom` 或 `fixture_manual_review` 分流
+
+## 增量更新（2026-03-07，Batch 053）
+- Tracking 產生時間：`2026-03-07T06:18:00.000Z`
+- Batch 053 採 `local_only_custom` triage（5 筆）
+- mismatch（url/author）：`0`（維持）
+- `status=missing`：`28`（維持）
+- `needs_manual_review`：`18`（維持）
+
+### 下一批
+1. `import_nonfixture_by_repo` 目前無 `todo`
+2. `local_present_tracking_missing` 目前無 `todo`
+3. 可續做 `local_only_custom` 或 `fixture_manual_review` 分流
+
+## 增量更新（2026-03-07，Batch 052）
+- Tracking 產生時間：`2026-03-07T06:05:00.000Z`
+- Batch 052 採 `local_only_custom` triage（5 筆）
+- mismatch（url/author）：`0`（維持）
+- `status=missing`：`28`（維持）
+- `needs_manual_review`：`18`（維持）
+
+### 下一批
+1. `import_nonfixture_by_repo` 目前無 `todo`
+2. `local_present_tracking_missing` 目前無 `todo`
+3. 可續做 `local_only_custom` 或 `fixture_manual_review` 分流
+
+## 增量更新（2026-03-07，Batch 051）
+- Tracking 產生時間：`2026-03-07T05:08:28.000Z`
+- Wave 2 correction 已完成：`batch-049` 至 `batch-051`（local-present mapping 全部補齊）
+- mismatch（url/author）：`0`（維持）
+- `status=missing`：`28`（由 `33` 降至 `28`）
+- `needs_manual_review`：`18`（維持）
+
+### 下一批
+1. `import_nonfixture_by_repo` 目前無 `todo`
+2. `local_present_tracking_missing` 目前無 `todo`
+
+## 增量更新（2026-03-07，Batch 050）
+- Tracking 產生時間：`2026-03-07T04:59:58.000Z`
+- Wave 2 correction 已完成：`batch-049` 至 `batch-050`（local-present mapping 再補齊 5 筆）
+- mismatch（url/author）：`0`（維持）
+- `status=missing`：`33`（由 `38` 降至 `33`）
+- `needs_manual_review`：`18`（維持）
+
+### 下一批（correction, local_present_tracking_missing）
+1. `nextjs-developer`
+2. `pandas-pro`
+3. `playwright-expert`
+4. `prompt-engineer`
+5. `revealjs`
+
+## 增量更新（2026-03-07，Batch 049）
+- Tracking 產生時間：`2026-03-07T04:34:08.000Z`
+- Wave 2 correction 已完成：`batch-049`（local-present mapping 補齊 5 筆）
+- mismatch（url/author）：`0`（維持）
+- `status=missing`：`38`（由 `43` 降至 `38`）
+- `needs_manual_review`：`18`（維持）
+
+### 下一批（correction, local_present_tracking_missing）
+1. `mcp-developer`
+2. `microservices-architect`
+3. `ml-pipeline`
+4. `monitoring-expert`
+5. `nestjs-expert`
+
+## 增量更新（2026-03-07，Batch 048）
+- Tracking 產生時間：`2026-03-07T04:26:57.000Z`
+- Wave 2 import 已完成：`batch-016` 至 `batch-048`（新增 162 筆）
+- mismatch（url/author）：`0`（維持）
+- `status=missing`：`43`（由 `48` 降至 `43`）
+- `needs_manual_review`：`18`（維持）
+
+### 下一批（import, non-fixture）
+1. `null`
+2. `null`
+3. `null`
+4. `null`
+5. `null`
+
+## 增量更新（2026-03-07，Batch 047）
+- Tracking 產生時間：`2026-03-07T04:22:30.000Z`
+- Wave 2 import 已完成：`batch-016` 至 `batch-047`（新增 157 筆）
+- mismatch（url/author）：`0`（維持）
+- `status=missing`：`48`（由 `53` 降至 `48`）
+- `needs_manual_review`：`18`（維持）
+
+### 下一批（import, non-fixture）
+1. `google-drive`
+2. `google-sheets`
+3. `google-slides`
+4. `terminal-title`
+5. `kaggle`
+
+## 增量更新（2026-03-07，Batch 046）
+- Tracking 產生時間：`2026-03-07T04:17:30.000Z`
+- Wave 2 import 已完成：`batch-016` 至 `batch-046`（新增 152 筆）
+- mismatch（url/author）：`0`（維持）
+- `status=missing`：`53`（由 `58` 降至 `53`）
+- `needs_manual_review`：`18`（維持）
+
+### 下一批（import, non-fixture）
+1. `token-standards`
+2. `gmail`
+3. `google-calendar`
+4. `google-chat`
+5. `google-docs`
+
+## 增量更新（2026-03-07，Batch 045）
+- Tracking 產生時間：`2026-03-07T03:46:55.000Z`
+- Wave 2 import 已完成：`batch-016` 至 `batch-045`（新增 147 筆）
+- mismatch（url/author）：`0`（維持）
+- `status=missing`：`58`（由 `63` 降至 `58`）
+- `needs_manual_review`：`18`（維持）
+
+### 下一批（import, non-fixture）
+1. `gas-optimization`
+2. `move-language`
+3. `move-testing`
+4. `object-model`
+5. `shelby`
+
 ## 增量更新（2026-03-07，Batch 044）
 - Tracking 產生時間：`2026-03-07T03:28:32.000Z`
 - Wave 2 import 已完成：`batch-016` 至 `batch-044`（新增 142 筆）
@@ -912,4 +1067,3 @@
 - A 區塊是 tracking/metadata 視角；B 區塊是你要求的檔案系統實際存在視角。
 - 因為你有手動新增，A 與 B 數字不同是預期行為。
 - 建議下一步先處理 B-4 清單，把它們補齊到 `src/data/skills.ts`、`database/init_skills.sql` 與 tracking。
-

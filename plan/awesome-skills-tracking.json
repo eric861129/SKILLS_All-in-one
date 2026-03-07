@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-07T03:28:32.000Z",
+  "generatedAt": "2026-03-07T06:38:00.000Z",
   "sourceReadme": "https://raw.githubusercontent.com/BehiSecc/awesome-claude-skills/main/README.md",
   "stats": {
-    "localSkills": 367,
+    "localSkills": 402,
     "discoveredRepoLinks": 89,
     "expandedCandidates": 402,
     "uniqueCandidates": 374,
-    "missing": 63,
+    "missing": 28,
     "urlMismatch": 0,
     "authorMismatch": 0,
     "fetchFailures": 26
@@ -844,17 +844,239 @@
         "onboard": "completed",
         "sync": "completed"
       }
+    },
+    {
+      "id": "batch-045",
+      "type": "import",
+      "size": 5,
+      "status": "completed",
+      "items": [
+        "terraform-stacks",
+        "terraform-style-guide",
+        "terraform-test",
+        "windows-builder",
+        "framework"
+      ],
+      "checklist": {
+        "import": "completed",
+        "audit": "pass",
+        "onboard": "completed",
+        "sync": "completed"
+      }
+    },
+    {
+      "id": "batch-046",
+      "type": "import",
+      "size": 5,
+      "status": "completed",
+      "items": [
+        "gas-optimization",
+        "move-language",
+        "move-testing",
+        "object-model",
+        "shelby"
+      ],
+      "checklist": {
+        "import": "completed",
+        "audit": "pass",
+        "onboard": "completed",
+        "sync": "completed"
+      }
+    },
+    {
+      "id": "batch-047",
+      "type": "import",
+      "size": 5,
+      "status": "completed",
+      "items": [
+        "token-standards",
+        "gmail",
+        "google-calendar",
+        "google-chat",
+        "google-docs"
+      ],
+      "checklist": {
+        "import": "completed",
+        "audit": "pass",
+        "onboard": "completed",
+        "sync": "completed"
+      }
+    },
+    {
+      "id": "batch-048",
+      "type": "import",
+      "size": 5,
+      "status": "completed",
+      "items": [
+        "google-drive",
+        "google-sheets",
+        "google-slides",
+        "terminal-title",
+        "kaggle"
+      ],
+      "checklist": {
+        "import": "completed",
+        "audit": "pass",
+        "onboard": "completed",
+        "sync": "completed"
+      }
+    },
+    {
+      "id": "batch-049",
+      "type": "correction",
+      "size": 5,
+      "status": "completed",
+      "items": [
+        "javascript-pro",
+        "kotlin-specialist",
+        "kubernetes-specialist",
+        "laravel-specialist",
+        "legacy-modernizer"
+      ],
+      "checklist": {
+        "import": "not_applicable",
+        "audit": "pass",
+        "onboard": "completed",
+        "sync": "completed"
+      }
+    },
+    {
+      "id": "batch-050",
+      "type": "correction",
+      "size": 5,
+      "status": "completed",
+      "items": [
+        "mcp-developer",
+        "microservices-architect",
+        "ml-pipeline",
+        "monitoring-expert",
+        "nestjs-expert"
+      ],
+      "checklist": {
+        "import": "not_applicable",
+        "audit": "pass",
+        "onboard": "completed",
+        "sync": "completed"
+      }
+    },
+    {
+      "id": "batch-051",
+      "type": "correction",
+      "size": 5,
+      "status": "completed",
+      "items": [
+        "nextjs-developer",
+        "pandas-pro",
+        "playwright-expert",
+        "prompt-engineer",
+        "revealjs"
+      ],
+      "checklist": {
+        "import": "not_applicable",
+        "audit": "pass",
+        "onboard": "completed",
+        "sync": "completed"
+      }
+    },
+    {
+      "id": "batch-052",
+      "type": "triage/local-only-custom",
+      "size": 5,
+      "status": "completed",
+      "items": [
+        "agentfund-mcp",
+        "algorithmic-art",
+        "brand-guidelines",
+        "canvas-design",
+        "charles-proxy-extract"
+      ],
+      "checklist": {
+        "import": "not_applicable",
+        "audit": "pass",
+        "onboard": "not_applicable",
+        "sync": "not_applicable"
+      }
+    },
+    {
+      "id": "batch-053",
+      "type": "triage/local-only-custom",
+      "size": 5,
+      "status": "completed",
+      "items": [
+        "claude-ally-health",
+        "claude-code-terminal-title",
+        "claude-code-video-toolkit",
+        "claude-epub-skill",
+        "claude-scientific-skills"
+      ],
+      "checklist": {
+        "import": "not_applicable",
+        "audit": "pass",
+        "onboard": "not_applicable",
+        "sync": "not_applicable"
+      }
+    },
+    {
+      "id": "batch-054",
+      "type": "triage/local-only-custom",
+      "size": 5,
+      "status": "completed",
+      "items": [
+        "claude-starter",
+        "clawfu-mcp-skills",
+        "csv-data-summarizer",
+        "deapi-ai-media-toolkit",
+        "defense-in-depth"
+      ],
+      "checklist": {
+        "import": "not_applicable",
+        "audit": "pass",
+        "onboard": "not_applicable",
+        "sync": "not_applicable"
+      }
+    },
+    {
+      "id": "batch-055",
+      "type": "triage/local-only-custom",
+      "size": 5,
+      "status": "completed",
+      "items": [
+        "dispatching-parallel-agents",
+        "doc-coauthoring",
+        "executing-plans",
+        "family-history-research",
+        "ffuf-claude-skill"
+      ],
+      "checklist": {
+        "import": "not_applicable",
+        "audit": "pass",
+        "onboard": "not_applicable",
+        "sync": "not_applicable"
+      }
+    },
+    {
+      "id": "batch-056",
+      "type": "triage/local-only-custom",
+      "size": 5,
+      "status": "completed",
+      "items": [
+        "find-scene",
+        "find-skills",
+        "frontend-design",
+        "git-pushing",
+        "google-workspace-skills"
+      ],
+      "checklist": {
+        "import": "not_applicable",
+        "audit": "pass",
+        "onboard": "not_applicable",
+        "sync": "not_applicable"
+      }
     }
   ],
   "nextBatchProposals": {
     "correction": [],
-    "import": [
-      "terraform-stacks",
-      "terraform-style-guide",
-      "terraform-test",
-      "windows-builder",
-      "framework"
-    ]
+    "import": []
   },
   "failures": [
     {
@@ -3261,7 +3483,7 @@
     },
     {
       "sourceSlug": "framework",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "framework",
         "originUrl": "https://github.com/raintree-technology/claude-starter/tree/main/skills/aptos/framework",
@@ -3269,14 +3491,17 @@
         "repo": "raintree-technology/claude-starter",
         "repoPath": "skills/aptos/framework"
       },
-      "local": null,
+      "local": {
+        "id": 388,
+        "name": "framework",
+        "author": "raintree-technology",
+        "githubUrl": "https://github.com/raintree-technology/claude-starter/tree/main/skills/aptos/framework"
+      },
       "expected": {
         "author": "raintree-technology",
         "githubUrl": "https://github.com/raintree-technology/claude-starter/tree/main/skills/aptos/framework"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "fred-economic-data",
@@ -3346,7 +3571,7 @@
     },
     {
       "sourceSlug": "gas-optimization",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "gas-optimization",
         "originUrl": "https://github.com/raintree-technology/claude-starter/tree/main/skills/aptos/gas-optimization",
@@ -3354,14 +3579,17 @@
         "repo": "raintree-technology/claude-starter",
         "repoPath": "skills/aptos/gas-optimization"
       },
-      "local": null,
+      "local": {
+        "id": 389,
+        "name": "gas-optimization",
+        "author": "raintree-technology",
+        "githubUrl": "https://github.com/raintree-technology/claude-starter/tree/main/skills/aptos/gas-optimization"
+      },
       "expected": {
         "author": "raintree-technology",
         "githubUrl": "https://github.com/raintree-technology/claude-starter/tree/main/skills/aptos/gas-optimization"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "gene-database",
@@ -3585,7 +3813,7 @@
     },
     {
       "sourceSlug": "gmail",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "gmail",
         "originUrl": "https://github.com/sanjay3290/ai-skills/tree/main/skills/gmail",
@@ -3593,14 +3821,17 @@
         "repo": "sanjay3290/ai-skills",
         "repoPath": "skills/gmail"
       },
-      "local": null,
+      "local": {
+        "id": 395,
+        "name": "gmail",
+        "author": "sanjay3290",
+        "githubUrl": "https://github.com/sanjay3290/ai-skills/tree/main/skills/gmail"
+      },
       "expected": {
         "author": "sanjay3290",
         "githubUrl": "https://github.com/sanjay3290/ai-skills/tree/main/skills/gmail"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "gnomad-database",
@@ -3648,7 +3879,7 @@
     },
     {
       "sourceSlug": "google-calendar",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "google-calendar",
         "originUrl": "https://github.com/sanjay3290/ai-skills/tree/main/skills/google-calendar",
@@ -3656,18 +3887,21 @@
         "repo": "sanjay3290/ai-skills",
         "repoPath": "skills/google-calendar"
       },
-      "local": null,
+      "local": {
+        "id": 396,
+        "name": "google-calendar",
+        "author": "sanjay3290",
+        "githubUrl": "https://github.com/sanjay3290/ai-skills/tree/main/skills/google-calendar"
+      },
       "expected": {
         "author": "sanjay3290",
         "githubUrl": "https://github.com/sanjay3290/ai-skills/tree/main/skills/google-calendar"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "google-chat",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "google-chat",
         "originUrl": "https://github.com/sanjay3290/ai-skills/tree/main/skills/google-chat",
@@ -3675,18 +3909,21 @@
         "repo": "sanjay3290/ai-skills",
         "repoPath": "skills/google-chat"
       },
-      "local": null,
+      "local": {
+        "id": 397,
+        "name": "google-chat",
+        "author": "sanjay3290",
+        "githubUrl": "https://github.com/sanjay3290/ai-skills/tree/main/skills/google-chat"
+      },
       "expected": {
         "author": "sanjay3290",
         "githubUrl": "https://github.com/sanjay3290/ai-skills/tree/main/skills/google-chat"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "google-docs",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "google-docs",
         "originUrl": "https://github.com/sanjay3290/ai-skills/tree/main/skills/google-docs",
@@ -3694,18 +3931,21 @@
         "repo": "sanjay3290/ai-skills",
         "repoPath": "skills/google-docs"
       },
-      "local": null,
+      "local": {
+        "id": 398,
+        "name": "google-docs",
+        "author": "sanjay3290",
+        "githubUrl": "https://github.com/sanjay3290/ai-skills/tree/main/skills/google-docs"
+      },
       "expected": {
         "author": "sanjay3290",
         "githubUrl": "https://github.com/sanjay3290/ai-skills/tree/main/skills/google-docs"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "google-drive",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "google-drive",
         "originUrl": "https://github.com/sanjay3290/ai-skills/tree/main/skills/google-drive",
@@ -3713,18 +3953,21 @@
         "repo": "sanjay3290/ai-skills",
         "repoPath": "skills/google-drive"
       },
-      "local": null,
+      "local": {
+        "id": 399,
+        "name": "google-drive",
+        "author": "sanjay3290",
+        "githubUrl": "https://github.com/sanjay3290/ai-skills/tree/main/skills/google-drive"
+      },
       "expected": {
         "author": "sanjay3290",
         "githubUrl": "https://github.com/sanjay3290/ai-skills/tree/main/skills/google-drive"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "google-sheets",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "google-sheets",
         "originUrl": "https://github.com/sanjay3290/ai-skills/tree/main/skills/google-sheets",
@@ -3732,18 +3975,21 @@
         "repo": "sanjay3290/ai-skills",
         "repoPath": "skills/google-sheets"
       },
-      "local": null,
+      "local": {
+        "id": 400,
+        "name": "google-sheets",
+        "author": "sanjay3290",
+        "githubUrl": "https://github.com/sanjay3290/ai-skills/tree/main/skills/google-sheets"
+      },
       "expected": {
         "author": "sanjay3290",
         "githubUrl": "https://github.com/sanjay3290/ai-skills/tree/main/skills/google-sheets"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "google-slides",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "google-slides",
         "originUrl": "https://github.com/sanjay3290/ai-skills/tree/main/skills/google-slides",
@@ -3751,14 +3997,17 @@
         "repo": "sanjay3290/ai-skills",
         "repoPath": "skills/google-slides"
       },
-      "local": null,
+      "local": {
+        "id": 401,
+        "name": "google-slides",
+        "author": "sanjay3290",
+        "githubUrl": "https://github.com/sanjay3290/ai-skills/tree/main/skills/google-slides"
+      },
       "expected": {
         "author": "sanjay3290",
         "githubUrl": "https://github.com/sanjay3290/ai-skills/tree/main/skills/google-slides"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "google-tts",
@@ -4346,7 +4595,7 @@
     },
     {
       "sourceSlug": "javascript-pro",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "javascript-pro",
         "originUrl": "https://github.com/jeffallan/claude-skills/tree/main/skills/javascript-pro",
@@ -4354,14 +4603,17 @@
         "repo": "jeffallan/claude-skills",
         "repoPath": "skills/javascript-pro"
       },
-      "local": null,
+      "local": {
+        "id": 404,
+        "name": "javascript-pro",
+        "author": "jeffallan",
+        "githubUrl": "https://github.com/jeffallan/claude-skills/tree/main/skills/javascript-pro"
+      },
       "expected": {
         "author": "jeffallan",
         "githubUrl": "https://github.com/jeffallan/claude-skills/tree/main/skills/javascript-pro"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "jules",
@@ -4389,7 +4641,7 @@
     },
     {
       "sourceSlug": "kaggle",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "kaggle",
         "originUrl": "https://github.com/shepsci/kaggle-skill/tree/main/skills/kaggle",
@@ -4397,14 +4649,17 @@
         "repo": "shepsci/kaggle-skill",
         "repoPath": "skills/kaggle"
       },
-      "local": null,
+      "local": {
+        "id": 403,
+        "name": "kaggle",
+        "author": "shepsci",
+        "githubUrl": "https://github.com/shepsci/kaggle-skill/tree/main/skills/kaggle"
+      },
       "expected": {
         "author": "shepsci",
         "githubUrl": "https://github.com/shepsci/kaggle-skill/tree/main/skills/kaggle"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "kegg-database",
@@ -4430,7 +4685,7 @@
     },
     {
       "sourceSlug": "kotlin-specialist",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "kotlin-specialist",
         "originUrl": "https://github.com/jeffallan/claude-skills/tree/main/skills/kotlin-specialist",
@@ -4438,18 +4693,21 @@
         "repo": "jeffallan/claude-skills",
         "repoPath": "skills/kotlin-specialist"
       },
-      "local": null,
+      "local": {
+        "id": 405,
+        "name": "kotlin-specialist",
+        "author": "jeffallan",
+        "githubUrl": "https://github.com/jeffallan/claude-skills/tree/main/skills/kotlin-specialist"
+      },
       "expected": {
         "author": "jeffallan",
         "githubUrl": "https://github.com/jeffallan/claude-skills/tree/main/skills/kotlin-specialist"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "kubernetes-specialist",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "kubernetes-specialist",
         "originUrl": "https://github.com/jeffallan/claude-skills/tree/main/skills/kubernetes-specialist",
@@ -4457,14 +4715,17 @@
         "repo": "jeffallan/claude-skills",
         "repoPath": "skills/kubernetes-specialist"
       },
-      "local": null,
+      "local": {
+        "id": 406,
+        "name": "kubernetes-specialist",
+        "author": "jeffallan",
+        "githubUrl": "https://github.com/jeffallan/claude-skills/tree/main/skills/kubernetes-specialist"
+      },
       "expected": {
         "author": "jeffallan",
         "githubUrl": "https://github.com/jeffallan/claude-skills/tree/main/skills/kubernetes-specialist"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "labarchive-integration",
@@ -4512,7 +4773,7 @@
     },
     {
       "sourceSlug": "laravel-specialist",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "laravel-specialist",
         "originUrl": "https://github.com/jeffallan/claude-skills/tree/main/skills/laravel-specialist",
@@ -4520,14 +4781,17 @@
         "repo": "jeffallan/claude-skills",
         "repoPath": "skills/laravel-specialist"
       },
-      "local": null,
+      "local": {
+        "id": 407,
+        "name": "laravel-specialist",
+        "author": "jeffallan",
+        "githubUrl": "https://github.com/jeffallan/claude-skills/tree/main/skills/laravel-specialist"
+      },
       "expected": {
         "author": "jeffallan",
         "githubUrl": "https://github.com/jeffallan/claude-skills/tree/main/skills/laravel-specialist"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "latchbio-integration",
@@ -4575,7 +4839,7 @@
     },
     {
       "sourceSlug": "legacy-modernizer",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "legacy-modernizer",
         "originUrl": "https://github.com/jeffallan/claude-skills/tree/main/skills/legacy-modernizer",
@@ -4583,14 +4847,17 @@
         "repo": "jeffallan/claude-skills",
         "repoPath": "skills/legacy-modernizer"
       },
-      "local": null,
+      "local": {
+        "id": 408,
+        "name": "legacy-modernizer",
+        "author": "jeffallan",
+        "githubUrl": "https://github.com/jeffallan/claude-skills/tree/main/skills/legacy-modernizer"
+      },
       "expected": {
         "author": "jeffallan",
         "githubUrl": "https://github.com/jeffallan/claude-skills/tree/main/skills/legacy-modernizer"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "linear-solvers",
@@ -4794,7 +5061,7 @@
     },
     {
       "sourceSlug": "mcp-developer",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "mcp-developer",
         "originUrl": "https://github.com/jeffallan/claude-skills/tree/main/skills/mcp-developer",
@@ -4802,14 +5069,17 @@
         "repo": "jeffallan/claude-skills",
         "repoPath": "skills/mcp-developer"
       },
-      "local": null,
+      "local": {
+        "id": 409,
+        "name": "mcp-developer",
+        "author": "jeffallan",
+        "githubUrl": "https://github.com/jeffallan/claude-skills/tree/main/skills/mcp-developer"
+      },
       "expected": {
         "author": "jeffallan",
         "githubUrl": "https://github.com/jeffallan/claude-skills/tree/main/skills/mcp-developer"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "medchem",
@@ -4901,7 +5171,7 @@
     },
     {
       "sourceSlug": "microservices-architect",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "microservices-architect",
         "originUrl": "https://github.com/jeffallan/claude-skills/tree/main/skills/microservices-architect",
@@ -4909,14 +5179,17 @@
         "repo": "jeffallan/claude-skills",
         "repoPath": "skills/microservices-architect"
       },
-      "local": null,
+      "local": {
+        "id": 410,
+        "name": "microservices-architect",
+        "author": "jeffallan",
+        "githubUrl": "https://github.com/jeffallan/claude-skills/tree/main/skills/microservices-architect"
+      },
       "expected": {
         "author": "jeffallan",
         "githubUrl": "https://github.com/jeffallan/claude-skills/tree/main/skills/microservices-architect"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "missing-frontmatter",
@@ -4939,7 +5212,7 @@
     },
     {
       "sourceSlug": "ml-pipeline",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "ml-pipeline",
         "originUrl": "https://github.com/jeffallan/claude-skills/tree/main/skills/ml-pipeline",
@@ -4947,14 +5220,17 @@
         "repo": "jeffallan/claude-skills",
         "repoPath": "skills/ml-pipeline"
       },
-      "local": null,
+      "local": {
+        "id": 411,
+        "name": "ml-pipeline",
+        "author": "jeffallan",
+        "githubUrl": "https://github.com/jeffallan/claude-skills/tree/main/skills/ml-pipeline"
+      },
       "expected": {
         "author": "jeffallan",
         "githubUrl": "https://github.com/jeffallan/claude-skills/tree/main/skills/ml-pipeline"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "modal",
@@ -5046,7 +5322,7 @@
     },
     {
       "sourceSlug": "monitoring-expert",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "monitoring-expert",
         "originUrl": "https://github.com/jeffallan/claude-skills/tree/main/skills/monitoring-expert",
@@ -5054,18 +5330,21 @@
         "repo": "jeffallan/claude-skills",
         "repoPath": "skills/monitoring-expert"
       },
-      "local": null,
+      "local": {
+        "id": 412,
+        "name": "monitoring-expert",
+        "author": "jeffallan",
+        "githubUrl": "https://github.com/jeffallan/claude-skills/tree/main/skills/monitoring-expert"
+      },
       "expected": {
         "author": "jeffallan",
         "githubUrl": "https://github.com/jeffallan/claude-skills/tree/main/skills/monitoring-expert"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "move-language",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "move-language",
         "originUrl": "https://github.com/raintree-technology/claude-starter/tree/main/skills/aptos/move-language",
@@ -5073,14 +5352,17 @@
         "repo": "raintree-technology/claude-starter",
         "repoPath": "skills/aptos/move-language"
       },
-      "local": null,
+      "local": {
+        "id": 390,
+        "name": "move-language",
+        "author": "raintree-technology",
+        "githubUrl": "https://github.com/raintree-technology/claude-starter/tree/main/skills/aptos/move-language"
+      },
       "expected": {
         "author": "raintree-technology",
         "githubUrl": "https://github.com/raintree-technology/claude-starter/tree/main/skills/aptos/move-language"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "move-prover",
@@ -5104,7 +5386,7 @@
     },
     {
       "sourceSlug": "move-testing",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "move-testing",
         "originUrl": "https://github.com/raintree-technology/claude-starter/tree/main/skills/aptos/move-testing",
@@ -5112,14 +5394,17 @@
         "repo": "raintree-technology/claude-starter",
         "repoPath": "skills/aptos/move-testing"
       },
-      "local": null,
+      "local": {
+        "id": 391,
+        "name": "move-testing",
+        "author": "raintree-technology",
+        "githubUrl": "https://github.com/raintree-technology/claude-starter/tree/main/skills/aptos/move-testing"
+      },
       "expected": {
         "author": "raintree-technology",
         "githubUrl": "https://github.com/raintree-technology/claude-starter/tree/main/skills/aptos/move-testing"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "mssql",
@@ -5190,7 +5475,7 @@
     },
     {
       "sourceSlug": "nestjs-expert",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "nestjs-expert",
         "originUrl": "https://github.com/jeffallan/claude-skills/tree/main/skills/nestjs-expert",
@@ -5198,14 +5483,17 @@
         "repo": "jeffallan/claude-skills",
         "repoPath": "skills/nestjs-expert"
       },
-      "local": null,
+      "local": {
+        "id": 413,
+        "name": "nestjs-expert",
+        "author": "jeffallan",
+        "githubUrl": "https://github.com/jeffallan/claude-skills/tree/main/skills/nestjs-expert"
+      },
       "expected": {
         "author": "jeffallan",
         "githubUrl": "https://github.com/jeffallan/claude-skills/tree/main/skills/nestjs-expert"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "networkx",
@@ -5297,7 +5585,7 @@
     },
     {
       "sourceSlug": "nextjs-developer",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "nextjs-developer",
         "originUrl": "https://github.com/jeffallan/claude-skills/tree/main/skills/nextjs-developer",
@@ -5305,14 +5593,17 @@
         "repo": "jeffallan/claude-skills",
         "repoPath": "skills/nextjs-developer"
       },
-      "local": null,
+      "local": {
+        "id": 414,
+        "name": "nextjs-developer",
+        "author": "jeffallan",
+        "githubUrl": "https://github.com/jeffallan/claude-skills/tree/main/skills/nextjs-developer"
+      },
       "expected": {
         "author": "jeffallan",
         "githubUrl": "https://github.com/jeffallan/claude-skills/tree/main/skills/nextjs-developer"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "nonlinear-solvers",
@@ -5406,7 +5697,7 @@
     },
     {
       "sourceSlug": "object-model",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "object-model",
         "originUrl": "https://github.com/raintree-technology/claude-starter/tree/main/skills/aptos/object-model",
@@ -5414,14 +5705,17 @@
         "repo": "raintree-technology/claude-starter",
         "repoPath": "skills/aptos/object-model"
       },
-      "local": null,
+      "local": {
+        "id": 392,
+        "name": "object-model",
+        "author": "raintree-technology",
+        "githubUrl": "https://github.com/raintree-technology/claude-starter/tree/main/skills/aptos/object-model"
+      },
       "expected": {
         "author": "raintree-technology",
         "githubUrl": "https://github.com/raintree-technology/claude-starter/tree/main/skills/aptos/object-model"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "offer-k-dense-web",
@@ -5671,7 +5965,7 @@
     },
     {
       "sourceSlug": "pandas-pro",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "pandas-pro",
         "originUrl": "https://github.com/jeffallan/claude-skills/tree/main/skills/pandas-pro",
@@ -5679,14 +5973,17 @@
         "repo": "jeffallan/claude-skills",
         "repoPath": "skills/pandas-pro"
       },
-      "local": null,
+      "local": {
+        "id": 415,
+        "name": "pandas-pro",
+        "author": "jeffallan",
+        "githubUrl": "https://github.com/jeffallan/claude-skills/tree/main/skills/pandas-pro"
+      },
       "expected": {
         "author": "jeffallan",
         "githubUrl": "https://github.com/jeffallan/claude-skills/tree/main/skills/pandas-pro"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "paper-2-web",
@@ -5976,7 +6273,7 @@
     },
     {
       "sourceSlug": "playwright-expert",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "playwright-expert",
         "originUrl": "https://github.com/jeffallan/claude-skills/tree/main/skills/playwright-expert",
@@ -5984,14 +6281,17 @@
         "repo": "jeffallan/claude-skills",
         "repoPath": "skills/playwright-expert"
       },
-      "local": null,
+      "local": {
+        "id": 416,
+        "name": "playwright-expert",
+        "author": "jeffallan",
+        "githubUrl": "https://github.com/jeffallan/claude-skills/tree/main/skills/playwright-expert"
+      },
       "expected": {
         "author": "jeffallan",
         "githubUrl": "https://github.com/jeffallan/claude-skills/tree/main/skills/playwright-expert"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "plotly",
@@ -6195,7 +6495,7 @@
     },
     {
       "sourceSlug": "prompt-engineer",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "prompt-engineer",
         "originUrl": "https://github.com/jeffallan/claude-skills/tree/main/skills/prompt-engineer",
@@ -6203,14 +6503,17 @@
         "repo": "jeffallan/claude-skills",
         "repoPath": "skills/prompt-engineer"
       },
-      "local": null,
+      "local": {
+        "id": 417,
+        "name": "prompt-engineer",
+        "author": "jeffallan",
+        "githubUrl": "https://github.com/jeffallan/claude-skills/tree/main/skills/prompt-engineer"
+      },
       "expected": {
         "author": "jeffallan",
         "githubUrl": "https://github.com/jeffallan/claude-skills/tree/main/skills/prompt-engineer"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "protocolsio-integration",
@@ -6918,7 +7221,7 @@
     },
     {
       "sourceSlug": "revealjs",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "revealjs",
         "originUrl": "https://github.com/ryanbbrown/revealjs-skill/tree/main/skills/revealjs",
@@ -6926,14 +7229,17 @@
         "repo": "ryanbbrown/revealjs-skill",
         "repoPath": "skills/revealjs"
       },
-      "local": null,
+      "local": {
+        "id": 418,
+        "name": "revealjs",
+        "author": "ryanbbrown",
+        "githubUrl": "https://github.com/ryanbbrown/revealjs-skill/tree/main/skills/revealjs"
+      },
       "expected": {
         "author": "ryanbbrown",
         "githubUrl": "https://github.com/ryanbbrown/revealjs-skill/tree/main/skills/revealjs"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "rowan",
@@ -7399,7 +7705,7 @@
     },
     {
       "sourceSlug": "shelby",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "shelby",
         "originUrl": "https://github.com/raintree-technology/claude-starter/tree/main/skills/aptos/shelby",
@@ -7407,14 +7713,17 @@
         "repo": "raintree-technology/claude-starter",
         "repoPath": "skills/aptos/shelby"
       },
-      "local": null,
+      "local": {
+        "id": 393,
+        "name": "shelby",
+        "author": "raintree-technology",
+        "githubUrl": "https://github.com/raintree-technology/claude-starter/tree/main/skills/aptos/shelby"
+      },
       "expected": {
         "author": "raintree-technology",
         "githubUrl": "https://github.com/raintree-technology/claude-starter/tree/main/skills/aptos/shelby"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "ship-learn-next",
@@ -7918,7 +8227,7 @@
     },
     {
       "sourceSlug": "terminal-title",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "terminal-title",
         "originUrl": "https://github.com/bluzername/claude-code-terminal-title/tree/main/temp_extract/terminal-title",
@@ -7926,14 +8235,17 @@
         "repo": "bluzername/claude-code-terminal-title",
         "repoPath": "temp_extract/terminal-title"
       },
-      "local": null,
+      "local": {
+        "id": 402,
+        "name": "terminal-title",
+        "author": "bluzername",
+        "githubUrl": "https://github.com/bluzername/claude-code-terminal-title/tree/main/temp_extract/terminal-title"
+      },
       "expected": {
         "author": "bluzername",
         "githubUrl": "https://github.com/bluzername/claude-code-terminal-title/tree/main/temp_extract/terminal-title"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "terraform-engineer",
@@ -7981,7 +8293,7 @@
     },
     {
       "sourceSlug": "terraform-stacks",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "terraform-stacks",
         "originUrl": "https://github.com/hashicorp/agent-skills/tree/main/terraform/module-generation/skills/terraform-stacks",
@@ -7989,18 +8301,21 @@
         "repo": "hashicorp/agent-skills",
         "repoPath": "terraform/module-generation/skills/terraform-stacks"
       },
-      "local": null,
+      "local": {
+        "id": 384,
+        "name": "terraform-stacks",
+        "author": "hashicorp",
+        "githubUrl": "https://github.com/hashicorp/agent-skills/tree/main/terraform/module-generation/skills/terraform-stacks"
+      },
       "expected": {
         "author": "hashicorp",
         "githubUrl": "https://github.com/hashicorp/agent-skills/tree/main/terraform/module-generation/skills/terraform-stacks"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "terraform-style-guide",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "terraform-style-guide",
         "originUrl": "https://github.com/hashicorp/agent-skills/tree/main/terraform/code-generation/skills/terraform-style-guide",
@@ -8008,18 +8323,21 @@
         "repo": "hashicorp/agent-skills",
         "repoPath": "terraform/code-generation/skills/terraform-style-guide"
       },
-      "local": null,
+      "local": {
+        "id": 385,
+        "name": "terraform-style-guide",
+        "author": "hashicorp",
+        "githubUrl": "https://github.com/hashicorp/agent-skills/tree/main/terraform/code-generation/skills/terraform-style-guide"
+      },
       "expected": {
         "author": "hashicorp",
         "githubUrl": "https://github.com/hashicorp/agent-skills/tree/main/terraform/code-generation/skills/terraform-style-guide"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "terraform-test",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "terraform-test",
         "originUrl": "https://github.com/hashicorp/agent-skills/tree/main/terraform/code-generation/skills/terraform-test",
@@ -8027,14 +8345,17 @@
         "repo": "hashicorp/agent-skills",
         "repoPath": "terraform/code-generation/skills/terraform-test"
       },
-      "local": null,
+      "local": {
+        "id": 386,
+        "name": "terraform-test",
+        "author": "hashicorp",
+        "githubUrl": "https://github.com/hashicorp/agent-skills/tree/main/terraform/code-generation/skills/terraform-test"
+      },
       "expected": {
         "author": "hashicorp",
         "githubUrl": "https://github.com/hashicorp/agent-skills/tree/main/terraform/code-generation/skills/terraform-test"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "test-driven-development",
@@ -8190,7 +8511,7 @@
     },
     {
       "sourceSlug": "token-standards",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "token-standards",
         "originUrl": "https://github.com/raintree-technology/claude-starter/tree/main/skills/aptos/token-standards",
@@ -8198,14 +8519,17 @@
         "repo": "raintree-technology/claude-starter",
         "repoPath": "skills/aptos/token-standards"
       },
-      "local": null,
+      "local": {
+        "id": 394,
+        "name": "token-standards",
+        "author": "raintree-technology",
+        "githubUrl": "https://github.com/raintree-technology/claude-starter/tree/main/skills/aptos/token-standards"
+      },
       "expected": {
         "author": "raintree-technology",
         "githubUrl": "https://github.com/raintree-technology/claude-starter/tree/main/skills/aptos/token-standards"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "too-many-injections",
@@ -8764,7 +9088,7 @@
     },
     {
       "sourceSlug": "windows-builder",
-      "status": "missing",
+      "status": "ok",
       "canonical": {
         "sourceSlug": "windows-builder",
         "originUrl": "https://github.com/hashicorp/agent-skills/tree/main/packer/builders/skills/windows-builder",
@@ -8772,14 +9096,17 @@
         "repo": "hashicorp/agent-skills",
         "repoPath": "packer/builders/skills/windows-builder"
       },
-      "local": null,
+      "local": {
+        "id": 387,
+        "name": "windows-builder",
+        "author": "hashicorp",
+        "githubUrl": "https://github.com/hashicorp/agent-skills/tree/main/packer/builders/skills/windows-builder"
+      },
       "expected": {
         "author": "hashicorp",
         "githubUrl": "https://github.com/hashicorp/agent-skills/tree/main/packer/builders/skills/windows-builder"
       },
-      "notes": [
-        "No local skill matched by source slug or canonical URL."
-      ]
+      "notes": []
     },
     {
       "sourceSlug": "windows-path",
