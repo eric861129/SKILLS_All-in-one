@@ -13486,6 +13486,58 @@
       "source": "structured"
     }
   },
+  "mesh-generation": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/mesh_types.md",
+      "references/quality_metrics.md",
+      "scripts/grid_sizing.py",
+      "scripts/mesh_quality.py"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 4612,
+        "lineCount": 150,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/mesh_types.md": {
+        "sizeBytes": 7290,
+        "lineCount": 335,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/quality_metrics.md": {
+        "sizeBytes": 8230,
+        "lineCount": 383,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "scripts/grid_sizing.py": {
+        "sizeBytes": 2401,
+        "lineCount": 93,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/mesh_quality.py": {
+        "sizeBytes": 1995,
+        "lineCount": 69,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 6089,
+      "cl100k": 6649
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
   "metabolomics-workbench-database": {
     "category": "Scientific & Research Tools",
     "files": [
@@ -13620,6 +13672,283 @@
     "dependencies": {
       "skills": [],
       "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "nonlinear-solvers": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/convergence_diagnostics.md",
+      "references/globalization_strategies.md",
+      "references/method_catalog.md",
+      "references/solver_decision_tree.md",
+      "scripts/convergence_analyzer.py",
+      "scripts/globalization_advisor.py",
+      "scripts/jacobian_diagnostics.py",
+      "scripts/residual_monitor.py",
+      "scripts/solver_selector.py",
+      "scripts/step_quality.py"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 7279,
+        "lineCount": 181,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/convergence_diagnostics.md": {
+        "sizeBytes": 8656,
+        "lineCount": 401,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/globalization_strategies.md": {
+        "sizeBytes": 9010,
+        "lineCount": 381,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/method_catalog.md": {
+        "sizeBytes": 9290,
+        "lineCount": 377,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/solver_decision_tree.md": {
+        "sizeBytes": 8239,
+        "lineCount": 208,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "scripts/convergence_analyzer.py": {
+        "sizeBytes": 7763,
+        "lineCount": 223,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/globalization_advisor.py": {
+        "sizeBytes": 7902,
+        "lineCount": 234,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/jacobian_diagnostics.py": {
+        "sizeBytes": 6827,
+        "lineCount": 210,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/residual_monitor.py": {
+        "sizeBytes": 8586,
+        "lineCount": 252,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/solver_selector.py": {
+        "sizeBytes": 7965,
+        "lineCount": 220,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/step_quality.py": {
+        "sizeBytes": 7393,
+        "lineCount": 211,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 21919,
+      "cl100k": 22622
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "numerical-integration": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/error_control.md",
+      "references/imex_guidelines.md",
+      "references/method_catalog.md",
+      "references/multiphase_field_patterns.md",
+      "references/splitting_catalog.md",
+      "references/tolerance_guidelines.md",
+      "scripts/adaptive_step_controller.py",
+      "scripts/error_norm.py",
+      "scripts/imex_split_planner.py",
+      "scripts/integrator_selector.py",
+      "scripts/splitting_error_estimator.py"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 6245,
+        "lineCount": 167,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/error_control.md": {
+        "sizeBytes": 8165,
+        "lineCount": 366,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/imex_guidelines.md": {
+        "sizeBytes": 7637,
+        "lineCount": 318,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/method_catalog.md": {
+        "sizeBytes": 6020,
+        "lineCount": 206,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/multiphase_field_patterns.md": {
+        "sizeBytes": 7679,
+        "lineCount": 356,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/splitting_catalog.md": {
+        "sizeBytes": 7928,
+        "lineCount": 369,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/tolerance_guidelines.md": {
+        "sizeBytes": 7035,
+        "lineCount": 270,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "scripts/adaptive_step_controller.py": {
+        "sizeBytes": 4905,
+        "lineCount": 153,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/error_norm.py": {
+        "sizeBytes": 4416,
+        "lineCount": 146,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/imex_split_planner.py": {
+        "sizeBytes": 4561,
+        "lineCount": 145,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/integrator_selector.py": {
+        "sizeBytes": 5085,
+        "lineCount": 164,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/splitting_error_estimator.py": {
+        "sizeBytes": 3049,
+        "lineCount": 110,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 17929,
+      "cl100k": 19969
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "numerical-stability": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/common_pitfalls.md",
+      "references/scheme_catalog.md",
+      "references/stability_criteria.md",
+      "scripts/cfl_checker.py",
+      "scripts/matrix_condition.py",
+      "scripts/requirements.txt",
+      "scripts/stiffness_detector.py",
+      "scripts/von_neumann_analyzer.py"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 6008,
+        "lineCount": 150,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/common_pitfalls.md": {
+        "sizeBytes": 6489,
+        "lineCount": 271,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/scheme_catalog.md": {
+        "sizeBytes": 5374,
+        "lineCount": 181,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/stability_criteria.md": {
+        "sizeBytes": 5055,
+        "lineCount": 246,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "scripts/cfl_checker.py": {
+        "sizeBytes": 7235,
+        "lineCount": 208,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/matrix_condition.py": {
+        "sizeBytes": 4369,
+        "lineCount": 150,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/requirements.txt": {
+        "sizeBytes": 12,
+        "lineCount": 2,
+        "ext": "txt",
+        "tabKey": "scripts"
+      },
+      "scripts/stiffness_detector.py": {
+        "sizeBytes": 3504,
+        "lineCount": 112,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/von_neumann_analyzer.py": {
+        "sizeBytes": 4244,
+        "lineCount": 147,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 10489,
+      "cl100k": 10907
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [
+        "numpy"
+      ],
       "runtimeTools": [],
       "source": "structured"
     }
