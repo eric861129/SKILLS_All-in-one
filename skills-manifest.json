@@ -15810,6 +15810,367 @@
       "source": "structured"
     }
   },
+  "perplexity-search": {
+    "category": "Writing & Research",
+    "files": [
+      "SKILL.md",
+      "assets/.env.example",
+      "references/model_comparison.md",
+      "references/openrouter_setup.md",
+      "references/search_strategies.md",
+      "scripts/perplexity_search.py",
+      "scripts/setup_env.py"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 14085,
+        "lineCount": 447,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "assets/.env.example": {
+        "sizeBytes": 506,
+        "lineCount": 0,
+        "ext": "example",
+        "tabKey": "assets"
+      },
+      "references/model_comparison.md": {
+        "sizeBytes": 10378,
+        "lineCount": 387,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/openrouter_setup.md": {
+        "sizeBytes": 11522,
+        "lineCount": 455,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/search_strategies.md": {
+        "sizeBytes": 10021,
+        "lineCount": 259,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "scripts/perplexity_search.py": {
+        "sizeBytes": 8068,
+        "lineCount": 278,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/setup_env.py": {
+        "sizeBytes": 4656,
+        "lineCount": 172,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 14662,
+      "cl100k": 13544
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "pptx-posters": {
+    "category": "Writing & Research",
+    "files": [
+      "SKILL.md",
+      "assets/poster_html_template.html",
+      "assets/poster_quality_checklist.md",
+      "references/poster_content_guide.md",
+      "references/poster_design_principles.md",
+      "references/poster_layout_design.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 14146,
+        "lineCount": 415,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "assets/poster_html_template.html": {
+        "sizeBytes": 5643,
+        "lineCount": 0,
+        "ext": "html",
+        "tabKey": "assets"
+      },
+      "assets/poster_quality_checklist.md": {
+        "sizeBytes": 11172,
+        "lineCount": 359,
+        "ext": "md",
+        "tabKey": "assets"
+      },
+      "references/poster_content_guide.md": {
+        "sizeBytes": 20361,
+        "lineCount": 749,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/poster_design_principles.md": {
+        "sizeBytes": 22916,
+        "lineCount": 807,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/poster_layout_design.md": {
+        "sizeBytes": 22327,
+        "lineCount": 901,
+        "ext": "md",
+        "tabKey": "references"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 22443,
+      "cl100k": 23150
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "pubmed-database": {
+    "category": "Writing & Research",
+    "files": [
+      "SKILL.md",
+      "references/api_reference.md",
+      "references/common_queries.md",
+      "references/search_syntax.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 15570,
+        "lineCount": 459,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/api_reference.md": {
+        "sizeBytes": 7934,
+        "lineCount": 299,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/common_queries.md": {
+        "sizeBytes": 10725,
+        "lineCount": 454,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/search_syntax.md": {
+        "sizeBytes": 10272,
+        "lineCount": 437,
+        "ext": "md",
+        "tabKey": "references"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 11119,
+      "cl100k": 11780
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "research-grants": {
+    "category": "Writing & Research",
+    "files": [
+      "SKILL.md",
+      "assets/budget_justification_template.md",
+      "assets/nih_specific_aims_template.md",
+      "assets/nsf_project_summary_template.md",
+      "references/README.md",
+      "references/broader_impacts.md",
+      "references/darpa_guidelines.md",
+      "references/doe_guidelines.md",
+      "references/nih_guidelines.md",
+      "references/nsf_guidelines.md",
+      "references/nstc_guidelines.md",
+      "references/specific_aims_guide.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 37217,
+        "lineCount": 956,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "assets/budget_justification_template.md": {
+        "sizeBytes": 21866,
+        "lineCount": 454,
+        "ext": "md",
+        "tabKey": "assets"
+      },
+      "assets/nih_specific_aims_template.md": {
+        "sizeBytes": 11120,
+        "lineCount": 167,
+        "ext": "md",
+        "tabKey": "assets"
+      },
+      "assets/nsf_project_summary_template.md": {
+        "sizeBytes": 5886,
+        "lineCount": 93,
+        "ext": "md",
+        "tabKey": "assets"
+      },
+      "references/README.md": {
+        "sizeBytes": 9414,
+        "lineCount": 286,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/broader_impacts.md": {
+        "sizeBytes": 23284,
+        "lineCount": 393,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/darpa_guidelines.md": {
+        "sizeBytes": 20501,
+        "lineCount": 637,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/doe_guidelines.md": {
+        "sizeBytes": 19409,
+        "lineCount": 587,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/nih_guidelines.md": {
+        "sizeBytes": 30192,
+        "lineCount": 852,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/nsf_guidelines.md": {
+        "sizeBytes": 21683,
+        "lineCount": 571,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/nstc_guidelines.md": {
+        "sizeBytes": 26945,
+        "lineCount": 734,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/specific_aims_guide.md": {
+        "sizeBytes": 21040,
+        "lineCount": 459,
+        "ext": "md",
+        "tabKey": "references"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 61834,
+      "cl100k": 53400
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "research-lookup": {
+    "category": "Writing & Research",
+    "files": [
+      "README.md",
+      "SKILL.md",
+      "examples.py",
+      "lookup.py",
+      "research_lookup.py",
+      "scripts/research_lookup.py"
+    ],
+    "fileMeta": {
+      "README.md": {
+        "sizeBytes": 5606,
+        "lineCount": 157,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "SKILL.md": {
+        "sizeBytes": 16232,
+        "lineCount": 414,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "examples.py": {
+        "sizeBytes": 5672,
+        "lineCount": 175,
+        "ext": "py",
+        "tabKey": "root"
+      },
+      "lookup.py": {
+        "sizeBytes": 5957,
+        "lineCount": 188,
+        "ext": "py",
+        "tabKey": "root"
+      },
+      "research_lookup.py": {
+        "sizeBytes": 22642,
+        "lineCount": 567,
+        "ext": "py",
+        "tabKey": "root"
+      },
+      "scripts/research_lookup.py": {
+        "sizeBytes": 22642,
+        "lineCount": 567,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 19675,
+      "cl100k": 16927
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "scientific-brainstorming": {
+    "category": "Writing & Research",
+    "files": [
+      "SKILL.md",
+      "references/brainstorming_methods.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 8179,
+        "lineCount": 190,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/brainstorming_methods.md": {
+        "sizeBytes": 12065,
+        "lineCount": 327,
+        "ext": "md",
+        "tabKey": "references"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 5054,
+      "cl100k": 4081
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
   "the-fool": {
     "category": "Writing & Research",
     "files": [
