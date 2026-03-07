@@ -14453,6 +14453,110 @@
       "source": "structured"
     }
   },
+  "performance-profiling": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/optimization_strategies.md",
+      "references/profiling_guide.md",
+      "scripts/bottleneck_detector.py",
+      "scripts/memory_profiler.py",
+      "scripts/scaling_analyzer.py",
+      "scripts/timing_analyzer.py"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 8052,
+        "lineCount": 256,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/optimization_strategies.md": {
+        "sizeBytes": 13261,
+        "lineCount": 489,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/profiling_guide.md": {
+        "sizeBytes": 9919,
+        "lineCount": 345,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "scripts/bottleneck_detector.py": {
+        "sizeBytes": 12464,
+        "lineCount": 352,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/memory_profiler.py": {
+        "sizeBytes": 7030,
+        "lineCount": 213,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/scaling_analyzer.py": {
+        "sizeBytes": 7368,
+        "lineCount": 233,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/timing_analyzer.py": {
+        "sizeBytes": 6440,
+        "lineCount": 198,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 16106,
+      "cl100k": 14790
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "phylogenetics": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/iqtree_inference.md",
+      "scripts/phylogenetic_analysis.py"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 13914,
+        "lineCount": 405,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/iqtree_inference.md": {
+        "sizeBytes": 5391,
+        "lineCount": 182,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "scripts/phylogenetic_analysis.py": {
+        "sizeBytes": 8954,
+        "lineCount": 271,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 7050,
+      "cl100k": 7293
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
   "chaos-engineer": {
     "category": "Security & Web Testing",
     "files": [
