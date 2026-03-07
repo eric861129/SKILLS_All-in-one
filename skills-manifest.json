@@ -17201,6 +17201,193 @@
       "source": "structured"
     }
   },
+  "string-database": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/string_reference.md",
+      "scripts/string_api.py"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 18225,
+        "lineCount": 533,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/string_reference.md": {
+        "sizeBytes": 13697,
+        "lineCount": 456,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "scripts/string_api.py": {
+        "sizeBytes": 11927,
+        "lineCount": 370,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 10961,
+      "cl100k": 10347
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "sympy": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/advanced-topics.md",
+      "references/code-generation-printing.md",
+      "references/core-capabilities.md",
+      "references/matrices-linear-algebra.md",
+      "references/physics-mechanics.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 13467,
+        "lineCount": 499,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/advanced-topics.md": {
+        "sizeBytes": 13132,
+        "lineCount": 636,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/code-generation-printing.md": {
+        "sizeBytes": 12427,
+        "lineCount": 600,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/core-capabilities.md": {
+        "sizeBytes": 7754,
+        "lineCount": 349,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/matrices-linear-algebra.md": {
+        "sizeBytes": 9639,
+        "lineCount": 527,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/physics-mechanics.md": {
+        "sizeBytes": 12053,
+        "lineCount": 593,
+        "ext": "md",
+        "tabKey": "references"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 17112,
+      "cl100k": 21392
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "tiledbvcf": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 15359,
+        "lineCount": 459,
+        "ext": "md",
+        "tabKey": "root"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 3839,
+      "cl100k": 3638
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "time-stepping": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/cfl_coupling.md",
+      "references/output_checkpoint_guidelines.md",
+      "references/ramping_strategies.md",
+      "scripts/checkpoint_planner.py",
+      "scripts/output_schedule.py",
+      "scripts/timestep_planner.py"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 4519,
+        "lineCount": 141,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/cfl_coupling.md": {
+        "sizeBytes": 7426,
+        "lineCount": 353,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/output_checkpoint_guidelines.md": {
+        "sizeBytes": 9315,
+        "lineCount": 396,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/ramping_strategies.md": {
+        "sizeBytes": 7832,
+        "lineCount": 355,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "scripts/checkpoint_planner.py": {
+        "sizeBytes": 2955,
+        "lineCount": 107,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/output_schedule.py": {
+        "sizeBytes": 2308,
+        "lineCount": 80,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/timestep_planner.py": {
+        "sizeBytes": 4960,
+        "lineCount": 152,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 9772,
+      "cl100k": 10354
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
   "chaos-engineer": {
     "category": "Security & Web Testing",
     "files": [
