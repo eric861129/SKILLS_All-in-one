@@ -15836,6 +15836,235 @@
       "source": "structured"
     }
   },
+  "rowan": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/api_reference.md",
+      "references/molecule_handling.md",
+      "references/proteins_and_organization.md",
+      "references/rdkit_native.md",
+      "references/results_interpretation.md",
+      "references/workflow_types.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 12510,
+        "lineCount": 428,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/api_reference.md": {
+        "sizeBytes": 10003,
+        "lineCount": 414,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/molecule_handling.md": {
+        "sizeBytes": 9125,
+        "lineCount": 430,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/proteins_and_organization.md": {
+        "sizeBytes": 9077,
+        "lineCount": 500,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/rdkit_native.md": {
+        "sizeBytes": 10756,
+        "lineCount": 439,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/results_interpretation.md": {
+        "sizeBytes": 11400,
+        "lineCount": 482,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/workflow_types.md": {
+        "sizeBytes": 11699,
+        "lineCount": 592,
+        "ext": "md",
+        "tabKey": "references"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 18625,
+      "cl100k": 20171
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "scanpy": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "assets/analysis_template.py",
+      "references/api_reference.md",
+      "references/plotting_guide.md",
+      "references/standard_workflow.md",
+      "scripts/qc_analysis.py"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 11323,
+        "lineCount": 385,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "assets/analysis_template.py": {
+        "sizeBytes": 9515,
+        "lineCount": 296,
+        "ext": "py",
+        "tabKey": "assets"
+      },
+      "references/api_reference.md": {
+        "sizeBytes": 7415,
+        "lineCount": 252,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/plotting_guide.md": {
+        "sizeBytes": 9695,
+        "lineCount": 353,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/standard_workflow.md": {
+        "sizeBytes": 5529,
+        "lineCount": 207,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "scripts/qc_analysis.py": {
+        "sizeBytes": 6706,
+        "lineCount": 201,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 12547,
+      "cl100k": 12702
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "scholar-evaluation": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/evaluation_framework.md",
+      "scripts/calculate_scores.py"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 12258,
+        "lineCount": 299,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/evaluation_framework.md": {
+        "sizeBytes": 19950,
+        "lineCount": 664,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "scripts/calculate_scores.py": {
+        "sizeBytes": 11551,
+        "lineCount": 379,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 10939,
+      "cl100k": 9278
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "scientific-critical-thinking": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/common_biases.md",
+      "references/evidence_hierarchy.md",
+      "references/experimental_design.md",
+      "references/logical_fallacies.md",
+      "references/scientific_method.md",
+      "references/statistical_pitfalls.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 23705,
+        "lineCount": 571,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/common_biases.md": {
+        "sizeBytes": 11093,
+        "lineCount": 365,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/evidence_hierarchy.md": {
+        "sizeBytes": 13444,
+        "lineCount": 485,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/experimental_design.md": {
+        "sizeBytes": 16068,
+        "lineCount": 497,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/logical_fallacies.md": {
+        "sizeBytes": 18014,
+        "lineCount": 479,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/scientific_method.md": {
+        "sizeBytes": 6100,
+        "lineCount": 170,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/statistical_pitfalls.md": {
+        "sizeBytes": 15726,
+        "lineCount": 507,
+        "ext": "md",
+        "tabKey": "references"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 26028,
+      "cl100k": 22311
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
   "chaos-engineer": {
     "category": "Security & Web Testing",
     "files": [
