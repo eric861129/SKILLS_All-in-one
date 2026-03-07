@@ -14724,6 +14724,235 @@
       "source": "structured"
     }
   },
+  "pubchem-database": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/api_reference.md",
+      "scripts/bioactivity_query.py",
+      "scripts/compound_search.py"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 16313,
+        "lineCount": 573,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/api_reference.md": {
+        "sizeBytes": 10731,
+        "lineCount": 441,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "scripts/bioactivity_query.py": {
+        "sizeBytes": 9845,
+        "lineCount": 368,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/compound_search.py": {
+        "sizeBytes": 8302,
+        "lineCount": 298,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 11299,
+      "cl100k": 11193
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "pufferlib": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/environments.md",
+      "references/integration.md",
+      "references/policies.md",
+      "references/training.md",
+      "references/vectorization.md",
+      "scripts/env_template.py",
+      "scripts/train_template.py"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 13501,
+        "lineCount": 435,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/environments.md": {
+        "sizeBytes": 12489,
+        "lineCount": 509,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/integration.md": {
+        "sizeBytes": 15165,
+        "lineCount": 622,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/policies.md": {
+        "sizeBytes": 19183,
+        "lineCount": 654,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/training.md": {
+        "sizeBytes": 8127,
+        "lineCount": 361,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/vectorization.md": {
+        "sizeBytes": 12962,
+        "lineCount": 558,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "scripts/env_template.py": {
+        "sizeBytes": 10157,
+        "lineCount": 341,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/train_template.py": {
+        "sizeBytes": 8027,
+        "lineCount": 240,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 24899,
+      "cl100k": 23629
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "pydeseq2": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/api_reference.md",
+      "references/workflow_guide.md",
+      "scripts/run_deseq2_analysis.py"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 16166,
+        "lineCount": 558,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/api_reference.md": {
+        "sizeBytes": 7162,
+        "lineCount": 229,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/workflow_guide.md": {
+        "sizeBytes": 13026,
+        "lineCount": 583,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "scripts/run_deseq2_analysis.py": {
+        "sizeBytes": 11887,
+        "lineCount": 354,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 12051,
+      "cl100k": 11988
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "pylabrobot": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/analytical-equipment.md",
+      "references/hardware-backends.md",
+      "references/liquid-handling.md",
+      "references/material-handling.md",
+      "references/resources.md",
+      "references/visualization.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 8194,
+        "lineCount": 184,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/analytical-equipment.md": {
+        "sizeBytes": 11935,
+        "lineCount": 465,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/hardware-backends.md": {
+        "sizeBytes": 12944,
+        "lineCount": 481,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/liquid-handling.md": {
+        "sizeBytes": 10206,
+        "lineCount": 404,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/material-handling.md": {
+        "sizeBytes": 13997,
+        "lineCount": 621,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/resources.md": {
+        "sizeBytes": 12263,
+        "lineCount": 490,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/visualization.md": {
+        "sizeBytes": 13560,
+        "lineCount": 533,
+        "ext": "md",
+        "tabKey": "references"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 20766,
+      "cl100k": 20108
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
   "chaos-engineer": {
     "category": "Security & Web Testing",
     "files": [
