@@ -7644,6 +7644,295 @@
       "source": "structured"
     }
   },
+  "pydicom": {
+    "category": "Health & Life Sciences",
+    "files": [
+      "SKILL.md",
+      "references/common_tags.md",
+      "references/transfer_syntaxes.md",
+      "scripts/anonymize_dicom.py",
+      "scripts/dicom_to_image.py",
+      "scripts/extract_metadata.py"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 13189,
+        "lineCount": 433,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/common_tags.md": {
+        "sizeBytes": 10246,
+        "lineCount": 229,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/transfer_syntaxes.md": {
+        "sizeBytes": 9627,
+        "lineCount": 353,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "scripts/anonymize_dicom.py": {
+        "sizeBytes": 5254,
+        "lineCount": 138,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/dicom_to_image.py": {
+        "sizeBytes": 6101,
+        "lineCount": 173,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/extract_metadata.py": {
+        "sizeBytes": 5686,
+        "lineCount": 174,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 12524,
+      "cl100k": 12945
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "pyhealth": {
+    "category": "Health & Life Sciences",
+    "files": [
+      "SKILL.md",
+      "references/datasets.md",
+      "references/medical_coding.md",
+      "references/models.md",
+      "references/preprocessing.md",
+      "references/tasks.md",
+      "references/training_evaluation.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 17653,
+        "lineCount": 490,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/datasets.md": {
+        "sizeBytes": 5468,
+        "lineCount": 179,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/medical_coding.md": {
+        "sizeBytes": 8476,
+        "lineCount": 285,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/models.md": {
+        "sizeBytes": 13776,
+        "lineCount": 595,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/preprocessing.md": {
+        "sizeBytes": 14388,
+        "lineCount": 639,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/tasks.md": {
+        "sizeBytes": 11404,
+        "lineCount": 380,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/training_evaluation.md": {
+        "sizeBytes": 16982,
+        "lineCount": 649,
+        "ext": "md",
+        "tabKey": "references"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 22023,
+      "cl100k": 20865
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "treatment-plans": {
+    "category": "Health & Life Sciences",
+    "files": [
+      "SKILL.md",
+      "assets/STYLING_QUICK_REFERENCE.md",
+      "assets/chronic_disease_management_plan.tex",
+      "assets/general_medical_treatment_plan.tex",
+      "assets/medical_treatment_plan.sty",
+      "assets/mental_health_treatment_plan.tex",
+      "assets/one_page_treatment_plan.tex",
+      "assets/pain_management_plan.tex",
+      "assets/perioperative_care_plan.tex",
+      "assets/quality_checklist.md",
+      "assets/rehabilitation_treatment_plan.tex",
+      "references/README.md",
+      "references/goal_setting_frameworks.md",
+      "references/intervention_guidelines.md",
+      "references/regulatory_compliance.md",
+      "references/specialty_specific_guidelines.md",
+      "references/treatment_plan_standards.md",
+      "scripts/check_completeness.py",
+      "scripts/generate_template.py",
+      "scripts/timeline_generator.py",
+      "scripts/validate_treatment_plan.py"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 52693,
+        "lineCount": 1581,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "assets/STYLING_QUICK_REFERENCE.md": {
+        "sizeBytes": 3912,
+        "lineCount": 186,
+        "ext": "md",
+        "tabKey": "assets"
+      },
+      "assets/chronic_disease_management_plan.tex": {
+        "sizeBytes": 29371,
+        "lineCount": 0,
+        "ext": "tex",
+        "tabKey": "assets"
+      },
+      "assets/general_medical_treatment_plan.tex": {
+        "sizeBytes": 23289,
+        "lineCount": 0,
+        "ext": "tex",
+        "tabKey": "assets"
+      },
+      "assets/medical_treatment_plan.sty": {
+        "sizeBytes": 5404,
+        "lineCount": 0,
+        "ext": "sty",
+        "tabKey": "assets"
+      },
+      "assets/mental_health_treatment_plan.tex": {
+        "sizeBytes": 34509,
+        "lineCount": 0,
+        "ext": "tex",
+        "tabKey": "assets"
+      },
+      "assets/one_page_treatment_plan.tex": {
+        "sizeBytes": 5377,
+        "lineCount": 0,
+        "ext": "tex",
+        "tabKey": "assets"
+      },
+      "assets/pain_management_plan.tex": {
+        "sizeBytes": 33326,
+        "lineCount": 0,
+        "ext": "tex",
+        "tabKey": "assets"
+      },
+      "assets/perioperative_care_plan.tex": {
+        "sizeBytes": 30005,
+        "lineCount": 0,
+        "ext": "tex",
+        "tabKey": "assets"
+      },
+      "assets/quality_checklist.md": {
+        "sizeBytes": 15081,
+        "lineCount": 472,
+        "ext": "md",
+        "tabKey": "assets"
+      },
+      "assets/rehabilitation_treatment_plan.tex": {
+        "sizeBytes": 30462,
+        "lineCount": 0,
+        "ext": "tex",
+        "tabKey": "assets"
+      },
+      "references/README.md": {
+        "sizeBytes": 16970,
+        "lineCount": 489,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/goal_setting_frameworks.md": {
+        "sizeBytes": 16554,
+        "lineCount": 412,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/intervention_guidelines.md": {
+        "sizeBytes": 19024,
+        "lineCount": 508,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/regulatory_compliance.md": {
+        "sizeBytes": 17565,
+        "lineCount": 477,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/specialty_specific_guidelines.md": {
+        "sizeBytes": 26678,
+        "lineCount": 656,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/treatment_plan_standards.md": {
+        "sizeBytes": 16643,
+        "lineCount": 486,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "scripts/check_completeness.py": {
+        "sizeBytes": 9919,
+        "lineCount": 319,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/generate_template.py": {
+        "sizeBytes": 7490,
+        "lineCount": 245,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/timeline_generator.py": {
+        "sizeBytes": 12631,
+        "lineCount": 370,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/validate_treatment_plan.py": {
+        "sizeBytes": 12392,
+        "lineCount": 368,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 56784,
+      "cl100k": 52283
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
   "aws-agentic-ai": {
     "category": "Infrastructure & Cloud",
     "files": [
@@ -8185,6 +8474,140 @@
     "tokenEstimate": {
       "heuristic": 3486,
       "cl100k": 3002
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "provider-resources": {
+    "category": "Infrastructure & Cloud",
+    "files": [
+      "SKILL.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 16698,
+        "lineCount": 600,
+        "ext": "md",
+        "tabKey": "root"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 4163,
+      "cl100k": 3633
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "push-to-registry": {
+    "category": "Infrastructure & Cloud",
+    "files": [
+      "SKILL.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 4741,
+        "lineCount": 204,
+        "ext": "md",
+        "tabKey": "root"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 1185,
+      "cl100k": 1208
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "refactor-module": {
+    "category": "Infrastructure & Cloud",
+    "files": [
+      "SKILL.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 13670,
+        "lineCount": 539,
+        "ext": "md",
+        "tabKey": "root"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 3407,
+      "cl100k": 3448
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "run-acceptance-tests": {
+    "category": "Infrastructure & Cloud",
+    "files": [
+      "SKILL.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 1751,
+        "lineCount": 42,
+        "ext": "md",
+        "tabKey": "root"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 438,
+      "cl100k": 414
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "terraform-search-import": {
+    "category": "Infrastructure & Cloud",
+    "files": [
+      "SKILL.md",
+      "references/MANUAL-IMPORT.md",
+      "scripts/list_resources.sh"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 8924,
+        "lineCount": 373,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/MANUAL-IMPORT.md": {
+        "sizeBytes": 2449,
+        "lineCount": 114,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "scripts/list_resources.sh": {
+        "sizeBytes": 1162,
+        "lineCount": 36,
+        "ext": "sh",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 3135,
+      "cl100k": 3103
     },
     "dependencies": {
       "skills": [],
