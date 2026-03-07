@@ -17076,6 +17076,72 @@
       "source": "structured"
     }
   },
+  "statistical-analysis": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/assumptions_and_diagnostics.md",
+      "references/bayesian_statistics.md",
+      "references/effect_sizes_and_power.md",
+      "references/reporting_standards.md",
+      "references/test_selection_guide.md",
+      "scripts/assumption_checks.py"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 19766,
+        "lineCount": 631,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/assumptions_and_diagnostics.md": {
+        "sizeBytes": 11139,
+        "lineCount": 370,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/bayesian_statistics.md": {
+        "sizeBytes": 17533,
+        "lineCount": 662,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/effect_sizes_and_power.md": {
+        "sizeBytes": 14989,
+        "lineCount": 582,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/reporting_standards.md": {
+        "sizeBytes": 19504,
+        "lineCount": 470,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/test_selection_guide.md": {
+        "sizeBytes": 5077,
+        "lineCount": 130,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "scripts/assumption_checks.py": {
+        "sizeBytes": 15859,
+        "lineCount": 540,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 25837,
+      "cl100k": 27383
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
   "chaos-engineer": {
     "category": "Security & Web Testing",
     "files": [
