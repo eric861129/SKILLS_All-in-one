@@ -15384,6 +15384,295 @@
       "source": "structured"
     }
   },
+  "pytorch-lightning": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/best_practices.md",
+      "references/callbacks.md",
+      "references/data_module.md",
+      "references/distributed_training.md",
+      "references/lightning_module.md",
+      "references/logging.md",
+      "references/trainer.md",
+      "scripts/quick_trainer_setup.py",
+      "scripts/template_datamodule.py",
+      "scripts/template_lightning_module.py"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 6675,
+        "lineCount": 173,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/best_practices.md": {
+        "sizeBytes": 16071,
+        "lineCount": 725,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/callbacks.md": {
+        "sizeBytes": 15540,
+        "lineCount": 565,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/data_module.md": {
+        "sizeBytes": 14497,
+        "lineCount": 566,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/distributed_training.md": {
+        "sizeBytes": 14213,
+        "lineCount": 644,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/lightning_module.md": {
+        "sizeBytes": 13728,
+        "lineCount": 488,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/logging.md": {
+        "sizeBytes": 14259,
+        "lineCount": 655,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/trainer.md": {
+        "sizeBytes": 14784,
+        "lineCount": 642,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "scripts/quick_trainer_setup.py": {
+        "sizeBytes": 12985,
+        "lineCount": 455,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/template_datamodule.py": {
+        "sizeBytes": 9354,
+        "lineCount": 329,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/template_lightning_module.py": {
+        "sizeBytes": 5886,
+        "lineCount": 220,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 34501,
+      "cl100k": 32242
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "pyzotero": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/authentication.md",
+      "references/cli.md",
+      "references/collections.md",
+      "references/error-handling.md",
+      "references/exports.md",
+      "references/files-attachments.md",
+      "references/full-text.md",
+      "references/pagination.md",
+      "references/read-api.md",
+      "references/saved-searches.md",
+      "references/search-params.md",
+      "references/tags.md",
+      "references/write-api.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 4398,
+        "lineCount": 112,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/authentication.md": {
+        "sizeBytes": 2250,
+        "lineCount": 91,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/cli.md": {
+        "sizeBytes": 2293,
+        "lineCount": 101,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/collections.md": {
+        "sizeBytes": 2526,
+        "lineCount": 114,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/error-handling.md": {
+        "sizeBytes": 2617,
+        "lineCount": 104,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/exports.md": {
+        "sizeBytes": 2603,
+        "lineCount": 103,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/files-attachments.md": {
+        "sizeBytes": 2760,
+        "lineCount": 98,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/full-text.md": {
+        "sizeBytes": 1695,
+        "lineCount": 69,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/pagination.md": {
+        "sizeBytes": 2056,
+        "lineCount": 80,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/read-api.md": {
+        "sizeBytes": 2972,
+        "lineCount": 138,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/saved-searches.md": {
+        "sizeBytes": 2009,
+        "lineCount": 78,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/search-params.md": {
+        "sizeBytes": 3047,
+        "lineCount": 91,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/tags.md": {
+        "sizeBytes": 2083,
+        "lineCount": 88,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/write-api.md": {
+        "sizeBytes": 3294,
+        "lineCount": 124,
+        "ext": "md",
+        "tabKey": "references"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 9149,
+      "cl100k": 9483
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "qiskit": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/algorithms.md",
+      "references/backends.md",
+      "references/circuits.md",
+      "references/patterns.md",
+      "references/primitives.md",
+      "references/setup.md",
+      "references/transpilation.md",
+      "references/visualization.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 8755,
+        "lineCount": 274,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/algorithms.md": {
+        "sizeBytes": 14455,
+        "lineCount": 608,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/backends.md": {
+        "sizeBytes": 9551,
+        "lineCount": 434,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/circuits.md": {
+        "sizeBytes": 3451,
+        "lineCount": 198,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/patterns.md": {
+        "sizeBytes": 13529,
+        "lineCount": 534,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/primitives.md": {
+        "sizeBytes": 6055,
+        "lineCount": 278,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/setup.md": {
+        "sizeBytes": 2041,
+        "lineCount": 100,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/transpilation.md": {
+        "sizeBytes": 7372,
+        "lineCount": 287,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/visualization.md": {
+        "sizeBytes": 7893,
+        "lineCount": 416,
+        "ext": "md",
+        "tabKey": "references"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 18256,
+      "cl100k": 18805
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
   "chaos-engineer": {
     "category": "Security & Web Testing",
     "files": [
