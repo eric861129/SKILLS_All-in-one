@@ -17799,6 +17799,200 @@
       "source": "structured"
     }
   },
+  "umap-learn": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/api_reference.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 15394,
+        "lineCount": 478,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/api_reference.md": {
+        "sizeBytes": 18966,
+        "lineCount": 533,
+        "ext": "md",
+        "tabKey": "references"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 8591,
+      "cl100k": 7857
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "uniprot-database": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/api_examples.md",
+      "references/api_fields.md",
+      "references/id_mapping_databases.md",
+      "references/query_syntax.md",
+      "scripts/uniprot_client.py"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 6788,
+        "lineCount": 194,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/api_examples.md": {
+        "sizeBytes": 10348,
+        "lineCount": 414,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/api_fields.md": {
+        "sizeBytes": 7729,
+        "lineCount": 276,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/id_mapping_databases.md": {
+        "sizeBytes": 6682,
+        "lineCount": 286,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/query_syntax.md": {
+        "sizeBytes": 6833,
+        "lineCount": 257,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "scripts/uniprot_client.py": {
+        "sizeBytes": 9982,
+        "lineCount": 342,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 12092,
+      "cl100k": 12812
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "uspto-database": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/additional_apis.md",
+      "references/patentsearch_api.md",
+      "references/peds_api.md",
+      "references/trademark_api.md",
+      "scripts/patent_search.py",
+      "scripts/peds_client.py",
+      "scripts/trademark_client.py"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 18719,
+        "lineCount": 606,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/additional_apis.md": {
+        "sizeBytes": 9773,
+        "lineCount": 395,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/patentsearch_api.md": {
+        "sizeBytes": 7435,
+        "lineCount": 267,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/peds_api.md": {
+        "sizeBytes": 6546,
+        "lineCount": 213,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/trademark_api.md": {
+        "sizeBytes": 9754,
+        "lineCount": 359,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "scripts/patent_search.py": {
+        "sizeBytes": 9023,
+        "lineCount": 291,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/peds_client.py": {
+        "sizeBytes": 9602,
+        "lineCount": 286,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/trademark_client.py": {
+        "sizeBytes": 10564,
+        "lineCount": 312,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 20344,
+      "cl100k": 19019
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "zinc-database": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/api_reference.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 13885,
+        "lineCount": 403,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/api_reference.md": {
+        "sizeBytes": 19517,
+        "lineCount": 693,
+        "ext": "md",
+        "tabKey": "references"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 8336,
+      "cl100k": 9038
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
   "chaos-engineer": {
     "category": "Security & Web Testing",
     "files": [
