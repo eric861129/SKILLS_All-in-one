@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+
+# Linear CLI wrapper script
+# Runs the JavaScript CLI using node
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+# Check if node_modules exists, if not install automatically
+if [ ! -d "$SCRIPT_DIR/node_modules" ]; then
+  echo "Dependencies not installed. Installing..."
+  echo ""
+  cd "$SCRIPT_DIR" && npm install
+  if [ $? -ne 0 ]; then
+    echo ""
+    echo "Error: Failed to install dependencies"
+    exit 1
+  fi
+  echo ""
+fi
+
+# Run the CLI with node
+exec node "$SCRIPT_DIR/scripts/linear-cli.js" "$@"
