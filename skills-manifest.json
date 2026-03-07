@@ -16140,6 +16140,124 @@
       "source": "structured"
     }
   },
+  "scientific-brainstorming": {
+    "category": "Writing & Research",
+    "files": [
+      "SKILL.md",
+      "references/brainstorming_methods.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 8179,
+        "lineCount": 190,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/brainstorming_methods.md": {
+        "sizeBytes": 12065,
+        "lineCount": 327,
+        "ext": "md",
+        "tabKey": "references"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 5054,
+      "cl100k": 4081
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "scientific-writing": {
+    "category": "Writing & Research",
+    "files": [
+      "SKILL.md",
+      "assets/REPORT_FORMATTING_GUIDE.md",
+      "assets/scientific_report.sty",
+      "assets/scientific_report_template.tex",
+      "references/citation_styles.md",
+      "references/figures_tables.md",
+      "references/imrad_structure.md",
+      "references/professional_report_formatting.md",
+      "references/reporting_guidelines.md",
+      "references/writing_principles.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 33781,
+        "lineCount": 719,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "assets/REPORT_FORMATTING_GUIDE.md": {
+        "sizeBytes": 14173,
+        "lineCount": 575,
+        "ext": "md",
+        "tabKey": "assets"
+      },
+      "assets/scientific_report.sty": {
+        "sizeBytes": 16643,
+        "lineCount": 0,
+        "ext": "sty",
+        "tabKey": "assets"
+      },
+      "assets/scientific_report_template.tex": {
+        "sizeBytes": 15638,
+        "lineCount": 0,
+        "ext": "tex",
+        "tabKey": "assets"
+      },
+      "references/citation_styles.md": {
+        "sizeBytes": 23705,
+        "lineCount": 721,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/figures_tables.md": {
+        "sizeBytes": 27883,
+        "lineCount": 807,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/imrad_structure.md": {
+        "sizeBytes": 26135,
+        "lineCount": 687,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/professional_report_formatting.md": {
+        "sizeBytes": 20620,
+        "lineCount": 665,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/reporting_guidelines.md": {
+        "sizeBytes": 25012,
+        "lineCount": 749,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/writing_principles.md": {
+        "sizeBytes": 27593,
+        "lineCount": 825,
+        "ext": "md",
+        "tabKey": "references"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 49569,
+      "cl100k": 46004
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
   "the-fool": {
     "category": "Writing & Research",
     "files": [
@@ -16205,6 +16323,229 @@
         "code-reviewer",
         "feature-forge"
       ],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "venue-templates": {
+    "category": "Writing & Research",
+    "files": [
+      "SKILL.md",
+      "assets/examples/cell_summary_example.md",
+      "assets/examples/medical_structured_abstract.md",
+      "assets/examples/nature_abstract_examples.md",
+      "assets/examples/neurips_introduction_example.md",
+      "assets/grants/nih_specific_aims.tex",
+      "assets/grants/nsf_proposal_template.tex",
+      "assets/journals/nature_article.tex",
+      "assets/journals/neurips_article.tex",
+      "assets/journals/plos_one.tex",
+      "assets/posters/beamerposter_academic.tex",
+      "references/cell_press_style.md",
+      "references/conferences_formatting.md",
+      "references/cs_conference_style.md",
+      "references/grants_requirements.md",
+      "references/journals_formatting.md",
+      "references/medical_journal_styles.md",
+      "references/ml_conference_style.md",
+      "references/nature_science_style.md",
+      "references/posters_guidelines.md",
+      "references/reviewer_expectations.md",
+      "references/venue_writing_styles.md",
+      "scripts/customize_template.py",
+      "scripts/query_template.py",
+      "scripts/validate_format.py"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 23296,
+        "lineCount": 689,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "assets/examples/cell_summary_example.md": {
+        "sizeBytes": 8877,
+        "lineCount": 248,
+        "ext": "md",
+        "tabKey": "assets"
+      },
+      "assets/examples/medical_structured_abstract.md": {
+        "sizeBytes": 12074,
+        "lineCount": 314,
+        "ext": "md",
+        "tabKey": "assets"
+      },
+      "assets/examples/nature_abstract_examples.md": {
+        "sizeBytes": 8954,
+        "lineCount": 214,
+        "ext": "md",
+        "tabKey": "assets"
+      },
+      "assets/examples/neurips_introduction_example.md": {
+        "sizeBytes": 8779,
+        "lineCount": 246,
+        "ext": "md",
+        "tabKey": "assets"
+      },
+      "assets/grants/nih_specific_aims.tex": {
+        "sizeBytes": 9082,
+        "lineCount": 0,
+        "ext": "tex",
+        "tabKey": "assets"
+      },
+      "assets/grants/nsf_proposal_template.tex": {
+        "sizeBytes": 13157,
+        "lineCount": 0,
+        "ext": "tex",
+        "tabKey": "assets"
+      },
+      "assets/journals/nature_article.tex": {
+        "sizeBytes": 6242,
+        "lineCount": 0,
+        "ext": "tex",
+        "tabKey": "assets"
+      },
+      "assets/journals/neurips_article.tex": {
+        "sizeBytes": 8925,
+        "lineCount": 0,
+        "ext": "tex",
+        "tabKey": "assets"
+      },
+      "assets/journals/plos_one.tex": {
+        "sizeBytes": 11713,
+        "lineCount": 0,
+        "ext": "tex",
+        "tabKey": "assets"
+      },
+      "assets/posters/beamerposter_academic.tex": {
+        "sizeBytes": 8495,
+        "lineCount": 0,
+        "ext": "tex",
+        "tabKey": "assets"
+      },
+      "references/cell_press_style.md": {
+        "sizeBytes": 14290,
+        "lineCount": 484,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/conferences_formatting.md": {
+        "sizeBytes": 17164,
+        "lineCount": 565,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/cs_conference_style.md": {
+        "sizeBytes": 15652,
+        "lineCount": 464,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/grants_requirements.md": {
+        "sizeBytes": 22873,
+        "lineCount": 788,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/journals_formatting.md": {
+        "sizeBytes": 17649,
+        "lineCount": 487,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/medical_journal_styles.md": {
+        "sizeBytes": 15963,
+        "lineCount": 536,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/ml_conference_style.md": {
+        "sizeBytes": 17838,
+        "lineCount": 557,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/nature_science_style.md": {
+        "sizeBytes": 13574,
+        "lineCount": 406,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/posters_guidelines.md": {
+        "sizeBytes": 17113,
+        "lineCount": 629,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/reviewer_expectations.md": {
+        "sizeBytes": 15837,
+        "lineCount": 418,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/venue_writing_styles.md": {
+        "sizeBytes": 12671,
+        "lineCount": 322,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "scripts/customize_template.py": {
+        "sizeBytes": 6875,
+        "lineCount": 207,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/query_template.py": {
+        "sizeBytes": 8959,
+        "lineCount": 261,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/validate_format.py": {
+        "sizeBytes": 8766,
+        "lineCount": 256,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 66010,
+      "cl100k": 62492
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "what-if-oracle": {
+    "category": "Writing & Research",
+    "files": [
+      "SKILL.md",
+      "references/scenario-templates.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 9481,
+        "lineCount": 169,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/scenario-templates.md": {
+        "sizeBytes": 4150,
+        "lineCount": 138,
+        "ext": "md",
+        "tabKey": "references"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 3222,
+      "cl100k": 2957
+    },
+    "dependencies": {
+      "skills": [],
       "libraries": [],
       "runtimeTools": [],
       "source": "structured"
