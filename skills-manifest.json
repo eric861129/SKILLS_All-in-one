@@ -13295,6 +13295,100 @@
       "source": "structured"
     }
   },
+  "linear-solvers": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/convergence_patterns.md",
+      "references/preconditioner_catalog.md",
+      "references/scaling_guidelines.md",
+      "references/solver_decision_tree.md",
+      "scripts/convergence_diagnostics.py",
+      "scripts/preconditioner_advisor.py",
+      "scripts/residual_norms.py",
+      "scripts/scaling_equilibration.py",
+      "scripts/solver_selector.py",
+      "scripts/sparsity_stats.py"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 5924,
+        "lineCount": 166,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/convergence_patterns.md": {
+        "sizeBytes": 10385,
+        "lineCount": 432,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/preconditioner_catalog.md": {
+        "sizeBytes": 8145,
+        "lineCount": 331,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/scaling_guidelines.md": {
+        "sizeBytes": 8492,
+        "lineCount": 376,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/solver_decision_tree.md": {
+        "sizeBytes": 8042,
+        "lineCount": 288,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "scripts/convergence_diagnostics.py": {
+        "sizeBytes": 2276,
+        "lineCount": 76,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/preconditioner_advisor.py": {
+        "sizeBytes": 3332,
+        "lineCount": 111,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/residual_norms.py": {
+        "sizeBytes": 5665,
+        "lineCount": 172,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/scaling_equilibration.py": {
+        "sizeBytes": 4327,
+        "lineCount": 137,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/solver_selector.py": {
+        "sizeBytes": 4469,
+        "lineCount": 145,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/sparsity_stats.py": {
+        "sizeBytes": 2774,
+        "lineCount": 101,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 15771,
+      "cl100k": 16794
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
   "matchms": {
     "category": "Scientific & Research Tools",
     "files": [
@@ -15670,6 +15764,110 @@
     "tokenEstimate": {
       "heuristic": 21182,
       "cl100k": 18964
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "peer-review": {
+    "category": "Writing & Research",
+    "files": [
+      "SKILL.md",
+      "references/common_issues.md",
+      "references/reporting_standards.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 23120,
+        "lineCount": 570,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/common_issues.md": {
+        "sizeBytes": 19321,
+        "lineCount": 553,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/reporting_standards.md": {
+        "sizeBytes": 10200,
+        "lineCount": 291,
+        "ext": "md",
+        "tabKey": "references"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 13157,
+      "cl100k": 10551
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "perplexity-search": {
+    "category": "Writing & Research",
+    "files": [
+      "SKILL.md",
+      "assets/.env.example",
+      "references/model_comparison.md",
+      "references/openrouter_setup.md",
+      "references/search_strategies.md",
+      "scripts/perplexity_search.py",
+      "scripts/setup_env.py"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 14085,
+        "lineCount": 447,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "assets/.env.example": {
+        "sizeBytes": 506,
+        "lineCount": 0,
+        "ext": "example",
+        "tabKey": "assets"
+      },
+      "references/model_comparison.md": {
+        "sizeBytes": 10378,
+        "lineCount": 387,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/openrouter_setup.md": {
+        "sizeBytes": 11522,
+        "lineCount": 455,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/search_strategies.md": {
+        "sizeBytes": 10021,
+        "lineCount": 259,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "scripts/perplexity_search.py": {
+        "sizeBytes": 8068,
+        "lineCount": 278,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/setup_env.py": {
+        "sizeBytes": 4656,
+        "lineCount": 172,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 14662,
+      "cl100k": 13544
     },
     "dependencies": {
       "skills": [],
