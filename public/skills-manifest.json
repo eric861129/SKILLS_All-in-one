@@ -1167,6 +1167,140 @@
       "source": "structured"
     }
   },
+  "meeting-insights-analyzer": {
+    "category": "Collaboration & Project Management",
+    "files": [
+      "SKILL.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 10177,
+        "lineCount": 328,
+        "ext": "md",
+        "tabKey": "root"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 2544,
+      "cl100k": 2282
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "outline": {
+    "category": "Collaboration & Project Management",
+    "files": [
+      ".env.example",
+      ".gitignore",
+      "README.md",
+      "SKILL.md",
+      "requirements.txt",
+      "scripts/outline.py"
+    ],
+    "fileMeta": {
+      ".env.example": {
+        "sizeBytes": 488,
+        "lineCount": 0,
+        "ext": "example",
+        "tabKey": "root"
+      },
+      ".gitignore": {
+        "sizeBytes": 322,
+        "lineCount": 0,
+        "ext": "none",
+        "tabKey": "root"
+      },
+      "README.md": {
+        "sizeBytes": 6200,
+        "lineCount": 245,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "SKILL.md": {
+        "sizeBytes": 4347,
+        "lineCount": 146,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "requirements.txt": {
+        "sizeBytes": 67,
+        "lineCount": 4,
+        "ext": "txt",
+        "tabKey": "root"
+      },
+      "scripts/outline.py": {
+        "sizeBytes": 22716,
+        "lineCount": 663,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 8334,
+      "cl100k": 7541
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [
+        "httpx",
+        "python-dotenv"
+      ],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "review-implementing": {
+    "category": "Collaboration & Project Management",
+    "files": [
+      "SKILL.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 3645,
+        "lineCount": 137,
+        "ext": "md",
+        "tabKey": "root"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 912,
+      "cl100k": 777
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "test-fixing": {
+    "category": "Collaboration & Project Management",
+    "files": [
+      "SKILL.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 2965,
+        "lineCount": 110,
+        "ext": "md",
+        "tabKey": "root"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 737,
+      "cl100k": 675
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
   "csv-data-summarizer": {
     "category": "Data & Analysis",
     "files": [
@@ -1377,6 +1511,79 @@
     "tokenEstimate": {
       "heuristic": 14520,
       "cl100k": 15115
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "elicitation": {
+    "category": "Data & Analysis",
+    "files": [
+      "SKILL.md",
+      "references/language-inference.md",
+      "references/motivational-interviewing.md",
+      "references/narrative-identity.md",
+      "references/question-sequences.md",
+      "references/schema-detection.md",
+      "references/self-defining-memories.md",
+      "references/values-elicitation.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 17826,
+        "lineCount": 476,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/language-inference.md": {
+        "sizeBytes": 7739,
+        "lineCount": 258,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/motivational-interviewing.md": {
+        "sizeBytes": 9210,
+        "lineCount": 276,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/narrative-identity.md": {
+        "sizeBytes": 7803,
+        "lineCount": 210,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/question-sequences.md": {
+        "sizeBytes": 8903,
+        "lineCount": 313,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/schema-detection.md": {
+        "sizeBytes": 9065,
+        "lineCount": 316,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/self-defining-memories.md": {
+        "sizeBytes": 8152,
+        "lineCount": 208,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/values-elicitation.md": {
+        "sizeBytes": 9105,
+        "lineCount": 277,
+        "ext": "md",
+        "tabKey": "references"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 19412,
+      "cl100k": 17825
     },
     "dependencies": {
       "skills": [],
@@ -2845,6 +3052,128 @@
       "source": "structured"
     }
   },
+  "mssql": {
+    "category": "Data & Analysis",
+    "files": [
+      ".gitignore",
+      "README.md",
+      "SKILL.md",
+      "connections.example.json",
+      "requirements.txt",
+      "scripts/query.py"
+    ],
+    "fileMeta": {
+      ".gitignore": {
+        "sizeBytes": 282,
+        "lineCount": 0,
+        "ext": "none",
+        "tabKey": "root"
+      },
+      "README.md": {
+        "sizeBytes": 2073,
+        "lineCount": 83,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "SKILL.md": {
+        "sizeBytes": 4273,
+        "lineCount": 136,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "connections.example.json": {
+        "sizeBytes": 950,
+        "lineCount": 36,
+        "ext": "json",
+        "tabKey": "root"
+      },
+      "requirements.txt": {
+        "sizeBytes": 18,
+        "lineCount": 2,
+        "ext": "txt",
+        "tabKey": "root"
+      },
+      "scripts/query.py": {
+        "sizeBytes": 11261,
+        "lineCount": 314,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 4645,
+      "cl100k": 4421
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [
+        "pymssql"
+      ],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "mysql": {
+    "category": "Data & Analysis",
+    "files": [
+      ".gitignore",
+      "README.md",
+      "SKILL.md",
+      "connections.example.json",
+      "requirements.txt",
+      "scripts/query.py"
+    ],
+    "fileMeta": {
+      ".gitignore": {
+        "sizeBytes": 282,
+        "lineCount": 0,
+        "ext": "none",
+        "tabKey": "root"
+      },
+      "README.md": {
+        "sizeBytes": 1998,
+        "lineCount": 81,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "SKILL.md": {
+        "sizeBytes": 4131,
+        "lineCount": 134,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "connections.example.json": {
+        "sizeBytes": 945,
+        "lineCount": 35,
+        "ext": "json",
+        "tabKey": "root"
+      },
+      "requirements.txt": {
+        "sizeBytes": 34,
+        "lineCount": 2,
+        "ext": "txt",
+        "tabKey": "root"
+      },
+      "scripts/query.py": {
+        "sizeBytes": 10389,
+        "lineCount": 296,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 4376,
+      "cl100k": 4055
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [
+        "mysql-connector-python"
+      ],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
   "networkx": {
     "category": "Data & Analysis",
     "files": [
@@ -3302,6 +3631,51 @@
       "source": "structured"
     }
   },
+  "recommendations": {
+    "category": "Data & Analysis",
+    "files": [
+      "SKILL.md",
+      "references/api-reference.md",
+      "references/context-patterns.md",
+      "references/presentation-patterns.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 14576,
+        "lineCount": 548,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/api-reference.md": {
+        "sizeBytes": 12250,
+        "lineCount": 473,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/context-patterns.md": {
+        "sizeBytes": 10092,
+        "lineCount": 385,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/presentation-patterns.md": {
+        "sizeBytes": 10503,
+        "lineCount": 356,
+        "ext": "md",
+        "tabKey": "references"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 11835,
+      "cl100k": 11387
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
   "spark-engineer": {
     "category": "Data & Analysis",
     "files": [
@@ -3572,6 +3946,86 @@
       "source": "structured"
     }
   },
+  "x-twitter-scraper": {
+    "category": "Data & Analysis",
+    "files": [
+      "SKILL.md",
+      "metadata.json",
+      "references/api-endpoints.md",
+      "references/extractions.md",
+      "references/mcp-setup.md",
+      "references/mcp-tools.md",
+      "references/python-examples.md",
+      "references/types.md",
+      "references/webhooks.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 24827,
+        "lineCount": 506,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "metadata.json": {
+        "sizeBytes": 921,
+        "lineCount": 14,
+        "ext": "json",
+        "tabKey": "root"
+      },
+      "references/api-endpoints.md": {
+        "sizeBytes": 21135,
+        "lineCount": 957,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/extractions.md": {
+        "sizeBytes": 4212,
+        "lineCount": 178,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/mcp-setup.md": {
+        "sizeBytes": 6841,
+        "lineCount": 229,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/mcp-tools.md": {
+        "sizeBytes": 43656,
+        "lineCount": 895,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/python-examples.md": {
+        "sizeBytes": 4331,
+        "lineCount": 152,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/types.md": {
+        "sizeBytes": 23959,
+        "lineCount": 773,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/webhooks.md": {
+        "sizeBytes": 5362,
+        "lineCount": 196,
+        "ext": "md",
+        "tabKey": "references"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 33199,
+      "cl100k": 34576
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
   "zarr-python": {
     "category": "Data & Analysis",
     "files": [
@@ -3595,6 +4049,30 @@
     "tokenEstimate": {
       "heuristic": 8133,
       "cl100k": 9355
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "agnix": {
+    "category": "Development & Code Tools",
+    "files": [
+      "SKILL.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 3972,
+        "lineCount": 144,
+        "ext": "md",
+        "tabKey": "root"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 993,
+      "cl100k": 1060
     },
     "dependencies": {
       "skills": [],
@@ -3789,6 +4267,151 @@
         "secure-code-guardian"
       ],
       "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "azure-devops": {
+    "category": "Development & Code Tools",
+    "files": [
+      "README.md",
+      "SKILL.md",
+      "requirements.txt",
+      "scripts/api_client.py",
+      "scripts/attachments.py",
+      "scripts/auth.py",
+      "scripts/core.py",
+      "scripts/environments.py",
+      "scripts/pipelines.py",
+      "scripts/policies.py",
+      "scripts/repos.py",
+      "scripts/search.py",
+      "scripts/security.py",
+      "scripts/test_plans.py",
+      "scripts/variable_groups.py",
+      "scripts/wiki.py",
+      "scripts/work.py",
+      "scripts/work_items.py"
+    ],
+    "fileMeta": {
+      "README.md": {
+        "sizeBytes": 2985,
+        "lineCount": 88,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "SKILL.md": {
+        "sizeBytes": 16789,
+        "lineCount": 478,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "requirements.txt": {
+        "sizeBytes": 16,
+        "lineCount": 2,
+        "ext": "txt",
+        "tabKey": "root"
+      },
+      "scripts/api_client.py": {
+        "sizeBytes": 5758,
+        "lineCount": 179,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/attachments.py": {
+        "sizeBytes": 6909,
+        "lineCount": 198,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/auth.py": {
+        "sizeBytes": 12995,
+        "lineCount": 349,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/core.py": {
+        "sizeBytes": 1803,
+        "lineCount": 64,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/environments.py": {
+        "sizeBytes": 5142,
+        "lineCount": 146,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/pipelines.py": {
+        "sizeBytes": 10231,
+        "lineCount": 277,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/policies.py": {
+        "sizeBytes": 7944,
+        "lineCount": 186,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/repos.py": {
+        "sizeBytes": 15674,
+        "lineCount": 385,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/search.py": {
+        "sizeBytes": 2877,
+        "lineCount": 105,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/security.py": {
+        "sizeBytes": 2412,
+        "lineCount": 77,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/test_plans.py": {
+        "sizeBytes": 5971,
+        "lineCount": 171,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/variable_groups.py": {
+        "sizeBytes": 5675,
+        "lineCount": 156,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/wiki.py": {
+        "sizeBytes": 4282,
+        "lineCount": 125,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/work.py": {
+        "sizeBytes": 5474,
+        "lineCount": 151,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/work_items.py": {
+        "sizeBytes": 14382,
+        "lineCount": 388,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 31685,
+      "cl100k": 29867
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [
+        "keyring"
+      ],
       "runtimeTools": [],
       "source": "structured"
     }
@@ -4715,6 +5338,86 @@
       "source": "structured"
     }
   },
+  "email-html-mjml": {
+    "category": "Development & Code Tools",
+    "files": [
+      "SKILL.md",
+      "assets/examples/basic-layout.mjml",
+      "compilation.md",
+      "components/advanced.md",
+      "components/content.md",
+      "components/head.md",
+      "components/interactive.md",
+      "components/layout.md",
+      "mjml-reference.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 8146,
+        "lineCount": 162,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "assets/examples/basic-layout.mjml": {
+        "sizeBytes": 3438,
+        "lineCount": 0,
+        "ext": "mjml",
+        "tabKey": "assets"
+      },
+      "compilation.md": {
+        "sizeBytes": 1911,
+        "lineCount": 64,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "components/advanced.md": {
+        "sizeBytes": 4026,
+        "lineCount": 125,
+        "ext": "md",
+        "tabKey": "components"
+      },
+      "components/content.md": {
+        "sizeBytes": 5233,
+        "lineCount": 177,
+        "ext": "md",
+        "tabKey": "components"
+      },
+      "components/head.md": {
+        "sizeBytes": 3128,
+        "lineCount": 112,
+        "ext": "md",
+        "tabKey": "components"
+      },
+      "components/interactive.md": {
+        "sizeBytes": 6703,
+        "lineCount": 209,
+        "ext": "md",
+        "tabKey": "components"
+      },
+      "components/layout.md": {
+        "sizeBytes": 4422,
+        "lineCount": 145,
+        "ext": "md",
+        "tabKey": "components"
+      },
+      "mjml-reference.md": {
+        "sizeBytes": 5450,
+        "lineCount": 160,
+        "ext": "md",
+        "tabKey": "root"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 9672,
+      "cl100k": 10078
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
   "embedded-systems": {
     "category": "Development & Code Tools",
     "files": [
@@ -5320,6 +6023,30 @@
       "skills": [
         "fullstack-guardian"
       ],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "jules": {
+    "category": "Development & Code Tools",
+    "files": [
+      "SKILL.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 5470,
+        "lineCount": 201,
+        "ext": "md",
+        "tabKey": "root"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 1364,
+      "cl100k": 1494
+    },
+    "dependencies": {
+      "skills": [],
       "libraries": [],
       "runtimeTools": [],
       "source": "structured"
@@ -6020,6 +6747,334 @@
         "fastapi-expert",
         "fullstack-guardian"
       ],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "plugin-authoring": {
+    "category": "Development & Code Tools",
+    "files": [
+      "SKILL.md",
+      "best-practices/common-mistakes.md",
+      "best-practices/naming-conventions.md",
+      "best-practices/organization.md",
+      "examples/simple-plugin.md",
+      "examples/testing-workflow.md",
+      "schemas/hooks-schema.md",
+      "schemas/marketplace-schema.md",
+      "schemas/plugin-manifest.md",
+      "templates/agent-template.md",
+      "templates/command-template.md",
+      "templates/marketplace-manifest.json",
+      "templates/plugin-manifest.json",
+      "templates/skill-template.md",
+      "testing-plugin-authoring.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 6736,
+        "lineCount": 137,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "best-practices/common-mistakes.md": {
+        "sizeBytes": 6780,
+        "lineCount": 310,
+        "ext": "md",
+        "tabKey": "best-practices"
+      },
+      "best-practices/naming-conventions.md": {
+        "sizeBytes": 8389,
+        "lineCount": 405,
+        "ext": "md",
+        "tabKey": "best-practices"
+      },
+      "best-practices/organization.md": {
+        "sizeBytes": 9247,
+        "lineCount": 441,
+        "ext": "md",
+        "tabKey": "best-practices"
+      },
+      "examples/simple-plugin.md": {
+        "sizeBytes": 2868,
+        "lineCount": 136,
+        "ext": "md",
+        "tabKey": "examples"
+      },
+      "examples/testing-workflow.md": {
+        "sizeBytes": 4859,
+        "lineCount": 234,
+        "ext": "md",
+        "tabKey": "examples"
+      },
+      "schemas/hooks-schema.md": {
+        "sizeBytes": 13119,
+        "lineCount": 654,
+        "ext": "md",
+        "tabKey": "schemas"
+      },
+      "schemas/marketplace-schema.md": {
+        "sizeBytes": 10309,
+        "lineCount": 433,
+        "ext": "md",
+        "tabKey": "schemas"
+      },
+      "schemas/plugin-manifest.md": {
+        "sizeBytes": 9794,
+        "lineCount": 395,
+        "ext": "md",
+        "tabKey": "schemas"
+      },
+      "templates/agent-template.md": {
+        "sizeBytes": 1369,
+        "lineCount": 62,
+        "ext": "md",
+        "tabKey": "templates"
+      },
+      "templates/command-template.md": {
+        "sizeBytes": 599,
+        "lineCount": 33,
+        "ext": "md",
+        "tabKey": "templates"
+      },
+      "templates/marketplace-manifest.json": {
+        "sizeBytes": 563,
+        "lineCount": 26,
+        "ext": "json",
+        "tabKey": "templates"
+      },
+      "templates/plugin-manifest.json": {
+        "sizeBytes": 407,
+        "lineCount": 15,
+        "ext": "json",
+        "tabKey": "templates"
+      },
+      "templates/skill-template.md": {
+        "sizeBytes": 1726,
+        "lineCount": 62,
+        "ext": "md",
+        "tabKey": "templates"
+      },
+      "testing-plugin-authoring.md": {
+        "sizeBytes": 6074,
+        "lineCount": 197,
+        "ext": "md",
+        "tabKey": "root"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 20439,
+      "cl100k": 20730
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "pypict-claude-skill": {
+    "category": "Development & Code Tools",
+    "files": [
+      ".claude-plugin/marketplace.json",
+      ".claude-plugin/plugin.json",
+      ".github/ISSUE_TEMPLATE/bug_report.md",
+      ".github/ISSUE_TEMPLATE/feature_request.md",
+      ".github/markdown-link-check-config.json",
+      ".github/pull_request_template.md",
+      ".github/workflows/ci.yml",
+      ".gitignore",
+      "CHANGELOG.md",
+      "CONTRIBUTING.md",
+      "LICENSE",
+      "PUBLISHING.md",
+      "QUICKSTART.md",
+      "README.md",
+      "SKILL.md",
+      "STRUCTURE.md",
+      "examples/README.md",
+      "examples/atm-specification.md",
+      "examples/atm-test-plan.md",
+      "examples/gearbox-specification.md",
+      "examples/gearbox-test-plan.md",
+      "references/examples.md",
+      "references/pict_syntax.md",
+      "releases/README.md",
+      "releases/pict-test-designer-minimal.zip",
+      "scripts/README.md",
+      "scripts/pict_helper.py"
+    ],
+    "fileMeta": {
+      ".claude-plugin/marketplace.json": {
+        "sizeBytes": 901,
+        "lineCount": 24,
+        "ext": "json",
+        "tabKey": ".claude-plugin"
+      },
+      ".claude-plugin/plugin.json": {
+        "sizeBytes": 828,
+        "lineCount": 25,
+        "ext": "json",
+        "tabKey": ".claude-plugin"
+      },
+      ".github/ISSUE_TEMPLATE/bug_report.md": {
+        "sizeBytes": 1078,
+        "lineCount": 58,
+        "ext": "md",
+        "tabKey": ".github"
+      },
+      ".github/ISSUE_TEMPLATE/feature_request.md": {
+        "sizeBytes": 1520,
+        "lineCount": 66,
+        "ext": "md",
+        "tabKey": ".github"
+      },
+      ".github/markdown-link-check-config.json": {
+        "sizeBytes": 444,
+        "lineCount": 25,
+        "ext": "json",
+        "tabKey": ".github"
+      },
+      ".github/pull_request_template.md": {
+        "sizeBytes": 2148,
+        "lineCount": 91,
+        "ext": "md",
+        "tabKey": ".github"
+      },
+      ".github/workflows/ci.yml": {
+        "sizeBytes": 966,
+        "lineCount": 41,
+        "ext": "yml",
+        "tabKey": ".github"
+      },
+      ".gitignore": {
+        "sizeBytes": 590,
+        "lineCount": 0,
+        "ext": "none",
+        "tabKey": "root"
+      },
+      "CHANGELOG.md": {
+        "sizeBytes": 5327,
+        "lineCount": 144,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "CONTRIBUTING.md": {
+        "sizeBytes": 5526,
+        "lineCount": 236,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "LICENSE": {
+        "sizeBytes": 1435,
+        "lineCount": 0,
+        "ext": "none",
+        "tabKey": "root"
+      },
+      "PUBLISHING.md": {
+        "sizeBytes": 6293,
+        "lineCount": 265,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "QUICKSTART.md": {
+        "sizeBytes": 5613,
+        "lineCount": 209,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "README.md": {
+        "sizeBytes": 12545,
+        "lineCount": 374,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "SKILL.md": {
+        "sizeBytes": 10928,
+        "lineCount": 363,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "STRUCTURE.md": {
+        "sizeBytes": 6926,
+        "lineCount": 194,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "examples/README.md": {
+        "sizeBytes": 6008,
+        "lineCount": 146,
+        "ext": "md",
+        "tabKey": "examples"
+      },
+      "examples/atm-specification.md": {
+        "sizeBytes": 5154,
+        "lineCount": 148,
+        "ext": "md",
+        "tabKey": "examples"
+      },
+      "examples/atm-test-plan.md": {
+        "sizeBytes": 17719,
+        "lineCount": 428,
+        "ext": "md",
+        "tabKey": "examples"
+      },
+      "examples/gearbox-specification.md": {
+        "sizeBytes": 6642,
+        "lineCount": 208,
+        "ext": "md",
+        "tabKey": "examples"
+      },
+      "examples/gearbox-test-plan.md": {
+        "sizeBytes": 15901,
+        "lineCount": 297,
+        "ext": "md",
+        "tabKey": "examples"
+      },
+      "references/examples.md": {
+        "sizeBytes": 2343,
+        "lineCount": 99,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/pict_syntax.md": {
+        "sizeBytes": 1915,
+        "lineCount": 84,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "releases/README.md": {
+        "sizeBytes": 2495,
+        "lineCount": 89,
+        "ext": "md",
+        "tabKey": "releases"
+      },
+      "releases/pict-test-designer-minimal.zip": {
+        "sizeBytes": 9424,
+        "lineCount": 0,
+        "ext": "zip",
+        "tabKey": "releases"
+      },
+      "scripts/README.md": {
+        "sizeBytes": 1680,
+        "lineCount": 78,
+        "ext": "md",
+        "tabKey": "scripts"
+      },
+      "scripts/pict_helper.py": {
+        "sizeBytes": 5620,
+        "lineCount": 208,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 31524,
+      "cl100k": 31366
+    },
+    "dependencies": {
+      "skills": [],
       "libraries": [],
       "runtimeTools": [],
       "source": "structured"
@@ -8034,6 +9089,30 @@
       "source": "structured"
     }
   },
+  "polaris-datainsight-doc-extract": {
+    "category": "Document Skills",
+    "files": [
+      "SKILL.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 9255,
+        "lineCount": 307,
+        "ext": "md",
+        "tabKey": "root"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 2310,
+      "cl100k": 2442
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
   "pptx": {
     "category": "Document Skills",
     "files": [
@@ -8464,6 +9543,79 @@
       "source": "structured"
     }
   },
+  "revealjs-skill": {
+    "category": "Document Skills",
+    "files": [
+      "SKILL.md",
+      "references/advanced-features.md",
+      "references/base-styles.css",
+      "references/charts.md",
+      "scripts/check-charts.js",
+      "scripts/check-overflow.js",
+      "scripts/create-presentation.js",
+      "scripts/edit-html.js"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 19000,
+        "lineCount": 439,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/advanced-features.md": {
+        "sizeBytes": 3127,
+        "lineCount": 143,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/base-styles.css": {
+        "sizeBytes": 7400,
+        "lineCount": 0,
+        "ext": "css",
+        "tabKey": "references"
+      },
+      "references/charts.md": {
+        "sizeBytes": 11695,
+        "lineCount": 426,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "scripts/check-charts.js": {
+        "sizeBytes": 6322,
+        "lineCount": 195,
+        "ext": "js",
+        "tabKey": "scripts"
+      },
+      "scripts/check-overflow.js": {
+        "sizeBytes": 3174,
+        "lineCount": 100,
+        "ext": "js",
+        "tabKey": "scripts"
+      },
+      "scripts/create-presentation.js": {
+        "sizeBytes": 7630,
+        "lineCount": 246,
+        "ext": "js",
+        "tabKey": "scripts"
+      },
+      "scripts/edit-html.js": {
+        "sizeBytes": 8767,
+        "lineCount": 286,
+        "ext": "js",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 14922,
+      "cl100k": 15527
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
   "xlsx": {
     "category": "Document Skills",
     "files": [
@@ -8851,6 +10003,30 @@
     "tokenEstimate": {
       "heuristic": 273272,
       "cl100k": 305026
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "plaid": {
+    "category": "Finance & Payments",
+    "files": [
+      "SKILL.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 8368,
+        "lineCount": 337,
+        "ext": "md",
+        "tabKey": "root"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 2092,
+      "cl100k": 2033
     },
     "dependencies": {
       "skills": [],
@@ -10883,6 +12059,30 @@
       "source": "structured"
     }
   },
+  "ship-learn-next": {
+    "category": "Learning & Knowledge",
+    "files": [
+      "SKILL.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 9411,
+        "lineCount": 327,
+        "ext": "md",
+        "tabKey": "root"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 2344,
+      "cl100k": 2349
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
   "algorithmic-art": {
     "category": "Media & Content",
     "files": [
@@ -11859,6 +13059,96 @@
       "source": "structured"
     }
   },
+  "image-enhancer": {
+    "category": "Media & Content",
+    "files": [
+      "SKILL.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 2540,
+        "lineCount": 100,
+        "ext": "md",
+        "tabKey": "root"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 633,
+      "cl100k": 578
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "imagen": {
+    "category": "Media & Content",
+    "files": [
+      ".env.example",
+      ".gitignore",
+      "README.md",
+      "SKILL.md",
+      "examples.md",
+      "reference.md",
+      "scripts/generate_image.py"
+    ],
+    "fileMeta": {
+      ".env.example": {
+        "sizeBytes": 175,
+        "lineCount": 0,
+        "ext": "example",
+        "tabKey": "root"
+      },
+      ".gitignore": {
+        "sizeBytes": 280,
+        "lineCount": 0,
+        "ext": "none",
+        "tabKey": "root"
+      },
+      "README.md": {
+        "sizeBytes": 4608,
+        "lineCount": 171,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "SKILL.md": {
+        "sizeBytes": 2628,
+        "lineCount": 84,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "examples.md": {
+        "sizeBytes": 9089,
+        "lineCount": 215,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "reference.md": {
+        "sizeBytes": 8182,
+        "lineCount": 230,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "scripts/generate_image.py": {
+        "sizeBytes": 11453,
+        "lineCount": 294,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 8981,
+      "cl100k": 8393
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
   "infographics": {
     "category": "Media & Content",
     "files": [
@@ -12250,6 +13540,131 @@
       "source": "structured"
     }
   },
+  "video-prompting-skill": {
+    "category": "Media & Content",
+    "files": [
+      "SKILL.md",
+      "references/models/ltx2/example_prompts/ltx2_examples.md",
+      "references/models/ltx2/prompting.md",
+      "references/models/ltx2-3/prompting.md",
+      "references/models/ovi/example_prompts/gpt_examples_10s_i2v.csv",
+      "references/models/ovi/example_prompts/gpt_examples_10s_t2v.csv",
+      "references/models/ovi/example_prompts/gpt_examples_i2v.csv",
+      "references/models/ovi/example_prompts/gpt_examples_t2v.csv",
+      "references/models/ovi/prompting.md",
+      "references/models/sora/prompting.md",
+      "references/models/veo3/prompting.md",
+      "references/models/wan22/prompting.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 3165,
+        "lineCount": 64,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/models/ltx2/example_prompts/ltx2_examples.md": {
+        "sizeBytes": 10340,
+        "lineCount": 18,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/models/ltx2/prompting.md": {
+        "sizeBytes": 5495,
+        "lineCount": 100,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/models/ltx2-3/prompting.md": {
+        "sizeBytes": 4543,
+        "lineCount": 136,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/models/ovi/example_prompts/gpt_examples_10s_i2v.csv": {
+        "sizeBytes": 12742,
+        "lineCount": 16,
+        "ext": "csv",
+        "tabKey": "references"
+      },
+      "references/models/ovi/example_prompts/gpt_examples_10s_t2v.csv": {
+        "sizeBytes": 12291,
+        "lineCount": 16,
+        "ext": "csv",
+        "tabKey": "references"
+      },
+      "references/models/ovi/example_prompts/gpt_examples_i2v.csv": {
+        "sizeBytes": 20469,
+        "lineCount": 27,
+        "ext": "csv",
+        "tabKey": "references"
+      },
+      "references/models/ovi/example_prompts/gpt_examples_t2v.csv": {
+        "sizeBytes": 8762,
+        "lineCount": 14,
+        "ext": "csv",
+        "tabKey": "references"
+      },
+      "references/models/ovi/prompting.md": {
+        "sizeBytes": 1992,
+        "lineCount": 54,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/models/sora/prompting.md": {
+        "sizeBytes": 4537,
+        "lineCount": 115,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/models/veo3/prompting.md": {
+        "sizeBytes": 3028,
+        "lineCount": 76,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/models/wan22/prompting.md": {
+        "sizeBytes": 4442,
+        "lineCount": 116,
+        "ext": "md",
+        "tabKey": "references"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 22917,
+      "cl100k": 20995
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "youtube-transcript": {
+    "category": "Media & Content",
+    "files": [
+      "SKILL.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 13729,
+        "lineCount": 416,
+        "ext": "md",
+        "tabKey": "root"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 3425,
+      "cl100k": 3294
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
   "supabase": {
     "category": "SaaS & Backend",
     "files": [
@@ -12273,6 +13688,30 @@
     "tokenEstimate": {
       "heuristic": 552,
       "cl100k": 581
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "whop": {
+    "category": "SaaS & Backend",
+    "files": [
+      "SKILL.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 9898,
+        "lineCount": 438,
+        "ext": "md",
+        "tabKey": "root"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 2473,
+      "cl100k": 2461
     },
     "dependencies": {
       "skills": [],
@@ -14211,6 +15650,68 @@
       "source": "structured"
     }
   },
+  "deep-research": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      ".env.example",
+      ".gitignore",
+      "README.md",
+      "SKILL.md",
+      "requirements.txt",
+      "scripts/research.py"
+    ],
+    "fileMeta": {
+      ".env.example": {
+        "sizeBytes": 344,
+        "lineCount": 0,
+        "ext": "example",
+        "tabKey": "root"
+      },
+      ".gitignore": {
+        "sizeBytes": 304,
+        "lineCount": 0,
+        "ext": "none",
+        "tabKey": "root"
+      },
+      "README.md": {
+        "sizeBytes": 7675,
+        "lineCount": 247,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "SKILL.md": {
+        "sizeBytes": 2734,
+        "lineCount": 107,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "requirements.txt": {
+        "sizeBytes": 35,
+        "lineCount": 3,
+        "ext": "txt",
+        "tabKey": "root"
+      },
+      "scripts/research.py": {
+        "sizeBytes": 24204,
+        "lineCount": 693,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 8555,
+      "cl100k": 7366
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [
+        "httpx",
+        "python-dotenv"
+      ],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
   "deepchem": {
     "category": "Scientific & Research Tools",
     "files": [
@@ -15874,6 +17375,37 @@
     "tokenEstimate": {
       "heuristic": 15771,
       "cl100k": 16794
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "manus": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/api.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 6801,
+        "lineCount": 185,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/api.md": {
+        "sizeBytes": 2601,
+        "lineCount": 154,
+        "ext": "md",
+        "tabKey": "references"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 2348,
+      "cl100k": 2558
     },
     "dependencies": {
       "skills": [],
@@ -20948,8 +22480,8 @@
       "source": "structured"
     }
   },
-  "agent-without-context": {
-    "category": "Utility & Automation",
+  "elevenlabs": {
+    "category": "Uncategorized",
     "files": [],
     "fileMeta": {},
     "tokenEstimate": {
@@ -20963,8 +22495,38 @@
       "source": "structured"
     }
   },
-  "argument-hint-no-args": {
-    "category": "Utility & Automation",
+  "google-tts": {
+    "category": "Uncategorized",
+    "files": [],
+    "fileMeta": {},
+    "tokenEstimate": {
+      "heuristic": 0,
+      "cl100k": 0
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "vibesec-skill": {
+    "category": "Uncategorized",
+    "files": [],
+    "fileMeta": {},
+    "tokenEstimate": {
+      "heuristic": 0,
+      "cl100k": 0
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "video-downloader": {
+    "category": "Uncategorized",
     "files": [],
     "fileMeta": {},
     "tokenEstimate": {
@@ -21112,6 +22674,30 @@
       "source": "structured"
     }
   },
+  "file-organizer": {
+    "category": "Utility & Automation",
+    "files": [
+      "SKILL.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 11312,
+        "lineCount": 434,
+        "ext": "md",
+        "tabKey": "root"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 2774,
+      "cl100k": 2736
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
   "find-skills": {
     "category": "Utility & Automation",
     "files": [
@@ -21190,6 +22776,30 @@
     "tokenEstimate": {
       "heuristic": 5976,
       "cl100k": 5395
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "invoice-organizer": {
+    "category": "Utility & Automation",
+    "files": [
+      "SKILL.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 12010,
+        "lineCount": 447,
+        "ext": "md",
+        "tabKey": "root"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 2906,
+      "cl100k": 3017
     },
     "dependencies": {
       "skills": [],
@@ -21413,6 +23023,37 @@
         "security-reviewer",
         "typescript-pro"
       ],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "pinme": {
+    "category": "Utility & Automation",
+    "files": [
+      "README.md",
+      "SKILL.md"
+    ],
+    "fileMeta": {
+      "README.md": {
+        "sizeBytes": 1590,
+        "lineCount": 81,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "SKILL.md": {
+        "sizeBytes": 2888,
+        "lineCount": 137,
+        "ext": "md",
+        "tabKey": "root"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 1120,
+      "cl100k": 1186
+    },
+    "dependencies": {
+      "skills": [],
       "libraries": [],
       "runtimeTools": [],
       "source": "structured"
@@ -21659,6 +23300,278 @@
     "tokenEstimate": {
       "heuristic": 3698,
       "cl100k": 3334
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "task-observer": {
+    "category": "Utility & Automation",
+    "files": [
+      ".git/HEAD",
+      ".git/config",
+      ".git/description",
+      ".git/hooks/applypatch-msg.sample",
+      ".git/hooks/commit-msg.sample",
+      ".git/hooks/fsmonitor-watchman.sample",
+      ".git/hooks/post-update.sample",
+      ".git/hooks/pre-applypatch.sample",
+      ".git/hooks/pre-commit.sample",
+      ".git/hooks/pre-merge-commit.sample",
+      ".git/hooks/pre-push.sample",
+      ".git/hooks/pre-rebase.sample",
+      ".git/hooks/pre-receive.sample",
+      ".git/hooks/prepare-commit-msg.sample",
+      ".git/hooks/push-to-checkout.sample",
+      ".git/hooks/update.sample",
+      ".git/index",
+      ".git/info/exclude",
+      ".git/logs/HEAD",
+      ".git/logs/refs/heads/main",
+      ".git/logs/refs/remotes/origin/HEAD",
+      ".git/objects/pack/pack-af70131390a4e06bf1136209e8f98a7814cdf977.idx",
+      ".git/objects/pack/pack-af70131390a4e06bf1136209e8f98a7814cdf977.pack",
+      ".git/packed-refs",
+      ".git/refs/heads/main",
+      ".git/refs/remotes/origin/HEAD",
+      ".git/shallow",
+      "LICENSE.txt",
+      "README.md",
+      "SKILL.md",
+      "USER-GUIDE.md",
+      "one-skill-to-rule-them-all-white-background.png",
+      "one-skill-to-rule-them-all.png"
+    ],
+    "fileMeta": {
+      ".git/HEAD": {
+        "sizeBytes": 21,
+        "lineCount": 0,
+        "ext": "none",
+        "tabKey": ".git"
+      },
+      ".git/config": {
+        "sizeBytes": 332,
+        "lineCount": 0,
+        "ext": "none",
+        "tabKey": ".git"
+      },
+      ".git/description": {
+        "sizeBytes": 73,
+        "lineCount": 0,
+        "ext": "none",
+        "tabKey": ".git"
+      },
+      ".git/hooks/applypatch-msg.sample": {
+        "sizeBytes": 478,
+        "lineCount": 0,
+        "ext": "sample",
+        "tabKey": ".git"
+      },
+      ".git/hooks/commit-msg.sample": {
+        "sizeBytes": 896,
+        "lineCount": 0,
+        "ext": "sample",
+        "tabKey": ".git"
+      },
+      ".git/hooks/fsmonitor-watchman.sample": {
+        "sizeBytes": 4726,
+        "lineCount": 0,
+        "ext": "sample",
+        "tabKey": ".git"
+      },
+      ".git/hooks/post-update.sample": {
+        "sizeBytes": 189,
+        "lineCount": 0,
+        "ext": "sample",
+        "tabKey": ".git"
+      },
+      ".git/hooks/pre-applypatch.sample": {
+        "sizeBytes": 424,
+        "lineCount": 0,
+        "ext": "sample",
+        "tabKey": ".git"
+      },
+      ".git/hooks/pre-commit.sample": {
+        "sizeBytes": 1643,
+        "lineCount": 0,
+        "ext": "sample",
+        "tabKey": ".git"
+      },
+      ".git/hooks/pre-merge-commit.sample": {
+        "sizeBytes": 416,
+        "lineCount": 0,
+        "ext": "sample",
+        "tabKey": ".git"
+      },
+      ".git/hooks/pre-push.sample": {
+        "sizeBytes": 1374,
+        "lineCount": 0,
+        "ext": "sample",
+        "tabKey": ".git"
+      },
+      ".git/hooks/pre-rebase.sample": {
+        "sizeBytes": 4898,
+        "lineCount": 0,
+        "ext": "sample",
+        "tabKey": ".git"
+      },
+      ".git/hooks/pre-receive.sample": {
+        "sizeBytes": 544,
+        "lineCount": 0,
+        "ext": "sample",
+        "tabKey": ".git"
+      },
+      ".git/hooks/prepare-commit-msg.sample": {
+        "sizeBytes": 1492,
+        "lineCount": 0,
+        "ext": "sample",
+        "tabKey": ".git"
+      },
+      ".git/hooks/push-to-checkout.sample": {
+        "sizeBytes": 2783,
+        "lineCount": 0,
+        "ext": "sample",
+        "tabKey": ".git"
+      },
+      ".git/hooks/update.sample": {
+        "sizeBytes": 3650,
+        "lineCount": 0,
+        "ext": "sample",
+        "tabKey": ".git"
+      },
+      ".git/index": {
+        "sizeBytes": 577,
+        "lineCount": 0,
+        "ext": "none",
+        "tabKey": ".git"
+      },
+      ".git/info/exclude": {
+        "sizeBytes": 240,
+        "lineCount": 0,
+        "ext": "none",
+        "tabKey": ".git"
+      },
+      ".git/logs/HEAD": {
+        "sizeBytes": 214,
+        "lineCount": 0,
+        "ext": "none",
+        "tabKey": ".git"
+      },
+      ".git/logs/refs/heads/main": {
+        "sizeBytes": 214,
+        "lineCount": 0,
+        "ext": "none",
+        "tabKey": ".git"
+      },
+      ".git/logs/refs/remotes/origin/HEAD": {
+        "sizeBytes": 214,
+        "lineCount": 0,
+        "ext": "none",
+        "tabKey": ".git"
+      },
+      ".git/objects/pack/pack-af70131390a4e06bf1136209e8f98a7814cdf977.idx": {
+        "sizeBytes": 1296,
+        "lineCount": 0,
+        "ext": "idx",
+        "tabKey": ".git"
+      },
+      ".git/objects/pack/pack-af70131390a4e06bf1136209e8f98a7814cdf977.pack": {
+        "sizeBytes": 3153887,
+        "lineCount": 0,
+        "ext": "pack",
+        "tabKey": ".git"
+      },
+      ".git/packed-refs": {
+        "sizeBytes": 112,
+        "lineCount": 0,
+        "ext": "none",
+        "tabKey": ".git"
+      },
+      ".git/refs/heads/main": {
+        "sizeBytes": 41,
+        "lineCount": 0,
+        "ext": "none",
+        "tabKey": ".git"
+      },
+      ".git/refs/remotes/origin/HEAD": {
+        "sizeBytes": 30,
+        "lineCount": 0,
+        "ext": "none",
+        "tabKey": ".git"
+      },
+      ".git/shallow": {
+        "sizeBytes": 41,
+        "lineCount": 0,
+        "ext": "none",
+        "tabKey": ".git"
+      },
+      "LICENSE.txt": {
+        "sizeBytes": 18652,
+        "lineCount": 396,
+        "ext": "txt",
+        "tabKey": "root"
+      },
+      "README.md": {
+        "sizeBytes": 5615,
+        "lineCount": 89,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "SKILL.md": {
+        "sizeBytes": 45618,
+        "lineCount": 1062,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "USER-GUIDE.md": {
+        "sizeBytes": 9522,
+        "lineCount": 102,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "one-skill-to-rule-them-all-white-background.png": {
+        "sizeBytes": 1637108,
+        "lineCount": 0,
+        "ext": "png",
+        "tabKey": "root"
+      },
+      "one-skill-to-rule-them-all.png": {
+        "sizeBytes": 1538885,
+        "lineCount": 0,
+        "ext": "png",
+        "tabKey": "root"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 19803,
+      "cl100k": 16303
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "template-skill": {
+    "category": "Utility & Automation",
+    "files": [
+      "SKILL.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 140,
+        "lineCount": 7,
+        "ext": "md",
+        "tabKey": "root"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 35,
+      "cl100k": 28
     },
     "dependencies": {
       "skills": [],
@@ -21974,6 +23887,37 @@
       "source": "structured"
     }
   },
+  "helius": {
+    "category": "Web3 & Blockchain",
+    "files": [
+      ".gitignore",
+      "SKILL.md"
+    ],
+    "fileMeta": {
+      ".gitignore": {
+        "sizeBytes": 138,
+        "lineCount": 0,
+        "ext": "none",
+        "tabKey": "root"
+      },
+      "SKILL.md": {
+        "sizeBytes": 9366,
+        "lineCount": 376,
+        "ext": "md",
+        "tabKey": "root"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 2342,
+      "cl100k": 2537
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
   "move-code-quality-skill": {
     "category": "Web3 & Blockchain",
     "files": [
@@ -22118,6 +24062,30 @@
       "source": "structured"
     }
   },
+  "article-extractor": {
+    "category": "Writing & Research",
+    "files": [
+      "SKILL.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 9641,
+        "lineCount": 370,
+        "ext": "md",
+        "tabKey": "root"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 2404,
+      "cl100k": 2448
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
   "brainstorming": {
     "category": "Writing & Research",
     "files": [
@@ -22134,6 +24102,30 @@
     "tokenEstimate": {
       "heuristic": 1169,
       "cl100k": 1030
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "content-research-writer": {
+    "category": "Writing & Research",
+    "files": [
+      "SKILL.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 14244,
+        "lineCount": 539,
+        "ext": "md",
+        "tabKey": "root"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 3539,
+      "cl100k": 3400
     },
     "dependencies": {
       "skills": [],

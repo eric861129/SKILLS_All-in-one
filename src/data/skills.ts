@@ -946,19 +946,6 @@ export const MOCK_SKILLS: Skill[] = [
     githubUrl: 'https://github.com/oil-oil/oiloil-ui-ux-guide/tree/main/skills/oiloil-ui-ux-guide'
   },
   {
-    id: 13,
-    name: 'skill-master',
-    nameZh: 'AI 技能大師 (Skill Master)',
-    description: 'The ultimate AI Agent Skill Master for analyzing, architecting, and authoring skills.',
-    descriptionZh: '專為分析、設計與編寫 AI Agent 技能而生的終極大師工具。',
-    author: 'SKILLS All-in-one',
-    category: 'Utility & Automation',
-    tags: ['Agent', 'Architecture', 'Writing'],
-    downloadCount: 0,
-    createdAt: '2026-03-03',
-    source: 'skill-master'
-  },
-  {
     id: 80,
     name: 'sql-pro',
     nameZh: 'SQL 專業專家',
@@ -1592,20 +1579,6 @@ export const MOCK_SKILLS: Skill[] = [
     githubUrl: 'https://github.com/framix-team/skill-email-html-mjml/tree/master/email-html-mjml'
   },
   // Data & Analysis
-  {
-    id: 126,
-    name: 'root-cause-tracing',
-    nameZh: '根因追蹤專家',
-    description: 'Use when errors occur deep in execution and you need to trace back to find the original trigger.',
-    descriptionZh: '當錯誤發生在執行深層時，用於回溯追蹤找到原始觸發點。',
-    author: 'obra',
-    category: 'Data & Analysis',
-    tags: ['Debugging', 'Root Cause', 'Tracing'],
-    downloadCount: 0,
-    createdAt: '2026-03-04',
-    source: 'root-cause-tracing',
-    githubUrl: 'https://github.com/obra/superpowers/tree/main/skills/root-cause-tracing'
-  },
   {
     id: 127,
     name: 'mysql',
@@ -4636,20 +4609,6 @@ export const MOCK_SKILLS: Skill[] = [
   },
   // Learning & Knowledge
   {
-    id: 140,
-    name: 'tapestry',
-    nameZh: '知識網絡編織器',
-    description: 'Interlink and summarize related documents into knowledge networks.',
-    descriptionZh: '將相關文件互相連結並總結，編織成知識網絡。',
-    author: 'michalparkola',
-    category: 'Learning & Knowledge',
-    tags: ['Knowledge', 'Linking', 'Summary'],
-    downloadCount: 0,
-    createdAt: '2026-03-04',
-    source: 'tapestry',
-    githubUrl: 'https://github.com/michalparkola/tapestry-skills-for-claude-code/tree/main/tapestry'
-  },
-  {
     id: 141,
     name: 'ship-learn-next',
     nameZh: '迭代學習助手',
@@ -4947,20 +4906,6 @@ export const MOCK_SKILLS: Skill[] = [
     githubUrl: 'https://github.com/mhattingpete/claude-skills-marketplace/tree/main/engineering-workflow-plugin/skills/test-fixing'
   },
   {
-    id: 162,
-    name: 'plannotator',
-    nameZh: '互動計畫標註工具',
-    description: 'Interactive plan review UI for Claude Code with visual annotation, offline sharing, and Obsidian/Bear integration.',
-    descriptionZh: '為 Claude Code 提供互動式計畫審閱 UI，支援視覺標註、離線分享與 Obsidian/Bear 整合。',
-    author: 'backnotprop',
-    category: 'Collaboration & Project Management',
-    tags: ['Planning', 'UI', 'Annotation'],
-    downloadCount: 0,
-    createdAt: '2026-03-04',
-    source: 'plannotator',
-    githubUrl: 'https://github.com/backnotprop/plannotator'
-  },
-  {
     id: 163,
     name: 'outline',
     nameZh: 'Outline Wiki 整合',
@@ -4988,34 +4933,6 @@ export const MOCK_SKILLS: Skill[] = [
     source: 'google-workspace-skills',
     githubUrl: 'https://github.com/sanjay3290/ai-skills/tree/main/skills'
   },
-  {
-    id: 165,
-    name: 'pm-skills',
-    nameZh: '產品管理技能集',
-    description: '24 product management skills across the Triple Diamond lifecycle with agentskills.io spec compliance and MCP server support.',
-    descriptionZh: '24 個產品管理技能，涵蓋三重鑽石生命週期，符合 agentskills.io 規範。',
-    author: 'product-on-purpose',
-    category: 'Collaboration & Project Management',
-    tags: ['Product', 'Management', 'Lifecycle'],
-    downloadCount: 0,
-    createdAt: '2026-03-04',
-    source: 'pm-skills',
-    githubUrl: 'https://github.com/product-on-purpose/pm-skills'
-  },
-  {
-    id: 166,
-    name: 'product-manager-skills',
-    nameZh: '產品經理技能庫',
-    description: 'Product management skill library covering discovery, prioritization, PRDs, roadmap planning, and SaaS metrics.',
-    descriptionZh: '產品管理技能庫，涵蓋探索、優先級排序、PRD、路線圖與 SaaS 指標。',
-    author: 'deanpeters',
-    category: 'Collaboration & Project Management',
-    tags: ['Product', 'PRD', 'Roadmap'],
-    downloadCount: 0,
-    createdAt: '2026-03-04',
-    source: 'product-manager-skills',
-    githubUrl: 'https://github.com/deanpeters/Product-Manager-Skills'
-  },
   // Security & Web Testing
   {
     id: 167,
@@ -5030,20 +4947,6 @@ export const MOCK_SKILLS: Skill[] = [
     createdAt: '2026-03-04',
     source: 'vibesec-skill',
     githubUrl: 'https://github.com/BehiSecc/VibeSec-Skill'
-  },
-  {
-    id: 168,
-    name: 'defense-in-depth',
-    nameZh: '多層防禦策略',
-    description: 'Implement multi-layered testing and security best practices.',
-    descriptionZh: '實施多層測試與安全最佳實踐。',
-    author: 'obra',
-    category: 'Security & Web Testing',
-    tags: ['Security', 'Testing', 'Defense'],
-    downloadCount: 0,
-    createdAt: '2026-03-04',
-    source: 'defense-in-depth',
-    githubUrl: 'https://github.com/obra/superpowers/blob/main/skills/defense-in-depth'
   },
   {
     id: 169,
@@ -5072,20 +4975,6 @@ export const MOCK_SKILLS: Skill[] = [
     createdAt: '2026-03-04',
     source: 'owasp-security',
     githubUrl: 'https://github.com/agamm/claude-code-owasp'
-  },
-  {
-    id: 171,
-    name: 'trail-of-bits-skills',
-    nameZh: 'Trail of Bits 安全技能',
-    description: 'Security skills for static analysis with CodeQL/Semgrep, variant analysis, code auditing, and fix verification.',
-    descriptionZh: 'Trail of Bits 安全技能：CodeQL/Semgrep 靜態分析、變體分析、程式碼審計與修復驗證。',
-    author: 'trailofbits',
-    category: 'Security & Web Testing',
-    tags: ['CodeQL', 'Semgrep', 'Audit'],
-    downloadCount: 0,
-    createdAt: '2026-03-04',
-    source: 'trail-of-bits-skills',
-    githubUrl: 'https://github.com/trailofbits/skills'
   },
   {
     id: 172,
@@ -5145,20 +5034,6 @@ export const MOCK_SKILLS: Skill[] = [
     githubUrl: 'https://github.com/anthropics/skills/tree/main/template'
   },
   {
-    id: 176,
-    name: 'agentfund-mcp',
-    nameZh: 'AI Agent 群眾募資',
-    description: 'Crowdfunding for AI agents. Milestone-based escrow on Base chain for proposals, project tracking, and payments.',
-    descriptionZh: 'AI 代理群眾募資，基於 Base 鏈的里程碑託管——提案、專案追蹤與支付。',
-    author: 'RioTheGreat-ai',
-    category: 'Utility & Automation',
-    tags: ['Crowdfunding', 'Web3', 'MCP'],
-    downloadCount: 0,
-    createdAt: '2026-03-04',
-    source: 'agentfund-mcp',
-    githubUrl: 'https://github.com/RioTheGreat-ai/agentfund-mcp'
-  },
-  {
     id: 177,
     name: 'task-observer',
     nameZh: '元技能觀察者',
@@ -5202,20 +5077,6 @@ export const MOCK_SKILLS: Skill[] = [
     githubUrl: 'https://github.com/guia-matthieu/clawfu-skills'
   },
   {
-    id: 180,
-    name: 'wondelai-skills',
-    nameZh: 'Wondelai UX/行銷技能集',
-    description: '25 agent skills for UX design, marketing/CRO, sales, product strategy, and growth.',
-    descriptionZh: '25 個 Agent 技能，涵蓋 UX 設計、行銷/CRO、銷售、產品策略與增長。',
-    author: 'wondelai',
-    category: 'Utility & Automation',
-    tags: ['UX', 'Marketing', 'Collection'],
-    downloadCount: 0,
-    createdAt: '2026-03-04',
-    source: 'wondelai-skills',
-    githubUrl: 'https://github.com/wondelai/skills'
-  },
-  {
     id: 181,
     name: 'find-skills',
     nameZh: '技能市場探索器',
@@ -5228,5 +5089,19 @@ export const MOCK_SKILLS: Skill[] = [
     createdAt: '2026-03-04',
     source: 'find-skills',
     githubUrl: 'https://github.com/agentbay-ai/agentbay-skills'
+  },
+  {
+    id: 182,
+    name: 'mcp-builder',
+    nameZh: 'MCP 伺服器建構指南',
+    description: 'Guide for creating high-quality MCP (Model Context Protocol) servers for integrating external services and APIs.',
+    descriptionZh: '用於建立高品質 MCP（Model Context Protocol）伺服器的指南，協助整合外部服務與 API。',
+    author: 'Anthropic',
+    category: 'Utility & Automation',
+    tags: ['MCP', 'Server', 'Protocol'],
+    downloadCount: 0,
+    createdAt: '2026-03-07',
+    source: 'mcp-builder',
+    githubUrl: 'https://github.com/anthropics/skills/tree/main/skills/mcp-builder'
   },
 ];
