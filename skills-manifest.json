@@ -14557,6 +14557,173 @@
       "source": "structured"
     }
   },
+  "post-processing": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/comparison_metrics.md",
+      "references/data_formats.md",
+      "references/derived_quantities_guide.md",
+      "references/statistical_methods.md",
+      "scripts/comparison_tool.py",
+      "scripts/derived_quantities.py",
+      "scripts/field_extractor.py",
+      "scripts/profile_extractor.py",
+      "scripts/report_generator.py",
+      "scripts/statistical_analyzer.py",
+      "scripts/time_series_analyzer.py"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 8746,
+        "lineCount": 339,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/comparison_metrics.md": {
+        "sizeBytes": 4133,
+        "lineCount": 177,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/data_formats.md": {
+        "sizeBytes": 2346,
+        "lineCount": 115,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/derived_quantities_guide.md": {
+        "sizeBytes": 4385,
+        "lineCount": 158,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/statistical_methods.md": {
+        "sizeBytes": 3399,
+        "lineCount": 130,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "scripts/comparison_tool.py": {
+        "sizeBytes": 14026,
+        "lineCount": 461,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/derived_quantities.py": {
+        "sizeBytes": 18370,
+        "lineCount": 598,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/field_extractor.py": {
+        "sizeBytes": 12108,
+        "lineCount": 384,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/profile_extractor.py": {
+        "sizeBytes": 14115,
+        "lineCount": 503,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/report_generator.py": {
+        "sizeBytes": 16767,
+        "lineCount": 513,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/statistical_analyzer.py": {
+        "sizeBytes": 15258,
+        "lineCount": 509,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/time_series_analyzer.py": {
+        "sizeBytes": 14828,
+        "lineCount": 503,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 32059,
+      "cl100k": 31372
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "protocolsio-integration": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/additional_features.md",
+      "references/authentication.md",
+      "references/discussions.md",
+      "references/file_manager.md",
+      "references/protocols_api.md",
+      "references/workspaces.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 14900,
+        "lineCount": 420,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/additional_features.md": {
+        "sizeBytes": 10119,
+        "lineCount": 388,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/authentication.md": {
+        "sizeBytes": 3374,
+        "lineCount": 101,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/discussions.md": {
+        "sizeBytes": 6915,
+        "lineCount": 226,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/file_manager.md": {
+        "sizeBytes": 11036,
+        "lineCount": 413,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/protocols_api.md": {
+        "sizeBytes": 7937,
+        "lineCount": 295,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/workspaces.md": {
+        "sizeBytes": 8098,
+        "lineCount": 294,
+        "ext": "md",
+        "tabKey": "references"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 15573,
+      "cl100k": 14095
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
   "chaos-engineer": {
     "category": "Security & Web Testing",
     "files": [
