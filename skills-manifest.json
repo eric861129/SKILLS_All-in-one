@@ -16392,6 +16392,86 @@
       "source": "structured"
     }
   },
+  "scikit-learn": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/model_evaluation.md",
+      "references/pipelines_and_composition.md",
+      "references/preprocessing.md",
+      "references/quick_reference.md",
+      "references/supervised_learning.md",
+      "references/unsupervised_learning.md",
+      "scripts/classification_pipeline.py",
+      "scripts/clustering_analysis.py"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 15533,
+        "lineCount": 520,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/model_evaluation.md": {
+        "sizeBytes": 15454,
+        "lineCount": 593,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/pipelines_and_composition.md": {
+        "sizeBytes": 14770,
+        "lineCount": 613,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/preprocessing.md": {
+        "sizeBytes": 15603,
+        "lineCount": 607,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/quick_reference.md": {
+        "sizeBytes": 11508,
+        "lineCount": 434,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/supervised_learning.md": {
+        "sizeBytes": 11011,
+        "lineCount": 379,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/unsupervised_learning.md": {
+        "sizeBytes": 14440,
+        "lineCount": 506,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "scripts/classification_pipeline.py": {
+        "sizeBytes": 8044,
+        "lineCount": 258,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/clustering_analysis.py": {
+        "sizeBytes": 11396,
+        "lineCount": 387,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 29441,
+      "cl100k": 28291
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
   "chaos-engineer": {
     "category": "Security & Web Testing",
     "files": [
