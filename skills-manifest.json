@@ -202,6 +202,426 @@
       "source": "structured"
     }
   },
+  "gmail": {
+    "category": "Collaboration & Project Management",
+    "files": [
+      "README.md",
+      "SKILL.md",
+      "requirements.txt",
+      "scripts/auth.py",
+      "scripts/gmail.py",
+      "scripts/requirements.txt"
+    ],
+    "fileMeta": {
+      "README.md": {
+        "sizeBytes": 4461,
+        "lineCount": 172,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "SKILL.md": {
+        "sizeBytes": 4949,
+        "lineCount": 184,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "requirements.txt": {
+        "sizeBytes": 16,
+        "lineCount": 2,
+        "ext": "txt",
+        "tabKey": "root"
+      },
+      "scripts/auth.py": {
+        "sizeBytes": 12363,
+        "lineCount": 367,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/gmail.py": {
+        "sizeBytes": 14297,
+        "lineCount": 384,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/requirements.txt": {
+        "sizeBytes": 16,
+        "lineCount": 2,
+        "ext": "txt",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 9025,
+      "cl100k": 8409
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [
+        "keyring"
+      ],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "google-calendar": {
+    "category": "Collaboration & Project Management",
+    "files": [
+      "README.md",
+      "SKILL.md",
+      "requirements.txt",
+      "scripts/auth.py",
+      "scripts/gcal.py",
+      "scripts/requirements.txt"
+    ],
+    "fileMeta": {
+      "README.md": {
+        "sizeBytes": 4299,
+        "lineCount": 146,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "SKILL.md": {
+        "sizeBytes": 4647,
+        "lineCount": 161,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "requirements.txt": {
+        "sizeBytes": 16,
+        "lineCount": 2,
+        "ext": "txt",
+        "tabKey": "root"
+      },
+      "scripts/auth.py": {
+        "sizeBytes": 13458,
+        "lineCount": 400,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/gcal.py": {
+        "sizeBytes": 18068,
+        "lineCount": 469,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/requirements.txt": {
+        "sizeBytes": 16,
+        "lineCount": 2,
+        "ext": "txt",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 10126,
+      "cl100k": 9393
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [
+        "keyring"
+      ],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "google-chat": {
+    "category": "Collaboration & Project Management",
+    "files": [
+      "README.md",
+      "SKILL.md",
+      "requirements.txt",
+      "scripts/auth.py",
+      "scripts/chat.py"
+    ],
+    "fileMeta": {
+      "README.md": {
+        "sizeBytes": 3185,
+        "lineCount": 108,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "SKILL.md": {
+        "sizeBytes": 2431,
+        "lineCount": 87,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "requirements.txt": {
+        "sizeBytes": 16,
+        "lineCount": 2,
+        "ext": "txt",
+        "tabKey": "root"
+      },
+      "scripts/auth.py": {
+        "sizeBytes": 13123,
+        "lineCount": 383,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/chat.py": {
+        "sizeBytes": 10773,
+        "lineCount": 297,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 7381,
+      "cl100k": 6619
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [
+        "keyring"
+      ],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "google-docs": {
+    "category": "Collaboration & Project Management",
+    "files": [
+      "README.md",
+      "SKILL.md",
+      "requirements.txt",
+      "scripts/auth.py",
+      "scripts/docs.py",
+      "scripts/requirements.txt"
+    ],
+    "fileMeta": {
+      "README.md": {
+        "sizeBytes": 3117,
+        "lineCount": 107,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "SKILL.md": {
+        "sizeBytes": 2545,
+        "lineCount": 84,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "requirements.txt": {
+        "sizeBytes": 16,
+        "lineCount": 2,
+        "ext": "txt",
+        "tabKey": "root"
+      },
+      "scripts/auth.py": {
+        "sizeBytes": 13082,
+        "lineCount": 389,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/docs.py": {
+        "sizeBytes": 10920,
+        "lineCount": 339,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/requirements.txt": {
+        "sizeBytes": 16,
+        "lineCount": 2,
+        "ext": "txt",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 7424,
+      "cl100k": 6795
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [
+        "keyring"
+      ],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "google-drive": {
+    "category": "Collaboration & Project Management",
+    "files": [
+      "README.md",
+      "SKILL.md",
+      "requirements.txt",
+      "scripts/auth.py",
+      "scripts/drive.py",
+      "scripts/requirements.txt"
+    ],
+    "fileMeta": {
+      "README.md": {
+        "sizeBytes": 3383,
+        "lineCount": 117,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "SKILL.md": {
+        "sizeBytes": 3994,
+        "lineCount": 139,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "requirements.txt": {
+        "sizeBytes": 16,
+        "lineCount": 2,
+        "ext": "txt",
+        "tabKey": "root"
+      },
+      "scripts/auth.py": {
+        "sizeBytes": 12733,
+        "lineCount": 374,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/drive.py": {
+        "sizeBytes": 20039,
+        "lineCount": 579,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/requirements.txt": {
+        "sizeBytes": 16,
+        "lineCount": 2,
+        "ext": "txt",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 10046,
+      "cl100k": 9227
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [
+        "keyring"
+      ],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "google-sheets": {
+    "category": "Collaboration & Project Management",
+    "files": [
+      "README.md",
+      "SKILL.md",
+      "requirements.txt",
+      "scripts/auth.py",
+      "scripts/requirements.txt",
+      "scripts/sheets.py"
+    ],
+    "fileMeta": {
+      "README.md": {
+        "sizeBytes": 3161,
+        "lineCount": 122,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "SKILL.md": {
+        "sizeBytes": 4145,
+        "lineCount": 143,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "requirements.txt": {
+        "sizeBytes": 16,
+        "lineCount": 2,
+        "ext": "txt",
+        "tabKey": "root"
+      },
+      "scripts/auth.py": {
+        "sizeBytes": 12492,
+        "lineCount": 367,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/requirements.txt": {
+        "sizeBytes": 16,
+        "lineCount": 2,
+        "ext": "txt",
+        "tabKey": "scripts"
+      },
+      "scripts/sheets.py": {
+        "sizeBytes": 15457,
+        "lineCount": 440,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 8822,
+      "cl100k": 8278
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [
+        "keyring"
+      ],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "google-slides": {
+    "category": "Collaboration & Project Management",
+    "files": [
+      "README.md",
+      "SKILL.md",
+      "requirements.txt",
+      "scripts/auth.py",
+      "scripts/requirements.txt",
+      "scripts/slides.py"
+    ],
+    "fileMeta": {
+      "README.md": {
+        "sizeBytes": 2875,
+        "lineCount": 115,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "SKILL.md": {
+        "sizeBytes": 4091,
+        "lineCount": 143,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "requirements.txt": {
+        "sizeBytes": 16,
+        "lineCount": 2,
+        "ext": "txt",
+        "tabKey": "root"
+      },
+      "scripts/auth.py": {
+        "sizeBytes": 12469,
+        "lineCount": 367,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/requirements.txt": {
+        "sizeBytes": 16,
+        "lineCount": 2,
+        "ext": "txt",
+        "tabKey": "scripts"
+      },
+      "scripts/slides.py": {
+        "sizeBytes": 12645,
+        "lineCount": 352,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 8029,
+      "cl100k": 7193
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [
+        "keyring"
+      ],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
   "database-optimizer": {
     "category": "Data & Analysis",
     "files": [
