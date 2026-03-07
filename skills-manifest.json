@@ -1167,6 +1167,140 @@
       "source": "structured"
     }
   },
+  "meeting-insights-analyzer": {
+    "category": "Collaboration & Project Management",
+    "files": [
+      "SKILL.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 10177,
+        "lineCount": 328,
+        "ext": "md",
+        "tabKey": "root"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 2544,
+      "cl100k": 2282
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "outline": {
+    "category": "Collaboration & Project Management",
+    "files": [
+      ".env.example",
+      ".gitignore",
+      "README.md",
+      "SKILL.md",
+      "requirements.txt",
+      "scripts/outline.py"
+    ],
+    "fileMeta": {
+      ".env.example": {
+        "sizeBytes": 488,
+        "lineCount": 0,
+        "ext": "example",
+        "tabKey": "root"
+      },
+      ".gitignore": {
+        "sizeBytes": 322,
+        "lineCount": 0,
+        "ext": "none",
+        "tabKey": "root"
+      },
+      "README.md": {
+        "sizeBytes": 6200,
+        "lineCount": 245,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "SKILL.md": {
+        "sizeBytes": 4347,
+        "lineCount": 146,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "requirements.txt": {
+        "sizeBytes": 67,
+        "lineCount": 4,
+        "ext": "txt",
+        "tabKey": "root"
+      },
+      "scripts/outline.py": {
+        "sizeBytes": 22716,
+        "lineCount": 663,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 8334,
+      "cl100k": 7541
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [
+        "httpx",
+        "python-dotenv"
+      ],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "review-implementing": {
+    "category": "Collaboration & Project Management",
+    "files": [
+      "SKILL.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 3645,
+        "lineCount": 137,
+        "ext": "md",
+        "tabKey": "root"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 912,
+      "cl100k": 777
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "test-fixing": {
+    "category": "Collaboration & Project Management",
+    "files": [
+      "SKILL.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 2965,
+        "lineCount": 110,
+        "ext": "md",
+        "tabKey": "root"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 737,
+      "cl100k": 675
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
   "csv-data-summarizer": {
     "category": "Data & Analysis",
     "files": [
@@ -1377,6 +1511,79 @@
     "tokenEstimate": {
       "heuristic": 14520,
       "cl100k": 15115
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "elicitation": {
+    "category": "Data & Analysis",
+    "files": [
+      "SKILL.md",
+      "references/language-inference.md",
+      "references/motivational-interviewing.md",
+      "references/narrative-identity.md",
+      "references/question-sequences.md",
+      "references/schema-detection.md",
+      "references/self-defining-memories.md",
+      "references/values-elicitation.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 17826,
+        "lineCount": 476,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/language-inference.md": {
+        "sizeBytes": 7739,
+        "lineCount": 258,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/motivational-interviewing.md": {
+        "sizeBytes": 9210,
+        "lineCount": 276,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/narrative-identity.md": {
+        "sizeBytes": 7803,
+        "lineCount": 210,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/question-sequences.md": {
+        "sizeBytes": 8903,
+        "lineCount": 313,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/schema-detection.md": {
+        "sizeBytes": 9065,
+        "lineCount": 316,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/self-defining-memories.md": {
+        "sizeBytes": 8152,
+        "lineCount": 208,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/values-elicitation.md": {
+        "sizeBytes": 9105,
+        "lineCount": 277,
+        "ext": "md",
+        "tabKey": "references"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 19412,
+      "cl100k": 17825
     },
     "dependencies": {
       "skills": [],
@@ -2845,6 +3052,128 @@
       "source": "structured"
     }
   },
+  "mssql": {
+    "category": "Data & Analysis",
+    "files": [
+      ".gitignore",
+      "README.md",
+      "SKILL.md",
+      "connections.example.json",
+      "requirements.txt",
+      "scripts/query.py"
+    ],
+    "fileMeta": {
+      ".gitignore": {
+        "sizeBytes": 282,
+        "lineCount": 0,
+        "ext": "none",
+        "tabKey": "root"
+      },
+      "README.md": {
+        "sizeBytes": 2073,
+        "lineCount": 83,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "SKILL.md": {
+        "sizeBytes": 4273,
+        "lineCount": 136,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "connections.example.json": {
+        "sizeBytes": 950,
+        "lineCount": 36,
+        "ext": "json",
+        "tabKey": "root"
+      },
+      "requirements.txt": {
+        "sizeBytes": 18,
+        "lineCount": 2,
+        "ext": "txt",
+        "tabKey": "root"
+      },
+      "scripts/query.py": {
+        "sizeBytes": 11261,
+        "lineCount": 314,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 4645,
+      "cl100k": 4421
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [
+        "pymssql"
+      ],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "mysql": {
+    "category": "Data & Analysis",
+    "files": [
+      ".gitignore",
+      "README.md",
+      "SKILL.md",
+      "connections.example.json",
+      "requirements.txt",
+      "scripts/query.py"
+    ],
+    "fileMeta": {
+      ".gitignore": {
+        "sizeBytes": 282,
+        "lineCount": 0,
+        "ext": "none",
+        "tabKey": "root"
+      },
+      "README.md": {
+        "sizeBytes": 1998,
+        "lineCount": 81,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "SKILL.md": {
+        "sizeBytes": 4131,
+        "lineCount": 134,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "connections.example.json": {
+        "sizeBytes": 945,
+        "lineCount": 35,
+        "ext": "json",
+        "tabKey": "root"
+      },
+      "requirements.txt": {
+        "sizeBytes": 34,
+        "lineCount": 2,
+        "ext": "txt",
+        "tabKey": "root"
+      },
+      "scripts/query.py": {
+        "sizeBytes": 10389,
+        "lineCount": 296,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 4376,
+      "cl100k": 4055
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [
+        "mysql-connector-python"
+      ],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
   "networkx": {
     "category": "Data & Analysis",
     "files": [
@@ -3302,6 +3631,51 @@
       "source": "structured"
     }
   },
+  "recommendations": {
+    "category": "Data & Analysis",
+    "files": [
+      "SKILL.md",
+      "references/api-reference.md",
+      "references/context-patterns.md",
+      "references/presentation-patterns.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 14576,
+        "lineCount": 548,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/api-reference.md": {
+        "sizeBytes": 12250,
+        "lineCount": 473,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/context-patterns.md": {
+        "sizeBytes": 10092,
+        "lineCount": 385,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/presentation-patterns.md": {
+        "sizeBytes": 10503,
+        "lineCount": 356,
+        "ext": "md",
+        "tabKey": "references"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 11835,
+      "cl100k": 11387
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
   "spark-engineer": {
     "category": "Data & Analysis",
     "files": [
@@ -3564,6 +3938,86 @@
     "tokenEstimate": {
       "heuristic": 21188,
       "cl100k": 22503
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "x-twitter-scraper": {
+    "category": "Data & Analysis",
+    "files": [
+      "SKILL.md",
+      "metadata.json",
+      "references/api-endpoints.md",
+      "references/extractions.md",
+      "references/mcp-setup.md",
+      "references/mcp-tools.md",
+      "references/python-examples.md",
+      "references/types.md",
+      "references/webhooks.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 24827,
+        "lineCount": 506,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "metadata.json": {
+        "sizeBytes": 921,
+        "lineCount": 14,
+        "ext": "json",
+        "tabKey": "root"
+      },
+      "references/api-endpoints.md": {
+        "sizeBytes": 21135,
+        "lineCount": 957,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/extractions.md": {
+        "sizeBytes": 4212,
+        "lineCount": 178,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/mcp-setup.md": {
+        "sizeBytes": 6841,
+        "lineCount": 229,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/mcp-tools.md": {
+        "sizeBytes": 43656,
+        "lineCount": 895,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/python-examples.md": {
+        "sizeBytes": 4331,
+        "lineCount": 152,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/types.md": {
+        "sizeBytes": 23959,
+        "lineCount": 773,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/webhooks.md": {
+        "sizeBytes": 5362,
+        "lineCount": 196,
+        "ext": "md",
+        "tabKey": "references"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 33199,
+      "cl100k": 34576
     },
     "dependencies": {
       "skills": [],
