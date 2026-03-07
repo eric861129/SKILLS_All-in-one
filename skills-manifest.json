@@ -14269,6 +14269,256 @@
       "source": "structured"
     }
   },
+  "parameter-optimization": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/doe_methods.md",
+      "references/optimizer_selection.md",
+      "references/sensitivity_guidelines.md",
+      "references/surrogate_guidelines.md",
+      "scripts/doe_generator.py",
+      "scripts/optimizer_selector.py",
+      "scripts/sensitivity_summary.py",
+      "scripts/surrogate_builder.py"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 5446,
+        "lineCount": 142,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/doe_methods.md": {
+        "sizeBytes": 4419,
+        "lineCount": 172,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/optimizer_selection.md": {
+        "sizeBytes": 5551,
+        "lineCount": 213,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/sensitivity_guidelines.md": {
+        "sizeBytes": 4669,
+        "lineCount": 195,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/surrogate_guidelines.md": {
+        "sizeBytes": 5416,
+        "lineCount": 234,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "scripts/doe_generator.py": {
+        "sizeBytes": 4162,
+        "lineCount": 129,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/optimizer_selector.py": {
+        "sizeBytes": 2490,
+        "lineCount": 80,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/sensitivity_summary.py": {
+        "sizeBytes": 2131,
+        "lineCount": 72,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/surrogate_builder.py": {
+        "sizeBytes": 2115,
+        "lineCount": 70,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 9065,
+      "cl100k": 9094
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "pdb-database": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/api_reference.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 9231,
+        "lineCount": 308,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/api_reference.md": {
+        "sizeBytes": 15244,
+        "lineCount": 618,
+        "ext": "md",
+        "tabKey": "references"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 6118,
+      "cl100k": 6187
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "pennylane": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/advanced_features.md",
+      "references/devices_backends.md",
+      "references/getting_started.md",
+      "references/optimization.md",
+      "references/quantum_chemistry.md",
+      "references/quantum_circuits.md",
+      "references/quantum_ml.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 7397,
+        "lineCount": 225,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/advanced_features.md": {
+        "sizeBytes": 14984,
+        "lineCount": 668,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/devices_backends.md": {
+        "sizeBytes": 13079,
+        "lineCount": 597,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/getting_started.md": {
+        "sizeBytes": 5097,
+        "lineCount": 228,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/optimization.md": {
+        "sizeBytes": 16696,
+        "lineCount": 672,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/quantum_chemistry.md": {
+        "sizeBytes": 14438,
+        "lineCount": 568,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/quantum_circuits.md": {
+        "sizeBytes": 9395,
+        "lineCount": 438,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/quantum_ml.md": {
+        "sizeBytes": 14532,
+        "lineCount": 572,
+        "ext": "md",
+        "tabKey": "references"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 23900,
+      "cl100k": 27029
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "performance-profiling": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/optimization_strategies.md",
+      "references/profiling_guide.md",
+      "scripts/bottleneck_detector.py",
+      "scripts/memory_profiler.py",
+      "scripts/scaling_analyzer.py",
+      "scripts/timing_analyzer.py"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 8052,
+        "lineCount": 256,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/optimization_strategies.md": {
+        "sizeBytes": 13261,
+        "lineCount": 489,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/profiling_guide.md": {
+        "sizeBytes": 9919,
+        "lineCount": 345,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "scripts/bottleneck_detector.py": {
+        "sizeBytes": 12464,
+        "lineCount": 352,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/memory_profiler.py": {
+        "sizeBytes": 7030,
+        "lineCount": 213,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/scaling_analyzer.py": {
+        "sizeBytes": 7368,
+        "lineCount": 233,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/timing_analyzer.py": {
+        "sizeBytes": 6440,
+        "lineCount": 198,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 16106,
+      "cl100k": 14790
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
   "chaos-engineer": {
     "category": "Security & Web Testing",
     "files": [
