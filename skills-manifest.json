@@ -17388,6 +17388,358 @@
       "source": "structured"
     }
   },
+  "timesfm-forecasting": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "examples/anomaly-detection/detect_anomalies.py",
+      "examples/anomaly-detection/output/anomaly_detection.json",
+      "examples/anomaly-detection/output/anomaly_detection.png",
+      "examples/covariates-forecasting/demo_covariates.py",
+      "examples/covariates-forecasting/output/covariates_data.png",
+      "examples/covariates-forecasting/output/covariates_metadata.json",
+      "examples/covariates-forecasting/output/sales_with_covariates.csv",
+      "examples/global-temperature/README.md",
+      "examples/global-temperature/generate_animation_data.py",
+      "examples/global-temperature/generate_gif.py",
+      "examples/global-temperature/generate_html.py",
+      "examples/global-temperature/output/animation_data.json",
+      "examples/global-temperature/output/forecast_animation.gif",
+      "examples/global-temperature/output/forecast_output.csv",
+      "examples/global-temperature/output/forecast_output.json",
+      "examples/global-temperature/output/forecast_visualization.png",
+      "examples/global-temperature/output/interactive_forecast.html",
+      "examples/global-temperature/run_example.sh",
+      "examples/global-temperature/run_forecast.py",
+      "examples/global-temperature/temperature_anomaly.csv",
+      "examples/global-temperature/visualize_forecast.py",
+      "references/api_reference.md",
+      "references/data_preparation.md",
+      "references/system_requirements.md",
+      "scripts/check_system.py",
+      "scripts/forecast_csv.py"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 30155,
+        "lineCount": 786,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "examples/anomaly-detection/detect_anomalies.py": {
+        "sizeBytes": 17032,
+        "lineCount": 525,
+        "ext": "py",
+        "tabKey": "examples"
+      },
+      "examples/anomaly-detection/output/anomaly_detection.json": {
+        "sizeBytes": 9019,
+        "lineCount": 448,
+        "ext": "json",
+        "tabKey": "examples"
+      },
+      "examples/anomaly-detection/output/anomaly_detection.png": {
+        "sizeBytes": 131,
+        "lineCount": 0,
+        "ext": "png",
+        "tabKey": "examples"
+      },
+      "examples/covariates-forecasting/demo_covariates.py": {
+        "sizeBytes": 19694,
+        "lineCount": 569,
+        "ext": "py",
+        "tabKey": "examples"
+      },
+      "examples/covariates-forecasting/output/covariates_data.png": {
+        "sizeBytes": 131,
+        "lineCount": 0,
+        "ext": "png",
+        "tabKey": "examples"
+      },
+      "examples/covariates-forecasting/output/covariates_metadata.json": {
+        "sizeBytes": 1586,
+        "lineCount": 59,
+        "ext": "json",
+        "tabKey": "examples"
+      },
+      "examples/covariates-forecasting/output/sales_with_covariates.csv": {
+        "sizeBytes": 7399,
+        "lineCount": 110,
+        "ext": "csv",
+        "tabKey": "examples"
+      },
+      "examples/global-temperature/README.md": {
+        "sizeBytes": 5728,
+        "lineCount": 179,
+        "ext": "md",
+        "tabKey": "examples"
+      },
+      "examples/global-temperature/generate_animation_data.py": {
+        "sizeBytes": 5008,
+        "lineCount": 148,
+        "ext": "py",
+        "tabKey": "examples"
+      },
+      "examples/global-temperature/generate_gif.py": {
+        "sizeBytes": 6659,
+        "lineCount": 249,
+        "ext": "py",
+        "tabKey": "examples"
+      },
+      "examples/global-temperature/generate_html.py": {
+        "sizeBytes": 21161,
+        "lineCount": 545,
+        "ext": "py",
+        "tabKey": "examples"
+      },
+      "examples/global-temperature/output/animation_data.json": {
+        "sizeBytes": 133208,
+        "lineCount": 5441,
+        "ext": "json",
+        "tabKey": "examples"
+      },
+      "examples/global-temperature/output/forecast_animation.gif": {
+        "sizeBytes": 131,
+        "lineCount": 0,
+        "ext": "gif",
+        "tabKey": "examples"
+      },
+      "examples/global-temperature/output/forecast_output.csv": {
+        "sizeBytes": 1494,
+        "lineCount": 14,
+        "ext": "csv",
+        "tabKey": "examples"
+      },
+      "examples/global-temperature/output/forecast_output.json": {
+        "sizeBytes": 4524,
+        "lineCount": 188,
+        "ext": "json",
+        "tabKey": "examples"
+      },
+      "examples/global-temperature/output/forecast_visualization.png": {
+        "sizeBytes": 131,
+        "lineCount": 0,
+        "ext": "png",
+        "tabKey": "examples"
+      },
+      "examples/global-temperature/output/interactive_forecast.html": {
+        "sizeBytes": 153063,
+        "lineCount": 0,
+        "ext": "html",
+        "tabKey": "examples"
+      },
+      "examples/global-temperature/run_example.sh": {
+        "sizeBytes": 1532,
+        "lineCount": 54,
+        "ext": "sh",
+        "tabKey": "examples"
+      },
+      "examples/global-temperature/run_forecast.py": {
+        "sizeBytes": 5499,
+        "lineCount": 168,
+        "ext": "py",
+        "tabKey": "examples"
+      },
+      "examples/global-temperature/temperature_anomaly.csv": {
+        "sizeBytes": 591,
+        "lineCount": 38,
+        "ext": "csv",
+        "tabKey": "examples"
+      },
+      "examples/global-temperature/visualize_forecast.py": {
+        "sizeBytes": 3294,
+        "lineCount": 124,
+        "ext": "py",
+        "tabKey": "examples"
+      },
+      "references/api_reference.md": {
+        "sizeBytes": 7969,
+        "lineCount": 232,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/data_preparation.md": {
+        "sizeBytes": 7205,
+        "lineCount": 273,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/system_requirements.md": {
+        "sizeBytes": 5877,
+        "lineCount": 202,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "scripts/check_system.py": {
+        "sizeBytes": 16726,
+        "lineCount": 521,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/forecast_csv.py": {
+        "sizeBytes": 8689,
+        "lineCount": 270,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 79906,
+      "cl100k": 104007
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "torch_geometric": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/datasets_reference.md",
+      "references/layers_reference.md",
+      "references/transforms_reference.md",
+      "scripts/benchmark_model.py",
+      "scripts/create_gnn_template.py",
+      "scripts/visualize_graph.py"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 20382,
+        "lineCount": 675,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/datasets_reference.md": {
+        "sizeBytes": 15940,
+        "lineCount": 575,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/layers_reference.md": {
+        "sizeBytes": 17121,
+        "lineCount": 486,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/transforms_reference.md": {
+        "sizeBytes": 17950,
+        "lineCount": 680,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "scripts/benchmark_model.py": {
+        "sizeBytes": 10028,
+        "lineCount": 310,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/create_gnn_template.py": {
+        "sizeBytes": 15342,
+        "lineCount": 530,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/visualize_graph.py": {
+        "sizeBytes": 10267,
+        "lineCount": 314,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 26754,
+      "cl100k": 26081
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "torchdrug": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/core_concepts.md",
+      "references/datasets.md",
+      "references/knowledge_graphs.md",
+      "references/models_architectures.md",
+      "references/molecular_generation.md",
+      "references/molecular_property_prediction.md",
+      "references/protein_modeling.md",
+      "references/retrosynthesis.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 14146,
+        "lineCount": 449,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/core_concepts.md": {
+        "sizeBytes": 14394,
+        "lineCount": 566,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/datasets.md": {
+        "sizeBytes": 10951,
+        "lineCount": 381,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/knowledge_graphs.md": {
+        "sizeBytes": 8480,
+        "lineCount": 321,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/models_architectures.md": {
+        "sizeBytes": 13694,
+        "lineCount": 542,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/molecular_generation.md": {
+        "sizeBytes": 10074,
+        "lineCount": 353,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/molecular_property_prediction.md": {
+        "sizeBytes": 5667,
+        "lineCount": 170,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/protein_modeling.md": {
+        "sizeBytes": 7737,
+        "lineCount": 273,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/retrosynthesis.md": {
+        "sizeBytes": 11537,
+        "lineCount": 437,
+        "ext": "md",
+        "tabKey": "references"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 24126,
+      "cl100k": 22267
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
   "chaos-engineer": {
     "category": "Security & Web Testing",
     "files": [
