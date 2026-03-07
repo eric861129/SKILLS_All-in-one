@@ -1,0 +1,13 @@
+{
+  "name": "linear-cli",
+  "version": "0.1.0",
+  "description": "CLI for working with Linear issues",
+  "type": "module",
+  "scripts": {
+    "cli": "node scripts/linear-cli.js"
+  },
+  "dependencies": {
+    "@linear/sdk": "^62.0.0",
+    "dotenv": "^16.4.5"
+  }
+}
