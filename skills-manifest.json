@@ -15266,6 +15266,124 @@
       "source": "structured"
     }
   },
+  "pysam": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/alignment_files.md",
+      "references/common_workflows.md",
+      "references/sequence_files.md",
+      "references/variant_files.md"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 9995,
+        "lineCount": 264,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/alignment_files.md": {
+        "sizeBytes": 8560,
+        "lineCount": 281,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/common_workflows.md": {
+        "sizeBytes": 15350,
+        "lineCount": 521,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/sequence_files.md": {
+        "sizeBytes": 11597,
+        "lineCount": 408,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/variant_files.md": {
+        "sizeBytes": 9487,
+        "lineCount": 366,
+        "ext": "md",
+        "tabKey": "references"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 13743,
+      "cl100k": 13747
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
+  "pytdc": {
+    "category": "Scientific & Research Tools",
+    "files": [
+      "SKILL.md",
+      "references/datasets.md",
+      "references/oracles.md",
+      "references/utilities.md",
+      "scripts/benchmark_evaluation.py",
+      "scripts/load_and_split_data.py",
+      "scripts/molecular_generation.py"
+    ],
+    "fileMeta": {
+      "SKILL.md": {
+        "sizeBytes": 12700,
+        "lineCount": 459,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "references/datasets.md": {
+        "sizeBytes": 8792,
+        "lineCount": 247,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/oracles.md": {
+        "sizeBytes": 10051,
+        "lineCount": 401,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/utilities.md": {
+        "sizeBytes": 16045,
+        "lineCount": 685,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "scripts/benchmark_evaluation.py": {
+        "sizeBytes": 9238,
+        "lineCount": 328,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/load_and_split_data.py": {
+        "sizeBytes": 6350,
+        "lineCount": 215,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/molecular_generation.py": {
+        "sizeBytes": 11335,
+        "lineCount": 405,
+        "ext": "py",
+        "tabKey": "scripts"
+      }
+    },
+    "tokenEstimate": {
+      "heuristic": 18621,
+      "cl100k": 19627
+    },
+    "dependencies": {
+      "skills": [],
+      "libraries": [],
+      "runtimeTools": [],
+      "source": "structured"
+    }
+  },
   "chaos-engineer": {
     "category": "Security & Web Testing",
     "files": [
