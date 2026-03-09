@@ -5,8 +5,7 @@ allowed-tools: Read, Write, Edit, Grep, Glob, Bash
 model: sonnet
 license: MIT
 metadata:
-  author: raintree-technology
-  repository: https://github.com/raintree-technology/claude-starter
+  author: raintree
   version: "1.0"
 ---
 

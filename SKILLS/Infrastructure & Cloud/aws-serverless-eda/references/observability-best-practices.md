@@ -51,26 +51,26 @@ Comprehensive observability patterns for serverless applications based on AWS be
 **CDK Configuration**:
 ```typescript
 const fn = new NodejsFunction(this, 'Function', {
- entry: 'src/handler.ts',
+  entry: 'src/handler.ts',
 });
 
 // Create alarms on metrics
 new cloudwatch.Alarm(this, 'ErrorAlarm', {
- metric: fn.metricErrors({
- statistic: 'Sum',
- period: Duration.minutes(5),
- }),
- threshold: 10,
- evaluationPeriods: 1,
+  metric: fn.metricErrors({
+    statistic: 'Sum',
+    period: Duration.minutes(5),
+  }),
+  threshold: 10,
+  evaluationPeriods: 1,
 });
 
 new cloudwatch.Alarm(this, 'DurationAlarm', {
- metric: fn.metricDuration({
- statistic: 'p99',
- period: Duration.minutes(5),
- }),
- threshold: 1000, // 1 second
- evaluationPeriods: 2,
+  metric: fn.metricDuration({
+    statistic: 'p99',
+    period: Duration.minutes(5),
+  }),
+  threshold: 1000, // 1 second
+  evaluationPeriods: 2,
 });
 ```
 
@@ -80,47 +80,47 @@ new cloudwatch.Alarm(this, 'DurationAlarm', {
 
 ```typescript
 export const handler = async (event: any) => {
- const startTime = Date.now();
+  const startTime = Date.now();
 
- try {
- const result = await processOrder(event);
+  try {
+    const result = await processOrder(event);
 
- // Emit custom metrics
- console.log(JSON.stringify({
- _aws: {
- Timestamp: Date.now(),
- CloudWatchMetrics: [{
- Namespace: 'MyApp/Orders',
- Dimensions: [['ServiceName', 'Operation']],
- Metrics: [
- { Name: 'ProcessingTime', Unit: 'Milliseconds' },
- { Name: 'OrderValue', Unit: 'None' },
- ],
- }],
- },
- ServiceName: 'OrderService',
- Operation: 'ProcessOrder',
- ProcessingTime: Date.now() - startTime,
- OrderValue: result.amount,
- }));
+    // Emit custom metrics
+    console.log(JSON.stringify({
+      _aws: {
+        Timestamp: Date.now(),
+        CloudWatchMetrics: [{
+          Namespace: 'MyApp/Orders',
+          Dimensions: [['ServiceName', 'Operation']],
+          Metrics: [
+            { Name: 'ProcessingTime', Unit: 'Milliseconds' },
+            { Name: 'OrderValue', Unit: 'None' },
+          ],
+        }],
+      },
+      ServiceName: 'OrderService',
+      Operation: 'ProcessOrder',
+      ProcessingTime: Date.now() - startTime,
+      OrderValue: result.amount,
+    }));
 
- return result;
- } catch (error) {
- // Emit error metric
- console.log(JSON.stringify({
- _aws: {
- CloudWatchMetrics: [{
- Namespace: 'MyApp/Orders',
- Dimensions: [['ServiceName']],
- Metrics: [{ Name: 'Errors', Unit: 'Count' }],
- }],
- },
- ServiceName: 'OrderService',
- Errors: 1,
- }));
+    return result;
+  } catch (error) {
+    // Emit error metric
+    console.log(JSON.stringify({
+      _aws: {
+        CloudWatchMetrics: [{
+          Namespace: 'MyApp/Orders',
+          Dimensions: [['ServiceName']],
+          Metrics: [{ Name: 'Errors', Unit: 'Count' }],
+        }],
+      },
+      ServiceName: 'OrderService',
+      Errors: 1,
+    }));
 
- throw error;
- }
+    throw error;
+  }
 };
 ```
 
@@ -130,29 +130,29 @@ export const handler = async (event: any) => {
 import { Metrics, MetricUnits } from '@aws-lambda-powertools/metrics';
 
 const metrics = new Metrics({
- namespace: 'MyApp',
- serviceName: 'OrderService',
+  namespace: 'MyApp',
+  serviceName: 'OrderService',
 });
 
 export const handler = async (event: any) => {
- metrics.addMetric('Invocation', MetricUnits.Count, 1);
+  metrics.addMetric('Invocation', MetricUnits.Count, 1);
 
- const startTime = Date.now();
+  const startTime = Date.now();
 
- try {
- const result = await processOrder(event);
+  try {
+    const result = await processOrder(event);
 
- metrics.addMetric('Success', MetricUnits.Count, 1);
- metrics.addMetric('ProcessingTime', MetricUnits.Milliseconds, Date.now() - startTime);
- metrics.addMetric('OrderValue', MetricUnits.None, result.amount);
+    metrics.addMetric('Success', MetricUnits.Count, 1);
+    metrics.addMetric('ProcessingTime', MetricUnits.Milliseconds, Date.now() - startTime);
+    metrics.addMetric('OrderValue', MetricUnits.None, result.amount);
 
- return result;
- } catch (error) {
- metrics.addMetric('Error', MetricUnits.Count, 1);
- throw error;
- } finally {
- metrics.publishStoredMetrics();
- }
+    return result;
+  } catch (error) {
+    metrics.addMetric('Error', MetricUnits.Count, 1);
+    throw error;
+  } finally {
+    metrics.publishStoredMetrics();
+  }
 };
 ```
 
@@ -165,42 +165,42 @@ export const handler = async (event: any) => {
 ```typescript
 // ✅ GOOD - Structured JSON logging
 export const handler = async (event: any) => {
- console.log(JSON.stringify({
- level: 'INFO',
- message: 'Processing order',
- orderId: event.orderId,
- customerId: event.customerId,
- timestamp: new Date().toISOString(),
- requestId: context.requestId,
- }));
+  console.log(JSON.stringify({
+    level: 'INFO',
+    message: 'Processing order',
+    orderId: event.orderId,
+    customerId: event.customerId,
+    timestamp: new Date().toISOString(),
+    requestId: context.requestId,
+  }));
 
- try {
- const result = await processOrder(event);
+  try {
+    const result = await processOrder(event);
 
- console.log(JSON.stringify({
- level: 'INFO',
- message: 'Order processed successfully',
- orderId: event.orderId,
- duration: Date.now() - startTime,
- timestamp: new Date().toISOString(),
- }));
+    console.log(JSON.stringify({
+      level: 'INFO',
+      message: 'Order processed successfully',
+      orderId: event.orderId,
+      duration: Date.now() - startTime,
+      timestamp: new Date().toISOString(),
+    }));
 
- return result;
- } catch (error) {
- console.error(JSON.stringify({
- level: 'ERROR',
- message: 'Order processing failed',
- orderId: event.orderId,
- error: {
- name: error.name,
- message: error.message,
- stack: error.stack,
- },
- timestamp: new Date().toISOString(),
- }));
+    return result;
+  } catch (error) {
+    console.error(JSON.stringify({
+      level: 'ERROR',
+      message: 'Order processing failed',
+      orderId: event.orderId,
+      error: {
+        name: error.name,
+        message: error.message,
+        stack: error.stack,
+      },
+      timestamp: new Date().toISOString(),
+    }));
 
- throw error;
- }
+    throw error;
+  }
 };
 
 // ❌ BAD - Unstructured logging
@@ -213,35 +213,35 @@ console.log('Processing order ' + orderId + ' for customer ' + customerId);
 import { Logger } from '@aws-lambda-powertools/logger';
 
 const logger = new Logger({
- serviceName: 'OrderService',
- logLevel: 'INFO',
+  serviceName: 'OrderService',
+  logLevel: 'INFO',
 });
 
 export const handler = async (event: any, context: Context) => {
- logger.addContext(context);
+  logger.addContext(context);
 
- logger.info('Processing order', {
- orderId: event.orderId,
- customerId: event.customerId,
- });
+  logger.info('Processing order', {
+    orderId: event.orderId,
+    customerId: event.customerId,
+  });
 
- try {
- const result = await processOrder(event);
+  try {
+    const result = await processOrder(event);
 
- logger.info('Order processed', {
- orderId: event.orderId,
- amount: result.amount,
- });
+    logger.info('Order processed', {
+      orderId: event.orderId,
+      amount: result.amount,
+    });
 
- return result;
- } catch (error) {
- logger.error('Order processing failed', {
- orderId: event.orderId,
- error,
- });
+    return result;
+  } catch (error) {
+    logger.error('Order processing failed', {
+      orderId: event.orderId,
+      error,
+    });
 
- throw error;
- }
+    throw error;
+  }
 };
 ```
 
@@ -255,8 +255,8 @@ export const handler = async (event: any, context: Context) => {
 
 ```typescript
 const logger = new Logger({
- serviceName: 'OrderService',
- logLevel: process.env.LOG_LEVEL || 'INFO',
+  serviceName: 'OrderService',
+  logLevel: process.env.LOG_LEVEL || 'INFO',
 });
 
 logger.debug('Detailed processing info', { data });
@@ -303,21 +303,21 @@ fields @timestamp, @message, orderId
 
 ```typescript
 const fn = new NodejsFunction(this, 'Function', {
- entry: 'src/handler.ts',
- tracing: lambda.Tracing.ACTIVE, // Enable X-Ray
+  entry: 'src/handler.ts',
+  tracing: lambda.Tracing.ACTIVE, // Enable X-Ray
 });
 
 // API Gateway tracing
 const api = new apigateway.RestApi(this, 'Api', {
- deployOptions: {
- tracingEnabled: true,
- },
+  deployOptions: {
+    tracingEnabled: true,
+  },
 });
 
 // Step Functions tracing
 new stepfunctions.StateMachine(this, 'StateMachine', {
- definition,
- tracingEnabled: true,
+  definition,
+  tracingEnabled: true,
 });
 ```
 
@@ -334,30 +334,30 @@ const client = captureAWSv3Client(new DynamoDBClient({}));
 import AWSXRay from 'aws-xray-sdk-core';
 
 export const handler = async (event: any) => {
- const segment = AWSXRay.getSegment();
+  const segment = AWSXRay.getSegment();
 
- // Custom subsegment
- const subsegment = segment.addNewSubsegment('ProcessOrder');
+  // Custom subsegment
+  const subsegment = segment.addNewSubsegment('ProcessOrder');
 
- try {
- // Add annotations (indexed for filtering)
- subsegment.addAnnotation('orderId', event.orderId);
- subsegment.addAnnotation('customerId', event.customerId);
+  try {
+    // Add annotations (indexed for filtering)
+    subsegment.addAnnotation('orderId', event.orderId);
+    subsegment.addAnnotation('customerId', event.customerId);
 
- // Add metadata (not indexed, detailed info)
- subsegment.addMetadata('orderDetails', event);
+    // Add metadata (not indexed, detailed info)
+    subsegment.addMetadata('orderDetails', event);
 
- const result = await processOrder(event);
+    const result = await processOrder(event);
 
- subsegment.addAnnotation('status', 'success');
- subsegment.close();
+    subsegment.addAnnotation('status', 'success');
+    subsegment.close();
 
- return result;
- } catch (error) {
- subsegment.addError(error);
- subsegment.close();
- throw error;
- }
+    return result;
+  } catch (error) {
+    subsegment.addError(error);
+    subsegment.close();
+    throw error;
+  }
 };
 ```
 
@@ -369,19 +369,19 @@ import { Tracer } from '@aws-lambda-powertools/tracer';
 const tracer = new Tracer({ serviceName: 'OrderService' });
 
 export const handler = async (event: any) => {
- const segment = tracer.getSegment();
+  const segment = tracer.getSegment();
 
- // Automatically captures and traces
- const result = await tracer.captureAWSv3Client(dynamodb).getItem({
- TableName: process.env.TABLE_NAME,
- Key: { orderId: event.orderId },
- });
+  // Automatically captures and traces
+  const result = await tracer.captureAWSv3Client(dynamodb).getItem({
+    TableName: process.env.TABLE_NAME,
+    Key: { orderId: event.orderId },
+  });
 
- // Custom annotation
- tracer.putAnnotation('orderId', event.orderId);
- tracer.putMetadata('orderDetails', event);
+  // Custom annotation
+  tracer.putAnnotation('orderId', event.orderId);
+  tracer.putMetadata('orderDetails', event);
 
- return result;
+  return result;
 };
 ```
 
@@ -409,15 +409,15 @@ export const handler = async (event: any) => {
 
 ```typescript
 export const handler = async (event: any, context: Context) => {
- const traceId = process.env._X_AMZN_TRACE_ID;
+  const traceId = process.env._X_AMZN_TRACE_ID;
 
- console.log(JSON.stringify({
- level: 'INFO',
- message: 'Processing order',
- traceId,
- requestId: context.requestId,
- orderId: event.orderId,
- }));
+  console.log(JSON.stringify({
+    level: 'INFO',
+    message: 'Processing order',
+    traceId,
+    requestId: context.requestId,
+    orderId: event.orderId,
+  }));
 };
 ```
 
@@ -443,35 +443,35 @@ const tracer = new Tracer({ serviceName: 'OrderService' });
 const metrics = new Metrics({ namespace: 'MyApp', serviceName: 'OrderService' });
 
 export const handler = async (event: any, context: Context) => {
- // Automatically adds trace context to logs
- logger.addContext(context);
+  // Automatically adds trace context to logs
+  logger.addContext(context);
 
- logger.info('Processing order', { orderId: event.orderId });
+  logger.info('Processing order', { orderId: event.orderId });
 
- // Add trace annotations
- tracer.putAnnotation('orderId', event.orderId);
+  // Add trace annotations
+  tracer.putAnnotation('orderId', event.orderId);
 
- // Add metrics
- metrics.addMetric('Invocation', MetricUnits.Count, 1);
+  // Add metrics
+  metrics.addMetric('Invocation', MetricUnits.Count, 1);
 
- const startTime = Date.now();
+  const startTime = Date.now();
 
- try {
- const result = await processOrder(event);
+  try {
+    const result = await processOrder(event);
 
- metrics.addMetric('Success', MetricUnits.Count, 1);
- metrics.addMetric('Duration', MetricUnits.Milliseconds, Date.now() - startTime);
+    metrics.addMetric('Success', MetricUnits.Count, 1);
+    metrics.addMetric('Duration', MetricUnits.Milliseconds, Date.now() - startTime);
 
- logger.info('Order processed', { orderId: event.orderId });
+    logger.info('Order processed', { orderId: event.orderId });
 
- return result;
- } catch (error) {
- metrics.addMetric('Error', MetricUnits.Count, 1);
- logger.error('Processing failed', { orderId: event.orderId, error });
- throw error;
- } finally {
- metrics.publishStoredMetrics();
- }
+    return result;
+  } catch (error) {
+    metrics.addMetric('Error', MetricUnits.Count, 1);
+    logger.error('Processing failed', { orderId: event.orderId, error });
+    throw error;
+  } finally {
+    metrics.publishStoredMetrics();
+  }
 };
 ```
 
@@ -497,37 +497,37 @@ export const handler = async (event: any, context: Context) => {
 ```typescript
 // Error rate alarm
 new cloudwatch.Alarm(this, 'ErrorRateAlarm', {
- metric: new cloudwatch.MathExpression({
- expression: 'errors / invocations * 100',
- usingMetrics: {
- errors: fn.metricErrors({ statistic: 'Sum' }),
- invocations: fn.metricInvocations({ statistic: 'Sum' }),
- },
- }),
- threshold: 1, // 1% error rate
- evaluationPeriods: 2,
- alarmDescription: 'Error rate exceeded 1%',
+  metric: new cloudwatch.MathExpression({
+    expression: 'errors / invocations * 100',
+    usingMetrics: {
+      errors: fn.metricErrors({ statistic: 'Sum' }),
+      invocations: fn.metricInvocations({ statistic: 'Sum' }),
+    },
+  }),
+  threshold: 1, // 1% error rate
+  evaluationPeriods: 2,
+  alarmDescription: 'Error rate exceeded 1%',
 });
 
 // Latency alarm (p99)
 new cloudwatch.Alarm(this, 'LatencyAlarm', {
- metric: fn.metricDuration({
- statistic: 'p99',
- period: Duration.minutes(5),
- }),
- threshold: 1000, // 1 second
- evaluationPeriods: 2,
- alarmDescription: 'p99 latency exceeded 1 second',
+  metric: fn.metricDuration({
+    statistic: 'p99',
+    period: Duration.minutes(5),
+  }),
+  threshold: 1000, // 1 second
+  evaluationPeriods: 2,
+  alarmDescription: 'p99 latency exceeded 1 second',
 });
 
 // Concurrent executions approaching limit
 new cloudwatch.Alarm(this, 'ConcurrencyAlarm', {
- metric: fn.metricConcurrentExecutions({
- statistic: 'Maximum',
- }),
- threshold: 800, // 80% of 1000 default limit
- evaluationPeriods: 1,
- alarmDescription: 'Approaching concurrency limit',
+  metric: fn.metricConcurrentExecutions({
+    statistic: 'Maximum',
+  }),
+  threshold: 800, // 80% of 1000 default limit
+  evaluationPeriods: 1,
+  alarmDescription: 'Approaching concurrency limit',
 });
 ```
 
@@ -537,32 +537,32 @@ new cloudwatch.Alarm(this, 'ConcurrencyAlarm', {
 
 ```typescript
 const errorAlarm = new cloudwatch.Alarm(this, 'Errors', {
- metric: fn.metricErrors(),
- threshold: 10,
- evaluationPeriods: 1,
+  metric: fn.metricErrors(),
+  threshold: 10,
+  evaluationPeriods: 1,
 });
 
 const throttleAlarm = new cloudwatch.Alarm(this, 'Throttles', {
- metric: fn.metricThrottles(),
- threshold: 5,
- evaluationPeriods: 1,
+  metric: fn.metricThrottles(),
+  threshold: 5,
+  evaluationPeriods: 1,
 });
 
 const latencyAlarm = new cloudwatch.Alarm(this, 'Latency', {
- metric: fn.metricDuration({ statistic: 'p99' }),
- threshold: 2000,
- evaluationPeriods: 2,
+  metric: fn.metricDuration({ statistic: 'p99' }),
+  threshold: 2000,
+  evaluationPeriods: 2,
 });
 
 // Composite alarm (any of the above)
 new cloudwatch.CompositeAlarm(this, 'ServiceHealthAlarm', {
- compositeAlarmName: 'order-service-health',
- alarmRule: cloudwatch.AlarmRule.anyOf(
- errorAlarm,
- throttleAlarm,
- latencyAlarm
- ),
- alarmDescription: 'Overall service health degraded',
+  compositeAlarmName: 'order-service-health',
+  alarmRule: cloudwatch.AlarmRule.anyOf(
+    errorAlarm,
+    throttleAlarm,
+    latencyAlarm
+  ),
+  alarmDescription: 'Overall service health degraded',
 });
 ```
 
@@ -573,76 +573,76 @@ new cloudwatch.CompositeAlarm(this, 'ServiceHealthAlarm', {
 **Recommended sections**:
 
 1. **Overview**:
- - Total invocations
- - Error rate percentage
- - P50, P95, P99 latency
- - Availability percentage
+   - Total invocations
+   - Error rate percentage
+   - P50, P95, P99 latency
+   - Availability percentage
 
 2. **Resource Utilization**:
- - Concurrent executions
- - Memory utilization
- - Duration distribution
- - Throttles
+   - Concurrent executions
+   - Memory utilization
+   - Duration distribution
+   - Throttles
 
 3. **Business Metrics**:
- - Orders processed
- - Revenue per minute
- - Customer activity
- - Feature usage
+   - Orders processed
+   - Revenue per minute
+   - Customer activity
+   - Feature usage
 
 4. **Errors and Alerts**:
- - Error count by type
- - Active alarms
- - DLQ message count
- - Failed transactions
+   - Error count by type
+   - Active alarms
+   - DLQ message count
+   - Failed transactions
 
 ### CloudWatch Dashboard CDK
 
 ```typescript
 const dashboard = new cloudwatch.Dashboard(this, 'ServiceDashboard', {
- dashboardName: 'order-service',
+  dashboardName: 'order-service',
 });
 
 dashboard.addWidgets(
- // Row 1: Overview
- new cloudwatch.GraphWidget({
- title: 'Invocations',
- left: [fn.metricInvocations()],
- }),
- new cloudwatch.SingleValueWidget({
- title: 'Error Rate',
- metrics: [
- new cloudwatch.MathExpression({
- expression: 'errors / invocations * 100',
- usingMetrics: {
- errors: fn.metricErrors({ statistic: 'Sum' }),
- invocations: fn.metricInvocations({ statistic: 'Sum' }),
- },
- }),
- ],
- }),
- new cloudwatch.GraphWidget({
- title: 'Latency (p50, p95, p99)',
- left: [
- fn.metricDuration({ statistic: 'p50', label: 'p50' }),
- fn.metricDuration({ statistic: 'p95', label: 'p95' }),
- fn.metricDuration({ statistic: 'p99', label: 'p99' }),
- ],
- })
+  // Row 1: Overview
+  new cloudwatch.GraphWidget({
+    title: 'Invocations',
+    left: [fn.metricInvocations()],
+  }),
+  new cloudwatch.SingleValueWidget({
+    title: 'Error Rate',
+    metrics: [
+      new cloudwatch.MathExpression({
+        expression: 'errors / invocations * 100',
+        usingMetrics: {
+          errors: fn.metricErrors({ statistic: 'Sum' }),
+          invocations: fn.metricInvocations({ statistic: 'Sum' }),
+        },
+      }),
+    ],
+  }),
+  new cloudwatch.GraphWidget({
+    title: 'Latency (p50, p95, p99)',
+    left: [
+      fn.metricDuration({ statistic: 'p50', label: 'p50' }),
+      fn.metricDuration({ statistic: 'p95', label: 'p95' }),
+      fn.metricDuration({ statistic: 'p99', label: 'p99' }),
+    ],
+  })
 );
 
 // Row 2: Errors
 dashboard.addWidgets(
- new cloudwatch.LogQueryWidget({
- title: 'Recent Errors',
- logGroupNames: [fn.logGroup.logGroupName],
- queryLines: [
- 'fields @timestamp, @message',
- 'filter level = "ERROR"',
- 'sort @timestamp desc',
- 'limit 20',
- ],
- })
+  new cloudwatch.LogQueryWidget({
+    title: 'Recent Errors',
+    logGroupNames: [fn.logGroup.logGroupName],
+    queryLines: [
+      'fields @timestamp, @message',
+      'filter level = "ERROR"',
+      'sort @timestamp desc',
+      'limit 20',
+    ],
+  })
 );
 ```
 
@@ -654,8 +654,8 @@ dashboard.addWidgets(
 
 ```
 API Gateway → Lambda → DynamoDB → EventBridge → Lambda
- ↓ ↓ ↓ ↓ ↓
- Metrics Traces Metrics Metrics Logs
+     ↓           ↓          ↓            ↓           ↓
+  Metrics    Traces     Metrics      Metrics     Logs
 ```
 
 **Key metrics per service**:
@@ -674,31 +674,31 @@ API Gateway → Lambda → DynamoDB → EventBridge → Lambda
 **Use CloudWatch Synthetics for API monitoring**:
 
 ```typescript
-import { Canary, Test, Code, Schedule } from 'aws-synthetics-alpha';
+import { Canary, Test, Code, Schedule } from '@aws-cdk/aws-synthetics-alpha';
 
 new Canary(this, 'ApiCanary', {
- canaryName: 'api-health-check',
- schedule: Schedule.rate(Duration.minutes(5)),
- test: Test.custom({
- code: Code.fromInline(`
- const synthetics = require('Synthetics');
+  canaryName: 'api-health-check',
+  schedule: Schedule.rate(Duration.minutes(5)),
+  test: Test.custom({
+    code: Code.fromInline(`
+      const synthetics = require('Synthetics');
 
- const apiCanaryBlueprint = async function () {
- const response = await synthetics.executeHttpStep('Verify API', {
- url: 'https://api.example.com/health',
- method: 'GET',
- });
+      const apiCanaryBlueprint = async function () {
+        const response = await synthetics.executeHttpStep('Verify API', {
+          url: 'https://api.example.com/health',
+          method: 'GET',
+        });
 
- return response.statusCode === 200 ? 'success' : 'failure';
- };
+        return response.statusCode === 200 ? 'success' : 'failure';
+      };
 
- exports.handler = async () => {
- return await apiCanaryBlueprint();
- };
- `),
- handler: 'index.handler',
- }),
- runtime: synthetics.Runtime.SYNTHETICS_NODEJS_PUPPETEER_6_2,
+      exports.handler = async () => {
+        return await apiCanaryBlueprint();
+      };
+    `),
+    handler: 'index.handler',
+  }),
+  runtime: synthetics.Runtime.SYNTHETICS_NODEJS_PUPPETEER_6_2,
 });
 ```
 
@@ -711,19 +711,19 @@ new Canary(this, 'ApiCanary', {
 ```typescript
 // Lambda Layer with ADOT
 const adotLayer = lambda.LayerVersion.fromLayerVersionArn(
- this,
- 'AdotLayer',
- `arn:aws:lambda:${this.region}:901920570463:layer:aws-otel-nodejs-amd64-ver-1-18-1:4`
+  this,
+  'AdotLayer',
+  `arn:aws:lambda:${this.region}:901920570463:layer:aws-otel-nodejs-amd64-ver-1-18-1:4`
 );
 
 new NodejsFunction(this, 'Function', {
- entry: 'src/handler.ts',
- layers: [adotLayer],
- tracing: lambda.Tracing.ACTIVE,
- environment: {
- AWS_LAMBDA_EXEC_WRAPPER: '/opt/otel-handler',
- OPENTELEMETRY_COLLECTOR_CONFIG_FILE: '/var/task/collector.yaml',
- },
+  entry: 'src/handler.ts',
+  layers: [adotLayer],
+  tracing: lambda.Tracing.ACTIVE,
+  environment: {
+    AWS_LAMBDA_EXEC_WRAPPER: '/opt/otel-handler',
+    OPENTELEMETRY_COLLECTOR_CONFIG_FILE: '/var/task/collector.yaml',
+  },
 });
 ```
 
@@ -768,4 +768,3 @@ new NodejsFunction(this, 'Function', {
 - ✅ Use CloudWatch ServiceLens for service view
 - ✅ Use Synthetics for proactive monitoring
 - ✅ Consider ADOT for vendor-neutral observability
-```

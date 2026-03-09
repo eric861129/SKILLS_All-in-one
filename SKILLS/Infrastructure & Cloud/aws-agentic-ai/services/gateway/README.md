@@ -19,27 +19,27 @@ aws s3 cp my-api-openapi.yaml s3://<BUCKET_NAME>/schemas/
 **Step 2: Create credential provider (API Key auth only)**
 ```bash
 aws bedrock-agentcore-control create-api-key-credential-provider \
- --name MyAPICredentialProvider \
- --api-key "YOUR_API_KEY" \
- --region us-west-2
+  --name MyAPICredentialProvider \
+  --api-key "YOUR_API_KEY" \
+  --region us-west-2
 ```
 
 **Step 3: Create gateway target**
 ```bash
 aws bedrock-agentcore-control create-gateway-target \
- --gateway-identifier <GATEWAY_ID> \
- --name MyAPITarget \
- --endpoint-configuration '{"openApiSchema": {"s3": {"uri": "s3://<BUCKET_NAME>/schemas/my-api-openapi.yaml"}}}' \
- --credential-provider-configurations '[{"credentialProviderType": "GATEWAY_API_KEY_CREDENTIAL_PROVIDER", "apiKeyCredentialProvider": {"providerArn": "arn:aws:bedrock-agentcore:us-west-2:<ACCOUNT_ID>:api-key-credential-provider/MyAPICredentialProvider"}}]' \
- --region us-west-2
+  --gateway-identifier <GATEWAY_ID> \
+  --name MyAPITarget \
+  --endpoint-configuration '{"openApiSchema": {"s3": {"uri": "s3://<BUCKET_NAME>/schemas/my-api-openapi.yaml"}}}' \
+  --credential-provider-configurations '[{"credentialProviderType": "GATEWAY_API_KEY_CREDENTIAL_PROVIDER", "apiKeyCredentialProvider": {"providerArn": "arn:aws:bedrock-agentcore:us-west-2:<ACCOUNT_ID>:api-key-credential-provider/MyAPICredentialProvider"}}]' \
+  --region us-west-2
 ```
 
 **Step 4: Verify deployment**
 ```bash
 aws bedrock-agentcore-control get-gateway-target \
- --gateway-identifier <GATEWAY_ID> \
- --target-identifier <TARGET_ID> \
- --region us-west-2
+  --gateway-identifier <GATEWAY_ID> \
+  --target-identifier <TARGET_ID> \
+  --region us-west-2
 ```
 
 ## Authentication Options
@@ -73,24 +73,24 @@ aws bedrock-agentcore-control get-gateway-target \
 ### List Gateway Targets
 ```bash
 aws bedrock-agentcore-control list-gateway-targets \
- --gateway-identifier <GATEWAY_ID> \
- --region us-west-2
+  --gateway-identifier <GATEWAY_ID> \
+  --region us-west-2
 ```
 
 ### Update Credential Provider
 ```bash
 aws bedrock-agentcore-control update-api-key-credential-provider \
- --name MyAPICredentialProvider \
- --api-key "NEW_API_KEY" \
- --region us-west-2
+  --name MyAPICredentialProvider \
+  --api-key "NEW_API_KEY" \
+  --region us-west-2
 ```
 
 ### Delete Gateway Target
 ```bash
 aws bedrock-agentcore-control delete-gateway-target \
- --gateway-identifier <GATEWAY_ID> \
- --target-identifier <TARGET_ID> \
- --region us-west-2
+  --gateway-identifier <GATEWAY_ID> \
+  --target-identifier <TARGET_ID> \
+  --region us-west-2
 ```
 
 ## Related Resources

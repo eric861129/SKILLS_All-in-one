@@ -8,25 +8,25 @@
 
 **Diagnosis Steps**:
 1. Verify gateway exists
- ```bash
- aws bedrock-agentcore-control get-gateway \
- --gateway-identifier <GATEWAY_ID> \
- --profile default --region us-west-2
- ```
+   ```bash
+   aws bedrock-agentcore-control get-gateway \
+     --gateway-identifier <GATEWAY_ID> \
+     --profile default --region us-west-2
+   ```
 
 2. Check credential provider exists (if using API key auth)
- ```bash
- aws bedrock-agentcore-control get-api-key-credential-provider \
- --name <PROVIDER_NAME> \
- --profile default --region us-west-2
- ```
+   ```bash
+   aws bedrock-agentcore-control get-api-key-credential-provider \
+     --name <PROVIDER_NAME> \
+     --profile default --region us-west-2
+   ```
 
 3. List existing targets
- ```bash
- aws bedrock-agentcore-control list-gateway-targets \
- --gateway-identifier <GATEWAY_ID> \
- --profile default --region us-west-2
- ```
+   ```bash
+   aws bedrock-agentcore-control list-gateway-targets \
+     --gateway-identifier <GATEWAY_ID> \
+     --profile default --region us-west-2
+   ```
 
 **Common Causes**:
 - Gateway ID incorrect or gateway doesn't exist
@@ -52,9 +52,9 @@ authorized to perform: bedrock-agentcore:GetResourceApiKey on resource: *
 ```bash
 # Get gateway role ARN
 GATEWAY_ROLE=$(aws bedrock-agentcore-control get-gateway \
- --gateway-identifier <GATEWAY_ID> \
- --query 'roleArn' --output text \
- --profile default --region us-west-2)
+  --gateway-identifier <GATEWAY_ID> \
+  --query 'roleArn' --output text \
+  --profile default --region us-west-2)
 
 echo $GATEWAY_ROLE
 
@@ -63,51 +63,51 @@ ROLE_NAME=$(echo $GATEWAY_ROLE | cut -d'/' -f2)
 
 # Check attached policies
 aws iam list-attached-role-policies \
- --role-name $ROLE_NAME \
- --profile default --region us-west-2
+  --role-name $ROLE_NAME \
+  --profile default --region us-west-2
 ```
 
 **Solution**: Add required permissions to gateway role:
 ```bash
 cat > /tmp/gateway-policy.json <<EOF
 {
- "Version": "2012-10-17",
- "Statement": [
- {
- "Sid": "GetResourceApiKey",
- "Effect": "Allow",
- "Action": ["bedrock-agentcore:GetResourceApiKey"],
- "Resource": "*"
- },
- {
- "Sid": "GetWorkloadAccessToken",
- "Effect": "Allow",
- "Action": ["bedrock-agentcore:GetWorkloadAccessToken"],
- "Resource": "*"
- },
- {
- "Sid": "GetCredentials",
- "Effect": "Allow",
- "Action": ["secretsmanager:GetSecretValue"],
- "Resource": ["arn:aws:secretsmanager:us-west-2:<ACCOUNT_ID>:secret:bedrock-agentcore-identity!*"]
- }
- ]
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "GetResourceApiKey",
+      "Effect": "Allow",
+      "Action": ["bedrock-agentcore:GetResourceApiKey"],
+      "Resource": "*"
+    },
+    {
+      "Sid": "GetWorkloadAccessToken",
+      "Effect": "Allow",
+      "Action": ["bedrock-agentcore:GetWorkloadAccessToken"],
+      "Resource": "*"
+    },
+    {
+      "Sid": "GetCredentials",
+      "Effect": "Allow",
+      "Action": ["secretsmanager:GetSecretValue"],
+      "Resource": ["arn:aws:secretsmanager:us-west-2:<ACCOUNT_ID>:secret:bedrock-agentcore-identity!*"]
+    }
+  ]
 }
 EOF
 
 # Get policy ARN from role
 POLICY_ARN=$(aws iam list-attached-role-policies \
- --role-name $ROLE_NAME \
- --query 'AttachedPolicies[0].PolicyArn' \
- --output text \
- --profile default --region us-west-2)
+  --role-name $ROLE_NAME \
+  --query 'AttachedPolicies[0].PolicyArn' \
+  --output text \
+  --profile default --region us-west-2)
 
 # Create new policy version
 aws iam create-policy-version \
- --policy-arn $POLICY_ARN \
- --policy-document file:///tmp/gateway-policy.json \
- --set-as-default \
- --profile default --region us-west-2
+  --policy-arn $POLICY_ARN \
+  --policy-document file:///tmp/gateway-policy.json \
+  --set-as-default \
+  --profile default --region us-west-2
 ```
 
 ---
@@ -134,21 +134,21 @@ is not authorized to perform: secretsmanager:GetSecretValue on resource: ...
 ```bash
 # Check if provider exists
 aws bedrock-agentcore-control get-api-key-credential-provider \
- --name <PROVIDER_NAME> \
- --profile default --region us-west-2
+  --name <PROVIDER_NAME> \
+  --profile default --region us-west-2
 
 # List all providers
 aws bedrock-agentcore-control list-api-key-credential-providers \
- --profile default --region us-west-2
+  --profile default --region us-west-2
 ```
 
 **Solution**:
 ```bash
 # Create provider if missing
 aws bedrock-agentcore-control create-api-key-credential-provider \
- --name <PROVIDER_NAME> \
- --api-key "YOUR_API_KEY" \
- --profile default --region us-west-2
+  --name <PROVIDER_NAME> \
+  --api-key "YOUR_API_KEY" \
+  --profile default --region us-west-2
 ```
 
 ---
@@ -161,9 +161,9 @@ aws bedrock-agentcore-control create-api-key-credential-provider \
 ```bash
 # Check API key format in secret
 SECRET=$(aws secretsmanager get-secret-value \
- --secret-id "arn:aws:secretsmanager:us-west-2:<ACCOUNT_ID>:secret:bedrock-agentcore-identity/default/apikeycredentialprovider/<PROVIDER_NAME>-AbCdEf" \
- --query 'SecretString' --output text \
- --profile default --region us-west-2)
+  --secret-id "arn:aws:secretsmanager:us-west-2:<ACCOUNT_ID>:secret:bedrock-agentcore-identity/default/apikeycredentialprovider/<PROVIDER_NAME>-AbCdEf" \
+  --query 'SecretString' --output text \
+  --profile default --region us-west-2)
 
 echo $SECRET | jq '.'
 # Should be: {"apiKey": "your-key-here"}
@@ -173,9 +173,9 @@ echo $SECRET | jq '.'
 ```bash
 # Use the correct update command (not secretsmanager put-secret-value)
 aws bedrock-agentcore-control update-api-key-credential-provider \
- --name <PROVIDER_NAME> \
- --api-key "YOUR_VALID_API_KEY" \
- --profile default --region us-west-2
+  --name <PROVIDER_NAME> \
+  --api-key "YOUR_VALID_API_KEY" \
+  --profile default --region us-west-2
 ```
 
 **Common Mistake**: Using `secretsmanager put-secret-value` directly bypasses credential provider validation
@@ -207,13 +207,13 @@ grep -n "oneOf\|anyOf\|allOf" schemas/my-api-openapi.yaml
 ```yaml
 # ❌ Bad - unsupported
 schema:
- oneOf:
- - type: string
- - type: number
+  oneOf:
+    - type: string
+    - type: number
 
 # ✅ Good - simple type
 schema:
- type: string
+  type: string
 ```
 
 ---
@@ -242,9 +242,9 @@ schema:
 ```bash
 # Check gateway target status
 aws bedrock-agentcore-control get-gateway-target \
- --gateway-identifier <GATEWAY_ID> \
- --target-identifier <TARGET_ID> \
- --profile default --region us-west-2
+  --gateway-identifier <GATEWAY_ID> \
+  --target-identifier <TARGET_ID> \
+  --profile default --region us-west-2
 ```
 
 **Solutions**:
@@ -295,10 +295,10 @@ grep -A10 "securitySchemes:" schemas/my-api-openapi.yaml
 ```bash
 # Get target details including status reason
 aws bedrock-agentcore-control get-gateway-target \
- --gateway-identifier <GATEWAY_ID> \
- --target-identifier <TARGET_ID> \
- --query '{status: status, statusReason: statusReason}' \
- --profile default --region us-west-2
+  --gateway-identifier <GATEWAY_ID> \
+  --target-identifier <TARGET_ID> \
+  --query '{status: status, statusReason: statusReason}' \
+  --profile default --region us-west-2
 ```
 
 **Common Status Reasons**:
@@ -333,23 +333,23 @@ TARGET_ID=$2
 # Test 1: List targets
 echo "Listing gateway targets..."
 aws bedrock-agentcore-control list-gateway-targets \
- --gateway-identifier $GATEWAY_ID \
- --profile default --region us-west-2
+  --gateway-identifier $GATEWAY_ID \
+  --profile default --region us-west-2
 
 # Test 2: Get target details
 echo "Getting target details..."
 aws bedrock-agentcore-control get-gateway-target \
- --gateway-identifier $GATEWAY_ID \
- --target-identifier $TARGET_ID \
- --profile default --region us-west-2
+  --gateway-identifier $GATEWAY_ID \
+  --target-identifier $TARGET_ID \
+  --profile default --region us-west-2
 
 # Test 3: Get tools from target
 echo "Getting tools..."
 aws bedrock-agentcore-control get-gateway-target \
- --gateway-identifier $GATEWAY_ID \
- --target-identifier $TARGET_ID \
- --query 'tools' \
- --profile default --region us-west-2
+  --gateway-identifier $GATEWAY_ID \
+  --target-identifier $TARGET_ID \
+  --query 'tools' \
+  --profile default --region us-west-2
 ```
 
 ---

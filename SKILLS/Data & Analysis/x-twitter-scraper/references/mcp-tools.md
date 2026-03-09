@@ -1,6 +1,6 @@
 # Xquik MCP Tools Reference (Legacy v1)
 
-Complete reference for all 18 MCP tools exposed by the legacy v1 server at `https://xquik.com/mcp/v1`. The default v2 server at `/mcp` uses a code-execution sandbox with 2 tools (`explore` + `xquik`) that can call all 56 REST API endpoints. See [mcp-setup.md](mcp-setup.md) for the v2 architecture.
+Complete reference for all 18 MCP tools exposed by the legacy v1 server at `https://xquik.com/mcp/v1`. The default v2 server at `/mcp` uses a code-execution sandbox with 2 tools (`explore` + `xquik`) that can call all 76 REST API endpoints. See [mcp-setup.md](mcp-setup.md) for the v2 architecture.
 
 ## Tool Selection Rules
 
@@ -14,7 +14,7 @@ Pick the simplest tool that answers the question:
 | Download images/videos/GIFs from tweets | `download-media` | Permanent hosted URLs on media.xquik.com. First download metered, cached free |
 | Check follow relationship | `check-follow` | Both directions: following and followedBy |
 | Trending topics by region (X) | `get-trends` | Names, ranks, search queries. Metered |
-| Trending topics from 6 sources | `get-radar` | Google Trends, HN, TrustMRR, Wikipedia, GitHub, Reddit. Free |
+| Trending topics from 7 sources | `get-radar` | Google Trends, HN, Polymarket, TrustMRR, Wikipedia, GitHub, Reddit. Free |
 | Activity from monitored accounts | `events` | Only YOUR monitors, not all of X |
 | Budget, plan, usage percent | `get-account` | Plan, monitor quota, current period usage percent |
 | Start/stop tracking an account | `monitors` action=add/remove | Webhooks are optional, add separately with `webhooks` action=add |
@@ -227,7 +227,7 @@ Look up an X user profile by username. Does NOT return verification status or tw
 
 ### download-media
 
-Download images, videos, and GIFs from tweets. Accepts one or more tweet IDs/URLs (up to 50). Returns permanent download URLs hosted on media.xquik.com.
+Download images, videos, and GIFs from tweets. Accepts one or more tweet IDs/URLs (up to 50). Returns a shareable gallery URL and permanent download URLs.
 
 **Input:**
 
@@ -235,18 +235,29 @@ Download images, videos, and GIFs from tweets. Accepts one or more tweet IDs/URL
 |-----------|------|----------|-------------|
 | `tweetIds` | string[] | Yes | Array of tweet IDs or full tweet URLs (1-50 items). Single item = one tweet, multiple = bulk download |
 
-**Output:**
+**Output (single, 1 item in tweetIds):**
 
 | Field | Type | Description |
 |-------|------|-------------|
-| `tweetId` | string | Resolved tweet ID (single mode) |
+| `tweetId` | string | Resolved tweet ID |
+| `galleryUrl` | string | Shareable gallery page URL |
+| `cacheHit` | boolean | `true` if served from cache (no usage consumed) |
 | `media` | array | Array of downloaded media items |
 | `media[].url` | string | Permanent download URL hosted on media.xquik.com |
 | `media[].type` | string | Media type: `photo`, `video`, or `animated_gif` |
 | `media[].index` | number | Position in the tweet's media attachments (0-indexed) |
-| `media[].fileSize` | string | File size in bytes (as a string). Omitted if unavailable |
+| `media[].fileSize` | string | File size in bytes (as a string). `null` if unavailable |
 
-**Quota:** First download is metered (counts toward your monthly quota). Subsequent requests for the same tweet return cached URLs at no cost. Downloads are saved to the user's gallery at `https://xquik.com/gallery`.
+**Output (bulk, 2+ items in tweetIds):**
+
+| Field | Type | Description |
+|-------|------|-------------|
+| `galleryUrl` | string | Combined gallery page URL containing media from all tweets |
+| `totalTweets` | number | Number of tweets successfully processed |
+| `totalMedia` | number | Total media items downloaded across all tweets |
+| `freshDownloads` | number | Number of tweets downloaded fresh (not from cache) |
+
+**Quota:** First download is metered (counts toward your monthly quota). Subsequent requests for the same tweet return cached URLs at no cost (`cacheHit: true`). All downloads are saved to the gallery at `https://xquik.com/gallery`.
 
 **Annotations:** openWorld | **Cost:** Metered (first download only, cached free)
 
@@ -304,13 +315,13 @@ Get trending topics on X for a region. Subscription required, metered.
 
 ### get-radar
 
-Get trending topics and news from 6 sources beyond X. Use a specific item title as `topic` for `compose-tweet`. For TrustMRR items, visit the URL for founder/MRR/growth details.
+Get trending topics and news from 7 sources beyond X. Use a specific item title as `topic` for `compose-tweet`. For TrustMRR items, visit the URL for founder/MRR/growth details.
 
 **Input:**
 
 | Parameter | Type | Required | Description |
 |-----------|------|----------|-------------|
-| `source` | string | No | Filter by source: `google_trends`, `hacker_news`, `trustmrr`, `wikipedia`, `github`, `reddit` |
+| `source` | string | No | Filter by source: `google_trends`, `hacker_news`, `polymarket`, `trustmrr`, `wikipedia`, `github`, `reddit` |
 | `category` | string | No | Filter by category: `general`, `tech`, `dev`, `science`, `culture`, `politics`, `business`, `entertainment` |
 | `limit` | number | No | Items per page (1-100, default 50) |
 | `hours` | number | No | Look-back window in hours (1-72, default 6) |
@@ -832,7 +843,7 @@ Both interfaces access the same Xquik platform. Choose based on your integration
 | **Transport** | StreamableHTTP | StreamableHTTP | HTTPS + JSON |
 | **Auth** | `x-api-key` or OAuth 2.1 | `x-api-key` or OAuth 2.1 | `x-api-key` header |
 | **Best for** | AI agents, IDE integrations | Legacy MCP integrations | Custom apps, scripts, backend services |
-| **Model** | 2 tools (sandbox) | 18 discrete tools | 56 endpoints |
+| **Model** | 2 tools (sandbox) | 18 discrete tools | 76 endpoints |
 | **User profile** | Subset: name, bio, follower/following counts, profile picture | Full: adds verified, location, createdAt, statusesCount |
 | **Follow check** | `following` / `followedBy` | `isFollowing` / `isFollowedBy` |
 | **Monitor username field** | `xUsername` | `username` |

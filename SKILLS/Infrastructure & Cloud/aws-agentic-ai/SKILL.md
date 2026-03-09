@@ -1,28 +1,27 @@
 ---
 name: aws-agentic-ai
 aliases:
- - bedrock-agentcore
- - aws-agentic-ai
+  - bedrock-agentcore
 description: AWS Bedrock AgentCore comprehensive expert for deploying and managing all AgentCore services. Use when working with Gateway, Runtime, Memory, Identity, or any AgentCore component. Covers MCP target deployment, credential management, schema optimization, runtime configuration, memory management, and identity services.
 context: fork
 model: sonnet
 skills:
- - aws-mcp-setup
+  - aws-mcp-setup
 allowed-tools:
- - mcp__aws-mcp__*
- - mcp__awsdocs__*
- - Bash(aws bedrock-agentcore-control *)
- - Bash(aws bedrock-agentcore-runtime *)
- - Bash(aws bedrock *)
- - Bash(aws s3 cp *)
- - Bash(aws s3 ls *)
- - Bash(aws secretsmanager *)
- - Bash(aws sts get-caller-identity)
+  - mcp__aws-mcp__*
+  - mcp__awsdocs__*
+  - Bash(aws bedrock-agentcore-control *)
+  - Bash(aws bedrock-agentcore-runtime *)
+  - Bash(aws bedrock *)
+  - Bash(aws s3 cp *)
+  - Bash(aws s3 ls *)
+  - Bash(aws secretsmanager *)
+  - Bash(aws sts get-caller-identity)
 hooks:
- PreToolUse:
- - matcher: Bash(aws bedrock-agentcore-control create-*)
- command: aws sts get-caller-identity --query Account --output text
- once: true
+  PreToolUse:
+    - matcher: Bash(aws bedrock-agentcore-control create-*)
+      command: aws sts get-caller-identity --query Account --output text
+      once: true
 ---
 
 # AWS Bedrock AgentCore
@@ -31,21 +30,7 @@ AWS Bedrock AgentCore provides a complete platform for deploying and scaling AI 
 
 ## AWS Documentation Requirement
 
-**CRITICAL**: This skill requires AWS MCP tools for accurate, up-to-date AWS information.
-
-### Before Answering AWS Questions
-
-1. **Always verify** using AWS MCP tools (if available):
- - `mcp__aws-mcp__aws___search_documentation` or `mcp__*awsdocs*__aws___search_documentation` - Search AWS docs
- - `mcp__aws-mcp__aws___read_documentation` or `mcp__*awsdocs*__aws___read_documentation` - Read specific pages
- - `mcp__aws-mcp__aws___get_regional_availability` - Check service availability
-
-2. **If AWS MCP tools are unavailable**:
- - Guide user to configure AWS MCP using the `aws-mcp-setup` skill (auto-loaded as dependency)
- - Help determine which option fits their environment:
- - Has uvx + AWS credentials → Full AWS MCP Server
- - No Python/credentials → AWS Documentation MCP (no auth)
- - If cannot determine → Ask user which option to use
+Always verify AWS facts using MCP tools (`mcp__aws-mcp__*` or `mcp__*awsdocs*__*`) before answering. The `aws-mcp-setup` dependency is auto-loaded — if MCP tools are unavailable, guide the user through that skill's setup flow.
 
 ## When to Use This Skill
 
@@ -89,7 +74,7 @@ Use this skill when you need to:
 **MANDATORY - READ DETAILED DOCUMENTATION**: See [`cross-service/credential-management.md`](cross-service/credential-management.md) for unified credential management patterns across all services.
 
 **Quick Workflow**:
-1. Use Identity service credential provider for all API keys
+1. Use Identity service credential providers for all API keys
 2. Link providers to gateway targets via ARN references
 3. Rotate credentials quarterly through credential provider updates
 4. Monitor usage with CloudWatch metrics
@@ -133,3 +118,4 @@ For patterns and best practices that span multiple AgentCore services:
 - **AWS Documentation**: [Amazon Bedrock AgentCore](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/what-is-bedrock-agentcore.html)
 - **API Reference**: [Bedrock AgentCore Control Plane API](https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIReference/)
 - **AWS CLI Reference**: [bedrock-agentcore-control commands](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/bedrock-agentcore-control/index.html)
+

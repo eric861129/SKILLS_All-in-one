@@ -26,21 +26,7 @@ This skill provides comprehensive guidance for developing AWS infrastructure usi
 
 ## AWS Documentation Requirement
 
-**CRITICAL**: This skill requires AWS MCP tools for accurate, up-to-date AWS information.
-
-### Before Answering AWS Questions
-
-1. **Always verify** using AWS MCP tools (if available):
-  - `mcp__aws-mcp__aws___search_documentation` or `mcp__*awsdocs*__aws___search_documentation` - Search AWS docs
-  - `mcp__aws-mcp__aws___read_documentation` or `mcp__*awsdocs*__aws___read_documentation` - Read specific pages
-  - `mcp__aws-mcp__aws___get_regional_availability` - Check service availability
-
-2. **If AWS MCP tools are unavailable**:
-  - Guide user to configure AWS MCP using the `aws-mcp-setup` skill (auto-loaded as dependency)
-  - Help determine which option fits their environment:
-    - Has uvx + AWS credentials → Full AWS MCP Server
-    - No Python/credentials → AWS Documentation MCP (no auth)
-  - If cannot determine → Ask user which option to use
+Always verify AWS facts using MCP tools (`mcp__aws-mcp__*` or `mcp__*awsdocs*__*`) before answering. The `aws-mcp-setup` dependency is auto-loaded — if MCP tools are unavailable, guide the user through that skill's setup flow.
 
 ## Integrated MCP Servers
 
@@ -83,7 +69,7 @@ Use this skill when:
 ```typescript
 // ❌ BAD - Explicit naming prevents reusability and parallel deployments
 new lambda.Function(this, 'MyFunction', {
-  functionName: 'my-lambda', // Avoid this
+  functionName: 'my-lambda',  // Avoid this
   // ...
 });
 
@@ -158,39 +144,39 @@ Aspects.of(app).add(new AwsSolutionsChecks());
 #### Layer 2: Synthesis-Time Validation (Required)
 
 1. **Synthesis with cdk-nag**: Validate stack with comprehensive rules
-  ```bash
-  cdk synth # cdk-nag runs automatically via Aspects
-  ```
+   ```bash
+   cdk synth  # cdk-nag runs automatically via Aspects
+   ```
 
 2. **Suppress legitimate exceptions** with documented reasons:
-  ```typescript
-  import { NagSuppressions } from 'cdk-nag';
+   ```typescript
+   import { NagSuppressions } from 'cdk-nag';
 
-  // Document WHY the exception is needed
-  NagSuppressions.addResourceSuppressions(resource, [
-    {
-      id: 'AwsSolutions-L1',
-      reason: 'Lambda@Edge requires specific runtime for CloudFront compatibility'
-    }
-  ]);
-  ```
+   // Document WHY the exception is needed
+   NagSuppressions.addResourceSuppressions(resource, [
+     {
+       id: 'AwsSolutions-L1',
+       reason: 'Lambda@Edge requires specific runtime for CloudFront compatibility'
+     }
+   ]);
+   ```
 
 #### Layer 3: Pre-Commit Safety Net
 
 1. **Build**: Ensure compilation succeeds
-  ```bash
-  npm run build # or language-specific build command
-  ```
+   ```bash
+   npm run build  # or language-specific build command
+   ```
 
 2. **Tests**: Run unit and integration tests
-  ```bash
-  npm test # or pytest, mvn test, etc.
-  ```
+   ```bash
+   npm test  # or pytest, mvn test, etc.
+   ```
 
 3. **Validation Script**: Meta-level checks
-  ```bash
-  ./scripts/validate-stack.sh
-  ```
+   ```bash
+   ./scripts/validate-stack.sh
+   ```
 
 The validation script now focuses on:
 - Language detection
@@ -204,12 +190,12 @@ The validation script now focuses on:
 
 1. **Design**: Plan infrastructure resources and relationships
 2. **Verify AWS Services**: Use AWS Documentation MCP to confirm service availability and features
-  - Check regional availability for all required services
-  - Verify service limits and quotas
-  - Confirm latest API specifications
+   - Check regional availability for all required services
+   - Verify service limits and quotas
+   - Confirm latest API specifications
 3. **Implement**: Write CDK constructs following best practices
-  - Use CDK MCP server for construct recommendations
-  - Reference CDK best practices via MCP tools
+   - Use CDK MCP server for construct recommendations
+   - Reference CDK best practices via MCP tools
 4. **Validate**: Run pre-deployment checks (see above)
 5. **Synthesize**: Generate CloudFormation templates
 6. **Review**: Examine synthesized templates for correctness

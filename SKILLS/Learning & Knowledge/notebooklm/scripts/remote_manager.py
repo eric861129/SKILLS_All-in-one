@@ -132,17 +132,28 @@ def _run_browser_command(args, command_name: str, action: Callable[[Page], Dict]
                         time.sleep(min(attempt * 1.5, 5.0))
                         continue
 
-                if errors:
-                    result = dict(result)
-                    result.setdefault("previous_errors", errors)
-                if artifacts:
-                    result = dict(result)
-                    result.setdefault("artifacts", artifacts)
-                if attempt > 1:
-                    result = dict(result)
-                    result.setdefault("attempts", attempt)
-                return result
+                    if errors:
+                        result = dict(result)
+                        result.setdefault("previous_errors", errors)
+                    if artifacts:
+                        result = dict(result)
+                        result.setdefault("artifacts", artifacts)
+                    if attempt > 1:
+                        result = dict(result)
+                        result.setdefault("attempts", attempt)
+                    return result
 
+                if isinstance(result, dict):
+                    if errors:
+                        result = dict(result)
+                        result.setdefault("previous_errors", errors)
+                    if artifacts:
+                        result = dict(result)
+                        result.setdefault("artifacts", artifacts)
+                    if attempt > 1:
+                        result = dict(result)
+                        result.setdefault("attempts", attempt)
+                return result
             except Exception as exc:  # noqa: BLE001
                 error_message = str(exc)
                 errors.append(error_message)
@@ -203,7 +214,7 @@ def _scroll_notebook_home(page: Page) -> None:
             stable_rounds += 1
         else:
             stable_rounds = 0
-            last_count = count
+        last_count = count
         if stable_rounds >= 3:
             break
         try:
@@ -470,8 +481,8 @@ def _upload_file_sources(page: Page, files: List[Path]) -> None:
 
     with page.expect_file_chooser(timeout=25000) as chooser_info:
         upload_btn.first.click()
-        chooser = chooser_info.value
-        chooser.set_files([str(path) for path in files])
+    chooser = chooser_info.value
+    chooser.set_files([str(path) for path in files])
 
 
 def _find_matching_source_indexes(sources: List[Dict], title: str, contains: bool) -> List[int]:
@@ -512,7 +523,7 @@ def _delete_source_once(page: Page, row_index: int) -> None:
                 submit.first.click(timeout=7000)
             else:
                 page.get_by_role("button", name="Delete").first.click(timeout=7000)
-        page.wait_for_timeout(1300)
+    page.wait_for_timeout(1300)
 
 
 def _delete_all_exact_title(page: Page, title: str, max_delete: int = 40) -> int:
@@ -1047,24 +1058,24 @@ def cmd_add_source(args) -> Dict:
         if args.copy_to_temp:
             file_infos, temp_dir_path = _copy_infos_to_temp(file_infos)
 
-    if args.dry_run:
-        return {
-            "status": "dry-run",
-            "operation": "add-source",
-            "source_type": "files",
-            "notebook_url": resolved["notebook_url"],
-            "candidate_count": len(file_infos),
-            "filtered_out": filtered_out,
-            "files": [
-                {
-                    "title": info["title"],
-                    "source_path": str(info["source_path"]),
-                    "upload_path": str(info["upload_path"]),
-                    "size_bytes": info["size_bytes"],
-                }
-                for info in file_infos
-            ],
-        }
+        if args.dry_run:
+            return {
+                "status": "dry-run",
+                "operation": "add-source",
+                "source_type": "files",
+                "notebook_url": resolved["notebook_url"],
+                "candidate_count": len(file_infos),
+                "filtered_out": filtered_out,
+                "files": [
+                    {
+                        "title": info["title"],
+                        "source_path": str(info["source_path"]),
+                        "upload_path": str(info["upload_path"]),
+                        "size_bytes": info["size_bytes"],
+                    }
+                    for info in file_infos
+                ],
+            }
 
     state = load_source_state()
     state_sources = _get_notebook_state_sources(state, resolved["notebook_url"])

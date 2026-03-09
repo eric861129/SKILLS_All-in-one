@@ -20,39 +20,39 @@ Comprehensive patterns for building serverless applications on AWS based on Well
 **Architecture**:
 ```
 API Gateway → Lambda Functions → DynamoDB/RDS
- ↓ (events)
- EventBridge → Other Services
+              ↓ (events)
+         EventBridge → Other Services
 ```
 
 **CDK Implementation**:
 ```typescript
 // User Service
 const userTable = new dynamodb.Table(this, 'Users', {
- partitionKey: { name: 'userId', type: dynamodb.AttributeType.STRING },
- billingMode: dynamodb.BillingMode.PAY_PER_REQUEST,
+  partitionKey: { name: 'userId', type: dynamodb.AttributeType.STRING },
+  billingMode: dynamodb.BillingMode.PAY_PER_REQUEST,
 });
 
 const userFunction = new NodejsFunction(this, 'UserHandler', {
- entry: 'src/services/users/handler.ts',
- environment: {
- TABLE_NAME: userTable.tableName,
- },
+  entry: 'src/services/users/handler.ts',
+  environment: {
+    TABLE_NAME: userTable.tableName,
+  },
 });
 
 userTable.grantReadWriteData(userFunction);
 
 // Order Service (separate database)
 const orderTable = new dynamodb.Table(this, 'Orders', {
- partitionKey: { name: 'orderId', type: dynamodb.AttributeType.STRING },
- billingMode: dynamodb.BillingMode.PAY_PER_REQUEST,
+  partitionKey: { name: 'orderId', type: dynamodb.AttributeType.STRING },
+  billingMode: dynamodb.BillingMode.PAY_PER_REQUEST,
 });
 
 const orderFunction = new NodejsFunction(this, 'OrderHandler', {
- entry: 'src/services/orders/handler.ts',
- environment: {
- TABLE_NAME: orderTable.tableName,
- EVENT_BUS: eventBus.eventBusName,
- },
+  entry: 'src/services/orders/handler.ts',
+  environment: {
+    TABLE_NAME: orderTable.tableName,
+    EVENT_BUS: eventBus.eventBusName,
+  },
 });
 
 orderTable.grantReadWriteData(orderFunction);
@@ -72,18 +72,18 @@ eventBus.grantPutEventsTo(orderFunction);
 **REST API with API Gateway**:
 ```typescript
 const api = new apigateway.RestApi(this, 'Api', {
- restApiName: 'serverless-api',
- deployOptions: {
- stageName: 'prod',
- tracingEnabled: true,
- loggingLevel: apigateway.MethodLoggingLevel.INFO,
- dataTraceEnabled: true,
- metricsEnabled: true,
- },
- defaultCorsPreflightOptions: {
- allowOrigins: apigateway.Cors.ALL_ORIGINS,
- allowMethods: apigateway.Cors.ALL_METHODS,
- },
+  restApiName: 'serverless-api',
+  deployOptions: {
+    stageName: 'prod',
+    tracingEnabled: true,
+    loggingLevel: apigateway.MethodLoggingLevel.INFO,
+    dataTraceEnabled: true,
+    metricsEnabled: true,
+  },
+  defaultCorsPreflightOptions: {
+    allowOrigins: apigateway.Cors.ALL_ORIGINS,
+    allowMethods: apigateway.Cors.ALL_METHODS,
+  },
 });
 
 // Resource-based routing
@@ -100,22 +100,22 @@ item.addMethod('DELETE', new apigateway.LambdaIntegration(deleteFunction));
 **GraphQL API with AppSync**:
 ```typescript
 const api = new appsync.GraphqlApi(this, 'Api', {
- name: 'serverless-graphql-api',
- schema: appsync.SchemaFile.fromAsset('schema.graphql'),
- authorizationConfig: {
- defaultAuthorization: {
- authorizationType: appsync.AuthorizationType.API_KEY,
- },
- },
- xrayEnabled: true,
+  name: 'serverless-graphql-api',
+  schema: appsync.SchemaFile.fromAsset('schema.graphql'),
+  authorizationConfig: {
+    defaultAuthorization: {
+      authorizationType: appsync.AuthorizationType.API_KEY,
+    },
+  },
+  xrayEnabled: true,
 });
 
 // Lambda resolver
 const dataSource = api.addLambdaDataSource('lambda-ds', resolverFunction);
 
 dataSource.createResolver('QueryGetItem', {
- typeName: 'Query',
- fieldName: 'getItem',
+  typeName: 'Query',
+  fieldName: 'getItem',
 });
 ```
 
@@ -126,8 +126,8 @@ dataSource.createResolver('QueryGetItem', {
 **Architecture**:
 ```
 S3 (raw data) → Lambda (transform) → S3 (processed)
- ↓ (catalog)
- AWS Glue → Athena (query)
+                  ↓ (catalog)
+               AWS Glue → Athena (query)
 ```
 
 **Implementation**:
@@ -137,32 +137,32 @@ const processedBucket = new s3.Bucket(this, 'ProcessedData');
 
 // Trigger Lambda on file upload
 rawBucket.addEventNotification(
- s3.EventType.OBJECT_CREATED,
- new s3n.LambdaDestination(transformFunction),
- { prefix: 'incoming/' }
+  s3.EventType.OBJECT_CREATED,
+  new s3n.LambdaDestination(transformFunction),
+  { prefix: 'incoming/' }
 );
 
 // Transform function
 export const transform = async (event: S3Event) => {
- for (const record of event.Records) {
- const key = record.s3.object.key;
+  for (const record of event.Records) {
+    const key = record.s3.object.key;
 
- // Get raw data
- const raw = await s3.getObject({
- Bucket: record.s3.bucket.name,
- Key: key,
- });
+    // Get raw data
+    const raw = await s3.getObject({
+      Bucket: record.s3.bucket.name,
+      Key: key,
+    });
 
- // Transform data
- const transformed = await transformData(raw.Body);
+    // Transform data
+    const transformed = await transformData(raw.Body);
 
- // Write to processed bucket
- await s3.putObject({
- Bucket: process.env.PROCESSED_BUCKET,
- Key: `processed/${key}`,
- Body: JSON.stringify(transformed),
- });
- }
+    // Write to processed bucket
+    await s3.putObject({
+      Bucket: process.env.PROCESSED_BUCKET,
+      Key: `processed/${key}`,
+      Body: JSON.stringify(transformed),
+    });
+  }
 };
 ```
 
@@ -175,15 +175,15 @@ export const transform = async (event: S3Event) => {
 ```typescript
 // Lambda authorizer
 const authorizer = new apigateway.TokenAuthorizer(this, 'Authorizer', {
- handler: authorizerFunction,
- identitySource: 'method.request.header.Authorization',
- resultsCacheTtl: Duration.minutes(5),
+  handler: authorizerFunction,
+  identitySource: 'method.request.header.Authorization',
+  resultsCacheTtl: Duration.minutes(5),
 });
 
 // Apply to API methods
 const resource = api.root.addResource('protected');
 resource.addMethod('GET', new apigateway.LambdaIntegration(protectedFunction), {
- authorizer,
+  authorizer,
 });
 ```
 
@@ -193,26 +193,26 @@ resource.addMethod('GET', new apigateway.LambdaIntegration(protectedFunction), {
 
 ```typescript
 const requestModel = api.addModel('RequestModel', {
- contentType: 'application/json',
- schema: {
- type: apigateway.JsonSchemaType.OBJECT,
- required: ['name', 'email'],
- properties: {
- name: { type: apigateway.JsonSchemaType.STRING, minLength: 1 },
- email: { type: apigateway.JsonSchemaType.STRING, format: 'email' },
- },
- },
+  contentType: 'application/json',
+  schema: {
+    type: apigateway.JsonSchemaType.OBJECT,
+    required: ['name', 'email'],
+    properties: {
+      name: { type: apigateway.JsonSchemaType.STRING, minLength: 1 },
+      email: { type: apigateway.JsonSchemaType.STRING, format: 'email' },
+    },
+  },
 });
 
 resource.addMethod('POST', integration, {
- requestValidator: new apigateway.RequestValidator(this, 'Validator', {
- api,
- validateRequestBody: true,
- validateRequestParameters: true,
- }),
- requestModels: {
- 'application/json': requestModel,
- },
+  requestValidator: new apigateway.RequestValidator(this, 'Validator', {
+    api,
+    validateRequestBody: true,
+    validateRequestParameters: true,
+  }),
+  requestModels: {
+    'application/json': requestModel,
+  },
 });
 ```
 
@@ -222,22 +222,22 @@ resource.addMethod('POST', integration, {
 
 ```typescript
 const api = new apigateway.RestApi(this, 'Api', {
- deployOptions: {
- cachingEnabled: true,
- cacheTtl: Duration.minutes(5),
- cacheClusterEnabled: true,
- cacheClusterSize: '0.5', // GB
- },
+  deployOptions: {
+    cachingEnabled: true,
+    cacheTtl: Duration.minutes(5),
+    cacheClusterEnabled: true,
+    cacheClusterSize: '0.5', // GB
+  },
 });
 
 // Enable caching per method
 resource.addMethod('GET', integration, {
- methodResponses: [{
- statusCode: '200',
- responseParameters: {
- 'method.response.header.Cache-Control': true,
- },
- }],
+  methodResponses: [{
+    statusCode: '200',
+    responseParameters: {
+      'method.response.header.Cache-Control': true,
+    },
+  }],
 });
 ```
 
@@ -252,23 +252,23 @@ const bucket = new s3.Bucket(this, 'DataBucket');
 
 // Process images
 bucket.addEventNotification(
- s3.EventType.OBJECT_CREATED,
- new s3n.LambdaDestination(imageProcessingFunction),
- { suffix: '.jpg' }
+  s3.EventType.OBJECT_CREATED,
+  new s3n.LambdaDestination(imageProcessingFunction),
+  { suffix: '.jpg' }
 );
 
 // Process CSV files
 bucket.addEventNotification(
- s3.EventType.OBJECT_CREATED,
- new s3n.LambdaDestination(csvProcessingFunction),
- { suffix: '.csv' }
+  s3.EventType.OBJECT_CREATED,
+  new s3n.LambdaDestination(csvProcessingFunction),
+  { suffix: '.csv' }
 );
 
 // Large file processing with Step Functions
 bucket.addEventNotification(
- s3.EventType.OBJECT_CREATED,
- new s3n.SfnDestination(processingStateMachine),
- { prefix: 'large-files/' }
+  s3.EventType.OBJECT_CREATED,
+  new s3n.SfnDestination(processingStateMachine),
+  { prefix: 'large-files/' }
 );
 ```
 
@@ -278,38 +278,38 @@ bucket.addEventNotification(
 
 ```typescript
 const table = new dynamodb.Table(this, 'Table', {
- partitionKey: { name: 'id', type: dynamodb.AttributeType.STRING },
- stream: dynamodb.StreamViewType.NEW_AND_OLD_IMAGES,
+  partitionKey: { name: 'id', type: dynamodb.AttributeType.STRING },
+  stream: dynamodb.StreamViewType.NEW_AND_OLD_IMAGES,
 });
 
 // Process stream changes
 new lambda.EventSourceMapping(this, 'StreamConsumer', {
- target: streamProcessorFunction,
- eventSourceArn: table.tableStreamArn,
- startingPosition: lambda.StartingPosition.LATEST,
- batchSize: 100,
- maxBatchingWindow: Duration.seconds(5),
- bisectBatchOnError: true,
- retryAttempts: 3,
+  target: streamProcessorFunction,
+  eventSourceArn: table.tableStreamArn,
+  startingPosition: lambda.StartingPosition.LATEST,
+  batchSize: 100,
+  maxBatchingWindow: Duration.seconds(5),
+  bisectBatchOnError: true,
+  retryAttempts: 3,
 });
 
 // Example: Sync to search index
 export const processStream = async (event: DynamoDBStreamEvent) => {
- for (const record of event.Records) {
- if (record.eventName === 'INSERT' || record.eventName === 'MODIFY') {
- const newImage = record.dynamodb?.NewImage;
- await elasticSearch.index({
- index: 'items',
- id: newImage?.id.S,
- body: unmarshall(newImage),
- });
- } else if (record.eventName === 'REMOVE') {
- await elasticSearch.delete({
- index: 'items',
- id: record.dynamodb?.Keys?.id.S,
- });
- }
- }
+  for (const record of event.Records) {
+    if (record.eventName === 'INSERT' || record.eventName === 'MODIFY') {
+      const newImage = record.dynamodb?.NewImage;
+      await elasticSearch.index({
+        index: 'items',
+        id: newImage?.id.S,
+        body: unmarshall(newImage),
+      });
+    } else if (record.eventName === 'REMOVE') {
+      await elasticSearch.delete({
+        index: 'items',
+        id: record.dynamodb?.Keys?.id.S,
+      });
+    }
+  }
 };
 ```
 
@@ -319,28 +319,28 @@ export const processStream = async (event: DynamoDBStreamEvent) => {
 
 ```typescript
 const stream = new kinesis.Stream(this, 'EventStream', {
- shardCount: 2,
- streamMode: kinesis.StreamMode.PROVISIONED,
+  shardCount: 2,
+  streamMode: kinesis.StreamMode.PROVISIONED,
 });
 
 // Fan-out with multiple consumers
 const consumer1 = new lambda.EventSourceMapping(this, 'Analytics', {
- target: analyticsFunction,
- eventSourceArn: stream.streamArn,
- startingPosition: lambda.StartingPosition.LATEST,
- batchSize: 100,
- parallelizationFactor: 10, // Process 10 batches per shard in parallel
+  target: analyticsFunction,
+  eventSourceArn: stream.streamArn,
+  startingPosition: lambda.StartingPosition.LATEST,
+  batchSize: 100,
+  parallelizationFactor: 10, // Process 10 batches per shard in parallel
 });
 
 const consumer2 = new lambda.EventSourceMapping(this, 'Alerting', {
- target: alertingFunction,
- eventSourceArn: stream.streamArn,
- startingPosition: lambda.StartingPosition.LATEST,
- filters: [
- lambda.FilterCriteria.filter({
- eventName: lambda.FilterRule.isEqual('CRITICAL_EVENT'),
- }),
- ],
+  target: alertingFunction,
+  eventSourceArn: stream.streamArn,
+  startingPosition: lambda.StartingPosition.LATEST,
+  filters: [
+    lambda.FilterCriteria.filter({
+      eventName: lambda.FilterRule.isEqual('CRITICAL_EVENT'),
+    }),
+  ],
 });
 ```
 
@@ -355,32 +355,32 @@ const eventBus = new events.EventBus(this, 'AppBus');
 
 // Service A publishes events
 const serviceA = new NodejsFunction(this, 'ServiceA', {
- entry: 'src/services/a/handler.ts',
- environment: {
- EVENT_BUS: eventBus.eventBusName,
- },
+  entry: 'src/services/a/handler.ts',
+  environment: {
+    EVENT_BUS: eventBus.eventBusName,
+  },
 });
 
 eventBus.grantPutEventsTo(serviceA);
 
 // Service B subscribes to events
 new events.Rule(this, 'ServiceBRule', {
- eventBus,
- eventPattern: {
- source: ['service.a'],
- detailType: ['EntityCreated'],
- },
- targets: [new targets.LambdaFunction(serviceBFunction)],
+  eventBus,
+  eventPattern: {
+    source: ['service.a'],
+    detailType: ['EntityCreated'],
+  },
+  targets: [new targets.LambdaFunction(serviceBFunction)],
 });
 
 // Service C subscribes to same events
 new events.Rule(this, 'ServiceCRule', {
- eventBus,
- eventPattern: {
- source: ['service.a'],
- detailType: ['EntityCreated'],
- },
- targets: [new targets.LambdaFunction(serviceCFunction)],
+  eventBus,
+  eventPattern: {
+    source: ['service.a'],
+    detailType: ['EntityCreated'],
+  },
+  targets: [new targets.LambdaFunction(serviceCFunction)],
 });
 ```
 
@@ -395,25 +395,25 @@ const api = new apigateway.RestApi(this, 'Api');
 
 // Direct SQS integration (no Lambda)
 const sqsIntegration = new apigateway.AwsIntegration({
- service: 'sqs',
- path: `${process.env.AWS_ACCOUNT_ID}/${queue.queueName}`,
- integrationHttpMethod: 'POST',
- options: {
- credentialsRole: sqsRole,
- requestParameters: {
- 'integration.request.header.Content-Type': "'application/x-www-form-urlencoded'",
- },
- requestTemplates: {
- 'application/json': 'Action=SendMessage&MessageBody=$input.body',
- },
- integrationResponses: [{
- statusCode: '200',
- }],
- },
+  service: 'sqs',
+  path: `${process.env.AWS_ACCOUNT_ID}/${queue.queueName}`,
+  integrationHttpMethod: 'POST',
+  options: {
+    credentialsRole: sqsRole,
+    requestParameters: {
+      'integration.request.header.Content-Type': "'application/x-www-form-urlencoded'",
+    },
+    requestTemplates: {
+      'application/json': 'Action=SendMessage&MessageBody=$input.body',
+    },
+    integrationResponses: [{
+      statusCode: '200',
+    }],
+  },
 });
 
 api.root.addMethod('POST', sqsIntegration, {
- methodResponses: [{ statusCode: '200' }],
+  methodResponses: [{ statusCode: '200' }],
 });
 ```
 
@@ -424,16 +424,16 @@ api.root.addMethod('POST', sqsIntegration, {
 ```typescript
 // State machine for order processing
 const orderStateMachine = new stepfunctions.StateMachine(this, 'OrderFlow', {
- definition: /* ... */,
+  definition: /* ... */,
 });
 
 // EventBridge triggers state machine
 new events.Rule(this, 'OrderPlacedRule', {
- eventPattern: {
- source: ['orders'],
- detailType: ['OrderPlaced'],
- },
- targets: [new targets.SfnStateMachine(orderStateMachine)],
+  eventPattern: {
+    source: ['orders'],
+    detailType: ['OrderPlaced'],
+  },
+  targets: [new targets.SfnStateMachine(orderStateMachine)],
 });
 ```
 
@@ -445,20 +445,20 @@ new events.Rule(this, 'OrderPlacedRule', {
 
 ```typescript
 const definition = new tasks.LambdaInvoke(this, 'Step1', {
- lambdaFunction: step1Function,
- outputPath: '$.Payload',
+  lambdaFunction: step1Function,
+  outputPath: '$.Payload',
 })
- .next(new tasks.LambdaInvoke(this, 'Step2', {
- lambdaFunction: step2Function,
- outputPath: '$.Payload',
- }))
- .next(new tasks.LambdaInvoke(this, 'Step3', {
- lambdaFunction: step3Function,
- outputPath: '$.Payload',
- }));
+  .next(new tasks.LambdaInvoke(this, 'Step2', {
+    lambdaFunction: step2Function,
+    outputPath: '$.Payload',
+  }))
+  .next(new tasks.LambdaInvoke(this, 'Step3', {
+    lambdaFunction: step3Function,
+    outputPath: '$.Payload',
+  }));
 
 new stepfunctions.StateMachine(this, 'Sequential', {
- definition,
+  definition,
 });
 ```
 
@@ -470,19 +470,19 @@ new stepfunctions.StateMachine(this, 'Sequential', {
 const parallel = new stepfunctions.Parallel(this, 'ParallelProcessing');
 
 parallel.branch(new tasks.LambdaInvoke(this, 'ProcessA', {
- lambdaFunction: functionA,
+  lambdaFunction: functionA,
 }));
 
 parallel.branch(new tasks.LambdaInvoke(this, 'ProcessB', {
- lambdaFunction: functionB,
+  lambdaFunction: functionB,
 }));
 
 parallel.branch(new tasks.LambdaInvoke(this, 'ProcessC', {
- lambdaFunction: functionC,
+  lambdaFunction: functionC,
 }));
 
 const definition = parallel.next(new tasks.LambdaInvoke(this, 'Aggregate', {
- lambdaFunction: aggregateFunction,
+  lambdaFunction: aggregateFunction,
 }));
 
 new stepfunctions.StateMachine(this, 'Parallel', { definition });
@@ -494,16 +494,16 @@ new stepfunctions.StateMachine(this, 'Parallel', { definition });
 
 ```typescript
 const mapState = new stepfunctions.Map(this, 'ProcessItems', {
- maxConcurrency: 10,
- itemsPath: '$.items',
+  maxConcurrency: 10,
+  itemsPath: '$.items',
 });
 
 mapState.iterator(new tasks.LambdaInvoke(this, 'ProcessItem', {
- lambdaFunction: processItemFunction,
+  lambdaFunction: processItemFunction,
 }));
 
 const definition = mapState.next(new tasks.LambdaInvoke(this, 'Finalize', {
- lambdaFunction: finalizeFunction,
+  lambdaFunction: finalizeFunction,
 }));
 ```
 
@@ -515,13 +515,13 @@ const definition = mapState.next(new tasks.LambdaInvoke(this, 'Finalize', {
 const choice = new stepfunctions.Choice(this, 'OrderType');
 
 choice.when(
- stepfunctions.Condition.stringEquals('$.orderType', 'STANDARD'),
- standardProcessing
+  stepfunctions.Condition.stringEquals('$.orderType', 'STANDARD'),
+  standardProcessing
 );
 
 choice.when(
- stepfunctions.Condition.stringEquals('$.orderType', 'EXPRESS'),
- expressProcessing
+  stepfunctions.Condition.stringEquals('$.orderType', 'EXPRESS'),
+  expressProcessing
 );
 
 choice.otherwise(defaultProcessing);
@@ -534,22 +534,22 @@ choice.otherwise(defaultProcessing);
 ```typescript
 // Fixed delay
 const wait = new stepfunctions.Wait(this, 'Wait30Seconds', {
- time: stepfunctions.WaitTime.duration(Duration.seconds(30)),
+  time: stepfunctions.WaitTime.duration(Duration.seconds(30)),
 });
 
 // Wait until timestamp
 const waitUntil = new stepfunctions.Wait(this, 'WaitUntil', {
- time: stepfunctions.WaitTime.timestampPath('$.expiryTime'),
+  time: stepfunctions.WaitTime.timestampPath('$.expiryTime'),
 });
 
 // Wait for callback (.waitForTaskToken)
 const waitForCallback = new tasks.LambdaInvoke(this, 'WaitForApproval', {
- lambdaFunction: approvalFunction,
- integrationPattern: stepfunctions.IntegrationPattern.WAIT_FOR_TASK_TOKEN,
- payload: stepfunctions.TaskInput.fromObject({
- token: stepfunctions.JsonPath.taskToken,
- data: stepfunctions.JsonPath.entirePayload,
- }),
+  lambdaFunction: approvalFunction,
+  integrationPattern: stepfunctions.IntegrationPattern.WAIT_FOR_TASK_TOKEN,
+  payload: stepfunctions.TaskInput.fromObject({
+    token: stepfunctions.JsonPath.taskToken,
+    data: stepfunctions.JsonPath.entirePayload,
+  }),
 });
 ```
 
@@ -562,14 +562,14 @@ const waitForCallback = new tasks.LambdaInvoke(this, 'WaitForApproval', {
 ```typescript
 // BAD
 export const handler = async (event: any) => {
- switch (event.operation) {
- case 'createUser': return createUser(event);
- case 'getUser': return getUser(event);
- case 'updateUser': return updateUser(event);
- case 'deleteUser': return deleteUser(event);
- case 'createOrder': return createOrder(event);
- // ... 20 more operations
- }
+  switch (event.operation) {
+    case 'createUser': return createUser(event);
+    case 'getUser': return getUser(event);
+    case 'updateUser': return updateUser(event);
+    case 'deleteUser': return deleteUser(event);
+    case 'createOrder': return createOrder(event);
+    // ... 20 more operations
+  }
 };
 ```
 
@@ -589,15 +589,15 @@ export const updateUser = async (event: any) => { /* ... */ };
 ```typescript
 // BAD
 export const handler = async (event: any) => {
- await processItem(event);
+  await processItem(event);
 
- if (hasMoreItems()) {
- await lambda.invoke({
- FunctionName: process.env.AWS_LAMBDA_FUNCTION_NAME,
- InvocationType: 'Event',
- Payload: JSON.stringify({ /* next batch */ }),
- });
- }
+  if (hasMoreItems()) {
+    await lambda.invoke({
+      FunctionName: process.env.AWS_LAMBDA_FUNCTION_NAME,
+      InvocationType: 'Event',
+      Payload: JSON.stringify({ /* next batch */ }),
+    });
+  }
 };
 ```
 
@@ -606,10 +606,10 @@ export const handler = async (event: any) => {
 ```typescript
 // GOOD - Use SQS for iteration
 export const handler = async (event: SQSEvent) => {
- for (const record of event.Records) {
- await processItem(record);
- }
- // SQS handles iteration automatically
+  for (const record of event.Records) {
+    await processItem(record);
+  }
+  // SQS handles iteration automatically
 };
 ```
 
@@ -620,13 +620,13 @@ export const handler = async (event: SQSEvent) => {
 ```typescript
 // BAD
 export const handler1 = async (event: any) => {
- const result = await processStep1(event);
+  const result = await processStep1(event);
 
- // Directly invoking next Lambda
- await lambda.invoke({
- FunctionName: 'handler2',
- Payload: JSON.stringify(result),
- });
+  // Directly invoking next Lambda
+  await lambda.invoke({
+    FunctionName: 'handler2',
+    Payload: JSON.stringify(result),
+  });
 };
 ```
 
@@ -635,15 +635,15 @@ export const handler1 = async (event: any) => {
 ```typescript
 // GOOD - Publish to EventBridge
 export const handler1 = async (event: any) => {
- const result = await processStep1(event);
+  const result = await processStep1(event);
 
- await eventBridge.putEvents({
- Entries: [{
- Source: 'service.step1',
- DetailType: 'Step1Completed',
- Detail: JSON.stringify(result),
- }],
- });
+  await eventBridge.putEvents({
+    Entries: [{
+      Source: 'service.step1',
+      DetailType: 'Step1Completed',
+      Detail: JSON.stringify(result),
+    }],
+  });
 };
 ```
 
@@ -654,14 +654,14 @@ export const handler1 = async (event: any) => {
 ```typescript
 // BAD - Blocking on slow operation
 export const handler = async (event: any) => {
- await startBatchJob(); // Returns immediately
+  await startBatchJob(); // Returns immediately
 
- // Wait for job to complete (wastes Lambda time)
- while (true) {
- const status = await checkJobStatus();
- if (status === 'COMPLETE') break;
- await sleep(1000);
- }
+  // Wait for job to complete (wastes Lambda time)
+  while (true) {
+    const status = await checkJobStatus();
+    if (status === 'COMPLETE') break;
+    await sleep(1000);
+  }
 };
 ```
 
@@ -670,11 +670,11 @@ export const handler = async (event: any) => {
 ```typescript
 // GOOD - Step Functions waits, not Lambda
 const waitForJob = new tasks.LambdaInvoke(this, 'StartJob', {
- lambdaFunction: startJobFunction,
- integrationPattern: stepfunctions.IntegrationPattern.WAIT_FOR_TASK_TOKEN,
- payload: stepfunctions.TaskInput.fromObject({
- token: stepfunctions.JsonPath.taskToken,
- }),
+  lambdaFunction: startJobFunction,
+  integrationPattern: stepfunctions.IntegrationPattern.WAIT_FOR_TASK_TOKEN,
+  payload: stepfunctions.TaskInput.fromObject({
+    token: stepfunctions.JsonPath.taskToken,
+  }),
 });
 ```
 
@@ -689,12 +689,12 @@ const waitForJob = new tasks.LambdaInvoke(this, 'StartJob', {
 
 ```typescript
 new NodejsFunction(this, 'Function', {
- entry: 'src/handler.ts',
- bundling: {
- minify: true,
- externalModules: ['@aws-sdk/*'], // Provided by runtime
- nodeModules: ['only-needed-deps'], // Selective bundling
- },
+  entry: 'src/handler.ts',
+  bundling: {
+    minify: true,
+    externalModules: ['@aws-sdk/*'], // Provided by runtime
+    nodeModules: ['only-needed-deps'], // Selective bundling
+  },
 });
 ```
 
@@ -712,16 +712,16 @@ new NodejsFunction(this, 'Function', {
 ```typescript
 // For latency-sensitive APIs
 const apiFunction = new NodejsFunction(this, 'ApiFunction', {
- entry: 'src/api.ts',
- memorySize: 1769, // 1 vCPU for faster initialization
+  entry: 'src/api.ts',
+  memorySize: 1769, // 1 vCPU for faster initialization
 });
 
 const alias = apiFunction.currentVersion.addAlias('live');
 alias.addAutoScaling({
- minCapacity: 2,
- maxCapacity: 10,
+  minCapacity: 2,
+  maxCapacity: 10,
 }).scaleOnUtilization({
- utilizationTarget: 0.7,
+  utilizationTarget: 0.7,
 });
 ```
 
@@ -732,20 +732,20 @@ alias.addAutoScaling({
 ```typescript
 // CPU-bound workload
 new NodejsFunction(this, 'ComputeFunction', {
- memorySize: 1769, // 1 vCPU
- timeout: Duration.seconds(30),
+  memorySize: 1769, // 1 vCPU
+  timeout: Duration.seconds(30),
 });
 
 // I/O-bound workload
 new NodejsFunction(this, 'IOFunction', {
- memorySize: 512, // Less CPU needed
- timeout: Duration.seconds(60),
+  memorySize: 512, // Less CPU needed
+  timeout: Duration.seconds(60),
 });
 
 // Simple operations
 new NodejsFunction(this, 'SimpleFunction', {
- memorySize: 256,
- timeout: Duration.seconds(10),
+  memorySize: 256,
+  timeout: Duration.seconds(10),
 });
 ```
 
@@ -754,12 +754,12 @@ new NodejsFunction(this, 'SimpleFunction', {
 ```typescript
 // Protect downstream services
 new NodejsFunction(this, 'Function', {
- reservedConcurrentExecutions: 10, // Max 10 concurrent
+  reservedConcurrentExecutions: 10, // Max 10 concurrent
 });
 
 // Unreserved concurrency (shared pool)
 new NodejsFunction(this, 'Function', {
- // Uses unreserved account concurrency
+  // Uses unreserved account concurrency
 });
 ```
 
@@ -772,24 +772,24 @@ Test business logic separate from AWS services:
 ```typescript
 // handler.ts
 export const processOrder = async (order: Order): Promise<Result> => {
- // Business logic (easily testable)
- const validated = validateOrder(order);
- const priced = calculatePrice(validated);
- return transformResult(priced);
+  // Business logic (easily testable)
+  const validated = validateOrder(order);
+  const priced = calculatePrice(validated);
+  return transformResult(priced);
 };
 
 export const handler = async (event: any): Promise<any> => {
- const order = parseEvent(event);
- const result = await processOrder(order);
- await saveToDatabase(result);
- return formatResponse(result);
+  const order = parseEvent(event);
+  const result = await processOrder(order);
+  await saveToDatabase(result);
+  return formatResponse(result);
 };
 
 // handler.test.ts
 test('processOrder calculates price correctly', () => {
- const order = { items: [{ price: 10, quantity: 2 }] };
- const result = processOrder(order);
- expect(result.total).toBe(20);
+  const order = { items: [{ price: 10, quantity: 2 }] };
+  const result = processOrder(order);
+  expect(result.total).toBe(20);
 });
 ```
 
@@ -802,15 +802,15 @@ Test with actual AWS services:
 import { LambdaClient, InvokeCommand } from '@aws-sdk/client-lambda';
 
 test('Lambda processes order correctly', async () => {
- const lambda = new LambdaClient({});
+  const lambda = new LambdaClient({});
 
- const response = await lambda.send(new InvokeCommand({
- FunctionName: process.env.FUNCTION_NAME,
- Payload: JSON.stringify({ orderId: '123' }),
- }));
+  const response = await lambda.send(new InvokeCommand({
+    FunctionName: process.env.FUNCTION_NAME,
+    Payload: JSON.stringify({ orderId: '123' }),
+  }));
 
- const result = JSON.parse(Buffer.from(response.Payload!).toString());
- expect(result.statusCode).toBe(200);
+  const result = JSON.parse(Buffer.from(response.Payload!).toString());
+  expect(result.statusCode).toBe(200);
 });
 ```
 

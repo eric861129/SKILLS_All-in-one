@@ -9,52 +9,52 @@ Amazon Bedrock AgentCore Code Interpreter enables agents to securely execute cod
 ## Core Capabilities
 
 ### Secure Execution
-* **Isolated Sandboxes**: Each code execution runs in a completely isolated environment
-* **No Cross-Contamination**: Sessions are independent with no shared state
-* **Enterprise Security**: Meets enterprise security and compliance requirements
-* **Resource Controls**: Configurable limits and timeout controls for execution
+- **Isolated Sandboxes**: Each code execution runs in a completely isolated environment
+- **No Cross-Contamination**: Sessions are independent with no shared state
+- **Enterprise Security**: Meets enterprise security and compliance requirements
+- **Resource Controls**: Configurable limits and timeout controls for execution
 
 ### Framework Integration
-* **Popular Frameworks**: Seamless integration with LangGraph, CrewAI, Strands, and other agent frameworks
-* **Multi-Language Support**: Execute code in Python, JavaScript, and other languages
-* **Advanced Configuration**: Extensive customization options for runtime environments
-* **Custom Runtimes**: Support for specialized runtime configurations
+- **Popular Frameworks**: Seamless integration with LangGraph, CrewAI, Strands, and other agent frameworks
+- **Multi-Language Support**: Execute code in Python, JavaScript, and other languages
+- **Advanced Configuration**: Extensive customization options for runtime environments
+- **Custom Runtimes**: Support for specialized runtime configurations
 
 ### Data Processing
-* **File Operations**: Upload and download files for processing
-* **Multi-Modal Data**: Handle structured and unstructured data
-* **Result Formatting**: Format and visualize execution results
-* **Error Handling**: Comprehensive error reporting and debugging support
+- **File Operations**: Upload and download files for processing
+- **Multi-Modal Data**: Handle structured and unstructured data
+- **Result Formatting**: Format and visualize execution results
+- **Error Handling**: Comprehensive error reporting and debugging support
 
 ## Use Cases
 
 ### Data Analysis and Transformation
 Enable agents to:
-* Process and analyze datasets
-* Transform data formats
-* Perform statistical calculations
-* Generate data insights
+- Process and analyze datasets
+- Transform data formats
+- Perform statistical calculations
+- Generate data insights
 
 ### Complex Computational Workflows
 Support scenarios like:
-* Running scientific computations
-* Executing business logic calculations
-* Processing batch operations
-* Performing iterative algorithms
+- Running scientific computations
+- Executing business logic calculations
+- Processing batch operations
+- Performing iterative algorithms
 
 ### Visualization and Reporting
 Allow agents to:
-* Generate charts and graphs
-* Create formatted reports
-* Build visualizations from data
-* Export results in various formats
+- Generate charts and graphs
+- Create formatted reports
+- Build visualizations from data
+- Export results in various formats
 
 ### Dynamic Code Testing
 Enable agents to:
-* Test code snippets dynamically
-* Validate logic and algorithms
-* Debug code execution issues
-* Prototype solutions quickly
+- Test code snippets dynamically
+- Validate logic and algorithms
+- Debug code execution issues
+- Prototype solutions quickly
 
 ## Architecture
 
@@ -64,25 +64,25 @@ Enable agents to:
 Agent Request
     ↓
 ┌─────────────────────────────────────────┐
-│ Code Interpreter Service                │
-│ - Parse code execution request          │
-│ - Validate code and parameters          │
-│ - Allocate isolated sandbox             │
+│  Code Interpreter Service               │
+│  - Parse code execution request         │
+│  - Validate code and parameters         │
+│  - Allocate isolated sandbox            │
 └─────────────────────────────────────────┘
     ↓
 ┌─────────────────────────────────────────┐
-│ Sandbox Environment                     │
-│ - Execute code in isolation             │
-│ - Process data and files                │
-│ - Generate outputs                      │
-│ - Capture errors and logs               │
+│  Sandbox Environment                    │
+│  - Execute code in isolation            │
+│  - Process data and files               │
+│  - Generate outputs                     │
+│  - Capture errors and logs              │
 └─────────────────────────────────────────┘
     ↓
 ┌─────────────────────────────────────────┐
-│ Result Processing                       │
-│ - Format execution results              │
-│ - Package outputs and artifacts         │
-│ - Return to agent                       │
+│  Result Processing                      │
+│  - Format execution results             │
+│  - Package outputs and artifacts        │
+│  - Return to agent                      │
 └─────────────────────────────────────────┘
 ```
 
@@ -126,28 +126,28 @@ aws bedrock-agentcore-control update-code-interpreter-runtime \
 ## Best Practices
 
 ### Code Security
-* Validate all code inputs before execution
-* Implement input sanitization for user-provided code
-* Use resource limits to prevent denial of service
-* Monitor code execution patterns for anomalies
+- Validate all code inputs before execution
+- Implement input sanitization for user-provided code
+- Use resource limits to prevent denial of service
+- Monitor code execution patterns for anomalies
 
 ### Performance Optimization
-* Cache common dependencies in runtime images
-* Use appropriate timeout values for expected workload
-* Optimize code for execution within timeout limits
-* Batch similar operations when possible
+- Cache common dependencies in runtime images
+- Use appropriate timeout values for expected workload
+- Optimize code for execution within timeout limits
+- Batch similar operations when possible
 
 ### Error Handling
-* Implement comprehensive error catching in code
-* Provide clear error messages for debugging
-* Log execution details for troubleshooting
-* Use structured output formats for results
+- Implement comprehensive error catching in code
+- Provide clear error messages for debugging
+- Log execution details for troubleshooting
+- Use structured output formats for results
 
 ### Data Management
-* Minimize data transfer in and out of sandboxes
-* Use streaming for large data processing
-* Clean up temporary files after execution
-* Implement data validation before processing
+- Minimize data transfer in and out of sandboxes
+- Use streaming for large data processing
+- Clean up temporary files after execution
+- Implement data validation before processing
 
 ## Integration Patterns
 
@@ -181,29 +181,29 @@ Code Interpreter ←→ Observability Service
 ### Common Issues
 
 **Execution Timeout**
-* Symptom: Code execution exceeds timeout limit
-* Solution: Increase timeout or optimize code performance
+- Symptom: Code execution exceeds timeout limit
+- Solution: Increase timeout or optimize code performance
 
 **Memory Limit Exceeded**
-* Symptom: Code runs out of memory
-* Solution: Increase memory limit or process data in chunks
+- Symptom: Code runs out of memory
+- Solution: Increase memory limit or process data in chunks
 
 **Package Import Errors**
-* Symptom: Required packages not found
-* Solution: Configure custom runtime with needed packages
+- Symptom: Required packages not found
+- Solution: Configure custom runtime with needed packages
 
 **Permission Denied**
-* Symptom: Cannot access required resources
-* Solution: Configure IAM permissions for code interpreter
+- Symptom: Cannot access required resources
+- Solution: Configure IAM permissions for code interpreter
 
 ## Monitoring
 
 ### Key Metrics
-* **Execution Count**: Number of code executions
-* **Success Rate**: Percentage of successful executions
-* **Average Duration**: Mean execution time
-* **Error Rate**: Percentage of failed executions
-* **Resource Utilization**: CPU and memory usage
+- **Execution Count**: Number of code executions
+- **Success Rate**: Percentage of successful executions
+- **Average Duration**: Mean execution time
+- **Error Rate**: Percentage of failed executions
+- **Resource Utilization**: CPU and memory usage
 
 ### CloudWatch Integration
 ```bash
@@ -220,14 +220,13 @@ aws cloudwatch get-metric-statistics \
 
 ## Additional Resources
 
-* **AWS Documentation**: [Bedrock AgentCore Code Interpreter](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/code-interpreter.html)
-* **Security Best Practices**: [Secure Code Execution](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/code-interpreter-security.html)
-* **API Reference**: [Code Interpreter API](https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIReference/)
+- **AWS Documentation**: [Bedrock AgentCore Code Interpreter](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/code-interpreter.html)
+- **Security Best Practices**: [Secure Code Execution](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/code-interpreter-security.html)
+- **API Reference**: [Code Interpreter API](https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIReference/)
 
 ---
 
 **Related Services**:
-* [Runtime Service](../runtime/README.md) - Agent execution environment
-* [Memory Service](../memory/README.md) - State management
-* [Observability Service](../observability/README.md) - Monitoring and tracing
-```
+- [Runtime Service](../runtime/README.md) - Agent execution environment
+- [Memory Service](../memory/README.md) - State management
+- [Observability Service](../observability/README.md) - Monitoring and tracing

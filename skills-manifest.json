@@ -88,8 +88,8 @@
     ],
     "fileMeta": {
       "SKILL.md": {
-        "sizeBytes": 4056,
-        "lineCount": 89,
+        "sizeBytes": 5059,
+        "lineCount": 125,
         "ext": "md",
         "tabKey": "root"
       },
@@ -125,8 +125,8 @@
       }
     },
     "tokenEstimate": {
-      "heuristic": 17146,
-      "cl100k": 17457
+      "heuristic": 17396,
+      "cl100k": 17735
     },
     "dependencies": {
       "skills": [
@@ -151,8 +151,8 @@
     ],
     "fileMeta": {
       "SKILL.md": {
-        "sizeBytes": 3695,
-        "lineCount": 89,
+        "sizeBytes": 4198,
+        "lineCount": 99,
         "ext": "md",
         "tabKey": "root"
       },
@@ -188,8 +188,8 @@
       }
     },
     "tokenEstimate": {
-      "heuristic": 4885,
-      "cl100k": 4367
+      "heuristic": 5010,
+      "cl100k": 4471
     },
     "dependencies": {
       "skills": [
@@ -1397,8 +1397,8 @@
     ],
     "fileMeta": {
       "SKILL.md": {
-        "sizeBytes": 3658,
-        "lineCount": 86,
+        "sizeBytes": 5921,
+        "lineCount": 148,
         "ext": "md",
         "tabKey": "root"
       },
@@ -1434,8 +1434,8 @@
       }
     },
     "tokenEstimate": {
-      "heuristic": 13371,
-      "cl100k": 13463
+      "heuristic": 13933,
+      "cl100k": 14065
     },
     "dependencies": {
       "skills": [
@@ -1684,8 +1684,8 @@
     ],
     "fileMeta": {
       "SKILL.md": {
-        "sizeBytes": 3458,
-        "lineCount": 85,
+        "sizeBytes": 6534,
+        "lineCount": 163,
         "ext": "md",
         "tabKey": "root"
       },
@@ -1721,8 +1721,8 @@
       }
     },
     "tokenEstimate": {
-      "heuristic": 20659,
-      "cl100k": 19987
+      "heuristic": 21421,
+      "cl100k": 20788
     },
     "dependencies": {
       "skills": [
@@ -1828,6 +1828,7 @@
       "references/advanced-gis.md",
       "references/big-data.md",
       "references/code-examples.md",
+      "references/coordinate-systems.md",
       "references/core-libraries.md",
       "references/data-sources.md",
       "references/gis-software.md",
@@ -1836,7 +1837,8 @@
       "references/programming-languages.md",
       "references/remote-sensing.md",
       "references/scientific-domains.md",
-      "references/specialized-topics.md"
+      "references/specialized-topics.md",
+      "references/troubleshooting.md"
     ],
     "fileMeta": {
       "README.md": {
@@ -1846,8 +1848,8 @@
         "tabKey": "root"
       },
       "SKILL.md": {
-        "sizeBytes": 20705,
-        "lineCount": 691,
+        "sizeBytes": 11745,
+        "lineCount": 366,
         "ext": "md",
         "tabKey": "root"
       },
@@ -1866,6 +1868,12 @@
       "references/code-examples.md": {
         "sizeBytes": 12492,
         "lineCount": 532,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "references/coordinate-systems.md": {
+        "sizeBytes": 8893,
+        "lineCount": 365,
         "ext": "md",
         "tabKey": "references"
       },
@@ -1900,8 +1908,8 @@
         "tabKey": "references"
       },
       "references/programming-languages.md": {
-        "sizeBytes": 9302,
-        "lineCount": 394,
+        "sizeBytes": 11024,
+        "lineCount": 457,
         "ext": "md",
         "tabKey": "references"
       },
@@ -1922,11 +1930,17 @@
         "lineCount": 429,
         "ext": "md",
         "tabKey": "references"
+      },
+      "references/troubleshooting.md": {
+        "sizeBytes": 11219,
+        "lineCount": 440,
+        "ext": "md",
+        "tabKey": "references"
       }
     },
     "tokenEstimate": {
-      "heuristic": 36647,
-      "cl100k": 39701
+      "heuristic": 39858,
+      "cl100k": 44123
     },
     "dependencies": {
       "skills": [],
@@ -3000,8 +3014,8 @@
     ],
     "fileMeta": {
       "SKILL.md": {
-        "sizeBytes": 4893,
-        "lineCount": 95,
+        "sizeBytes": 7160,
+        "lineCount": 160,
         "ext": "md",
         "tabKey": "root"
       },
@@ -3037,8 +3051,8 @@
       }
     },
     "tokenEstimate": {
-      "heuristic": 30276,
-      "cl100k": 26569
+      "heuristic": 30839,
+      "cl100k": 27150
     },
     "dependencies": {
       "skills": [
@@ -3283,8 +3297,8 @@
     ],
     "fileMeta": {
       "SKILL.md": {
-        "sizeBytes": 3938,
-        "lineCount": 86,
+        "sizeBytes": 5914,
+        "lineCount": 179,
         "ext": "md",
         "tabKey": "root"
       },
@@ -3320,8 +3334,8 @@
       }
     },
     "tokenEstimate": {
-      "heuristic": 17093,
-      "cl100k": 18636
+      "heuristic": 17581,
+      "cl100k": 19219
     },
     "dependencies": {
       "skills": [
@@ -3516,8 +3530,8 @@
     ],
     "fileMeta": {
       "SKILL.md": {
-        "sizeBytes": 3672,
-        "lineCount": 88,
+        "sizeBytes": 5725,
+        "lineCount": 153,
         "ext": "md",
         "tabKey": "root"
       },
@@ -3553,8 +3567,8 @@
       }
     },
     "tokenEstimate": {
-      "heuristic": 12617,
-      "cl100k": 13268
+      "heuristic": 13126,
+      "cl100k": 13845
     },
     "dependencies": {
       "skills": [
@@ -3579,8 +3593,8 @@
     ],
     "fileMeta": {
       "SKILL.md": {
-        "sizeBytes": 4450,
-        "lineCount": 89,
+        "sizeBytes": 7651,
+        "lineCount": 195,
         "ext": "md",
         "tabKey": "root"
       },
@@ -3616,8 +3630,8 @@
       }
     },
     "tokenEstimate": {
-      "heuristic": 26292,
-      "cl100k": 24457
+      "heuristic": 27088,
+      "cl100k": 25272
     },
     "dependencies": {
       "skills": [
@@ -3688,8 +3702,8 @@
     ],
     "fileMeta": {
       "SKILL.md": {
-        "sizeBytes": 4613,
-        "lineCount": 88,
+        "sizeBytes": 6447,
+        "lineCount": 149,
         "ext": "md",
         "tabKey": "root"
       },
@@ -3725,8 +3739,8 @@
       }
     },
     "tokenEstimate": {
-      "heuristic": 21476,
-      "cl100k": 21618
+      "heuristic": 21934,
+      "cl100k": 22136
     },
     "dependencies": {
       "skills": [
@@ -3751,8 +3765,8 @@
     ],
     "fileMeta": {
       "SKILL.md": {
-        "sizeBytes": 3822,
-        "lineCount": 87,
+        "sizeBytes": 5139,
+        "lineCount": 130,
         "ext": "md",
         "tabKey": "root"
       },
@@ -3788,8 +3802,8 @@
       }
     },
     "tokenEstimate": {
-      "heuristic": 13860,
-      "cl100k": 13660
+      "heuristic": 14186,
+      "cl100k": 14026
     },
     "dependencies": {
       "skills": [
@@ -3961,20 +3975,20 @@
     ],
     "fileMeta": {
       "SKILL.md": {
-        "sizeBytes": 24827,
-        "lineCount": 506,
+        "sizeBytes": 27602,
+        "lineCount": 528,
         "ext": "md",
         "tabKey": "root"
       },
       "metadata.json": {
-        "sizeBytes": 921,
+        "sizeBytes": 985,
         "lineCount": 14,
         "ext": "json",
         "tabKey": "root"
       },
       "references/api-endpoints.md": {
-        "sizeBytes": 21135,
-        "lineCount": 957,
+        "sizeBytes": 28066,
+        "lineCount": 1265,
         "ext": "md",
         "tabKey": "references"
       },
@@ -3985,14 +3999,14 @@
         "tabKey": "references"
       },
       "references/mcp-setup.md": {
-        "sizeBytes": 6841,
+        "sizeBytes": 6877,
         "lineCount": 229,
         "ext": "md",
         "tabKey": "references"
       },
       "references/mcp-tools.md": {
-        "sizeBytes": 43656,
-        "lineCount": 895,
+        "sizeBytes": 44263,
+        "lineCount": 906,
         "ext": "md",
         "tabKey": "references"
       },
@@ -4003,8 +4017,8 @@
         "tabKey": "references"
       },
       "references/types.md": {
-        "sizeBytes": 23959,
-        "lineCount": 773,
+        "sizeBytes": 28309,
+        "lineCount": 875,
         "ext": "md",
         "tabKey": "references"
       },
@@ -4016,8 +4030,8 @@
       }
     },
     "tokenEstimate": {
-      "heuristic": 33199,
-      "cl100k": 34576
+      "heuristic": 36833,
+      "cl100k": 38293
     },
     "dependencies": {
       "skills": [],
@@ -4093,8 +4107,8 @@
     ],
     "fileMeta": {
       "SKILL.md": {
-        "sizeBytes": 3692,
-        "lineCount": 88,
+        "sizeBytes": 5898,
+        "lineCount": 153,
         "ext": "md",
         "tabKey": "root"
       },
@@ -4130,8 +4144,8 @@
       }
     },
     "tokenEstimate": {
-      "heuristic": 12022,
-      "cl100k": 11158
+      "heuristic": 12573,
+      "cl100k": 11675
     },
     "dependencies": {
       "skills": [
@@ -4155,8 +4169,8 @@
     ],
     "fileMeta": {
       "SKILL.md": {
-        "sizeBytes": 3815,
-        "lineCount": 91,
+        "sizeBytes": 7734,
+        "lineCount": 218,
         "ext": "md",
         "tabKey": "root"
       },
@@ -4192,8 +4206,8 @@
       }
     },
     "tokenEstimate": {
-      "heuristic": 14219,
-      "cl100k": 14607
+      "heuristic": 15195,
+      "cl100k": 15605
     },
     "dependencies": {
       "skills": [
@@ -4220,8 +4234,8 @@
     ],
     "fileMeta": {
       "SKILL.md": {
-        "sizeBytes": 3119,
-        "lineCount": 82,
+        "sizeBytes": 4604,
+        "lineCount": 118,
         "ext": "md",
         "tabKey": "root"
       },
@@ -4257,8 +4271,8 @@
       }
     },
     "tokenEstimate": {
-      "heuristic": 4370,
-      "cl100k": 4349
+      "heuristic": 4736,
+      "cl100k": 4641
     },
     "dependencies": {
       "skills": [
@@ -4500,8 +4514,8 @@
     ],
     "fileMeta": {
       "SKILL.md": {
-        "sizeBytes": 8415,
-        "lineCount": 327,
+        "sizeBytes": 8336,
+        "lineCount": 326,
         "ext": "md",
         "tabKey": "root"
       },
@@ -4513,8 +4527,8 @@
       }
     },
     "tokenEstimate": {
-      "heuristic": 2402,
-      "cl100k": 2569
+      "heuristic": 2383,
+      "cl100k": 2549
     },
     "dependencies": {
       "skills": [],
@@ -4650,8 +4664,8 @@
     ],
     "fileMeta": {
       "SKILL.md": {
-        "sizeBytes": 3444,
-        "lineCount": 86,
+        "sizeBytes": 4525,
+        "lineCount": 114,
         "ext": "md",
         "tabKey": "root"
       },
@@ -4687,8 +4701,8 @@
       }
     },
     "tokenEstimate": {
-      "heuristic": 11939,
-      "cl100k": 12226
+      "heuristic": 12203,
+      "cl100k": 12538
     },
     "dependencies": {
       "skills": [
@@ -4711,8 +4725,8 @@
     ],
     "fileMeta": {
       "SKILL.md": {
-        "sizeBytes": 4312,
-        "lineCount": 90,
+        "sizeBytes": 7264,
+        "lineCount": 217,
         "ext": "md",
         "tabKey": "root"
       },
@@ -4748,8 +4762,8 @@
       }
     },
     "tokenEstimate": {
-      "heuristic": 18116,
-      "cl100k": 17247
+      "heuristic": 18851,
+      "cl100k": 18118
     },
     "dependencies": {
       "skills": [
@@ -4780,8 +4794,8 @@
     ],
     "fileMeta": {
       "SKILL.md": {
-        "sizeBytes": 3734,
-        "lineCount": 88,
+        "sizeBytes": 5404,
+        "lineCount": 148,
         "ext": "md",
         "tabKey": "root"
       },
@@ -4835,8 +4849,8 @@
       }
     },
     "tokenEstimate": {
-      "heuristic": 12243,
-      "cl100k": 12134
+      "heuristic": 12660,
+      "cl100k": 12566
     },
     "dependencies": {
       "skills": [
@@ -4886,8 +4900,8 @@
     ],
     "fileMeta": {
       "SKILL.md": {
-        "sizeBytes": 3116,
-        "lineCount": 89,
+        "sizeBytes": 5089,
+        "lineCount": 120,
         "ext": "md",
         "tabKey": "root"
       },
@@ -4929,8 +4943,8 @@
       }
     },
     "tokenEstimate": {
-      "heuristic": 7444,
-      "cl100k": 6826
+      "heuristic": 7930,
+      "cl100k": 7279
     },
     "dependencies": {
       "skills": [
@@ -4955,8 +4969,8 @@
     ],
     "fileMeta": {
       "SKILL.md": {
-        "sizeBytes": 3759,
-        "lineCount": 87,
+        "sizeBytes": 4411,
+        "lineCount": 116,
         "ext": "md",
         "tabKey": "root"
       },
@@ -4992,8 +5006,8 @@
       }
     },
     "tokenEstimate": {
-      "heuristic": 11998,
-      "cl100k": 12213
+      "heuristic": 12158,
+      "cl100k": 12390
     },
     "dependencies": {
       "skills": [
@@ -5017,8 +5031,8 @@
     ],
     "fileMeta": {
       "SKILL.md": {
-        "sizeBytes": 3459,
-        "lineCount": 85,
+        "sizeBytes": 4985,
+        "lineCount": 126,
         "ext": "md",
         "tabKey": "root"
       },
@@ -5054,8 +5068,8 @@
       }
     },
     "tokenEstimate": {
-      "heuristic": 14384,
-      "cl100k": 12329
+      "heuristic": 14761,
+      "cl100k": 12686
     },
     "dependencies": {
       "skills": [
@@ -5080,8 +5094,8 @@
     ],
     "fileMeta": {
       "SKILL.md": {
-        "sizeBytes": 3109,
-        "lineCount": 84,
+        "sizeBytes": 3648,
+        "lineCount": 106,
         "ext": "md",
         "tabKey": "root"
       },
@@ -5117,8 +5131,8 @@
       }
     },
     "tokenEstimate": {
-      "heuristic": 6705,
-      "cl100k": 6546
+      "heuristic": 6836,
+      "cl100k": 6718
     },
     "dependencies": {
       "skills": [
@@ -5146,8 +5160,8 @@
     ],
     "fileMeta": {
       "SKILL.md": {
-        "sizeBytes": 3628,
-        "lineCount": 87,
+        "sizeBytes": 5814,
+        "lineCount": 145,
         "ext": "md",
         "tabKey": "root"
       },
@@ -5201,8 +5215,8 @@
       }
     },
     "tokenEstimate": {
-      "heuristic": 12327,
-      "cl100k": 12679
+      "heuristic": 12873,
+      "cl100k": 13190
     },
     "dependencies": {
       "skills": [],
@@ -5223,8 +5237,8 @@
     ],
     "fileMeta": {
       "SKILL.md": {
-        "sizeBytes": 2994,
-        "lineCount": 82,
+        "sizeBytes": 5915,
+        "lineCount": 163,
         "ext": "md",
         "tabKey": "root"
       },
@@ -5260,8 +5274,8 @@
       }
     },
     "tokenEstimate": {
-      "heuristic": 6200,
-      "cl100k": 5360
+      "heuristic": 6926,
+      "cl100k": 5957
     },
     "dependencies": {
       "skills": [
@@ -5286,8 +5300,8 @@
     ],
     "fileMeta": {
       "SKILL.md": {
-        "sizeBytes": 3525,
-        "lineCount": 87,
+        "sizeBytes": 4984,
+        "lineCount": 139,
         "ext": "md",
         "tabKey": "root"
       },
@@ -5323,8 +5337,8 @@
       }
     },
     "tokenEstimate": {
-      "heuristic": 16247,
-      "cl100k": 13273
+      "heuristic": 16607,
+      "cl100k": 13599
     },
     "dependencies": {
       "skills": [
@@ -5430,8 +5444,8 @@
     ],
     "fileMeta": {
       "SKILL.md": {
-        "sizeBytes": 3801,
-        "lineCount": 87,
+        "sizeBytes": 6020,
+        "lineCount": 168,
         "ext": "md",
         "tabKey": "root"
       },
@@ -5467,8 +5481,8 @@
       }
     },
     "tokenEstimate": {
-      "heuristic": 13778,
-      "cl100k": 16139
+      "heuristic": 14331,
+      "cl100k": 16790
     },
     "dependencies": {
       "skills": [],
@@ -5490,8 +5504,8 @@
     ],
     "fileMeta": {
       "SKILL.md": {
-        "sizeBytes": 3292,
-        "lineCount": 85,
+        "sizeBytes": 6807,
+        "lineCount": 186,
         "ext": "md",
         "tabKey": "root"
       },
@@ -5533,8 +5547,8 @@
       }
     },
     "tokenEstimate": {
-      "heuristic": 12861,
-      "cl100k": 12058
+      "heuristic": 13738,
+      "cl100k": 12834
     },
     "dependencies": {
       "skills": [
@@ -5560,8 +5574,8 @@
     ],
     "fileMeta": {
       "SKILL.md": {
-        "sizeBytes": 3032,
-        "lineCount": 83,
+        "sizeBytes": 5540,
+        "lineCount": 139,
         "ext": "md",
         "tabKey": "root"
       },
@@ -5603,8 +5617,8 @@
       }
     },
     "tokenEstimate": {
-      "heuristic": 5136,
-      "cl100k": 4986
+      "heuristic": 5759,
+      "cl100k": 5533
     },
     "dependencies": {
       "skills": [
@@ -5620,26 +5634,19 @@
   "frontend-design": {
     "category": "Development & Code Tools",
     "files": [
-      "LICENSE.txt",
       "SKILL.md"
     ],
     "fileMeta": {
-      "LICENSE.txt": {
-        "sizeBytes": 10174,
-        "lineCount": 178,
-        "ext": "txt",
-        "tabKey": "root"
-      },
       "SKILL.md": {
-        "sizeBytes": 4440,
-        "lineCount": 43,
+        "sizeBytes": 4274,
+        "lineCount": 42,
         "ext": "md",
         "tabKey": "root"
       }
     },
     "tokenEstimate": {
-      "heuristic": 3654,
-      "cl100k": 2883
+      "heuristic": 1069,
+      "cl100k": 823
     },
     "dependencies": {
       "skills": [],
@@ -5665,8 +5672,8 @@
     ],
     "fileMeta": {
       "SKILL.md": {
-        "sizeBytes": 3785,
-        "lineCount": 84,
+        "sizeBytes": 5651,
+        "lineCount": 106,
         "ext": "md",
         "tabKey": "root"
       },
@@ -5732,8 +5739,8 @@
       }
     },
     "tokenEstimate": {
-      "heuristic": 16583,
-      "cl100k": 16114
+      "heuristic": 17046,
+      "cl100k": 16489
     },
     "dependencies": {
       "skills": [
@@ -5758,8 +5765,8 @@
     ],
     "fileMeta": {
       "SKILL.md": {
-        "sizeBytes": 3728,
-        "lineCount": 85,
+        "sizeBytes": 4945,
+        "lineCount": 123,
         "ext": "md",
         "tabKey": "root"
       },
@@ -5795,8 +5802,8 @@
       }
     },
     "tokenEstimate": {
-      "heuristic": 11692,
-      "cl100k": 12304
+      "heuristic": 11994,
+      "cl100k": 12597
     },
     "dependencies": {
       "skills": [
@@ -5822,8 +5829,8 @@
     ],
     "fileMeta": {
       "SKILL.md": {
-        "sizeBytes": 3661,
-        "lineCount": 87,
+        "sizeBytes": 4992,
+        "lineCount": 147,
         "ext": "md",
         "tabKey": "root"
       },
@@ -5865,8 +5872,8 @@
       }
     },
     "tokenEstimate": {
-      "heuristic": 20010,
-      "cl100k": 18939
+      "heuristic": 20341,
+      "cl100k": 19298
     },
     "dependencies": {
       "skills": [
@@ -5915,8 +5922,8 @@
     ],
     "fileMeta": {
       "SKILL.md": {
-        "sizeBytes": 3472,
-        "lineCount": 86,
+        "sizeBytes": 5617,
+        "lineCount": 133,
         "ext": "md",
         "tabKey": "root"
       },
@@ -5952,8 +5959,8 @@
       }
     },
     "tokenEstimate": {
-      "heuristic": 15371,
-      "cl100k": 12037
+      "heuristic": 15907,
+      "cl100k": 12472
     },
     "dependencies": {
       "skills": [
@@ -5979,8 +5986,8 @@
     ],
     "fileMeta": {
       "SKILL.md": {
-        "sizeBytes": 3652,
-        "lineCount": 86,
+        "sizeBytes": 4730,
+        "lineCount": 133,
         "ext": "md",
         "tabKey": "root"
       },
@@ -6016,8 +6023,8 @@
       }
     },
     "tokenEstimate": {
-      "heuristic": 11541,
-      "cl100k": 11378
+      "heuristic": 11801,
+      "cl100k": 11696
     },
     "dependencies": {
       "skills": [
@@ -6064,8 +6071,8 @@
     ],
     "fileMeta": {
       "SKILL.md": {
-        "sizeBytes": 3684,
-        "lineCount": 86,
+        "sizeBytes": 5840,
+        "lineCount": 148,
         "ext": "md",
         "tabKey": "root"
       },
@@ -6101,8 +6108,8 @@
       }
     },
     "tokenEstimate": {
-      "heuristic": 12482,
-      "cl100k": 11291
+      "heuristic": 13018,
+      "cl100k": 11800
     },
     "dependencies": {
       "skills": [
@@ -6131,8 +6138,8 @@
     ],
     "fileMeta": {
       "SKILL.md": {
-        "sizeBytes": 4816,
-        "lineCount": 94,
+        "sizeBytes": 8007,
+        "lineCount": 242,
         "ext": "md",
         "tabKey": "root"
       },
@@ -6204,8 +6211,8 @@
       }
     },
     "tokenEstimate": {
-      "heuristic": 32214,
-      "cl100k": 33931
+      "heuristic": 33009,
+      "cl100k": 34783
     },
     "dependencies": {
       "skills": [
@@ -6230,8 +6237,8 @@
     ],
     "fileMeta": {
       "SKILL.md": {
-        "sizeBytes": 3621,
-        "lineCount": 90,
+        "sizeBytes": 8253,
+        "lineCount": 263,
         "ext": "md",
         "tabKey": "root"
       },
@@ -6267,8 +6274,8 @@
       }
     },
     "tokenEstimate": {
-      "heuristic": 13169,
-      "cl100k": 12499
+      "heuristic": 14323,
+      "cl100k": 13557
     },
     "dependencies": {
       "skills": [
@@ -6294,8 +6301,8 @@
     ],
     "fileMeta": {
       "SKILL.md": {
-        "sizeBytes": 3863,
-        "lineCount": 85,
+        "sizeBytes": 6011,
+        "lineCount": 138,
         "ext": "md",
         "tabKey": "root"
       },
@@ -6331,8 +6338,8 @@
       }
     },
     "tokenEstimate": {
-      "heuristic": 15742,
-      "cl100k": 13862
+      "heuristic": 16274,
+      "cl100k": 14343
     },
     "dependencies": {
       "skills": [
@@ -6356,8 +6363,8 @@
     ],
     "fileMeta": {
       "SKILL.md": {
-        "sizeBytes": 4165,
-        "lineCount": 90,
+        "sizeBytes": 6789,
+        "lineCount": 165,
         "ext": "md",
         "tabKey": "root"
       },
@@ -6393,8 +6400,8 @@
       }
     },
     "tokenEstimate": {
-      "heuristic": 17430,
-      "cl100k": 16632
+      "heuristic": 18082,
+      "cl100k": 17258
     },
     "dependencies": {
       "skills": [
@@ -6424,8 +6431,8 @@
     ],
     "fileMeta": {
       "SKILL.md": {
-        "sizeBytes": 3208,
-        "lineCount": 78,
+        "sizeBytes": 6083,
+        "lineCount": 177,
         "ext": "md",
         "tabKey": "root"
       },
@@ -6479,8 +6486,8 @@
       }
     },
     "tokenEstimate": {
-      "heuristic": 9912,
-      "cl100k": 10253
+      "heuristic": 10628,
+      "cl100k": 11019
     },
     "dependencies": {
       "skills": [
@@ -6506,8 +6513,8 @@
     ],
     "fileMeta": {
       "SKILL.md": {
-        "sizeBytes": 3250,
-        "lineCount": 85,
+        "sizeBytes": 7590,
+        "lineCount": 207,
         "ext": "md",
         "tabKey": "root"
       },
@@ -6549,8 +6556,8 @@
       }
     },
     "tokenEstimate": {
-      "heuristic": 13225,
-      "cl100k": 12162
+      "heuristic": 14305,
+      "cl100k": 13135
     },
     "dependencies": {
       "skills": [
@@ -6575,8 +6582,8 @@
     ],
     "fileMeta": {
       "SKILL.md": {
-        "sizeBytes": 3615,
-        "lineCount": 88,
+        "sizeBytes": 5417,
+        "lineCount": 144,
         "ext": "md",
         "tabKey": "root"
       },
@@ -6612,8 +6619,8 @@
       }
     },
     "tokenEstimate": {
-      "heuristic": 12291,
-      "cl100k": 12547
+      "heuristic": 12737,
+      "cl100k": 13025
     },
     "dependencies": {
       "skills": [
@@ -6702,8 +6709,8 @@
     ],
     "fileMeta": {
       "SKILL.md": {
-        "sizeBytes": 3432,
-        "lineCount": 86,
+        "sizeBytes": 5989,
+        "lineCount": 207,
         "ext": "md",
         "tabKey": "root"
       },
@@ -6739,8 +6746,8 @@
       }
     },
     "tokenEstimate": {
-      "heuristic": 12658,
-      "cl100k": 11970
+      "heuristic": 13295,
+      "cl100k": 12561
     },
     "dependencies": {
       "skills": [
@@ -7092,8 +7099,8 @@
     ],
     "fileMeta": {
       "SKILL.md": {
-        "sizeBytes": 3427,
-        "lineCount": 85,
+        "sizeBytes": 6006,
+        "lineCount": 178,
         "ext": "md",
         "tabKey": "root"
       },
@@ -7129,8 +7136,8 @@
       }
     },
     "tokenEstimate": {
-      "heuristic": 11982,
-      "cl100k": 12253
+      "heuristic": 12624,
+      "cl100k": 12867
     },
     "dependencies": {
       "skills": [
@@ -7154,8 +7161,8 @@
     ],
     "fileMeta": {
       "SKILL.md": {
-        "sizeBytes": 3549,
-        "lineCount": 88,
+        "sizeBytes": 5420,
+        "lineCount": 155,
         "ext": "md",
         "tabKey": "root"
       },
@@ -7191,8 +7198,8 @@
       }
     },
     "tokenEstimate": {
-      "heuristic": 9294,
-      "cl100k": 9476
+      "heuristic": 9757,
+      "cl100k": 10013
     },
     "dependencies": {
       "skills": [
@@ -7218,8 +7225,8 @@
     ],
     "fileMeta": {
       "SKILL.md": {
-        "sizeBytes": 3540,
-        "lineCount": 85,
+        "sizeBytes": 5170,
+        "lineCount": 150,
         "ext": "md",
         "tabKey": "root"
       },
@@ -7267,8 +7274,8 @@
       }
     },
     "tokenEstimate": {
-      "heuristic": 12623,
-      "cl100k": 12077
+      "heuristic": 13030,
+      "cl100k": 12495
     },
     "dependencies": {
       "skills": [
@@ -7293,8 +7300,8 @@
     ],
     "fileMeta": {
       "SKILL.md": {
-        "sizeBytes": 2945,
-        "lineCount": 82,
+        "sizeBytes": 6415,
+        "lineCount": 186,
         "ext": "md",
         "tabKey": "root"
       },
@@ -7330,8 +7337,8 @@
       }
     },
     "tokenEstimate": {
-      "heuristic": 5838,
-      "cl100k": 5878
+      "heuristic": 6695,
+      "cl100k": 6741
     },
     "dependencies": {
       "skills": [
@@ -7411,8 +7418,8 @@
     ],
     "fileMeta": {
       "SKILL.md": {
-        "sizeBytes": 3604,
-        "lineCount": 87,
+        "sizeBytes": 5920,
+        "lineCount": 168,
         "ext": "md",
         "tabKey": "root"
       },
@@ -7448,8 +7455,8 @@
       }
     },
     "tokenEstimate": {
-      "heuristic": 11536,
-      "cl100k": 11910
+      "heuristic": 12111,
+      "cl100k": 12516
     },
     "dependencies": {
       "skills": [
@@ -7472,8 +7479,8 @@
     ],
     "fileMeta": {
       "SKILL.md": {
-        "sizeBytes": 4434,
-        "lineCount": 91,
+        "sizeBytes": 7417,
+        "lineCount": 204,
         "ext": "md",
         "tabKey": "root"
       },
@@ -7509,8 +7516,8 @@
       }
     },
     "tokenEstimate": {
-      "heuristic": 29529,
-      "cl100k": 25703
+      "heuristic": 30273,
+      "cl100k": 26456
     },
     "dependencies": {
       "skills": [
@@ -7536,8 +7543,8 @@
     ],
     "fileMeta": {
       "SKILL.md": {
-        "sizeBytes": 3950,
-        "lineCount": 90,
+        "sizeBytes": 7030,
+        "lineCount": 185,
         "ext": "md",
         "tabKey": "root"
       },
@@ -7573,8 +7580,8 @@
       }
     },
     "tokenEstimate": {
-      "heuristic": 25746,
-      "cl100k": 23901
+      "heuristic": 26510,
+      "cl100k": 24579
     },
     "dependencies": {
       "skills": [
@@ -7598,8 +7605,8 @@
     ],
     "fileMeta": {
       "SKILL.md": {
-        "sizeBytes": 2926,
-        "lineCount": 83,
+        "sizeBytes": 4507,
+        "lineCount": 109,
         "ext": "md",
         "tabKey": "root"
       },
@@ -7629,8 +7636,8 @@
       }
     },
     "tokenEstimate": {
-      "heuristic": 2631,
-      "cl100k": 2602
+      "heuristic": 3027,
+      "cl100k": 2964
     },
     "dependencies": {
       "skills": [
@@ -7655,8 +7662,8 @@
     ],
     "fileMeta": {
       "SKILL.md": {
-        "sizeBytes": 4331,
-        "lineCount": 95,
+        "sizeBytes": 7250,
+        "lineCount": 196,
         "ext": "md",
         "tabKey": "root"
       },
@@ -7692,8 +7699,8 @@
       }
     },
     "tokenEstimate": {
-      "heuristic": 16717,
-      "cl100k": 13290
+      "heuristic": 17443,
+      "cl100k": 13905
     },
     "dependencies": {
       "skills": [
@@ -7719,8 +7726,8 @@
     ],
     "fileMeta": {
       "SKILL.md": {
-        "sizeBytes": 3726,
-        "lineCount": 88,
+        "sizeBytes": 6669,
+        "lineCount": 182,
         "ext": "md",
         "tabKey": "root"
       },
@@ -7756,8 +7763,8 @@
       }
     },
     "tokenEstimate": {
-      "heuristic": 15880,
-      "cl100k": 14727
+      "heuristic": 16611,
+      "cl100k": 15515
     },
     "dependencies": {
       "skills": [
@@ -7782,8 +7789,8 @@
     ],
     "fileMeta": {
       "SKILL.md": {
-        "sizeBytes": 3541,
-        "lineCount": 87,
+        "sizeBytes": 5754,
+        "lineCount": 164,
         "ext": "md",
         "tabKey": "root"
       },
@@ -7819,8 +7826,8 @@
       }
     },
     "tokenEstimate": {
-      "heuristic": 10873,
-      "cl100k": 9861
+      "heuristic": 11420,
+      "cl100k": 10415
     },
     "dependencies": {
       "skills": [],
@@ -7935,8 +7942,8 @@
     ],
     "fileMeta": {
       "SKILL.md": {
-        "sizeBytes": 3612,
-        "lineCount": 87,
+        "sizeBytes": 5121,
+        "lineCount": 144,
         "ext": "md",
         "tabKey": "root"
       },
@@ -7972,8 +7979,8 @@
       }
     },
     "tokenEstimate": {
-      "heuristic": 12153,
-      "cl100k": 13069
+      "heuristic": 12525,
+      "cl100k": 13464
     },
     "dependencies": {
       "skills": [
@@ -8034,8 +8041,8 @@
     ],
     "fileMeta": {
       "SKILL.md": {
-        "sizeBytes": 4100,
-        "lineCount": 82,
+        "sizeBytes": 4898,
+        "lineCount": 95,
         "ext": "md",
         "tabKey": "root"
       },
@@ -8101,8 +8108,8 @@
       }
     },
     "tokenEstimate": {
-      "heuristic": 11477,
-      "cl100k": 11448
+      "heuristic": 11670,
+      "cl100k": 11629
     },
     "dependencies": {
       "skills": [
@@ -8127,8 +8134,8 @@
     ],
     "fileMeta": {
       "SKILL.md": {
-        "sizeBytes": 3601,
-        "lineCount": 86,
+        "sizeBytes": 5359,
+        "lineCount": 146,
         "ext": "md",
         "tabKey": "root"
       },
@@ -8164,8 +8171,8 @@
       }
     },
     "tokenEstimate": {
-      "heuristic": 11691,
-      "cl100k": 12095
+      "heuristic": 12129,
+      "cl100k": 12585
     },
     "dependencies": {
       "skills": [
@@ -8215,8 +8222,8 @@
     ],
     "fileMeta": {
       "SKILL.md": {
-        "sizeBytes": 3823,
-        "lineCount": 92,
+        "sizeBytes": 4195,
+        "lineCount": 99,
         "ext": "md",
         "tabKey": "root"
       },
@@ -8264,8 +8271,8 @@
       }
     },
     "tokenEstimate": {
-      "heuristic": 19314,
-      "cl100k": 19747
+      "heuristic": 19407,
+      "cl100k": 19845
     },
     "dependencies": {
       "skills": [
@@ -8289,8 +8296,8 @@
     ],
     "fileMeta": {
       "SKILL.md": {
-        "sizeBytes": 3446,
-        "lineCount": 89,
+        "sizeBytes": 5982,
+        "lineCount": 168,
         "ext": "md",
         "tabKey": "root"
       },
@@ -8326,8 +8333,8 @@
       }
     },
     "tokenEstimate": {
-      "heuristic": 8705,
-      "cl100k": 8949
+      "heuristic": 9336,
+      "cl100k": 9623
     },
     "dependencies": {
       "skills": [
@@ -8403,8 +8410,8 @@
     ],
     "fileMeta": {
       "SKILL.md": {
-        "sizeBytes": 3806,
-        "lineCount": 86,
+        "sizeBytes": 6306,
+        "lineCount": 169,
         "ext": "md",
         "tabKey": "root"
       },
@@ -8440,8 +8447,8 @@
       }
     },
     "tokenEstimate": {
-      "heuristic": 11078,
-      "cl100k": 11037
+      "heuristic": 11698,
+      "cl100k": 11667
     },
     "dependencies": {
       "skills": [
@@ -8468,8 +8475,8 @@
     ],
     "fileMeta": {
       "SKILL.md": {
-        "sizeBytes": 4122,
-        "lineCount": 93,
+        "sizeBytes": 6187,
+        "lineCount": 150,
         "ext": "md",
         "tabKey": "root"
       },
@@ -8505,8 +8512,8 @@
       }
     },
     "tokenEstimate": {
-      "heuristic": 34254,
-      "cl100k": 31275
+      "heuristic": 34767,
+      "cl100k": 31850
     },
     "dependencies": {
       "skills": [
@@ -10259,8 +10266,8 @@
     ],
     "fileMeta": {
       "SKILL.md": {
-        "sizeBytes": 34505,
-        "lineCount": 845,
+        "sizeBytes": 34425,
+        "lineCount": 844,
         "ext": "md",
         "tabKey": "root"
       },
@@ -10320,8 +10327,8 @@
       }
     },
     "tokenEstimate": {
-      "heuristic": 34125,
-      "cl100k": 32807
+      "heuristic": 34105,
+      "cl100k": 32784
     },
     "dependencies": {
       "skills": [],
@@ -11156,8 +11163,10 @@
       "services/browser/README.md",
       "services/code-interpreter/README.md",
       "services/gateway/README.md",
+      "services/gateway/deploy-template.sh",
       "services/gateway/deployment-strategies.md",
       "services/gateway/troubleshooting-guide.md",
+      "services/gateway/validate-deployment.sh",
       "services/identity/README.md",
       "services/memory/README.md",
       "services/observability/README.md",
@@ -11165,45 +11174,57 @@
     ],
     "fileMeta": {
       "SKILL.md": {
-        "sizeBytes": 6585,
-        "lineCount": 136,
+        "sizeBytes": 5973,
+        "lineCount": 122,
         "ext": "md",
         "tabKey": "root"
       },
       "cross-service/credential-management.md": {
-        "sizeBytes": 13139,
+        "sizeBytes": 13844,
         "lineCount": 451,
         "ext": "md",
         "tabKey": "cross-service"
       },
       "services/browser/README.md": {
-        "sizeBytes": 10381,
+        "sizeBytes": 10378,
         "lineCount": 364,
         "ext": "md",
         "tabKey": "services"
       },
       "services/code-interpreter/README.md": {
-        "sizeBytes": 7795,
+        "sizeBytes": 7792,
         "lineCount": 233,
         "ext": "md",
         "tabKey": "services"
       },
       "services/gateway/README.md": {
-        "sizeBytes": 3360,
+        "sizeBytes": 3379,
         "lineCount": 101,
         "ext": "md",
         "tabKey": "services"
       },
+      "services/gateway/deploy-template.sh": {
+        "sizeBytes": 3674,
+        "lineCount": 135,
+        "ext": "sh",
+        "tabKey": "services"
+      },
       "services/gateway/deployment-strategies.md": {
-        "sizeBytes": 11086,
+        "sizeBytes": 11311,
         "lineCount": 417,
         "ext": "md",
         "tabKey": "services"
       },
       "services/gateway/troubleshooting-guide.md": {
-        "sizeBytes": 10170,
+        "sizeBytes": 10342,
         "lineCount": 385,
         "ext": "md",
+        "tabKey": "services"
+      },
+      "services/gateway/validate-deployment.sh": {
+        "sizeBytes": 5908,
+        "lineCount": 194,
+        "ext": "sh",
         "tabKey": "services"
       },
       "services/identity/README.md": {
@@ -11219,7 +11240,7 @@
         "tabKey": "services"
       },
       "services/observability/README.md": {
-        "sizeBytes": 14190,
+        "sizeBytes": 14145,
         "lineCount": 518,
         "ext": "md",
         "tabKey": "services"
@@ -11232,8 +11253,8 @@
       }
     },
     "tokenEstimate": {
-      "heuristic": 23816,
-      "cl100k": 21729
+      "heuristic": 26320,
+      "cl100k": 24635
     },
     "dependencies": {
       "skills": [
@@ -11287,27 +11308,27 @@
     ],
     "fileMeta": {
       "SKILL.md": {
-        "sizeBytes": 10314,
-        "lineCount": 296,
+        "sizeBytes": 9712,
+        "lineCount": 282,
         "ext": "md",
         "tabKey": "root"
       },
       "references/cdk-patterns.md": {
-        "sizeBytes": 9800,
+        "sizeBytes": 9852,
         "lineCount": 432,
         "ext": "md",
         "tabKey": "references"
       },
       "scripts/validate-stack.sh": {
-        "sizeBytes": 6793,
-        "lineCount": 241,
+        "sizeBytes": 7281,
+        "lineCount": 243,
         "ext": "sh",
         "tabKey": "scripts"
       }
     },
     "tokenEstimate": {
-      "heuristic": 6717,
-      "cl100k": 6555
+      "heuristic": 6703,
+      "cl100k": 6452
     },
     "dependencies": {
       "skills": [
@@ -11336,8 +11357,8 @@
     ],
     "fileMeta": {
       "SKILL.md": {
-        "sizeBytes": 11147,
-        "lineCount": 337,
+        "sizeBytes": 9476,
+        "lineCount": 281,
         "ext": "md",
         "tabKey": "root"
       },
@@ -11355,8 +11376,8 @@
       }
     },
     "tokenEstimate": {
-      "heuristic": 8836,
-      "cl100k": 8329
+      "heuristic": 8417,
+      "cl100k": 7997
     },
     "dependencies": {
       "skills": [
@@ -11386,20 +11407,26 @@
     ],
     "fileMeta": {
       "SKILL.md": {
-        "sizeBytes": 4771,
-        "lineCount": 176,
+        "sizeBytes": 5193,
+        "lineCount": 182,
         "ext": "md",
         "tabKey": "root"
       }
     },
     "tokenEstimate": {
-      "heuristic": 1191,
-      "cl100k": 1247
+      "heuristic": 1296,
+      "cl100k": 1344
     },
     "dependencies": {
       "skills": [],
       "libraries": [],
-      "runtimeTools": [],
+      "runtimeTools": [
+        "Bash(aws sts get-caller-identity*)",
+        "Bash(cat *claude.json*)",
+        "Bash(cat *mcp.json*)",
+        "Bash(claude mcp *)",
+        "Bash(which *)"
+      ],
       "source": "structured"
     }
   },
@@ -11416,51 +11443,51 @@
     ],
     "fileMeta": {
       "SKILL.md": {
-        "sizeBytes": 21246,
-        "lineCount": 781,
+        "sizeBytes": 12870,
+        "lineCount": 405,
         "ext": "md",
         "tabKey": "root"
       },
       "references/deployment-best-practices.md": {
-        "sizeBytes": 18115,
+        "sizeBytes": 19664,
         "lineCount": 831,
         "ext": "md",
         "tabKey": "references"
       },
       "references/eda-patterns.md": {
-        "sizeBytes": 23303,
+        "sizeBytes": 24678,
         "lineCount": 1003,
         "ext": "md",
         "tabKey": "references"
       },
       "references/observability-best-practices.md": {
-        "sizeBytes": 18103,
+        "sizeBytes": 19049,
         "lineCount": 771,
         "ext": "md",
         "tabKey": "references"
       },
       "references/performance-optimization.md": {
-        "sizeBytes": 16424,
-        "lineCount": 673,
+        "sizeBytes": 16776,
+        "lineCount": 672,
         "ext": "md",
         "tabKey": "references"
       },
       "references/security-best-practices.md": {
-        "sizeBytes": 14984,
+        "sizeBytes": 15257,
         "lineCount": 626,
         "ext": "md",
         "tabKey": "references"
       },
       "references/serverless-patterns.md": {
-        "sizeBytes": 20210,
+        "sizeBytes": 20841,
         "lineCount": 839,
         "ext": "md",
         "tabKey": "references"
       }
     },
     "tokenEstimate": {
-      "heuristic": 33059,
-      "cl100k": 30724
+      "heuristic": 32246,
+      "cl100k": 30660
     },
     "dependencies": {
       "skills": [
@@ -12003,29 +12030,60 @@
   "notebooklm": {
     "category": "Learning & Knowledge",
     "files": [
+      ".gitignore",
       "SKILL.md",
+      "references/commands.md",
+      "requirements.txt",
       "scripts/ask_question.py",
+      "scripts/auth_manager.py",
       "scripts/common.py",
       "scripts/notebook_manager.py",
       "scripts/remote_manager.py",
-      "skill.json"
+      "tests/conftest.py",
+      "tests/test_ask_question_modes.py",
+      "tests/test_remote_manager_filters.py",
+      "tests/test_smoke_playwright.py"
     ],
     "fileMeta": {
+      ".gitignore": {
+        "sizeBytes": 34,
+        "lineCount": 0,
+        "ext": "none",
+        "tabKey": "root"
+      },
       "SKILL.md": {
-        "sizeBytes": 2617,
+        "sizeBytes": 2619,
         "lineCount": 55,
         "ext": "md",
         "tabKey": "root"
       },
+      "references/commands.md": {
+        "sizeBytes": 4175,
+        "lineCount": 90,
+        "ext": "md",
+        "tabKey": "references"
+      },
+      "requirements.txt": {
+        "sizeBytes": 19,
+        "lineCount": 2,
+        "ext": "txt",
+        "tabKey": "root"
+      },
       "scripts/ask_question.py": {
-        "sizeBytes": 27578,
-        "lineCount": 862,
+        "sizeBytes": 27889,
+        "lineCount": 869,
+        "ext": "py",
+        "tabKey": "scripts"
+      },
+      "scripts/auth_manager.py": {
+        "sizeBytes": 8097,
+        "lineCount": 253,
         "ext": "py",
         "tabKey": "scripts"
       },
       "scripts/common.py": {
-        "sizeBytes": 6612,
-        "lineCount": 248,
+        "sizeBytes": 8297,
+        "lineCount": 273,
         "ext": "py",
         "tabKey": "scripts"
       },
@@ -12036,25 +12094,45 @@
         "tabKey": "scripts"
       },
       "scripts/remote_manager.py": {
-        "sizeBytes": 56138,
-        "lineCount": 1554,
+        "sizeBytes": 56746,
+        "lineCount": 1565,
         "ext": "py",
         "tabKey": "scripts"
       },
-      "skill.json": {
-        "sizeBytes": 927,
-        "lineCount": 31,
-        "ext": "json",
-        "tabKey": "root"
+      "tests/conftest.py": {
+        "sizeBytes": 148,
+        "lineCount": 3,
+        "ext": "py",
+        "tabKey": "tests"
+      },
+      "tests/test_ask_question_modes.py": {
+        "sizeBytes": 2023,
+        "lineCount": 67,
+        "ext": "py",
+        "tabKey": "tests"
+      },
+      "tests/test_remote_manager_filters.py": {
+        "sizeBytes": 2565,
+        "lineCount": 92,
+        "ext": "py",
+        "tabKey": "tests"
+      },
+      "tests/test_smoke_playwright.py": {
+        "sizeBytes": 2877,
+        "lineCount": 112,
+        "ext": "py",
+        "tabKey": "tests"
       }
     },
     "tokenEstimate": {
-      "heuristic": 25344,
-      "cl100k": 22068
+      "heuristic": 30742,
+      "cl100k": 26851
     },
     "dependencies": {
       "skills": [],
-      "libraries": [],
+      "libraries": [
+        "playwright"
+      ],
       "runtimeTools": [],
       "source": "structured"
     }
@@ -12981,8 +13059,8 @@
     ],
     "fileMeta": {
       "SKILL.md": {
-        "sizeBytes": 3866,
-        "lineCount": 85,
+        "sizeBytes": 5627,
+        "lineCount": 162,
         "ext": "md",
         "tabKey": "root"
       },
@@ -13018,8 +13096,8 @@
       }
     },
     "tokenEstimate": {
-      "heuristic": 13108,
-      "cl100k": 11324
+      "heuristic": 13544,
+      "cl100k": 11734
     },
     "dependencies": {
       "skills": [],
@@ -22103,8 +22181,8 @@
     ],
     "fileMeta": {
       "SKILL.md": {
-        "sizeBytes": 3884,
-        "lineCount": 87,
+        "sizeBytes": 6800,
+        "lineCount": 183,
         "ext": "md",
         "tabKey": "root"
       },
@@ -22140,8 +22218,8 @@
       }
     },
     "tokenEstimate": {
-      "heuristic": 14578,
-      "cl100k": 13612
+      "heuristic": 15299,
+      "cl100k": 14385
     },
     "dependencies": {
       "skills": [
@@ -22235,8 +22313,8 @@
     ],
     "fileMeta": {
       "SKILL.md": {
-        "sizeBytes": 2832,
-        "lineCount": 81,
+        "sizeBytes": 5488,
+        "lineCount": 170,
         "ext": "md",
         "tabKey": "root"
       },
@@ -22272,8 +22350,8 @@
       }
     },
     "tokenEstimate": {
-      "heuristic": 4735,
-      "cl100k": 4672
+      "heuristic": 5393,
+      "cl100k": 5300
     },
     "dependencies": {
       "skills": [
@@ -22298,8 +22376,8 @@
     ],
     "fileMeta": {
       "SKILL.md": {
-        "sizeBytes": 2977,
-        "lineCount": 84,
+        "sizeBytes": 6946,
+        "lineCount": 192,
         "ext": "md",
         "tabKey": "root"
       },
@@ -22335,8 +22413,8 @@
       }
     },
     "tokenEstimate": {
-      "heuristic": 4811,
-      "cl100k": 4875
+      "heuristic": 5797,
+      "cl100k": 5848
     },
     "dependencies": {
       "skills": [
@@ -22362,8 +22440,8 @@
     ],
     "fileMeta": {
       "SKILL.md": {
-        "sizeBytes": 3683,
-        "lineCount": 89,
+        "sizeBytes": 4754,
+        "lineCount": 104,
         "ext": "md",
         "tabKey": "root"
       },
@@ -22405,8 +22483,8 @@
       }
     },
     "tokenEstimate": {
-      "heuristic": 7156,
-      "cl100k": 7497
+      "heuristic": 7420,
+      "cl100k": 7750
     },
     "dependencies": {
       "skills": [
@@ -22916,8 +22994,8 @@
     ],
     "fileMeta": {
       "SKILL.md": {
-        "sizeBytes": 3522,
-        "lineCount": 86,
+        "sizeBytes": 5625,
+        "lineCount": 144,
         "ext": "md",
         "tabKey": "root"
       },
@@ -22953,8 +23031,8 @@
       }
     },
     "tokenEstimate": {
-      "heuristic": 12257,
-      "cl100k": 11465
+      "heuristic": 12774,
+      "cl100k": 12022
     },
     "dependencies": {
       "skills": [
@@ -23011,8 +23089,8 @@
     ],
     "fileMeta": {
       "SKILL.md": {
-        "sizeBytes": 4373,
-        "lineCount": 89,
+        "sizeBytes": 5446,
+        "lineCount": 134,
         "ext": "md",
         "tabKey": "root"
       },
@@ -23048,8 +23126,8 @@
       }
     },
     "tokenEstimate": {
-      "heuristic": 23194,
-      "cl100k": 21382
+      "heuristic": 23459,
+      "cl100k": 21633
     },
     "dependencies": {
       "skills": [
@@ -23090,8 +23168,8 @@
         "tabKey": "root"
       },
       "SKILL.md": {
-        "sizeBytes": 32370,
-        "lineCount": 480,
+        "sizeBytes": 33168,
+        "lineCount": 486,
         "ext": "md",
         "tabKey": "root"
       },
@@ -23156,8 +23234,8 @@
         "tabKey": "scripts"
       },
       "scripts/improve_description.py": {
-        "sizeBytes": 10723,
-        "lineCount": 249,
+        "sizeBytes": 11116,
+        "lineCount": 248,
         "ext": "py",
         "tabKey": "scripts"
       },
@@ -23180,8 +23258,8 @@
         "tabKey": "scripts"
       },
       "scripts/run_loop.py": {
-        "sizeBytes": 13685,
-        "lineCount": 333,
+        "sizeBytes": 13605,
+        "lineCount": 329,
         "ext": "py",
         "tabKey": "scripts"
       },
@@ -23193,8 +23271,8 @@
       }
     },
     "tokenEstimate": {
-      "heuristic": 42860,
-      "cl100k": 39049
+      "heuristic": 43136,
+      "cl100k": 39381
     },
     "dependencies": {
       "skills": [],
@@ -23559,15 +23637,15 @@
     ],
     "fileMeta": {
       "SKILL.md": {
-        "sizeBytes": 5105,
-        "lineCount": 214,
+        "sizeBytes": 5026,
+        "lineCount": 213,
         "ext": "md",
         "tabKey": "root"
       }
     },
     "tokenEstimate": {
-      "heuristic": 1277,
-      "cl100k": 1232
+      "heuristic": 1257,
+      "cl100k": 1212
     },
     "dependencies": {
       "skills": [],
@@ -23583,15 +23661,15 @@
     ],
     "fileMeta": {
       "SKILL.md": {
-        "sizeBytes": 6887,
-        "lineCount": 333,
+        "sizeBytes": 6808,
+        "lineCount": 332,
         "ext": "md",
         "tabKey": "root"
       }
     },
     "tokenEstimate": {
-      "heuristic": 1722,
-      "cl100k": 1815
+      "heuristic": 1702,
+      "cl100k": 1795
     },
     "dependencies": {
       "skills": [],
@@ -23607,15 +23685,15 @@
     ],
     "fileMeta": {
       "SKILL.md": {
-        "sizeBytes": 4472,
-        "lineCount": 195,
+        "sizeBytes": 4393,
+        "lineCount": 194,
         "ext": "md",
         "tabKey": "root"
       }
     },
     "tokenEstimate": {
-      "heuristic": 1094,
-      "cl100k": 1119
+      "heuristic": 1075,
+      "cl100k": 1099
     },
     "dependencies": {
       "skills": [],
@@ -23631,15 +23709,15 @@
     ],
     "fileMeta": {
       "SKILL.md": {
-        "sizeBytes": 3817,
-        "lineCount": 164,
+        "sizeBytes": 3738,
+        "lineCount": 163,
         "ext": "md",
         "tabKey": "root"
       }
     },
     "tokenEstimate": {
-      "heuristic": 955,
-      "cl100k": 1046
+      "heuristic": 935,
+      "cl100k": 1026
     },
     "dependencies": {
       "skills": [],
@@ -23706,19 +23784,47 @@
   "move-code-quality-skill": {
     "category": "Web3 & Blockchain",
     "files": [
+      ".gitignore",
+      "CONTRIBUTING.md",
+      "LICENSE",
+      "README.md",
       "SKILL.md"
     ],
     "fileMeta": {
+      ".gitignore": {
+        "sizeBytes": 40,
+        "lineCount": 0,
+        "ext": "none",
+        "tabKey": "root"
+      },
+      "CONTRIBUTING.md": {
+        "sizeBytes": 4308,
+        "lineCount": 171,
+        "ext": "md",
+        "tabKey": "root"
+      },
+      "LICENSE": {
+        "sizeBytes": 1093,
+        "lineCount": 0,
+        "ext": "none",
+        "tabKey": "root"
+      },
+      "README.md": {
+        "sizeBytes": 3289,
+        "lineCount": 105,
+        "ext": "md",
+        "tabKey": "root"
+      },
       "SKILL.md": {
-        "sizeBytes": 12922,
+        "sizeBytes": 12996,
         "lineCount": 416,
         "ext": "md",
         "tabKey": "root"
       }
     },
     "tokenEstimate": {
-      "heuristic": 3183,
-      "cl100k": 3467
+      "heuristic": 5083,
+      "cl100k": 5187
     },
     "dependencies": {
       "skills": [],
@@ -23734,15 +23840,15 @@
     ],
     "fileMeta": {
       "SKILL.md": {
-        "sizeBytes": 4163,
-        "lineCount": 195,
+        "sizeBytes": 4084,
+        "lineCount": 194,
         "ext": "md",
         "tabKey": "root"
       }
     },
     "tokenEstimate": {
-      "heuristic": 1041,
-      "cl100k": 1064
+      "heuristic": 1021,
+      "cl100k": 1044
     },
     "dependencies": {
       "skills": [],
@@ -23758,15 +23864,15 @@
     ],
     "fileMeta": {
       "SKILL.md": {
-        "sizeBytes": 2048,
-        "lineCount": 78,
+        "sizeBytes": 8993,
+        "lineCount": 397,
         "ext": "md",
         "tabKey": "root"
       }
     },
     "tokenEstimate": {
-      "heuristic": 512,
-      "cl100k": 472
+      "heuristic": 2245,
+      "cl100k": 2193
     },
     "dependencies": {
       "skills": [],
@@ -23782,15 +23888,15 @@
     ],
     "fileMeta": {
       "SKILL.md": {
-        "sizeBytes": 4375,
-        "lineCount": 229,
+        "sizeBytes": 4296,
+        "lineCount": 228,
         "ext": "md",
         "tabKey": "root"
       }
     },
     "tokenEstimate": {
-      "heuristic": 1094,
-      "cl100k": 1163
+      "heuristic": 1074,
+      "cl100k": 1143
     },
     "dependencies": {
       "skills": [],
@@ -23806,15 +23912,15 @@
     ],
     "fileMeta": {
       "SKILL.md": {
-        "sizeBytes": 5778,
-        "lineCount": 222,
+        "sizeBytes": 5699,
+        "lineCount": 221,
         "ext": "md",
         "tabKey": "root"
       }
     },
     "tokenEstimate": {
-      "heuristic": 1445,
-      "cl100k": 1341
+      "heuristic": 1425,
+      "cl100k": 1321
     },
     "dependencies": {
       "skills": [],
@@ -23830,15 +23936,15 @@
     ],
     "fileMeta": {
       "SKILL.md": {
-        "sizeBytes": 5225,
-        "lineCount": 212,
+        "sizeBytes": 5146,
+        "lineCount": 211,
         "ext": "md",
         "tabKey": "root"
       }
     },
     "tokenEstimate": {
-      "heuristic": 1303,
-      "cl100k": 1272
+      "heuristic": 1283,
+      "cl100k": 1252
     },
     "dependencies": {
       "skills": [],
@@ -23854,15 +23960,15 @@
     ],
     "fileMeta": {
       "SKILL.md": {
-        "sizeBytes": 6169,
-        "lineCount": 257,
+        "sizeBytes": 6090,
+        "lineCount": 256,
         "ext": "md",
         "tabKey": "root"
       }
     },
     "tokenEstimate": {
-      "heuristic": 1543,
-      "cl100k": 1588
+      "heuristic": 1523,
+      "cl100k": 1568
     },
     "dependencies": {
       "skills": [],

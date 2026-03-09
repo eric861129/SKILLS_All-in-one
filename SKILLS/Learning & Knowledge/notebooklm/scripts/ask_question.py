@@ -261,8 +261,8 @@ def _wait_for_new_answer(
                 stable_value = candidate
                 stable_count = 1
 
-        if stable_count >= required_stable_polls:
-            return candidate
+            if stable_count >= required_stable_polls:
+                return candidate
 
         page.wait_for_timeout(1000)
 
@@ -461,14 +461,21 @@ def _ask_with_retries(
                         time.sleep(min(attempt * 1.5, 5.0))
                         continue
 
-                if errors:
-                    result.setdefault("previous_errors", errors)
-                if artifacts:
-                    result.setdefault("artifacts", artifacts)
-                if attempt > 1:
-                    result.setdefault("attempts", attempt)
-                return result
+                    if errors:
+                        result.setdefault("previous_errors", errors)
+                    if artifacts:
+                        result.setdefault("artifacts", artifacts)
+                    if attempt > 1:
+                        result.setdefault("attempts", attempt)
+                    return result
 
+                if errors:
+                    result["previous_errors"] = errors
+                if artifacts:
+                    result["artifacts"] = artifacts
+                if attempt > 1:
+                    result["attempts"] = attempt
+                return result
             except Exception as exc:  # noqa: BLE001
                 error_message = str(exc)
                 errors.append(error_message)
