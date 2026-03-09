@@ -14,7 +14,7 @@ An open-source AI agent skills library for Claude Code, ChatGPT, and MCP-style w
 - Supported agents: Claude Code, Claude Desktop, ChatGPT, Gemini CLI
 - Skill library: 100+ curated and downloadable skills
 
-![SKILLS All-in-one preview](./public/social-preview.svg)
+![SKILLS All-in-one preview](./public/SKILL_ALL_IN_ONE.jpg)
 
 ## Who Is This For
 
@@ -76,7 +76,7 @@ Update these GitHub repository settings manually to match the new site metadata:
 - About description: `Open-source AI agent skills library for Claude Code, ChatGPT, and MCP workflows.`
 - Website: `https://huangchiyu.com/SKILLS_All-in-one/`
 - Topics: `ai-agent`, `claude-code`, `chatgpt`, `mcp`, `prompt-engineering`, `ai-tools`, `skills-library`, `open-source`
-- Social preview: use `public/social-preview.svg` or an exported PNG variant
+- Social preview: use `public/SKILL_ALL_IN_ONE.jpg`
 
 ## 中文簡介
 
