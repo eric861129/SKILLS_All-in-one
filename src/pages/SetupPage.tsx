@@ -5,9 +5,12 @@ import { SeoHead } from '../components/SeoHead';
 import { useLanguage } from '../hooks/useLanguage';
 import { ScrollToTop } from '../components/ScrollToTop';
 import { buildSetupSeo } from '../seo/metadata';
+import { getRepositoryUrl, getSubmitSkillGuideUrl } from '../utils/githubLinks';
 
 export const SetupPage = () => {
     const { language, setLanguage, t } = useLanguage();
+    const submitSkillGuideUrl = getSubmitSkillGuideUrl(language);
+    const repositoryUrl = getRepositoryUrl();
 
     return (
         <div className="min-h-screen bg-slate-950 text-white noise-overlay">
@@ -33,7 +36,7 @@ export const SetupPage = () => {
                             <span className="text-[10px] font-black uppercase tracking-widest">{language === 'en' ? '中文' : 'EN'}</span>
                         </button>
                         <a 
-                            href="https://github.com/eric861129/SKILLS_All-in-one" 
+                            href={repositoryUrl} 
                             target="_blank" 
                             rel="noopener noreferrer"
                             className="px-4 py-2 bg-white text-slate-950 rounded-xl text-[10px] font-black uppercase tracking-widest hover:bg-accent hover:text-white transition-all shadow-xl"
@@ -112,7 +115,7 @@ export const SetupPage = () => {
                                    {t('missingAgentDesc')}
                                 </p>
                                 <a 
-                                   href="https://github.com/eric861129/SKILLS_All-in-one/issues/new?template=submit_skill.md" 
+                                   href={submitSkillGuideUrl} 
                                    target="_blank"
                                    rel="noopener noreferrer"
                                    className="inline-flex items-center gap-3 bg-emerald-500 hover:bg-emerald-400 text-slate-950 px-8 py-3.5 rounded-xl text-[10px] font-black uppercase tracking-[0.3em] transition-all shadow-lg active:scale-95"

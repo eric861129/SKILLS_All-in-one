@@ -1,27 +1,65 @@
 ---
 name: Submit a Skill
-about: Submit a new AI skill to be added to the library
+about: Propose a new AI skill to be added to the library
 title: '[New Skill] '
 labels: new-skill
 assignees: ''
 ---
 
-## Skill 基本資訊
+## Skill Basics
 
-**名稱**: 
-**分類**: <!-- Document Skills / Development & Code Tools / Data & Analysis / Writing & Research / 其他 -->
-**作者**: 
-**標籤**: <!-- e.g. React, TypeScript, Testing -->
+**Skill name**:
+**Author / source**:
+**Category**:
+**Tags**:
 
-## 描述
-簡要描述這個 Skill 的功能與用途。
+## Description
 
-## Skill 檔案
-請提供以下之一：
-- [ ] 直接在此 Issue 附上 Skill 檔案
-- [ ] 提供 Skill 的 GitHub 連結: 
+What does this skill do, and when should it be used?
 
-## SKILL.md 內容預覽
-```markdown
-<!-- 貼上你的 SKILL.md 內容 -->
-```
+## References
+
+- Original repository:
+- Documentation:
+- Screenshots / previews:
+
+## Skill Files
+
+- [ ] I have attached a draft `SKILL.md`
+- [ ] I have a repository or file bundle to share
+- [ ] I want feedback before preparing a PR
+
+## Notes
+
+Add anything else that would help review this submission.
+
+---
+
+## 中文補充
+
+### 技能基本資訊
+
+**技能名稱**:
+**作者 / 來源**:
+**分類**:
+**標籤**:
+
+### 說明
+
+這個技能的用途是什麼？適合在哪些情境下使用？
+
+### 參考資料
+
+- 原始 repo:
+- 文件連結:
+- 截圖 / 預覽:
+
+### 技能檔案
+
+- [ ] 我有附上 `SKILL.md` 草稿
+- [ ] 我有 repo 或檔案可以提供
+- [ ] 我想先討論，再整理成 PR
+
+### 補充說明
+
+請補充任何有助於審查與收錄的資訊。

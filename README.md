@@ -1,43 +1,45 @@
 # SKILLS All-in-one
 
-[![Live Demo](https://img.shields.io/badge/demo-huangchiyu.com-blue?style=flat-square)](https://huangchiyu.com/SKILLS_All-in-one/)
+[English README](./README_en.md)
+
+[![線上展示](https://img.shields.io/badge/demo-huangchiyu.com-blue?style=flat-square)](https://huangchiyu.com/SKILLS_All-in-one/)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green?style=flat-square)](LICENSE)
 [![GitHub Stars](https://img.shields.io/github/stars/eric861129/SKILLS_All-in-one?style=flat-square)](https://github.com/eric861129/SKILLS_All-in-one/stargazers)
 [![Issues](https://img.shields.io/github/issues/eric861129/SKILLS_All-in-one?style=flat-square)](https://github.com/eric861129/SKILLS_All-in-one/issues)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen?style=flat-square)](CONTRIBUTING.md)
+[![歡迎 PR](https://img.shields.io/badge/PRs-welcome-brightgreen?style=flat-square)](CONTRIBUTING.md)
 
-An open-source AI agent skills library for Claude Code, ChatGPT, and MCP-style workflows. Browse, preview, and download curated skills for development, automation, research, writing, and security use cases.
+**SKILLS All-in-one** 是一個開源的 AI Agent 技能庫，聚焦在 Claude Code、ChatGPT 與 MCP 類型工作流。你可以在網站上搜尋技能、預覽內容、檢視檔案結構，再下載到自己的 Agent 環境中使用。
 
-## Live Demo Snapshot
+## 專案概覽
 
-- Live demo: https://huangchiyu.com/SKILLS_All-in-one/
-- Supported agents: Claude Code, Claude Desktop, ChatGPT, Gemini CLI
-- Skill library: 100+ curated and downloadable skills
+- 線上網站：https://huangchiyu.com/SKILLS_All-in-one/
+- 支援平台：Claude Code、Claude Desktop、ChatGPT、Gemini CLI
+- 技能內容：100+ 可瀏覽、可預覽、可下載的技能
 
-![SKILLS All-in-one preview](./public/SKILL_ALL_IN_ONE.jpg)
+![SKILLS All-in-one 預覽](./public/SKILL_ALL_IN_ONE.jpg)
 
-## Who Is This For
+## 這個專案適合誰
 
-- Developers who want reusable AI agent skills instead of rewriting prompts and setup docs.
-- Teams building MCP-compatible or tool-augmented AI workflows.
-- Researchers, writers, and operators who need discoverable skill packages with previewable contents.
+- 想要重用 AI Agent 能力，而不是每次重寫 prompt 與設定的人
+- 正在建立 MCP、工具呼叫或 Agent workflow 的開發者與團隊
+- 需要先看內容再決定是否下載技能的研究、內容與自動化使用者
 
-## Supported Agents
+## 支援的 Agent
 
 - Claude Code
 - Claude Desktop
 - ChatGPT
 - Gemini CLI
-- Additional agent integrations documented in the site docs
+- 其他整合中的 Agent 平台
 
-## How It Works
+## 運作方式
 
-1. Browse the skill library on the website.
-2. Open a skill page to inspect files, metadata, and usage intent.
-3. Download the skill package and install it into your target agent environment.
-4. Follow the setup guide to wire skills into Claude Code, ChatGPT, or other compatible workflows.
+1. 在網站上瀏覽技能庫。
+2. 進入技能頁查看用途、作者、標籤與檔案內容。
+3. 下載技能包並放進你的 Agent 環境。
+4. 依照網站上的 setup guide 完成掛載與使用。
 
-## Featured Skill Categories
+## 特色分類
 
 - Development & Code Tools
 - Data & Analysis
@@ -46,14 +48,14 @@ An open-source AI agent skills library for Claude Code, ChatGPT, and MCP-style w
 - Utility & Automation
 - Document Skills
 
-## Featured Use Cases
+## 常見使用情境
 
-- Install Claude Code skills for code review, architecture, testing, and automation.
-- Reuse ChatGPT-friendly skill packages for research, writing, and workflow acceleration.
-- Explore MCP-oriented skills for tool integration, external APIs, and agent orchestration.
-- Preview skill contents before download with a deep file inspector.
+- 安裝 Claude Code 技能來做 code review、架構設計、測試與自動化
+- 下載 ChatGPT 可用的技能包來加速研究、寫作與工作流程
+- 瀏覽 MCP 相關技能來整合外部工具、API 與多步驟任務
+- 在下載前先用網站的 deep preview 檢查技能內容
 
-## Quick Start
+## 快速開始
 
 ```bash
 git clone https://github.com/eric861129/SKILLS_All-in-one.git
@@ -62,52 +64,32 @@ npm install
 npm run dev
 ```
 
-## Technical Stack
+## 技術棧
 
 - Frontend: React 19, Vite 7, TypeScript, Tailwind CSS 4
 - Search and browsing: Fuse.js, React Router
 - Packaging and previews: JSZip, React Markdown, syntax highlighting
 - Automation: build-time manifest and SEO asset generators
 
-## Repository SEO Checklist
+## 貢獻與提交流程
 
-Update these GitHub repository settings manually to match the new site metadata:
+- 中文貢獻說明：[CONTRIBUTING.md](./CONTRIBUTING.md)
+- English contribution guide: [CONTRIBUTING_en.md](./CONTRIBUTING_en.md)
+- 提交新技能 Issue：請先閱讀 [提交技能說明](./CONTRIBUTING.md#submit-skill-guide)
+
+## GitHub Repository 建議設定
 
 - About description: `Open-source AI agent skills library for Claude Code, ChatGPT, and MCP workflows.`
 - Website: `https://huangchiyu.com/SKILLS_All-in-one/`
 - Topics: `ai-agent`, `claude-code`, `chatgpt`, `mcp`, `prompt-engineering`, `ai-tools`, `skills-library`, `open-source`
-- Social preview: use `public/SKILL_ALL_IN_ONE.jpg`
+- Social preview: `public/SKILL_ALL_IN_ONE.jpg`
 
-## 中文簡介
-
-**SKILLS All-in-one** 是一個開源的 AI Agent 技能庫，聚焦在 Claude Code、ChatGPT 與 MCP 類型工作流。你可以在網站上搜尋技能、預覽內容、查看檔案結構，再下載到自己的 Agent 環境使用。
-
-### 特色
-
-- 技能可瀏覽、可預覽、可下載，不只是靜態清單。
-- 支援開發、自動化、資料分析、寫作研究與安全測試等多種場景。
-- 每個技能頁都能直接查看檔案內容與結構。
-- 提供安裝與掛載說明，方便接入不同 AI Agent 工作流。
-
-### 快速開始
-
-```bash
-git clone https://github.com/eric861129/SKILLS_All-in-one.git
-cd SKILLS_All-in-one
-npm install
-npm run dev
-```
-
-## Contributing
-
-See [CONTRIBUTING.md](CONTRIBUTING.md) for contribution flow, new skill submissions, and repository conventions.
-
-## Author
+## 作者
 
 - Website: [huangchiyu.com](https://huangchiyu.com)
 - Blog: [ChiYu-Blog](https://huangchiyu.com/ChiYu-Blog/)
 - GitHub: [@eric861129](https://github.com/eric861129)
 
-## License
+## 授權
 
-Released under the [MIT License](LICENSE).
+本專案採用 [MIT License](LICENSE)。

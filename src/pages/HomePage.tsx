@@ -12,6 +12,7 @@ import { useLanguage } from '../hooks/useLanguage';
 import { buildHomeSeo } from '../seo/metadata';
 import type { Skill, SkillCategory } from '../types/skill';
 import type { SortOption } from '../hooks/useSkills';
+import { getContributingUrl, getReadmeUrl, getRepositoryUrl, getSubmitSkillGuideUrl } from '../utils/githubLinks';
 
 const ITEMS_PER_PAGE = 24;
 const HOME_PAGE_STATE_KEY = 'skills-home-state-v1';
@@ -211,6 +212,10 @@ export const HomePage = () => {
     // ??嚗????
     const totalDownloads = skills.reduce((sum, s) => sum + (s.downloadCount || 0), 0);
     const homeSeo = buildHomeSeo(language, skills, categories);
+    const submitSkillGuideUrl = getSubmitSkillGuideUrl(language);
+    const contributingUrl = getContributingUrl(language);
+    const readmeUrl = getReadmeUrl(language);
+    const repositoryUrl = getRepositoryUrl();
 
     return (
         <div className="min-h-screen bg-slate-950 text-white noise-overlay">
@@ -521,7 +526,7 @@ export const HomePage = () => {
                 </p>
                 <div className="mt-6 flex flex-col items-center gap-6">
                     <a
-                        href="https://github.com/eric861129/SKILLS_All-in-one/issues/new?template=submit_skill.md"
+                        href={submitSkillGuideUrl}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center gap-2 bg-accent hover:bg-indigo-500 text-white px-5 py-2.5 rounded-xl text-xs font-bold uppercase tracking-widest transition-all shadow-lg shadow-accent/20 hover:shadow-indigo-500/30 active:scale-95"
@@ -530,9 +535,9 @@ export const HomePage = () => {
                         {t('submitSkill')}
                     </a>
                     <div className="flex justify-center gap-6 text-slate-700 text-[10px] font-bold uppercase tracking-widest">
-                        <a href="https://github.com/eric861129/SKILLS_All-in-one#readme" target="_blank" rel="noopener noreferrer" className="hover:text-slate-400 transition-colors">Documentation</a>
-                        <a href="https://github.com/eric861129/SKILLS_All-in-one" target="_blank" rel="noopener noreferrer" className="hover:text-slate-400 transition-colors">GitHub</a>
-                        <a href="https://github.com/eric861129/SKILLS_All-in-one/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener noreferrer" className="hover:text-slate-400 transition-colors">{t('contributing')}</a>
+                        <a href={readmeUrl} target="_blank" rel="noopener noreferrer" className="hover:text-slate-400 transition-colors">Documentation</a>
+                        <a href={repositoryUrl} target="_blank" rel="noopener noreferrer" className="hover:text-slate-400 transition-colors">GitHub</a>
+                        <a href={contributingUrl} target="_blank" rel="noopener noreferrer" className="hover:text-slate-400 transition-colors">{t('contributing')}</a>
                     </div>
                 </div>
             </footer>
