@@ -1,3 +1,60 @@
+-- 2026/03/09 SuperPower tag updates
+UPDATE Skill
+SET tags = '["TDD","Testing","Quality","SuperPower"]'
+WHERE id = 7;
+
+UPDATE Skill
+SET tags = '["Ideas","Requirements","Design","SuperPower"]'
+WHERE id = 21;
+
+UPDATE Skill
+SET tags = '["Agent","Parallel","Multi-task","SuperPower"]'
+WHERE id = 32;
+
+UPDATE Skill
+SET tags = '["Workflow","Execution","Planning","SuperPower"]'
+WHERE id = 37;
+
+UPDATE Skill
+SET tags = '["Git","Workflow","PR","SuperPower"]'
+WHERE id = 41;
+
+UPDATE Skill
+SET tags = '["Code Review","Workflow","Quality","SuperPower"]'
+WHERE id = 55;
+
+UPDATE Skill
+SET tags = '["Code Review","Verification","Workflow","SuperPower"]'
+WHERE id = 56;
+
+UPDATE Skill
+SET tags = '["Workflow","Agent","Implementation","SuperPower"]'
+WHERE id = 82;
+
+UPDATE Skill
+SET tags = '["Debugging","RC","Methodology","SuperPower"]'
+WHERE id = 84;
+
+UPDATE Skill
+SET tags = '["Git","Worktree","Workflow","SuperPower"]'
+WHERE id = 90;
+
+UPDATE Skill
+SET tags = '["Agent","Skill","Workflow","SuperPower"]'
+WHERE id = 91;
+
+UPDATE Skill
+SET tags = '["Validation","Testing","Verification","SuperPower"]'
+WHERE id = 92;
+
+UPDATE Skill
+SET tags = '["Planning","Implementation","Workflow","SuperPower"]'
+WHERE id = 98;
+
+UPDATE Skill
+SET tags = '["Skills","Documentation","TDD","Automation","SuperPower"]'
+WHERE id = 99;
+
 --2026/03/09
 UPDATE Skill
 SET description = 'Generates Angular 17+ standalone components, configures advanced routing with lazy loading and guards, implements NgRx state management, applies RxJS patterns, and optimizes bundle performance. Use when building Angular 17+ applications with standalone components or signals, setting up NgRx stores, establishing RxJS reactive patterns, performance tuning, or writing Angular tests for enterprise apps.',

@@ -1,6 +1,6 @@
 import type { Skill } from '../types/skill';
 
-export const MOCK_SKILLS: Skill[] = [
+const BASE_MOCK_SKILLS: Skill[] = [
   // Document Skills
   {
     id: 1,
@@ -5173,3 +5173,22 @@ export const MOCK_SKILLS: Skill[] = [
     githubUrl: 'https://github.com/anthropics/skills/tree/main/skills/mcp-builder'
   },
 ];
+
+const SUPERPOWERS_REPO_PREFIX = 'https://github.com/obra/superpowers/tree/main/skills';
+const SUPERPOWERS_ACTIVATION_SOURCE = 'using-superpowers';
+
+const isSuperpowerSkill = (skill: Skill): boolean => skill.githubUrl?.startsWith(SUPERPOWERS_REPO_PREFIX) ?? false;
+
+const appendTag = (tags: string[], tag: string): string[] => (tags.includes(tag) ? tags : [...tags, tag]);
+
+export const MOCK_SKILLS: Skill[] = BASE_MOCK_SKILLS.map((skill) => {
+  if (!isSuperpowerSkill(skill)) {
+    return skill;
+  }
+
+  return {
+    ...skill,
+    tags: appendTag(skill.tags, 'SuperPower'),
+    usageCommand: skill.source === SUPERPOWERS_ACTIVATION_SOURCE ? undefined : SUPERPOWERS_ACTIVATION_SOURCE,
+  };
+});

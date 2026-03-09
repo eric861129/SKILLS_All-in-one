@@ -26,6 +26,7 @@ export interface Skill {
   source: string; // 對應資料庫中的 source 欄位 (原 folderName)
   downloadCount: number; //預設為0
   createdAt: string;
+  updatedAt?: string;
   category: SkillCategory;
   tags: string[];
   version?: string;

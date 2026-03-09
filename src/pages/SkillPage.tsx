@@ -664,6 +664,11 @@ export const SkillPage = () => {
         }
     }, [fileBinaryMeta, fileContent, language, selectedFile, showToast]);
 
+    const activationSkill = useMemo(() => {
+        if (!skill?.usageCommand) return null;
+        return MOCK_SKILLS.find((candidate) => candidate.source === skill.usageCommand) || null;
+    }, [skill]);
+
     const relatedSkills = useMemo(() => {
         if (!skill) return [];
         return MOCK_SKILLS
@@ -995,6 +1000,38 @@ export const SkillPage = () => {
                         </div>
                     </div>
                 </div>
+
+                {activationSkill && (
+                    <div className="mb-10">
+                        <h2 className="text-[10px] font-bold uppercase tracking-widest text-slate-500 mb-4 flex items-center gap-2">
+                            <Terminal className="w-3.5 h-3.5" />
+                            {language === 'zh' ? '啟用技能' : 'Activation Skill'}
+                        </h2>
+                        <Link
+                            to={`/skill/${activationSkill.id}`}
+                            className="block bg-slate-900 border border-slate-800 rounded-xl p-5 hover:border-blue-500/50 hover:bg-slate-800/50 transition-all group"
+                        >
+                            <div className="flex flex-col gap-3 md:flex-row md:items-start md:justify-between">
+                                <div>
+                                    <div className="text-[10px] font-bold uppercase tracking-widest text-blue-400 mb-2">
+                                        {language === 'zh' ? 'SuperPower 系列' : 'SuperPower Series'}
+                                    </div>
+                                    <h3 className="text-base font-bold text-slate-200 group-hover:text-blue-400 transition-colors mb-2">
+                                        {getLocalized(activationSkill, 'name', language)}
+                                    </h3>
+                                    <p className="text-sm text-slate-400 max-w-2xl">
+                                        {language === 'zh'
+                                            ? '這個技能屬於 SuperPower 系列，建議先透過 using-superpowers 建立技能調用流程後再使用。'
+                                            : 'This skill is part of the SuperPower series. Start with using-superpowers to establish the activation workflow before using it.'}
+                                    </p>
+                                </div>
+                                <div className="text-xs uppercase tracking-widest text-slate-500 font-medium">
+                                    {activationSkill.source}
+                                </div>
+                            </div>
+                        </Link>
+                    </div>
+                )}
 
                 <div className="mb-10">
                     <h2 className="text-[10px] font-bold uppercase tracking-widest text-slate-500 mb-4 flex items-center gap-2">
