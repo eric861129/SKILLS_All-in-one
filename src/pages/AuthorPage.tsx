@@ -5,14 +5,16 @@ import { useSkills } from '../hooks/useSkills';
 import { SkillCard } from '../components/SkillCard';
 import { SkeletonCard } from '../components/SkeletonCard';
 import { ScrollToTop } from '../components/ScrollToTop';
+import { SeoHead } from '../components/SeoHead';
 import { useLanguage } from '../hooks/useLanguage';
+import { buildAuthorSeo } from '../seo/metadata';
 
 
 export const AuthorPage = () => {
     const { name } = useParams<{ name: string }>();
     const navigate = useNavigate();
     const { skills, loading } = useSkills();
-    const { t } = useLanguage();
+    const { language, t } = useLanguage();
 
     // Filter skills exactly by author
     const authorSkills = useMemo(() => {
@@ -26,13 +28,11 @@ export const AuthorPage = () => {
 
     useEffect(() => {
         window.scrollTo(0, 0);
-        if (name) {
-            document.title = `${name} | SKILLS All-in-one`;
-        }
     }, [name]);
 
     return (
         <div className="min-h-screen bg-slate-950 text-white noise-overlay">
+            {name && <SeoHead meta={buildAuthorSeo(name, language)} />}
             {/* Top Nav */}
             <nav className="border-b border-slate-900 px-4 md:px-8 py-4">
                 <div className="max-w-7xl mx-auto flex items-center justify-between">

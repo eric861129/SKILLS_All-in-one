@@ -31,7 +31,9 @@ import { useLanguage } from '../hooks/useLanguage';
 import { downloadAndZipSkill } from '../utils/downloadSkill';
 import { useToast } from '../components/Toast';
 import { GiscusComments } from '../components/GiscusComments';
+import { SeoHead } from '../components/SeoHead';
 import { getLocalized } from '../utils/i18n';
+import { buildSkillNotFoundSeo, buildSkillSeo } from '../seo/metadata';
 import type { Skill, SkillCategory } from '../types/skill';
 import type { SkillManifestEntry, SkillsManifest } from '../types/manifest';
 
@@ -396,17 +398,16 @@ export const SkillPage = () => {
         const numId = Number(id);
         return MOCK_SKILLS.find((s) => s.id === numId) || null;
     }, [id]);
+    const seoMeta = useMemo(
+        () => (skill ? buildSkillSeo(skill, language) : buildSkillNotFoundSeo(language, id)),
+        [skill, language, id]
+    );
 
     useEffect(() => {
         if (skill) {
             setDownloadCount(skill.downloadCount || 0);
-            const title = language === 'zh' && skill.nameZh ? skill.nameZh : skill.name;
-            document.title = `${title} | SKILLS All-in-one`;
         }
-        return () => {
-            document.title = 'SKILLS All-in-one | Premium AI Agent Skills Library';
-        };
-    }, [skill, language]);
+    }, [skill]);
 
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -774,6 +775,7 @@ export const SkillPage = () => {
     if (!skill) {
         return (
             <div className="min-h-screen bg-slate-950 text-white flex flex-col items-center justify-center gap-6">
+                <SeoHead meta={seoMeta} />
                 <div className="p-4 bg-slate-900 rounded-2xl border border-slate-800">
                     <Terminal className="w-12 h-12 text-slate-500" />
                 </div>
@@ -799,6 +801,7 @@ export const SkillPage = () => {
 
     return (
         <div className="min-h-screen bg-slate-950 text-white">
+            <SeoHead meta={seoMeta} />
             <nav className="border-b border-slate-900 px-4 md:px-8 py-4">
                 <div className="max-w-6xl mx-auto flex items-center gap-4">
                     <Link

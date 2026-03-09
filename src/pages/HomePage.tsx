@@ -7,8 +7,9 @@ import { FilterSidebar } from '../components/FilterSidebar';
 import { SkeletonCard } from '../components/SkeletonCard';
 import { ScrollToTop } from '../components/ScrollToTop';
 import { HowItWorks } from '../components/HowItWorks';
-import { JsonLd } from '../components/JsonLd';
+import { SeoHead } from '../components/SeoHead';
 import { useLanguage } from '../hooks/useLanguage';
+import { buildHomeSeo } from '../seo/metadata';
 import type { Skill, SkillCategory } from '../types/skill';
 import type { SortOption } from '../hooks/useSkills';
 
@@ -209,10 +210,11 @@ export const HomePage = () => {
 
     // ??嚗????
     const totalDownloads = skills.reduce((sum, s) => sum + (s.downloadCount || 0), 0);
+    const homeSeo = buildHomeSeo(language, skills, categories);
 
     return (
         <div className="min-h-screen bg-slate-950 text-white noise-overlay">
-            <JsonLd />
+            <SeoHead meta={homeSeo} />
 
             {/* Language Switcher Float */}
             <div className="fixed top-6 right-6 z-40">

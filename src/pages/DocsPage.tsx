@@ -4,6 +4,10 @@ import { List } from 'lucide-react';
 import { DocsLayout } from '../components/Docs/DocsLayout';
 import { MarkdownRenderer } from '../components/Docs/MarkdownRenderer';
 import { AgentWizard } from '../components/AgentWizard';
+import { SeoHead } from '../components/SeoHead';
+import { getDocPageBySlug, loadDocContent } from '../data/docs';
+import { useLanguage } from '../hooks/useLanguage';
+import { buildDocsSeo } from '../seo/metadata';
 
 interface Heading {
   id: string;
@@ -13,34 +17,18 @@ interface Heading {
 
 export const DocsPage = () => {
   const { slug } = useParams();
+  const { language } = useLanguage();
   const [content, setContent] = useState('');
   const [loading, setLoading] = useState(true);
   const [headings, setHeadings] = useState<Heading[]>([]);
+  const docPage = getDocPageBySlug(slug);
 
   useEffect(() => {
     setLoading(true);
-    const fileName = slug || 'welcome';
     
     const loadContent = async () => {
       try {
-        let module;
-        switch(fileName) {
-          case 'welcome':
-            module = await import('../data/doc/welcome.md?raw');
-            break;
-          case 'what-is-a-skill':
-            module = await import('../data/doc/what-is-a-skill.md?raw');
-            break;
-          case 'supported-agents':
-            module = await import('../data/doc/supported-agents.md?raw');
-            break;
-          case 'security':
-            module = await import('../data/doc/security.md?raw');
-            break;
-          default:
-            module = await import('../data/doc/welcome.md?raw');
-        }
-        const text = module.default;
+        const text = await loadDocContent(slug);
         setContent(text);
         
         // Extract headings for TOC
@@ -69,6 +57,7 @@ export const DocsPage = () => {
   
   return (
     <DocsLayout>
+      <SeoHead meta={buildDocsSeo(docPage, language)} />
       <div className="flex flex-col lg:flex-row gap-12">
         <div className="flex-1 min-w-0">
           {loading ? (

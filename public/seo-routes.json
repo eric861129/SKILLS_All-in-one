@@ -1,0 +1,2816 @@
+[
+  {
+    "path": "/",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one",
+    "type": "home",
+    "title": "AI Agent Skills Library | Claude Code, ChatGPT, MCP Workflows",
+    "description": "Browse downloadable open-source AI agent skills for Claude Code, ChatGPT, and MCP workflows across development, data, writing, and automation."
+  },
+  {
+    "path": "/setup",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/setup",
+    "type": "setup",
+    "title": "AI Agent Setup Guide | Claude Code, ChatGPT, MCP Integration",
+    "description": "Follow the AI agent setup guide to integrate skills into Claude Code, ChatGPT, and other MCP-ready workflows."
+  },
+  {
+    "path": "/docs",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/docs",
+    "type": "docs",
+    "title": "SKILLS All-in-one Docs | Setup guides and AI agent integration help",
+    "description": "Technical documentation for SKILLS All-in-one, including setup guides, platform support, and integration help for Claude Code, ChatGPT, and AI agent workflows."
+  },
+  {
+    "path": "/docs/what-is-a-skill",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/docs/what-is-a-skill",
+    "type": "docs",
+    "title": "What Is an AI Agent Skill? | SKILLS All-in-one Docs",
+    "description": "Learn what an AI agent skill is, how modular instructions and tools work, and how SKILLS All-in-one packages reusable capabilities for modern agents."
+  },
+  {
+    "path": "/docs/supported-agents",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/docs/supported-agents",
+    "type": "docs",
+    "title": "Supported AI Agents and Platforms | SKILLS All-in-one Docs",
+    "description": "See which AI agents and platforms are supported by SKILLS All-in-one, including Claude Desktop, Claude Code, ChatGPT, and Gemini CLI."
+  },
+  {
+    "path": "/docs/security",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/docs/security",
+    "type": "docs",
+    "title": "Security Review Process | SKILLS All-in-one Docs",
+    "description": "Review the security auditing workflow for skills, including static analysis, behavioral review, sandbox testing, and vulnerability reporting."
+  },
+  {
+    "path": "/skill/1",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/1",
+    "type": "skill",
+    "title": "docx | Document Skills Skill by Anthropic | SKILLS All-in-one",
+    "description": "Expert on Aptos token standards including fungible tokens (Coin framework, Fungible Asset), NFTs (Digital Asset/Token V2), collections, metadata, minting, burn…"
+  },
+  {
+    "path": "/skill/2",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/2",
+    "type": "skill",
+    "title": "pdf | Document Skills Skill by Anthropic | SKILLS All-in-one",
+    "description": "Extract text, tables, metadata, merge & annotate PDFs."
+  },
+  {
+    "path": "/skill/3",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/3",
+    "type": "skill",
+    "title": "pptx | Document Skills Skill by Anthropic | SKILLS All-in-one",
+    "description": "Read, generate, and adjust slides, layouts, templates."
+  },
+  {
+    "path": "/skill/4",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/4",
+    "type": "skill",
+    "title": "xlsx | Document Skills Skill by Anthropic | SKILLS All-in-one",
+    "description": "Spreadsheet manipulation: formulas, charts, data transformations."
+  },
+  {
+    "path": "/skill/5",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/5",
+    "type": "skill",
+    "title": "revealjs-skill | Document Skills Skill by ryanbbrown | SKILLS All-in-one",
+    "description": "Generate polished, professional presentations using the Reveal.js HTML presentation framework."
+  },
+  {
+    "path": "/skill/6",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/6",
+    "type": "skill",
+    "title": "web-artifacts-builder | Development & Code Tools Skill by Anthropic | SKILLS All-in-one",
+    "description": "Suite of tools for creating elaborate, multi-component HTML artifacts using React, Tailwind, and shadcn/ui."
+  },
+  {
+    "path": "/skill/7",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/7",
+    "type": "skill",
+    "title": "test-driven-development | Development & Code Tools Skill by obra | SKILLS All-in-one",
+    "description": "Use when implementing any feature or bugfix, before writing implementation code."
+  },
+  {
+    "path": "/skill/8",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/8",
+    "type": "skill",
+    "title": "claude-starter | Development & Code Tools Skill by raintree-technology | SKILLS All-in-one",
+    "description": "Production-ready Claude Code configuration template with 40 auto-activating skills."
+  },
+  {
+    "path": "/skill/14",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/14",
+    "type": "skill",
+    "title": "angular-architect | Development & Code Tools Skill by Anthropic | SKILLS All-in-one",
+    "description": "Generates Angular 17+ standalone components, configures advanced routing with lazy loading and guards, implements NgRx state management, applies RxJS patterns,…"
+  },
+  {
+    "path": "/skill/15",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/15",
+    "type": "skill",
+    "title": "api-designer | Development & Code Tools Skill by Jeffallan | SKILLS All-in-one",
+    "description": "Use when designing REST or GraphQL APIs, creating OpenAPI specifications, or planning API architecture. Invoke for resource modeling, versioning strategies, pa…"
+  },
+  {
+    "path": "/skill/16",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/16",
+    "type": "skill",
+    "title": "architecture-designer | Development & Code Tools Skill by Jeffallan | SKILLS All-in-one",
+    "description": "Use when designing new high-level system architecture, reviewing existing designs, or making architectural decisions. Invoke to create architecture diagrams, w…"
+  },
+  {
+    "path": "/skill/17",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/17",
+    "type": "skill",
+    "title": "cli-developer | Development & Code Tools Skill by Jeffallan | SKILLS All-in-one",
+    "description": "Use when building CLI tools, implementing argument parsing, or adding interactive prompts. Invoke for parsing flags and subcommands, displaying progress bars a…"
+  },
+  {
+    "path": "/skill/36",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/36",
+    "type": "skill",
+    "title": "embedded-systems | Development & Code Tools Skill by Jeffallan | SKILLS All-in-one",
+    "description": "Use when developing firmware for microcontrollers, implementing RTOS applications, or optimizing power consumption. Invoke for STM32, ESP32, FreeRTOS, bare-met…"
+  },
+  {
+    "path": "/skill/38",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/38",
+    "type": "skill",
+    "title": "fastapi-expert | Development & Code Tools Skill by Jeffallan | SKILLS All-in-one",
+    "description": "Use when building high-performance async Python APIs with FastAPI and Pydantic V2. Invoke to create REST endpoints, define Pydantic models, implement authentic…"
+  },
+  {
+    "path": "/skill/42",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/42",
+    "type": "skill",
+    "title": "flutter-expert | Development & Code Tools Skill by Jeffallan | SKILLS All-in-one",
+    "description": "Use when building cross-platform applications with Flutter 3+ and Dart. Invoke for widget development, Riverpod/Bloc state management, GoRouter navigation, pla…"
+  },
+  {
+    "path": "/skill/43",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/43",
+    "type": "skill",
+    "title": "frontend-design | Development & Code Tools Skill by Jeffallan | SKILLS All-in-one",
+    "description": "Create distinctive, production-grade frontend interfaces with high design quality. Use this skill when the user asks to build web components, pages, or applica…"
+  },
+  {
+    "path": "/skill/44",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/44",
+    "type": "skill",
+    "title": "fullstack-guardian | Development & Code Tools Skill by Jeffallan | SKILLS All-in-one",
+    "description": "Builds security-focused full-stack web applications by implementing integrated frontend and backend components with layered security at every level. Covers the…"
+  },
+  {
+    "path": "/skill/46",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/46",
+    "type": "skill",
+    "title": "golang-pro | Development & Code Tools Skill by Jeffallan | SKILLS All-in-one",
+    "description": "Implements concurrent Go patterns using goroutines and channels, designs and builds microservices with gRPC or REST, optimizes Go application performance with…"
+  },
+  {
+    "path": "/skill/47",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/47",
+    "type": "skill",
+    "title": "graphql-architect | Development & Code Tools Skill by Jeffallan | SKILLS All-in-one",
+    "description": "Use when designing GraphQL schemas, implementing Apollo Federation, or building real-time subscriptions. Invoke for schema design, resolvers with DataLoader, q…"
+  },
+  {
+    "path": "/skill/49",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/49",
+    "type": "skill",
+    "title": "java-architect | Development & Code Tools Skill by Jeffallan | SKILLS All-in-one",
+    "description": "Use when building, configuring, or debugging enterprise Java applications with Spring Boot 3.x, microservices, or reactive programming. Invoke to implement Web…"
+  },
+  {
+    "path": "/skill/50",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/50",
+    "type": "skill",
+    "title": "php-pro | Development & Code Tools Skill by Jeffallan | SKILLS All-in-one",
+    "description": "Use when building PHP applications with modern PHP 8.3+ features, Laravel, or Symfony frameworks. Invokes strict typing, PHPStan level 9, async patterns with S…"
+  },
+  {
+    "path": "/skill/51",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/51",
+    "type": "skill",
+    "title": "python-pro | Development & Code Tools Skill by Jeffallan | SKILLS All-in-one",
+    "description": "Use when building Python 3.11+ applications requiring type safety, async programming, or robust error handling. Generates type-annotated Python code, configure…"
+  },
+  {
+    "path": "/skill/52",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/52",
+    "type": "skill",
+    "title": "rails-expert | Development & Code Tools Skill by Jeffallan | SKILLS All-in-one",
+    "description": "Rails 7+ specialist that optimizes Active Record queries with includes/eager_load, implements Turbo Frames and Turbo Streams for partial page updates, configur…"
+  },
+  {
+    "path": "/skill/53",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/53",
+    "type": "skill",
+    "title": "react-expert | Development & Code Tools Skill by Jeffallan | SKILLS All-in-one",
+    "description": "Use when building React 18+ applications in .jsx or .tsx files, Next.js App Router projects, or create-react-app setups. Creates components, implements custom…"
+  },
+  {
+    "path": "/skill/54",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/54",
+    "type": "skill",
+    "title": "react-native-expert | Development & Code Tools Skill by Jeffallan | SKILLS All-in-one",
+    "description": "Builds, optimizes, and debugs cross-platform mobile applications with React Native and Expo. Implements navigation hierarchies (tabs, stacks, drawers), configu…"
+  },
+  {
+    "path": "/skill/55",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/55",
+    "type": "skill",
+    "title": "receiving-code-review | Development & Code Tools Skill by Jeffallan | SKILLS All-in-one",
+    "description": "Use when receiving code review feedback, before implementing suggestions, especially if feedback seems unclear or technically questionable."
+  },
+  {
+    "path": "/skill/56",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/56",
+    "type": "skill",
+    "title": "requesting-code-review | Development & Code Tools Skill by Jeffallan | SKILLS All-in-one",
+    "description": "Use when completing tasks, implementing major features, or before merging to verify work meets requirements."
+  },
+  {
+    "path": "/skill/70",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/70",
+    "type": "skill",
+    "title": "rust-engineer | Development & Code Tools Skill by Jeffallan | SKILLS All-in-one",
+    "description": "Writes, reviews, and debugs idiomatic Rust code with memory safety and zero-cost abstractions. Implements ownership patterns, manages lifetimes, designs trait…"
+  },
+  {
+    "path": "/skill/71",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/71",
+    "type": "skill",
+    "title": "salesforce-developer | Development & Code Tools Skill by Jeffallan | SKILLS All-in-one",
+    "description": "Writes and debugs Apex code, builds Lightning Web Components, optimizes SOQL queries, implements triggers, batch jobs, platform events, and integrations on the…"
+  },
+  {
+    "path": "/skill/72",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/72",
+    "type": "skill",
+    "title": "shopify-expert | Development & Code Tools Skill by Jeffallan | SKILLS All-in-one",
+    "description": "Builds and debugs Shopify themes (.liquid files, theme.json, sections), develops custom Shopify apps (shopify.app.toml, OAuth, webhooks), and implements Storef…"
+  },
+  {
+    "path": "/skill/73",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/73",
+    "type": "skill",
+    "title": "spec-miner | Development & Code Tools Skill by Jeffallan | SKILLS All-in-one",
+    "description": "Reverse-engineering specialist that extracts specifications from existing codebases. Use when working with legacy or undocumented systems, inherited projects,…"
+  },
+  {
+    "path": "/skill/74",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/74",
+    "type": "skill",
+    "title": "spring-boot-engineer | Development & Code Tools Skill by Jeffallan | SKILLS All-in-one",
+    "description": "Generates Spring Boot 3.x configurations, creates REST controllers, implements Spring Security 6 authentication flows, sets up Spring Data JPA repositories, an…"
+  },
+  {
+    "path": "/skill/9",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/9",
+    "type": "skill",
+    "title": "csv-data-summarizer | Data & Analysis Skill by coffeefuelbump | SKILLS All-in-one",
+    "description": "Automatically analyzes CSVs: columns, distributions, missing data, correlations."
+  },
+  {
+    "path": "/skill/10",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/10",
+    "type": "skill",
+    "title": "postgres | Data & Analysis Skill by sanjay3290 | SKILLS All-in-one",
+    "description": "Execute safe read-only SQL queries against PostgreSQL databases."
+  },
+  {
+    "path": "/skill/29",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/29",
+    "type": "skill",
+    "title": "database-optimizer | Data & Analysis Skill by Jeffallan | SKILLS All-in-one",
+    "description": "Optimizes database queries and improves performance across PostgreSQL and MySQL systems. Use when investigating slow queries, analyzing execution plans, or opt…"
+  },
+  {
+    "path": "/skill/40",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/40",
+    "type": "skill",
+    "title": "fine-tuning-expert | Data & Analysis Skill by Jeffallan | SKILLS All-in-one",
+    "description": "Use when fine-tuning LLMs, training custom models, or adapting foundation models for specific tasks. Invoke for configuring LoRA/QLoRA adapters, preparing JSON…"
+  },
+  {
+    "path": "/skill/57",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/57",
+    "type": "skill",
+    "title": "postgres-pro | Data & Analysis Skill by Jeffallan | SKILLS All-in-one",
+    "description": "Use when optimizing PostgreSQL queries, configuring replication, or implementing advanced database features. Invoke for EXPLAIN analysis, JSONB operations, ext…"
+  },
+  {
+    "path": "/skill/58",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/58",
+    "type": "skill",
+    "title": "rag-architect | Data & Analysis Skill by Jeffallan | SKILLS All-in-one",
+    "description": "Designs and implements production-grade RAG systems by chunking documents, generating embeddings, configuring vector stores, building hybrid search pipelines,…"
+  },
+  {
+    "path": "/skill/77",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/77",
+    "type": "skill",
+    "title": "spark-engineer | Data & Analysis Skill by Jeffallan | SKILLS All-in-one",
+    "description": "Use when writing Spark jobs, debugging performance issues, or configuring cluster settings for Apache Spark applications, distributed data processing pipelines…"
+  },
+  {
+    "path": "/skill/18",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/18",
+    "type": "skill",
+    "title": "algorithmic-art | Media & Content Skill by Anthropic | SKILLS All-in-one",
+    "description": "Generate living algorithms and generative art using p5.js."
+  },
+  {
+    "path": "/skill/19",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/19",
+    "type": "skill",
+    "title": "canvas-design | Media & Content Skill by Anthropic | SKILLS All-in-one",
+    "description": "Create museum-quality visual designs and artistic canvases."
+  },
+  {
+    "path": "/skill/20",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/20",
+    "type": "skill",
+    "title": "brand-guidelines | Media & Content Skill by Anthropic | SKILLS All-in-one",
+    "description": "Apply Anthropic official brand colors and typography to any artifact."
+  },
+  {
+    "path": "/skill/45",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/45",
+    "type": "skill",
+    "title": "game-developer | Media & Content Skill by Jeffallan | SKILLS All-in-one",
+    "description": "Use when building game systems, implementing Unity/Unreal Engine features, or optimizing game performance. Invoke to implement ECS architecture, configure phys…"
+  },
+  {
+    "path": "/skill/78",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/78",
+    "type": "skill",
+    "title": "slack-gif-creator | Media & Content Skill by Anthropic | SKILLS All-in-one",
+    "description": "Create animated GIFs optimized for Slack with dimensions, validation tools, and easing functions."
+  },
+  {
+    "path": "/skill/11",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/11",
+    "type": "skill",
+    "title": "article-extractor | Writing & Research Skill by michalparkola | SKILLS All-in-one",
+    "description": "Extract full article text and metadata from web pages."
+  },
+  {
+    "path": "/skill/21",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/21",
+    "type": "skill",
+    "title": "brainstorming | Writing & Research Skill by obra | SKILLS All-in-one",
+    "description": "Transform rough ideas into fully-formed designs through structured questioning."
+  },
+  {
+    "path": "/skill/34",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/34",
+    "type": "skill",
+    "title": "doc-coauthoring | Writing & Research Skill by Anthropic | SKILLS All-in-one",
+    "description": "Guide users through a structured workflow for co-authoring documentation."
+  },
+  {
+    "path": "/skill/48",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/48",
+    "type": "skill",
+    "title": "internal-comms | Writing & Research Skill by Anthropic | SKILLS All-in-one",
+    "description": "Write internal company communications (status reports, newsletters, FAQs, incident reports)."
+  },
+  {
+    "path": "/skill/22",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/22",
+    "type": "skill",
+    "title": "atlassian-mcp | Collaboration & Project Management Skill by Jeffallan | SKILLS All-in-one",
+    "description": "Integrates with Atlassian products to manage project tracking and documentation via MCP protocol. Use when querying Jira issues with JQL filters, creating and…"
+  },
+  {
+    "path": "/skill/39",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/39",
+    "type": "skill",
+    "title": "feature-forge | Collaboration & Project Management Skill by Jeffallan | SKILLS All-in-one",
+    "description": "Conducts structured requirements workshops to produce feature specifications, user stories, EARS-format functional requirements, acceptance criteria, and imple…"
+  },
+  {
+    "path": "/skill/23",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/23",
+    "type": "skill",
+    "title": "chaos-engineer | Security & Web Testing Skill by Jeffallan | SKILLS All-in-one",
+    "description": "Designs chaos experiments, creates failure injection frameworks, and facilitates game day exercises for distributed systems — producing runbooks, experiment ma…"
+  },
+  {
+    "path": "/skill/75",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/75",
+    "type": "skill",
+    "title": "secure-code-guardian | Security & Web Testing Skill by Jeffallan | SKILLS All-in-one",
+    "description": "Use when implementing authentication/authorization, securing user input, or preventing OWASP Top 10 vulnerabilities — including custom security implementations…"
+  },
+  {
+    "path": "/skill/76",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/76",
+    "type": "skill",
+    "title": "security-reviewer | Security & Web Testing Skill by Jeffallan | SKILLS All-in-one",
+    "description": "Identifies security vulnerabilities, generates structured audit reports with severity ratings, and provides actionable remediation guidance. Use when conductin…"
+  },
+  {
+    "path": "/skill/24",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/24",
+    "type": "skill",
+    "title": "cloud-architect | Development & Code Tools Skill by Jeffallan | SKILLS All-in-one",
+    "description": "Designs cloud architectures, creates migration plans, generates cost optimization recommendations, and produces disaster recovery strategies across AWS, Azure,…"
+  },
+  {
+    "path": "/skill/25",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/25",
+    "type": "skill",
+    "title": "code-documenter | Development & Code Tools Skill by Jeffallan | SKILLS All-in-one",
+    "description": "Generates, formats, and validates technical documentation — including docstrings, OpenAPI/Swagger specs, JSDoc annotations, doc portals, and user guides. Use w…"
+  },
+  {
+    "path": "/skill/26",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/26",
+    "type": "skill",
+    "title": "code-reviewer | Development & Code Tools Skill by Jeffallan | SKILLS All-in-one",
+    "description": "Analyzes code diffs and files to identify bugs, security vulnerabilities (SQL injection, XSS, insecure deserialization), code smells, N+1 queries, naming issue…"
+  },
+  {
+    "path": "/skill/27",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/27",
+    "type": "skill",
+    "title": "cpp-pro | Development & Code Tools Skill by Jeffallan | SKILLS All-in-one",
+    "description": "Writes, optimizes, and debugs C++ applications using modern C++20/23 features, template metaprogramming, and high-performance systems techniques. Use when buil…"
+  },
+  {
+    "path": "/skill/28",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/28",
+    "type": "skill",
+    "title": "csharp-developer | Development & Code Tools Skill by Jeffallan | SKILLS All-in-one",
+    "description": "Use when building C# applications with .NET 8+, ASP.NET Core APIs, or Blazor web apps. Builds REST APIs using minimal or controller-based routing, configures d…"
+  },
+  {
+    "path": "/skill/30",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/30",
+    "type": "skill",
+    "title": "debugging-wizard | Development & Code Tools Skill by Jeffallan | SKILLS All-in-one",
+    "description": "Parses error messages, traces execution flow through stack traces, correlates log entries to identify failure points, and applies systematic hypothesis-driven…"
+  },
+  {
+    "path": "/skill/31",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/31",
+    "type": "skill",
+    "title": "devops-engineer | Development & Code Tools Skill by Jeffallan | SKILLS All-in-one",
+    "description": "Creates Dockerfiles, configures CI/CD pipelines, writes Kubernetes manifests, and generates Terraform/Pulumi infrastructure templates. Handles deployment autom…"
+  },
+  {
+    "path": "/skill/32",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/32",
+    "type": "skill",
+    "title": "dispatching-parallel-agents | Utility & Automation Skill by obra | SKILLS All-in-one",
+    "description": "Dispatch one agent per independent problem domain to work concurrently."
+  },
+  {
+    "path": "/skill/33",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/33",
+    "type": "skill",
+    "title": "django-expert | Development & Code Tools Skill by Jeffallan | SKILLS All-in-one",
+    "description": "Use when building Django web applications or REST APIs with Django REST Framework. Invoke when working with settings.py, models.py, manage.py, or any Django pr…"
+  },
+  {
+    "path": "/skill/35",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/35",
+    "type": "skill",
+    "title": "dotnet-core-expert | Development & Code Tools Skill by Jeffallan | SKILLS All-in-one",
+    "description": "Use when building .NET 8 applications with minimal APIs, clean architecture, or cloud-native microservices. Invoke for Entity Framework Core, CQRS with MediatR…"
+  },
+  {
+    "path": "/skill/37",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/37",
+    "type": "skill",
+    "title": "executing-plans | Utility & Automation Skill by Jeffallan | SKILLS All-in-one",
+    "description": "Execute a written implementation plan with review checkpoints."
+  },
+  {
+    "path": "/skill/41",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/41",
+    "type": "skill",
+    "title": "finishing-a-development-branch | Utility & Automation Skill by obra | SKILLS All-in-one",
+    "description": "Guide completion of development work by presenting structured options for merge, PR, or cleanup."
+  },
+  {
+    "path": "/skill/79",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/79",
+    "type": "skill",
+    "title": "skill-creator | Utility & Automation Skill by Anthropic | SKILLS All-in-one",
+    "description": "Create new skills, modify and improve existing skills, and measure skill performance. Use when users want to create a skill from scratch, edit, or optimize an…"
+  },
+  {
+    "path": "/skill/12",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/12",
+    "type": "skill",
+    "title": "oiloil-ui-ux-guide | Development & Code Tools Skill by oil-oil | SKILLS All-in-one",
+    "description": "Modern UI/UX guidance and review skill with guide and review modes."
+  },
+  {
+    "path": "/skill/80",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/80",
+    "type": "skill",
+    "title": "sql-pro | Data & Analysis Skill by Jeffallan | SKILLS All-in-one",
+    "description": "Optimizes SQL queries, designs database schemas, and troubleshoots performance issues. Use when a user asks why their query is slow, needs help writing complex…"
+  },
+  {
+    "path": "/skill/81",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/81",
+    "type": "skill",
+    "title": "sre-engineer | Development & Code Tools Skill by Jeffallan | SKILLS All-in-one",
+    "description": "Defines service level objectives, creates error budget policies, designs incident response procedures, develops capacity models, and produces monitoring config…"
+  },
+  {
+    "path": "/skill/82",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/82",
+    "type": "skill",
+    "title": "subagent-driven-development | Utility & Automation Skill by obra | SKILLS All-in-one",
+    "description": "Use when executing implementation plans with independent tasks in the current session."
+  },
+  {
+    "path": "/skill/83",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/83",
+    "type": "skill",
+    "title": "swift-expert | Development & Code Tools Skill by Jeffallan | SKILLS All-in-one",
+    "description": "Builds iOS/macOS/watchOS/tvOS applications, implements SwiftUI views and state management, designs protocol-oriented architectures, handles async/await concurr…"
+  },
+  {
+    "path": "/skill/84",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/84",
+    "type": "skill",
+    "title": "systematic-debugging | Development & Code Tools Skill by obra | SKILLS All-in-one",
+    "description": "Use when encountering any bug, test failure, or unexpected behavior, before proposing fixes."
+  },
+  {
+    "path": "/skill/85",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/85",
+    "type": "skill",
+    "title": "terraform-engineer | Development & Code Tools Skill by Jeffallan | SKILLS All-in-one",
+    "description": "Use when implementing infrastructure as code with Terraform across AWS, Azure, or GCP. Invoke for module development (create reusable modules, manage module ve…"
+  },
+  {
+    "path": "/skill/86",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/86",
+    "type": "skill",
+    "title": "test-master | Development & Code Tools Skill by Jeffallan | SKILLS All-in-one",
+    "description": "Generates test files, creates mocking strategies, analyzes code coverage, designs test architectures, and produces test plans and defect reports across functio…"
+  },
+  {
+    "path": "/skill/87",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/87",
+    "type": "skill",
+    "title": "the-fool | Writing & Research Skill by Jeffallan | SKILLS All-in-one",
+    "description": "Use when challenging ideas, plans, decisions, or proposals using structured critical reasoning."
+  },
+  {
+    "path": "/skill/88",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/88",
+    "type": "skill",
+    "title": "theme-factory | Media & Content Skill by Jeffallan | SKILLS All-in-one",
+    "description": "Toolkit for styling artifacts with professional themes, colors, and fonts."
+  },
+  {
+    "path": "/skill/89",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/89",
+    "type": "skill",
+    "title": "typescript-pro | Development & Code Tools Skill by Jeffallan | SKILLS All-in-one",
+    "description": "Implements advanced TypeScript type systems, creates custom type guards, utility types, and branded types, and configures tRPC for end-to-end type safety. Use…"
+  },
+  {
+    "path": "/skill/90",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/90",
+    "type": "skill",
+    "title": "using-git-worktrees | Utility & Automation Skill by obra | SKILLS All-in-one",
+    "description": "Use when starting feature work that needs isolation from current workspace or before executing plans."
+  },
+  {
+    "path": "/skill/91",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/91",
+    "type": "skill",
+    "title": "using-superpowers | Utility & Automation Skill by obra | SKILLS All-in-one",
+    "description": "Use when starting any conversation - establishes how to find and use skills."
+  },
+  {
+    "path": "/skill/92",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/92",
+    "type": "skill",
+    "title": "verification-before-completion | Development & Code Tools Skill by obra | SKILLS All-in-one",
+    "description": "Use when about to claim work is complete, fixed, or passing, before committing."
+  },
+  {
+    "path": "/skill/93",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/93",
+    "type": "skill",
+    "title": "vue-expert | Development & Code Tools Skill by Jeffallan | SKILLS All-in-one",
+    "description": "Builds Vue 3 components with Composition API patterns, configures Nuxt 3 SSR/SSG projects, sets up Pinia stores, scaffolds Quasar/Capacitor mobile apps, implem…"
+  },
+  {
+    "path": "/skill/94",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/94",
+    "type": "skill",
+    "title": "vue-expert-js | Development & Code Tools Skill by Jeffallan | SKILLS All-in-one",
+    "description": "Creates Vue 3 components, builds vanilla JS composables, configures Vite projects, and sets up routing and state management using JavaScript only — no TypeScri…"
+  },
+  {
+    "path": "/skill/95",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/95",
+    "type": "skill",
+    "title": "webapp-testing | Security & Web Testing Skill by Anthropic | SKILLS All-in-one",
+    "description": "Toolkit for interacting with and testing local web applications using Playwright."
+  },
+  {
+    "path": "/skill/96",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/96",
+    "type": "skill",
+    "title": "websocket-engineer | Development & Code Tools Skill by Jeffallan | SKILLS All-in-one",
+    "description": "Use when building real-time communication systems with WebSockets or Socket.IO. Invoke for bidirectional messaging, horizontal scaling with Redis, presence tra…"
+  },
+  {
+    "path": "/skill/97",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/97",
+    "type": "skill",
+    "title": "wordpress-pro | Development & Code Tools Skill by Jeffallan | SKILLS All-in-one",
+    "description": "Develops custom WordPress themes and plugins, creates and registers Gutenberg blocks and block patterns, configures WooCommerce stores, implements WordPress RE…"
+  },
+  {
+    "path": "/skill/98",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/98",
+    "type": "skill",
+    "title": "writing-plans | Development & Code Tools Skill by Jeffallan | SKILLS All-in-one",
+    "description": "Use when you have a spec or requirements for a multi-step task, before touching code. Write comprehensive implementation plans assuming the engineer has zero c…"
+  },
+  {
+    "path": "/skill/99",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/99",
+    "type": "skill",
+    "title": "writing-skills | Utility & Automation Skill by Jeffallan | SKILLS All-in-one",
+    "description": "Use when creating new skills, editing existing skills, or verifying skills work before deployment."
+  },
+  {
+    "path": "/skill/102",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/102",
+    "type": "skill",
+    "title": "aws-mcp-setup | Infrastructure & Cloud Skill by zxkane | SKILLS All-in-one",
+    "description": "Configure AWS MCP servers for documentation search and API access. Use when setting up AWS MCP, configuring AWS documentation tools, troubleshooting MCP connec…"
+  },
+  {
+    "path": "/skill/103",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/103",
+    "type": "skill",
+    "title": "aws-cdk-development | Infrastructure & Cloud Skill by zxkane | SKILLS All-in-one",
+    "description": "AWS Cloud Development Kit (CDK) expert for building cloud infrastructure with TypeScript/Python. Use when creating CDK stacks, defining CDK constructs, impleme…"
+  },
+  {
+    "path": "/skill/104",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/104",
+    "type": "skill",
+    "title": "aws-cost-operations | Infrastructure & Cloud Skill by zxkane | SKILLS All-in-one",
+    "description": "AWS cost optimization, monitoring, and operational excellence expert. Use when analyzing AWS bills, estimating costs, setting up CloudWatch alarms, querying lo…"
+  },
+  {
+    "path": "/skill/105",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/105",
+    "type": "skill",
+    "title": "aws-serverless-eda | Infrastructure & Cloud Skill by zxkane | SKILLS All-in-one",
+    "description": "AWS serverless and event-driven architecture expert based on Well-Architected Framework. Use when building serverless APIs, Lambda functions, REST APIs, micros…"
+  },
+  {
+    "path": "/skill/106",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/106",
+    "type": "skill",
+    "title": "aws-agentic-ai | Infrastructure & Cloud Skill by zxkane | SKILLS All-in-one",
+    "description": "AWS Bedrock AgentCore comprehensive expert for deploying and managing all AgentCore services. Use when working with Gateway, Runtime, Memory, Identity, or any…"
+  },
+  {
+    "path": "/skill/108",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/108",
+    "type": "skill",
+    "title": "helius | Web3 & Blockchain Skill by raintree | SKILLS All-in-one",
+    "description": "Helius Solana RPC and API expert."
+  },
+  {
+    "path": "/skill/419",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/419",
+    "type": "skill",
+    "title": "aptos-cli | Web3 & Blockchain Skill by raintree-technology | SKILLS All-in-one",
+    "description": "Expert in Aptos CLI for account management, contract deployment, transaction submission, and node operations."
+  },
+  {
+    "path": "/skill/420",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/420",
+    "type": "skill",
+    "title": "aptos-core | Web3 & Blockchain Skill by raintree-technology | SKILLS All-in-one",
+    "description": "Expert in Aptos blockchain core architecture, consensus, execution, networking, and validator operations."
+  },
+  {
+    "path": "/skill/421",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/421",
+    "type": "skill",
+    "title": "aptos-indexer | Web3 & Blockchain Skill by raintree-technology | SKILLS All-in-one",
+    "description": "Expert in Aptos Indexer architecture and GraphQL API for querying and processing blockchain data."
+  },
+  {
+    "path": "/skill/422",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/422",
+    "type": "skill",
+    "title": "aptos-standards | Web3 & Blockchain Skill by raintree-technology | SKILLS All-in-one",
+    "description": "Expert in Aptos Framework and token standards including Fungible Assets, Digital Assets, and core modules."
+  },
+  {
+    "path": "/skill/423",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/423",
+    "type": "skill",
+    "title": "aptos-ts-sdk | Web3 & Blockchain Skill by raintree-technology | SKILLS All-in-one",
+    "description": "Expert in Aptos TypeScript SDK for frontend apps, account management, transaction submission, and indexer queries."
+  },
+  {
+    "path": "/skill/424",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/424",
+    "type": "skill",
+    "title": "move-analyzer | Web3 & Blockchain Skill by raintree-technology | SKILLS All-in-one",
+    "description": "Expert in Move language server tooling, IDE integration, and development workflow optimization."
+  },
+  {
+    "path": "/skill/425",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/425",
+    "type": "skill",
+    "title": "move-prover | Web3 & Blockchain Skill by raintree-technology | SKILLS All-in-one",
+    "description": "Move Prover formal verification expert for Aptos smart contracts. Write specifications (MSL), preconditions (requires), postconditions (ensures), invariants, a…"
+  },
+  {
+    "path": "/skill/109",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/109",
+    "type": "skill",
+    "title": "plaid | Finance & Payments Skill by raintree-technology | SKILLS All-in-one",
+    "description": "Plaid banking API expert for financial data integration."
+  },
+  {
+    "path": "/skill/110",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/110",
+    "type": "skill",
+    "title": "stripe | Finance & Payments Skill by raintree | SKILLS All-in-one",
+    "description": "Stripe Payments Skill. Expertise in Stripe API integration."
+  },
+  {
+    "path": "/skill/111",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/111",
+    "type": "skill",
+    "title": "whop | SaaS & Backend Skill by raintree-technology | SKILLS All-in-one",
+    "description": "Whop platform expert for digital products and memberships."
+  },
+  {
+    "path": "/skill/112",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/112",
+    "type": "skill",
+    "title": "supabase | SaaS & Backend Skill by raintree | SKILLS All-in-one",
+    "description": "Supabase Backend Skill. Expertise in Auth, Database, and Storage."
+  },
+  {
+    "path": "/skill/113",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/113",
+    "type": "skill",
+    "title": "move-code-quality | Web3 & Blockchain Skill by 1NickPappas | SKILLS All-in-one",
+    "description": "Analyzes Move language packages against the official Move Book Code Quality Checklist. Use this skill when reviewing Move code, checking Move 2024 Edition comp…"
+  },
+  {
+    "path": "/skill/114",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/114",
+    "type": "skill",
+    "title": "notebooklm | Learning & Knowledge Skill by sanjay3290 | SKILLS All-in-one",
+    "description": "Query and manage Google NotebookLM notebooks with persistent profile auth, source sync, batch/multi queries, and structured exports. Use when user asks to quer…"
+  },
+  {
+    "path": "/skill/116",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/116",
+    "type": "skill",
+    "title": "polaris-datainsight-doc-extract | Document Skills Skill by jacob-g-park | SKILLS All-in-one",
+    "description": "Extract structured data from Office documents (DOCX, PPTX, XLSX, HWP, HWPX) using the Polaris AI DataInsight Doc Extract API."
+  },
+  {
+    "path": "/skill/117",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/117",
+    "type": "skill",
+    "title": "pypict-claude-skill | Development & Code Tools Skill by omkamal | SKILLS All-in-one",
+    "description": "Design comprehensive test cases using PICT (Pairwise Independent Combinatorial Testing) for optimized test suites with pairwise coverage."
+  },
+  {
+    "path": "/skill/118",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/118",
+    "type": "skill",
+    "title": "claude-code-terminal-title | Development & Code Tools Skill by bluzername | SKILLS All-in-one",
+    "description": "Gives each Claude Code terminal window a dynamic title that describes the work being done."
+  },
+  {
+    "path": "/skill/119",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/119",
+    "type": "skill",
+    "title": "charles-proxy-extract | Development & Code Tools Skill by wannabehero | SKILLS All-in-one",
+    "description": "Extract and analyze HTTP traffic from Charles Proxy session files."
+  },
+  {
+    "path": "/skill/120",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/120",
+    "type": "skill",
+    "title": "plugin-authoring | Development & Code Tools Skill by ivan-magda | SKILLS All-in-one",
+    "description": "Ambient guidance for creating, modifying, and debugging Claude Code plugins with schemas, templates, and validation workflows."
+  },
+  {
+    "path": "/skill/121",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/121",
+    "type": "skill",
+    "title": "azure-devops | Development & Code Tools Skill by sanjay3290 | SKILLS All-in-one",
+    "description": "Manage Azure DevOps projects, repos, PRs, pipelines, and work items via REST API."
+  },
+  {
+    "path": "/skill/122",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/122",
+    "type": "skill",
+    "title": "jules | Development & Code Tools Skill by sanjay3290 | SKILLS All-in-one",
+    "description": "Delegate coding tasks to Google Jules AI agent for async bug fixes, documentation, tests, and feature implementation on GitHub repos."
+  },
+  {
+    "path": "/skill/123",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/123",
+    "type": "skill",
+    "title": "hashicorp-agent-skills | Development & Code Tools Skill by hashicorp | SKILLS All-in-one",
+    "description": "HashiCorp-maintained Claude skills for Terraform workflows and infrastructure automation."
+  },
+  {
+    "path": "/skill/124",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/124",
+    "type": "skill",
+    "title": "agnix | Development & Code Tools Skill by avifenesh | SKILLS All-in-one",
+    "description": "Linter for AI agent configurations. Validates SKILL.md, CLAUDE.md, hooks, MCP configs with 156 rules, auto-fix, and LSP server."
+  },
+  {
+    "path": "/skill/125",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/125",
+    "type": "skill",
+    "title": "email-html-mjml | Development & Code Tools Skill by framix-team | SKILLS All-in-one",
+    "description": "Generate responsive HTML email templates using MJML 4.x with cross-client compatibility, compilation, and validation."
+  },
+  {
+    "path": "/skill/127",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/127",
+    "type": "skill",
+    "title": "mysql | Data & Analysis Skill by sanjay3290 | SKILLS All-in-one",
+    "description": "Safe read-only SQL queries against MySQL databases."
+  },
+  {
+    "path": "/skill/128",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/128",
+    "type": "skill",
+    "title": "mssql | Data & Analysis Skill by sanjay3290 | SKILLS All-in-one",
+    "description": "Safe read-only SQL queries against Microsoft SQL Server databases."
+  },
+  {
+    "path": "/skill/129",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/129",
+    "type": "skill",
+    "title": "kaggle-skill | Data & Analysis Skill by shepsci | SKILLS All-in-one",
+    "description": "Complete Kaggle integration — account setup, competition reports, dataset/model downloads, notebook execution, and submissions."
+  },
+  {
+    "path": "/skill/130",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/130",
+    "type": "skill",
+    "title": "octav-api-skill | Data & Analysis Skill by Octav-Labs | SKILLS All-in-one",
+    "description": "Query Octav crypto portfolio API: wallet balances, transaction history, DeFi protocol positions, and token analytics across 20+ chains."
+  },
+  {
+    "path": "/skill/131",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/131",
+    "type": "skill",
+    "title": "elicitation | Data & Analysis Skill by tasteray | SKILLS All-in-one",
+    "description": "Psychological profiling through natural conversation using narrative identity and Motivational Interviewing techniques."
+  },
+  {
+    "path": "/skill/132",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/132",
+    "type": "skill",
+    "title": "recommendations | Data & Analysis Skill by tasteray | SKILLS All-in-one",
+    "description": "Personalized recommendations across movies, restaurants, products, travel, and jobs via the TasteRay API."
+  },
+  {
+    "path": "/skill/133",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/133",
+    "type": "skill",
+    "title": "x-twitter-scraper | Data & Analysis Skill by Xquik-dev | SKILLS All-in-one",
+    "description": "X API & Twitter scraper skill for AI coding agents. Builds integrations with the Xquik REST API, MCP server & webhooks: tweet search, user lookup, follower ext…"
+  },
+  {
+    "path": "/skill/134",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/134",
+    "type": "skill",
+    "title": "claude-scientific-skills | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "125+ scientific skills for bioinformatics, cheminformatics, clinical research, and machine learning."
+  },
+  {
+    "path": "/skill/135",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/135",
+    "type": "skill",
+    "title": "materials-simulation-skills | Scientific & Research Tools Skill by HeshamFS | SKILLS All-in-one",
+    "description": "Agent skills for computational materials science: numerical stability, time-stepping, mesh generation, and simulation validation."
+  },
+  {
+    "path": "/skill/136",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/136",
+    "type": "skill",
+    "title": "deep-research | Scientific & Research Tools Skill by sanjay3290 | SKILLS All-in-one",
+    "description": "Execute autonomous multi-step research using Gemini Deep Research Agent for market analysis, competitive landscaping, and literature reviews."
+  },
+  {
+    "path": "/skill/137",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/137",
+    "type": "skill",
+    "title": "manus | Scientific & Research Tools Skill by sanjay3290 | SKILLS All-in-one",
+    "description": "Delegate complex tasks to Manus AI agent for deep research, market analysis, product comparisons, and comprehensive report generation."
+  },
+  {
+    "path": "/skill/182",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/182",
+    "type": "skill",
+    "title": "adaptyv | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Cloud laboratory platform for automated protein testing and validation workflows."
+  },
+  {
+    "path": "/skill/183",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/183",
+    "type": "skill",
+    "title": "aeon | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Time series machine learning toolkit for classification, forecasting, clustering, and anomaly detection."
+  },
+  {
+    "path": "/skill/184",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/184",
+    "type": "skill",
+    "title": "alpha-vantage | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Financial market data skill for stocks, forex, crypto, commodities, and technical indicators via API."
+  },
+  {
+    "path": "/skill/185",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/185",
+    "type": "skill",
+    "title": "alphafold-database | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Access and analyze AlphaFold predicted protein structures with confidence metrics and downloadable files."
+  },
+  {
+    "path": "/skill/186",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/186",
+    "type": "skill",
+    "title": "anndata | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Annotated matrix data structure skill for single-cell workflows and scverse ecosystem interoperability."
+  },
+  {
+    "path": "/skill/187",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/187",
+    "type": "skill",
+    "title": "arboreto | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Infer gene regulatory networks from expression data using GRNBoost2/GENIE3 with scalable distributed computation."
+  },
+  {
+    "path": "/skill/188",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/188",
+    "type": "skill",
+    "title": "astropy | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Comprehensive astronomy Python library for coordinates, units, FITS, cosmology, time systems, and WCS data analysis."
+  },
+  {
+    "path": "/skill/189",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/189",
+    "type": "skill",
+    "title": "benchling-integration | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Integrate Benchling APIs and SDK for registry, inventory, ELN workflows, and lab data automation."
+  },
+  {
+    "path": "/skill/190",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/190",
+    "type": "skill",
+    "title": "bgpt-paper-search | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Search scientific papers via BGPT MCP and retrieve structured full-text experimental data for evidence synthesis."
+  },
+  {
+    "path": "/skill/191",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/191",
+    "type": "skill",
+    "title": "bindingdb-database | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Query BindingDB for measured drug-target affinities (Ki/Kd/IC50/EC50) for discovery, SAR, and polypharmacology analysis."
+  },
+  {
+    "path": "/skill/192",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/192",
+    "type": "skill",
+    "title": "biopython | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Comprehensive molecular biology toolkit for sequence/file processing, BLAST automation, phylogenetics, and NCBI/PubMed access."
+  },
+  {
+    "path": "/skill/193",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/193",
+    "type": "skill",
+    "title": "biorxiv-database | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Search bioRxiv preprints by keywords, authors, categories, and dates with metadata export and PDF download support."
+  },
+  {
+    "path": "/skill/194",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/194",
+    "type": "skill",
+    "title": "bioservices | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Unified Python interface to 40+ bioinformatics services for cross-database querying, integration, and identifier mapping workflows."
+  },
+  {
+    "path": "/skill/195",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/195",
+    "type": "skill",
+    "title": "brenda-database | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Access BRENDA enzyme data via API for kinetic parameters, reaction details, organism comparison, and pathway analysis."
+  },
+  {
+    "path": "/skill/196",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/196",
+    "type": "skill",
+    "title": "cbioportal-database | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Query cBioPortal cancer genomics datasets for mutations, copy number changes, expression, and clinical association analyses."
+  },
+  {
+    "path": "/skill/197",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/197",
+    "type": "skill",
+    "title": "aws-ami-builder | Infrastructure & Cloud Skill by hashicorp | SKILLS All-in-one",
+    "description": "Build custom AWS AMIs with Packer amazon-ebs templates, provisioning steps, and multi-region publishing workflows."
+  },
+  {
+    "path": "/skill/198",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/198",
+    "type": "skill",
+    "title": "azure-image-builder | Infrastructure & Cloud Skill by hashicorp | SKILLS All-in-one",
+    "description": "Build Azure managed images and Azure Compute Gallery images with Packer azure-arm workflows."
+  },
+  {
+    "path": "/skill/199",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/199",
+    "type": "skill",
+    "title": "azure-verified-modules | Infrastructure & Cloud Skill by hashicorp | SKILLS All-in-one",
+    "description": "Apply Azure Verified Modules requirements and best practices for Terraform module certification and compliance."
+  },
+  {
+    "path": "/skill/200",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/200",
+    "type": "skill",
+    "title": "new-terraform-provider | Infrastructure & Cloud Skill by hashicorp | SKILLS All-in-one",
+    "description": "Scaffold a new Terraform provider using Plugin Framework, standard workspace setup, and baseline Go project steps."
+  },
+  {
+    "path": "/skill/201",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/201",
+    "type": "skill",
+    "title": "provider-actions | Infrastructure & Cloud Skill by hashicorp | SKILLS All-in-one",
+    "description": "Implement Terraform Provider actions for lifecycle events with schema patterns, progress reporting, and timeout/error handling."
+  },
+  {
+    "path": "/skill/202",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/202",
+    "type": "skill",
+    "title": "cellxgene-census | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Query the CELLxGENE Census atlas at population scale for single-cell expression, metadata filtering, and ML-ready access."
+  },
+  {
+    "path": "/skill/203",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/203",
+    "type": "skill",
+    "title": "chembl-database | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Query ChEMBL compounds, targets, and bioactivity data for medicinal chemistry, SAR, and drug discovery workflows."
+  },
+  {
+    "path": "/skill/204",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/204",
+    "type": "skill",
+    "title": "cirq | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Design, simulate, and run quantum circuits with Cirq for Google hardware integration, noise modeling, and experiments."
+  },
+  {
+    "path": "/skill/205",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/205",
+    "type": "skill",
+    "title": "citation-management | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Manage academic citations with search, metadata extraction, validation, and BibTeX generation workflows."
+  },
+  {
+    "path": "/skill/206",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/206",
+    "type": "skill",
+    "title": "clinical-decision-support | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Generate evidence-based clinical decision support documents with cohort analytics, survival statistics, and recommendation grading."
+  },
+  {
+    "path": "/skill/207",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/207",
+    "type": "skill",
+    "title": "clinical-reports | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Write compliant clinical reports for case studies, diagnostics, trial documentation, and patient records with validation tooling."
+  },
+  {
+    "path": "/skill/208",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/208",
+    "type": "skill",
+    "title": "clinicaltrials-database | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Query ClinicalTrials.gov API v2 to search studies by condition, intervention, location, sponsor, and enrollment status."
+  },
+  {
+    "path": "/skill/209",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/209",
+    "type": "skill",
+    "title": "clinpgx-database | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Access ClinPGx pharmacogenomics data for gene-drug interactions, CPIC guidance, allele functions, and precision dosing support."
+  },
+  {
+    "path": "/skill/210",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/210",
+    "type": "skill",
+    "title": "clinvar-database | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Query NCBI ClinVar for variant clinical significance, review status, and evidence to support genomic interpretation workflows."
+  },
+  {
+    "path": "/skill/211",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/211",
+    "type": "skill",
+    "title": "cobrapy | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Perform constraint-based metabolic modeling with COBRApy for FBA/FVA, knockout studies, flux sampling, and systems biology analysis."
+  },
+  {
+    "path": "/skill/212",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/212",
+    "type": "skill",
+    "title": "atlassian | Collaboration & Project Management Skill by sanjay3290 | SKILLS All-in-one",
+    "description": "Manage Jira issues and Confluence pages in Atlassian Cloud with OAuth or API-token workflows."
+  },
+  {
+    "path": "/skill/213",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/213",
+    "type": "skill",
+    "title": "claude-mcp-expert | Development & Code Tools Skill by raintree-technology | SKILLS All-in-one",
+    "description": "Model Context Protocol (MCP) expert for Claude Code. Install, configure, and troubleshoot MCP servers. Covers HTTP, SSE, and stdio transports, authentication,…"
+  },
+  {
+    "path": "/skill/214",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/214",
+    "type": "skill",
+    "title": "claude-skill-builder | Utility & Automation Skill by raintree-technology | SKILLS All-in-one",
+    "description": "Build Claude Code skills with structured SKILL.md frontmatter, trigger design, and reusable templates."
+  },
+  {
+    "path": "/skill/215",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/215",
+    "type": "skill",
+    "title": "code-review | Development & Code Tools Skill by avifenesh | SKILLS All-in-one",
+    "description": "Review code for quality, security, performance, and test coverage with actionable feedback."
+  },
+  {
+    "path": "/skill/216",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/216",
+    "type": "skill",
+    "title": "consciousness-council | Utility & Automation Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Run structured multi-perspective deliberation to explore decisions, trade-offs, and complex questions from multiple viewpoints."
+  },
+  {
+    "path": "/skill/217",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/217",
+    "type": "skill",
+    "title": "cosmic-database | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Access COSMIC cancer mutation database for somatic mutations, Cancer Gene Census, mutational signatures, and precision oncology workflows."
+  },
+  {
+    "path": "/skill/218",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/218",
+    "type": "skill",
+    "title": "dask | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Scale pandas and NumPy workloads with distributed computing for larger-than-memory processing and parallel analytics."
+  },
+  {
+    "path": "/skill/219",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/219",
+    "type": "skill",
+    "title": "datacommons-client | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Query Data Commons public statistical datasets for demographics, economics, health, environment, and geo-entity resolution."
+  },
+  {
+    "path": "/skill/220",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/220",
+    "type": "skill",
+    "title": "datamol | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Pythonic RDKit wrapper for cheminformatics workflows including standardization, descriptors, fingerprints, and conformer generation."
+  },
+  {
+    "path": "/skill/221",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/221",
+    "type": "skill",
+    "title": "deepchem | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Build molecular machine learning pipelines for property prediction, graph neural networks, and MoleculeNet benchmark workflows."
+  },
+  {
+    "path": "/skill/222",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/222",
+    "type": "skill",
+    "title": "convergence-study | Scientific & Research Tools Skill by HeshamFS | SKILLS All-in-one",
+    "description": "Perform numerical convergence analysis with Richardson extrapolation and Grid Convergence Index for solution verification."
+  },
+  {
+    "path": "/skill/223",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/223",
+    "type": "skill",
+    "title": "dapp-integration | Web3 & Blockchain Skill by raintree-technology | SKILLS All-in-one",
+    "description": "Expert on building Aptos dApps with frontend integration. Covers wallet connectivity (Petra, Martian, Pontem), wallet adapter patterns, TypeScript SDK, transac…"
+  },
+  {
+    "path": "/skill/224",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/224",
+    "type": "skill",
+    "title": "decibel | Web3 & Blockchain Skill by raintree-technology | SKILLS All-in-one",
+    "description": "Decibel on-chain perpetual futures trading platform on Aptos. Covers trading engine, orderbook, TypeScript SDK, REST APIs, WebSocket streams, market data, posi…"
+  },
+  {
+    "path": "/skill/225",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/225",
+    "type": "skill",
+    "title": "deeptools | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Analyze NGS data with deepTools for BAM-to-bigWig conversion, QC, sample comparison, and genomic signal visualization."
+  },
+  {
+    "path": "/skill/226",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/226",
+    "type": "skill",
+    "title": "denario | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Orchestrate multi-agent scientific research workflows from hypothesis generation and analysis to publication-ready papers."
+  },
+  {
+    "path": "/skill/227",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/227",
+    "type": "skill",
+    "title": "depmap | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Query Cancer Dependency Map data to analyze gene essentiality, synthetic lethality, and oncology target vulnerabilities."
+  },
+  {
+    "path": "/skill/228",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/228",
+    "type": "skill",
+    "title": "dhdna-profiler | Learning & Knowledge Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Extract cognitive style and reasoning signatures from text using a structured digital human DNA profiling framework."
+  },
+  {
+    "path": "/skill/229",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/229",
+    "type": "skill",
+    "title": "diffdock | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Predict protein-ligand binding poses with diffusion-based docking for structure-guided drug discovery workflows."
+  },
+  {
+    "path": "/skill/230",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/230",
+    "type": "skill",
+    "title": "dnanexus-integration | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Build and run DNAnexus genomics apps and workflows for cloud-based FASTQ/BAM/VCF data processing pipelines."
+  },
+  {
+    "path": "/skill/231",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/231",
+    "type": "skill",
+    "title": "differentiation-schemes | Scientific & Research Tools Skill by HeshamFS | SKILLS All-in-one",
+    "description": "Select and apply numerical differentiation stencils for PDE/ODE discretization, boundary handling, and truncation error analysis."
+  },
+  {
+    "path": "/skill/232",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/232",
+    "type": "skill",
+    "title": "drugbank-database | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Access DrugBank data for drug properties, interactions, targets, pathways, and structure-driven pharmacology analysis."
+  },
+  {
+    "path": "/skill/233",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/233",
+    "type": "skill",
+    "title": "edgartools | Data & Analysis Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Analyze SEC EDGAR filings with structured access to forms, XBRL financial statements, and regulatory disclosure data."
+  },
+  {
+    "path": "/skill/234",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/234",
+    "type": "skill",
+    "title": "ena-database | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Query ENA archives for nucleotide sequences, raw reads, assemblies, and metadata via API or FTP pipelines."
+  },
+  {
+    "path": "/skill/235",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/235",
+    "type": "skill",
+    "title": "ensembl-database | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Use Ensembl REST APIs for multi-species gene lookup, sequence retrieval, variant interpretation, and comparative genomics."
+  },
+  {
+    "path": "/skill/236",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/236",
+    "type": "skill",
+    "title": "esm | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Apply ESM protein language models for sequence design, structure-aware generation, and embedding-based protein analysis."
+  },
+  {
+    "path": "/skill/237",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/237",
+    "type": "skill",
+    "title": "etetoolkit | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Manipulate and analyze phylogenetic trees with ETE, including topology operations, orthology/paralogy detection, and publication-ready visualization."
+  },
+  {
+    "path": "/skill/238",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/238",
+    "type": "skill",
+    "title": "exploratory-data-analysis | Data & Analysis Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Run exploratory analysis on 200+ scientific file formats with automatic type detection, quality checks, and markdown report generation."
+  },
+  {
+    "path": "/skill/239",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/239",
+    "type": "skill",
+    "title": "fda-database | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Query openFDA datasets for drugs, devices, adverse events, recalls, and regulatory submissions for safety and compliance research."
+  },
+  {
+    "path": "/skill/240",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/240",
+    "type": "skill",
+    "title": "flowio | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Parse and generate FCS flow cytometry files with metadata extraction, channel inspection, and NumPy-based event handling."
+  },
+  {
+    "path": "/skill/241",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/241",
+    "type": "skill",
+    "title": "fluidsim | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Configure and run high-performance CFD simulations in Python for Navier-Stokes, shallow-water, and turbulence-focused studies."
+  },
+  {
+    "path": "/skill/242",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/242",
+    "type": "skill",
+    "title": "fred-economic-data | Data & Analysis Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Query FRED for macroeconomic time series across GDP, inflation, employment, rates, and regional indicators for policy and market research."
+  },
+  {
+    "path": "/skill/243",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/243",
+    "type": "skill",
+    "title": "gene-database | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Query NCBI Gene via E-utilities and Datasets APIs to retrieve gene identifiers, annotations, loci, and batch lookup results."
+  },
+  {
+    "path": "/skill/244",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/244",
+    "type": "skill",
+    "title": "generate-image | Media & Content Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Generate and edit images with OpenRouter-backed models such as Gemini Flash Image and FLUX for visual assets and concept art."
+  },
+  {
+    "path": "/skill/245",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/245",
+    "type": "skill",
+    "title": "geniml | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Build machine learning workflows for genomic interval data with Region2Vec, BEDspace, scEmbed, and consensus peak generation."
+  },
+  {
+    "path": "/skill/246",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/246",
+    "type": "skill",
+    "title": "geo-database | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Access NCBI GEO datasets, metadata, and expression matrices for microarray and RNA-seq transcriptomics analysis workflows."
+  },
+  {
+    "path": "/skill/247",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/247",
+    "type": "skill",
+    "title": "geomaster | Data & Analysis Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Comprehensive geospatial science skill covering remote sensing, GIS, spatial analysis, machine learning for earth observation, and 30+ scientific domains. Supp…"
+  },
+  {
+    "path": "/skill/248",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/248",
+    "type": "skill",
+    "title": "geopandas | Data & Analysis Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Use GeoPandas for vector geospatial analysis, spatial joins, coordinate transforms, and map-ready geographic data processing in Python."
+  },
+  {
+    "path": "/skill/249",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/249",
+    "type": "skill",
+    "title": "get-available-resources | Utility & Automation Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Detect system CPU, memory, GPU, and disk capacity before heavy scientific tasks, then suggest execution strategies based on available resources."
+  },
+  {
+    "path": "/skill/250",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/250",
+    "type": "skill",
+    "title": "gget | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Query 20+ bioinformatics databases via gget for gene metadata, sequence analysis, enrichment workflows, and rapid biological lookups."
+  },
+  {
+    "path": "/skill/251",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/251",
+    "type": "skill",
+    "title": "ginkgo-cloud-lab | Health & Life Sciences Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Guide protocol setup and order submission workflows for Ginkgo Bioworks Cloud Lab automation experiments and cell-free workflows."
+  },
+  {
+    "path": "/skill/252",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/252",
+    "type": "skill",
+    "title": "glycoengineering | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Analyze and engineer protein glycosylation using sequon scanning, glycosylation hotspot prediction, and curated glycoengineering tool workflows."
+  },
+  {
+    "path": "/skill/253",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/253",
+    "type": "skill",
+    "title": "gnomad-database | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Query gnomAD for allele frequencies, gene constraint metrics, and variant context to support pathogenicity interpretation and rare disease analysis."
+  },
+  {
+    "path": "/skill/254",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/254",
+    "type": "skill",
+    "title": "gtars | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Use GTARS for high-performance genomic interval operations, coverage analysis, overlap queries, and BED tokenization for ML workflows."
+  },
+  {
+    "path": "/skill/255",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/255",
+    "type": "skill",
+    "title": "gtex-database | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Access GTEx tissue expression and eQTL data to connect regulatory variants with tissue-specific gene expression effects."
+  },
+  {
+    "path": "/skill/256",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/256",
+    "type": "skill",
+    "title": "gwas-database | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Query GWAS Catalog SNP-trait associations, p-values, and mapped genes for genetic epidemiology and variant-trait interpretation tasks."
+  },
+  {
+    "path": "/skill/257",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/257",
+    "type": "skill",
+    "title": "hedgefundmonitor | Data & Analysis Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Query OFR Hedge Fund Monitor datasets for Form PF, futures, repo, and dealer financing time series to analyze leverage, liquidity, and systemic risk."
+  },
+  {
+    "path": "/skill/258",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/258",
+    "type": "skill",
+    "title": "histolab | Health & Life Sciences Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Process whole-slide pathology images with tissue masking, tile extraction strategies, and preprocessing filters for model-ready dataset pipelines."
+  },
+  {
+    "path": "/skill/259",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/259",
+    "type": "skill",
+    "title": "hmdb-database | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Access HMDB metabolite records, spectra, pathways, and biomarker metadata for metabolite identification and metabolomics research workflows."
+  },
+  {
+    "path": "/skill/260",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/260",
+    "type": "skill",
+    "title": "hypogenic | Data & Analysis Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Generate and test competing hypotheses on tabular datasets with LLM-driven workflows that combine data patterns, literature signals, and iterative refinement."
+  },
+  {
+    "path": "/skill/261",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/261",
+    "type": "skill",
+    "title": "hypothesis-generation | Writing & Research Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Formulate evidence-based scientific hypotheses, derive falsifiable predictions, and design experiments with structured literature-grounded reporting workflows."
+  },
+  {
+    "path": "/skill/262",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/262",
+    "type": "skill",
+    "title": "imaging-data-commons | Health & Life Sciences Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Query and download public cancer imaging data from NCI Imaging Data Commons using idc-index. Use for accessing large-scale radiology (CT, MR, PET) and patholog…"
+  },
+  {
+    "path": "/skill/263",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/263",
+    "type": "skill",
+    "title": "infographics | Media & Content Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Generate polished infographics with AI-assisted layout, style presets, and iterative quality review for reports, presentations, and social content."
+  },
+  {
+    "path": "/skill/264",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/264",
+    "type": "skill",
+    "title": "interpro-database | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Query InterPro protein families and domains across integrated member databases to support functional annotation, architecture analysis, and GO mapping."
+  },
+  {
+    "path": "/skill/265",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/265",
+    "type": "skill",
+    "title": "iso-13485-certification | Health & Life Sciences Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Build and audit medical device QMS documentation for ISO 13485 certification using structured gap analysis, requirement checklists, and procedure templates."
+  },
+  {
+    "path": "/skill/266",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/266",
+    "type": "skill",
+    "title": "jaspar-database | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Access JASPAR transcription factor binding profiles for motif lookup, sequence scanning, and regulatory variant interpretation in genomics workflows."
+  },
+  {
+    "path": "/skill/267",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/267",
+    "type": "skill",
+    "title": "kegg-database | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Query KEGG pathways, genes, compounds, and cross-references via REST APIs for pathway mapping, identifier conversion, and systems biology analysis."
+  },
+  {
+    "path": "/skill/268",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/268",
+    "type": "skill",
+    "title": "labarchive-integration | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Automate LabArchives ELN workflows for notebook backup, entry operations, attachments, and API-driven research documentation processes."
+  },
+  {
+    "path": "/skill/269",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/269",
+    "type": "skill",
+    "title": "lamindb | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Manage biological datasets with LaminDB for lineage tracking, ontology-based annotation, validation, and reproducible FAIR data workflows."
+  },
+  {
+    "path": "/skill/270",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/270",
+    "type": "skill",
+    "title": "latchbio-integration | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Build and deploy bioinformatics workflows on Latch with typed workflow APIs, cloud data abstractions, and configurable compute resources."
+  },
+  {
+    "path": "/skill/271",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/271",
+    "type": "skill",
+    "title": "latex-posters | Writing & Research Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Create conference-grade LaTeX research posters with layout guidance, template assets, and visual communication best practices."
+  },
+  {
+    "path": "/skill/272",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/272",
+    "type": "skill",
+    "title": "literature-review | Writing & Research Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Conduct systematic literature reviews across major academic databases with citation verification and publication-ready markdown or PDF outputs."
+  },
+  {
+    "path": "/skill/273",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/273",
+    "type": "skill",
+    "title": "markdown-mermaid-writing | Writing & Research Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Create structured markdown documents with Mermaid diagrams using style guides, diagram references, and reusable templates."
+  },
+  {
+    "path": "/skill/274",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/274",
+    "type": "skill",
+    "title": "market-research-reports | Data & Analysis Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Generate consulting-style market research reports with strategic frameworks, structured analysis, and data-driven visual deliverables."
+  },
+  {
+    "path": "/skill/275",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/275",
+    "type": "skill",
+    "title": "markitdown | Utility & Automation Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Convert PDFs, Office files, images, audio, and web content into clean markdown for LLM-friendly downstream workflows."
+  },
+  {
+    "path": "/skill/276",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/276",
+    "type": "skill",
+    "title": "matchms | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Analyze and compare mass spectra with similarity scoring, filtering pipelines, and library matching for metabolomics workflows."
+  },
+  {
+    "path": "/skill/277",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/277",
+    "type": "skill",
+    "title": "matlab | Data & Analysis Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Use MATLAB or GNU Octave for matrix-centric numerical computing, data analysis, visualization, and scientific scripting workflows."
+  },
+  {
+    "path": "/skill/278",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/278",
+    "type": "skill",
+    "title": "matplotlib | Data & Analysis Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Create publication-quality scientific visualizations in Python with fine-grained control over figures, axes, styles, and exports."
+  },
+  {
+    "path": "/skill/279",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/279",
+    "type": "skill",
+    "title": "medchem | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Apply medicinal chemistry rules and structural alert filters to prioritize compounds for drug discovery and lead optimization."
+  },
+  {
+    "path": "/skill/280",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/280",
+    "type": "skill",
+    "title": "metabolomics-workbench-database | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Query NIH Metabolomics Workbench REST APIs for studies, metabolite metadata, RefMet nomenclature, and m/z-driven identification workflows."
+  },
+  {
+    "path": "/skill/281",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/281",
+    "type": "skill",
+    "title": "modal | Infrastructure & Cloud Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Deploy and run Python workloads on serverless cloud containers with autoscaling, GPU acceleration, secrets, and scheduled jobs."
+  },
+  {
+    "path": "/skill/282",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/282",
+    "type": "skill",
+    "title": "molecular-dynamics | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Run and analyze molecular dynamics simulations with OpenMM and MDAnalysis for structure, trajectory, and biophysics workflows."
+  },
+  {
+    "path": "/skill/283",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/283",
+    "type": "skill",
+    "title": "molfeat | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Featurize molecules into ML-ready representations using fingerprints, descriptors, and pretrained embeddings for cheminformatics pipelines."
+  },
+  {
+    "path": "/skill/284",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/284",
+    "type": "skill",
+    "title": "monarch-database | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Query Monarch Initiative knowledge graph for disease-gene-phenotype associations and cross-species phenotype evidence."
+  },
+  {
+    "path": "/skill/285",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/285",
+    "type": "skill",
+    "title": "networkx | Data & Analysis Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Create, analyze, and visualize complex graph structures with algorithms for paths, centrality, communities, and network metrics."
+  },
+  {
+    "path": "/skill/286",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/286",
+    "type": "skill",
+    "title": "neurokit2 | Health & Life Sciences Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Process physiological biosignals including ECG, EEG, EDA, RSP, PPG, and EMG for psychophysiology and health analytics."
+  },
+  {
+    "path": "/skill/287",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/287",
+    "type": "skill",
+    "title": "neuropixels-analysis | Health & Life Sciences Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Analyze Neuropixels extracellular recordings with SpikeInterface workflows for preprocessing, spike sorting, drift correction, and curation."
+  },
+  {
+    "path": "/skill/288",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/288",
+    "type": "skill",
+    "title": "offer-k-dense-web | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Promote K-Dense Web as an end-to-end AI co-scientist platform for broader scientific workflows beyond local skill execution."
+  },
+  {
+    "path": "/skill/289",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/289",
+    "type": "skill",
+    "title": "omero-integration | Health & Life Sciences Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Work with OMERO microscopy servers to retrieve images, manage metadata and ROIs, and automate high-content imaging workflows."
+  },
+  {
+    "path": "/skill/290",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/290",
+    "type": "skill",
+    "title": "open-notebook | Writing & Research Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Use the self-hosted Open Notebook platform to ingest research sources, generate notes, chat with documents, and manage AI-assisted notebooks."
+  },
+  {
+    "path": "/skill/291",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/291",
+    "type": "skill",
+    "title": "openalex-database | Writing & Research Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Query OpenAlex for academic works, authors, institutions, citations, and bibliometric trends across large-scale scholarly metadata."
+  },
+  {
+    "path": "/skill/292",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/292",
+    "type": "skill",
+    "title": "opentargets-database | Health & Life Sciences Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Query Open Targets Platform GraphQL APIs for disease-target evidence, tractability, safety annotations, and drug discovery prioritization."
+  },
+  {
+    "path": "/skill/293",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/293",
+    "type": "skill",
+    "title": "opentrons-integration | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Author and validate Opentrons Protocol API v2 workflows for OT-2/Flex liquid handling, module control, and reproducible lab automation."
+  },
+  {
+    "path": "/skill/294",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/294",
+    "type": "skill",
+    "title": "paper-2-web | Writing & Research Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Transform academic papers into interactive websites, presentation videos, and conference posters for research dissemination workflows."
+  },
+  {
+    "path": "/skill/295",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/295",
+    "type": "skill",
+    "title": "parallel-web | Writing & Research Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Use Parallel Web Systems APIs for web search, deep research synthesis, and citation-aware URL extraction workflows."
+  },
+  {
+    "path": "/skill/296",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/296",
+    "type": "skill",
+    "title": "pathml | Health & Life Sciences Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Build computational pathology pipelines for whole-slide imaging, nucleus analysis, spatial graphs, and pathology-focused ML workflows."
+  },
+  {
+    "path": "/skill/297",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/297",
+    "type": "skill",
+    "title": "pdb-database | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Access RCSB PDB for 3D protein and nucleic acid structures with sequence/structure search, coordinate download, and metadata retrieval."
+  },
+  {
+    "path": "/skill/298",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/298",
+    "type": "skill",
+    "title": "peer-review | Writing & Research Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Conduct structured manuscript and grant peer review with checklist-based methodology, statistics, reporting standard, and reproducibility evaluation."
+  },
+  {
+    "path": "/skill/299",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/299",
+    "type": "skill",
+    "title": "pennylane | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Develop hybrid quantum-classical workflows with PennyLane, including differentiable circuits, variational algorithms, and quantum ML models."
+  },
+  {
+    "path": "/skill/300",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/300",
+    "type": "skill",
+    "title": "perplexity-search | Writing & Research Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Run real-time web research through Perplexity models via OpenRouter and LiteLLM with citation-grounded answers for current information."
+  },
+  {
+    "path": "/skill/301",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/301",
+    "type": "skill",
+    "title": "phylogenetics | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Build phylogenetic analysis pipelines with MAFFT, IQ-TREE, FastTree, and ETE3 for evolutionary relationship inference and comparative genomics."
+  },
+  {
+    "path": "/skill/302",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/302",
+    "type": "skill",
+    "title": "plotly | Data & Analysis Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Create interactive visualizations with Plotly for exploratory analysis, dashboards, and presentation-ready web-embeddable charts."
+  },
+  {
+    "path": "/skill/303",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/303",
+    "type": "skill",
+    "title": "polars | Data & Analysis Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Process large in-memory datasets efficiently with Polars using expression-based transforms, lazy execution, and parallel query optimization."
+  },
+  {
+    "path": "/skill/304",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/304",
+    "type": "skill",
+    "title": "pptx-posters | Writing & Research Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Build research posters in HTML/CSS for PowerPoint-oriented workflows with export paths to PDF or PPTX-compatible formats."
+  },
+  {
+    "path": "/skill/305",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/305",
+    "type": "skill",
+    "title": "protocolsio-integration | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Integrate with protocols.io APIs to search, manage, and publish scientific protocols, including collaboration, files, and workspace operations."
+  },
+  {
+    "path": "/skill/306",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/306",
+    "type": "skill",
+    "title": "pubchem-database | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Query PubChem compounds and bioactivity data via PUG-REST and PubChemPy for cheminformatics, similarity search, and property retrieval."
+  },
+  {
+    "path": "/skill/307",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/307",
+    "type": "skill",
+    "title": "pubmed-database | Writing & Research Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Access PubMed E-utilities APIs for biomedical literature search, advanced MeSH queries, citation workflows, and systematic review support."
+  },
+  {
+    "path": "/skill/308",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/308",
+    "type": "skill",
+    "title": "pufferlib | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Train reinforcement learning agents with high-throughput vectorized environments and optimized PPO workflows for scalable experimentation."
+  },
+  {
+    "path": "/skill/309",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/309",
+    "type": "skill",
+    "title": "pydeseq2 | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Run differential gene expression analysis for bulk RNA-seq using DESeq2-style statistical workflows in Python."
+  },
+  {
+    "path": "/skill/310",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/310",
+    "type": "skill",
+    "title": "pydicom | Health & Life Sciences Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Read, transform, anonymize, and export DICOM medical imaging data for radiology and healthcare imaging workflows."
+  },
+  {
+    "path": "/skill/311",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/311",
+    "type": "skill",
+    "title": "pyhealth | Health & Life Sciences Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Develop healthcare machine learning pipelines on EHR and clinical datasets with specialized models, tasks, and evaluation tooling."
+  },
+  {
+    "path": "/skill/312",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/312",
+    "type": "skill",
+    "title": "pylabrobot | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Automate multi-vendor laboratory equipment and liquid handling workflows through a unified Python SDK for reproducible lab operations."
+  },
+  {
+    "path": "/skill/313",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/313",
+    "type": "skill",
+    "title": "pymatgen | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Analyze and transform crystal structures, phase diagrams, and materials datasets for computational materials science workflows."
+  },
+  {
+    "path": "/skill/314",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/314",
+    "type": "skill",
+    "title": "pymc | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Build Bayesian probabilistic models with MCMC and variational inference for uncertainty-aware statistical analysis."
+  },
+  {
+    "path": "/skill/315",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/315",
+    "type": "skill",
+    "title": "pymoo | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Solve single and multi-objective optimization problems using evolutionary algorithms and Pareto-front analysis."
+  },
+  {
+    "path": "/skill/316",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/316",
+    "type": "skill",
+    "title": "pyopenms | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Process proteomics and metabolomics mass spectrometry data with OpenMS Python tooling for identification and quantification pipelines."
+  },
+  {
+    "path": "/skill/317",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/317",
+    "type": "skill",
+    "title": "pysam | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Process SAM/BAM/CRAM, VCF/BCF, and FASTA/FASTQ genomic data with htslib-powered workflows for NGS pipelines."
+  },
+  {
+    "path": "/skill/318",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/318",
+    "type": "skill",
+    "title": "pytdc | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Use Therapeutics Data Commons datasets and benchmarks for drug discovery machine learning and pharmacological prediction tasks."
+  },
+  {
+    "path": "/skill/319",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/319",
+    "type": "skill",
+    "title": "pytorch-lightning | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Structure and scale deep learning training with LightningModules, Trainer automation, callbacks, and distributed execution."
+  },
+  {
+    "path": "/skill/320",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/320",
+    "type": "skill",
+    "title": "pyzotero | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Manage Zotero libraries via API for citations, collections, tags, attachments, and research automation workflows."
+  },
+  {
+    "path": "/skill/321",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/321",
+    "type": "skill",
+    "title": "qiskit | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Build and run quantum circuits with Qiskit across simulators and quantum hardware with transpilation and runtime workflows."
+  },
+  {
+    "path": "/skill/322",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/322",
+    "type": "skill",
+    "title": "qutip | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Simulate open and closed quantum systems with QuTiP for dynamics, decoherence, and quantum optics research workflows."
+  },
+  {
+    "path": "/skill/323",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/323",
+    "type": "skill",
+    "title": "rdkit | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Perform cheminformatics workflows with RDKit for molecular parsing, descriptors, fingerprints, and substructure/similarity analysis."
+  },
+  {
+    "path": "/skill/324",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/324",
+    "type": "skill",
+    "title": "reactome-database | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Query Reactome pathways and enrichment APIs for systems biology analysis, gene-pathway mapping, and interaction exploration."
+  },
+  {
+    "path": "/skill/325",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/325",
+    "type": "skill",
+    "title": "research-grants | Writing & Research Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Draft agency-specific research grant proposals with structured narratives, review criteria alignment, and budget justifications."
+  },
+  {
+    "path": "/skill/326",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/326",
+    "type": "skill",
+    "title": "research-lookup | Writing & Research Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Look up current research information via routed web backends for literature discovery, verification, and citation-oriented investigation."
+  },
+  {
+    "path": "/skill/327",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/327",
+    "type": "skill",
+    "title": "rowan | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Analyze molecular and protein structures with Rowan for AI-driven chemistry and structure-centered scientific workflows."
+  },
+  {
+    "path": "/skill/328",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/328",
+    "type": "skill",
+    "title": "scanpy | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Run single-cell transcriptomics analysis pipelines with Scanpy from QC and normalization to clustering and visualization."
+  },
+  {
+    "path": "/skill/329",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/329",
+    "type": "skill",
+    "title": "scholar-evaluation | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Apply structured scoring frameworks to evaluate scientific work quality, rigor, and impact for comparative assessment."
+  },
+  {
+    "path": "/skill/330",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/330",
+    "type": "skill",
+    "title": "scientific-brainstorming | Writing & Research Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Generate and structure scientific ideation sessions for hypotheses, experimental directions, and research planning."
+  },
+  {
+    "path": "/skill/331",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/331",
+    "type": "skill",
+    "title": "scientific-critical-thinking | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Critically evaluate scientific claims through evidence quality, bias detection, experimental design, and statistical reasoning."
+  },
+  {
+    "path": "/skill/332",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/332",
+    "type": "skill",
+    "title": "scientific-schematics | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Generate publication-quality scientific schematics and diagrams with AI-assisted iteration for proposals and technical documents."
+  },
+  {
+    "path": "/skill/333",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/333",
+    "type": "skill",
+    "title": "scientific-slides | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Create and review scientific slide decks with structure, visual quality checks, and Beamer/PowerPoint-oriented workflows."
+  },
+  {
+    "path": "/skill/334",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/334",
+    "type": "skill",
+    "title": "scientific-visualization | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Produce publication-ready scientific figures using style presets, color systems, and export pipelines for journals and talks."
+  },
+  {
+    "path": "/skill/335",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/335",
+    "type": "skill",
+    "title": "scientific-writing | Writing & Research Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Draft structured scientific reports and manuscripts with IMRaD conventions, citation practices, and formatting guidance."
+  },
+  {
+    "path": "/skill/336",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/336",
+    "type": "skill",
+    "title": "scikit-bio | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Use scikit-bio for bioinformatics and microbiome analyses including sequence processing, diversity metrics, and statistical workflows."
+  },
+  {
+    "path": "/skill/337",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/337",
+    "type": "skill",
+    "title": "scikit-learn | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Build machine learning pipelines with scikit-learn for classification, regression, clustering, preprocessing, and model evaluation."
+  },
+  {
+    "path": "/skill/338",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/338",
+    "type": "skill",
+    "title": "scikit-survival | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Model time-to-event outcomes with scikit-survival using Cox models, survival forests, and survival-specific metrics."
+  },
+  {
+    "path": "/skill/339",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/339",
+    "type": "skill",
+    "title": "scvelo | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Infer RNA velocity and cellular dynamics from single-cell transcriptomics data for trajectory and state-transition analysis."
+  },
+  {
+    "path": "/skill/340",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/340",
+    "type": "skill",
+    "title": "scvi-tools | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Apply deep generative models for single-cell omics integration, denoising, latent representation learning, and differential analysis."
+  },
+  {
+    "path": "/skill/341",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/341",
+    "type": "skill",
+    "title": "seaborn | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Create statistical visualizations with seaborn for exploratory analysis, categorical comparisons, and publication-ready plots."
+  },
+  {
+    "path": "/skill/342",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/342",
+    "type": "skill",
+    "title": "shap | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Explain machine learning predictions with SHAP values using model-specific and model-agnostic interpretability workflows."
+  },
+  {
+    "path": "/skill/343",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/343",
+    "type": "skill",
+    "title": "simpy | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Model discrete-event systems with SimPy for process interaction, resource constraints, and simulation-based analysis."
+  },
+  {
+    "path": "/skill/344",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/344",
+    "type": "skill",
+    "title": "stable-baselines3 | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Train and evaluate reinforcement learning agents with Stable-Baselines3 across standard and custom environments."
+  },
+  {
+    "path": "/skill/345",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/345",
+    "type": "skill",
+    "title": "statistical-analysis | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Conduct end-to-end statistical analyses with test selection, diagnostics, effect size interpretation, and reporting guidance."
+  },
+  {
+    "path": "/skill/346",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/346",
+    "type": "skill",
+    "title": "statsmodels | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Fit classical statistical models with statsmodels including GLM, time series, diagnostics, and econometric analyses."
+  },
+  {
+    "path": "/skill/347",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/347",
+    "type": "skill",
+    "title": "string-database | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Query STRING protein-protein interaction data for network analysis, functional enrichment, and systems biology workflows."
+  },
+  {
+    "path": "/skill/348",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/348",
+    "type": "skill",
+    "title": "sympy | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Perform symbolic mathematics with SymPy for algebra, calculus, matrix operations, equation solving, and code generation."
+  },
+  {
+    "path": "/skill/349",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/349",
+    "type": "skill",
+    "title": "tiledbvcf | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Use TileDB-VCF for scalable variant querying and genomic analytics on large VCF datasets with efficient indexing."
+  },
+  {
+    "path": "/skill/350",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/350",
+    "type": "skill",
+    "title": "timesfm-forecasting | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Run time-series forecasting workflows with TimesFM for anomaly detection, covariate-aware predictions, and long-horizon analysis."
+  },
+  {
+    "path": "/skill/351",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/351",
+    "type": "skill",
+    "title": "torch_geometric | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Build graph neural network pipelines with PyTorch Geometric for node, edge, and graph-level learning tasks."
+  },
+  {
+    "path": "/skill/352",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/352",
+    "type": "skill",
+    "title": "torchdrug | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Build deep learning workflows for molecular property prediction, protein modeling, and drug discovery with TorchDrug."
+  },
+  {
+    "path": "/skill/353",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/353",
+    "type": "skill",
+    "title": "transformers | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Use Hugging Face Transformers for model loading, fine-tuning, generation, and inference across NLP and multimodal tasks."
+  },
+  {
+    "path": "/skill/354",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/354",
+    "type": "skill",
+    "title": "treatment-plans | Health & Life Sciences Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Develop structured medical treatment plans with templates, validation workflows, and compliance-oriented documentation guidance."
+  },
+  {
+    "path": "/skill/355",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/355",
+    "type": "skill",
+    "title": "umap-learn | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Apply UMAP for dimensionality reduction and manifold learning to visualize and structure high-dimensional datasets."
+  },
+  {
+    "path": "/skill/356",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/356",
+    "type": "skill",
+    "title": "uniprot-database | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Query UniProt protein records and mappings for sequence annotation, metadata retrieval, and bioinformatics integration workflows."
+  },
+  {
+    "path": "/skill/357",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/357",
+    "type": "skill",
+    "title": "usfiscaldata | Data & Analysis Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Query U.S. Treasury Fiscal Data APIs for debt, revenue, spending, rates, and federal financial time-series without API keys."
+  },
+  {
+    "path": "/skill/358",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/358",
+    "type": "skill",
+    "title": "uspto-database | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Access USPTO patent and trademark APIs for search, prosecution history, assignments, citations, and office action analysis."
+  },
+  {
+    "path": "/skill/359",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/359",
+    "type": "skill",
+    "title": "vaex | Data & Analysis Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Process and analyze billion-row tabular datasets with lazy, out-of-core DataFrames for fast statistics and visualization."
+  },
+  {
+    "path": "/skill/360",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/360",
+    "type": "skill",
+    "title": "venue-templates | Writing & Research Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Use venue-specific templates and formatting guidance for journals, conferences, posters, and grant proposal submissions."
+  },
+  {
+    "path": "/skill/361",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/361",
+    "type": "skill",
+    "title": "what-if-oracle | Writing & Research Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Run structured what-if scenario analysis with multi-branch outcomes, risk framing, and robust decision-response planning."
+  },
+  {
+    "path": "/skill/362",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/362",
+    "type": "skill",
+    "title": "zarr-python | Data & Analysis Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Store and process chunked compressed N-dimensional arrays for cloud-native, parallel scientific data pipelines."
+  },
+  {
+    "path": "/skill/363",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/363",
+    "type": "skill",
+    "title": "zinc-database | Scientific & Research Tools Skill by K-Dense-AI | SKILLS All-in-one",
+    "description": "Search and retrieve purchasable compounds from ZINC for similarity lookup, virtual screening, and docking preparation."
+  },
+  {
+    "path": "/skill/364",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/364",
+    "type": "skill",
+    "title": "linear-solvers | Scientific & Research Tools Skill by HeshamFS | SKILLS All-in-one",
+    "description": "Select and configure direct or iterative linear solvers with preconditioning and convergence diagnostics for Ax=b systems."
+  },
+  {
+    "path": "/skill/365",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/365",
+    "type": "skill",
+    "title": "mesh-generation | Scientific & Research Tools Skill by HeshamFS | SKILLS All-in-one",
+    "description": "Plan mesh resolution and evaluate grid quality metrics such as aspect ratio and skewness for PDE simulations."
+  },
+  {
+    "path": "/skill/366",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/366",
+    "type": "skill",
+    "title": "nonlinear-solvers | Scientific & Research Tools Skill by HeshamFS | SKILLS All-in-one",
+    "description": "Choose and tune Newton, quasi-Newton, and trust-region strategies for nonlinear systems and optimization workflows."
+  },
+  {
+    "path": "/skill/367",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/367",
+    "type": "skill",
+    "title": "numerical-integration | Scientific & Research Tools Skill by HeshamFS | SKILLS All-in-one",
+    "description": "Select explicit, implicit, or IMEX integration schemes with adaptive step control for stiff and non-stiff ODE/PDE systems."
+  },
+  {
+    "path": "/skill/368",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/368",
+    "type": "skill",
+    "title": "numerical-stability | Scientific & Research Tools Skill by HeshamFS | SKILLS All-in-one",
+    "description": "Analyze CFL/Fourier constraints, stiffness, and conditioning to enforce stable time stepping in PDE simulations."
+  },
+  {
+    "path": "/skill/369",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/369",
+    "type": "skill",
+    "title": "ontology-explorer | Scientific & Research Tools Skill by HeshamFS | SKILLS All-in-one",
+    "description": "Parse and query ontology hierarchies, classes, and properties for materials-science knowledge modeling workflows."
+  },
+  {
+    "path": "/skill/370",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/370",
+    "type": "skill",
+    "title": "ontology-mapper | Scientific & Research Tools Skill by HeshamFS | SKILLS All-in-one",
+    "description": "Map material terms and crystal descriptors into standardized ontology classes and properties for annotation."
+  },
+  {
+    "path": "/skill/371",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/371",
+    "type": "skill",
+    "title": "ontology-validator | Scientific & Research Tools Skill by HeshamFS | SKILLS All-in-one",
+    "description": "Validate ontology annotations for class/property correctness, completeness, and domain-range consistency."
+  },
+  {
+    "path": "/skill/372",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/372",
+    "type": "skill",
+    "title": "parameter-optimization | Scientific & Research Tools Skill by HeshamFS | SKILLS All-in-one",
+    "description": "Design parameter studies and choose optimization strategies using DOE, sensitivity analysis, and surrogate guidance."
+  },
+  {
+    "path": "/skill/373",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/373",
+    "type": "skill",
+    "title": "performance-profiling | Scientific & Research Tools Skill by HeshamFS | SKILLS All-in-one",
+    "description": "Profile simulation runtime, scaling efficiency, and memory usage to identify bottlenecks and optimization opportunities."
+  },
+  {
+    "path": "/skill/374",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/374",
+    "type": "skill",
+    "title": "post-processing | Scientific & Research Tools Skill by HeshamFS | SKILLS All-in-one",
+    "description": "Extract, analyze, and summarize simulation outputs through profiles, statistics, derived quantities, and reporting."
+  },
+  {
+    "path": "/skill/375",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/375",
+    "type": "skill",
+    "title": "simulation-orchestrator | Scientific & Research Tools Skill by HeshamFS | SKILLS All-in-one",
+    "description": "Coordinate simulation campaigns with parameter sweeps, batch execution, job tracking, and result aggregation."
+  },
+  {
+    "path": "/skill/376",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/376",
+    "type": "skill",
+    "title": "simulation-validator | Scientific & Research Tools Skill by HeshamFS | SKILLS All-in-one",
+    "description": "Run preflight, runtime, and post-run validation checks to detect instability, failures, and invalid outputs."
+  },
+  {
+    "path": "/skill/377",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/377",
+    "type": "skill",
+    "title": "slurm-job-script-generator | Scientific & Research Tools Skill by HeshamFS | SKILLS All-in-one",
+    "description": "Generate SLURM sbatch scripts with validated resource layouts for MPI and hybrid HPC simulation workloads."
+  },
+  {
+    "path": "/skill/378",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/378",
+    "type": "skill",
+    "title": "time-stepping | Scientific & Research Tools Skill by HeshamFS | SKILLS All-in-one",
+    "description": "Plan timestep policies with ramping, stability limits, output cadence, and checkpoint strategies for long simulations."
+  },
+  {
+    "path": "/skill/379",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/379",
+    "type": "skill",
+    "title": "provider-resources | Infrastructure & Cloud Skill by hashicorp | SKILLS All-in-one",
+    "description": "Implement Terraform provider resources and data sources with schema design, CRUD lifecycle, and acceptance testing patterns."
+  },
+  {
+    "path": "/skill/380",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/380",
+    "type": "skill",
+    "title": "push-to-registry | Infrastructure & Cloud Skill by hashicorp | SKILLS All-in-one",
+    "description": "Push Packer build metadata to HCP Packer registry for image iteration tracking and governance workflows."
+  },
+  {
+    "path": "/skill/381",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/381",
+    "type": "skill",
+    "title": "refactor-module | Infrastructure & Cloud Skill by hashicorp | SKILLS All-in-one",
+    "description": "Refactor monolithic Terraform configurations into reusable modules with clear interfaces and migration planning."
+  },
+  {
+    "path": "/skill/382",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/382",
+    "type": "skill",
+    "title": "run-acceptance-tests | Infrastructure & Cloud Skill by hashicorp | SKILLS All-in-one",
+    "description": "Run and diagnose Terraform provider acceptance tests with TF_ACC workflow, debug logging, and failure triage."
+  },
+  {
+    "path": "/skill/383",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/383",
+    "type": "skill",
+    "title": "terraform-search-import | Infrastructure & Cloud Skill by hashicorp | SKILLS All-in-one",
+    "description": "Discover unmanaged cloud resources with Terraform Search queries and bulk import them into Terraform state."
+  },
+  {
+    "path": "/skill/384",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/384",
+    "type": "skill",
+    "title": "terraform-stacks | Infrastructure & Cloud Skill by hashicorp | SKILLS All-in-one",
+    "description": "Design and manage Terraform Stacks with tfcomponent/tfdeploy workflows for multi-environment infrastructure orchestration."
+  },
+  {
+    "path": "/skill/385",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/385",
+    "type": "skill",
+    "title": "terraform-style-guide | Infrastructure & Cloud Skill by hashicorp | SKILLS All-in-one",
+    "description": "Generate Terraform configurations aligned with HashiCorp style conventions, file layout, and maintainability practices."
+  },
+  {
+    "path": "/skill/386",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/386",
+    "type": "skill",
+    "title": "terraform-test | Infrastructure & Cloud Skill by hashicorp | SKILLS All-in-one",
+    "description": "Write and run Terraform test scenarios with tftest files, assertions, mock providers, and integration validation."
+  },
+  {
+    "path": "/skill/387",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/387",
+    "type": "skill",
+    "title": "windows-builder | Infrastructure & Cloud Skill by hashicorp | SKILLS All-in-one",
+    "description": "Build Windows machine images with Packer using WinRM, PowerShell provisioning, and cloud-specific builder patterns."
+  },
+  {
+    "path": "/skill/388",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/388",
+    "type": "skill",
+    "title": "framework | Web3 & Blockchain Skill by raintree-technology | SKILLS All-in-one",
+    "description": "Expert on Aptos Framework (0x1 standard library) modules including account, coin, fungible_asset, object, timestamp, table, smart_table, event, randomness, agg…"
+  },
+  {
+    "path": "/skill/389",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/389",
+    "type": "skill",
+    "title": "gas-optimization | Web3 & Blockchain Skill by raintree-technology | SKILLS All-in-one",
+    "description": "Aptos gas optimization expert for Move smart contracts. Covers storage costs, execution efficiency, inline functions, aggregators for parallel execution, Table…"
+  },
+  {
+    "path": "/skill/390",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/390",
+    "type": "skill",
+    "title": "move-language | Web3 & Blockchain Skill by raintree-technology | SKILLS All-in-one",
+    "description": "Expert on Move programming language fundamentals including abilities (copy/drop/store/key), generics, phantom types, references, global storage operations (mov…"
+  },
+  {
+    "path": "/skill/391",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/391",
+    "type": "skill",
+    "title": "move-testing | Web3 & Blockchain Skill by raintree-technology | SKILLS All-in-one",
+    "description": "Expert on testing Move smart contracts including unit tests, integration tests, Move Prover formal verification, debugging strategies, test coverage, and CI/CD…"
+  },
+  {
+    "path": "/skill/392",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/392",
+    "type": "skill",
+    "title": "object-model | Web3 & Blockchain Skill by raintree-technology | SKILLS All-in-one",
+    "description": "Expert on Aptos Object Model for composable, transferable assets. Covers ObjectCore, Object<T> wrapper, ConstructorRef, ExtendRef, DeleteRef, TransferRef capab…"
+  },
+  {
+    "path": "/skill/393",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/393",
+    "type": "skill",
+    "title": "shelby | Web3 & Blockchain Skill by raintree-technology | SKILLS All-in-one",
+    "description": "Shelby Protocol expert for decentralized blob storage on Aptos blockchain. Covers erasure coding (Clay Codes), TypeScript SDK, smart contracts, CLI tools, stor…"
+  },
+  {
+    "path": "/skill/394",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/394",
+    "type": "skill",
+    "title": "token-standards | Web3 & Blockchain Skill by raintree-technology | SKILLS All-in-one",
+    "description": "Expert on Aptos token standards including fungible tokens (Coin framework, Fungible Asset), NFTs (Digital Asset/Token V2), collections, metadata, minting, burn…"
+  },
+  {
+    "path": "/skill/395",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/395",
+    "type": "skill",
+    "title": "gmail | Collaboration & Project Management Skill by sanjay3290 | SKILLS All-in-one",
+    "description": "Use lightweight Gmail automation for searching, reading, drafting, sending, and organizing workspace email."
+  },
+  {
+    "path": "/skill/396",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/396",
+    "type": "skill",
+    "title": "google-calendar | Collaboration & Project Management Skill by sanjay3290 | SKILLS All-in-one",
+    "description": "Manage Google Calendar events, availability, and scheduling workflows through standalone command utilities."
+  },
+  {
+    "path": "/skill/397",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/397",
+    "type": "skill",
+    "title": "google-chat | Collaboration & Project Management Skill by sanjay3290 | SKILLS All-in-one",
+    "description": "Interact with Google Chat spaces and direct messages for collaboration, notifications, and team messaging."
+  },
+  {
+    "path": "/skill/398",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/398",
+    "type": "skill",
+    "title": "google-docs | Collaboration & Project Management Skill by sanjay3290 | SKILLS All-in-one",
+    "description": "Create, search, read, and edit Google Docs documents with lightweight OAuth-based automation scripts."
+  },
+  {
+    "path": "/skill/399",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/399",
+    "type": "skill",
+    "title": "google-drive | Collaboration & Project Management Skill by sanjay3290 | SKILLS All-in-one",
+    "description": "Automate Google Drive file search, organization, transfer, and folder management with standalone scripts."
+  },
+  {
+    "path": "/skill/400",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/400",
+    "type": "skill",
+    "title": "google-sheets | Collaboration & Project Management Skill by sanjay3290 | SKILLS All-in-one",
+    "description": "Read and write Google Sheets ranges, rows, and metadata for structured collaboration and reporting workflows."
+  },
+  {
+    "path": "/skill/401",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/401",
+    "type": "skill",
+    "title": "google-slides | Collaboration & Project Management Skill by sanjay3290 | SKILLS All-in-one",
+    "description": "Create and modify Google Slides presentations, slide content, and text replacement via scriptable commands."
+  },
+  {
+    "path": "/skill/402",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/402",
+    "type": "skill",
+    "title": "terminal-title | Utility & Automation Skill by bluzername | SKILLS All-in-one",
+    "description": "Automatically set terminal window titles based on current high-level task to improve multi-session clarity."
+  },
+  {
+    "path": "/skill/403",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/403",
+    "type": "skill",
+    "title": "kaggle | Data & Analysis Skill by shepsci | SKILLS All-in-one",
+    "description": "Unified Kaggle workflows for competitions, datasets, notebooks, submissions, and account/tooling setup."
+  },
+  {
+    "path": "/skill/404",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/404",
+    "type": "skill",
+    "title": "javascript-pro | Development & Code Tools Skill by jeffallan | SKILLS All-in-one",
+    "description": "Writes, debugs, and refactors JavaScript code using modern ES2023+ features, async/await patterns, ESM module systems, and Node.js APIs. Use when building vani…"
+  },
+  {
+    "path": "/skill/405",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/405",
+    "type": "skill",
+    "title": "kotlin-specialist | Development & Code Tools Skill by jeffallan | SKILLS All-in-one",
+    "description": "Provides idiomatic Kotlin implementation patterns including coroutine concurrency, Flow stream handling, multiplatform architecture, Compose UI construction, K…"
+  },
+  {
+    "path": "/skill/406",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/406",
+    "type": "skill",
+    "title": "kubernetes-specialist | Development & Code Tools Skill by jeffallan | SKILLS All-in-one",
+    "description": "Use when deploying or managing Kubernetes workloads. Invoke to create deployment manifests, configure pod security policies, set up service accounts, define ne…"
+  },
+  {
+    "path": "/skill/407",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/407",
+    "type": "skill",
+    "title": "laravel-specialist | Development & Code Tools Skill by jeffallan | SKILLS All-in-one",
+    "description": "Build and configure Laravel 10+ applications, including creating Eloquent models and relationships, implementing Sanctum authentication, configuring Horizon qu…"
+  },
+  {
+    "path": "/skill/408",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/408",
+    "type": "skill",
+    "title": "legacy-modernizer | Development & Code Tools Skill by jeffallan | SKILLS All-in-one",
+    "description": "Designs incremental migration strategies, identifies service boundaries, produces dependency maps and migration roadmaps, and generates API facade designs for…"
+  },
+  {
+    "path": "/skill/409",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/409",
+    "type": "skill",
+    "title": "mcp-developer | Utility & Automation Skill by jeffallan | SKILLS All-in-one",
+    "description": "Use when building, debugging, or extending MCP servers or clients that connect AI systems with external tools and data sources. Invoke to implement tool handle…"
+  },
+  {
+    "path": "/skill/410",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/410",
+    "type": "skill",
+    "title": "microservices-architect | Development & Code Tools Skill by jeffallan | SKILLS All-in-one",
+    "description": "Designs distributed system architectures, decomposes monoliths into bounded-context services, recommends communication patterns, and produces service boundary…"
+  },
+  {
+    "path": "/skill/411",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/411",
+    "type": "skill",
+    "title": "ml-pipeline | Data & Analysis Skill by jeffallan | SKILLS All-in-one",
+    "description": "Designs and implements production-grade ML pipeline infrastructure: configures experiment tracking with MLflow or Weights & Biases, creates Kubeflow or Airflow…"
+  },
+  {
+    "path": "/skill/412",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/412",
+    "type": "skill",
+    "title": "monitoring-expert | Development & Code Tools Skill by jeffallan | SKILLS All-in-one",
+    "description": "Configures monitoring systems, implements structured logging pipelines, creates Prometheus/Grafana dashboards, defines alerting rules, and instruments distribu…"
+  },
+  {
+    "path": "/skill/413",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/413",
+    "type": "skill",
+    "title": "nestjs-expert | Development & Code Tools Skill by jeffallan | SKILLS All-in-one",
+    "description": "Creates and configures NestJS modules, controllers, services, DTOs, guards, and interceptors for enterprise-grade TypeScript backend applications. Use when bui…"
+  },
+  {
+    "path": "/skill/414",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/414",
+    "type": "skill",
+    "title": "nextjs-developer | Development & Code Tools Skill by jeffallan | SKILLS All-in-one",
+    "description": "Use when building Next.js 14+ applications with App Router, server components, or server actions. Invoke to configure route handlers, implement middleware, set…"
+  },
+  {
+    "path": "/skill/415",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/415",
+    "type": "skill",
+    "title": "pandas-pro | Data & Analysis Skill by jeffallan | SKILLS All-in-one",
+    "description": "Performs pandas DataFrame operations for data analysis, manipulation, and transformation. Use when working with pandas DataFrames, data cleaning, aggregation,…"
+  },
+  {
+    "path": "/skill/416",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/416",
+    "type": "skill",
+    "title": "playwright-expert | Security & Web Testing Skill by jeffallan | SKILLS All-in-one",
+    "description": "Use when writing E2E tests with Playwright, setting up test infrastructure, or debugging flaky browser tests. Invoke to write test scripts, create page objects…"
+  },
+  {
+    "path": "/skill/417",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/417",
+    "type": "skill",
+    "title": "prompt-engineer | Utility & Automation Skill by jeffallan | SKILLS All-in-one",
+    "description": "Writes, refactors, and evaluates prompts for LLMs — generating optimized prompt templates, structured output schemas, evaluation rubrics, and test suites. Use…"
+  },
+  {
+    "path": "/skill/418",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/418",
+    "type": "skill",
+    "title": "revealjs | Media & Content Skill by ryanbbrown | SKILLS All-in-one",
+    "description": "Create polished reveal.js slide decks with themes, layouts, notes, and presentation-ready custom styling."
+  },
+  {
+    "path": "/skill/138",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/138",
+    "type": "skill",
+    "title": "content-research-writer | Writing & Research Skill by ComposioHQ | SKILLS All-in-one",
+    "description": "Assists in writing high-quality content by conducting research, adding citations, improving hooks, and providing real-time feedback."
+  },
+  {
+    "path": "/skill/139",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/139",
+    "type": "skill",
+    "title": "family-history-research | Writing & Research Skill by emaynard | SKILLS All-in-one",
+    "description": "Provides assistance with planning family history and genealogy research projects."
+  },
+  {
+    "path": "/skill/141",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/141",
+    "type": "skill",
+    "title": "ship-learn-next | Learning & Knowledge Skill by michalparkola | SKILLS All-in-one",
+    "description": "Skill to help iterate on what to build or learn next, based on feedback loops."
+  },
+  {
+    "path": "/skill/142",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/142",
+    "type": "skill",
+    "title": "youtube-transcript | Media & Content Skill by michalparkola | SKILLS All-in-one",
+    "description": "Fetch transcripts from YouTube videos and prepare summaries."
+  },
+  {
+    "path": "/skill/144",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/144",
+    "type": "skill",
+    "title": "image-enhancer | Media & Content Skill by ComposioHQ | SKILLS All-in-one",
+    "description": "Improves the quality of images, especially screenshots."
+  },
+  {
+    "path": "/skill/145",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/145",
+    "type": "skill",
+    "title": "imagen | Media & Content Skill by sanjay3290 | SKILLS All-in-one",
+    "description": "Generate images using Google Gemini image generation API for UI mockups, icons, and visual assets."
+  },
+  {
+    "path": "/skill/148",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/148",
+    "type": "skill",
+    "title": "claude-epub-skill | Media & Content Skill by smerchek | SKILLS All-in-one",
+    "description": "Convert markdown documents, chat summaries, or research reports into a downloadable epub file that can be sent to Kindle."
+  },
+  {
+    "path": "/skill/149",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/149",
+    "type": "skill",
+    "title": "video-prompting-skill | Media & Content Skill by Square-Zero-Labs | SKILLS All-in-one",
+    "description": "Draft and refine prompts for video generation models (LTX-2, Sora, Veo 3, etc.)."
+  },
+  {
+    "path": "/skill/150",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/150",
+    "type": "skill",
+    "title": "find-scene | Media & Content Skill by uriva | SKILLS All-in-one",
+    "description": "Search and download movie/TV show scenes by dialog, time, or visual description using the FindScene API."
+  },
+  {
+    "path": "/skill/151",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/151",
+    "type": "skill",
+    "title": "deapi-ai-media-toolkit | Media & Content Skill by deapi-ai | SKILLS All-in-one",
+    "description": "AI media toolkit: generate images (Flux), text-to-speech, transcribe YouTube/audio, OCR, video generation, upscale, and remove backgrounds."
+  },
+  {
+    "path": "/skill/152",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/152",
+    "type": "skill",
+    "title": "claude-code-video-toolkit | Media & Content Skill by digitalsamba | SKILLS All-in-one",
+    "description": "AI-native video production workspace with Remotion, ElevenLabs, FFmpeg, and Playwright skills."
+  },
+  {
+    "path": "/skill/153",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/153",
+    "type": "skill",
+    "title": "moltdj | Media & Content Skill by polaroteam | SKILLS All-in-one",
+    "description": "AI music and podcast platform for autonomous agents — generate tracks, discover, earn tips and royalties."
+  },
+  {
+    "path": "/skill/154",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/154",
+    "type": "skill",
+    "title": "claude-ally-health | Health & Life Sciences Skill by huifer | SKILLS All-in-one",
+    "description": "A comprehensive health assistant to analyze medical reports, track health metrics, and provide personalized wellness suggestions."
+  },
+  {
+    "path": "/skill/155",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/155",
+    "type": "skill",
+    "title": "git-pushing | Collaboration & Project Management Skill by mhattingpete | SKILLS All-in-one",
+    "description": "Automate git operations and repository interactions."
+  },
+  {
+    "path": "/skill/156",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/156",
+    "type": "skill",
+    "title": "kanban-skill | Collaboration & Project Management Skill by LachyFS | SKILLS All-in-one",
+    "description": "Markdown-based Kanban board with file-based cards, YAML frontmatter for status/priority/dependencies, and no database required."
+  },
+  {
+    "path": "/skill/157",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/157",
+    "type": "skill",
+    "title": "linear-claude-skill | Collaboration & Project Management Skill by wrsmith108 | SKILLS All-in-one",
+    "description": "Manage Linear issues, projects, and teams with MCP tools, SDK scripts, and GraphQL fallbacks."
+  },
+  {
+    "path": "/skill/158",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/158",
+    "type": "skill",
+    "title": "linear-cli-skill | Collaboration & Project Management Skill by Valian | SKILLS All-in-one",
+    "description": "A skill teaching Claude how to use linear-CLI, meant to replace linear MCP."
+  },
+  {
+    "path": "/skill/159",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/159",
+    "type": "skill",
+    "title": "meeting-insights-analyzer | Collaboration & Project Management Skill by ComposioHQ | SKILLS All-in-one",
+    "description": "Transforms meeting transcripts into actionable insights about communication patterns."
+  },
+  {
+    "path": "/skill/160",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/160",
+    "type": "skill",
+    "title": "review-implementing | Collaboration & Project Management Skill by mhattingpete | SKILLS All-in-one",
+    "description": "Evaluate code implementation plans and align with specs."
+  },
+  {
+    "path": "/skill/161",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/161",
+    "type": "skill",
+    "title": "test-fixing | Collaboration & Project Management Skill by mhattingpete | SKILLS All-in-one",
+    "description": "Detect failing tests and propose patches or fixes."
+  },
+  {
+    "path": "/skill/163",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/163",
+    "type": "skill",
+    "title": "outline | Collaboration & Project Management Skill by sanjay3290 | SKILLS All-in-one",
+    "description": "Search, read, create, and manage documents in Outline wiki instances (cloud or self-hosted)."
+  },
+  {
+    "path": "/skill/164",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/164",
+    "type": "skill",
+    "title": "google-workspace-skills | Collaboration & Project Management Skill by sanjay3290 | SKILLS All-in-one",
+    "description": "Suite of Google Workspace integrations: Gmail, Calendar, Chat, Docs, Sheets, Slides, and Drive with cross-platform OAuth."
+  },
+  {
+    "path": "/skill/169",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/169",
+    "type": "skill",
+    "title": "ffuf-claude-skill | Security & Web Testing Skill by jthack | SKILLS All-in-one",
+    "description": "Integrate Claude with FFUF (fuzzing) and analyze results for vulnerabilities."
+  },
+  {
+    "path": "/skill/170",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/170",
+    "type": "skill",
+    "title": "owasp-security | Security & Web Testing Skill by agamm | SKILLS All-in-one",
+    "description": "OWASP Top 10:2025, ASVS 5.0, and Agentic AI security with code review checklists and secure patterns for 20+ languages."
+  },
+  {
+    "path": "/skill/173",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/173",
+    "type": "skill",
+    "title": "file-organizer | Utility & Automation Skill by ComposioHQ | SKILLS All-in-one",
+    "description": "Intelligently organizes your files and folders across your computer."
+  },
+  {
+    "path": "/skill/174",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/174",
+    "type": "skill",
+    "title": "invoice-organizer | Utility & Automation Skill by ComposioHQ | SKILLS All-in-one",
+    "description": "Automatically organizes invoices and receipts for tax preparation."
+  },
+  {
+    "path": "/skill/175",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/175",
+    "type": "skill",
+    "title": "template-skill | Utility & Automation Skill by Anthropic | SKILLS All-in-one",
+    "description": "Minimal skeleton for a new skill project structure."
+  },
+  {
+    "path": "/skill/177",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/177",
+    "type": "skill",
+    "title": "task-observer | Utility & Automation Skill by rebelytics | SKILLS All-in-one",
+    "description": "A meta-skill that builds and improves all your skills, including itself."
+  },
+  {
+    "path": "/skill/178",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/178",
+    "type": "skill",
+    "title": "pinme | Utility & Automation Skill by glitternetwork | SKILLS All-in-one",
+    "description": "PinMe is a zero-config frontend deployment tool. No servers. No accounts. No setup."
+  },
+  {
+    "path": "/skill/179",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/179",
+    "type": "skill",
+    "title": "clawfu-mcp-skills | Utility & Automation Skill by guia-matthieu | SKILLS All-in-one",
+    "description": "169 expert-sourced marketing skills (Dunford, Schwartz, Ogilvy, Cialdini) as MCP server with brand memory."
+  },
+  {
+    "path": "/skill/181",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/181",
+    "type": "skill",
+    "title": "find-skills | Utility & Automation Skill by agentbay-ai | SKILLS All-in-one",
+    "description": "Helps users discover, search and install agent skills from the marketplace."
+  },
+  {
+    "path": "/skill/426",
+    "url": "https://huangchiyu.com/SKILLS_All-in-one/skill/426",
+    "type": "skill",
+    "title": "mcp-builder | Utility & Automation Skill by Anthropic | SKILLS All-in-one",
+    "description": "Guide for creating high-quality MCP (Model Context Protocol) servers for integrating external services and APIs."
+  }
+]

@@ -1,14 +1,17 @@
 import { Terminal, ShieldCheck, Zap, ArrowLeft, Plus, Languages, Activity, ChevronDown, Mouse } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { AgentWizard } from '../components/AgentWizard';
+import { SeoHead } from '../components/SeoHead';
 import { useLanguage } from '../hooks/useLanguage';
 import { ScrollToTop } from '../components/ScrollToTop';
+import { buildSetupSeo } from '../seo/metadata';
 
 export const SetupPage = () => {
     const { language, setLanguage, t } = useLanguage();
 
     return (
         <div className="min-h-screen bg-slate-950 text-white noise-overlay">
+            <SeoHead meta={buildSetupSeo(language)} />
             {/* Navigation */}
             <nav className="sticky top-0 z-50 glass-surface border-b border-white/5 px-4 md:px-8 py-4">
                 <div className="max-w-[1600px] mx-auto flex items-center justify-between">
