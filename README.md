@@ -1,130 +1,103 @@
 # SKILLS All-in-one
 
-[![Live Demo](https://img.shields.io/badge/demo-huangchiyu.com-blue?style=flat-square)](https://huangchiyu.com)
+[![Live Demo](https://img.shields.io/badge/demo-huangchiyu.com-blue?style=flat-square)](https://huangchiyu.com/SKILLS_All-in-one/)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green?style=flat-square)](LICENSE)
 [![GitHub Stars](https://img.shields.io/github/stars/eric861129/SKILLS_All-in-one?style=flat-square)](https://github.com/eric861129/SKILLS_All-in-one/stargazers)
 [![Issues](https://img.shields.io/github/issues/eric861129/SKILLS_All-in-one?style=flat-square)](https://github.com/eric861129/SKILLS_All-in-one/issues)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen?style=flat-square)](CONTRIBUTING.md)
 
-**SKILLS All-in-one** 是一個專為 AI Agent 與開發者打造的高品質技能 (AI Skills) 展示、檢索與下載整合平台。我們致力於建立一個美觀、高效且易於擴展的技能庫，幫助開發者一鍵強化其 AI Agent 的能力。
+**SKILLS All-in-one** 是一個專為 AI Agent 與開發者打造的高品質技能 (AI Skills) 展示、檢索與下載整合平台。我們建立了一個美觀、高效且具備「自我進化機制」的技能庫，幫助開發者一鍵強化其 AI Agent 的專業實戰能力。
 
 ---
 
 ## 🌟 核心特色
 
-- **海量資源**：收錄超過 100 個涵蓋開發、文件處理、數據分析、創意設計等領域的 AI 技能。
-- **精準搜索**：整合 `Fuse.js` 模糊搜尋技術，支援對技能名稱、說明與標籤進行加權檢索。
-- **靈活過濾**：多維度分類標籤、作者、標籤篩選與排序系統（熱門 / 最新），快速定位所需工具。
-- **一鍵打包**：實作 `JSZip` 技術，支援將多個技能檔案自動打包成 `.zip` 格式，實現無縫下載。
-- **獨立技能頁**：每個技能含專屬 URL (`/skill/:id`)、元數據卡片與同分類推薦。
-- **雙語支援**：完整中英文介面切換 (繁體中文 / English)。
-- **極致體驗**：遵循 **OilOil UI/UX Guide**，採用現代極簡美學，拒絕「AI Slop」，提供沉浸式的瀏覽環境。
+- **海量實戰資源**：精選超過 100 個涵蓋開發、科研、數據分析、自動化等領域的 AI 技能。
+- **自我進化機制**：內建 `skill-updater`，支援從 GitHub 來源自動偵測並更新技能版本。
+- **安全審計工作流**：所有技能更新均需通過 `skill-security-auditor` 掃描，確保提示詞與代碼安全。
+- **精準搜索與過濾**：整合 `Fuse.js` 模糊搜尋，支援多維度標籤篩選與熱門/最新排序。
+- **一鍵打包下載**：利用 `JSZip` 技術，將多個技能檔案即時打包，實現無縫整合。
+- **集中式資料管理**：採用增量 SQL 遷移機制，確保生產環境資料庫異動清晰可追蹤。
+- **雙語美學**：完整中英文介面，遵循 **OilOil UI/UX Guide** 極簡美學，拒絕「AI Slop」。
+
+---
+
+## 🙏 特別鳴謝 (Acknowledgments)
+
+本專案的基礎技能庫主要蒐集並獲取自以下優秀的開源專案，並在此基礎上進行整合與管理：
+- [BehiSecc/awesome-claude-skills](https://github.com/BehiSecc/awesome-claude-skills) - 提供社群精選的高品質 AI 技能來源。
 
 ---
 
 ## 🛠️ 技術棧 (Tech Stack)
 
 ### 前端 (Frontend)
-- **Framework**: React 19 (Vite 7)
-- **Styling**: Tailwind CSS 4 (遵循反 Slop 設計規範)
-- **Routing**: React Router DOM (SPA 路由 + URL 參數同步)
-- **Icons**: Lucide Icons (嚴禁 Emoji 作為 UI 圖標)
-- **Search**: Fuse.js (前端模糊檢索)
-- **Utilities**: JSZip (多檔案打包)
+- **Framework**: React 19 (Vite 7) + TypeScript
+- **Styling**: Tailwind CSS 4 (現代極簡深色系)
+- **Search**: Fuse.js (加權模糊檢索)
+- **Utilities**: JSZip + Lucide Icons + React Router 7
 
-### 後端與資料 (Backend & Data)
-- **Backend Bridge**: Cloudflare Workers (處理 CORS、API 路由與資料轉發)
-- **Database**: Turso (SQLite) - 儲存技能元資料與下載計數
-- **Hosting**: GitHub Pages + Custom Domain ([huangchiyu.com](https://huangchiyu.com))
-
-### SEO & 推廣
-- JSON-LD 結構化資料 (`WebApplication` schema)
-- Open Graph / Twitter Card meta 標籤
-- `sitemap.xml` + `robots.txt`
-- GitHub Pages SPA 404 重導向
+### 自動化與工具 (Automation)
+- **Updater Engine**: `scripts/update-skills.mjs` (GitHub API + Hash 比對)
+- **Manifest Sync**: 自動化生成 `skills-manifest.json` 供前端調用。
+- **Database**: Turso (SQLite) + 集中式增量 SQL 遷移路徑。
 
 ---
 
-## 📜 開發規範與哲學
+## 📜 開發規範與自我管理
 
-本專案不僅是一個工具庫，更是一套工程實踐的體現：
+本專案採用 **Elite 18 Policy**，在 `.agent/skills/` 中保留 18 個核心管理技能，賦予 AI Agent 自我維護的能力：
 
-### 1. 內部能力規範 (Elite 14 Policy)
-為了保持開發環境純淨並優化 AI 上下文的使用，`.agent/skills/` 保留 **14** 個核心精選技能，確保開發者在與 Agent 協作時能獲得最高效的響應。
-
-### 2. UI/UX 設計原則 (OilOil Guide)
-- **極簡主義**：優先使用空白、精緻的邊框與清晰的字體層級（Typography）建立視覺導向。
-- **專業感**：嚴禁使用 Emoji 作為功能圖標；避免過度飽和的漸層與通用的預設字體。
-- **響應式設計**：針對行動端深度優化，包含可捲動的分類列與緊湊的佈局邏輯。
+1.  **skill-manager**: 總控中心，協調導入、審核與上架流程。
+2.  **skill-updater**: 自動檢查 GitHub 來源並執行版本同步。
+3.  **sql-migration-manager**: 產出增量 SQL 指令至 `incremental_updates.sql`。
+4.  **skill-security-auditor**: 執行自動化安全性掃描。
+5.  *(...其餘請參閱專案內部文件)*
 
 ---
 
-## 📂 目錄結構映射
+## 📂 目錄結構
 
-技能檔案的存放必須與程式碼中的元資料嚴格對應：
-- **公共技能路徑**：`public/SKILLS/{Category}/{FolderName}/`
-- **對應元資料**：`src/data/skills.ts`
-- **內部開發技能**：`.agent/skills/`
+```text
+├── .agent/skills/         # Elite 18 核心管理技能 (內部 SOP)
+├── public/SKILLS/         # 公共展示技能存放區 (一鍵下載目標)
+├── scripts/               # 自動化工具 (更新引擎、Manifest 生成)
+├── src/data/skills.ts     # 技能元數據 (唯一事實來源)
+└── database/              # 資料庫備份與增量遷移 SQL
+```
 
 ---
 
 ## 🚀 快速開始
 
-### 環境要求
-- Node.js 18+
-- npm 或 pnpm
+### 安裝與啟動
+```bash
+# 1. 複製專案
+git clone https://github.com/eric861129/SKILLS_All-in-one.git
 
-### 安裝步驟
-1. **複製專案**
-   ```bash
-   git clone https://github.com/eric861129/SKILLS_All-in-one.git
-   cd SKILLS_All-in-one
-   ```
+# 2. 安裝依賴
+npm install
 
-2. **安裝依賴**
-   ```bash
-   npm install
-   ```
+# 3. 啟動開發環境
+npm run dev
+```
 
-3. **啟動開發伺服器**
-   ```bash
-   npm run dev
-   ```
-
-4. **建置生產版本**
-   ```bash
-   npm run build
-   ```
+### 自動更新技能
+若要檢查所有技能是否有新版本，請執行：
+```bash
+node scripts/update-skills.mjs --dry-run  # 乾跑檢查
+node scripts/update-skills.mjs            # 執行更新
+```
 
 ---
 
-## 🌐 API 參考
+## 🤝 貢獻指南
 
-我們使用 Cloudflare Workers 作為後端橋接器：
-- **GET** `/skills`：獲取所有技能列表。
-- **POST** `/increment-download?id={id}`：更新特定技能的下載計數。
-
----
-
-## 📈 專案進度 (Roadmap)
-
-- [x] **Phase 1-2**：基礎建設、核心組件實作與 100+ 技能元資料建檔。
-- [x] **Phase 3**：Fuse.js 全域搜尋與分類過濾邏輯。
-- [x] **Phase 4**：排序系統切換與行動端體驗優化。
-- [x] **Phase 5**：整合下載計數 API 回饋與 GitHub Actions 自動化部署。
-- [x] **Phase 6**：SEO 優化 (meta / OG / JSON-LD / sitemap) + 開源基建 (LICENSE / CONTRIBUTING / Issue 模板)。
-- [x] **Phase 7**：React Router 路由 + `/skill/:id` 獨立技能頁 + URL 參數同步。
-- [x] **Phase 8**：UX 增強 — 骨架屏 Loading、Toast 通知、回到頂部按鈕、鍵盤快捷鍵。
-- [ ] **Phase 9**：社群推廣 — Product Hunt 上架、技術博文、社群分享素材。
-
----
-
-## 🤝 貢獻
-
-歡迎任何形式的貢獻！請參閱 [CONTRIBUTING.md](CONTRIBUTING.md) 了解如何：
-- 提交新的 AI Skill
-- 回報 Bug 或提出功能建議
-- 提交 Pull Request
+我們非常歡迎社群貢獻！若您想提交新的技能，請：
+1. 將技能檔案放入 `public/SKILLS/` 對應分類。
+2. 在 `src/data/skills.ts` 中登錄元數據。
+3. **重要**：調用 `sql-migration-manager` 產出對應的 SQL 指令。
+4. 詳細規範請閱讀 [CONTRIBUTING.md](CONTRIBUTING.md)。
 
 ---
 

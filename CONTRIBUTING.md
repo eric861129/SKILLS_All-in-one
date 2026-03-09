@@ -45,10 +45,13 @@ your-skill-name/
 3. 上傳或附上你的 Skill 檔案連結
 
 **方式二：直接提交 Pull Request**
-1. Fork 本專案
-2. 將你的 Skill 資料夾放入 `public/SKILLS/{Category}/`
-3. 在 `src/data/skills.ts` 中新增對應的 metadata
-4. 提交 PR
+1. Fork 本專案。
+2. 將你的 Skill 資料夾放入 `public/SKILLS/{Category}/`。
+3. 在 `src/data/skills.ts` 中新增對應的 metadata（請確保 ID 不衝突）。
+4. **重要：更新資料庫指令**
+   - 使用內部技能 `sql-migration-manager` 生成對應的 SQL 指令。
+   - 將產出的 `INSERT` 或 `UPDATE` 語句插入到 `database/incremental_updates.sql` 檔案的最頂部。
+5. 提交 PR。
 
 ---
 
@@ -69,10 +72,11 @@ docs: update {description}
 ```
 
 ### PR Checklist
-- [ ] Skill 資料夾已放入正確的 `public/SKILLS/{Category}/` 路徑
-- [ ] `src/data/skills.ts` 中已新增對應的 metadata
-- [ ] `SKILL.md` 檔案包含完整的 YAML frontmatter (name, description)
-- [ ] 本地 `npm run build` 通過
+- [ ] Skill 資料夾已放入正確的 `public/SKILLS/{Category}/` 路徑。
+- [ ] `src/data/skills.ts` 中已新增對應的 metadata。
+- [ ] **已將對應的 SQL 指令更新至 `database/incremental_updates.sql`。**
+- [ ] `SKILL.md` 檔案包含完整的 YAML frontmatter (name, description)。
+- [ ] 本地 `npm run prebuild` 與 `npm run build` 通過。
 
 ---
 
