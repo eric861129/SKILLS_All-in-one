@@ -55,7 +55,7 @@ const bucket = new s3.Bucket(this, 'DataBucket', {
 Prefer high-level patterns that encapsulate best practices:
 
 ```typescript
-import * as patterns from 'aws-apigateway';
+import * as patterns from 'aws-cdk-lib/aws-apigateway';
 
 new patterns.LambdaRestApi(this, 'MyApi', {
   handler: myFunction,
@@ -121,7 +121,7 @@ lambda.addToRolePolicy(new iam.PolicyStatement({
 Use Secrets Manager for sensitive data:
 
 ```typescript
-import * as secretsmanager from 'aws-secretsmanager';
+import * as secretsmanager from 'aws-cdk-lib/aws-secretsmanager';
 
 const secret = new secretsmanager.Secret(this, 'DbPassword', {
   generateSecretString: {
@@ -168,7 +168,7 @@ const vpc = new ec2.Vpc(this, 'Vpc', {
 ### NodejsFunction (TypeScript/JavaScript)
 
 ```typescript
-import { NodejsFunction } from 'aws-lambda-nodejs';
+import { NodejsFunction } from 'aws-cdk-lib/aws-lambda-nodejs';
 
 const fn = new NodejsFunction(this, 'Function', {
   entry: 'src/handlers/process.ts',
@@ -190,7 +190,7 @@ const fn = new NodejsFunction(this, 'Function', {
 ### PythonFunction
 
 ```typescript
-import { PythonFunction } from '@aws-lambda-python-alpha';
+import { PythonFunction } from '@aws-cdk/aws-lambda-python-alpha';
 
 const fn = new PythonFunction(this, 'Function', {
   entry: 'src/handlers',
@@ -224,7 +224,7 @@ new NodejsFunction(this, 'Function', {
 ### Snapshot Testing
 
 ```typescript
-import { Template } from 'aws-assertions';
+import { Template } from 'aws-cdk-lib/assertions';
 
 test('Stack creates expected resources', () => {
   const app = new cdk.App();

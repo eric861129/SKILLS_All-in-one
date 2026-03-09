@@ -9,64 +9,64 @@ Amazon Bedrock AgentCore Identity is an identity and credential management servi
 ## Core Capabilities
 
 ### Centralized Agent Identity Management
-* **Workload Identities**: Agent identities implemented as workload identities with specialized attributes
-* **Unified Directory**: Create, manage, and organize agent identities through unified directory service
-* **Hierarchical Organization**: Group-based access controls and hierarchical organization
-* **Cross-Environment**: Consistent identity management regardless of deployment location
+- **Workload Identities**: Agent identities implemented as workload identities with specialized attributes
+- **Unified Directory**: Create, manage, and organize agent identities through unified directory service
+- **Hierarchical Organization**: Group-based access controls and hierarchical organization
+- **Cross-Environment**: Consistent identity management regardless of deployment location
 
 ### Secure Credential Storage
-* **Token Vault**: Securely store OAuth 2.0 tokens, client credentials, and API keys
-* **Encryption**: Comprehensive encryption at rest and in transit
-* **Access Controls**: Strict access controls with independent request validation
-* **Defense-in-Depth**: Protects end-user data from malicious or misbehaving agent code
+- **Token Vault**: Securely store OAuth 2.0 tokens, client credentials, and API keys
+- **Encryption**: Comprehensive encryption at rest and in transit
+- **Access Controls**: Strict access controls with independent request validation
+- **Defense-in-Depth**: Protects end-user data from malicious or misbehaving agent code
 
 ### OAuth 2.0 Flow Support
-* **Client Credentials Grant**: Machine-to-machine authentication (2LO)
-* **Authorization Code Grant**: User-delegated access (3LO)
-* **Built-in Providers**: Pre-configured providers for Google, GitHub, Slack, Salesforce
-* **Custom Providers**: Configurable OAuth 2.0 credential providers for custom integrations
+- **Client Credentials Grant**: Machine-to-machine authentication (2LO)
+- **Authorization Code Grant**: User-delegated access (3LO)
+- **Built-in Providers**: Pre-configured providers for Google, GitHub, Slack, Salesforce
+- **Custom Providers**: Configurable OAuth 2.0 credential providers for custom integrations
 
 ### Credential Provider Management
-* **API Key Providers**: Securely store and manage API keys
-* **OAuth Credential Providers**: Handle OAuth flow and token management
-* **Token Lifecycle**: Automatic token refresh and expiration handling
-* **Provider Discovery**: Automatically discover available credential providers
+- **API Key Providers**: Securely store and manage API keys
+- **OAuth Credential Providers**: Handle OAuth flow and token management
+- **Token Lifecycle**: Automatic token refresh and expiration handling
+- **Provider Discovery**: Automatically discover available credential providers
 
 ### Agent Identity and Access Controls
-* **Impersonation Flow**: Agents access resources using provided credentials
-* **Audit Trails**: Maintain audit trails for all actions performed on behalf of users
-* **Request Verification**: Token signature verification, expiration checks, scope validation
-* **Identity-Aware Authorization**: Pass user context to agent code for dynamic decisions
+- **Impersonation Flow**: Agents access resources using provided credentials
+- **Audit Trails**: Maintain audit trails for all actions performed on behalf of users
+- **Request Verification**: Token signature verification, expiration checks, scope validation
+- **Identity-Aware Authorization**: Pass user context to agent code for dynamic decisions
 
 ## Use Cases
 
 ### Securing AI Agent Access
 Enable agents to:
-* Authenticate with external services securely
-* Access resources on behalf of users
-* Maintain proper audit trails
-* Implement least-privilege access patterns
+- Authenticate with external services securely
+- Access resources on behalf of users
+- Maintain proper audit trails
+- Implement least-privilege access patterns
 
 ### Multi-Provider Authentication
 Support scenarios like:
-* Different authentication methods for different APIs
-* Unified credential management across services
-* OAuth flows for user-delegated access
-* API key management for service accounts
+- Different authentication methods for different APIs
+- Unified credential management across services
+- OAuth flows for user-delegated access
+- API key management for service accounts
 
 ### Zero-Trust Security Models
 Allow implementation of:
-* No long-lived credentials in application code
-* Centralized, audited credential vault
-* Automated rotation to reduce attack window
-* Comprehensive access logging
+- No long-lived credentials in application code
+- Centralized, audited credential vault
+- Automated rotation to reduce attack window
+- Comprehensive access logging
 
 ### Compliance and Auditing
 Enable teams to:
-* Generate reports for compliance audits (SOC2, ISO27001)
-* Implement periodic access reviews
-* Maintain secrets inventory
-* Enforce credential policies
+- Generate reports for compliance audits (SOC2, ISO27001)
+- Implement periodic access reviews
+- Maintain secrets inventory
+- Enforce credential policies
 
 ## Quick Start
 
@@ -146,22 +146,22 @@ AgentCore Identity includes built-in providers for popular services:
 ## Best Practices
 
 ### Security
-* Use credential providers instead of hardcoded credentials
-* Implement least-privilege access for each credential
-* Rotate credentials regularly (quarterly minimum)
-* Monitor credential usage with CloudWatch
+- Use credential providers instead of hardcoded credentials
+- Implement least-privilege access for each credential
+- Rotate credentials regularly (quarterly minimum)
+- Monitor credential usage with CloudWatch
 
 ### Development
-* Use separate credential providers per environment
-* Implement proper error handling for credential access
-* Test credential flows in non-production first
-* Use SDK annotations for cleaner code
+- Use separate credential providers per environment
+- Implement proper error handling for credential access
+- Test credential flows in non-production first
+- Use SDK annotations for cleaner code
 
 ### Operations
-* Set up alerts for credential access failures
-* Audit credential usage periodically
-* Implement automated rotation where possible
-* Document credential ownership and purpose
+- Set up alerts for credential access failures
+- Audit credential usage periodically
+- Implement automated rotation where possible
+- Document credential ownership and purpose
 
 ## Troubleshooting
 
@@ -174,13 +174,13 @@ AgentCore Identity includes built-in providers for popular services:
 
 ## Related Services
 
-* **[Gateway Service](../gateway/README.md)**: Uses Identity for MCP target authentication
-* **[Runtime Service](../runtime/README.md)**: Uses Identity for agent authentication
-* **[Memory Service](../memory/README.md)**: May use Identity for data encryption
+- **[Gateway Service](../gateway/README.md)**: Uses Identity for MCP target authentication
+- **[Runtime Service](../runtime/README.md)**: Uses Identity for agent authentication
+- **[Memory Service](../memory/README.md)**: May use Identity for data encryption
 
 ## References
 
-* [AWS Identity Documentation](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/identity.html)
-* [Credential Provider Setup](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/identity-outbound-credential-provider.html)
-* [Identity Features](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/key-features-and-benefits.html)
-* [Securing AI Agents Blog](https://aws.amazon.com/blogs/security/securing-ai-agents-with-amazon-bedrock-agentcore-identity/)
+- [AWS Identity Documentation](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/identity.html)
+- [Credential Provider Setup](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/identity-outbound-credential-provider.html)
+- [Identity Features](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/key-features-and-benefits.html)
+- [Securing AI Agents Blog](https://aws.amazon.com/blogs/security/securing-ai-agents-with-amazon-bedrock-agentcore-identity/)

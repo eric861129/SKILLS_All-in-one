@@ -3,8 +3,8 @@ name: notebooklm
 description: "Query and manage Google NotebookLM notebooks with persistent profile auth, source sync, batch/multi queries, and structured exports. Use when user asks to query NotebookLM, 'ask my notebook', shares NotebookLM notebook URLs, wants to list/create notebooks, manage sources, do bulk folder sync, dedupe, or audit exports."
 license: Apache-2.0
 metadata:
- author: sanjay3290
- version: "1.0"
+  author: sanjay3290
+  version: "1.0"
 ---
 
 # NotebookLM Skill

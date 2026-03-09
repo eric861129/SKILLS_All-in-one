@@ -54,78 +54,78 @@ Credential management is a cross-cutting concern across all AgentCore services. 
 ### ✅ DO's
 
 1. **Use Identity Service**: Always manage credentials through the Identity service
- ```bash
- # ✅ Correct - Use Identity API
- aws bedrock-agentcore-control create-api-key-credential-provider \
- --name MyCredentialProvider \
- --api-key "YOUR_API_KEY_VALUE"
- ```
+   ```bash
+   # ✅ Correct - Use Identity API
+   aws bedrock-agentcore-control create-api-key-credential-provider \
+     --name MyCredentialProvider \
+     --api-key "YOUR_API_KEY_VALUE"
+   ```
 
 2. **Separate by Environment**: Use different providers for different environments
- ```bash
- - dev-api-key-provider # Development
- - staging-api-key-provider # Staging
- - prod-api-key-provider # Production
- ```
+   ```bash
+   - dev-api-key-provider      # Development
+   - staging-api-key-provider  # Staging
+   - prod-api-key-provider     # Production
+   ```
 
 3. **Rotate Regularly**: Implement quarterly credential rotation
- ```bash
- aws bedrock-agentcore-control update-api-key-credential-provider \
- --name MyCredentialProvider \
- --api-key "NEW_API_KEY"
- ```
+   ```bash
+   aws bedrock-agentcore-control update-api-key-credential-provider \
+     --name MyCredentialProvider \
+     --api-key "NEW_API_KEY"
+   ```
 
 4. **Least Privilege**: Grant minimal required permissions to each credential
- ```bash
- # API key should only have necessary API permissions
- # IAM roles should have scoped-down policies
- ```
+   ```bash
+   # API key should only have necessary API permissions
+   # IAM roles should have scoped-down policies
+   ```
 
 5. **Monitor Usage**: Track credential usage and set up alerts
- ```json
- {
- "CloudWatch Alarms": {
- "HighErrorRate": "Alert if > 10% failed requests",
- "UnusualActivity": "Alert on usage spikes"
- }
- }
- ```
+   ```json
+   {
+     "CloudWatch Alarms": {
+       "HighErrorRate": "Alert if > 10% failed requests",
+       "UnusualActivity": "Alert on usage spikes"
+     }
+   }
+   ```
 
 ### ❌ DON'Ts
 
 1. **Never Hardcode**: Don't embed credentials in code or configuration files
- ```bash
- # ❌ Bad - Hardcoded API key
- const apiKey = "sk-1234567890abcdef"
+   ```bash
+   # ❌ Bad - Hardcoded API key
+   const apiKey = "sk-1234567890abcdef"
 
- # ✅ Good - Reference credential provider
- const credentialProvider = "MyCredentialProvider"
- ```
+   # ✅ Good - Reference credential provider
+   const credentialProvider = "MyCredentialProvider"
+   ```
 
 2. **Don't Share Across Environments**: Avoid using production keys in development
- ```bash
- # ❌ Bad - Same key everywhere
- dev: third-party-api-key: prod-key
- prod: third-party-api-key: prod-key
+   ```bash
+   # ❌ Bad - Same key everywhere
+   dev:  third-party-api-key: prod-key
+   prod: third-party-api-key: prod-key
 
- # ✅ Good - Separate keys
- dev: third-party-api-key: dev-key
- prod: third-party-api-key: prod-key
- ```
+   # ✅ Good - Separate keys
+   dev:  third-party-api-key: dev-key
+   prod: third-party-api-key: prod-key
+   ```
 
 3. **Don't Commit to Git**: Exclude credential files from version control
- ```bash
- # .gitignore
- *.env
- *.secret
- credential-*.json
- ```
+   ```bash
+   # .gitignore
+   *.env
+   *.secret
+   credential-*.json
+   ```
 
 4. **Don't Use Long-Lived Tokens**: Implement token refresh for OAuth
- ```bash
- # OAuth tokens should auto-refresh
- # Don't use tokens with > 30 day expiration
- ```
+   ```bash
+   # OAuth tokens should auto-refresh
+   # Don't use tokens with > 30 day expiration
+   ```
 
 ## Multi-Service Credential Patterns
 
@@ -133,18 +133,18 @@ Credential management is a cross-cutting concern across all AgentCore services. 
 
 ```
 ┌─────────────────────────────────────┐
-│ Identity Service │
-│ - Stores ALL credentials │
-│ - Manages rotation │
-│ - Provides audit logs │
+│  Identity Service                   │
+│  - Stores ALL credentials           │
+│  - Manages rotation                 │
+│  - Provides audit logs              │
 └──────────┬──────────────────────────┘
- │
- ├────────────┬────────────┬────────────┐
- ▼ ▼ ▼ ▼
- ┌──────────┐ ┌──────────┐ ┌──────────┐ ┌──────────┐
- │ Gateway │ │ Runtime │ │ Memory │ │ Other │
- │ Uses │ │ Uses │ │ Uses │ │ Uses │
- └──────────┘ └──────────┘ └──────────┘ └──────────┘
+           │
+           ├────────────┬────────────┬────────────┐
+           ▼            ▼            ▼            ▼
+    ┌──────────┐ ┌──────────┐ ┌──────────┐ ┌──────────┐
+    │ Gateway  │ │ Runtime  │ │  Memory  │ │  Other   │
+    │  Uses    │ │  Uses    │ │  Uses    │ │  Uses    │
+    └──────────┘ └──────────┘ └──────────┘ └──────────┘
 ```
 
 **Benefits**:
@@ -156,8 +156,8 @@ Credential management is a cross-cutting concern across all AgentCore services. 
 ```bash
 # 1. Create master credential in Identity
 aws bedrock-agentcore-control create-api-key-credential-provider \
- --name MasterAPICredentials \
- --api-key "YOUR_MASTER_API_KEY"
+  --name MasterAPICredentials \
+  --api-key "YOUR_MASTER_API_KEY"
 
 # 2. Grant access to each service
 # - Gateway: can read MasterAPICredentials
@@ -169,15 +169,15 @@ aws bedrock-agentcore-control create-api-key-credential-provider \
 
 ```
 ┌─────────────────────────────────────┐
-│ Identity Service │
-│ - Stores credentials per service │
+│  Identity Service                   │
+│  - Stores credentials per service   │
 └──────────┬──────────────────────────┘
- │
- ┌──────┴──────┬────────┬─────────┐
- ▼ ▼ ▼ ▼
+           │
+    ┌──────┴──────┬────────┬─────────┐
+    ▼             ▼        ▼         ▼
 ┌─────────┐ ┌─────────┐ ┌──────┐ ┌─────┐
 │ Gateway │ │ Runtime │ │Memory││Other│
-│ Cred │ │ Cred │ │ Cred ││Cred │
+│  Cred   │ │  Cred   │ │ Cred ││Cred │
 └─────────┘ └─────────┘ └──────┘ └─────┘
 ```
 
@@ -190,33 +190,33 @@ aws bedrock-agentcore-control create-api-key-credential-provider \
 ```bash
 # Create separate providers
 aws bedrock-agentcore-control create-api-key-credential-provider \
- --name GatewayAPICredentials \
- --api-key "YOUR_GATEWAY_API_KEY"
+  --name GatewayAPICredentials \
+  --api-key "YOUR_GATEWAY_API_KEY"
 
 aws bedrock-agentcore-control create-api-key-credential-provider \
- --name RuntimeCredentials \
- --api-key "YOUR_RUNTIME_API_KEY"
+  --name RuntimeCredentials \
+  --api-key "YOUR_RUNTIME_API_KEY"
 ```
 
 ### Pattern 3: Tiered (Master + Service)
 
 ```
 ┌─────────────────────────────────────┐
-│ Identity Service │
-│ - Master credential │
-│ - Per-service credentials │
+│  Identity Service                   │
+│  - Master credential                │
+│  - Per-service credentials          │
 └──────────┬──────────────────────────┘
- │
- ┌──────┴──────┐
- ▼ ▼
+           │
+    ┌──────┴──────┐
+    ▼             ▼
 ┌─────────┐ ┌─────────────┐
-│ Master │ │ Services │
-│ Cred │ │ - Gateway │ │
-└────┬────┘ │ - Runtime │
- │ │ - Memory │
- └──────┤ (each has │
- │ own creds) │
- └─────────────┘
+│ Master  │ │   Services  │
+│  Cred   │ │   - Gateway │ │
+└────┬────┘ │   - Runtime │
+     │      │   - Memory  │
+     └──────┤   (each has │
+            │ own creds)  │
+            └─────────────┘
 ```
 
 **Use Cases**:
@@ -231,30 +231,30 @@ aws bedrock-agentcore-control create-api-key-credential-provider \
 ```bash
 # Use KMS for secret encryption
 aws secretsmanager create-secret \
- --name MySecret \
- --kms-key-id arn:aws:kms:us-west-2:123456789012:key/12345678-abcd-ef12-3456-7890abcdef12 \
- --secret-string "my-secret-value"
+  --name MySecret \
+  --kms-key-id arn:aws:kms:us-west-2:123456789012:key/12345678-abcd-ef12-3456-7890abcdef12 \
+  --secret-string "my-secret-value"
 ```
 
 ### Access Control
 
 ```json
 {
- "Version": "2012-10-17",
- "Statement": [
- {
- "Effect": "Allow",
- "Action": [
- "bedrock-agentcore:GetResourceApiKey"
- ],
- "Resource": "*",
- "Condition": {
- "StringEquals": {
- "aws:PrincipalTag/Service": "gateway"
- }
- }
- }
- ]
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": [
+        "bedrock-agentcore:GetResourceApiKey"
+      ],
+      "Resource": "*",
+      "Condition": {
+        "StringEquals": {
+          "aws:PrincipalTag/Service": "gateway"
+        }
+      }
+    }
+  ]
 }
 ```
 
@@ -263,9 +263,9 @@ aws secretsmanager create-secret \
 ```bash
 # Enable CloudTrail for Bedrock AgentCore
 aws cloudtrail create-trail \
- --name agentcore-audit \
- --s3-bucket-name agentcore-audit-logs \
- --include-global-service-events true
+  --name agentcore-audit \
+  --s3-bucket-name agentcore-audit-logs \
+  --include-global-service-events true
 ```
 
 ## Rotation Strategy
@@ -275,13 +275,13 @@ aws cloudtrail create-trail \
 ```bash
 # Enable automatic rotation (when supported)
 aws secretsmanager rotate-secret \
- --secret-id MySecret \
- --lambda-arn arn:aws:lambda:us-west-2:123456789012:function:MyRotationFunction
+  --secret-id MySecret \
+  --lambda-arn arn:aws:lambda:us-west-2:123456789012:function:MyRotationFunction
 
 # Rotation schedule (every 30 days)
 aws secretsmanager rotate-secret \
- --secret-id MySecret \
- --rotation-rules AutomaticAfterDays=30
+  --secret-id MySecret \
+  --rotation-rules AutomaticAfterDays=30
 ```
 
 ### Manual Rotation Process
@@ -295,8 +295,8 @@ NEW_KEY=$(generate-new-api-key)
 
 echo "Step 2: Update in Identity service"
 aws bedrock-agentcore-control update-api-key-credential-provider \
- --name MyCredentialProvider \
- --api-key "$NEW_KEY"
+  --name MyCredentialProvider \
+  --api-key "$NEW_KEY"
 
 echo "Step 3: Verify all services work"
 ./test-all-services.sh
@@ -312,15 +312,15 @@ echo "Step 4: Delete old credential"
 ```typescript
 // Try primary credential, fallback to backup
 async function callWithFallback(provider: string) {
- try {
- return await callAPI(provider);
- } catch (error) {
- if (error.code === 'InvalidAPICredentials') {
- // Fallback to backup provider
- return await callAPI(`${provider}-backup`);
- }
- throw error;
- }
+  try {
+    return await callAPI(provider);
+  } catch (error) {
+    if (error.code === 'InvalidAPICredentials') {
+      // Fallback to backup provider
+      return await callAPI(`${provider}-backup`);
+    }
+    throw error;
+  }
 }
 ```
 
@@ -329,17 +329,17 @@ async function callWithFallback(provider: string) {
 ```typescript
 // Rotate through multiple credentials to avoid rate limits
 const credentialPool = [
- 'cred-1',
- 'cred-2',
- 'cred-3'
+  'cred-1',
+  'cred-2',
+  'cred-3'
 ];
 
 let currentIndex = 0;
 
 function getNextCredential(): string {
- const credential = credentialPool[currentIndex];
- currentIndex = (currentIndex + 1) % credentialPool.length;
- return credential;
+  const credential = credentialPool[currentIndex];
+  currentIndex = (currentIndex + 1) % credentialPool.length;
+  return credential;
 }
 ```
 
@@ -351,13 +351,13 @@ function getNextCredential(): string {
 ```bash
 # Check if provider exists
 aws bedrock-agentcore-control get-api-key-credential-provider \
- --name MyCredentialProvider
+  --name MyCredentialProvider
 
 # Check IAM permissions
 aws iam simulate-principal-policy \
- --policy-source-arn arn:aws:iam::123456789012:role/MyRole \
- --action-names bedrock-agentcore:GetResourceApiKey \
- --resource-arns arn:aws:bedrock-agentcore:us-west-2:123456789012:*
+  --policy-source-arn arn:aws:iam::123456789012:role/MyRole \
+  --action-names bedrock-agentcore:GetResourceApiKey \
+  --resource-arns arn:aws:bedrock-agentcore:us-west-2:123456789012:*
 ```
 
 **Solution**: Create provider or grant IAM permissions
@@ -370,7 +370,7 @@ aws iam simulate-principal-policy \
 ```bash
 # Check secret value format
 aws secretsmanager get-secret-value \
- --secret-id arn:aws:secretsmanager:us-west-2:123456789012:secret:MySecret
+  --secret-id arn:aws:secretsmanager:us-west-2:123456789012:secret:MySecret
 
 # Should be: {"apiKey": "valid-key"}
 ```
@@ -378,8 +378,8 @@ aws secretsmanager get-secret-value \
 **Solution**: Use correct update API
 ```bash
 aws bedrock-agentcore-control update-api-key-credential-provider \
- --name MyCredentialProvider \
- --api-key "VALID_KEY"
+  --name MyCredentialProvider \
+  --api-key "VALID_KEY"
 ```
 
 ---
@@ -390,7 +390,7 @@ aws bedrock-agentcore-control update-api-key-credential-provider \
 ```bash
 # Check which services can access the credential
 aws bedrock-agentcore-control get-api-key-credential-provider \
- --name MyCredentialProvider
+  --name MyCredentialProvider
 
 # Review service IAM policies
 ```
@@ -398,22 +398,22 @@ aws bedrock-agentcore-control get-api-key-credential-provider \
 **Solution**: Add cross-service access policy
 ```json
 {
- "Version": "2012-10-17",
- "Statement": [
- {
- "Effect": "Allow",
- "Action": "bedrock-agentcore:GetResourceApiKey",
- "Resource": "*",
- "Condition": {
- "ArnLike": {
- "aws:PrincipalArn": [
- "arn:aws:iam::*:role/*gateway*",
- "arn:aws:iam::*:role/*runtime*"
- ]
- }
- }
- }
- ]
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": "bedrock-agentcore:GetResourceApiKey",
+      "Resource": "*",
+      "Condition": {
+        "ArnLike": {
+          "aws:PrincipalArn": [
+            "arn:aws:iam::*:role/*gateway*",
+            "arn:aws:iam::*:role/*runtime*"
+          ]
+        }
+      }
+    }
+  ]
 }
 ```
 

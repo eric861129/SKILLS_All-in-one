@@ -14,20 +14,20 @@ This reference guide covers different deployment strategies for AWS Bedrock Agen
 ```bash
 # Create shared provider with API key (run once)
 aws bedrock-agentcore-control create-api-key-credential-provider \
- --name SharedAPICredentialProvider \
- --api-key "YOUR_API_KEY" \
- --profile default --region us-west-2
+  --name SharedAPICredentialProvider \
+  --api-key "YOUR_API_KEY" \
+  --profile default --region us-west-2
 ```
 
 **Environment Configuration**:
 ```bash
 # .env.gateway-a
 GATEWAY_IDENTIFIER=gateway-a-abc123xyz
-CREDENTIAL_PROVIDER_NAME=SharedAPICredentialProvider # Same for all
+CREDENTIAL_PROVIDER_NAME=SharedAPICredentialProvider  # Same for all
 
 # .env.gateway-b
 GATEWAY_IDENTIFIER=gateway-b-def456uvw
-CREDENTIAL_PROVIDER_NAME=SharedAPICredentialProvider # Same for all
+CREDENTIAL_PROVIDER_NAME=SharedAPICredentialProvider  # Same for all
 ```
 
 **Benefits**:
@@ -52,26 +52,26 @@ CREDENTIAL_PROVIDER_NAME=SharedAPICredentialProvider # Same for all
 ```bash
 # Create provider for Gateway A
 aws bedrock-agentcore-control create-api-key-credential-provider \
- --name GatewayAAPICredentialProvider \
- --api-key "API_KEY_A" \
- --profile default --region us-west-2
+  --name GatewayAAPICredentialProvider \
+  --api-key "API_KEY_A" \
+  --profile default --region us-west-2
 
 # Create provider for Gateway B
 aws bedrock-agentcore-control create-api-key-credential-provider \
- --name GatewayBAPICredentialProvider \
- --api-key "API_KEY_B" \
- --profile default --region us-west-2
+  --name GatewayBAPICredentialProvider \
+  --api-key "API_KEY_B" \
+  --profile default --region us-west-2
 ```
 
 **Environment Configuration**:
 ```bash
 # .env.gateway-a
 GATEWAY_IDENTIFIER=gateway-a-abc123xyz
-CREDENTIAL_PROVIDER_NAME=GatewayAAPICredentialProvider # Unique
+CREDENTIAL_PROVIDER_NAME=GatewayAAPICredentialProvider  # Unique
 
 # .env.gateway-b
 GATEWAY_IDENTIFIER=gateway-b-def456uvw
-CREDENTIAL_PROVIDER_NAME=GatewayBAPICredentialProvider # Unique
+CREDENTIAL_PROVIDER_NAME=GatewayBAPICredentialProvider  # Unique
 ```
 
 **Benefits**:
@@ -98,15 +98,15 @@ CREDENTIAL_PROVIDER_NAME=GatewayBAPICredentialProvider # Unique
 ```bash
 # Shared provider for dev/test
 aws bedrock-agentcore-control create-api-key-credential-provider \
- --name DevTestAPICredentialProvider \
- --api-key "DEV_TEST_API_KEY" \
- --profile default --region us-west-2
+  --name DevTestAPICredentialProvider \
+  --api-key "DEV_TEST_API_KEY" \
+  --profile default --region us-west-2
 
 # Isolated provider for production
 aws bedrock-agentcore-control create-api-key-credential-provider \
- --name ProdAPICredentialProvider \
- --api-key "PROD_API_KEY" \
- --profile default --region us-west-2
+  --name ProdAPICredentialProvider \
+  --api-key "PROD_API_KEY" \
+  --profile default --region us-west-2
 ```
 
 **Environment Configuration**:
@@ -142,49 +142,49 @@ When deploying across multiple AWS accounts:
 ### Setup
 
 1. **Credential Provider per Account**:
- ```bash
- # Account 1 (Dev)
- aws bedrock-agentcore-control create-api-key-credential-provider \
- --name APICredentialProvider \
- --api-key "DEV_API_KEY" \
- --profile dev-account
+   ```bash
+   # Account 1 (Dev)
+   aws bedrock-agentcore-control create-api-key-credential-provider \
+     --name APICredentialProvider \
+     --api-key "DEV_API_KEY" \
+     --profile dev-account
 
- # Account 2 (Prod)
- aws bedrock-agentcore-control create-api-key-credential-provider \
- --name APICredentialProvider \
- --api-key "PROD_API_KEY" \
- --profile prod-account
- ```
+   # Account 2 (Prod)
+   aws bedrock-agentcore-control create-api-key-credential-provider \
+     --name APICredentialProvider \
+     --api-key "PROD_API_KEY" \
+     --profile prod-account
+   ```
 
 2. **Centralized Configuration**:
- ```bash
- # .env.dev
- ACCOUNT_ID=123456789012
- GATEWAY_IDENTIFIER=dev-gateway-abc123xyz
- AWS_PROFILE=dev-account
+   ```bash
+   # .env.dev
+   ACCOUNT_ID=123456789012
+   GATEWAY_IDENTIFIER=dev-gateway-abc123xyz
+   AWS_PROFILE=dev-account
 
- # .env.prod
- ACCOUNT_ID=987654321098
- GATEWAY_IDENTIFIER=prod-gateway-abc123xyz
- AWS_PROFILE=prod-account
- ```
+   # .env.prod
+   ACCOUNT_ID=987654321098
+   GATEWAY_IDENTIFIER=prod-gateway-abc123xyz
+   AWS_PROFILE=prod-account
+   ```
 
 3. **Cross-Account Deployment Script**:
- ```bash
- #!/bin/bash
- ENV_FILE=$1
+   ```bash
+   #!/bin/bash
+   ENV_FILE=$1
 
- # Load environment
- export $(cat $ENV_FILE | xargs)
+   # Load environment
+   export $(cat $ENV_FILE | xargs)
 
- # Get AWS account ID
- export CDK_DEFAULT_ACCOUNT=$(aws sts get-caller-identity \
- --profile $AWS_PROFILE \
- --query Account --output text)
+   # Get AWS account ID
+   export CDK_DEFAULT_ACCOUNT=$(aws sts get-caller-identity \
+     --profile $AWS_PROFILE \
+     --query Account --output text)
 
- # Deploy
- npm run build && cdk deploy --profile $AWS_PROFILE --require-approval never
- ```
+   # Deploy
+   npm run build && cdk deploy --profile $AWS_PROFILE --require-approval never
+   ```
 
 ## Key Rotation Procedures
 
@@ -194,9 +194,9 @@ When deploying across multiple AWS accounts:
 ```bash
 # 1. Update key in provider
 aws bedrock-agentcore-control update-api-key-credential-provider \
- --name SharedAPICredentialProvider \
- --api-key "NEW_API_KEY" \
- --profile default --region us-west-2
+  --name SharedAPICredentialProvider \
+  --api-key "NEW_API_KEY" \
+  --profile default --region us-west-2
 
 # 2. Restart gateway targets (if needed) to pick up new key
 ```
@@ -212,13 +212,13 @@ aws bedrock-agentcore-control update-api-key-credential-provider \
 ```bash
 # Rotate dev environment only
 aws bedrock-agentcore-control update-api-key-credential-provider \
- --name DevAPICredentialProvider \
- --api-key "NEW_DEV_KEY"
+  --name DevAPICredentialProvider \
+  --api-key "NEW_DEV_KEY"
 
 # Production remains unchanged
 aws bedrock-agentcore-control update-api-key-credential-provider \
- --name ProdAPICredentialProvider \
- --api-key "EXISTING_PROD_KEY"
+  --name ProdAPICredentialProvider \
+  --api-key "EXISTING_PROD_KEY"
 ```
 
 ## Rollback Procedures
@@ -241,8 +241,8 @@ aws cloudformation continue-update-rollback --stack-name StackName
 ```bash
 # If new API key is causing issues, restore previous key
 aws bedrock-agentcore-control update-api-key-credential-provider \
- --name APICredentialProvider \
- --api-key "PREVIOUS_WORKING_KEY"
+  --name APICredentialProvider \
+  --api-key "PREVIOUS_WORKING_KEY"
 ```
 
 ## Monitoring and Alerting
@@ -260,22 +260,22 @@ aws bedrock-agentcore-control update-api-key-credential-provider \
 ```typescript
 // CDK Example: Create alarm for high error rate
 new cloudwatch.Alarm(this, 'HighErrorRate', {
- metric: new cloudwatch.Metric({
- namespace: 'AWS/BedrockAgentCore',
- metricName: 'TargetErrorRate',
- dimensionsMap: {
- GatewayId: gatewayId,
- TargetId: targetId,
- },
- statistic: 'avg',
- period: Duration.minutes(5),
- }),
- threshold: 10,
- evaluationPeriods: 2,
- datapointsToAlarm: 2,
- comparisonOperator: cloudwatch.ComparisonOperator.GREATER_THAN_THRESHOLD,
- alarmDescription: 'Error rate exceeds 10%',
- actionsEnabled: true,
+  metric: new cloudwatch.Metric({
+    namespace: 'AWS/BedrockAgentCore',
+    metricName: 'TargetErrorRate',
+    dimensionsMap: {
+      GatewayId: gatewayId,
+      TargetId: targetId,
+    },
+    statistic: 'avg',
+    period: Duration.minutes(5),
+  }),
+  threshold: 10,
+  evaluationPeriods: 2,
+  datapointsToAlarm: 2,
+  comparisonOperator: cloudwatch.ComparisonOperator.GREATER_THAN_THRESHOLD,
+  alarmDescription: 'Error rate exceeds 10%',
+  actionsEnabled: true,
 });
 ```
 
@@ -284,26 +284,26 @@ new cloudwatch.Alarm(this, 'HighErrorRate', {
 ### Cost Considerations
 
 1. **AgentCore Gateway**: Pay per tool invocation
- - Optimize schema to reduce unnecessary API calls
- - Cache frequently accessed data in schema descriptions
- - Use batch operations where available
+   - Optimize schema to reduce unnecessary API calls
+   - Cache frequently accessed data in schema descriptions
+   - Use batch operations where available
 
 2. **S3 Asset Storage**: Negligible (<$0.01/month)
- - Schema files are small
- - CDK automatically cleans up old versions
+   - Schema files are small
+   - CDK automatically cleans up old versions
 
 3. **Lambda (GatewayRoleUpdater)**: ~$0.01 per deployment
- - Covered by AWS Lambda free tier (1M requests/month)
- - Only runs during deployment/update
+   - Covered by AWS Lambda free tier (1M requests/month)
+   - Only runs during deployment/update
 
 4. **Secrets Manager**: ~$0.40/month per secret
- - Use shared provider to minimize secret count
- - Rotate secrets on schedule to maintain security
+   - Use shared provider to minimize secret count
+   - Rotate secrets on schedule to maintain security
 
 5. **API Calls (RapidAPI Example)**:
- - Free tier: 100 requests/day
- - Paid tiers: From $10/month
- - Optimize by embedding IDs in schema
+   - Free tier: 100 requests/day
+   - Paid tiers: From $10/month
+   - Optimize by embedding IDs in schema
 
 ### Optimization Strategies
 
@@ -311,11 +311,11 @@ new cloudwatch.Alarm(this, 'HighErrorRate', {
 ```yaml
 # Embed common IDs to reduce API calls by 50%
 info:
- description: |
- COMMON LEAGUE IDs:
- - Premier League: 39
- - Champions League: 2
- - World Cup: 1
+  description: |
+    COMMON LEAGUE IDs:
+    - Premier League: 39
+    - Champions League: 2
+    - World Cup: 1
 ```
 
 **Credential Provider Sharing**:
@@ -349,11 +349,11 @@ info:
 ```bash
 # Branch-based deployment
 if [ "$BRANCH" = "main" ]; then
- ./deploy.sh .env.production
+  ./deploy.sh .env.production
 elif [ "$BRANCH" = "develop" ]; then
- ./deploy.sh .env.staging
+  ./deploy.sh .env.staging
 else
- ./deploy.sh .env.development
+  ./deploy.sh .env.development
 fi
 ```
 
@@ -362,9 +362,9 @@ fi
 ```bash
 # Deploy to multiple regions
 for region in us-west-2 eu-west-1 ap-southeast-1; do
- export AWS_REGION=$region
- export GATEWAY_IDENTIFIER="my-gateway-${region}"
- npm run build && cdk deploy --require-approval never
+  export AWS_REGION=$region
+  export GATEWAY_IDENTIFIER="my-gateway-${region}"
+  npm run build && cdk deploy --require-approval never
 done
 ```
 
@@ -386,27 +386,27 @@ done
 ### Migrating from Manual to CDK Management
 
 1. **Discovery Phase**:
- ```bash
- # Document existing targets
- aws bedrock-agentcore-control list-gateway-targets \
- --gateway-identifier existing-gateway \
- --profile default --region us-west-2
- ```
+   ```bash
+   # Document existing targets
+   aws bedrock-agentcore-control list-gateway-targets \
+     --gateway-identifier existing-gateway \
+     --profile default --region us-west-2
+   ```
 
 2. **Schema Extraction**:
- - Export existing OpenAPI schemas
- - Audit and optimize schema descriptions
- - Embed common IDs for performance
+   - Export existing OpenAPI schemas
+   - Audit and optimize schema descriptions
+   - Embed common IDs for performance
 
 3. **CDK Implementation**:
- - Create stack with existing target configuration
- - Import existing credential provider
- - Add GatewayRoleUpdater for IAM automation
+   - Create stack with existing target configuration
+   - Import existing credential provider
+   - Add GatewayRoleUpdater for IAM automation
 
 4. **Cutover**:
- - Deploy to new gateway first (test)
- - Update AI agents to use new target
- - Decommission old target after verification
+   - Deploy to new gateway first (test)
+   - Update AI agents to use new target
+   - Decommission old target after verification
 
 ## Additional References
 

@@ -18,19 +18,19 @@ Performance optimization best practices for AWS Lambda and serverless architectu
 **Three phases of Lambda execution**:
 
 1. **Init Phase** (Cold Start):
- - Download and unpack function package
- - Create execution environment
- - Initialize runtime
- - Execute initialization code (outside handler)
+   - Download and unpack function package
+   - Create execution environment
+   - Initialize runtime
+   - Execute initialization code (outside handler)
 
 2. **Invoke Phase**:
- - Execute handler code
- - Return response
- - Freeze execution environment
+   - Execute handler code
+   - Return response
+   - Freeze execution environment
 
 3. **Shutdown Phase**:
- - Runtime shutdown (after period of inactivity)
- - Execution environment destroyed
+   - Runtime shutdown (after period of inactivity)
+   - Execution environment destroyed
 
 ### Concurrency and Scaling
 
@@ -66,15 +66,15 @@ Total Cold Start = Download Package + Init Environment + Init Code + Handler
 
 ```typescript
 new NodejsFunction(this, 'Function', {
- entry: 'src/handler.ts',
- bundling: {
- minify: true, // Minify production code
- sourceMap: false, // Disable in production
- externalModules: [
- '@aws-sdk/*', // Use AWS SDK from runtime
- ],
- // Tree-shaking removes unused code
- },
+  entry: 'src/handler.ts',
+  bundling: {
+    minify: true, // Minify production code
+    sourceMap: false, // Disable in production
+    externalModules: [
+      '@aws-sdk/*', // Use AWS SDK from runtime
+    ],
+    // Tree-shaking removes unused code
+  },
 });
 ```
 
@@ -97,27 +97,27 @@ new NodejsFunction(this, 'Function', {
 
 ```typescript
 const fn = new NodejsFunction(this, 'Function', {
- entry: 'src/handler.ts',
+  entry: 'src/handler.ts',
 });
 
 // Static provisioned concurrency
 fn.currentVersion.addAlias('live', {
- provisionedConcurrentExecutions: 10,
+  provisionedConcurrentExecutions: 10,
 });
 
 // Auto-scaling provisioned concurrency
 const alias = fn.currentVersion.addAlias('prod');
 
 const target = new applicationautoscaling.ScalableTarget(this, 'ScalableTarget', {
- serviceNamespace: applicationautoscaling.ServiceNamespace.LAMBDA,
- maxCapacity: 100,
- minCapacity: 10,
- resourceId: `function:${fn.functionName}:${alias.aliasName}`,
- scalableDimension: 'lambda:function:ProvisionedConcurrentExecutions',
+  serviceNamespace: applicationautoscaling.ServiceNamespace.LAMBDA,
+  maxCapacity: 100,
+  minCapacity: 10,
+  resourceId: `function:${fn.functionName}:${alias.aliasName}`,
+  scalableDimension: 'lambda:function:ProvisionedConcurrentExecutions',
 });
 
 target.scaleOnUtilization({
- utilizationTarget: 0.7, // 70% utilization
+  utilizationTarget: 0.7, // 70% utilization
 });
 ```
 
@@ -137,10 +137,10 @@ target.scaleOnUtilization({
 
 ```typescript
 new lambda.Function(this, 'JavaFunction', {
- runtime: lambda.Runtime.JAVA_17,
- code: lambda.Code.fromAsset('target/function.jar'),
- handler: 'com.example.Handler::handleRequest',
- snapStart: lambda.SnapStartConf.ON_PUBLISHED_VERSIONS,
+  runtime: lambda.Runtime.JAVA_17,
+  code: lambda.Code.fromAsset('target/function.jar'),
+  handler: 'com.example.Handler::handleRequest',
+  snapStart: lambda.SnapStartConf.ON_PUBLISHED_VERSIONS,
 });
 ```
 
@@ -194,9 +194,9 @@ sam deploy --template-file template.yml --stack-name lambda-power-tuning
 
 # Run power tuning
 aws lambda invoke \
- --function-name powerTuningFunction \
- --payload '{"lambdaARN": "arn:aws:lambda:...", "powerValues": [128, 256, 512, 1024, 1536, 3008]}' \
- response.json
+  --function-name powerTuningFunction \
+  --payload '{"lambdaARN": "arn:aws:lambda:...", "powerValues": [128, 256, 512, 1024, 1536, 3008]}' \
+  response.json
 ```
 
 **Manual testing approach**:
@@ -214,22 +214,22 @@ aws lambda invoke \
 import { Worker } from 'worker_threads';
 
 export const handler = async (event: any) => {
- const items = event.items;
+  const items = event.items;
 
- // Process in parallel using multiple cores
- const workers = items.map(item =>
- new Promise((resolve, reject) => {
- const worker = new Worker('./worker.js', {
- workerData: item,
- });
+  // Process in parallel using multiple cores
+  const workers = items.map(item =>
+    new Promise((resolve, reject) => {
+      const worker = new Worker('./worker.js', {
+        workerData: item,
+      });
 
- worker.on('message', resolve);
- worker.on('error', reject);
- })
- );
+      worker.on('message', resolve);
+      worker.on('error', reject);
+    })
+  );
 
- const results = await Promise.all(workers);
- return results;
+  const results = await Promise.all(workers);
+  return results;
 };
 ```
 
@@ -239,13 +239,13 @@ export const handler = async (event: any) => {
 import multiprocessing as mp
 
 def handler(event, context):
- items = event['items']
+    items = event['items']
 
- # Use multiple cores for CPU-bound work
- with mp.Pool(mp.cpu_count()) as pool:
- results = pool.map(process_item, items)
+    # Use multiple cores for CPU-bound work
+    with mp.Pool(mp.cpu_count()) as pool:
+        results = pool.map(process_item, items)
 
- return {'results': results}
+    return {'results': results}
 ```
 
 ## Initialization Optimization
@@ -265,22 +265,22 @@ const s3 = new S3Client({});
 
 // Connection pool initialized once
 const pool = createConnectionPool({
- host: process.env.DB_HOST,
- max: 1, // One connection per execution environment
+  host: process.env.DB_HOST,
+  max: 1, // One connection per execution environment
 });
 
 export const handler = async (event: any) => {
- // Reuse connections across invocations
- const data = await dynamodb.getItem({ /* ... */ });
- const file = await s3.getObject({ /* ... */ });
- return processData(data, file);
+  // Reuse connections across invocations
+  const data = await dynamodb.getItem({ /* ... */ });
+  const file = await s3.getObject({ /* ... */ });
+  return processData(data, file);
 };
 
 // ❌ BAD - Initialize in handler
 export const handler = async (event: any) => {
- const dynamodb = new DynamoDBClient({}); // Created every invocation
- const s3 = new S3Client({}); // Created every invocation
- // ...
+  const dynamodb = new DynamoDBClient({}); // Created every invocation
+  const s3 = new S3Client({}); // Created every invocation
+  // ...
 };
 ```
 
@@ -291,19 +291,19 @@ export const handler = async (event: any) => {
 ```typescript
 // ✅ GOOD - Conditional loading
 export const handler = async (event: any) => {
- if (event.operation === 'generatePDF') {
- // Load heavy PDF library only when needed
- const pdfLib = await import('./pdf-generator');
- return pdfLib.generatePDF(event.data);
- }
+  if (event.operation === 'generatePDF') {
+    // Load heavy PDF library only when needed
+    const pdfLib = await import('./pdf-generator');
+    return pdfLib.generatePDF(event.data);
+  }
 
- if (event.operation === 'processImage') {
- const sharp = await import('sharp');
- return processImage(sharp, event.data);
- }
+  if (event.operation === 'processImage') {
+    const sharp = await import('sharp');
+    return processImage(sharp, event.data);
+  }
 
- // Default operation (no heavy dependencies)
- return processDefault(event);
+  // Default operation (no heavy dependencies)
+  return processDefault(event);
 };
 
 // ❌ BAD - Load everything upfront
@@ -312,9 +312,9 @@ import sharp from 'sharp'; // 20MB
 // Even if not used!
 
 export const handler = async (event: any) => {
- if (event.operation === 'generatePDF') {
- return pdfLib.generatePDF(event.data);
- }
+  if (event.operation === 'generatePDF') {
+    return pdfLib.generatePDF(event.data);
+  }
 };
 ```
 
@@ -326,11 +326,11 @@ export const handler = async (event: any) => {
 import { DynamoDBClient } from '@aws-sdk/client-dynamodb';
 
 const client = new DynamoDBClient({
- // Enable keep-alive for connection reuse
- requestHandler: {
- connectionTimeout: 3000,
- socketTimeout: 3000,
- },
+  // Enable keep-alive for connection reuse
+  requestHandler: {
+    connectionTimeout: 3000,
+    socketTimeout: 3000,
+  },
 });
 
 // For Node.js AWS SDK
@@ -362,19 +362,19 @@ const items = ['item1', 'item2', 'item3'];
 
 // Single batch write
 await dynamodb.batchWriteItem({
- RequestItems: {
- [tableName]: items.map(item => ({
- PutRequest: { Item: item },
- })),
- },
+  RequestItems: {
+    [tableName]: items.map(item => ({
+      PutRequest: { Item: item },
+    })),
+  },
 });
 
 // ❌ BAD - Multiple single operations
 for (const item of items) {
- await dynamodb.putItem({
- TableName: tableName,
- Item: item,
- }); // Slow, multiple round trips
+  await dynamodb.putItem({
+    TableName: tableName,
+    Item: item,
+  }); // Slow, multiple round trips
 }
 ```
 
@@ -385,9 +385,9 @@ for (const item of items) {
 ```typescript
 // ✅ GOOD - Parallel async operations
 const [userData, orderData, inventoryData] = await Promise.all([
- getUserData(userId),
- getOrderData(orderId),
- getInventoryData(productId),
+  getUserData(userId),
+  getOrderData(orderId),
+  getInventoryData(productId),
 ]);
 
 // ❌ BAD - Sequential async operations
@@ -405,21 +405,21 @@ const inventoryData = await getInventoryData(productId); // Waits unnecessarily
 const cache = new Map<string, any>();
 
 export const handler = async (event: any) => {
- const key = event.key;
+  const key = event.key;
 
- // Check cache first
- if (cache.has(key)) {
- console.log('Cache hit');
- return cache.get(key);
- }
+  // Check cache first
+  if (cache.has(key)) {
+    console.log('Cache hit');
+    return cache.get(key);
+  }
 
- // Fetch from database
- const data = await fetchFromDatabase(key);
+  // Fetch from database
+  const data = await fetchFromDatabase(key);
 
- // Store in cache
- cache.set(key, data);
+  // Store in cache
+  cache.set(key, data);
 
- return data;
+  return data;
 };
 ```
 
@@ -430,26 +430,26 @@ import Redis from 'ioredis';
 
 // Initialize once
 const redis = new Redis({
- host: process.env.REDIS_HOST,
- port: 6379,
- lazyConnect: true,
- enableOfflineQueue: false,
+  host: process.env.REDIS_HOST,
+  port: 6379,
+  lazyConnect: true,
+  enableOfflineQueue: false,
 });
 
 export const handler = async (event: any) => {
- const key = `order:${event.orderId}`;
+  const key = `order:${event.orderId}`;
 
- // Try cache
- const cached = await redis.get(key);
- if (cached) {
- return JSON.parse(cached);
- }
+  // Try cache
+  const cached = await redis.get(key);
+  if (cached) {
+    return JSON.parse(cached);
+  }
 
- // Fetch and cache
- const data = await fetchOrder(event.orderId);
- await redis.setex(key, 300, JSON.stringify(data)); // 5 min TTL
+  // Fetch and cache
+  const data = await fetchOrder(event.orderId);
+  await redis.setex(key, 300, JSON.stringify(data)); // 5 min TTL
 
- return data;
+  return data;
 };
 ```
 
@@ -462,18 +462,18 @@ export const handler = async (event: any) => {
 ```yaml
 # load-test.yml
 config:
- target: https://api.example.com
- phases:
- - duration: 60
- arrivalRate: 10
- rampTo: 100 # Ramp from 10 to 100 req/sec
+  target: https://api.example.com
+  phases:
+    - duration: 60
+      arrivalRate: 10
+      rampTo: 100 # Ramp from 10 to 100 req/sec
 scenarios:
- - flow:
- - post:
- url: /orders
- json:
- orderId: "{{ $randomString() }}"
- amount: "{{ $randomNumber(10, 1000) }}"
+  - flow:
+      - post:
+          url: /orders
+          json:
+            orderId: "{{ $randomString() }}"
+            amount: "{{ $randomNumber(10, 1000) }}"
 ```
 
 ```bash
@@ -491,31 +491,31 @@ import { Lambda } from '@aws-sdk/client-lambda';
 const lambda = new Lambda({});
 
 const testConfigurations = [
- { memory: 128, name: 'Function-128' },
- { memory: 256, name: 'Function-256' },
- { memory: 512, name: 'Function-512' },
- { memory: 1024, name: 'Function-1024' },
+  { memory: 128, name: 'Function-128' },
+  { memory: 256, name: 'Function-256' },
+  { memory: 512, name: 'Function-512' },
+  { memory: 1024, name: 'Function-1024' },
 ];
 
 for (const config of testConfigurations) {
- const times: number[] = [];
+  const times: number[] = [];
 
- // Warm up
- for (let i = 0; i < 5; i++) {
- await lambda.invoke({ FunctionName: config.name });
- }
+  // Warm up
+  for (let i = 0; i < 5; i++) {
+    await lambda.invoke({ FunctionName: config.name });
+  }
 
- // Measure
- for (let i = 0; i < 100; i++) {
- const start = Date.now();
- await lambda.invoke({ FunctionName: config.name });
- times.push(Date.now() - start);
- }
+  // Measure
+  for (let i = 0; i < 100; i++) {
+    const start = Date.now();
+    await lambda.invoke({ FunctionName: config.name });
+    times.push(Date.now() - start);
+  }
 
- const p99 = times.sort()[99];
- const avg = times.reduce((a, b) => a + b) / times.length;
+  const p99 = times.sort()[99];
+  const avg = times.reduce((a, b) => a + b) / times.length;
 
- console.log(`${config.memory}MB - Avg: ${avg}ms, p99: ${p99}ms`);
+  console.log(`${config.memory}MB - Avg: ${avg}ms, p99: ${p99}ms`);
 }
 ```
 
@@ -550,7 +550,7 @@ for (const config of testConfigurations) {
 **Cost calculation**:
 ```
 Cost = (Memory GB) × (Duration seconds) × (Invocations) × ($0.0000166667/GB-second)
- + (Invocations) × ($0.20/1M requests)
+     + (Invocations) × ($0.20/1M requests)
 ```
 
 ### Cost Reduction Strategies
@@ -571,14 +571,14 @@ Cost = (Memory GB) × (Duration seconds) × (Invocations) × ($0.0000166667/GB-s
 ```typescript
 // Lambda layer with extension
 const extensionLayer = lambda.LayerVersion.fromLayerVersionArn(
- this,
- 'Extension',
- 'arn:aws:lambda:us-east-1:123456789:layer:my-extension:1'
+  this,
+  'Extension',
+  'arn:aws:lambda:us-east-1:123456789:layer:my-extension:1'
 );
 
 new NodejsFunction(this, 'Function', {
- entry: 'src/handler.ts',
- layers: [extensionLayer],
+  entry: 'src/handler.ts',
+  layers: [extensionLayer],
 });
 ```
 
@@ -595,8 +595,8 @@ new NodejsFunction(this, 'Function', {
 
 ```typescript
 new NodejsFunction(this, 'Function', {
- entry: 'src/handler.ts',
- architecture: lambda.Architecture.ARM_64, // Graviton2
+  entry: 'src/handler.ts',
+  architecture: lambda.Architecture.ARM_64, // Graviton2
 });
 ```
 
@@ -616,10 +616,10 @@ new NodejsFunction(this, 'Function', {
 ```typescript
 // Modern VPC configuration (fast)
 new NodejsFunction(this, 'VpcFunction', {
- entry: 'src/handler.ts',
- vpc,
- vpcSubnets: { subnetType: ec2.SubnetType.PRIVATE_WITH_EGRESS },
- // Fast scaling, no ENI limitations
+  entry: 'src/handler.ts',
+  vpc,
+  vpcSubnets: { subnetType: ec2.SubnetType.PRIVATE_WITH_EGRESS },
+  // Fast scaling, no ENI limitations
 });
 ```
 
@@ -637,24 +637,23 @@ new NodejsFunction(this, 'VpcFunction', {
 ### Performance Dashboards
 
 ```typescript
-const dashboard = new cloudwatch.Dashboard(this, 'PerformanceDashboard', {
-});
+const dashboard = new cloudwatch.Dashboard(this, 'PerformanceDashboard');
 
 dashboard.addWidgets(
- new cloudwatch.GraphWidget({
- title: 'Latency Distribution',
- left: [
- fn.metricDuration({ statistic: 'p50', label: 'p50' }),
- fn.metricDuration({ statistic: 'p95', label: 'p95' }),
- fn.metricDuration({ statistic: 'p99', label: 'p99' }),
- fn.metricDuration({ statistic: 'Maximum', label: 'max' }),
- ],
- }),
- new cloudwatch.GraphWidget({
- title: 'Memory Utilization',
- left: [fn.metricDuration()],
- right: [fn.metricErrors()],
- })
+  new cloudwatch.GraphWidget({
+    title: 'Latency Distribution',
+    left: [
+      fn.metricDuration({ statistic: 'p50', label: 'p50' }),
+      fn.metricDuration({ statistic: 'p95', label: 'p95' }),
+      fn.metricDuration({ statistic: 'p99', label: 'p99' }),
+      fn.metricDuration({ statistic: 'Maximum', label: 'max' }),
+    ],
+  }),
+  new cloudwatch.GraphWidget({
+    title: 'Memory Utilization',
+    left: [fn.metricDuration()],
+    right: [fn.metricErrors()],
+  })
 );
 ```
 

@@ -1,0 +1,442 @@
+﻿[
+    {
+        "slug":  "atlassian-mcp",
+        "targetDir":  "public/SKILLS/Collaboration \u0026 Project Management/atlassian-mcp",
+        "fileCount":  6
+    },
+    {
+        "slug":  "feature-forge",
+        "targetDir":  "public/SKILLS/Collaboration \u0026 Project Management/feature-forge",
+        "fileCount":  6
+    },
+    {
+        "slug":  "database-optimizer",
+        "targetDir":  "public/SKILLS/Data \u0026 Analysis/database-optimizer",
+        "fileCount":  6
+    },
+    {
+        "slug":  "fine-tuning-expert",
+        "targetDir":  "public/SKILLS/Data \u0026 Analysis/fine-tuning-expert",
+        "fileCount":  6
+    },
+    {
+        "slug":  "geomaster",
+        "targetDir":  "public/SKILLS/Data \u0026 Analysis/geomaster",
+        "fileCount":  16
+    },
+    {
+        "slug":  "ml-pipeline",
+        "targetDir":  "public/SKILLS/Data \u0026 Analysis/ml-pipeline",
+        "fileCount":  6
+    },
+    {
+        "slug":  "pandas-pro",
+        "targetDir":  "public/SKILLS/Data \u0026 Analysis/pandas-pro",
+        "fileCount":  6
+    },
+    {
+        "slug":  "postgres-pro",
+        "targetDir":  "public/SKILLS/Data \u0026 Analysis/postgres-pro",
+        "fileCount":  6
+    },
+    {
+        "slug":  "rag-architect",
+        "targetDir":  "public/SKILLS/Data \u0026 Analysis/rag-architect",
+        "fileCount":  6
+    },
+    {
+        "slug":  "spark-engineer",
+        "targetDir":  "public/SKILLS/Data \u0026 Analysis/spark-engineer",
+        "fileCount":  6
+    },
+    {
+        "slug":  "sql-pro",
+        "targetDir":  "public/SKILLS/Data \u0026 Analysis/sql-pro",
+        "fileCount":  6
+    },
+    {
+        "slug":  "x-twitter-scraper",
+        "targetDir":  "public/SKILLS/Data \u0026 Analysis/x-twitter-scraper",
+        "fileCount":  9
+    },
+    {
+        "slug":  "angular-architect",
+        "targetDir":  "public/SKILLS/Development \u0026 Code Tools/angular-architect",
+        "fileCount":  6
+    },
+    {
+        "slug":  "api-designer",
+        "targetDir":  "public/SKILLS/Development \u0026 Code Tools/api-designer",
+        "fileCount":  6
+    },
+    {
+        "slug":  "architecture-designer",
+        "targetDir":  "public/SKILLS/Development \u0026 Code Tools/architecture-designer",
+        "fileCount":  6
+    },
+    {
+        "slug":  "claude-mcp-expert",
+        "targetDir":  "public/SKILLS/Development \u0026 Code Tools/claude-mcp-expert",
+        "fileCount":  2
+    },
+    {
+        "slug":  "cli-developer",
+        "targetDir":  "public/SKILLS/Development \u0026 Code Tools/cli-developer",
+        "fileCount":  6
+    },
+    {
+        "slug":  "cloud-architect",
+        "targetDir":  "public/SKILLS/Development \u0026 Code Tools/cloud-architect",
+        "fileCount":  6
+    },
+    {
+        "slug":  "code-documenter",
+        "targetDir":  "public/SKILLS/Development \u0026 Code Tools/code-documenter",
+        "fileCount":  9
+    },
+    {
+        "slug":  "code-reviewer",
+        "targetDir":  "public/SKILLS/Development \u0026 Code Tools/code-reviewer",
+        "fileCount":  7
+    },
+    {
+        "slug":  "cpp-pro",
+        "targetDir":  "public/SKILLS/Development \u0026 Code Tools/cpp-pro",
+        "fileCount":  6
+    },
+    {
+        "slug":  "csharp-developer",
+        "targetDir":  "public/SKILLS/Development \u0026 Code Tools/csharp-developer",
+        "fileCount":  6
+    },
+    {
+        "slug":  "debugging-wizard",
+        "targetDir":  "public/SKILLS/Development \u0026 Code Tools/debugging-wizard",
+        "fileCount":  6
+    },
+    {
+        "slug":  "devops-engineer",
+        "targetDir":  "public/SKILLS/Development \u0026 Code Tools/devops-engineer",
+        "fileCount":  9
+    },
+    {
+        "slug":  "django-expert",
+        "targetDir":  "public/SKILLS/Development \u0026 Code Tools/django-expert",
+        "fileCount":  6
+    },
+    {
+        "slug":  "dotnet-core-expert",
+        "targetDir":  "public/SKILLS/Development \u0026 Code Tools/dotnet-core-expert",
+        "fileCount":  6
+    },
+    {
+        "slug":  "embedded-systems",
+        "targetDir":  "public/SKILLS/Development \u0026 Code Tools/embedded-systems",
+        "fileCount":  6
+    },
+    {
+        "slug":  "fastapi-expert",
+        "targetDir":  "public/SKILLS/Development \u0026 Code Tools/fastapi-expert",
+        "fileCount":  7
+    },
+    {
+        "slug":  "flutter-expert",
+        "targetDir":  "public/SKILLS/Development \u0026 Code Tools/flutter-expert",
+        "fileCount":  7
+    },
+    {
+        "slug":  "frontend-design",
+        "targetDir":  "public/SKILLS/Development \u0026 Code Tools/frontend-design",
+        "fileCount":  1
+    },
+    {
+        "slug":  "fullstack-guardian",
+        "targetDir":  "public/SKILLS/Development \u0026 Code Tools/fullstack-guardian",
+        "fileCount":  11
+    },
+    {
+        "slug":  "golang-pro",
+        "targetDir":  "public/SKILLS/Development \u0026 Code Tools/golang-pro",
+        "fileCount":  6
+    },
+    {
+        "slug":  "graphql-architect",
+        "targetDir":  "public/SKILLS/Development \u0026 Code Tools/graphql-architect",
+        "fileCount":  7
+    },
+    {
+        "slug":  "java-architect",
+        "targetDir":  "public/SKILLS/Development \u0026 Code Tools/java-architect",
+        "fileCount":  6
+    },
+    {
+        "slug":  "javascript-pro",
+        "targetDir":  "public/SKILLS/Development \u0026 Code Tools/javascript-pro",
+        "fileCount":  6
+    },
+    {
+        "slug":  "kotlin-specialist",
+        "targetDir":  "public/SKILLS/Development \u0026 Code Tools/kotlin-specialist",
+        "fileCount":  6
+    },
+    {
+        "slug":  "kubernetes-specialist",
+        "targetDir":  "public/SKILLS/Development \u0026 Code Tools/kubernetes-specialist",
+        "fileCount":  12
+    },
+    {
+        "slug":  "laravel-specialist",
+        "targetDir":  "public/SKILLS/Development \u0026 Code Tools/laravel-specialist",
+        "fileCount":  6
+    },
+    {
+        "slug":  "legacy-modernizer",
+        "targetDir":  "public/SKILLS/Development \u0026 Code Tools/legacy-modernizer",
+        "fileCount":  6
+    },
+    {
+        "slug":  "microservices-architect",
+        "targetDir":  "public/SKILLS/Development \u0026 Code Tools/microservices-architect",
+        "fileCount":  6
+    },
+    {
+        "slug":  "monitoring-expert",
+        "targetDir":  "public/SKILLS/Development \u0026 Code Tools/monitoring-expert",
+        "fileCount":  9
+    },
+    {
+        "slug":  "nestjs-expert",
+        "targetDir":  "public/SKILLS/Development \u0026 Code Tools/nestjs-expert",
+        "fileCount":  7
+    },
+    {
+        "slug":  "nextjs-developer",
+        "targetDir":  "public/SKILLS/Development \u0026 Code Tools/nextjs-developer",
+        "fileCount":  6
+    },
+    {
+        "slug":  "php-pro",
+        "targetDir":  "public/SKILLS/Development \u0026 Code Tools/php-pro",
+        "fileCount":  6
+    },
+    {
+        "slug":  "python-pro",
+        "targetDir":  "public/SKILLS/Development \u0026 Code Tools/python-pro",
+        "fileCount":  6
+    },
+    {
+        "slug":  "rails-expert",
+        "targetDir":  "public/SKILLS/Development \u0026 Code Tools/rails-expert",
+        "fileCount":  6
+    },
+    {
+        "slug":  "react-expert",
+        "targetDir":  "public/SKILLS/Development \u0026 Code Tools/react-expert",
+        "fileCount":  8
+    },
+    {
+        "slug":  "react-native-expert",
+        "targetDir":  "public/SKILLS/Development \u0026 Code Tools/react-native-expert",
+        "fileCount":  6
+    },
+    {
+        "slug":  "rust-engineer",
+        "targetDir":  "public/SKILLS/Development \u0026 Code Tools/rust-engineer",
+        "fileCount":  6
+    },
+    {
+        "slug":  "salesforce-developer",
+        "targetDir":  "public/SKILLS/Development \u0026 Code Tools/salesforce-developer",
+        "fileCount":  6
+    },
+    {
+        "slug":  "shopify-expert",
+        "targetDir":  "public/SKILLS/Development \u0026 Code Tools/shopify-expert",
+        "fileCount":  6
+    },
+    {
+        "slug":  "spec-miner",
+        "targetDir":  "public/SKILLS/Development \u0026 Code Tools/spec-miner",
+        "fileCount":  5
+    },
+    {
+        "slug":  "spring-boot-engineer",
+        "targetDir":  "public/SKILLS/Development \u0026 Code Tools/spring-boot-engineer",
+        "fileCount":  6
+    },
+    {
+        "slug":  "sre-engineer",
+        "targetDir":  "public/SKILLS/Development \u0026 Code Tools/sre-engineer",
+        "fileCount":  6
+    },
+    {
+        "slug":  "swift-expert",
+        "targetDir":  "public/SKILLS/Development \u0026 Code Tools/swift-expert",
+        "fileCount":  6
+    },
+    {
+        "slug":  "terraform-engineer",
+        "targetDir":  "public/SKILLS/Development \u0026 Code Tools/terraform-engineer",
+        "fileCount":  6
+    },
+    {
+        "slug":  "test-master",
+        "targetDir":  "public/SKILLS/Development \u0026 Code Tools/test-master",
+        "fileCount":  11
+    },
+    {
+        "slug":  "typescript-pro",
+        "targetDir":  "public/SKILLS/Development \u0026 Code Tools/typescript-pro",
+        "fileCount":  6
+    },
+    {
+        "slug":  "vue-expert",
+        "targetDir":  "public/SKILLS/Development \u0026 Code Tools/vue-expert",
+        "fileCount":  8
+    },
+    {
+        "slug":  "vue-expert-js",
+        "targetDir":  "public/SKILLS/Development \u0026 Code Tools/vue-expert-js",
+        "fileCount":  6
+    },
+    {
+        "slug":  "websocket-engineer",
+        "targetDir":  "public/SKILLS/Development \u0026 Code Tools/websocket-engineer",
+        "fileCount":  6
+    },
+    {
+        "slug":  "wordpress-pro",
+        "targetDir":  "public/SKILLS/Development \u0026 Code Tools/wordpress-pro",
+        "fileCount":  6
+    },
+    {
+        "slug":  "imaging-data-commons",
+        "targetDir":  "public/SKILLS/Health \u0026 Life Sciences/imaging-data-commons",
+        "fileCount":  10
+    },
+    {
+        "slug":  "aws-agentic-ai",
+        "targetDir":  "public/SKILLS/Infrastructure \u0026 Cloud/aws-agentic-ai",
+        "fileCount":  13
+    },
+    {
+        "slug":  "aws-cdk-development",
+        "targetDir":  "public/SKILLS/Infrastructure \u0026 Cloud/aws-cdk-development",
+        "fileCount":  3
+    },
+    {
+        "slug":  "aws-cost-operations",
+        "targetDir":  "public/SKILLS/Infrastructure \u0026 Cloud/aws-cost-operations",
+        "fileCount":  3
+    },
+    {
+        "slug":  "aws-mcp-setup",
+        "targetDir":  "public/SKILLS/Infrastructure \u0026 Cloud/aws-mcp-setup",
+        "fileCount":  1
+    },
+    {
+        "slug":  "aws-serverless-eda",
+        "targetDir":  "public/SKILLS/Infrastructure \u0026 Cloud/aws-serverless-eda",
+        "fileCount":  7
+    },
+    {
+        "slug":  "notebooklm",
+        "targetDir":  "public/SKILLS/Learning \u0026 Knowledge/notebooklm",
+        "fileCount":  13
+    },
+    {
+        "slug":  "game-developer",
+        "targetDir":  "public/SKILLS/Media \u0026 Content/game-developer",
+        "fileCount":  6
+    },
+    {
+        "slug":  "chaos-engineer",
+        "targetDir":  "public/SKILLS/Security \u0026 Web Testing/chaos-engineer",
+        "fileCount":  6
+    },
+    {
+        "slug":  "playwright-expert",
+        "targetDir":  "public/SKILLS/Security \u0026 Web Testing/playwright-expert",
+        "fileCount":  6
+    },
+    {
+        "slug":  "secure-code-guardian",
+        "targetDir":  "public/SKILLS/Security \u0026 Web Testing/secure-code-guardian",
+        "fileCount":  6
+    },
+    {
+        "slug":  "security-reviewer",
+        "targetDir":  "public/SKILLS/Security \u0026 Web Testing/security-reviewer",
+        "fileCount":  7
+    },
+    {
+        "slug":  "mcp-developer",
+        "targetDir":  "public/SKILLS/Utility \u0026 Automation/mcp-developer",
+        "fileCount":  6
+    },
+    {
+        "slug":  "prompt-engineer",
+        "targetDir":  "public/SKILLS/Utility \u0026 Automation/prompt-engineer",
+        "fileCount":  6
+    },
+    {
+        "slug":  "skill-creator",
+        "targetDir":  "public/SKILLS/Utility \u0026 Automation/skill-creator",
+        "fileCount":  18
+    },
+    {
+        "slug":  "dapp-integration",
+        "targetDir":  "public/SKILLS/Web3 \u0026 Blockchain/dapp-integration",
+        "fileCount":  1
+    },
+    {
+        "slug":  "decibel",
+        "targetDir":  "public/SKILLS/Web3 \u0026 Blockchain/decibel",
+        "fileCount":  1
+    },
+    {
+        "slug":  "framework",
+        "targetDir":  "public/SKILLS/Web3 \u0026 Blockchain/framework",
+        "fileCount":  1
+    },
+    {
+        "slug":  "gas-optimization",
+        "targetDir":  "public/SKILLS/Web3 \u0026 Blockchain/gas-optimization",
+        "fileCount":  1
+    },
+    {
+        "slug":  "move-code-quality-skill",
+        "targetDir":  "public/SKILLS/Web3 \u0026 Blockchain/move-code-quality-skill",
+        "fileCount":  5
+    },
+    {
+        "slug":  "move-language",
+        "targetDir":  "public/SKILLS/Web3 \u0026 Blockchain/move-language",
+        "fileCount":  1
+    },
+    {
+        "slug":  "move-prover",
+        "targetDir":  "public/SKILLS/Web3 \u0026 Blockchain/move-prover",
+        "fileCount":  1
+    },
+    {
+        "slug":  "move-testing",
+        "targetDir":  "public/SKILLS/Web3 \u0026 Blockchain/move-testing",
+        "fileCount":  1
+    },
+    {
+        "slug":  "object-model",
+        "targetDir":  "public/SKILLS/Web3 \u0026 Blockchain/object-model",
+        "fileCount":  1
+    },
+    {
+        "slug":  "shelby",
+        "targetDir":  "public/SKILLS/Web3 \u0026 Blockchain/shelby",
+        "fileCount":  1
+    },
+    {
+        "slug":  "token-standards",
+        "targetDir":  "public/SKILLS/Web3 \u0026 Blockchain/token-standards",
+        "fileCount":  1
+    }
+]

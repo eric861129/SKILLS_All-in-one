@@ -1,0 +1,62 @@
+{
+  "scannedSkills": 88,
+  "scannedAt": "2026-03-09T04:11:52.097Z",
+  "verdict": "PASS",
+  "risk": "Medium",
+  "findings": [
+    {
+      "slug": "postgres-pro",
+      "type": "destructive-rm",
+      "file": "public/SKILLS/Uncategorized/tmp-update-postgres-pro/references/replication.md",
+      "line": 36,
+      "snippet": "rm -rf",
+      "severity": "Warning",
+      "description": "Destructive filesystem removal command."
+    },
+    {
+      "slug": "debugging-wizard",
+      "type": "destructive-rm",
+      "file": "public/SKILLS/Uncategorized/tmp-update-debugging-wizard/references/quick-fixes.md",
+      "line": 136,
+      "snippet": "rm -rf",
+      "severity": "Warning",
+      "description": "Destructive filesystem removal command."
+    },
+    {
+      "slug": "golang-pro",
+      "type": "destructive-rm",
+      "file": "public/SKILLS/Uncategorized/tmp-update-golang-pro/references/project-structure.md",
+      "line": 280,
+      "snippet": "rm -rf",
+      "severity": "Warning",
+      "description": "Destructive filesystem removal command."
+    },
+    {
+      "slug": "kubernetes-specialist",
+      "type": "private-key",
+      "file": "public/SKILLS/Uncategorized/tmp-update-kubernetes-specialist/references/configuration.md",
+      "line": 98,
+      "snippet": "BEGIN PRIVATE KEY",
+      "severity": "Warning",
+      "description": "Embedded private key material."
+    },
+    {
+      "slug": "kubernetes-specialist",
+      "type": "remote-pipe-exec",
+      "file": "public/SKILLS/Uncategorized/tmp-update-kubernetes-specialist/references/multi-cluster.md",
+      "line": 151,
+      "snippet": "curl -Ls https://get.submariner.io | bash",
+      "severity": "Warning",
+      "description": "Remote script download piped directly into a shell."
+    },
+    {
+      "slug": "kubernetes-specialist",
+      "type": "remote-pipe-exec",
+      "file": "public/SKILLS/Uncategorized/tmp-update-kubernetes-specialist/references/service-mesh.md",
+      "line": 9,
+      "snippet": "curl -L https://istio.io/downloadIstio | sh",
+      "severity": "Warning",
+      "description": "Remote script download piped directly into a shell."
+    }
+  ]
+}

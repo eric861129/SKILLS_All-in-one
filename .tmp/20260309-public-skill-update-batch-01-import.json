@@ -1,0 +1,794 @@
+﻿[
+    {
+        "slug":  "atlassian-mcp",
+        "category":  "Collaboration \u0026 Project Management",
+        "repo":  "Jeffallan/claude-skills",
+        "branch":  "main",
+        "remoteDir":  "skills/atlassian-mcp",
+        "tempDir":  "public/SKILLS/Uncategorized/tmp-update-atlassian-mcp",
+        "fileCount":  6
+    },
+    {
+        "slug":  "feature-forge",
+        "category":  "Collaboration \u0026 Project Management",
+        "repo":  "Jeffallan/claude-skills",
+        "branch":  "main",
+        "remoteDir":  "skills/feature-forge",
+        "tempDir":  "public/SKILLS/Uncategorized/tmp-update-feature-forge",
+        "fileCount":  6
+    },
+    {
+        "slug":  "database-optimizer",
+        "category":  "Data \u0026 Analysis",
+        "repo":  "Jeffallan/claude-skills",
+        "branch":  "main",
+        "remoteDir":  "skills/database-optimizer",
+        "tempDir":  "public/SKILLS/Uncategorized/tmp-update-database-optimizer",
+        "fileCount":  6
+    },
+    {
+        "slug":  "fine-tuning-expert",
+        "category":  "Data \u0026 Analysis",
+        "repo":  "Jeffallan/claude-skills",
+        "branch":  "main",
+        "remoteDir":  "skills/fine-tuning-expert",
+        "tempDir":  "public/SKILLS/Uncategorized/tmp-update-fine-tuning-expert",
+        "fileCount":  6
+    },
+    {
+        "slug":  "geomaster",
+        "category":  "Data \u0026 Analysis",
+        "repo":  "K-Dense-AI/claude-scientific-skills",
+        "branch":  "main",
+        "remoteDir":  "scientific-skills/geomaster",
+        "tempDir":  "public/SKILLS/Uncategorized/tmp-update-geomaster",
+        "fileCount":  16
+    },
+    {
+        "slug":  "ml-pipeline",
+        "category":  "Data \u0026 Analysis",
+        "repo":  "jeffallan/claude-skills",
+        "branch":  "main",
+        "remoteDir":  "skills/ml-pipeline",
+        "tempDir":  "public/SKILLS/Uncategorized/tmp-update-ml-pipeline",
+        "fileCount":  6
+    },
+    {
+        "slug":  "pandas-pro",
+        "category":  "Data \u0026 Analysis",
+        "repo":  "jeffallan/claude-skills",
+        "branch":  "main",
+        "remoteDir":  "skills/pandas-pro",
+        "tempDir":  "public/SKILLS/Uncategorized/tmp-update-pandas-pro",
+        "fileCount":  6
+    },
+    {
+        "slug":  "postgres-pro",
+        "category":  "Data \u0026 Analysis",
+        "repo":  "Jeffallan/claude-skills",
+        "branch":  "main",
+        "remoteDir":  "skills/postgres-pro",
+        "tempDir":  "public/SKILLS/Uncategorized/tmp-update-postgres-pro",
+        "fileCount":  6
+    },
+    {
+        "slug":  "rag-architect",
+        "category":  "Data \u0026 Analysis",
+        "repo":  "Jeffallan/claude-skills",
+        "branch":  "main",
+        "remoteDir":  "skills/rag-architect",
+        "tempDir":  "public/SKILLS/Uncategorized/tmp-update-rag-architect",
+        "fileCount":  6
+    },
+    {
+        "slug":  "spark-engineer",
+        "category":  "Data \u0026 Analysis",
+        "repo":  "Jeffallan/claude-skills",
+        "branch":  "main",
+        "remoteDir":  "skills/spark-engineer",
+        "tempDir":  "public/SKILLS/Uncategorized/tmp-update-spark-engineer",
+        "fileCount":  6
+    },
+    {
+        "slug":  "sql-pro",
+        "category":  "Data \u0026 Analysis",
+        "repo":  "Jeffallan/claude-skills",
+        "branch":  "main",
+        "remoteDir":  "skills/sql-pro",
+        "tempDir":  "public/SKILLS/Uncategorized/tmp-update-sql-pro",
+        "fileCount":  6
+    },
+    {
+        "slug":  "x-twitter-scraper",
+        "category":  "Data \u0026 Analysis",
+        "repo":  "Xquik-dev/x-twitter-scraper",
+        "branch":  "master",
+        "remoteDir":  "skills/x-twitter-scraper",
+        "tempDir":  "public/SKILLS/Uncategorized/tmp-update-x-twitter-scraper",
+        "fileCount":  9
+    },
+    {
+        "slug":  "angular-architect",
+        "category":  "Development \u0026 Code Tools",
+        "repo":  "Jeffallan/claude-skills",
+        "branch":  "main",
+        "remoteDir":  "skills/angular-architect",
+        "tempDir":  "public/SKILLS/Uncategorized/tmp-update-angular-architect",
+        "fileCount":  6
+    },
+    {
+        "slug":  "api-designer",
+        "category":  "Development \u0026 Code Tools",
+        "repo":  "Jeffallan/claude-skills",
+        "branch":  "main",
+        "remoteDir":  "skills/api-designer",
+        "tempDir":  "public/SKILLS/Uncategorized/tmp-update-api-designer",
+        "fileCount":  6
+    },
+    {
+        "slug":  "architecture-designer",
+        "category":  "Development \u0026 Code Tools",
+        "repo":  "Jeffallan/claude-skills",
+        "branch":  "main",
+        "remoteDir":  "skills/architecture-designer",
+        "tempDir":  "public/SKILLS/Uncategorized/tmp-update-architecture-designer",
+        "fileCount":  6
+    },
+    {
+        "slug":  "claude-mcp-expert",
+        "category":  "Development \u0026 Code Tools",
+        "repo":  "raintree-technology/claude-starter",
+        "branch":  "main",
+        "remoteDir":  ".claude/skills/anthropic/claude-mcp-expert",
+        "tempDir":  "public/SKILLS/Uncategorized/tmp-update-claude-mcp-expert",
+        "fileCount":  2
+    },
+    {
+        "slug":  "cli-developer",
+        "category":  "Development \u0026 Code Tools",
+        "repo":  "Jeffallan/claude-skills",
+        "branch":  "main",
+        "remoteDir":  "skills/cli-developer",
+        "tempDir":  "public/SKILLS/Uncategorized/tmp-update-cli-developer",
+        "fileCount":  6
+    },
+    {
+        "slug":  "cloud-architect",
+        "category":  "Development \u0026 Code Tools",
+        "repo":  "Jeffallan/claude-skills",
+        "branch":  "main",
+        "remoteDir":  "skills/cloud-architect",
+        "tempDir":  "public/SKILLS/Uncategorized/tmp-update-cloud-architect",
+        "fileCount":  6
+    },
+    {
+        "slug":  "code-documenter",
+        "category":  "Development \u0026 Code Tools",
+        "repo":  "Jeffallan/claude-skills",
+        "branch":  "main",
+        "remoteDir":  "skills/code-documenter",
+        "tempDir":  "public/SKILLS/Uncategorized/tmp-update-code-documenter",
+        "fileCount":  9
+    },
+    {
+        "slug":  "code-reviewer",
+        "category":  "Development \u0026 Code Tools",
+        "repo":  "Jeffallan/claude-skills",
+        "branch":  "main",
+        "remoteDir":  "skills/code-reviewer",
+        "tempDir":  "public/SKILLS/Uncategorized/tmp-update-code-reviewer",
+        "fileCount":  7
+    },
+    {
+        "slug":  "cpp-pro",
+        "category":  "Development \u0026 Code Tools",
+        "repo":  "Jeffallan/claude-skills",
+        "branch":  "main",
+        "remoteDir":  "skills/cpp-pro",
+        "tempDir":  "public/SKILLS/Uncategorized/tmp-update-cpp-pro",
+        "fileCount":  6
+    },
+    {
+        "slug":  "csharp-developer",
+        "category":  "Development \u0026 Code Tools",
+        "repo":  "Jeffallan/claude-skills",
+        "branch":  "main",
+        "remoteDir":  "skills/csharp-developer",
+        "tempDir":  "public/SKILLS/Uncategorized/tmp-update-csharp-developer",
+        "fileCount":  6
+    },
+    {
+        "slug":  "debugging-wizard",
+        "category":  "Development \u0026 Code Tools",
+        "repo":  "Jeffallan/claude-skills",
+        "branch":  "main",
+        "remoteDir":  "skills/debugging-wizard",
+        "tempDir":  "public/SKILLS/Uncategorized/tmp-update-debugging-wizard",
+        "fileCount":  6
+    },
+    {
+        "slug":  "devops-engineer",
+        "category":  "Development \u0026 Code Tools",
+        "repo":  "Jeffallan/claude-skills",
+        "branch":  "main",
+        "remoteDir":  "skills/devops-engineer",
+        "tempDir":  "public/SKILLS/Uncategorized/tmp-update-devops-engineer",
+        "fileCount":  9
+    },
+    {
+        "slug":  "django-expert",
+        "category":  "Development \u0026 Code Tools",
+        "repo":  "Jeffallan/claude-skills",
+        "branch":  "main",
+        "remoteDir":  "skills/django-expert",
+        "tempDir":  "public/SKILLS/Uncategorized/tmp-update-django-expert",
+        "fileCount":  6
+    },
+    {
+        "slug":  "dotnet-core-expert",
+        "category":  "Development \u0026 Code Tools",
+        "repo":  "Jeffallan/claude-skills",
+        "branch":  "main",
+        "remoteDir":  "skills/dotnet-core-expert",
+        "tempDir":  "public/SKILLS/Uncategorized/tmp-update-dotnet-core-expert",
+        "fileCount":  6
+    },
+    {
+        "slug":  "embedded-systems",
+        "category":  "Development \u0026 Code Tools",
+        "repo":  "Jeffallan/claude-skills",
+        "branch":  "main",
+        "remoteDir":  "skills/embedded-systems",
+        "tempDir":  "public/SKILLS/Uncategorized/tmp-update-embedded-systems",
+        "fileCount":  6
+    },
+    {
+        "slug":  "fastapi-expert",
+        "category":  "Development \u0026 Code Tools",
+        "repo":  "Jeffallan/claude-skills",
+        "branch":  "main",
+        "remoteDir":  "skills/fastapi-expert",
+        "tempDir":  "public/SKILLS/Uncategorized/tmp-update-fastapi-expert",
+        "fileCount":  7
+    },
+    {
+        "slug":  "flutter-expert",
+        "category":  "Development \u0026 Code Tools",
+        "repo":  "Jeffallan/claude-skills",
+        "branch":  "main",
+        "remoteDir":  "skills/flutter-expert",
+        "tempDir":  "public/SKILLS/Uncategorized/tmp-update-flutter-expert",
+        "fileCount":  7
+    },
+    {
+        "slug":  "frontend-design",
+        "category":  "Development \u0026 Code Tools",
+        "repo":  "anthropics/claude-code",
+        "branch":  "main",
+        "remoteDir":  "plugins/frontend-design/skills/frontend-design",
+        "tempDir":  "public/SKILLS/Uncategorized/tmp-update-frontend-design",
+        "fileCount":  1
+    },
+    {
+        "slug":  "fullstack-guardian",
+        "category":  "Development \u0026 Code Tools",
+        "repo":  "Jeffallan/claude-skills",
+        "branch":  "main",
+        "remoteDir":  "skills/fullstack-guardian",
+        "tempDir":  "public/SKILLS/Uncategorized/tmp-update-fullstack-guardian",
+        "fileCount":  11
+    },
+    {
+        "slug":  "golang-pro",
+        "category":  "Development \u0026 Code Tools",
+        "repo":  "Jeffallan/claude-skills",
+        "branch":  "main",
+        "remoteDir":  "skills/golang-pro",
+        "tempDir":  "public/SKILLS/Uncategorized/tmp-update-golang-pro",
+        "fileCount":  6
+    },
+    {
+        "slug":  "graphql-architect",
+        "category":  "Development \u0026 Code Tools",
+        "repo":  "Jeffallan/claude-skills",
+        "branch":  "main",
+        "remoteDir":  "skills/graphql-architect",
+        "tempDir":  "public/SKILLS/Uncategorized/tmp-update-graphql-architect",
+        "fileCount":  7
+    },
+    {
+        "slug":  "java-architect",
+        "category":  "Development \u0026 Code Tools",
+        "repo":  "Jeffallan/claude-skills",
+        "branch":  "main",
+        "remoteDir":  "skills/java-architect",
+        "tempDir":  "public/SKILLS/Uncategorized/tmp-update-java-architect",
+        "fileCount":  6
+    },
+    {
+        "slug":  "javascript-pro",
+        "category":  "Development \u0026 Code Tools",
+        "repo":  "jeffallan/claude-skills",
+        "branch":  "main",
+        "remoteDir":  "skills/javascript-pro",
+        "tempDir":  "public/SKILLS/Uncategorized/tmp-update-javascript-pro",
+        "fileCount":  6
+    },
+    {
+        "slug":  "kotlin-specialist",
+        "category":  "Development \u0026 Code Tools",
+        "repo":  "jeffallan/claude-skills",
+        "branch":  "main",
+        "remoteDir":  "skills/kotlin-specialist",
+        "tempDir":  "public/SKILLS/Uncategorized/tmp-update-kotlin-specialist",
+        "fileCount":  6
+    },
+    {
+        "slug":  "kubernetes-specialist",
+        "category":  "Development \u0026 Code Tools",
+        "repo":  "jeffallan/claude-skills",
+        "branch":  "main",
+        "remoteDir":  "skills/kubernetes-specialist",
+        "tempDir":  "public/SKILLS/Uncategorized/tmp-update-kubernetes-specialist",
+        "fileCount":  12
+    },
+    {
+        "slug":  "laravel-specialist",
+        "category":  "Development \u0026 Code Tools",
+        "repo":  "jeffallan/claude-skills",
+        "branch":  "main",
+        "remoteDir":  "skills/laravel-specialist",
+        "tempDir":  "public/SKILLS/Uncategorized/tmp-update-laravel-specialist",
+        "fileCount":  6
+    },
+    {
+        "slug":  "legacy-modernizer",
+        "category":  "Development \u0026 Code Tools",
+        "repo":  "jeffallan/claude-skills",
+        "branch":  "main",
+        "remoteDir":  "skills/legacy-modernizer",
+        "tempDir":  "public/SKILLS/Uncategorized/tmp-update-legacy-modernizer",
+        "fileCount":  6
+    },
+    {
+        "slug":  "microservices-architect",
+        "category":  "Development \u0026 Code Tools",
+        "repo":  "jeffallan/claude-skills",
+        "branch":  "main",
+        "remoteDir":  "skills/microservices-architect",
+        "tempDir":  "public/SKILLS/Uncategorized/tmp-update-microservices-architect",
+        "fileCount":  6
+    },
+    {
+        "slug":  "monitoring-expert",
+        "category":  "Development \u0026 Code Tools",
+        "repo":  "jeffallan/claude-skills",
+        "branch":  "main",
+        "remoteDir":  "skills/monitoring-expert",
+        "tempDir":  "public/SKILLS/Uncategorized/tmp-update-monitoring-expert",
+        "fileCount":  9
+    },
+    {
+        "slug":  "nestjs-expert",
+        "category":  "Development \u0026 Code Tools",
+        "repo":  "jeffallan/claude-skills",
+        "branch":  "main",
+        "remoteDir":  "skills/nestjs-expert",
+        "tempDir":  "public/SKILLS/Uncategorized/tmp-update-nestjs-expert",
+        "fileCount":  7
+    },
+    {
+        "slug":  "nextjs-developer",
+        "category":  "Development \u0026 Code Tools",
+        "repo":  "jeffallan/claude-skills",
+        "branch":  "main",
+        "remoteDir":  "skills/nextjs-developer",
+        "tempDir":  "public/SKILLS/Uncategorized/tmp-update-nextjs-developer",
+        "fileCount":  6
+    },
+    {
+        "slug":  "php-pro",
+        "category":  "Development \u0026 Code Tools",
+        "repo":  "Jeffallan/claude-skills",
+        "branch":  "main",
+        "remoteDir":  "skills/php-pro",
+        "tempDir":  "public/SKILLS/Uncategorized/tmp-update-php-pro",
+        "fileCount":  6
+    },
+    {
+        "slug":  "python-pro",
+        "category":  "Development \u0026 Code Tools",
+        "repo":  "Jeffallan/claude-skills",
+        "branch":  "main",
+        "remoteDir":  "skills/python-pro",
+        "tempDir":  "public/SKILLS/Uncategorized/tmp-update-python-pro",
+        "fileCount":  6
+    },
+    {
+        "slug":  "rails-expert",
+        "category":  "Development \u0026 Code Tools",
+        "repo":  "Jeffallan/claude-skills",
+        "branch":  "main",
+        "remoteDir":  "skills/rails-expert",
+        "tempDir":  "public/SKILLS/Uncategorized/tmp-update-rails-expert",
+        "fileCount":  6
+    },
+    {
+        "slug":  "react-expert",
+        "category":  "Development \u0026 Code Tools",
+        "repo":  "Jeffallan/claude-skills",
+        "branch":  "main",
+        "remoteDir":  "skills/react-expert",
+        "tempDir":  "public/SKILLS/Uncategorized/tmp-update-react-expert",
+        "fileCount":  8
+    },
+    {
+        "slug":  "react-native-expert",
+        "category":  "Development \u0026 Code Tools",
+        "repo":  "Jeffallan/claude-skills",
+        "branch":  "main",
+        "remoteDir":  "skills/react-native-expert",
+        "tempDir":  "public/SKILLS/Uncategorized/tmp-update-react-native-expert",
+        "fileCount":  6
+    },
+    {
+        "slug":  "rust-engineer",
+        "category":  "Development \u0026 Code Tools",
+        "repo":  "Jeffallan/claude-skills",
+        "branch":  "main",
+        "remoteDir":  "skills/rust-engineer",
+        "tempDir":  "public/SKILLS/Uncategorized/tmp-update-rust-engineer",
+        "fileCount":  6
+    },
+    {
+        "slug":  "salesforce-developer",
+        "category":  "Development \u0026 Code Tools",
+        "repo":  "Jeffallan/claude-skills",
+        "branch":  "main",
+        "remoteDir":  "skills/salesforce-developer",
+        "tempDir":  "public/SKILLS/Uncategorized/tmp-update-salesforce-developer",
+        "fileCount":  6
+    },
+    {
+        "slug":  "shopify-expert",
+        "category":  "Development \u0026 Code Tools",
+        "repo":  "Jeffallan/claude-skills",
+        "branch":  "main",
+        "remoteDir":  "skills/shopify-expert",
+        "tempDir":  "public/SKILLS/Uncategorized/tmp-update-shopify-expert",
+        "fileCount":  6
+    },
+    {
+        "slug":  "spec-miner",
+        "category":  "Development \u0026 Code Tools",
+        "repo":  "Jeffallan/claude-skills",
+        "branch":  "main",
+        "remoteDir":  "skills/spec-miner",
+        "tempDir":  "public/SKILLS/Uncategorized/tmp-update-spec-miner",
+        "fileCount":  5
+    },
+    {
+        "slug":  "spring-boot-engineer",
+        "category":  "Development \u0026 Code Tools",
+        "repo":  "Jeffallan/claude-skills",
+        "branch":  "main",
+        "remoteDir":  "skills/spring-boot-engineer",
+        "tempDir":  "public/SKILLS/Uncategorized/tmp-update-spring-boot-engineer",
+        "fileCount":  6
+    },
+    {
+        "slug":  "sre-engineer",
+        "category":  "Development \u0026 Code Tools",
+        "repo":  "Jeffallan/claude-skills",
+        "branch":  "main",
+        "remoteDir":  "skills/sre-engineer",
+        "tempDir":  "public/SKILLS/Uncategorized/tmp-update-sre-engineer",
+        "fileCount":  6
+    },
+    {
+        "slug":  "swift-expert",
+        "category":  "Development \u0026 Code Tools",
+        "repo":  "Jeffallan/claude-skills",
+        "branch":  "main",
+        "remoteDir":  "skills/swift-expert",
+        "tempDir":  "public/SKILLS/Uncategorized/tmp-update-swift-expert",
+        "fileCount":  6
+    },
+    {
+        "slug":  "terraform-engineer",
+        "category":  "Development \u0026 Code Tools",
+        "repo":  "Jeffallan/claude-skills",
+        "branch":  "main",
+        "remoteDir":  "skills/terraform-engineer",
+        "tempDir":  "public/SKILLS/Uncategorized/tmp-update-terraform-engineer",
+        "fileCount":  6
+    },
+    {
+        "slug":  "test-master",
+        "category":  "Development \u0026 Code Tools",
+        "repo":  "Jeffallan/claude-skills",
+        "branch":  "main",
+        "remoteDir":  "skills/test-master",
+        "tempDir":  "public/SKILLS/Uncategorized/tmp-update-test-master",
+        "fileCount":  11
+    },
+    {
+        "slug":  "typescript-pro",
+        "category":  "Development \u0026 Code Tools",
+        "repo":  "Jeffallan/claude-skills",
+        "branch":  "main",
+        "remoteDir":  "skills/typescript-pro",
+        "tempDir":  "public/SKILLS/Uncategorized/tmp-update-typescript-pro",
+        "fileCount":  6
+    },
+    {
+        "slug":  "vue-expert",
+        "category":  "Development \u0026 Code Tools",
+        "repo":  "Jeffallan/claude-skills",
+        "branch":  "main",
+        "remoteDir":  "skills/vue-expert",
+        "tempDir":  "public/SKILLS/Uncategorized/tmp-update-vue-expert",
+        "fileCount":  8
+    },
+    {
+        "slug":  "vue-expert-js",
+        "category":  "Development \u0026 Code Tools",
+        "repo":  "Jeffallan/claude-skills",
+        "branch":  "main",
+        "remoteDir":  "skills/vue-expert-js",
+        "tempDir":  "public/SKILLS/Uncategorized/tmp-update-vue-expert-js",
+        "fileCount":  6
+    },
+    {
+        "slug":  "websocket-engineer",
+        "category":  "Development \u0026 Code Tools",
+        "repo":  "Jeffallan/claude-skills",
+        "branch":  "main",
+        "remoteDir":  "skills/websocket-engineer",
+        "tempDir":  "public/SKILLS/Uncategorized/tmp-update-websocket-engineer",
+        "fileCount":  6
+    },
+    {
+        "slug":  "wordpress-pro",
+        "category":  "Development \u0026 Code Tools",
+        "repo":  "Jeffallan/claude-skills",
+        "branch":  "main",
+        "remoteDir":  "skills/wordpress-pro",
+        "tempDir":  "public/SKILLS/Uncategorized/tmp-update-wordpress-pro",
+        "fileCount":  6
+    },
+    {
+        "slug":  "imaging-data-commons",
+        "category":  "Health \u0026 Life Sciences",
+        "repo":  "k-dense-ai/claude-scientific-skills",
+        "branch":  "main",
+        "remoteDir":  "scientific-skills/imaging-data-commons",
+        "tempDir":  "public/SKILLS/Uncategorized/tmp-update-imaging-data-commons",
+        "fileCount":  10
+    },
+    {
+        "slug":  "aws-agentic-ai",
+        "category":  "Infrastructure \u0026 Cloud",
+        "repo":  "zxkane/aws-skills",
+        "branch":  "main",
+        "remoteDir":  "plugins/aws-agentic-ai/skills/aws-agentic-ai",
+        "tempDir":  "public/SKILLS/Uncategorized/tmp-update-aws-agentic-ai",
+        "fileCount":  13
+    },
+    {
+        "slug":  "aws-cdk-development",
+        "category":  "Infrastructure \u0026 Cloud",
+        "repo":  "zxkane/aws-skills",
+        "branch":  "main",
+        "remoteDir":  "plugins/aws-cdk/skills/aws-cdk-development",
+        "tempDir":  "public/SKILLS/Uncategorized/tmp-update-aws-cdk-development",
+        "fileCount":  3
+    },
+    {
+        "slug":  "aws-cost-operations",
+        "category":  "Infrastructure \u0026 Cloud",
+        "repo":  "zxkane/aws-skills",
+        "branch":  "main",
+        "remoteDir":  "plugins/aws-cost-ops/skills/aws-cost-operations",
+        "tempDir":  "public/SKILLS/Uncategorized/tmp-update-aws-cost-operations",
+        "fileCount":  3
+    },
+    {
+        "slug":  "aws-mcp-setup",
+        "category":  "Infrastructure \u0026 Cloud",
+        "repo":  "zxkane/aws-skills",
+        "branch":  "main",
+        "remoteDir":  "plugins/aws-common/skills/aws-mcp-setup",
+        "tempDir":  "public/SKILLS/Uncategorized/tmp-update-aws-mcp-setup",
+        "fileCount":  1
+    },
+    {
+        "slug":  "aws-serverless-eda",
+        "category":  "Infrastructure \u0026 Cloud",
+        "repo":  "zxkane/aws-skills",
+        "branch":  "main",
+        "remoteDir":  "plugins/serverless-eda/skills/aws-serverless-eda",
+        "tempDir":  "public/SKILLS/Uncategorized/tmp-update-aws-serverless-eda",
+        "fileCount":  7
+    },
+    {
+        "slug":  "notebooklm",
+        "category":  "Learning \u0026 Knowledge",
+        "repo":  "sanjay3290/ai-skills",
+        "branch":  "main",
+        "remoteDir":  "skills/notebooklm",
+        "tempDir":  "public/SKILLS/Uncategorized/tmp-update-notebooklm",
+        "fileCount":  13
+    },
+    {
+        "slug":  "game-developer",
+        "category":  "Media \u0026 Content",
+        "repo":  "Jeffallan/claude-skills",
+        "branch":  "main",
+        "remoteDir":  "skills/game-developer",
+        "tempDir":  "public/SKILLS/Uncategorized/tmp-update-game-developer",
+        "fileCount":  6
+    },
+    {
+        "slug":  "chaos-engineer",
+        "category":  "Security \u0026 Web Testing",
+        "repo":  "Jeffallan/claude-skills",
+        "branch":  "main",
+        "remoteDir":  "skills/chaos-engineer",
+        "tempDir":  "public/SKILLS/Uncategorized/tmp-update-chaos-engineer",
+        "fileCount":  6
+    },
+    {
+        "slug":  "playwright-expert",
+        "category":  "Security \u0026 Web Testing",
+        "repo":  "jeffallan/claude-skills",
+        "branch":  "main",
+        "remoteDir":  "skills/playwright-expert",
+        "tempDir":  "public/SKILLS/Uncategorized/tmp-update-playwright-expert",
+        "fileCount":  6
+    },
+    {
+        "slug":  "secure-code-guardian",
+        "category":  "Security \u0026 Web Testing",
+        "repo":  "Jeffallan/claude-skills",
+        "branch":  "main",
+        "remoteDir":  "skills/secure-code-guardian",
+        "tempDir":  "public/SKILLS/Uncategorized/tmp-update-secure-code-guardian",
+        "fileCount":  6
+    },
+    {
+        "slug":  "security-reviewer",
+        "category":  "Security \u0026 Web Testing",
+        "repo":  "Jeffallan/claude-skills",
+        "branch":  "main",
+        "remoteDir":  "skills/security-reviewer",
+        "tempDir":  "public/SKILLS/Uncategorized/tmp-update-security-reviewer",
+        "fileCount":  7
+    },
+    {
+        "slug":  "mcp-developer",
+        "category":  "Utility \u0026 Automation",
+        "repo":  "jeffallan/claude-skills",
+        "branch":  "main",
+        "remoteDir":  "skills/mcp-developer",
+        "tempDir":  "public/SKILLS/Uncategorized/tmp-update-mcp-developer",
+        "fileCount":  6
+    },
+    {
+        "slug":  "prompt-engineer",
+        "category":  "Utility \u0026 Automation",
+        "repo":  "jeffallan/claude-skills",
+        "branch":  "main",
+        "remoteDir":  "skills/prompt-engineer",
+        "tempDir":  "public/SKILLS/Uncategorized/tmp-update-prompt-engineer",
+        "fileCount":  6
+    },
+    {
+        "slug":  "skill-creator",
+        "category":  "Utility \u0026 Automation",
+        "repo":  "anthropics/skills",
+        "branch":  "main",
+        "remoteDir":  "skills/skill-creator",
+        "tempDir":  "public/SKILLS/Uncategorized/tmp-update-skill-creator",
+        "fileCount":  18
+    },
+    {
+        "slug":  "dapp-integration",
+        "category":  "Web3 \u0026 Blockchain",
+        "repo":  "raintree-technology/claude-starter",
+        "branch":  "main",
+        "remoteDir":  "skills/aptos/dapp-integration",
+        "tempDir":  "public/SKILLS/Uncategorized/tmp-update-dapp-integration",
+        "fileCount":  1
+    },
+    {
+        "slug":  "decibel",
+        "category":  "Web3 \u0026 Blockchain",
+        "repo":  "raintree-technology/claude-starter",
+        "branch":  "main",
+        "remoteDir":  "skills/aptos/decibel",
+        "tempDir":  "public/SKILLS/Uncategorized/tmp-update-decibel",
+        "fileCount":  1
+    },
+    {
+        "slug":  "framework",
+        "category":  "Web3 \u0026 Blockchain",
+        "repo":  "raintree-technology/claude-starter",
+        "branch":  "main",
+        "remoteDir":  "skills/aptos/framework",
+        "tempDir":  "public/SKILLS/Uncategorized/tmp-update-framework",
+        "fileCount":  1
+    },
+    {
+        "slug":  "gas-optimization",
+        "category":  "Web3 \u0026 Blockchain",
+        "repo":  "raintree-technology/claude-starter",
+        "branch":  "main",
+        "remoteDir":  "skills/aptos/gas-optimization",
+        "tempDir":  "public/SKILLS/Uncategorized/tmp-update-gas-optimization",
+        "fileCount":  1
+    },
+    {
+        "slug":  "move-code-quality-skill",
+        "category":  "Web3 \u0026 Blockchain",
+        "repo":  "1NickPappas/move-code-quality-skill",
+        "branch":  "main",
+        "remoteDir":  "",
+        "tempDir":  "public/SKILLS/Uncategorized/tmp-update-move-code-quality-skill",
+        "fileCount":  5
+    },
+    {
+        "slug":  "move-language",
+        "category":  "Web3 \u0026 Blockchain",
+        "repo":  "raintree-technology/claude-starter",
+        "branch":  "main",
+        "remoteDir":  "skills/aptos/move-language",
+        "tempDir":  "public/SKILLS/Uncategorized/tmp-update-move-language",
+        "fileCount":  1
+    },
+    {
+        "slug":  "move-prover",
+        "category":  "Web3 \u0026 Blockchain",
+        "repo":  "raintree-technology/claude-starter",
+        "branch":  "main",
+        "remoteDir":  "skills/aptos/move-prover",
+        "tempDir":  "public/SKILLS/Uncategorized/tmp-update-move-prover",
+        "fileCount":  1
+    },
+    {
+        "slug":  "move-testing",
+        "category":  "Web3 \u0026 Blockchain",
+        "repo":  "raintree-technology/claude-starter",
+        "branch":  "main",
+        "remoteDir":  "skills/aptos/move-testing",
+        "tempDir":  "public/SKILLS/Uncategorized/tmp-update-move-testing",
+        "fileCount":  1
+    },
+    {
+        "slug":  "object-model",
+        "category":  "Web3 \u0026 Blockchain",
+        "repo":  "raintree-technology/claude-starter",
+        "branch":  "main",
+        "remoteDir":  "skills/aptos/object-model",
+        "tempDir":  "public/SKILLS/Uncategorized/tmp-update-object-model",
+        "fileCount":  1
+    },
+    {
+        "slug":  "shelby",
+        "category":  "Web3 \u0026 Blockchain",
+        "repo":  "raintree-technology/claude-starter",
+        "branch":  "main",
+        "remoteDir":  "skills/aptos/shelby",
+        "tempDir":  "public/SKILLS/Uncategorized/tmp-update-shelby",
+        "fileCount":  1
+    },
+    {
+        "slug":  "token-standards",
+        "category":  "Web3 \u0026 Blockchain",
+        "repo":  "raintree-technology/claude-starter",
+        "branch":  "main",
+        "remoteDir":  "skills/aptos/token-standards",
+        "tempDir":  "public/SKILLS/Uncategorized/tmp-update-token-standards",
+        "fileCount":  1
+    }
+]

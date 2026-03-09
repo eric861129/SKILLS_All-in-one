@@ -17,9 +17,9 @@ The Runtime service provides a secure, serverless hosting environment for deploy
 ## Quick Start
 
 ### Prerequisites
-* AWS CLI configured with appropriate permissions
-* Docker installed for container builds
-* Python 3.9+ for SDK usage
+- AWS CLI configured with appropriate permissions
+- Docker installed for container builds
+- Python 3.9+ for SDK usage
 
 ### Deploy an Agent
 
@@ -63,30 +63,30 @@ aws bedrock-agentcore-runtime invoke-agent-runtime \
 
 ### AgentCore Runtime
 Containerized application hosting your AI agent or tool code. Each runtime:
-* Has a unique identity
-* Is versioned for controlled deployment and updates
-* Can use popular frameworks or custom implementations
+- Has a unique identity
+- Is versioned for controlled deployment and updates
+- Can use popular frameworks or custom implementations
 
 ### Versions
 Immutable snapshots of configuration:
-* Version 1 (V1) created automatically with new runtime
-* Each update creates a new version
-* Enables rollback capabilities
+- Version 1 (V1) created automatically with new runtime
+- Each update creates a new version
+- Enables rollback capabilities
 
 ### Endpoints
 Addressable access points to runtime versions:
-* **DEFAULT**: Automatically created, points to latest version
-* Custom endpoints for different environments (dev, test, prod)
-* Unique ARN for invocation
+- **DEFAULT**: Automatically created, points to latest version
+- Custom endpoints for different environments (dev, test, prod)
+- Unique ARN for invocation
 
 Endpoint states: `CREATING` → `READY` (or `CREATE_FAILED`) → `UPDATING` → `READY`
 
 ### Sessions
 Individual interaction contexts with complete isolation:
-* Dedicated microVM per session
-* Preserves context across interactions
-* Persists up to 8 hours
-* Auto-terminates after 15 minutes idle
+- Dedicated microVM per session
+- Preserves context across interactions
+- Persists up to 8 hours
+- Auto-terminates after 15 minutes idle
 
 Session states: `Active` → `Idle` → `Terminated`
 
@@ -114,8 +114,8 @@ Session states: `Active` → `Idle` → `Terminated`
 | **API Keys** | Key-based authentication |
 
 **Modes**:
-* **User-delegated**: Acting on behalf of end user
-* **Autonomous**: Acting with service-level credentials
+- **User-delegated**: Acting on behalf of end user
+- **Autonomous**: Acting with service-level credentials
 
 ## Common Operations
 
@@ -202,14 +202,14 @@ async def handle_request(request, context):
 
 ## Related Services
 
-* **[Gateway Service](../gateway/README.md)**: Expose APIs as tools for agents
-* **[Memory Service](../memory/README.md)**: Store agent conversation history
-* **[Identity Service](../identity/README.md)**: Manage agent credentials
-* **[Observability Service](../observability/README.md)**: Monitor agent performance
+- **[Gateway Service](../gateway/README.md)**: Expose APIs as tools for agents
+- **[Memory Service](../memory/README.md)**: Store agent conversation history
+- **[Identity Service](../identity/README.md)**: Manage agent credentials
+- **[Observability Service](../observability/README.md)**: Monitor agent performance
 
 ## References
 
-* [AWS Runtime Documentation](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/agents-tools-runtime.html)
-* [How Runtime Works](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtime-how-it-works.html)
-* [Runtime Troubleshooting](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtime-troubleshooting.html)
-* [Runtime API Reference](https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIReference/)
+- [AWS Runtime Documentation](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/agents-tools-runtime.html)
+- [How Runtime Works](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtime-how-it-works.html)
+- [Runtime Troubleshooting](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtime-troubleshooting.html)
+- [Runtime API Reference](https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIReference/)

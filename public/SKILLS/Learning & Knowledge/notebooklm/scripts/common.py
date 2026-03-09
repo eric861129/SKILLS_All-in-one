@@ -1,247 +1,272 @@
 #!/usr/bin/env python3
 """
-NotebookLM authentication manager using a persistent Playwright profile.
+Shared utilities for the NotebookLM skill scripts.
 """
 
 from __future__ import annotations
 
-import argparse
 import json
-import shutil
-import sys
-import time
+import os
+import re
+from datetime import datetime, timezone
 from pathlib import Path
-from typing import Dict, List
+from typing import Any, Dict, List, Optional, Tuple
 
-from playwright.sync_api import sync_playwright
+from playwright.sync_api import Error as PlaywrightError
 
-from common import (
- NOTEBOOKLM_AUTH_URL,
- NOTEBOOKLM_HOME_URL,
- ensure_data_dirs,
- get_data_dir,
- get_profile_dir,
- launch_persistent_context,
- sanitize_profile_name,
+
+NOTEBOOKLM_HOME_URL = "https://notebooklm.google.com/"
+NOTEBOOKLM_AUTH_URL = (
+    "https://accounts.google.com/v3/signin/identifier?"
+    "continue=https%3A%2F%2Fnotebooklm.google.com%2F&"
+    "flowName=GlifWebSignIn&flowEntry=ServiceLogin"
 )
 
-CRITICAL_COOKIE_NAMES = {
- "SID",
- "HSID",
- "SSID",
- "APISID",
- "SAPISID",
- "__Secure-1PSID",
- "__Secure-3PSID",
-}
+_NOTEBOOK_URL_PATTERN = re.compile(
+    r"^https://notebooklm\.google\.com/notebook/[A-Za-z0-9_-]+(?:[/?#].*)?$"
+)
 
-DEFAULT_AUTH_TIMEOUT_SEC = 600
-
-
-def _auth_status(profile: str) -> Dict:
- ensure_data_dirs()
- with sync_playwright() as p:
-  context = launch_persistent_context(p, headless=True, profile=profile)
-  page = context.new_page()
-  try:
-   page.goto(NOTEBOOKLM_HOME_URL, wait_until="domcontentloaded", timeout=60000)
-   page.wait_for_timeout(1500)
-   cookies = context.cookies()
-   critical = [c for c in cookies if c.get("name") in CRITICAL_COOKIE_NAMES]
-   current_url = page.url
-   authenticated = len(critical) > 0 and "accounts.google.com" not in current_url
-   return {
-    "authenticated": authenticated,
-    "profile": profile,
-    "profileDir": str(get_profile_dir(profile)),
-    "criticalCookieCount": len(critical),
-    "currentUrl": current_url,
-   }
-  finally:
-   context.close()
+DEFAULT_DATA_DIR = Path.home() / ".config" / "claude" / "notebooklm-skill"
+PROFILE_DIR_NAME = "chrome_profile"
+LIBRARY_FILE_NAME = "library.json"
+SOURCE_STATE_FILE_NAME = "source_state.json"
+ARTIFACTS_DIR_NAME = "artifacts"
+NOTES_DIR_NAME = "notes"
 
 
-def _setup_auth(timeout_seconds: int, profile: str) -> Dict:
- ensure_data_dirs()
- with sync_playwright() as p:
-  context = launch_persistent_context(p, headless=False, profile=profile)
-  page = context.new_page()
-  try:
-   page.goto(NOTEBOOKLM_AUTH_URL, wait_until="domcontentloaded", timeout=60000)
-   start = time.time()
-   while time.time() - start < timeout_seconds:
-    url = page.url
-    if url.startswith("https://notebooklm.google.com/") and "accounts.google.com" not in url:
-     page.wait_for_timeout(1500)
-     cookies = context.cookies()
-     critical = [c for c in cookies if c.get("name") in CRITICAL_COOKIE_NAMES]
-     return {
-      "authenticated": len(critical) > 0,
-      "profile": profile,
-      "profileDir": str(get_profile_dir(profile)),
-      "criticalCookieCount": len(critical),
-      "currentUrl": url,
-      "message": "Authentication appears complete.",
-     }
-    page.wait_for_timeout(1000)
-
-   return {
-    "authenticated": False,
-    "message": (
-     f"Timed out waiting for login after {timeout_seconds}s. "
-     "Run setup again and complete login in the opened browser."
-    ),
-    "profile": profile,
-    "profileDir": str(get_profile_dir(profile)),
-   }
-  finally:
-   context.close()
+def now_iso() -> str:
+    """Return current UTC timestamp in ISO format."""
+    return datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
 
 
-def _discover_profiles() -> List[Dict]:
- ensure_data_dirs()
- profiles: List[Dict] = []
+def get_data_dir() -> Path:
+    """Return configured data directory."""
+    override = os.environ.get("NOTEBOOKLM_DATA_DIR")
+    if override:
+        return Path(override).expanduser().resolve()
+    return DEFAULT_DATA_DIR
 
- default_dir = get_profile_dir("default")
- profiles.append(
-  {
-   "profile": "default",
-   "profileDir": str(default_dir),
-   "exists": default_dir.exists(),
-  }
- )
 
- profiles_dir = get_data_dir() / "profiles"
- if profiles_dir.exists():
-  for child in sorted(profiles_dir.iterdir()):
-   if not child.is_dir():
-    continue
-   profile_name = sanitize_profile_name(child.name)
-   profiles.append(
-    {
-     "profile": profile_name,
-     "profileDir": str(child),
-     "exists": True,
+def sanitize_profile_name(profile: Optional[str]) -> str:
+    """Normalize profile names to safe path fragments."""
+    raw = (profile or "").strip().lower()
+    if not raw or raw == "default":
+        return "default"
+    safe = re.sub(r"[^a-z0-9_-]+", "-", raw).strip("-")
+    return safe or "default"
+
+
+def get_profile_dir(profile: Optional[str] = None) -> Path:
+    """Return persistent browser profile directory for the selected profile."""
+    normalized = sanitize_profile_name(profile)
+    if normalized == "default":
+        return get_data_dir() / PROFILE_DIR_NAME
+    return get_data_dir() / "profiles" / normalized
+
+
+def get_library_path() -> Path:
+    """Return notebook library JSON path."""
+    return get_data_dir() / LIBRARY_FILE_NAME
+
+
+def get_source_state_path() -> Path:
+    """Return source state JSON path."""
+    return get_data_dir() / SOURCE_STATE_FILE_NAME
+
+
+def get_artifacts_dir() -> Path:
+    """Return folder where debug artifacts are written."""
+    return get_data_dir() / ARTIFACTS_DIR_NAME
+
+
+def get_notes_dir() -> Path:
+    """Return folder for exported answers/notes."""
+    return get_data_dir() / NOTES_DIR_NAME
+
+
+def ensure_data_dirs() -> None:
+    """Ensure data and profile directories exist."""
+    data_dir = get_data_dir()
+    data_dir.mkdir(parents=True, exist_ok=True)
+    get_profile_dir("default").mkdir(parents=True, exist_ok=True)
+    get_artifacts_dir().mkdir(parents=True, exist_ok=True)
+    get_notes_dir().mkdir(parents=True, exist_ok=True)
+
+
+def is_valid_notebook_url(url: str) -> bool:
+    """Validate NotebookLM notebook URL format."""
+    return bool(_NOTEBOOK_URL_PATTERN.match(url.strip()))
+
+
+def parse_csv_values(raw: Optional[str]) -> List[str]:
+    """Parse comma-separated values into a cleaned list."""
+    if not raw:
+        return []
+    return [item.strip() for item in raw.split(",") if item.strip()]
+
+
+def _default_library() -> Dict[str, Any]:
+    return {
+        "version": "1.0.0",
+        "active_notebook_id": None,
+        "notebooks": [],
+        "last_modified": now_iso(),
     }
-   )
- return profiles
 
 
-def _clear_auth(profile: str, all_profiles: bool = False) -> Dict:
- ensure_data_dirs()
- cleared_profiles: List[str] = []
-
- if all_profiles:
-  profiles_to_clear = _discover_profiles()
- else:
-  profiles_to_clear = [
-   {
-    "profile": profile,
-    "profileDir": str(get_profile_dir(profile)),
-    "exists": get_profile_dir(profile).exists(),
-   }
-  ]
-
- for entry in profiles_to_clear:
-  profile_dir = Path(entry["profileDir"])
-  if profile_dir.exists():
-   shutil.rmtree(profile_dir, ignore_errors=True)
-   cleared_profiles.append(entry["profile"])
-
- ensure_data_dirs()
- return {
-  "success": True,
-  "clearedProfiles": sorted(set(cleared_profiles)),
-  "allProfiles": all_profiles,
- }
+def _default_source_state() -> Dict[str, Any]:
+    return {
+        "version": "1.0.0",
+        "notebooks": {},
+        "last_modified": now_iso(),
+    }
 
 
-def _list_profiles() -> Dict:
- return {"profiles": _discover_profiles(), "count": len(_discover_profiles())}
+def load_library() -> Dict[str, Any]:
+    """Load library from disk, creating it if needed."""
+    ensure_data_dirs()
+    path = get_library_path()
+    if not path.exists():
+        library = _default_library()
+        save_library(library)
+        return library
+
+    try:
+        with path.open("r", encoding="utf-8") as f:
+            data = json.load(f)
+            if isinstance(data, dict):
+                data.setdefault("version", "1.0.0")
+                data.setdefault("active_notebook_id", None)
+                data.setdefault("notebooks", [])
+                data.setdefault("last_modified", now_iso())
+                return data
+    except (json.JSONDecodeError, OSError):
+        pass
+
+    library = _default_library()
+    save_library(library)
+    return library
 
 
-def _resolve_profile(raw_profile: str) -> str:
- return sanitize_profile_name(raw_profile)
+def save_library(library: Dict[str, Any]) -> None:
+    """Persist library to disk."""
+    ensure_data_dirs()
+    library["last_modified"] = now_iso()
+    with get_library_path().open("w", encoding="utf-8") as f:
+        json.dump(library, f, indent=2)
 
 
-def main() -> None:
- parser = argparse.ArgumentParser(description="NotebookLM auth management")
- subparsers = parser.add_subparsers(dest="command", required=True)
+def load_source_state() -> Dict[str, Any]:
+    """Load source sync/hash state from disk, creating it if needed."""
+    ensure_data_dirs()
+    path = get_source_state_path()
+    if not path.exists():
+        state = _default_source_state()
+        save_source_state(state)
+        return state
 
- setup_parser = subparsers.add_parser("setup", help="Open browser and perform manual Google login")
- setup_parser.add_argument(
-  "--timeout",
-  type=int,
-  default=DEFAULT_AUTH_TIMEOUT_SEC,
-  help=f"Max seconds to wait for login (default: {DEFAULT_AUTH_TIMEOUT_SEC})",
- )
- setup_parser.add_argument(
-  "--profile",
-  default="default",
-  help="Profile name for auth session (default: default)",
- )
+    try:
+        with path.open("r", encoding="utf-8") as f:
+            data = json.load(f)
+            if isinstance(data, dict):
+                data.setdefault("version", "1.0.0")
+                data.setdefault("notebooks", {})
+                data.setdefault("last_modified", now_iso())
+                return data
+    except (json.JSONDecodeError, OSError):
+        pass
 
- status_parser = subparsers.add_parser("status", help="Check if auth profile appears valid")
- status_parser.add_argument(
-  "--profile",
-  default="default",
-  help="Profile name for auth session (default: default)",
- )
-
- clear_parser = subparsers.add_parser("clear", help="Clear local browser auth profile")
- clear_parser.add_argument(
-  "--profile",
-  default="default",
-  help="Profile name for auth session (default: default)",
- )
- clear_parser.add_argument(
-  "--all-profiles",
-  action="store_true",
-  help="Clear all known profiles",
- )
-
- subparsers.add_parser("profiles", help="List auth profiles")
-
- reauth_parser = subparsers.add_parser("reauth", help="Clear auth profile and run setup")
- reauth_parser.add_argument(
-  "--timeout",
-  type=int,
-  default=DEFAULT_AUTH_TIMEOUT_SEC,
-  help=f"Max seconds to wait for login (default: {DEFAULT_AUTH_TIMEOUT_SEC})",
- )
- reauth_parser.add_argument(
-  "--profile",
-  default="default",
-  help="Profile name for auth session (default: default)",
- )
-
- args = parser.parse_args()
-
- try:
-  if args.command == "setup":
-   profile = _resolve_profile(args.profile)
-   result = _setup_auth(args.timeout, profile)
-  elif args.command == "status":
-   profile = _resolve_profile(args.profile)
-   result = _auth_status(profile)
-  elif args.command == "clear":
-   profile = _resolve_profile(args.profile)
-   result = _clear_auth(profile=profile, all_profiles=bool(args.all_profiles))
-  elif args.command == "profiles":
-   result = _list_profiles()
-  elif args.command == "reauth":
-   profile = _resolve_profile(args.profile)
-   _clear_auth(profile=profile, all_profiles=False)
-   result = _setup_auth(args.timeout, profile)
-  else:
-   result = {"error": f"Unknown command: {args.command}"}
- except Exception as exc: # noqa: BLE001
-  result = {"error": str(exc)}
-
- print(json.dumps(result, indent=2))
- if isinstance(result, dict) and result.get("error"):
-  sys.exit(1)
+    state = _default_source_state()
+    save_source_state(state)
+    return state
 
 
-if __name__ == "__main__":
- main()
+def save_source_state(state: Dict[str, Any]) -> None:
+    """Persist source sync/hash state to disk."""
+    ensure_data_dirs()
+    state["last_modified"] = now_iso()
+    with get_source_state_path().open("w", encoding="utf-8") as f:
+        json.dump(state, f, indent=2)
+
+
+def slugify(value: str) -> str:
+    """Create a stable slug ID from a string."""
+    base = re.sub(r"[^a-z0-9]+", "-", value.lower()).strip("-")
+    if not base:
+        base = "notebook"
+    return base[:40]
+
+
+def generate_notebook_id(name: str, existing_ids: List[str]) -> str:
+    """Generate a unique notebook ID from notebook name."""
+    root = slugify(name)
+    candidate = root
+    index = 1
+    existing = set(existing_ids)
+    while candidate in existing:
+        candidate = f"{root}-{index}"
+        index += 1
+    return candidate
+
+
+def get_notebook_by_id(library: Dict[str, Any], notebook_id: str) -> Optional[Dict[str, Any]]:
+    """Find notebook by ID."""
+    for notebook in library.get("notebooks", []):
+        if notebook.get("id") == notebook_id:
+            return notebook
+    return None
+
+
+def get_notebook_by_url(library: Dict[str, Any], notebook_url: str) -> Optional[Dict[str, Any]]:
+    """Find notebook by URL."""
+    target = notebook_url.strip()
+    for notebook in library.get("notebooks", []):
+        if str(notebook.get("url", "")).strip() == target:
+            return notebook
+    return None
+
+
+def get_active_notebook(library: Dict[str, Any]) -> Optional[Dict[str, Any]]:
+    """Return active notebook entry if configured."""
+    active_id = library.get("active_notebook_id")
+    if not active_id:
+        return None
+    return get_notebook_by_id(library, active_id)
+
+
+def launch_persistent_context(
+    playwright,
+    headless: bool,
+    profile: Optional[str] = None,
+    viewport: Optional[Tuple[int, int]] = None,
+):
+    """Launch a persistent Chromium context with reusable profile directory."""
+    vw, vh = viewport or (1280, 900)
+    profile_dir = str(get_profile_dir(profile))
+    common_args = {
+        "user_data_dir": profile_dir,
+        "headless": headless,
+        "viewport": {"width": vw, "height": vh},
+        "args": [
+            "--disable-blink-features=AutomationControlled",
+            "--disable-dev-shm-usage",
+            "--no-first-run",
+            "--no-default-browser-check",
+        ],
+    }
+    try:
+        return playwright.chromium.launch_persistent_context(channel="chrome", **common_args)
+    except PlaywrightError:
+        return playwright.chromium.launch_persistent_context(**common_args)
+
+
+def record_notebook_use(library: Dict[str, Any], notebook_id: str) -> Optional[Dict[str, Any]]:
+    """Increment usage counters for a notebook and save the library."""
+    notebook = get_notebook_by_id(library, notebook_id)
+    if not notebook:
+        return None
+
+    notebook["use_count"] = int(notebook.get("use_count", 0)) + 1
+    notebook["last_used"] = now_iso()
+    save_library(library)
+    return notebook

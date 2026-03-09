@@ -20,18 +20,18 @@ Activate this skill when:
 ### Phase 1: Discovery
 
 1. **Detect Move project structure**
- - Look for `Move.toml` in current directory
- - Find all `.move` files using glob patterns
- - Identify test modules (files/modules with `_tests` suffix)
+   - Look for `Move.toml` in current directory
+   - Find all `.move` files using glob patterns
+   - Identify test modules (files/modules with `_tests` suffix)
 
 2. **Read Move.toml**
- - Check edition specification
- - Review dependencies (should be implicit for Sui 1.45+)
- - Examine named addresses for proper prefixing
+   - Check edition specification
+   - Review dependencies (should be implicit for Sui 1.45+)
+   - Examine named addresses for proper prefixing
 
 3. **Understand scope**
- - Ask user if they want full package scan or specific file/category analysis
- - Determine if this is new code review or existing code audit
+   - Ask user if they want full package scan or specific file/category analysis
+   - Determine if this is new code review or existing code audit
 
 ### Phase 2: Systematic Analysis
 
@@ -121,32 +121,32 @@ Analyze code across these **11 categories with 50+ specific rules**:
 
 **Objects Go First (Except Clock)**
 - ✅ GOOD parameter order:
- 1. Objects (mutable, then immutable)
- 2. Capabilities
- 3. Primitive types (u8, u64, bool, etc.)
- 4. Clock reference
- 5. TxContext (always last)
+  1. Objects (mutable, then immutable)
+  2. Capabilities
+  3. Primitive types (u8, u64, bool, etc.)
+  4. Clock reference
+  5. TxContext (always last)
 
 Example:
 ```move
 // ✅ GOOD
 public fun call_app(
- app: &mut App,
- cap: &AppCap,
- value: u8,
- is_smth: bool,
- clock: &Clock,
- ctx: &mut TxContext,
+    app: &mut App,
+    cap: &AppCap,
+    value: u8,
+    is_smth: bool,
+    clock: &Clock,
+    ctx: &mut TxContext,
 ) { }
 
 // ❌ BAD - parameters out of order
 public fun call_app(
- value: u8,
- app: &mut App,
- is_smth: bool,
- cap: &AppCap,
- clock: &Clock,
- ctx: &mut TxContext,
+    value: u8,
+    app: &mut App,
+    is_smth: bool,
+    cap: &AppCap,
+    clock: &Clock,
+    ctx: &mut TxContext,
 ) { }
 ```
 
@@ -201,8 +201,8 @@ public fun call_app(
 - ❌ BAD:
 ```move
 if (opt.is_some()) {
- let inner = opt.destroy_some();
- call_function(inner);
+    let inner = opt.destroy_some();
+    call_function(inner);
 }
 ```
 
@@ -212,9 +212,9 @@ if (opt.is_some()) {
 - ❌ BAD:
 ```move
 let value = if (opt.is_some()) {
- opt.destroy_some()
+    opt.destroy_some()
 } else {
- abort EError
+    abort EError
 };
 ```
 
@@ -314,7 +314,7 @@ Present findings in this format:
 
 ### Summary
 - ✅ X checks passed
-- ⚠️ Y improvements recommended
+- ⚠️  Y improvements recommended
 - ❌ Z critical issues
 
 ### Critical Issues (Fix These First)
@@ -331,7 +331,7 @@ Present findings in this format:
 \`\`\`toml
 [package]
 name = "my_package"
-edition = "2024.beta" # Add this line
+edition = "2024.beta"  # Add this line
 \`\`\`
 
 ### Important Improvements
@@ -347,7 +347,7 @@ edition = "2024.beta" # Add this line
 **Current**:
 \`\`\`move
 module my_package::my_module {
- public struct A {}
+    public struct A {}
 }
 \`\`\`
 

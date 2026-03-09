@@ -83,11 +83,9 @@ npm run dev
 ```
 
 ### 自動更新技能
-若要檢查所有技能是否有新版本，請執行：
-```bash
-node scripts/update-skills.mjs --dry-run  # 乾跑檢查
-node scripts/update-skills.mjs            # 執行更新
-```
+本專案已將更新機制整合於 AI Agent 的 SOP 中。您只需對 Agent 下達「檢核更新」指令，Agent 便會自動比對 GitHub 原始碼並執行同步：
+- **流程**：遠端比對 -> 下載暫存 -> 安全審核 -> 正式覆蓋與 SQL 遷移。
+- **優勢**：無需手動執行腳本，確保技能庫具備「自主進化」能力。
 
 ---
 

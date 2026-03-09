@@ -56,8 +56,8 @@ table.grantReadData(function); // Only read access
 
 // ❌ BAD - Overly broad
 function.addToRolePolicy(new iam.PolicyStatement({
- actions: ['dynamodb:*'],
- resources: ['*'],
+  actions: ['dynamodb:*'],
+  resources: ['*'],
 }));
 ```
 
@@ -68,13 +68,13 @@ function.addToRolePolicy(new iam.PolicyStatement({
 ```typescript
 // ✅ GOOD - Each function has its own role
 const readFunction = new NodejsFunction(this, 'ReadFunction', {
- entry: 'src/read.ts',
- // Gets its own execution role
+  entry: 'src/read.ts',
+  // Gets its own execution role
 });
 
 const writeFunction = new NodejsFunction(this, 'WriteFunction', {
- entry: 'src/write.ts',
- // Gets its own execution role
+  entry: 'src/write.ts',
+  // Gets its own execution role
 });
 
 table.grantReadData(readFunction);
@@ -82,10 +82,10 @@ table.grantReadWriteData(writeFunction);
 
 // ❌ BAD - Shared role with excessive permissions
 const sharedRole = new iam.Role(this, 'SharedRole', {
- assumedBy: new iam.ServicePrincipal('lambda.amazonaws.com'),
- managedPolicies: [
- iam.ManagedPolicy.fromAwsManagedPolicyName('AdministratorAccess'), // Too broad!
- ],
+  assumedBy: new iam.ServicePrincipal('lambda.amazonaws.com'),
+  managedPolicies: [
+    iam.ManagedPolicy.fromAwsManagedPolicyName('AdministratorAccess'), // Too broad!
+  ],
 });
 ```
 
@@ -99,15 +99,15 @@ myFunction.grantInvoke(new iam.ServicePrincipal('apigateway.amazonaws.com'));
 
 // Allow specific account
 myFunction.addPermission('AllowAccountInvoke', {
- principal: new iam.AccountPrincipal('123456789012'),
- action: 'lambda:InvokeFunction',
+  principal: new iam.AccountPrincipal('123456789012'),
+  action: 'lambda:InvokeFunction',
 });
 
 // Conditional invoke (only from specific VPC endpoint)
 myFunction.addPermission('AllowVPCInvoke', {
- principal: new iam.ServicePrincipal('lambda.amazonaws.com'),
- action: 'lambda:InvokeFunction',
- sourceArn: vpcEndpoint.vpcEndpointId,
+  principal: new iam.ServicePrincipal('lambda.amazonaws.com'),
+  action: 'lambda:InvokeFunction',
+  sourceArn: vpcEndpoint.vpcEndpointId,
 });
 ```
 
@@ -143,15 +143,15 @@ myFunction.addPermission('AllowVPCInvoke', {
 ```typescript
 // ✅ GOOD - Clean up sensitive data
 export const handler = async (event: any) => {
- const apiKey = process.env.API_KEY;
+  const apiKey = process.env.API_KEY;
 
- try {
- const result = await callApi(apiKey);
- return result;
- } finally {
- // Clear sensitive data from memory
- delete process.env.API_KEY;
- }
+  try {
+    const result = await callApi(apiKey);
+    return result;
+  } finally {
+    // Clear sensitive data from memory
+    delete process.env.API_KEY;
+  }
 };
 
 // ✅ GOOD - Use Secrets Manager
@@ -160,12 +160,12 @@ import { SecretsManagerClient, GetSecretValueCommand } from '@aws-sdk/client-sec
 const secretsClient = new SecretsManagerClient({});
 
 export const handler = async (event: any) => {
- const secret = await secretsClient.send(
- new GetSecretValueCommand({ SecretId: process.env.SECRET_ARN })
- );
+  const secret = await secretsClient.send(
+    new GetSecretValueCommand({ SecretId: process.env.SECRET_ARN })
+  );
 
- const apiKey = secret.SecretString;
- // Use apiKey
+  const apiKey = secret.SecretString;
+  // Use apiKey
 };
 ```
 
@@ -176,13 +176,13 @@ export const handler = async (event: any) => {
 ```json
 // package.json
 {
- "scripts": {
- "audit": "npm audit",
- "audit:fix": "npm audit fix"
- },
- "devDependencies": {
- "snyk": "^1.0.0"
- }
+  "scripts": {
+    "audit": "npm audit",
+    "audit:fix": "npm audit fix"
+  },
+  "devDependencies": {
+    "snyk": "^1.0.0"
+  }
 }
 ```
 
@@ -199,16 +199,16 @@ export const handler = async (event: any) => {
 ```typescript
 // ❌ BAD - Secret in environment variable
 new NodejsFunction(this, 'Function', {
- environment: {
- API_KEY: 'sk-1234567890abcdef', // Never do this!
- },
+  environment: {
+    API_KEY: 'sk-1234567890abcdef', // Never do this!
+  },
 });
 
 // ✅ GOOD - Reference to secret
 new NodejsFunction(this, 'Function', {
- environment: {
- SECRET_ARN: secret.secretArn,
- },
+  environment: {
+    SECRET_ARN: secret.secretArn,
+  },
 });
 
 secret.grantRead(myFunction);
@@ -223,23 +223,23 @@ secret.grantRead(myFunction);
 ```typescript
 // Cognito User Pool authorizer
 const authorizer = new apigateway.CognitoUserPoolsAuthorizer(this, 'Authorizer', {
- cognitoUserPools: [userPool],
+  cognitoUserPools: [userPool],
 });
 
 api.root.addMethod('GET', integration, {
- authorizer,
- authorizationType: apigateway.AuthorizationType.COGNITO,
+  authorizer,
+  authorizationType: apigateway.AuthorizationType.COGNITO,
 });
 
 // Lambda authorizer for custom auth
 const customAuthorizer = new apigateway.TokenAuthorizer(this, 'CustomAuth', {
- handler: authorizerFunction,
- resultsCacheTtl: Duration.minutes(5),
+  handler: authorizerFunction,
+  resultsCacheTtl: Duration.minutes(5),
 });
 
 // IAM authorization for service-to-service
 api.root.addMethod('POST', integration, {
- authorizationType: apigateway.AuthorizationType.IAM,
+  authorizationType: apigateway.AuthorizationType.IAM,
 });
 ```
 
@@ -249,34 +249,34 @@ api.root.addMethod('POST', integration, {
 
 ```typescript
 const validator = new apigateway.RequestValidator(this, 'Validator', {
- api,
- validateRequestBody: true,
- validateRequestParameters: true,
+  api,
+  validateRequestBody: true,
+  validateRequestParameters: true,
 });
 
 const model = api.addModel('Model', {
- schema: {
- type: apigateway.JsonSchemaType.OBJECT,
- required: ['email', 'name'],
- properties: {
- email: {
- type: apigateway.JsonSchemaType.STRING,
- format: 'email',
- },
- name: {
- type: apigateway.JsonSchemaType.STRING,
- minLength: 1,
- maxLength: 100,
- },
- },
- },
+  schema: {
+    type: apigateway.JsonSchemaType.OBJECT,
+    required: ['email', 'name'],
+    properties: {
+      email: {
+        type: apigateway.JsonSchemaType.STRING,
+        format: 'email',
+      },
+      name: {
+        type: apigateway.JsonSchemaType.STRING,
+        minLength: 1,
+        maxLength: 100,
+      },
+    },
+  },
 });
 
 resource.addMethod('POST', integration, {
- requestValidator: validator,
- requestModels: {
- 'application/json': model,
- },
+  requestValidator: validator,
+  requestModels: {
+    'application/json': model,
+  },
 });
 ```
 
@@ -284,22 +284,22 @@ resource.addMethod('POST', integration, {
 
 ```typescript
 const api = new apigateway.RestApi(this, 'Api', {
- deployOptions: {
- throttlingRateLimit: 1000, // requests per second
- throttlingBurstLimit: 2000, // burst capacity
- },
+  deployOptions: {
+    throttlingRateLimit: 1000, // requests per second
+    throttlingBurstLimit: 2000, // burst capacity
+  },
 });
 
 // Per-method throttling
 resource.addMethod('POST', integration, {
- methodResponses: [{ statusCode: '200' }],
- requestParameters: {
- 'method.request.header.Authorization': true,
- },
- throttling: {
- rateLimit: 100,
- burstLimit: 200,
- },
+  methodResponses: [{ statusCode: '200' }],
+  requestParameters: {
+    'method.request.header.Authorization': true,
+  },
+  throttling: {
+    rateLimit: 100,
+    burstLimit: 200,
+  },
 });
 ```
 
@@ -307,24 +307,24 @@ resource.addMethod('POST', integration, {
 
 ```typescript
 const apiKey = api.addApiKey('ApiKey', {
- apiKeyName: 'customer-key',
+  apiKeyName: 'customer-key',
 });
 
 const plan = api.addUsagePlan('UsagePlan', {
- name: 'Standard',
- throttle: {
- rateLimit: 100,
- burstLimit: 200,
- },
- quota: {
- limit: 10000, // Monthly
- period: apigateway.Period.MONTH,
- },
+  name: 'Standard',
+  throttle: {
+    rateLimit: 100,
+    burstLimit: 200,
+  },
+  quota: {
+    limit: 10000,
+    period: apigateway.Period.MONTH,
+  },
 });
 
 plan.addApiKey(apiKey);
 plan.addApiStage({
- stage: api.deploymentStage,
+  stage: api.deploymentStage,
 });
 ```
 
@@ -337,17 +337,17 @@ plan.addApiStage({
 ```typescript
 // Default: AWS-owned CMK (no additional cost)
 const table = new dynamodb.Table(this, 'Table', {
- encryption: dynamodb.TableEncryption.AWS_MANAGED, // AWS managed CMK
+  encryption: dynamodb.TableEncryption.AWS_MANAGED, // AWS managed CMK
 });
 
 // Customer-managed CMK (for compliance)
 const kmsKey = new kms.Key(this, 'Key', {
- enableKeyRotation: true,
+  enableKeyRotation: true,
 });
 
 const table = new dynamodb.Table(this, 'Table', {
- encryption: dynamodb.TableEncryption.CUSTOMER_MANAGED,
- encryptionKey: kmsKey,
+  encryption: dynamodb.TableEncryption.CUSTOMER_MANAGED,
+  encryptionKey: kmsKey,
 });
 ```
 
@@ -356,13 +356,13 @@ const table = new dynamodb.Table(this, 'Table', {
 ```typescript
 // SSE-S3 (default, no additional cost)
 const bucket = new s3.Bucket(this, 'Bucket', {
- encryption: s3.BucketEncryption.S3_MANAGED,
+  encryption: s3.BucketEncryption.S3_MANAGED,
 });
 
 // SSE-KMS (for fine-grained access control)
 const bucket = new s3.Bucket(this, 'Bucket', {
- encryption: s3.BucketEncryption.KMS,
- encryptionKey: kmsKey,
+  encryption: s3.BucketEncryption.KMS,
+  encryptionKey: kmsKey,
 });
 ```
 
@@ -370,12 +370,12 @@ const bucket = new s3.Bucket(this, 'Bucket', {
 
 ```typescript
 const queue = new sqs.Queue(this, 'Queue', {
- encryption: sqs.QueueEncryption.KMS,
- encryptionMasterKey: kmsKey,
+  encryption: sqs.QueueEncryption.KMS,
+  encryptionMasterKey: kmsKey,
 });
 
 const topic = new sns.Topic(this, 'Topic', {
- masterKey: kmsKey,
+  masterKey: kmsKey,
 });
 ```
 
@@ -390,15 +390,15 @@ const topic = new sns.Topic(this, 'Topic', {
 ```typescript
 // API Gateway with custom domain
 const certificate = new acm.Certificate(this, 'Certificate', {
- domainName: 'api.example.com',
- validation: acm.CertificateValidation.fromDns(hostedZone),
+  domainName: 'api.example.com',
+  validation: acm.CertificateValidation.fromDns(hostedZone),
 });
 
 const api = new apigateway.RestApi(this, 'Api', {
- domainName: {
- domainName: 'api.example.com',
- certificate,
- },
+  domainName: {
+    domainName: 'api.example.com',
+    certificate,
+  },
 });
 ```
 
@@ -412,30 +412,30 @@ import { z } from 'zod';
 
 // Schema validation
 const OrderSchema = z.object({
- orderId: z.string().uuid(),
- amount: z.number().positive(),
- email: z.string().email(),
+  orderId: z.string().uuid(),
+  amount: z.number().positive(),
+  email: z.string().email(),
 });
 
 export const handler = async (event: any) => {
- const body = JSON.parse(event.body);
+  const body = JSON.parse(event.body);
 
- // Validate schema
- const result = OrderSchema.safeParse(body);
- if (!result.success) {
- return {
- statusCode: 400,
- body: JSON.stringify({ error: result.error }),
- };
- }
+  // Validate schema
+  const result = OrderSchema.safeParse(body);
+  if (!result.success) {
+    return {
+      statusCode: 400,
+      body: JSON.stringify({ error: result.error }),
+    };
+  }
 
- // Sanitize HTML inputs
- const sanitized = {
- ...result.data,
- description: DOMPurify.sanitize(result.data.description),
- };
+  // Sanitize HTML inputs
+  const sanitized = {
+    ...result.data,
+    description: DOMPurify.sanitize(result.data.description),
+  };
 
- await processOrder(sanitized);
+  await processOrder(sanitized);
 };
 ```
 
@@ -447,32 +447,32 @@ export const handler = async (event: any) => {
 
 ```typescript
 const vpc = new ec2.Vpc(this, 'Vpc', {
- maxAzs: 2,
- natGateways: 1,
+  maxAzs: 2,
+  natGateways: 1,
 });
 
 // Lambda in private subnet
 const vpcFunction = new NodejsFunction(this, 'VpcFunction', {
- entry: 'src/handler.ts',
- vpc,
- vpcSubnets: {
- subnetType: ec2.SubnetType.PRIVATE_WITH_EGRESS,
- },
- securityGroups: [securityGroup],
+  entry: 'src/handler.ts',
+  vpc,
+  vpcSubnets: {
+    subnetType: ec2.SubnetType.PRIVATE_WITH_EGRESS,
+  },
+  securityGroups: [securityGroup],
 });
 
 // Security group for Lambda
 const securityGroup = new ec2.SecurityGroup(this, 'LambdaSG', {
- vpc,
- description: 'Security group for Lambda function',
- allowAllOutbound: false, // Restrict outbound
+  vpc,
+  description: 'Security group for Lambda function',
+  allowAllOutbound: false, // Restrict outbound
 });
 
 // Only allow access to RDS
 securityGroup.addEgressRule(
- ec2.Peer.securityGroupId(rdsSecurityGroup.securityGroupId),
- ec2.Port.tcp(3306),
- 'Allow MySQL access'
+  ec2.Peer.securityGroupId(rdsSecurityGroup.securityGroupId),
+  ec2.Port.tcp(3306),
+  'Allow MySQL access'
 );
 ```
 
@@ -483,18 +483,18 @@ securityGroup.addEgressRule(
 ```typescript
 // S3 VPC endpoint (gateway endpoint, no cost)
 vpc.addGatewayEndpoint('S3Endpoint', {
- service: ec2.GatewayVpcEndpointAwsService.S3,
+  service: ec2.GatewayVpcEndpointAwsService.S3,
 });
 
 // DynamoDB VPC endpoint (gateway endpoint, no cost)
 vpc.addGatewayEndpoint('DynamoDBEndpoint', {
- service: ec2.GatewayVpcEndpointAwsService.DYNAMODB,
+  service: ec2.GatewayVpcEndpointAwsService.DYNAMODB,
 });
 
 // Secrets Manager VPC endpoint (interface endpoint, cost applies)
 vpc.addInterfaceEndpoint('SecretsManagerEndpoint', {
- service: ec2.InterfaceVpcEndpointAwsService.SECRETS_MANAGER,
- privateDnsEnabled: true,
+  service: ec2.InterfaceVpcEndpointAwsService.SECRETS_MANAGER,
+  privateDnsEnabled: true,
 });
 ```
 
@@ -505,27 +505,27 @@ vpc.addInterfaceEndpoint('SecretsManagerEndpoint', {
 ```typescript
 // Lambda security group
 const lambdaSG = new ec2.SecurityGroup(this, 'LambdaSG', {
- vpc,
- allowAllOutbound: false,
+  vpc,
+  allowAllOutbound: false,
 });
 
 // RDS security group
 const rdsSG = new ec2.SecurityGroup(this, 'RDSSG', {
- vpc,
- allowAllOutbound: false,
+  vpc,
+  allowAllOutbound: false,
 });
 
 // Allow Lambda to access RDS only
 rdsSG.addIngressRule(
- ec2.Peer.securityGroupId(lambdaSG.securityGroupId),
- ec2.Port.tcp(3306),
- 'Allow Lambda access'
+  ec2.Peer.securityGroupId(lambdaSG.securityGroupId),
+  ec2.Port.tcp(3306),
+  'Allow Lambda access'
 );
 
 lambdaSG.addEgressRule(
- ec2.Peer.securityGroupId(rdsSG.securityGroupId),
- ec2.Port.tcp(3306),
- 'Allow RDS access'
+  ec2.Peer.securityGroupId(rdsSG.securityGroupId),
+  ec2.Port.tcp(3306),
+  'Allow RDS access'
 );
 ```
 
@@ -537,12 +537,12 @@ lambdaSG.addEgressRule(
 
 ```typescript
 new NodejsFunction(this, 'Function', {
- entry: 'src/handler.ts',
- logRetention: logs.RetentionDays.ONE_WEEK,
- logGroup: new logs.LogGroup(this, 'LogGroup', {
- encryptionKey: kmsKey, // Encrypt logs
- retention: logs.RetentionDays.ONE_WEEK,
- }),
+  entry: 'src/handler.ts',
+  logRetention: logs.RetentionDays.ONE_WEEK,
+  logGroup: new logs.LogGroup(this, 'LogGroup', {
+    encryptionKey: kmsKey, // Encrypt logs
+    retention: logs.RetentionDays.ONE_WEEK,
+  }),
 });
 ```
 
@@ -552,15 +552,15 @@ new NodejsFunction(this, 'Function', {
 
 ```typescript
 const trail = new cloudtrail.Trail(this, 'Trail', {
- isMultiRegionTrail: true,
- includeGlobalServiceEvents: true,
- managementEvents: cloudtrail.ReadWriteType.ALL,
+  isMultiRegionTrail: true,
+  includeGlobalServiceEvents: true,
+  managementEvents: cloudtrail.ReadWriteType.ALL,
 });
 
 // Log Lambda invocations
 trail.addLambdaEventSelector([{
- includeManagementEvents: true,
- readWriteType: cloudtrail.ReadWriteType.ALL,
+  includeManagementEvents: true,
+  readWriteType: cloudtrail.ReadWriteType.ALL,
 }]);
 ```
 
@@ -623,4 +623,3 @@ trail.addLambdaEventSelector([{
 - **Monitoring**: Enable CloudTrail, GuardDuty, and CloudWatch
 - **Secrets Management**: Use Secrets Manager, never environment variables
 - **Network Security**: Use VPC, security groups, and VPC endpoints appropriately
-```

@@ -9,76 +9,76 @@ Amazon Bedrock AgentCore Observability helps developers trace, debug, and monito
 ## Core Capabilities
 
 ### Distributed Tracing
-* **End-to-End Tracing**: Complete request tracing across all AgentCore services
-* **Workflow Visualization**: Detailed step-by-step workflow execution views
-* **Service Dependencies**: Automatic mapping of service interactions
-* **Bottleneck Detection**: Identify performance bottlenecks in agent workflows
-* **Error Attribution**: Pinpoint exact failure points in complex workflows
+- **End-to-End Tracing**: Complete request tracing across all AgentCore services
+- **Workflow Visualization**: Detailed step-by-step workflow execution views
+- **Service Dependencies**: Automatic mapping of service interactions
+- **Bottleneck Detection**: Identify performance bottlenecks in agent workflows
+- **Error Attribution**: Pinpoint exact failure points in complex workflows
 
 ### Metrics and Monitoring
-* **Real-Time Metrics**: Live operational metrics for all agent activities
-* **Token Tracking**: Monitor token consumption and costs
-* **Latency Measurements**: Track P50, P95, P99 response times
-* **Session Monitoring**: Track session duration and status
-* **Error Rates**: Monitor error rates by service and operation
-* **Throughput**: Measure requests per second and operation counts
+- **Real-Time Metrics**: Live operational metrics for all agent activities
+- **Token Tracking**: Monitor token consumption and costs
+- **Latency Measurements**: Track P50, P95, P99 response times
+- **Session Monitoring**: Track session duration and status
+- **Error Rates**: Monitor error rates by service and operation
+- **Throughput**: Measure requests per second and operation counts
 
 ### Logging
-* **Centralized Aggregation**: All service logs in one place
-* **Structured Logging**: Consistent log format with correlation IDs
-* **Search and Filter**: Query logs by service, operation, or time
-* **Real-Time Streaming**: Live log tailing for debugging
-* **Log Retention**: Configurable retention policies
+- **Centralized Aggregation**: All service logs in one place
+- **Structured Logging**: Consistent log format with correlation IDs
+- **Search and Filter**: Query logs by service, operation, or time
+- **Real-Time Streaming**: Live log tailing for debugging
+- **Log Retention**: Configurable retention policies
 
 ### Dashboards and Alerting
-* **Unified Dashboards**: Pre-built operational dashboards
-* **Custom Metrics**: Define and visualize custom metrics
-* **CloudWatch Integration**: Native AWS CloudWatch support
-* **Configurable Alerts**: Set up alerts for critical conditions
-* **Multi-Service Views**: Consolidated view across all services
+- **Unified Dashboards**: Pre-built operational dashboards
+- **Custom Metrics**: Define and visualize custom metrics
+- **CloudWatch Integration**: Native AWS CloudWatch support
+- **Configurable Alerts**: Set up alerts for critical conditions
+- **Multi-Service Views**: Consolidated view across all services
 
 ### OpenTelemetry Support
-* **Industry Standard**: Compatible with OpenTelemetry specification
-* **Tool Integration**: Works with existing observability tools
-* **Custom Instrumentation**: Add custom traces and metrics
-* **External Export**: Export telemetry to external systems
+- **Industry Standard**: Compatible with OpenTelemetry specification
+- **Tool Integration**: Works with existing observability tools
+- **Custom Instrumentation**: Add custom traces and metrics
+- **External Export**: Export telemetry to external systems
 
 ## Use Cases
 
 ### Production Debugging
 Enable teams to:
-* Debug agent execution issues in real-time
-* Identify root causes of failures quickly
-* Trace request flows across services
-* Analyze error patterns and trends
+- Debug agent execution issues in real-time
+- Identify root causes of failures quickly
+- Trace request flows across services
+- Analyze error patterns and trends
 
 ### Performance Monitoring
 Support scenarios like:
-* Monitor agent response times
-* Track token usage and costs
-* Identify slow operations
-* Optimize agent workflows
+- Monitor agent response times
+- Track token usage and costs
+- Identify slow operations
+- Optimize agent workflows
 
 ### Behavior Analysis
 Allow teams to:
-* Analyze agent behavior patterns
-* Understand user interaction flows
-* Identify usage trends
-* Detect anomalies
+- Analyze agent behavior patterns
+- Understand user interaction flows
+- Identify usage trends
+- Detect anomalies
 
 ### Quality Assurance
 Enable teams to:
-* Ensure SLA compliance
-* Monitor service reliability
-* Track quality metrics
-* Validate performance standards
+- Ensure SLA compliance
+- Monitor service reliability
+- Track quality metrics
+- Validate performance standards
 
 ### Capacity Planning
 Support activities like:
-* Forecast resource needs
-* Identify scaling requirements
-* Optimize resource allocation
-* Plan for growth
+- Forecast resource needs
+- Identify scaling requirements
+- Optimize resource allocation
+- Plan for growth
 
 ## Architecture
 
@@ -86,32 +86,32 @@ Support activities like:
 
 ```
 ┌─────────────────────────────────────────┐
-│         AgentCore Services              │
-│ - Gateway, Runtime, Memory, etc.        │
-│ - Emit traces, logs, metrics            │
+│  AgentCore Services                     │
+│  - Gateway, Runtime, Memory, etc.       │
+│  - Emit traces, logs, metrics           │
 └─────────────────────────────────────────┘
-                ↓
+           ↓
 ┌─────────────────────────────────────────┐
-│      OpenTelemetry Collector            │
-│ - Receive telemetry data                │
-│ - Process and enrich                    │
-│ - Route to destinations                 │
+│  OpenTelemetry Collector                │
+│  - Receive telemetry data               │
+│  - Process and enrich                   │
+│  - Route to destinations                │
 └─────────────────────────────────────────┘
-                ↓
-        ┌──────┴──────┐
-        ↓             ↓
-┌─────────┐     ┌─────────────┐
-│CloudWatch│     │    X-Ray    │
-│  Logs    │     │   Traces    │
-│  Metrics │     │ Service Map │
-└─────────┘     └─────────────┘
-        ↓             ↓
+           ↓
+    ┌──────┴──────┐
+    ↓             ↓
+┌─────────┐  ┌─────────────┐
+│CloudWatch│  │  X-Ray      │
+│ Logs    │  │  Traces     │
+│ Metrics │  │  Service Map│
+└─────────┘  └─────────────┘
+    ↓             ↓
 ┌─────────────────────────────────────────┐
-│         Unified Dashboards              │
-│ - Service health                        │
-│ - Performance metrics                   │
-│ - Error analysis                        │
-│ - Cost tracking                         │
+│  Unified Dashboards                     │
+│  - Service health                       │
+│  - Performance metrics                  │
+│  - Error analysis                       │
+│  - Cost tracking                        │
 └─────────────────────────────────────────┘
 ```
 
@@ -204,23 +204,23 @@ aws xray get-service-graph \
 ### Common Metrics
 
 **Gateway Metrics**:
-* `TargetInvocations`: Number of target invocations
-* `TargetErrors`: Number of target errors
-* `TargetLatency`: Target response latency
+- `TargetInvocations`: Number of target invocations
+- `TargetErrors`: Number of target errors
+- `TargetLatency`: Target response latency
 
 **Runtime Metrics**:
-* `AgentExecutions`: Number of agent executions
-* `ExecutionDuration`: Agent execution duration
-* `ExecutionErrors`: Number of execution failures
+- `AgentExecutions`: Number of agent executions
+- `ExecutionDuration`: Agent execution duration
+- `ExecutionErrors`: Number of execution failures
 
 **Memory Metrics**:
-* `MemoryReads`: Number of memory read operations
-* `MemoryWrites`: Number of memory write operations
-* `MemorySize`: Total memory storage size
+- `MemoryReads`: Number of memory read operations
+- `MemoryWrites`: Number of memory write operations
+- `MemorySize`: Total memory storage size
 
 **Token Metrics**:
-* `TokensConsumed`: Total tokens used
-* `TokenCost`: Estimated cost in dollars
+- `TokensConsumed`: Total tokens used
+- `TokenCost`: Estimated cost in dollars
 
 ### Query Metrics
 
@@ -273,9 +273,9 @@ aws logs start-query \
   --start-time <START_TIMESTAMP> \
   --end-time <END_TIMESTAMP> \
   --query-string 'fields @timestamp, @message
-  | filter @message like /ERROR/
-  | sort @timestamp desc
-  | limit 20'
+    | filter @message like /ERROR/
+    | sort @timestamp desc
+    | limit 20'
 ```
 
 ## Dashboards
@@ -379,39 +379,39 @@ aws cloudwatch put-metric-alarm \
 ## Best Practices
 
 ### Instrumentation
-* Enable observability for all production agents
-* Use appropriate sampling rates (1.0 for dev, 0.1 for prod)
-* Add custom metrics for business-critical operations
-* Include context in log messages
-* Use structured logging formats
+- Enable observability for all production agents
+- Use appropriate sampling rates (1.0 for dev, 0.1 for prod)
+- Add custom metrics for business-critical operations
+- Include context in log messages
+- Use structured logging formats
 
 ### Performance
-* Use appropriate metric aggregation periods
-* Implement metric sampling for high-volume operations
-* Set reasonable log retention periods
-* Use log filtering to reduce noise
-* Archive old traces and logs
+- Use appropriate metric aggregation periods
+- Implement metric sampling for high-volume operations
+- Set reasonable log retention periods
+- Use log filtering to reduce noise
+- Archive old traces and logs
 
 ### Cost Optimization
-* Adjust sampling rates based on traffic
-* Use metric filters to create custom metrics
-* Set appropriate log retention (7-30 days)
-* Archive infrequently accessed data to S3
-* Use CloudWatch Insights for complex queries
+- Adjust sampling rates based on traffic
+- Use metric filters to create custom metrics
+- Set appropriate log retention (7-30 days)
+- Archive infrequently accessed data to S3
+- Use CloudWatch Insights for complex queries
 
 ### Alerting
-* Define clear SLOs and SLIs
-* Set meaningful alert thresholds
-* Avoid alert fatigue with proper tuning
-* Use composite alarms for complex conditions
-* Implement escalation policies
+- Define clear SLOs and SLIs
+- Set meaningful alert thresholds
+- Avoid alert fatigue with proper tuning
+- Use composite alarms for complex conditions
+- Implement escalation policies
 
 ### Security
-* Encrypt logs and metrics at rest
-* Use IAM for access control
-* Implement least privilege access
-* Audit observability data access
-* Protect sensitive data in logs
+- Encrypt logs and metrics at rest
+- Use IAM for access control
+- Implement least privilege access
+- Audit observability data access
+- Protect sensitive data in logs
 
 ## Integration Patterns
 
@@ -434,11 +434,11 @@ Export telemetry to external observability platforms:
 
 ```
 AgentCore Observability
-        ↓
+    ↓
 OpenTelemetry Collector
-        ↓
+    ↓
 ┌────────┬────────┬────────┐
-│Datadog │New Relic│Grafana │
+│Datadog │New Relic│Grafana│
 └────────┴────────┴────────┘
 ```
 
@@ -481,38 +481,37 @@ aws logs describe-log-groups \
 ### Key Performance Indicators
 
 **Availability**:
-* Service uptime percentage
-* Error rate by service
-* Failed request percentage
+- Service uptime percentage
+- Error rate by service
+- Failed request percentage
 
 **Performance**:
-* P50, P95, P99 latency
-* Request throughput
-* Operation duration
+- P50, P95, P99 latency
+- Request throughput
+- Operation duration
 
 **Efficiency**:
-* Token consumption rate
-* Cost per operation
-* Resource utilization
+- Token consumption rate
+- Cost per operation
+- Resource utilization
 
 **Quality**:
-* Agent success rate
-* User satisfaction metrics
-* Workflow completion rate
+- Agent success rate
+- User satisfaction metrics
+- Workflow completion rate
 
 ## Additional Resources
 
-* **AWS Documentation**: [Bedrock AgentCore Observability](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/observability.html)
-* **CloudWatch Guide**: [CloudWatch User Guide](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/)
-* **X-Ray Guide**: [AWS X-Ray Developer Guide](https://docs.aws.amazon.com/xray/latest/devguide/)
-* **OpenTelemetry**: [OpenTelemetry Documentation](https://opentelemetry.io/docs/)
-* **Best Practices**: [Observability Best Practices](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/observability-best-practices.html)
+- **AWS Documentation**: [Bedrock AgentCore Observability](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/observability.html)
+- **CloudWatch Guide**: [CloudWatch User Guide](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/)
+- **X-Ray Guide**: [AWS X-Ray Developer Guide](https://docs.aws.amazon.com/xray/latest/devguide/)
+- **OpenTelemetry**: [OpenTelemetry Documentation](https://opentelemetry.io/docs/)
+- **Best Practices**: [Observability Best Practices](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/observability-best-practices.html)
 
 ---
 
 **Related Services**:
-* [Gateway Service](../gateway/README.md) - Gateway monitoring
-* [Runtime Service](../runtime/README.md) - Runtime tracing
-* [Memory Service](../memory/README.md) - Memory metrics
-* [Credential Management](../../cross-service/credential-management.md) - Cross-service credential patterns
-```
+- [Gateway Service](../gateway/README.md) - Gateway monitoring
+- [Runtime Service](../runtime/README.md) - Runtime tracing
+- [Memory Service](../memory/README.md) - Memory metrics
+- [Credential Management](../../cross-service/credential-management.md) - Cross-service credential patterns

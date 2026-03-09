@@ -1,6 +1,12 @@
 ---
 name: aws-mcp-setup
-description: Configure AWS Documentation MCP server to query up-to-date AWS knowledge, APIs, and best practices
+description: Configure AWS MCP servers for documentation search and API access. Use when setting up AWS MCP, configuring AWS documentation tools, troubleshooting MCP connectivity, or when user mentions aws-mcp, awsdocs, uvx setup, or MCP server configuration. Covers both Full AWS MCP Server (with uvx + credentials) and lightweight Documentation MCP (no auth required).
+allowed-tools:
+  - Bash(which *)
+  - Bash(aws sts get-caller-identity*)
+  - Bash(claude mcp *)
+  - Bash(cat *mcp.json*)
+  - Bash(cat *claude.json*)
 ---
 
 # AWS MCP Server Configuration Guide
@@ -109,23 +115,23 @@ aws sts get-caller-identity || echo "AWS credentials not configured"
 **Credential Configuration Options**:
 
 1. **AWS Profile** (recommended for development):
-  ```json
-  "args": [
-    "mcp-proxy-for-aws@latest",
-    "https://aws-mcp.us-east-1.api.aws/mcp",
-    "--profile", "my-profile",
-    "--metadata", "AWS_REGION=us-west-2"
-  ]
-  ```
+   ```json
+   "args": [
+     "mcp-proxy-for-aws@latest",
+     "https://aws-mcp.us-east-1.api.aws/mcp",
+     "--profile", "my-profile",
+     "--metadata", "AWS_REGION=us-west-2"
+   ]
+   ```
 
 2. **Environment Variables**:
-  ```json
-  "env": {
-    "AWS_ACCESS_KEY_ID": "...",
-    "AWS_SECRET_ACCESS_KEY": "...",
-    "AWS_REGION": "us-west-2"
-  }
-  ```
+   ```json
+   "env": {
+     "AWS_ACCESS_KEY_ID": "...",
+     "AWS_SECRET_ACCESS_KEY": "...",
+     "AWS_REGION": "us-west-2"
+   }
+   ```
 
 3. **IAM Role** (for EC2/ECS/Lambda): No additional config needed - uses instance credentials
 

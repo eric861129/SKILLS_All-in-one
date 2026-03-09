@@ -23,22 +23,22 @@ Automatically extracts and stores key insights from conversations across multipl
 ## Core Capabilities
 
 ### Memory Resource Management
-* **Logical Containers**: Encapsulate both raw events and processed long-term memories
-* **Retention Policies**: Define how long data is retained
-* **Security Configuration**: Control access and encryption
-* **Data Transformation**: Transform raw interactions into meaningful insights
+- **Logical Containers**: Encapsulate both raw events and processed long-term memories
+- **Retention Policies**: Define how long data is retained
+- **Security Configuration**: Control access and encryption
+- **Data Transformation**: Transform raw interactions into meaningful insights
 
 ### Short-Term Memory Features
-* **Event Storage**: Store conversations, system events, and state changes as immutable events
-* **Session Organization**: Organize by actor and session
-* **Context Preservation**: Maintain immediate context within sessions
-* **Structured Storage**: Support structured storage of interaction data
+- **Event Storage**: Store conversations, system events, and state changes as immutable events
+- **Session Organization**: Organize by actor and session
+- **Context Preservation**: Maintain immediate context within sessions
+- **Structured Storage**: Support structured storage of interaction data
 
 ### Long-Term Memory Features
-* **Insight Extraction**: Automatically extract insights, preferences, and knowledge
-* **Asynchronous Processing**: Extract memories asynchronously using memory strategies
-* **Cross-Session Persistence**: Retain information across multiple sessions
-* **Semantic Search**: Search memories by meaning and context
+- **Insight Extraction**: Automatically extract insights, preferences, and knowledge
+- **Asynchronous Processing**: Extract memories asynchronously using memory strategies
+- **Cross-Session Persistence**: Retain information across multiple sessions
+- **Semantic Search**: Search memories by meaning and context
 
 ### Memory Strategies
 Define the intelligence layer that transforms raw events into meaningful memories:
@@ -51,40 +51,40 @@ Define the intelligence layer that transforms raw events into meaningful memorie
 | **Custom** | Define custom extraction logic |
 
 ### Advanced Features
-* **Branching**: Create alternative conversation paths from specific points
-* **Checkpointing**: Save and mark specific states for later reference
-* **Memory Consolidation**: Merge related memories without duplicates
-* **Audit Trail**: Immutable audit trail for all memory operations
+- **Branching**: Create alternative conversation paths from specific points
+- **Checkpointing**: Save and mark specific states for later reference
+- **Memory Consolidation**: Merge related memories without duplicates
+- **Audit Trail**: Immutable audit trail for all memory operations
 
 ## Use Cases
 
 ### Conversational Agents
 Enable chatbots to:
-* Remember previous issues and preferences
-* Provide relevant assistance based on history
-* Create personalized customer experiences
-* Maintain context across session breaks
+- Remember previous issues and preferences
+- Provide relevant assistance based on history
+- Create personalized customer experiences
+- Maintain context across session breaks
 
 ### Task-Oriented Agents
 Support workflows like:
-* Track multi-step business process status
-* Maintain workflow progress across sessions
-* Remember task context for resumption
-* Store intermediate results
+- Track multi-step business process status
+- Maintain workflow progress across sessions
+- Remember task context for resumption
+- Store intermediate results
 
 ### Multi-Agent Systems
 Allow agent teams to:
-* Share memory for synchronized operations
-* Coordinate inventory levels and logistics
-* Maintain shared context
-* Optimize collaborative workflows
+- Share memory for synchronized operations
+- Coordinate inventory levels and logistics
+- Maintain shared context
+- Optimize collaborative workflows
 
 ### Autonomous Agents
 Enable agents to:
-* Plan routes based on past experiences
-* Learn from previous interactions
-* Improve decision-making over time
-* Build persistent knowledge bases
+- Plan routes based on past experiences
+- Learn from previous interactions
+- Improve decision-making over time
+- Build persistent knowledge bases
 
 ## Quick Start
 
@@ -205,28 +205,28 @@ aws bedrock-agentcore-control create-memory \
 ## Best Practices
 
 ### Memory Architecture
-* Design memory architecture intentionally
-* Choose appropriate strategies for use case
-* Implement proper retention policies
-* Consider memory costs and storage
+- Design memory architecture intentionally
+- Choose appropriate strategies for use case
+- Implement proper retention policies
+- Consider memory costs and storage
 
 ### Performance
-* Use appropriate time-to-live settings
-* Extract only relevant information
-* Implement rhythm of memory operations
-* Monitor memory search latency
+- Use appropriate time-to-live settings
+- Extract only relevant information
+- Implement rhythm of memory operations
+- Monitor memory search latency
 
 ### Security
-* Implement proper access controls
-* Encrypt sensitive memories
-* Audit memory access
-* Follow data privacy regulations (GDPR, HIPAA)
+- Implement proper access controls
+- Encrypt sensitive memories
+- Audit memory access
+- Follow data privacy regulations (GDPR, HIPAA)
 
 ### Operations
-* Monitor memory usage and costs
-* Set up alerts for memory failures
-* Implement backup strategies
-* Test memory operations regularly
+- Monitor memory usage and costs
+- Set up alerts for memory failures
+- Implement backup strategies
+- Test memory operations regularly
 
 ## Troubleshooting
 
@@ -239,15 +239,15 @@ aws bedrock-agentcore-control create-memory \
 
 ## Related Services
 
-* **[Gateway Service](../gateway/README.md)**: Expose APIs as tools for agents
-* **[Runtime Service](../runtime/README.md)**: Execute agents that generate conversation data
-* **[Identity Service](../identity/README.md)**: Secure access to conversation data
-* **[Observability Service](../observability/README.md)**: Monitor memory operations
+- **[Gateway Service](../gateway/README.md)**: Expose APIs as tools for agents
+- **[Runtime Service](../runtime/README.md)**: Execute agents that generate conversation data
+- **[Identity Service](../identity/README.md)**: Secure access to conversation data
+- **[Observability Service](../observability/README.md)**: Monitor memory operations
 
 ## References
 
-* [AWS Memory Documentation](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/memory.html)
-* [Memory Types](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/memory-types.html)
-* [Memory Strategies](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/memory-strategies.html)
-* [Building Context-Aware Agents Blog](https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-agentcore-memory-building-context-aware-agents/)
-* [Long-Term Memory Deep Dive](https://aws.amazon.com/blogs/machine-learning/building-smarter-ai-agents-agentcore-long-term-memory-deep-dive/)
+- [AWS Memory Documentation](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/memory.html)
+- [Memory Types](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/memory-types.html)
+- [Memory Strategies](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/memory-strategies.html)
+- [Building Context-Aware Agents Blog](https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-agentcore-memory-building-context-aware-agents/)
+- [Long-Term Memory Deep Dive](https://aws.amazon.com/blogs/machine-learning/building-smarter-ai-agents-agentcore-long-term-memory-deep-dive/)
