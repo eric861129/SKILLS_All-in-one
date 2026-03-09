@@ -97,11 +97,14 @@ npm run dev
 3. **重要**：調用 `sql-migration-manager` 產出對應的 SQL 指令。
 4. 詳細規範請閱讀 [CONTRIBUTING.md](CONTRIBUTING.md)。
 
+其實簡單一點，幫我開一個ISSUE，依據 [SKILL 提交 ISSUE](https://github.com/eric861129/SKILLS_All-in-one/issues/new?template=submit_skill.md)
+的格式即可。我會在請AI幫我處理SKILL的新增動作~
 ---
 
 ## 👤 作者
 **Eric Huang (黃祈豫)**  
 - Website: [huangchiyu.com](https://huangchiyu.com)
+- Blog: [ChiYu-Blog](https://huangchiyu.com/ChiYu-Blog/)
 - GitHub: [@eric861129](https://github.com/eric861129)
 
 ---
