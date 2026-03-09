@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">SKILLS All-in-one social preview</title>
+  <desc id="desc">Open-source AI agent skills library for Claude Code, ChatGPT, and MCP workflows.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#020617" />
+      <stop offset="55%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#1d4ed8" />
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#60a5fa" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#60a5fa" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <rect width="1200" height="630" fill="url(#glow)" />
+  <g fill="none" stroke="#60a5fa" stroke-opacity="0.18">
+    <path d="M96 140h1008" />
+    <path d="M96 500h1008" />
+    <path d="M180 96v438" />
+    <path d="M1020 96v438" />
+  </g>
+  <g transform="translate(116 112)">
+    <rect x="0" y="0" width="182" height="42" rx="21" fill="#1e3a8a" fill-opacity="0.48" stroke="#60a5fa" stroke-opacity="0.35" />
+    <text x="91" y="27" fill="#bfdbfe" font-family="Segoe UI, Arial, sans-serif" font-size="18" text-anchor="middle" letter-spacing="2">OPEN SOURCE</text>
+    <text x="0" y="130" fill="#f8fafc" font-family="Segoe UI, Arial, sans-serif" font-size="68" font-weight="700">SKILLS All-in-one</text>
+    <text x="0" y="205" fill="#dbeafe" font-family="Segoe UI, Arial, sans-serif" font-size="34">AI agent skills library for Claude Code, ChatGPT, and MCP workflows</text>
+    <text x="0" y="276" fill="#94a3b8" font-family="Segoe UI, Arial, sans-serif" font-size="26">Browse curated, downloadable skills for development, automation, research, and content teams.</text>
+    <g transform="translate(0 346)">
+      <rect x="0" y="0" width="198" height="62" rx="18" fill="#eff6ff" fill-opacity="0.08" stroke="#93c5fd" stroke-opacity="0.3" />
+      <text x="99" y="38" fill="#e2e8f0" font-family="Segoe UI, Arial, sans-serif" font-size="24" text-anchor="middle">Claude Code</text>
+      <rect x="220" y="0" width="176" height="62" rx="18" fill="#eff6ff" fill-opacity="0.08" stroke="#93c5fd" stroke-opacity="0.3" />
+      <text x="308" y="38" fill="#e2e8f0" font-family="Segoe UI, Arial, sans-serif" font-size="24" text-anchor="middle">ChatGPT</text>
+      <rect x="418" y="0" width="132" height="62" rx="18" fill="#eff6ff" fill-opacity="0.08" stroke="#93c5fd" stroke-opacity="0.3" />
+      <text x="484" y="38" fill="#e2e8f0" font-family="Segoe UI, Arial, sans-serif" font-size="24" text-anchor="middle">MCP</text>
+    </g>
+  </g>
+</svg>
