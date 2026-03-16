@@ -251,6 +251,20 @@ const copyText = async (text: string) => {
     document.body.removeChild(textArea);
 };
 
+// 統一組裝 Skill 在 GitHub 的資料夾連結，方便後續多語系文案或功能重用。
+const getSkillGithubFolderUrl = (skill: Skill) => {
+    if (skill.githubUrl) {
+        return skill.githubUrl;
+    }
+
+    return `https://github.com/eric861129/SKILLS_All-in-one/tree/main/public/SKILLS/${encodeURIComponent(skill.category)}/${encodeURIComponent(skill.source)}`;
+};
+
+// 產生可直接貼給 AI Agent 的安裝提示詞（繁體中文）。
+const buildAiInstallPrompt = (skillName: string, githubUrl: string) => {
+    return `我想要安裝一個名為 [${skillName}] 的 AI SKILL。請根據以下 GitHub 原始碼位址：${githubUrl}，讀取其中的 SKILL.md 與相關腳本，並依照該 Skill 的規範完成安裝與設定。`;
+};
+
 const markdownComponents: Components = {
     h1: ({ children }) => <h1 className="text-3xl md:text-4xl font-black tracking-tight text-slate-100 mt-2 mb-6">{children}</h1>,
     h2: ({ children }) => <h2 className="text-2xl font-bold text-slate-100 mt-10 mb-4 pb-2 border-b border-slate-800">{children}</h2>,
@@ -648,6 +662,21 @@ export const SkillPage = () => {
         }
     };
 
+    const handleCopyAiInstallPrompt = useCallback(async () => {
+        // 優先使用在地化名稱，讓使用者複製後的提示詞更易讀。
+        const localizedSkillName = getLocalized(skill, 'name', language);
+        const skillGithubUrl = getSkillGithubFolderUrl(skill);
+        const aiInstallPrompt = buildAiInstallPrompt(localizedSkillName, skillGithubUrl);
+
+        try {
+            await copyText(aiInstallPrompt);
+            showToast(t('copyAiInstallCommandSuccess'), 'success');
+        } catch (error) {
+            console.error('Failed to copy AI install command:', error);
+            showToast(t('copyFailed'), 'error');
+        }
+    }, [language, showToast, skill, t]);
+
     const handleCopyFile = useCallback(async () => {
         if (!selectedFile) return;
         if (fileBinaryMeta) {
@@ -834,12 +863,7 @@ export const SkillPage = () => {
                     <div className="shrink-0 w-full md:w-auto">
                         <div className="flex gap-3">
                             <a
-                                href={
-                                    skill.githubUrl ||
-                                    `https://github.com/eric861129/SKILLS_All-in-one/tree/main/public/SKILLS/${encodeURIComponent(
-                                        skill.category
-                                    )}/${encodeURIComponent(skill.source)}`
-                                }
+                                href={getSkillGithubFolderUrl(skill)}
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="bg-slate-800 hover:bg-slate-700 text-slate-300 p-3 rounded-xl transition-all active:scale-95 border border-slate-700 hover:border-slate-500 flex items-center gap-2 px-5"
@@ -853,6 +877,13 @@ export const SkillPage = () => {
                             >
                                 <Download className="w-5 h-5" />
                                 <span className="text-sm font-bold">{t('download')}</span>
+                            </button>
+                            <button
+                                onClick={handleCopyAiInstallPrompt}
+                                className="bg-slate-800 hover:bg-slate-700 text-slate-200 p-3 rounded-xl transition-all active:scale-95 border border-slate-700 hover:border-slate-500 flex items-center gap-2 px-5"
+                            >
+                                <Copy className="w-5 h-5" />
+                                <span className="text-sm font-bold">{t('copyAiInstallCommand')}</span>
                             </button>
                         </div>
                         <div className="mt-3 bg-slate-900 border border-slate-800 rounded-2xl p-4 md:w-[320px]">
@@ -1121,4 +1152,3 @@ export const SkillPage = () => {
         </div>
     );
 };
-

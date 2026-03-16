@@ -91,5 +91,7 @@
   "downloadFailed": "Download failed, please try again",
   "copySuccess": "{{name}} copied",
   "copyFailed": "Copy failed",
-  "developerDiscussions": "Developer Discussions"
+  "developerDiscussions": "Developer Discussions",
+  "copyAiInstallCommand": "Copy AI Install Command",
+  "copyAiInstallCommandSuccess": "Command copied"
 }
