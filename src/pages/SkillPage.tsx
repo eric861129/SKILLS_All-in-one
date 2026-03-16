@@ -663,6 +663,7 @@ export const SkillPage = () => {
     };
 
     const handleCopyAiInstallPrompt = useCallback(async () => {
+        if (!skill) return;
         // 優先使用在地化名稱，讓使用者複製後的提示詞更易讀。
         const localizedSkillName = getLocalized(skill, 'name', language);
         const skillGithubUrl = getSkillGithubFolderUrl(skill);
