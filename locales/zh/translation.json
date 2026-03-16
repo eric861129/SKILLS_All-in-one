@@ -91,5 +91,7 @@
   "downloadFailed": "下載失敗，請稍後再試",
   "copySuccess": "已複製 {{name}}",
   "copyFailed": "複製失敗",
-  "developerDiscussions": "開發者討論"
+  "developerDiscussions": "開發者討論",
+  "copyAiInstallCommand": "複製 AI 安裝指令",
+  "copyAiInstallCommandSuccess": "指令已複製"
 }
