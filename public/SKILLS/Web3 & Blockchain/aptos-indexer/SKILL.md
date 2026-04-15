@@ -1,6 +1,16 @@
 ---
 name: aptos-indexer
-description: Expert in Aptos Indexer architecture and GraphQL API. Query blockchain data, design custom processors, and optimize data retrieval.
+description: "Expert in Aptos Indexer architecture and GraphQL API for querying blockchain data. Use when querying NFTs, coin balances, or transaction history via GraphQL, designing custom processors, or optimizing data retrieval from the Aptos blockchain."
+user-invocable: true
+triggers:
+  - Aptos indexer query
+  - Aptos GraphQL API
+  - query NFT data Aptos
+  - Aptos coin balance query
+  - Aptos transaction history
+  - custom indexer processor
+  - Aptos data retrieval
+  - Aptos indexer GraphQL
 ---
 
 # Aptos Indexer Expert
