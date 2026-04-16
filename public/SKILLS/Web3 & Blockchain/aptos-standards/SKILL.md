@@ -1,6 +1,16 @@
 ---
 name: aptos-standards
-description: Expert in Aptos Framework and Token Standards (AIPs). Implement Fungible Assets (AIP-21), Digital Assets (AIP-11), and interact with core framework modules.
+description: "Expert in Aptos Framework standards and Token Standards (AIPs). Use when implementing Fungible Assets (AIP-21), Digital Assets (AIP-11), or interacting with core framework modules and Aptos Improvement Proposals."
+user-invocable: true
+triggers:
+  - Aptos AIP implementation
+  - Fungible Assets AIP-21
+  - Digital Assets AIP-11
+  - Aptos token standard
+  - Aptos framework module
+  - implement AIP on Aptos
+  - Aptos improvement proposal
+  - Aptos fungible asset
 ---
 
 # Aptos Standards Expert
