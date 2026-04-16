@@ -1,6 +1,16 @@
 ---
 name: aptos-cli
-description: Expert in Aptos CLI for account management, contract deployment, transaction submission, and node operations.
+description: "Expert in Aptos CLI for account management, contract deployment, transaction submission, and node operations. Use when using the Aptos CLI to initialize profiles, deploy Move contracts, submit transactions, manage accounts, or operate Aptos nodes."
+user-invocable: true
+triggers:
+  - Aptos CLI command
+  - deploy Move contract CLI
+  - aptos account init
+  - Aptos CLI transaction
+  - aptos move publish
+  - Aptos CLI node operation
+  - initialize Aptos profile
+  - Aptos CLI account management
 ---
 
 # Aptos CLI Expert

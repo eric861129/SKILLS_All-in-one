@@ -23517,15 +23517,15 @@
     ],
     "fileMeta": {
       "SKILL.md": {
-        "sizeBytes": 846,
-        "lineCount": 41,
+        "sizeBytes": 1231,
+        "lineCount": 51,
         "ext": "md",
         "tabKey": "root"
       }
     },
     "tokenEstimate": {
-      "heuristic": 212,
-      "cl100k": 185
+      "heuristic": 308,
+      "cl100k": 281
     },
     "dependencies": {
       "skills": [],
@@ -23541,15 +23541,15 @@
     ],
     "fileMeta": {
       "SKILL.md": {
-        "sizeBytes": 1601,
-        "lineCount": 40,
+        "sizeBytes": 1904,
+        "lineCount": 50,
         "ext": "md",
         "tabKey": "root"
       }
     },
     "tokenEstimate": {
-      "heuristic": 401,
-      "cl100k": 361
+      "heuristic": 476,
+      "cl100k": 443
     },
     "dependencies": {
       "skills": [],
@@ -23565,15 +23565,15 @@
     ],
     "fileMeta": {
       "SKILL.md": {
-        "sizeBytes": 920,
-        "lineCount": 27,
+        "sizeBytes": 1274,
+        "lineCount": 37,
         "ext": "md",
         "tabKey": "root"
       }
     },
     "tokenEstimate": {
-      "heuristic": 230,
-      "cl100k": 211
+      "heuristic": 319,
+      "cl100k": 301
     },
     "dependencies": {
       "skills": [],
@@ -23589,15 +23589,15 @@
     ],
     "fileMeta": {
       "SKILL.md": {
-        "sizeBytes": 1018,
-        "lineCount": 31,
+        "sizeBytes": 1324,
+        "lineCount": 41,
         "ext": "md",
         "tabKey": "root"
       }
     },
     "tokenEstimate": {
-      "heuristic": 255,
-      "cl100k": 257
+      "heuristic": 331,
+      "cl100k": 343
     },
     "dependencies": {
       "skills": [],
@@ -23912,15 +23912,15 @@
     ],
     "fileMeta": {
       "SKILL.md": {
-        "sizeBytes": 5699,
-        "lineCount": 221,
+        "sizeBytes": 5835,
+        "lineCount": 225,
         "ext": "md",
         "tabKey": "root"
       }
     },
     "tokenEstimate": {
-      "heuristic": 1425,
-      "cl100k": 1321
+      "heuristic": 1459,
+      "cl100k": 1353
     },
     "dependencies": {
       "skills": [],

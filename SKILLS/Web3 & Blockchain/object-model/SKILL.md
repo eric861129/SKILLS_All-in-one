@@ -1,12 +1,16 @@
 ---
 name: aptos-object-model
-description: Expert on Aptos Object Model for composable, transferable assets. Covers ObjectCore, Object<T> wrapper, ConstructorRef, ExtendRef, DeleteRef, TransferRef capabilities, object ownership, named vs generated objects, and composability patterns.
-allowed-tools: Read, Write, Edit, Grep, Glob, Bash
-model: sonnet
-license: MIT
-metadata:
-  author: raintree
-  version: "1.0"
+description: "Expert on Aptos Object Model for composable, transferable on-chain assets. Use when working with ObjectCore, Object wrappers, ConstructorRef, ExtendRef, DeleteRef, TransferRef capabilities, or implementing composable asset patterns on Aptos blockchain."
+user-invocable: true
+triggers:
+  - Aptos object model
+  - ObjectCore Move
+  - ConstructorRef Aptos
+  - implement composable asset Aptos
+  - Object<T> Move pattern
+  - TransferRef Aptos
+  - named vs generated objects Aptos
+  - composable NFT Aptos
 ---
 
 # Aptos Object Model Expert

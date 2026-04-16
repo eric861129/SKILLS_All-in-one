@@ -1,6 +1,16 @@
 ---
 name: aptos-core
-description: Expert in Aptos blockchain core architecture, consensus (AptosBFT), execution (Block-STM), and networking. Deep understanding of the Rust codebase, validator operations, and protocol design.
+description: "Expert in Aptos blockchain core architecture: consensus (AptosBFT), execution (Block-STM), and networking. Use when analyzing Aptos protocol design, the Rust codebase, validator operations, or understanding how Block-STM parallel execution works."
+user-invocable: true
+triggers:
+  - Aptos core architecture
+  - AptosBFT consensus
+  - Block-STM execution
+  - Aptos validator setup
+  - Aptos Rust codebase
+  - Aptos protocol design
+  - how does Aptos consensus work
+  - Aptos parallel execution
 ---
 
 # Aptos Core Expert
