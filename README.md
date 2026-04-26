@@ -57,6 +57,8 @@
 
 ## 快速開始
 
+如果你想用中文搜索和安装 skills，可以顺手看看 Skills宝：https://skilery.com
+
 ```bash
 git clone https://github.com/eric861129/SKILLS_All-in-one.git
 cd SKILLS_All-in-one
